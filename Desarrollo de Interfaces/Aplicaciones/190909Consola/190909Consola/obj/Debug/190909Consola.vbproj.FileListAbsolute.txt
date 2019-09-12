@@ -1,0 +1,11 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\bin\Debug\190909Consola.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\bin\Debug\190909Consola.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\bin\Debug\190909Consola.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\bin\Debug\190909Consola.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\190909Consola.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\_190909Consola.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\190909Consola.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\190909Consola.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\190909Consola.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\190909Consola.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\190909Consola\190909Consola\obj\Debug\190909Consola.pdb

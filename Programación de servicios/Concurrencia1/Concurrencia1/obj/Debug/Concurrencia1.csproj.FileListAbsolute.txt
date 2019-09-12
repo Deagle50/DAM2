@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\obj\Debug\Concurrencia1.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\obj\Debug\Concurrencia1.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\bin\Debug\Concurrencia1.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\bin\Debug\Concurrencia1.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\bin\Debug\Concurrencia1.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\obj\Debug\Concurrencia1.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Concurrencia1\Concurrencia1\obj\Debug\Concurrencia1.pdb

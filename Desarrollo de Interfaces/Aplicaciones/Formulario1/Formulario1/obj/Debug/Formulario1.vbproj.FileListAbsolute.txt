@@ -1,0 +1,14 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\bin\Debug\Formulario1.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\bin\Debug\Formulario1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\bin\Debug\Formulario1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\bin\Debug\Formulario1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.FormularioMDI.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\Formulario1\Formulario1\obj\Debug\Formulario1.FormularioArchivo.resources

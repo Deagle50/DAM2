@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\bin\Debug\EjemploEscritorio.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\bin\Debug\EjemploEscritorio.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\bin\Debug\EjemploEscritorio.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Aplicaciones\EjemploEscritorio\EjemploEscritorio\obj\Debug\EjemploEscritorio.pdb

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos</title>
+    <style type="text/css">
+    /*Alineación y márgenes*/
+    th{
+       
+        padding:5px;
+        margin-left:0px;
+        margin-right:0px;
+    } 
+    
+    td{
+        width:110px;
+    }
+
+    .derecha{
+        text-align: right;
+    }
+
+    /*Colores*/
+    form{
+        background-color:#444444;
+    }
+    body{
+        background-color:#444444;
+        color:rgb(255, 255, 255);
+    }
+    th{
+        background-color:#227dc9;
+    }
+   
+    .rojito{
+        color:red;
+    }
+
+    .pares{
+        background-color:#686868;
+    }
+ 
+    </style>
+</head>
+<body>
+    <form oninput="subtotal1.value=(qty1.valueAsNumber || 0) *(price1.valueAsNumber || 0)  ;
+subtotal2.value=(qty2.valueAsNumber || 0)*(price2.valueAsNumber || 0)
+subtotal3.value=(qty3.valueAsNumber || 0)*(price3.valueAsNumber || 0)
+subtotal4.value=(qty4.valueAsNumber || 0)*(price4.valueAsNumber || 0)
+subtotal5.value=parseInt(subtotal1.value) +
+parseInt(subtotal2.value) +
+parseInt(subtotal3.value) +
+parseInt(subtotal4.value) +'€'">
+    <table>
+        <tr>
+            <th>Line</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Product A</td>
+            <td class="derecha" ><input type="number" id="qty1"></td>
+            <td class="derecha"><input type="number" id="price1"></td>
+            <td><output id="subtotal1"></output></td>
+        </tr>        
+        <tr>
+            <td class="pares">2</td>
+            <td class="pares">Product B</td>
+            <td class="derecha pares"><input type="number" id="qty2" class="pares"></td>
+            <td class="derecha pares"><input type="number" id="price2"></td>
+            <td class="pares"><output id="subtotal2"></output></td>
+        </tr>            
+        <tr>
+            <td>3</td>
+            <td>Product C</td>
+            <td class="derecha"><input type="number" id="qty3"></td>
+            <td class="derecha"><input type="number" id="price3"></td>
+            <td><output id="subtotal3"></output></td>
+        </tr>
+        <tr>
+            <td class="pares">4</td>
+            <td class="pares">Product D</td>
+            <td class="pares derecha"><input type="number" id="qty4" class="pares"></td>
+            <td class="pares derecha"><input type="number" id="price4"></td>
+            <td class="pares"><output id="subtotal4"></output></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="rojito derecha">TOTAL</td>
+            <td class="rojito"><output id="subtotal5"></output></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
