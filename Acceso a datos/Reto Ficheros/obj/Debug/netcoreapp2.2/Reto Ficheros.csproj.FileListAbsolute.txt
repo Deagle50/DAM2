@@ -1,0 +1,11 @@
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\obj\Debug\netcoreapp2.2\Reto Ficheros.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\obj\Debug\netcoreapp2.2\Reto Ficheros.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\obj\Debug\netcoreapp2.2\Reto Ficheros.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\obj\Debug\netcoreapp2.2\Reto Ficheros.AssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\bin\Debug\netcoreapp2.2\Reto Ficheros.deps.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\bin\Debug\netcoreapp2.2\Reto Ficheros.runtimeconfig.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\bin\Debug\netcoreapp2.2\Reto Ficheros.runtimeconfig.dev.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\bin\Debug\netcoreapp2.2\Reto Ficheros.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\bin\Debug\netcoreapp2.2\Reto Ficheros.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\obj\Debug\netcoreapp2.2\Reto Ficheros.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Reto Ficheros\obj\Debug\netcoreapp2.2\Reto Ficheros.pdb

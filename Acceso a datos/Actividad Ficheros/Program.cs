@@ -20,9 +20,9 @@ namespace Actividad_Ficheros
                     case 1:
                     //Leer fichero
                         //COMPROBAR SI EXISTE FICHERO
-                        if(File.Exists("fichero.txt"))
+                        if(File.Exists("fichero3.txt"))
                         {
-                            using(StreamReader sr=new StreamReader("fichero.txt"))            
+                            using(StreamReader sr=new StreamReader("fichero3.txt"))            
                             {
                                 while((linea=sr.ReadLine())!=null)
                                 {
@@ -36,7 +36,13 @@ namespace Actividad_Ficheros
                         break;
 
                     case 2:
-                        
+                    //Modificar archivo
+                    Console.WriteLine("Escriba el dato a añadir");
+                        using(StreamWriter sw=new StreamWriter("fichero3.txt", true))
+                        {
+                            FileMode.Append;
+                        }
+                        Console.WriteLine("Modificado correctamente");
                         break;
                     case 3:
                     //Borrar archivo

@@ -1,0 +1,11 @@
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\bin\Debug\netcoreapp2.2\Actividad 2.deps.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\bin\Debug\netcoreapp2.2\Actividad 2.runtimeconfig.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\bin\Debug\netcoreapp2.2\Actividad 2.runtimeconfig.dev.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\bin\Debug\netcoreapp2.2\Actividad 2.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\bin\Debug\netcoreapp2.2\Actividad 2.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\obj\Debug\netcoreapp2.2\Actividad 2.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\obj\Debug\netcoreapp2.2\Actividad 2.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\obj\Debug\netcoreapp2.2\Actividad 2.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\obj\Debug\netcoreapp2.2\Actividad 2.AssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\obj\Debug\netcoreapp2.2\Actividad 2.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\Actividad 2\obj\Debug\netcoreapp2.2\Actividad 2.pdb
