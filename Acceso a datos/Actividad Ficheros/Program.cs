@@ -18,7 +18,8 @@ namespace Actividad_Ficheros
             while(num!=4){
                 switch(num){
                     case 1:
-                    //COMPROBAR SI EXISTE FICHERO
+                    //Leer fichero
+                        //COMPROBAR SI EXISTE FICHERO
                         if(File.Exists("fichero.txt"))
                         {
                             using(StreamReader sr=new StreamReader("fichero.txt"))            
@@ -38,6 +39,7 @@ namespace Actividad_Ficheros
                         
                         break;
                     case 3:
+                    //Borrar archivo
                         File.Delete("fichero.txt");
                         Console.WriteLine("Borrado correctamente");
                         break;
