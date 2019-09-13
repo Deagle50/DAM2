@@ -1,0 +1,15 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\PruebaFicheroCore.deps.json
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\PruebaFicheroCore.runtimeconfig.json
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\PruebaFicheroCore.runtimeconfig.dev.json
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\PruebaFicheroCore.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\PruebaFicheroCore.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\LibreriaFichero.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\LibreriaFichero.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\bin\Debug\netcoreapp2.2\LibreriaFichero.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.AssemblyInfo.vb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.vbproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroCore\PruebaFicheroCore\obj\Debug\netcoreapp2.2\PruebaFicheroCore.pdb

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PruebaFicheroCore</RootNamespace>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="LibreriaFichero">
+      <HintPath>..\..\LibreriaFichero\LibreriaFichero\bin\Debug\LibreriaFichero.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

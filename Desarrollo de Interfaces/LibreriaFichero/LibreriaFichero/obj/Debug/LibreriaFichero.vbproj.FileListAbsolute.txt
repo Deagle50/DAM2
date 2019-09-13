@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\bin\Debug\LibreriaFichero.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\bin\Debug\LibreriaFichero.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\bin\Debug\LibreriaFichero.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Nueva carpeta\LibreriaFichero\LibreriaFichero\obj\Debug\LibreriaFichero.pdb
