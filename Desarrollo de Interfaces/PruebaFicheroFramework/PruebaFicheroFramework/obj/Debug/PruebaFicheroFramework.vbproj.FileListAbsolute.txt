@@ -2,9 +2,6 @@ D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\Pr
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\PruebaFicheroFramework.exe
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\PruebaFicheroFramework.pdb
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\PruebaFicheroFramework.xml
-D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\LibreriaFichero.dll
-D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\LibreriaFichero.pdb
-D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\LibreriaFichero.xml
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\obj\Debug\PruebaFicheroFramework.vbprojAssemblyReference.cache
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\obj\Debug\PruebaFicheroFramework.Form1.resources
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\obj\Debug\PruebaFicheroFramework.Resources.resources
@@ -14,3 +11,5 @@ D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\Pr
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\obj\Debug\PruebaFicheroFramework.exe
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\obj\Debug\PruebaFicheroFramework.xml
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\obj\Debug\PruebaFicheroFramework.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\LibreriaFicherosStandard.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\PruebaFicheroFramework\PruebaFicheroFramework\bin\Debug\LibreriaFicherosStandard.pdb

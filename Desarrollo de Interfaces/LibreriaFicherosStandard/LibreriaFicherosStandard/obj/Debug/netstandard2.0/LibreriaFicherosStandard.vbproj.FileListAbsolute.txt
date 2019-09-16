@@ -1,0 +1,9 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\bin\Debug\netstandard2.0\LibreriaFicherosStandard.deps.json
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\bin\Debug\netstandard2.0\LibreriaFicherosStandard.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\bin\Debug\netstandard2.0\LibreriaFicherosStandard.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\obj\Debug\netstandard2.0\LibreriaFicherosStandard.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\obj\Debug\netstandard2.0\LibreriaFicherosStandard.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\obj\Debug\netstandard2.0\LibreriaFicherosStandard.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\obj\Debug\netstandard2.0\LibreriaFicherosStandard.AssemblyInfo.vb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\obj\Debug\netstandard2.0\LibreriaFicherosStandard.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LibreriaFicherosStandard\LibreriaFicherosStandard\obj\Debug\netstandard2.0\LibreriaFicherosStandard.pdb

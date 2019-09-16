@@ -1,4 +1,4 @@
-﻿Imports LibreriaFichero
+﻿Imports LibreriaFicherosStandard
 Public Class Form1
     Dim gestor As New GestorFichero
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click

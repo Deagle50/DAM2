@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\bin\Debug\AbrirArchivo.exe.config
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\bin\Debug\AbrirArchivo.exe
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\bin\Debug\AbrirArchivo.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.AbrirArchivo.resources
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.exe
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AbrirArchivo\AbrirArchivo\obj\Debug\AbrirArchivo.pdb

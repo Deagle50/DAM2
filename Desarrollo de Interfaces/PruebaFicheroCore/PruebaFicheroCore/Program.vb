@@ -1,5 +1,5 @@
 Imports System
-Imports LibreriaFichero
+Imports LibreriaFicherosStandard
 
 Module Program
     Sub Main(args As String())

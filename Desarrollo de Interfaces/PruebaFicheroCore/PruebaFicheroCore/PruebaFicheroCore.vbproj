@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="LibreriaFichero">
-      <HintPath>..\..\LibreriaFichero\LibreriaFichero\bin\Debug\LibreriaFichero.dll</HintPath>
+    <Reference Include="LibreriaFicherosStandard">
+      <HintPath>..\..\LibreriaFicherosStandard\LibreriaFicherosStandard\bin\Debug\netstandard2.0\LibreriaFicherosStandard.dll</HintPath>
     </Reference>
   </ItemGroup>
 
