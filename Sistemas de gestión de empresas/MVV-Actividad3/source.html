@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script type="text/javascript">
+        window.onload = function() {
+            var dps = []; //array de dataPoints. Mirar mas sobre los datos en: https://canvasjs.com/docs/charts/basics-of-creating-html5-chart/working-with-data/
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Accepting DataPoints from User Input"
+                },
+                data: [{
+                    type: "column", // cambiar aqui el tipo de grafico
+                    dataPoints: dps
+                }]
+            });
+            function addDataPointsAndRender() {
+                yValue = Number(document.getElementById("yValue").value);
+                dps.push({
+                    y: yValue // buscar mas informacion sobre el metodo PUSH() de un array https://www.w3schools.com/jsref/jsref_push.asp
+                    //, x: xValue // el x no es necesario, ya que hacemos un grafico de barras
+				});
+				console.log(dps); // mirar el array (Inspect en Chrome)
+                chart.render();
+            }
+            var renderButton = document.getElementById("renderButton");
+            renderButton.addEventListener("click", addDataPointsAndRender);
+        }
+    </script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body>
+    
+	Y Value:
+    <input id="yValue" type="number" step="any" placeholder="Enter Y-Value">
+    <button id="renderButton">Add DataPoint & Render</button>
+    <div id="chartContainer" style="height: 270px; width: 100%;">
+	</div>
+	
+</body>
+
+</html>
