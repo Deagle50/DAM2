@@ -1,0 +1,15 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.Formulario1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.Principal.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\bin\Debug\Eventos1.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\bin\Debug\Eventos1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\bin\Debug\Eventos1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\bin\Debug\Eventos1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.Formulario2.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos1\Eventos1\obj\Debug\Eventos1.Formulario3.resources

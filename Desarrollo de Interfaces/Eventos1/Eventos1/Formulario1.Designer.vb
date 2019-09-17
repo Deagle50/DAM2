@@ -52,7 +52,7 @@ Partial Class Formulario1
         '
         Me.txtNumeros.Location = New System.Drawing.Point(31, 45)
         Me.txtNumeros.Name = "txtNumeros"
-        Me.txtNumeros.Size = New System.Drawing.Size(106, 20)
+        Me.txtNumeros.Size = New System.Drawing.Size(429, 20)
         Me.txtNumeros.TabIndex = 7
         '
         'lblNumero
