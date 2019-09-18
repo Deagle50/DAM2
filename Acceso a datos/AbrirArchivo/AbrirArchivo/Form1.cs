@@ -12,20 +12,19 @@ namespace AbrirArchivo
 {
     public partial class AbrirArchivo : Form
     {
+        string ruta;
         public AbrirArchivo()
         {
             InitializeComponent();
         }
 
-
-        private void TxtSeleccionarArchivo_TextChanged(object sender, EventArgs e)
+        private void BtnSeleccionar_Click(object sender, EventArgs e)
         {
-            string[] lineas; 
-            OpenFileDialog dialogo = new OpenFileDialog();
-            if (dialogo.ShowDialog() == DialogResult.OK)
-            {
-
-            }
+                OpenFileDialog dialogo = new OpenFileDialog();
+                if (dialogo.ShowDialog() == DialogResult.OK)
+                {
+                   dialogo.
+                }
         }
     }
 }

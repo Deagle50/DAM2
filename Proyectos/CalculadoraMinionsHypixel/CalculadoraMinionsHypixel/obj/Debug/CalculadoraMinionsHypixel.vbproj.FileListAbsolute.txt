@@ -1,0 +1,12 @@
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\bin\Debug\CalculadoraMinionsHypixel.exe.config
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\bin\Debug\CalculadoraMinionsHypixel.exe
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\bin\Debug\CalculadoraMinionsHypixel.pdb
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\bin\Debug\CalculadoraMinionsHypixel.xml
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.CalculadoraMinions.resources
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.Resources.resources
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.exe
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.xml
+D:\Urko Urbieta\Visual Studio\Proyectos\CalculadoraMinionsHypixel\CalculadoraMinionsHypixel\obj\Debug\CalculadoraMinionsHypixel.pdb
