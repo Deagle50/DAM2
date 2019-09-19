@@ -85,6 +85,12 @@
     <Compile Include="Formulario3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formulario4.Designer.vb">
+      <DependentUpon>Formulario4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario3.resx">
       <DependentUpon>Formulario3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario4.resx">
+      <DependentUpon>Formulario4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>

@@ -22,54 +22,75 @@ Partial Class Principal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnFormulario1 = New System.Windows.Forms.Button()
-        Me.btnFormulario2 = New System.Windows.Forms.Button()
-        Me.btnFormulario3 = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.Formulario1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Formulario1ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Formulario2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Formulario3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Formulario4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btnFormulario1
+        'MenuStrip1
         '
-        Me.btnFormulario1.Location = New System.Drawing.Point(12, 12)
-        Me.btnFormulario1.Name = "btnFormulario1"
-        Me.btnFormulario1.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormulario1.TabIndex = 1
-        Me.btnFormulario1.Text = "Formulario 1"
-        Me.btnFormulario1.UseVisualStyleBackColor = True
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Formulario1ToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.TabIndex = 8
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'btnFormulario2
+        'Formulario1ToolStripMenuItem
         '
-        Me.btnFormulario2.Location = New System.Drawing.Point(93, 12)
-        Me.btnFormulario2.Name = "btnFormulario2"
-        Me.btnFormulario2.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormulario2.TabIndex = 3
-        Me.btnFormulario2.Text = "Formulario 2"
-        Me.btnFormulario2.UseVisualStyleBackColor = True
+        Me.Formulario1ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Formulario1ToolStripMenuItem1, Me.Formulario2ToolStripMenuItem, Me.Formulario3ToolStripMenuItem, Me.Formulario4ToolStripMenuItem})
+        Me.Formulario1ToolStripMenuItem.Name = "Formulario1ToolStripMenuItem"
+        Me.Formulario1ToolStripMenuItem.Size = New System.Drawing.Size(138, 20)
+        Me.Formulario1ToolStripMenuItem.Text = "Seleccionar formulario"
         '
-        'btnFormulario3
+        'Formulario1ToolStripMenuItem1
         '
-        Me.btnFormulario3.Location = New System.Drawing.Point(174, 12)
-        Me.btnFormulario3.Name = "btnFormulario3"
-        Me.btnFormulario3.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormulario3.TabIndex = 5
-        Me.btnFormulario3.Text = "Formulario 3"
-        Me.btnFormulario3.UseVisualStyleBackColor = True
+        Me.Formulario1ToolStripMenuItem1.Name = "Formulario1ToolStripMenuItem1"
+        Me.Formulario1ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.Formulario1ToolStripMenuItem1.Text = "Formulario1"
+        '
+        'Formulario2ToolStripMenuItem
+        '
+        Me.Formulario2ToolStripMenuItem.Name = "Formulario2ToolStripMenuItem"
+        Me.Formulario2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Formulario2ToolStripMenuItem.Text = "Formulario2"
+        '
+        'Formulario3ToolStripMenuItem
+        '
+        Me.Formulario3ToolStripMenuItem.Name = "Formulario3ToolStripMenuItem"
+        Me.Formulario3ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Formulario3ToolStripMenuItem.Text = "Formulario3"
+        '
+        'Formulario4ToolStripMenuItem
+        '
+        Me.Formulario4ToolStripMenuItem.Name = "Formulario4ToolStripMenuItem"
+        Me.Formulario4ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Formulario4ToolStripMenuItem.Text = "Formulario4"
         '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.btnFormulario3)
-        Me.Controls.Add(Me.btnFormulario2)
-        Me.Controls.Add(Me.btnFormulario1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Principal"
         Me.Text = "Principal"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnFormulario1 As Button
-    Friend WithEvents btnFormulario2 As Button
-    Friend WithEvents btnFormulario3 As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents Formulario1ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Formulario1ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents Formulario2ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Formulario3ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Formulario4ToolStripMenuItem As ToolStripMenuItem
 End Class
