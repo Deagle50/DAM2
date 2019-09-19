@@ -26,6 +26,7 @@ Partial Class Formulario4
         Me.txtFahrenheit = New System.Windows.Forms.TextBox()
         Me.lblCentigrados = New System.Windows.Forms.Label()
         Me.lblFahrenheit = New System.Windows.Forms.Label()
+        Me.btnConvertir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtCentigrados
@@ -60,11 +61,22 @@ Partial Class Formulario4
         Me.lblFahrenheit.TabIndex = 3
         Me.lblFahrenheit.Text = "Fahrenheit"
         '
+        'btnConvertir
+        '
+        Me.btnConvertir.Enabled = False
+        Me.btnConvertir.Location = New System.Drawing.Point(69, 119)
+        Me.btnConvertir.Name = "btnConvertir"
+        Me.btnConvertir.Size = New System.Drawing.Size(175, 23)
+        Me.btnConvertir.TabIndex = 4
+        Me.btnConvertir.Text = "Convertir"
+        Me.btnConvertir.UseVisualStyleBackColor = True
+        '
         'Formulario4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnConvertir)
         Me.Controls.Add(Me.lblFahrenheit)
         Me.Controls.Add(Me.lblCentigrados)
         Me.Controls.Add(Me.txtFahrenheit)
@@ -80,4 +92,5 @@ Partial Class Formulario4
     Friend WithEvents txtFahrenheit As TextBox
     Friend WithEvents lblCentigrados As Label
     Friend WithEvents lblFahrenheit As Label
+    Friend WithEvents btnConvertir As Button
 End Class
