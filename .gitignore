@@ -1,4 +1,4 @@
 #Ignore VM files
 VMs/
 #And a web project
-\Acceso a datos\WebApplication1
+WebApplication1/
