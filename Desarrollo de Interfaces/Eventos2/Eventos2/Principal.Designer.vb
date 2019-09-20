@@ -25,6 +25,7 @@ Partial Class Principal
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FormulariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Form2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Form3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class Principal
         '
         'FormulariosToolStripMenuItem
         '
-        Me.FormulariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Form2ToolStripMenuItem})
+        Me.FormulariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Form2ToolStripMenuItem, Me.Form3ToolStripMenuItem})
         Me.FormulariosToolStripMenuItem.Name = "FormulariosToolStripMenuItem"
         Me.FormulariosToolStripMenuItem.Size = New System.Drawing.Size(82, 20)
         Me.FormulariosToolStripMenuItem.Text = "Formularios"
@@ -49,6 +50,12 @@ Partial Class Principal
         Me.Form2ToolStripMenuItem.Name = "Form2ToolStripMenuItem"
         Me.Form2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Form2ToolStripMenuItem.Text = "Form2"
+        '
+        'Form3ToolStripMenuItem
+        '
+        Me.Form3ToolStripMenuItem.Name = "Form3ToolStripMenuItem"
+        Me.Form3ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Form3ToolStripMenuItem.Text = "Form3"
         '
         'Principal
         '
@@ -70,4 +77,5 @@ Partial Class Principal
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FormulariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Form2ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Form3ToolStripMenuItem As ToolStripMenuItem
 End Class

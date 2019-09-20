@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6D97A381-3A5D-45AF-BEBF-3DB7FED38F5E}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <StartupObject>Eventos2.My.MyApplication</StartupObject>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Eventos2.Form1</StartupObject>
     <RootNamespace>Eventos2</RootNamespace>
     <AssemblyName>Eventos2</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -79,6 +79,18 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form4.Designer.vb">
+      <DependentUpon>form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form4.resx">
+      <DependentUpon>form4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>

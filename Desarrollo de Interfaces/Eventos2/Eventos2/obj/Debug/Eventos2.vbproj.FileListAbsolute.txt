@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.Form2.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.Principal.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.Form3.resources
