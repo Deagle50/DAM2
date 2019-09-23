@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppTemperaturas</string>
+    <string name="app_saludo">Buenos días</string>
 </resources>
