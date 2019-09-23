@@ -10,4 +10,10 @@
         F.MdiParent = Me
         F.Show()
     End Sub
+
+    Private Sub Form4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Form4ToolStripMenuItem.Click
+        Dim F As New form4
+        F.MdiParent = Me
+        F.Show()
+    End Sub
 End Class

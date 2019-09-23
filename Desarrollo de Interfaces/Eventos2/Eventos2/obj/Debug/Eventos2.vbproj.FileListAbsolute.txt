@@ -5,3 +5,11 @@ D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Deb
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.vbproj.GenerateResource.cache
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.vbproj.CoreCompileInputs.cache
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.Form3.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.form4.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\bin\Debug\Eventos2.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\bin\Debug\Eventos2.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\bin\Debug\Eventos2.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\bin\Debug\Eventos2.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Eventos2\Eventos2\obj\Debug\Eventos2.pdb

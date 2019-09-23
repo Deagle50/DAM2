@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6D97A381-3A5D-45AF-BEBF-3DB7FED38F5E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Eventos2.Form1</StartupObject>
+    <StartupObject>Eventos2.Principal</StartupObject>
     <RootNamespace>Eventos2</RootNamespace>
     <AssemblyName>Eventos2</AssemblyName>
     <FileAlignment>512</FileAlignment>

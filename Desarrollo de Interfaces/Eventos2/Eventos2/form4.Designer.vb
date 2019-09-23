@@ -35,6 +35,8 @@ Partial Class form4
         Me.txtProducto = New System.Windows.Forms.TextBox()
         Me.lblDescuento = New System.Windows.Forms.Label()
         Me.lblImporte = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnFinalizar
@@ -144,11 +146,29 @@ Partial Class form4
         Me.lblImporte.TabIndex = 21
         Me.lblImporte.Text = "Importe"
         '
+        'lblTotal
+        '
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Location = New System.Drawing.Point(344, 174)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(117, 13)
+        Me.lblTotal.TabIndex = 22
+        Me.lblTotal.Text = "Total hasta el momento"
+        '
+        'txtTotal
+        '
+        Me.txtTotal.Location = New System.Drawing.Point(347, 205)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.Size = New System.Drawing.Size(100, 20)
+        Me.txtTotal.TabIndex = 23
+        '
         'form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtTotal)
+        Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.lblImporte)
         Me.Controls.Add(Me.lblDescuento)
         Me.Controls.Add(Me.txtProducto)
@@ -182,4 +202,6 @@ Partial Class form4
     Friend WithEvents txtProducto As TextBox
     Friend WithEvents lblDescuento As Label
     Friend WithEvents lblImporte As Label
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents txtTotal As TextBox
 End Class
