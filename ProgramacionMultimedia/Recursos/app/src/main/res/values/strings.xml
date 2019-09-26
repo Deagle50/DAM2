@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recursos</string>
+    <string name="app_saludo">Buenos días</string>
+    <string name="app_saludo_p">Hola </string>
+    <plurals name="plurales">
+        <item quantity="one"></item>
+        <item quantity="other"></item>
+    </plurals>
+</resources>

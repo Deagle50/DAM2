@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="palabras">
+        <item>abc</item>
+        <item>bcd</item>
+        <item>cde</item>
+        <item>def</item>
+    </string-array>
+</resources>

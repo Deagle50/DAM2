@@ -1,0 +1,11 @@
+D:\Urko Urbieta\Visual Studio\BFor\BFor\bin\Debug\BFor.exe.config
+D:\Urko Urbieta\Visual Studio\BFor\BFor\bin\Debug\BFor.exe
+D:\Urko Urbieta\Visual Studio\BFor\BFor\bin\Debug\BFor.pdb
+D:\Urko Urbieta\Visual Studio\BFor\BFor\bin\Debug\BFor.xml
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.Resources.resources
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.exe
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.xml
+D:\Urko Urbieta\Visual Studio\BFor\BFor\obj\Debug\BFor.pdb
