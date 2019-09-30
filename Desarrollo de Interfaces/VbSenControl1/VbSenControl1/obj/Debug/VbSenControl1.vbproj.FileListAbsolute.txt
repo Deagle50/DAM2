@@ -1,0 +1,15 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\bin\Debug\VbSenControl1.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\bin\Debug\VbSenControl1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\bin\Debug\VbSenControl1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\bin\Debug\VbSenControl1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.Form2.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.Form3.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\VbSenControl1\VbSenControl1\obj\Debug\VbSenControl1.Principal.resources
