@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\bin\Debug\Procesos.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\bin\Debug\Procesos.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\bin\Debug\Procesos.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.frmProcess.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.pdb
