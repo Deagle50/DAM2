@@ -16,7 +16,12 @@ public class VIEWMODEL {
     private ArrayList<Entrada> lista;
     private Entrada resultado;
 
-    private boolean buscar(String []palabra){
+    private String buscar(String []palabra){
+        for (int i = 0; i < lista.size(); i++) {
+            if(lista.get(i).getPalabra().equals(palabra))
+                return lista.get(i).getTraduccion();
 
+        }
+        return null;
     }
 }

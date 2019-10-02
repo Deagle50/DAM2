@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/txito1" android:duration="83"></item>
+    <item android:drawable="@drawable/txito2" android:duration="83"></item>
+    <item android:drawable="@drawable/txito3" android:duration="83"></item>
+    <item android:drawable="@drawable/txito4" android:duration="83"></item>
+    <item android:drawable="@drawable/txito5" android:duration="83"></item>
+    <item android:drawable="@drawable/txito6" android:duration="83"></item>
+    <item android:drawable="@drawable/txito7" android:duration="83"></item>
+    <item android:drawable="@drawable/txito8" android:duration="83"></item>
+    <item android:drawable="@drawable/txito9" android:duration="83"></item>
+    <item android:drawable="@drawable/txito10" android:duration="83"></item>
+    <item android:drawable="@drawable/txito11" android:duration="83"></item>
+    <item android:drawable="@drawable/txito12" android:duration="83"></item>
+    <item android:drawable="@drawable/txito13" android:duration="83"></item>
+    <item android:drawable="@drawable/txito14" android:duration="83"></item>
+    <item android:drawable="@drawable/txito15" android:duration="83"></item>
+
+</animation-list>
