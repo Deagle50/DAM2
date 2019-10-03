@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/frame0" android:duration="0"></item>
+    <item android:drawable="@drawable/frame4" android:duration="0"></item>
+    <item android:drawable="@drawable/frame8" android:duration="0"></item>
+    <item android:drawable="@drawable/frame12" android:duration="0"></item>
+    <item android:drawable="@drawable/frame16" android:duration="0"></item>
+    <item android:drawable="@drawable/frame20" android:duration="0"></item>
+    <item android:drawable="@drawable/frame24" android:duration="0"></item>
+    <item android:drawable="@drawable/frame28" android:duration="0"></item>
+    <item android:drawable="@drawable/frame29" android:duration="0"></item>
+    <item android:drawable="@drawable/frame28" android:duration="0"></item>
+    <item android:drawable="@drawable/frame24" android:duration="0"></item>
+    <item android:drawable="@drawable/frame20" android:duration="0"></item>
+    <item android:drawable="@drawable/frame16" android:duration="0"></item>
+    <item android:drawable="@drawable/frame12" android:duration="0"></item>
+    <item android:drawable="@drawable/frame8" android:duration="0"></item>
+    <item android:drawable="@drawable/frame4" android:duration="0"></item>
+    <item android:drawable="@drawable/frame0" android:duration="0"></item>
+    <item android:drawable="@drawable/frame0" android:duration="0"></item>
+    <item android:drawable="@drawable/frame4" android:duration="0"></item>
+    <item android:drawable="@drawable/frame8" android:duration="0"></item>
+    <item android:drawable="@drawable/frame12" android:duration="0"></item>
+    <item android:drawable="@drawable/frame16" android:duration="0"></item>
+    <item android:drawable="@drawable/frame20" android:duration="0"></item>
+    <item android:drawable="@drawable/frame24" android:duration="0"></item>
+    <item android:drawable="@drawable/frame29" android:duration="0"></item>
+    <item android:drawable="@drawable/frame24" android:duration="0"></item>
+    <item android:drawable="@drawable/frame20" android:duration="0"></item>
+    <item android:drawable="@drawable/frame16" android:duration="0"></item>
+    <item android:drawable="@drawable/frame12" android:duration="0"></item>
+    <item android:drawable="@drawable/frame8" android:duration="0"></item>
+    <item android:drawable="@drawable/frame4" android:duration="0"></item>
+    <item android:drawable="@drawable/frame0" android:duration="0"></item>
+    <item android:drawable="@drawable/frame0" android:duration="0"></item>
+    <item android:drawable="@drawable/frame4" android:duration="0"></item>
+    <item android:drawable="@drawable/frame8" android:duration="0"></item>
+    <item android:drawable="@drawable/frame12" android:duration="0"></item>
+    <item android:drawable="@drawable/frame16" android:duration="0"></item>
+    <item android:drawable="@drawable/frame20" android:duration="0"></item>
+    <item android:drawable="@drawable/frame24" android:duration="0"></item>
+    <item android:drawable="@drawable/frame28" android:duration="0"></item>
+    <item android:drawable="@drawable/frame29" android:duration="0"></item>
+    <item android:drawable="@drawable/frame28" android:duration="0"></item>
+    <item android:drawable="@drawable/frame24" android:duration="0"></item>
+    <item android:drawable="@drawable/frame20" android:duration="0"></item>
+    <item android:drawable="@drawable/frame16" android:duration="0"></item>
+    <item android:drawable="@drawable/frame12" android:duration="0"></item>
+    <item android:drawable="@drawable/frame8" android:duration="0"></item>
+    <item android:drawable="@drawable/frame4" android:duration="0"></item>
+    <item android:drawable="@drawable/frame0" android:duration="0"></item>
+
+
+</animation-list>

@@ -42,10 +42,6 @@ namespace Procesos
             }
         }
 
-        public frmProcess()
-        {
-            InitializeComponent();
-        }
 
         private void lstProcesos_DoubleClick(object sender, EventArgs e)
         {

@@ -8,3 +8,4 @@ D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\D
 D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.csproj.CoreCompileInputs.cache
 D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.exe
 D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Procesos\Procesos\obj\Debug\Procesos.Form1.resources
