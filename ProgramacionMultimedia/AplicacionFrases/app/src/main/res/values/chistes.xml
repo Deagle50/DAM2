@@ -1,7 +1,7 @@
 <resources>
     <string-array name="chistes">
         <item>¿Qué es amarillo y no sabe nadar? Una excavadora</item>
-        <item>Espero que hayas pillado lo del bocadillo</item>
+        <item>Espero que hayas pillado lo del bocadillo jeje</item>
         <item>¿Qué es verde y huele a pintura? La pintura verde</item>
         <item>¿Qué es amarillo y huele a plátano? El vómito de un mono</item>
         <item>-Juan, ¿ves ese bosque? +No, me lo tapan los árboles</item>
@@ -18,7 +18,7 @@
         <item>Ayer intenté ligarme a una informática pero no se de-java</item>
         <item>¿Qué es un terapeuta? 1024 gigapeutas</item>
         <item>Donald usa teclado, y Mickey Mouse</item>
-        <item>+¿Cuántos dálmatas había en la película de Disney? - 101 +¡Por el culo de la hinco!</item>
+        <item>-¿Cuántos dálmatas había en la película de Disney? +101 -¡Por el culo de la hinco!</item>
         <item>¿Cómo se despide un informático? Instala vista baby</item>
         <item>-¿Qué haces con ese barril Patxi? +Aiba pues, que el médico me ha dicho que le lleve una muestra de orina</item>
     </string-array>
