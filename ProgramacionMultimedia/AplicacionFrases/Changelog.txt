@@ -1,0 +1,4 @@
+0.1: Versión inicial
+0.2: Añadidas nuevas frases
+0.3: Se ha quitado el botón atrás, y cambiado la fuente del bocadillo. Mensaje en el bocadillo centrado
+0.4: Reducido el tamaño de la aplicación, optimización de rendimiento, añadidas validaciones

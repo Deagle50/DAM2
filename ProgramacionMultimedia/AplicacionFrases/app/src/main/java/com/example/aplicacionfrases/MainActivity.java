@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     viewmodel viewmodel;
 
     int pos=0;
+    String anterior="";
 
 
 
@@ -42,11 +43,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
+        String actual;
         animacion.setVisible(true,true);
         animacion.start();
-        viewmodel.chisteAlazar();
-        txtBocadillo.setText(viewmodel.getChiste());
-
+        do {
+            viewmodel.chisteAlazar();
+            actual = viewmodel.getChiste();
+        }while(actual.equals(anterior));
+        txtBocadillo.setText(actual);
+        anterior=actual;
     }
 }
