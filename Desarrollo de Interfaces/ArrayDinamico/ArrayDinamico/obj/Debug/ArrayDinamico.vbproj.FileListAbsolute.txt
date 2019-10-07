@@ -1,0 +1,13 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\bin\Debug\ArrayDinamico.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\bin\Debug\ArrayDinamico.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\bin\Debug\ArrayDinamico.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\bin\Debug\ArrayDinamico.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.FrmAlta.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ArrayDinamico\ArrayDinamico\obj\Debug\ArrayDinamico.pdb
