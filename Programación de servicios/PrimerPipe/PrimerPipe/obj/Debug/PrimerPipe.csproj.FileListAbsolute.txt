@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\bin\Debug\PrimerPipe.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\bin\Debug\PrimerPipe.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\bin\Debug\PrimerPipe.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\obj\Debug\PrimerPipe.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\obj\Debug\PrimerPipe.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\obj\Debug\PrimerPipe.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PrimerPipe\obj\Debug\PrimerPipe.pdb

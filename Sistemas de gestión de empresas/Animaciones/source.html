@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+    <!--<link href="//cdn.muicss.com/mui-0.9.43/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.43/js/mui.min.js"></script>-->
+
+    <style type="text/css">
+        
+
+        .producto{
+            width:55px;
+            height:20px;
+            
+            z-index: 0;
+            
+            background-color:darkgray;
+            animation-name:producto;
+            animation-duration:5s;
+            
+        }
+
+        .producto2{
+            width:65px;
+            height:50px;
+            
+            z-index: 0;
+            
+            background-color:darkgray;
+            animation-name:producto;
+            animation-duration:5s;
+            
+        }
+
+        @keyframes producto{
+            from{margin-top:1000px;background-color:rgb(219, 173, 104);}
+            to{margin-top:1%;background-color:darkgray;}
+        }
+
+        .cinta{
+            
+            width:400px;
+            height:1000px;
+            background-color:darkgray;
+            z-index: 1;
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="cinta" style="position: absolute">
+            <div class="producto">
+
+            </div>
+            <div class="producto2">
+
+            </div>
+    </div>
+    
+   
+   
+</body>
+</html>

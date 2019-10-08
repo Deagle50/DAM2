@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimerPipe", "PrimerPipe\PrimerPipe.csproj", "{F7809CB6-47A1-4F10-85E1-DBB37844475C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PipeHijo", "PipeHijo\PipeHijo.csproj", "{383E4CFC-CAB2-465F-B3B4-8F20052046C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7809CB6-47A1-4F10-85E1-DBB37844475C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7809CB6-47A1-4F10-85E1-DBB37844475C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7809CB6-47A1-4F10-85E1-DBB37844475C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7809CB6-47A1-4F10-85E1-DBB37844475C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383E4CFC-CAB2-465F-B3B4-8F20052046C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383E4CFC-CAB2-465F-B3B4-8F20052046C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383E4CFC-CAB2-465F-B3B4-8F20052046C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383E4CFC-CAB2-465F-B3B4-8F20052046C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08ADF9FC-B529-47E1-B586-1DFAC3775781}
+	EndGlobalSection
+EndGlobal

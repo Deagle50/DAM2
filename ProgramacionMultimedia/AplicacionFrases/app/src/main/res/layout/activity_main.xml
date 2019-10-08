@@ -8,11 +8,12 @@
 
     <Button
         android:id="@+id/btnUrko"
-        android:layout_width="413dp"
-        android:layout_height="395dp"
-        android:layout_marginTop="344dp"
+        android:layout_width="409dp"
+        android:layout_height="470dp"
+        android:layout_marginTop="260dp"
         android:background="@drawable/animacion"
         android:rotation="0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

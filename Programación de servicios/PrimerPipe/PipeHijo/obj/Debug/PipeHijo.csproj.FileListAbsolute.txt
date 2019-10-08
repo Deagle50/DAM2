@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\bin\Debug\PipeHijo.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\bin\Debug\PipeHijo.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\bin\Debug\PipeHijo.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\obj\Debug\PipeHijo.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\obj\Debug\PipeHijo.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\obj\Debug\PipeHijo.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PrimerPipe\PipeHijo\obj\Debug\PipeHijo.pdb
