@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Spinner3</string>
+    <string-array name="meses">
+        <item>enero</item>
+        <item>febrero</item>
+        <item>marzo</item>
+        <item>abril</item>
+        <item>mayo</item>
+        <item>junio</item>
+        <item>julio</item>
+        <item>agosto</item>
+        <item>septiembre</item>
+        <item>octubre</item>
+        <item>noviembre</item>
+        <item>diciembre</item>
+    </string-array>
+    <string-array name="estaciones">
+        <item>primavera</item>
+        <item>verano</item>
+        <item>otoño</item>
+        <item>invierno</item>
+    </string-array>
+</resources>

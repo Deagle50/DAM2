@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="Cast"
+        app:actionProviderClass="androidx.mediarouter.app.MediaRouteActionProvider"
+        tools:icon="@drawable/mr_button_light" />
+    <item android:title="Nueva dirección" android:id="@+id/mnuNueva">
+
+    </item>
+
+    <item android:title="Ver todos" android:id="@+id/mnuTodos">
+
+    </item>
+</menu>

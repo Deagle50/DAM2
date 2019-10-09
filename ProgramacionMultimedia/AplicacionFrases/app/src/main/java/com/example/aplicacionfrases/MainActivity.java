@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String anterior="";
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_principal,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         animacion=(AnimationDrawable)btnUrko.getBackground();
         viewmodel=new viewmodel(getResources().getStringArray(R.array.chistes), animacion);
         animacion.setOneShot(true);
+
+
 
     }
 
