@@ -1,0 +1,6 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas\Tablas\obj\Debug\Tablas.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas\Tablas\obj\Debug\Tablas.Form2.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas\Tablas\obj\Debug\Tablas.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas\Tablas\obj\Debug\Tablas.Source.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas\Tablas\obj\Debug\Tablas.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas\Tablas\obj\Debug\Tablas.vbproj.CoreCompileInputs.cache

@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".TodasActivity">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
+    <ListView
+        android:id="@+id/lvTodos"
+        style="@android:style/Widget.Material.Light.ListView"
+        android:layout_width="284dp"
+        android:layout_height="586dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

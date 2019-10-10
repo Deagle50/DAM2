@@ -1,0 +1,12 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\bin\Debug\Tablas2.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\bin\Debug\Tablas2.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\bin\Debug\Tablas2.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\bin\Debug\Tablas2.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\Tablas2\Tablas2\obj\Debug\Tablas2.pdb
