@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{029CF7B1-8FF2-4C7E-8634-764ED7DFD30E}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <StartupObject>VbSenControl1.My.MyApplication</StartupObject>
+    <OutputType>Exe</OutputType>
+    <StartupObject>VbSenControl1.Principal</StartupObject>
     <RootNamespace>VbSenControl1</RootNamespace>
     <AssemblyName>VbSenControl1</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>

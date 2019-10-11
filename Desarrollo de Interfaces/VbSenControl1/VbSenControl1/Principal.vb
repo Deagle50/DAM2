@@ -13,7 +13,10 @@
     End Sub
 
     Private Sub Form3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Form3ToolStripMenuItem.Click
-        Dim F As New Form3
-        F.Show()
+        Dim j As Integer = InputBox("Introduce un número")
+        Console.WriteLine("{0,10}{1,10}{2,10}", "Numero", "Cuadrado", "Cubo")
+        For i = 0 To j
+            Console.WriteLine("{0, 10}{1, 10}{2,10}", i, i ^ 2, i ^ 3)
+        Next
     End Sub
 End Class
