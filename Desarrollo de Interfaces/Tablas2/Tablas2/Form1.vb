@@ -22,4 +22,8 @@
         End If
 
     End Sub
+
+    Private Sub BtnInforme_Click(sender As Object, e As EventArgs) Handles btnInforme.Click
+
+    End Sub
 End Class

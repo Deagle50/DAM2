@@ -1,10 +1,10 @@
 ﻿Module Module1
-    Dim tabla(,) As String
+    Public Structure Diccionario
+        Public palabra As String
+        Public traduccion As String
+    End Structure
 
-    Public Function Buscar() As Integer
-        Dim i As Integer
-        For i = 0 To tabla.Length
-            If tabla(i, 0).CompareTo(palabra) = 0 Then
-        Next
-    End Function
+    Public cont As Integer
+
+
 End Module

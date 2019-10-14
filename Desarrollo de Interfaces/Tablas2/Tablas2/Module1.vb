@@ -2,6 +2,8 @@
 
     Public tam As Integer = 0
 
+
+
     Public Structure trabajador
         Public DNI As String
         Public Nombre As String
