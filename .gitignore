@@ -1,5 +1,7 @@
 #Ignore VM files
 VMs/
-#And some web projects
+#Some web projects
 WebApplication1/
 RetoASPNet/
+#Pizarreador project
+Pizarreador/

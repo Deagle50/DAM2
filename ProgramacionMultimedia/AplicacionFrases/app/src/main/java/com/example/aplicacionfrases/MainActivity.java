@@ -22,12 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String anterior="";
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.menu_principal,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

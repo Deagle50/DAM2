@@ -15,18 +15,17 @@ namespace PipeHijo
         static void Main(string[] args)
         {
             int i;
-            //int pid1;
-            //int pid2;
+            int num;
             using (AnonymousPipeClientStream apcs = new AnonymousPipeClientStream(PipeDirection.In, args[0]))
             {
                 using (StreamReader sr = new StreamReader(apcs))
                 {
                     i = Int32.Parse(sr.ReadLine());
-                    
+                    num = Int32.Parse(sr.ReadLine());
                 }
                 using (StreamWriter sw = new StreamWriter(apcs))
                 {
-                    Console.WriteLine("Yo soy el hijo {0}", i);
+                    Console.WriteLine("Yo soy el hijo {0}, con el PID {1}", i, num);
                 }
             }
         }
