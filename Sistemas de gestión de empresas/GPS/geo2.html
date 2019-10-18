@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Geo Location 1</h1>
+    <div id="divgeo"></div>
+    <button onclick="getGeoLocation();">Mostrar ubicación</button>
+    
+    <script type="text/javascript">
+        function getGeoLocation(){
+            if(navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(mostrarPosicion);
+            }
+            else
+            {
+                document.getElementById("divgeo").innerHTML="Not supported";
+            }            
+        }
+
+        function mostrarPosicion(position){
+                document.getElementById("divgeo").innerHTML="Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+</html>
