@@ -6,7 +6,7 @@
         Public Telefono As Integer
     End Structure
 
-    Public agenda() As Dictionary(Of 
+    Public colleccion As New Collection
 
     Public max As Integer = 0
 End Module

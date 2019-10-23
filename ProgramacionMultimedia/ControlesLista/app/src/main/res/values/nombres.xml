@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nombres">
+        <item>Apple Pie</item>
+        <item>Banana Bread</item>
+        <item>Cupcake</item>
+        <item>Donut</item>
+        <item>Eclair</item>
+        <item>Froyo</item>
+        <item>Gingerbread</item>
+        <item>Honeycomb</item>
+        <item>Ice Cream Sandwich</item>
+        <item>Jelly Bean</item>
+        <item>KitKat</item>
+        <item>Lollipop</item>
+        <item>Marshmallow</item>
+        <item>Nougat</item>
+        <item>Oreo</item>
+        <item>Pie</item>
+        <item>Q</item>
+    </string-array>
+</resources>

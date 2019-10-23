@@ -41,7 +41,8 @@ namespace PipeHijo
                     Console.WriteLine("Yo soy el hijo {0}, mi padre es PID={1}, yo soy PID={2}", i, );
                     sw.WriteLine(n);
                     sw.WriteLine(i);
-                    i++;
+                        if(i<3)
+                            i++;
                 }
             }
         }
