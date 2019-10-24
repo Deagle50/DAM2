@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Pipes;
-using System.Diagnostics;
+using System.Windows;
 
-namespace EjerciciosPipes3
+namespace EjerciciosPipes4
 {
     class Program
     {
@@ -15,14 +16,13 @@ namespace EjerciciosPipes3
         {
 
             int cuantos;
-            Console.WriteLine("Introduce número");
+            Console.WriteLine("Escribe un número");
             cuantos = int.Parse(Console.ReadLine());
-            int i = 0;
+            int i = 1;
             using (AnonymousPipeServerStream apss = new AnonymousPipeServerStream(PipeDirection.Out, HandleInheritability.Inheritable))
+            {
+                using (StreamWriter sw = new StreamWriter(apss))
                 {
-                    
-                    using (StreamWriter sw = new StreamWriter(apss))
-                    {
                     Process p = new Process();
                     ProcessStartInfo psi = new ProcessStartInfo();
                     psi.FileName = "..\\..\\..\\PipeHijo\\Bin\\Debug\\PipeHijo.exe";
@@ -30,13 +30,10 @@ namespace EjerciciosPipes3
                     psi.UseShellExecute = false;
                     p.StartInfo = psi;
                     p.Start();
-                    Console.WriteLine("Soy el padre");
-                        sw.WriteLine();
-                        sw.WriteLine(i);
-                        sw.WriteLine(cuantos);
-                        
-                    }
-                }
+                    Console.WriteLine("Soy el padre");                    
+                    sw.WriteLine(cuantos);
+                }            
+            }
         }
     }
 }

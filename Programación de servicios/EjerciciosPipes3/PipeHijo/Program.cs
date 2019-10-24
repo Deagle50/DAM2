@@ -13,18 +13,22 @@ namespace PipeHijo
     {
         static void Main(string[] args)
         {
-            int n;
-            int i;
+            int pid;
+            int cont;
+            int cuantos;
             using (AnonymousPipeClientStream apcs = new AnonymousPipeClientStream(PipeDirection.In, args[0]))
-            {
-                Process p = new Process.GetCurrentProcess();
+            {                
                 using (StreamReader sr = new StreamReader(apcs))
                 {
-                    n = Int32.Parse(sr.ReadLine());
-                    i = Int32.Parse(sr.ReadLine());
+                    pid = int.Parse(sr.ReadLine());
+                    cont = int.Parse(sr.ReadLine());
+                    cuantos = int.Parse(sr.ReadLine());
+                    Console.WriteLine("Yo soy el hijo {0}", cont);
+                    Console.WriteLine("Mi padre es {0}", pid);
+                    pid = Process.GetCurrentProcess().Id;
+                    Console.WriteLine("Yo soy {0}", pid);
                 }
             }
-            if(i<n)
             using (AnonymousPipeServerStream apss = new AnonymousPipeServerStream(PipeDirection.Out, HandleInheritability.Inheritable))
             {
                 Process p = new Process();
@@ -33,18 +37,9 @@ namespace PipeHijo
                 psi.Arguments = apss.GetClientHandleAsString();
                 psi.UseShellExecute = false;
                 p.StartInfo = psi;
-                p.Start();
+                p.Start();        
                 
-                    using (StreamWriter sw = new StreamWriter(apss))
-                {
-                        
-                    Console.WriteLine("Yo soy el hijo {0}, mi padre es PID={1}, yo soy PID={2}", i, );
-                    sw.WriteLine(n);
-                    sw.WriteLine(i);
-                        if(i<3)
-                            i++;
                 }
             }
         }
     }
-}
