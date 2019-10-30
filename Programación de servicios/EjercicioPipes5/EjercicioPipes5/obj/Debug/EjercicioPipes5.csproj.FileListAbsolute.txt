@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\bin\Debug\EjercicioPipes5.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\bin\Debug\EjercicioPipes5.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\bin\Debug\EjercicioPipes5.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\obj\Debug\EjercicioPipes5.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\obj\Debug\EjercicioPipes5.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\obj\Debug\EjercicioPipes5.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioPipes5\EjercicioPipes5\obj\Debug\EjercicioPipes5.pdb
