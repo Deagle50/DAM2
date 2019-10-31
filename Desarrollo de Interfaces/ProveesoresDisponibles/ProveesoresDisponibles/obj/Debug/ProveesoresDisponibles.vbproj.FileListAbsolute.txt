@@ -1,0 +1,12 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\bin\Debug\ProveesoresDisponibles.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\bin\Debug\ProveesoresDisponibles.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\bin\Debug\ProveesoresDisponibles.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\bin\Debug\ProveesoresDisponibles.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ProveesoresDisponibles\ProveesoresDisponibles\obj\Debug\ProveesoresDisponibles.pdb

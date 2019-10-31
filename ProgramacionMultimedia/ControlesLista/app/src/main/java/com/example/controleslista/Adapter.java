@@ -10,12 +10,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class Adapter extends RecyclerView.Adapter<RecyclerVersionArrayAdapter.ViewHolder> {
     private int resource;
     private Context parent;
-    private ArrayList<AndroidVersion> lista;
+    private ArrayList<androidversion> lista;
 
-    public RecyclerVersionArrayAdapter(Context context,int res, ArrayList<AndroidVersion> list) {
+    public void RecyclerVersionArrayAdapter(Context context,int res, ArrayList<androidversion> list) {
         parent=context;
         resource=res;
         lista=list;
