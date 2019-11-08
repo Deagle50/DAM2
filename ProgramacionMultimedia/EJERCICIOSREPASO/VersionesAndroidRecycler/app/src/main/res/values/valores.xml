@@ -1,0 +1,98 @@
+<resources>
+
+    <string-array name="nombres">
+        <item>Apple Pie</item>
+        <item>Banana Bread</item>
+        <item>Cupcake</item>
+        <item>Donut</item>
+        <item>Eclair</item>
+        <item>Froyo</item>
+        <item>Gingerbread</item>
+        <item>Honeycumb</item>
+        <item>Ice Cream Sandwich</item>
+        <item>Jelly Bean</item>
+        <item>KitKat</item>
+        <item>Lollipop</item>
+        <item>Marshmallow</item>
+        <item>Nougat</item>
+        <item>Oreo</item>
+        <item>Pie</item>
+        <item>Q</item>
+    </string-array>
+    <string-array name="versiones">
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.5</item>
+        <item>1.6</item>
+        <item>2.0</item>
+        <item>2.2</item>
+        <item>2.3</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>4.1</item>
+        <item>4.4</item>
+        <item>5.0</item>
+        <item>6.0</item>
+        <item>7.0</item>
+        <item>8.0</item>
+        <item>9.0</item>
+        <item>10.0</item>
+    </string-array>
+    <integer-array name="apis">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>9</item>
+        <item>11</item>
+        <item>14</item>
+        <item>16</item>
+        <item>19</item>
+        <item>21</item>
+        <item>23</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>29</item>
+    </integer-array>
+    <integer-array name="periodos">
+        <item>2008</item>
+        <item>2009</item>
+        <item>2009</item>
+        <item>2009</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </integer-array>
+    <array name="drawableIds">
+        <item>@drawable/applepie</item>
+        <item>@drawable/bananabread</item>
+        <item>@drawable/cupcake</item>
+        <item>@drawable/donut</item>
+        <item>@drawable/eclair</item>
+        <item>@drawable/froyo</item>
+        <item>@drawable/gingerbread</item>
+        <item>@drawable/honeycomb</item>
+        <item>@drawable/icecreamsandwich</item>
+        <item>@drawable/jellybean</item>
+        <item>@drawable/kitkat</item>
+        <item>@drawable/lolipop</item>
+        <item>@drawable/marshmallow</item>
+        <item>@drawable/nougat</item>
+        <item>@drawable/oreo</item>
+        <item>@drawable/pie</item>
+        <item>@drawable/q</item>
+    </array>
+</resources>

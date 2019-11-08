@@ -39,4 +39,8 @@ Public Class Form1
     Private Sub BtnTablas_Click(sender As Object, e As EventArgs) Handles btnTablas.Click
         DataGridView1.DataSource = conexion.GetSchema("Tables")
     End Sub
+
+    Private Sub BtnColumnas_Click(sender As Object, e As EventArgs) Handles btnColumnas.Click
+        DataGridView1.DataSource = conexion.GetSchema("Columns")
+    End Sub
 End Class

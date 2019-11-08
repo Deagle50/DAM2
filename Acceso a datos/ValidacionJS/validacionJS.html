@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de Validación</title>
+    <script>
+    
+    function validateFormOnSubmit(contact) {
+        reason = "";
+        reason += validateName(contact.name);
+        reason += validateNickname(contact.nickname);
+        reason += validateEmail(contact.email);
+        reason += validatePhone(contact.phone);
+        reason += validatePet(contact.pet);
+        reason += validateNumber(contact.favouritenumber);
+        reason += validateDisclaimer(contact.disclaimer);
+        console.log(reason);
+        if (reason.length > 0) {
+            return false;
+        } else {
+            alert('Enviando formulario...');
+            return true; // cambiar a true para producción
+        }
+    }
+    // validate required fields
+    function validateName(name) {
+        var error = "";
+        if (name.value.length == 0) {
+            name.style.background = 'Red';
+            document.getElementById('name-error').innerHTML = "The required field has not been filled in";
+            var error = "1";
+        } else {
+            name.style.background = 'White';
+            document.getElementById('name-error').innerHTML = '';
+        }
+        return error;
+    }
+    // validate email as required field and format
+    function trim(s) {
+        return s.replace(/^\s+|\s+$/, '');
+    }
+    function validateEmail(email) {
+        var error = "";
+        var temail = trim(email.value); // value of field with whitespace trimmed off
+        var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
+        var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
+        if (email.value == "") {
+            email.style.background = 'Red';
+            document.getElementById('email-error').innerHTML = "Please enter an email address.";
+            var error = "2";
+        } else if (!emailFilter.test(temail)) { //test email for illegal characters
+            email.style.background = 'Red';
+            document.getElementById('email-error').innerHTML = "Please enter a valid email address.";
+            var error = "3";
+        } else if (email.value.match(illegalChars)) {
+            email.style.background = 'Red';
+            var error = "4";
+            document.getElementById('email-error').innerHTML = "Email contains invalid characters.";
+        } else {
+            email.style.background = 'White';
+            document.getElementById('email-error').innerHTML = '';
+        }
+        return error;
+    }
+    // validate phone for required and format
+    function validatePhone(phone) {
+        var error = "";
+        var stripped = phone.value.replace(/[\(\)\.\-\ ]/g, '');
+        if (phone.value == "") {
+            document.getElementById('phone-error').innerHTML = "Please enter a phone number";
+            phone.style.background = 'Red';
+            var error = '6';
+        } else if (isNaN(parseInt(stripped))) {
+            var error = "5";
+            document.getElementById('phone-error').innerHTML = "The phone number contains illegal characters.";
+            phone.style.background = 'Red';
+        } else if (stripped.length < 10) {
+            var error = "6";
+            document.getElementById('phone-error').innerHTML = "The phone number is too short.";
+            phone.style.background = 'Red';
+        } else {
+            phone.style.background = 'White';
+            document.getElementById('phone-error').innerHTML = '';
+        }
+        return error;
+    }
+    function validatePet(pet) {
+        if ((contact.pet[0].checked == false) && (contact.pet[1].checked == false) && (contact.pet[2].checked == false)) {
+            document.getElementById('pet-error').innerHTML = "Pet required";
+            var error = "2";
+        } else {
+            document.getElementById('pet-error').innerHTML = '';
+        }
+        return error;
+    }
+    function validateNumber(favoritenumber) {
+        // Actividad 1: Validar que el número es un número y es entre 0 y 50
+        var error="";
+        if(favoritenumber.value<0||favoritenumber.value>50)
+        {
+            error="7";
+            document.getElementById('favouritenumber-error').innerHTML="Enter a number between 1 and 50";
+            favoritenumber.style.background = 'Red';
+        }
+        else if(favoritenumber.value=="")
+            {
+                error="8";
+                document.getElementById('favouritenumber-error').innerHTML="Enter a number";
+                favoritenumber.style.background = 'Red';
+            }
+        return error;
+    }
+    function validateDisclaimer(disclaimer) {
+        var error = "";
+        // Actividad 2: Validar que el disclaimer esta 'checked'
+        if(!contact.disclaimer.checked)
+        {
+            error = "8";
+            document.getElementById('disclaimer-error').innerHTML="Check the disclaimer";
+            
+        }
+        return error;
+    }
+    // Actividad 3: Validar que ha intrducido un NickName (apodo)
+    function validateNickname(nickname){
+        var error = "";
+        if(nickname.value==""){
+            error = "9";
+            document.getElementById('nickname-error').innerHTML="Enter a nickname";
+            document.getElementById('nickname').style.background = 'Red';
+        }
+        return error;
+    }
+    </script>
+</head>
+<body>
+    
+    <form id="contact" name="contact" onsubmit="return validateFormOnSubmit(this)" action="" method="post">
+        <div>
+            <label>First Name</label>
+            <input placeholder="First Name" type="text" name="name" id="name" tabindex="1" autofocus />
+            <div id="name-error" class="error"></div>
+        </div>
+        <div>
+            <label>Apodo</label>
+            <input placeholder="Nickname" type="text" name="nickname" id="nickname" tabindex="2" autofocus />
+            <div id="nickname-error" class="error"></div>
+        </div>
+        <div>
+            <label>Email</label>
+            <input placeholder="Email" type="email" name="email" id="email" tabindex="3" autofocus />
+            <div id="email-error" class="error"></div>
+        </div>
+        <div>
+            <label>Phone</label>
+            <input placeholder="Phone" type="tel" name="phone" id="phone" tabindex="4" autofocus />
+            <div id="phone-error" class="error"></div>
+        </div>
+        <div>
+            <label>Me gustan</label>
+            <input type="radio" name="pet" id="Dogs" tabindex="5" autofocus />los perros
+            <input type="radio" name="pet" id="Cats" tabindex="6" autofocus />los gatos
+            <input type="radio" name="pet" id="Neither" tabindex="7" autofocus />Ni perros ni gatos
+            <div id="pet-error" class="error"></div>
+        </div>
+        <div>
+            <label>Mi número favorito entre 1 y 50</label>
+            <input placeholder="Número favorito entre 1 y 50" type="text" name="favouritenumber" id="favouritenumber" tabindex="8" autofocus />
+            <div id="favouritenumber-error" class="error"></div>
+        </div>
+        <div>
+            <label>Disclaimer</label>
+            <input type="checkbox" name="disclaimer" id="disclaimer" tabindex="9" autofocus />I confirm that all the above information is true.
+            <div id="disclaimer-error" class="error"></div>
+        </div>
+        <div>
+            <button type="submit" name="submit" id="submit" tabindex="10">Send</button>
+        </div>
+    </form>
+
+</body>
+</html>

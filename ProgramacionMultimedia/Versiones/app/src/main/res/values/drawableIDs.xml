@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawableIds">
+        <item>@drawable/applepie</item>
+        <item>@drawable/bananabread</item>
+        <item>@drawable/cupcake</item>
+        <item>@drawable/donut</item>
+        <item>@drawable/eclair</item>
+        <item>@drawable/froyo</item>
+        <item>@drawable/gingerbread</item>
+        <item>@drawable/honeycomb</item>
+        <item>@drawable/icecreamsandwich</item>
+        <item>@drawable/jellybean</item>
+        <item>@drawable/kitkat</item>
+        <item>@drawable/lolipop</item>
+        <item>@drawable/marshmallow</item>
+        <item>@drawable/nougat</item>
+        <item>@drawable/oreo</item>
+        <item>@drawable/pie</item>
+        <item>@drawable/q</item>
+    </array>
+
+</resources>

@@ -26,6 +26,7 @@ Partial Class Form1
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnConnect = New System.Windows.Forms.Button()
         Me.btnTablas = New System.Windows.Forms.Button()
+        Me.btnColumnas = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,11 +70,21 @@ Partial Class Form1
         Me.btnTablas.Text = "Tablas"
         Me.btnTablas.UseVisualStyleBackColor = True
         '
+        'btnColumnas
+        '
+        Me.btnColumnas.Location = New System.Drawing.Point(713, 86)
+        Me.btnColumnas.Name = "btnColumnas"
+        Me.btnColumnas.Size = New System.Drawing.Size(75, 23)
+        Me.btnColumnas.TabIndex = 4
+        Me.btnColumnas.Text = "Columnas"
+        Me.btnColumnas.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnColumnas)
         Me.Controls.Add(Me.btnTablas)
         Me.Controls.Add(Me.btnConnect)
         Me.Controls.Add(Me.DataGridView1)
@@ -89,4 +100,5 @@ Partial Class Form1
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btnConnect As Button
     Friend WithEvents btnTablas As Button
+    Friend WithEvents btnColumnas As Button
 End Class
