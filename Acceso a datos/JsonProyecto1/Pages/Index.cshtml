@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+
+    div{
+        width:100%;
+        height: 80px;
+    }
+    .amarillo{
+        background-color:yellow;
+    }
+
+    .rojo{
+        background-color:red;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
+    QUIETOOOOOOOOOOOOORL</p>
+</div>
+    <div id="json" runat="server">
+        Aquí va el JSON
+        <button onclick="getJSON();">Get JSON</button>
+    </div>
+    <div class=bandera>
+        <div class="rojo"></div>
+        <div class="amarillo"><img src="~/escudo.png" height="250px" width="250px"></div>
+        
+        <div class="amarillo"></div>
+        <div class="rojo"></div>
+    </div>
+
+
+<script>
+    function getJSON(){
+    var sJSON='[{"transaction_hash":"2c230fa752edc2291e7b1d77deaaaaff907ef07f1d8f4fc879c77096e763b17f","block_hash":"000000000c1b45a6e5a24ac6d07d1bdd01e5f1bd0aefd04730d668e3928c24cc","block_number":"11426","spent_transaction_hash":"59714bebdb6c8db313d89f46ec050574d3e4d499b2375cb4dcb1cc14088f4588"},{"transaction_hash":"ea84d39ef6f7b3b23fbf899e11a9bb18478a19413579a69f3005359da7a62c49","block_hash":"000000000c159c03c39030710cf90dc1232f7e35ed918035337d6f10f5cf6edb","block_number":"11408","spent_transaction_hash":"000d50bc8ed090e7d07ac8a4807d3483c7df47661f3e1dc156593e2781645bfd"},{"transaction_hash":"6a679898780f5d99f0ffa12573b855e0dc470956406eb8b82690b688fa19200f","block_hash":"000000000c159c03c39030710cf90dc1232f7e35ed918035337d6f10f5cf6edb","block_number":"11408","spent_transaction_hash":"ed7eec75f884fbc0539178fb16b4101f6619ee875efca7cda4a2058268f88514"},{"transaction_hash":"ed7eec75f884fbc0539178fb16b4101f6619ee875efca7cda4a2058268f88514","block_hash":"0000000077fbb868f19efc11aecdf26898f31858f18175316be235d1a241d11d","block_number":"11395","spent_transaction_hash":"11505f53822f372f1980464f1df6a6c3ca6e4fe699ad5c175e6a23c69d88532d"},{"transaction_hash":"ad511d71762f4123df227e2e048672c4df8cc2ac056ee37f52ff33085b2a2c47","block_hash":"000000004139fa1852584c5b9a941c0a3c73aacfaa4eff853f11af64f2f7ed93","block_number":"10792","spent_transaction_hash":"1e3c85f59802e3907a254766fd466e308888bf3fcaa0723a9599b8ff41028503"},{"transaction_hash":"71223e409c08a302ca8c0ecbc507650d51c4df68cd11bebb127dfe8fd6c66350","block_hash":"000000005317e8f92a86514392e5e23427c67606010ab8eb1b9d058e4a4024c4","block_number":"11769","spent_transaction_hash":"008cbd902bd1f55ea45594b7046ea01ebc93069ecb97bdf758ba35351ce6541e"},{"transaction_hash":"7153d47e65e432f132110695152add3fd22c9d42940ec524102562b9caa14201","block_hash":"0000000044eb622c81e54c970fe39e1b578cf2d81e9d059397b62aa05dce1d91","block_number":"10725","spent_transaction_hash":"00eff263871e6d44abed66d90abb10d5a211441668511dba3146e380360efe4b"},{"transaction_hash":"7153d47e65e432f132110695152add3fd22c9d42940ec524102562b9caa14201","block_hash":"0000000044eb622c81e54c970fe39e1b578cf2d81e9d059397b62aa05dce1d91","block_number":"10725","spent_transaction_hash":"1159caa72f2eb97637dbd3c4e600eb3d408a5db0a64b2a80cd31b29c49f1ccbf"},{"transaction_hash":"146fbdc9a5bf4800b83d1e0b7022d6e554f93143f10f09600b4e55f879d472bd","block_hash":"000000005f65e257463e644ea951e4146200de16272557610e806b79d8aef60f","block_number":"9962","spent_transaction_hash":"fff8a9ffacadeb420c4ff9ef9e8f3f767622631cdf9507634e6cd1e885b0adb1"},{"transaction_hash":"146fbdc9a5bf4800b83d1e0b7022d6e554f93143f10f09600b4e55f879d472bd","block_hash":"000000005f65e257463e644ea951e4146200de16272557610e806b79d8aef60f","block_number":"9962","spent_transaction_hash":"726d3367d6ae6e54dba85256d56ece082d70c4ccb3c1d992389d45c3589383c3"}]';
+    var block=JSON.parse(sJSON);
+    var div = document.getElementById("json");
+    div.innerHTML=block[0].transaction_hash;
+    console.log(block);
+    
+    }
+</script>

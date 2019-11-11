@@ -1,13 +1,12 @@
 package com.example.repaso1;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Alumno {
     private int nExpediente;//representa el número de cuenta.
     private String Nombre;
     private String Apellido;
-    private ArrayList<Falta> Faltas;
+    private ArrayList<Falta> Faltas=new ArrayList<Falta>();
 
     public Alumno(int ne,String nom, String ape)
     {this.Nombre=nom;
@@ -29,36 +28,32 @@ public class Alumno {
 
     public void registrarFalta(int dia, int mes)
     {
-        Falta a = new Falta(dia,mes);
-        boolean existe = false;
 
-        for (int i = 0; i < Faltas.size(); i++) {
-            if(Faltas.get(i).dia == dia && Faltas.get(i).mes == mes){
-                existe = true;
-                break;
+        for(Falta f:Faltas)
+            if(f.getDia()==dia&&f.getMes()==mes)
+            {
+                return;
             }
-        }
-
-        if(!existe){
-            Faltas.add(a);
-        }
+            Faltas.add(new Falta(dia, mes));
     }
-    public ArrayList<ContadorFalta> getFaltas()//Devuelve el array
+
+    public ArrayList<ContadorFalta> getFaltas()
     {
-        ArrayList<ContadorFalta> ContadorFaltas = new ArrayList<>();
+        ArrayList<ContadorFalta> resultado = new ArrayList<ContadorFalta>();
+        int []contaux=new int[12];
 
-        ContadorFalta a = new ContadorFalta(0,0);
-
-        for (int i = 1; i < 13; i++) {
-            a.mes = i;
-            for (int j = 0; j < Faltas.size(); j++) {
-                if (Faltas.get(j).mes == i){
-                    a.contador ++;
-                }
-            }
-            ContadorFaltas.add(a);
+        for(Falta f:Faltas)
+        {
+            //Suma uno en el número del mes
+            contaux[f.getMes()-1]++;
         }
-        return ContadorFaltas;
+
+        for(int i=0;i<contaux.length;i++)
+        {
+            resultado.add(new ContadorFalta(i+1, contaux[i]));
+        }
+        return resultado;
+
     }
 
 }

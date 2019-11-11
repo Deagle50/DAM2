@@ -47,9 +47,8 @@ public class Vendedor {
 
     public ArrayList<AcumuladoVentas> getVentas() {
         ArrayList<AcumuladoVentas> array = new ArrayList</*AcumuladoVentas*/>();
-
-
         float suma = 0;
+
         for (int i = 1; i < 12; i++) {
             AcumuladoVentas sumaventas = new AcumuladoVentas(0,0);
             sumaventas.mes=i;

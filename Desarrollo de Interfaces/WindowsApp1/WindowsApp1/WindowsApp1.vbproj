@@ -79,6 +79,12 @@
     <Compile Include="Altas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Baja.Designer.vb">
+      <DependentUpon>Baja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Baja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -105,6 +112,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Altas.resx">
       <DependentUpon>Altas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baja.resx">
+      <DependentUpon>Baja.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

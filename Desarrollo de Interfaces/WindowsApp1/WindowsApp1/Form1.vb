@@ -20,7 +20,7 @@ Public Class Form1
     '    dr.Close()
     '    cn.Close()
     'End Sub
-
+    Public p1, p2 As SqlParameter
     Private Sub LLenarLista(dr As SqlDataReader)
         ListView1.Items.Clear()
         Dim it As ListViewItem
@@ -38,9 +38,9 @@ Public Class Form1
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim cn As SqlConnection = New SqlConnection(cadena)
         Dim consulta As New SqlCommand
-        Dim p1, p2 As SqlParameter
-        Dim dr As SqlDataReader
 
+        Dim dr As SqlDataReader
+        'Texto de consulta
         consulta.CommandText = "SELECT IdMensaje, Fecha, Mensaje  FROM Foro.Usuarios LEFT JOIN Foro.Mensajes On Foro.Mensajes.idusuario=Foro.Usuarios.idUsuario WHERE palabrapaso=@pw AND Foro.Usuarios.idUsuario=@us"
 
         p1 = New SqlParameter()
@@ -61,6 +61,7 @@ Public Class Form1
 
         dr = consulta.ExecuteReader()
         If dr.Read Then
+            IdActual = txtUsuario.Text
             If Not IsDBNull(dr("idMensaje")) Then
                 LLenarLista(dr)
             End If
@@ -75,5 +76,10 @@ Public Class Form1
         Dim F As New Altas
         F.Show()
 
+    End Sub
+
+    Private Sub BajasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BajasToolStripMenuItem.Click
+        Dim F As New Baja
+        F.Show
     End Sub
 End Class

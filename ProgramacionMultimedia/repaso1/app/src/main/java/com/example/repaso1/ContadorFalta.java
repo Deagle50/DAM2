@@ -16,5 +16,5 @@ public class ContadorFalta {
     {
         return contador;
     }
-
 }
+

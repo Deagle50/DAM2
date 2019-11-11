@@ -34,8 +34,9 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MensajeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MensajeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BajasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -125,10 +126,16 @@ Partial Class Form1
         '
         'UsuariosToolStripMenuItem
         '
-        Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltasToolStripMenuItem})
+        Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltasToolStripMenuItem, Me.BajasToolStripMenuItem})
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
         Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
+        '
+        'AltasToolStripMenuItem
+        '
+        Me.AltasToolStripMenuItem.Name = "AltasToolStripMenuItem"
+        Me.AltasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AltasToolStripMenuItem.Text = "Altas"
         '
         'MensajeToolStripMenuItem
         '
@@ -136,11 +143,11 @@ Partial Class Form1
         Me.MensajeToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
         Me.MensajeToolStripMenuItem.Text = "Mensaje"
         '
-        'AltasToolStripMenuItem
+        'BajasToolStripMenuItem
         '
-        Me.AltasToolStripMenuItem.Name = "AltasToolStripMenuItem"
-        Me.AltasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.AltasToolStripMenuItem.Text = "Altas"
+        Me.BajasToolStripMenuItem.Name = "BajasToolStripMenuItem"
+        Me.BajasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BajasToolStripMenuItem.Text = "Bajas"
         '
         'Form1
         '
@@ -179,4 +186,5 @@ Partial Class Form1
     Friend WithEvents UsuariosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MensajeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AltasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BajasToolStripMenuItem As ToolStripMenuItem
 End Class

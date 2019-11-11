@@ -23,3 +23,4 @@ D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WindowsApp1\WindowsApp1\o
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Baja.resources
