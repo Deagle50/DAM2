@@ -15,9 +15,6 @@ implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nuevo);
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         txtNombre = findViewById(R.id.txtNombre);
         txtApellido = findViewById(R.id.txtApellido);
         txtNexp = findViewById(R.id.txtNexp);
@@ -32,12 +29,17 @@ implements View.OnClickListener {
         @Override
         public void onClick(View v) {
             if (v==btnNuevo)
-            {
-
+            {   int ne=Integer.parseInt(txtNexp.getText().toString());
+                MainActivity.AlumnoActual=new Alumno(ne,txtNombre.getText().toString(),
+                                                    txtApellido.getText().toString());
             }
             else
-            {
+            {   int d,m;
+                d=Integer.parseInt(txtDia.getText().toString());
+                m=Integer.parseInt(txtMes.getText().toString());
 
+                Falta f=new Falta(d,m);
+                MainActivity.AlumnoActual.registrarFalta(d,m);
             }
         }
     }

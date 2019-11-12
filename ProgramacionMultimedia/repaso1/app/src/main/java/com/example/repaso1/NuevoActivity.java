@@ -15,18 +15,34 @@ public class NuevoActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nuevo);
         txtNombre=findViewById(R.id.txtNombre);
+        txtApellido=findViewById(R.id.txtApellido);
         txtNExpediente=findViewById(R.id.txtNExpediente);
+
         txtDia=findViewById(R.id.txtDia);
         txtMes=findViewById(R.id.txtMes);
-        txtApellido=findViewById(R.id.txtApellido);
+
         btnNuevo=findViewById(R.id.btnNuevo);
-        btnRegistrar=findViewById(R.id.btnRegistrar);
         btnNuevo.setOnClickListener(this);
+        btnRegistrar=findViewById(R.id.btnRegistrar);
         btnRegistrar.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+        if(v==btnNuevo)
+        {
+            int ne = Integer.parseInt(txtNExpediente.getText().toString());
+            MainActivity.AlumnoActual= new Alumno(ne, txtNombre.getText().toString(),
+                    txtApellido.getText().toString());
 
+        }
+        else
+        {
+            int d = Integer.parseInt(txtDia.getText().toString());
+            int m = Integer.parseInt(txtMes.getText().toString());
+            Falta f = new Falta(d, m);
+            MainActivity.AlumnoActual.registrarFalta(d, m);
+
+        }
     }
 }

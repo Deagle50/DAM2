@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\obj\Debug\MensajesHijo.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\obj\Debug\MensajesHijo.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\bin\Debug\MensajesHijo.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\bin\Debug\MensajesHijo.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\bin\Debug\MensajesHijo.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\bin\Debug\Funciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\bin\Debug\Funciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\obj\Debug\MensajesHijo.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\obj\Debug\MensajesHijo.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\MensajesHijo\obj\Debug\MensajesHijo.pdb

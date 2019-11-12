@@ -1,0 +1,6 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\Funciones\obj\Debug\Funciones.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\Funciones\bin\Debug\Funciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\Funciones\bin\Debug\Funciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\Funciones\obj\Debug\Funciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\Funciones\obj\Debug\Funciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\Funciones\obj\Debug\Funciones.csprojAssemblyReference.cache

@@ -14,14 +14,6 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     public static Alumno AlumnoActual;
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-    }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId()==R.id.menuAlumnos)
@@ -40,11 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.principal, menu);
-        return super.onCreateOptionsMenu(menu);
+        return true;
     }
 
-/*    @Override
-    public void onClick(View v) {
-        if(v==btnNuevo)
-    }*/
 }

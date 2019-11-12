@@ -30,11 +30,12 @@ public class Alumno {
     {
 
         for(Falta f:Faltas)
-            if(f.getDia()==dia&&f.getMes()==mes)
-            {
+        {
+            if (f.getDia() == dia && f.getMes() == mes) {
                 return;
             }
-            Faltas.add(new Falta(dia, mes));
+        }
+        Faltas.add(new Falta(dia, mes));
     }
 
     public ArrayList<ContadorFalta> getFaltas()

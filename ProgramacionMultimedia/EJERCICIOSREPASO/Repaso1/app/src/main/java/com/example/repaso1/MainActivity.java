@@ -14,11 +14,6 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     public static Alumno AlumnoActual;
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.principal,menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -35,5 +30,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
     }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.principal,menu);
+        return true;
+    }
 }

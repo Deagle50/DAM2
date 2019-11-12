@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ConsultarActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="151dp"
-        android:text="Consultar"
+    <ListView
+        android:id="@+id/LV"
+        android:layout_width="369dp"
+        android:layout_height="666dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

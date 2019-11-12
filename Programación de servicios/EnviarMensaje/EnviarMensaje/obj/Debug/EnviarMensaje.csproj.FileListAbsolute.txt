@@ -1,0 +1,13 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\bin\Debug\EnviarMensaje.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\bin\Debug\EnviarMensaje.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\bin\Debug\EnviarMensaje.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\bin\Debug\Funciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\bin\Debug\Funciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EnviarMensaje\EnviarMensaje\obj\Debug\EnviarMensaje.pdb
