@@ -20,9 +20,11 @@ public class Fragment2 extends Fragment implements View.OnClickListener {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
     this.container=container;
-        ConstraintLayout layout=(ConstraintLayout) inflater.inflate(R.layout.layout_fragment2,container,false);
+        ConstraintLayout layout=(ConstraintLayout) inflater.inflate(R.layout.layout_fragment2,
+                container,false);
         ImageView img=layout.findViewById(R.id.imageView);
         img.setImageDrawable(getResources().getDrawable(R.drawable.bocadillo,null));
         img.setOnClickListener(this);

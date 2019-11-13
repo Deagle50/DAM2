@@ -41,6 +41,7 @@ public class FaltasAdapter extends ArrayAdapter {
         return v;
     }
 
+    //¿Se usa?
     @Override
     public int getCount() {
         return lista.size();

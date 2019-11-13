@@ -3,32 +3,19 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-<style>
-
-    div{
-        width:100%;
-        height: 80px;
-    }
-    .amarillo{
-        background-color:yellow;
-    }
-
-    .rojo{
-        background-color:red;
-    }
-</style>
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
-    QUIETOOOOOOOOOOOOORL</p>
-</div>
-    <br/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Document</title>
+</head>
 <div id="data" runat="server">
-    Aquí va el JSON
-    <button onclick="getDatos();">Get JSON</button>
+    
+   
 </div>
-<div id="data1" runat="server">
+
+ <button onclick="getDatos();">Get JSON</button>
+<div id="data1">
 
 </div>
 <div id="data2" runat="server">
@@ -37,36 +24,23 @@
 <div id="data3" runat="server">
     
 </div>
-    <!-- <div class=bandera>
-        <div class="rojo"></div>
-        <div class="amarillo"><img src="~/escudo.png" height="250px" width="250px"></div>
-        
-        <div class="amarillo"></div>
-        <div class="rojo"></div>
-    </div> -->
-
 
 <script>
     function getDatos(){        
-        var xmlhttp = new XMLHttpRequest();
-        var data = document.getElementById("data");        
-        var divs = ["data1", "data2", "data3"];
-        var camiseta;
-        var Datos;
+        var xmlhttp = new XMLHttpRequest();        
 
         xmlhttp.onreadystatechange = function(){
             if(this.readyState == 4 && this.status == 200)   
-            {                         
-                camiseta = this.responseText;
-                Datos = JSON.parse(camiseta);
-
-                for(var i=0;i<3;i++)
-                {
-                    document.getElementById(divs[i]).innerHTML = Datos[i].nombre +  Datos[i].color + Datos[i].precio;                    
-                }
+            {   
+                    document.getElementById("data").innerHTML = this.responseText;
             }
-        xmlhttp.open("GET", "data/productos.json", true);
+        };
+
+
+        xmlhttp.open("GET", "https://api.exchangeratesapi.io/latest", true);
         xmlhttp.send();
-        }
+       
+
+        
     }
 </script>

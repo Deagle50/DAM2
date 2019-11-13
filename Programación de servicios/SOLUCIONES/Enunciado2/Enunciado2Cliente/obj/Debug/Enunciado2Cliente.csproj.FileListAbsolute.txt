@@ -1,0 +1,7 @@
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\bin\Debug\Enunciado2Cliente.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\bin\Debug\Enunciado2Cliente.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\bin\Debug\Enunciado2Cliente.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\obj\Debug\Enunciado2Cliente.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\obj\Debug\Enunciado2Cliente.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\obj\Debug\Enunciado2Cliente.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Enunciado2\Enunciado2Cliente\obj\Debug\Enunciado2Cliente.pdb

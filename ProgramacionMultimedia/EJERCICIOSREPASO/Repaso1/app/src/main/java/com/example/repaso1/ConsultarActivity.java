@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 public class ConsultarActivity extends AppCompatActivity {
+
     ListView lv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +15,5 @@ public class ConsultarActivity extends AppCompatActivity {
         lv=findViewById(R.id.lvLista);
         FaltasAdapter fa=new FaltasAdapter(this,R.layout.linealayout   ,MainActivity.AlumnoActual.getFaltas());
         lv.setAdapter(fa);
-
     }
 }
