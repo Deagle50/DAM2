@@ -1,0 +1,7 @@
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\bin\Debug\hijo.exe.config
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\bin\Debug\hijo.exe
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\bin\Debug\hijo.pdb
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\obj\Debug\hijo.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\obj\Debug\hijo.exe
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\obj\Debug\hijo.pdb
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\hijo\obj\Debug\hijo.csprojAssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\bin\Debug\ExamenProcesosUrkoUrbieta13-11-2019.exe.config
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\bin\Debug\ExamenProcesosUrkoUrbieta13-11-2019.exe
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\bin\Debug\ExamenProcesosUrkoUrbieta13-11-2019.pdb
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\obj\Debug\ExamenProcesosUrkoUrbieta13-11-2019.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\obj\Debug\ExamenProcesosUrkoUrbieta13-11-2019.exe
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\obj\Debug\ExamenProcesosUrkoUrbieta13-11-2019.pdb
+C:\Users\urkourbieta\Desktop\ExamenProcesosUrkoUrbieta13-11-2019\ExamenProcesosUrkoUrbieta13-11-2019\obj\Debug\ExamenProcesosUrkoUrbieta13-11-2019.csprojAssemblyReference.cache
