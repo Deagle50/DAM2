@@ -78,8 +78,18 @@ Public Class Form1
 
     End Sub
 
+    Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
+        Dim F As New Modificar
+        F.Show()
+    End Sub
+
+    Private Sub NuevoMensajeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoMensajeToolStripMenuItem.Click
+        Dim F As New nuevoMensaje
+        F.Show()
+    End Sub
+
     Private Sub BajasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BajasToolStripMenuItem.Click
         Dim F As New Baja
-        F.Show
+        F.Show()
     End Sub
 End Class

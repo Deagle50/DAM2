@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnEnviar" onclick="getData();"></button>    
+    <div id="data"></div>
+
+    <script type="text/javascript">
+        function getData(){
+            var xmlhttp = new XMLHttpRequest();        
+        var datos, datos2;
+        datos2="3";
+        alert(datos2);
+        xmlhttp.onreadystatechange = function(){
+            
+            if (this.readyState == 4 && this.status == 200)   
+            {
+                datos = this.responseText;
+                datos2 = JSON.parse(datos);
+                alert(datos2);
+                document.getElementById('data').innerHTML = datos2.rates;
+            }
+        };
+
+        xmlhttp.open("GET", "datos.json", true);
+        xmlhttp.send();
+        }
+    </script>
+</body>
+
+</html>

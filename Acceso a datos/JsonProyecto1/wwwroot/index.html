@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Document</title>
+    <style>
+        #main{
+            width:70%;
+            margin:7% 15% 5% 15%;
+            background-color:slategray;
+            padding:2%;
+            border-radius:5px;
+            height:max-content;
+        }
+
+        .btn{
+            padding:5px;
+            border-radius:3px;
+            border:none;
+        }
+
+        #btnMostrarDatos, #btnOcultarDatos{
+            visibility: hidden;
+        }
+
+        
+
+        .names{
+            
+            width:15%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <button id="btnMostrarEmpleados" class="btn" onclick="getEmpleados();" style="margin-bottom:10px;">Mostrar empleados</button>
+        <button id="btnMostrarDatos" class="btn" onclick="getDatos();">Mostrar datos de empleados</button>
+        <button id="btnOcultarDatos" class="btn" onclick="hideDatos();">Ocultar trabajadores</button>
+        <br/>
+        
+        
+        <div id="data" style="width:100%;padding-right:10px;display:inline-block;">
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    var datos;
+    var datos2;
+    var ensenar = true;
+    
+
+        function getEmpleados(){
+            var xmlhttp = new XMLHttpRequest();        
+            hideButtons();
+            hideDatos();
+            xmlhttp.onreadystatechange = function(){                
+                datos = this.responseText;
+                datos2 = JSON.parse(datos);
+                
+                if (this.readyState == 4 && this.status == 200)   
+                {
+                    
+                    for(var i=0; i<5;i++)                    
+                    {
+                        mostrarEmpleado(datos2, i);
+                    }
+                        
+                        mostrarBtn("btnMostrarDatos");
+                        mostrarBtn("btnOcultarDatos");
+                    
+                    
+                }
+            };
+
+            xmlhttp.open("GET", "data/datos.json", true);
+            xmlhttp.send();
+        }
+
+        function mostrarEmpleado(datos2, i){            
+            document.getElementById('data').innerHTML += "<div id="+"div"+i+">"+"<input type='checkbox' id="+"cb"+i+"></checkbox>"+datos2[i].nombre +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                                                              + datos2[i].apellido + "</div>";
+        }
+
+        function mostrarBtn(btnid){
+            document.getElementById(btnid).style.visibility="visible";
+        }
+
+        function hideDatos(){
+            
+            document.getElementById("data").innerHTML="";
+            ensenar=true;
+            hideButtons();
+        }
+
+        function hideButtons(){
+            document.getElementById("btnMostrarDatos").style.visibility="hidden";
+            document.getElementById("btnOcultarDatos").style.visibility="hidden";
+        }
+
+        function getDatos(){
+            var tic=[];
+            
+            //alert("hola");
+            for(var i=0;i<5;i++)            
+                if(document.getElementById("cb"+i).checked==true)
+                    tic.push(1);
+                else
+                    tic.push(0);
+
+            for(var i = 0; i < 5; i++)
+                document.getElementById('data').innerHTML="";
+            for(var i = 0; i< 5; i++)
+                mostrarEmpleado(datos2, i);
+            for(var i=0;i<5;i++)
+            {
+                //alert(datos2[i].nombre);
+                //alert(tic[i]);
+                
+                
+                if(tic[i]==1)
+                {
+                document.getElementById('div'+i).innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;"+ datos2[i].fecha_de_nacimiento  +"&nbsp;&nbsp;&nbsp;&nbsp;"+datos2[i].ciudad + "<br>";
+                document.getElementById("cb"+i).checked=true;
+                }
+                
+                //document.getElementById('div'+i).innerHTML+="<br>";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
