@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getDatos();">MostrarDatos</button>
+    <div id="resultados">
+        <br/>
+    </div>
+
+    <script>
+
+        function getDatos(){
+            var xmlhttp = new XMLHttpRequest();        
+            
+            xmlhttp.onreadystatechange = function(){                
+                datos = this.responseText;
+                datos2 = JSON.parse(datos);
+                
+                if (this.readyState == 4 && this.status == 200)   
+                {
+                    
+                    for(var i=0; i<5;i++)  
+                    {                  
+                        document.getElementById('resultados').innerHTML += datos2[i].username+"<br>";
+                    }
+                    
+                }
+            };
+
+            xmlhttp.withCredentials=false;
+
+            xmlhttp.open("GET", "https://centroseim-4b7f.restdb.io/rest/usuarios", true);
+            xmlhttp.setRequestHeader("x-apikey", "5dd3a2c14658275ac9dc1bcf");
+            xmlhttp.setRequestHeader("content-type", "application/json");
+            xmlhttp.setRequestHeader("cache-control", "no-cache");
+            xmlhttp.send();
+
+        }
+    </script>
+</body>
+</html>

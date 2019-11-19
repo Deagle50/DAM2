@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\bin\Debug\Auricular.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\bin\Debug\Auricular.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\bin\Debug\Auricular.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\bin\Debug\LibreriaFunciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\bin\Debug\LibreriaFunciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\obj\Debug\Auricular.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\obj\Debug\Auricular.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\obj\Debug\Auricular.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\obj\Debug\Auricular.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Auricular\obj\Debug\Auricular.pdb

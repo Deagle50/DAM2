@@ -1,0 +1,13 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\bin\Debug\Pipería(ProyectoChat).exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\bin\Debug\Pipería(ProyectoChat).exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\bin\Debug\Pipería(ProyectoChat).pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\bin\Debug\LibreriaFunciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\bin\Debug\LibreriaFunciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería(ProyectoChat).csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería_ProyectoChat_.frmPrincipal.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería_ProyectoChat_.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería(ProyectoChat).csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería(ProyectoChat).csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería(ProyectoChat).csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería(ProyectoChat).exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Pipería(ProyectoChat)\obj\Debug\Pipería(ProyectoChat).pdb

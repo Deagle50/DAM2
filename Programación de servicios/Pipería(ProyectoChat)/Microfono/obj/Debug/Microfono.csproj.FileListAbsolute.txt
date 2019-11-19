@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\bin\Debug\Microfono.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\bin\Debug\Microfono.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\bin\Debug\Microfono.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\bin\Debug\LibreriaFunciones.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\bin\Debug\LibreriaFunciones.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\obj\Debug\Microfono.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\obj\Debug\Microfono.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\obj\Debug\Microfono.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\obj\Debug\Microfono.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Pipería(ProyectoChat)\Microfono\obj\Debug\Microfono.csprojAssemblyReference.cache

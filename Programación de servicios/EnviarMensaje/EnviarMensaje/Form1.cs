@@ -20,12 +20,12 @@ namespace EnviarMensaje
         StreamReader sr;
         Process p;
         ProcessStartInfo psi;
-        int WM_MENSAJE;
+        //int WM_MENSAJE;
 
         public Form1()
         {
             InitializeComponent();
-            WM_MENSAJE = Funciones.Funciones.RegisterWindowMessage("WM_MENSAJE");
+            //WM_MENSAJE = Funciones.Funciones.RegisterWindowMessage("WM_MENSAJE");
         }
 
         private void BtnIniciar_Click(object sender, EventArgs e)
@@ -36,16 +36,17 @@ namespace EnviarMensaje
             psi = new ProcessStartInfo();
 
             psi.FileName = "..\\..\\..\\MensajesHijo\\bin\\debug\\MensajesHijo.exe";
+            psi.CreateNoWindow=true;
             p.StartInfo = psi;
             p.Start();
 
             npss.WaitForConnection();
         }
-
+        /*
         protected override void WndProc(ref Message m)
         {
 
-            if (m.Msg == WM_MENSAJE)
+            /if (m.Msg == WM_MENSAJE)
             {
                 String pal = sr.ReadLine();
                 if (pal.ToLower().CompareTo("Fin")!=0)
@@ -62,6 +63,7 @@ namespace EnviarMensaje
             {
                 base.WndProc(ref m);
             }
-        }
+
+        }*/
     }
 }

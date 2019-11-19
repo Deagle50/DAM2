@@ -63,6 +63,7 @@
             this.btnEnviar.TabIndex = 2;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.BtnEnviar_Click);
             // 
             // lblUltimo
             // 
@@ -98,6 +99,7 @@
             this.btnDesconectar.TabIndex = 6;
             this.btnDesconectar.Text = "Desconectar";
             this.btnDesconectar.UseVisualStyleBackColor = true;
+            this.btnDesconectar.Click += new System.EventHandler(this.BtnDesconectar_Click);
             // 
             // btnConectar
             // 
