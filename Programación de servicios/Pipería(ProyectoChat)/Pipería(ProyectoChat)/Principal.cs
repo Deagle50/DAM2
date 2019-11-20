@@ -15,32 +15,45 @@ namespace Pipería_ProyectoChat_
 {
     public partial class frmPrincipal : Form
     {
-        NamedPipeServerStream npss;
-        Process pauricular, pmicrofono;
-        ProcessStartInfo psiAuricular, psiMicrofono;
-        StreamReader sr;
+        NamedPipeServerStream npss;        
+        
         StreamWriter sw;
 
         public frmPrincipal()
         {
             InitializeComponent();
 
-            npss = new NamedPipeServerStream("server", PipeDirection.Out);
+            
             //sr = new StreamReader(npss);
             //sw = new StreamWriter(npss);
             btnConectar.Enabled = true;
             btnDesconectar.Enabled = false;
-            btnEnviar.Enabled = false;            
+            btnEnviar.Enabled = true;            
         }
 
         private void BtnEnviar_Click(object sender, EventArgs e)
         {
-            string texto;
-
-            sw = new StreamWriter(npss);            
-            texto = txtMensaje.Text.ToString();
-
+            npss = new NamedPipeServerStream("form", PipeDirection.Out);
+            Process.Start("..\\..\\..\\Microfono\\bin\\debug\\Microfono.exe");
+            npss.WaitForConnection();
+            sw = new StreamWriter(npss);
+            sw.AutoFlush = true;
+            string texto;                      
+            texto = txtMensaje.Text;
             sw.WriteLine(texto);
+        }
+
+        private void BtnConectar_Click(object sender, EventArgs e)
+        {   
+            npss = new NamedPipeServerStream("form2", PipeDirection.Out);
+
+            btnDesconectar.Enabled = true;
+            btnEnviar.Enabled = true;
+            btnConectar.Enabled = false;
+
+            Process.Start("..\\..\\..\\Auricular\\bin\\debug\\Auricular.exe");
+
+            npss.WaitForConnection();
         }
 
         private void BtnDesconectar_Click(object sender, EventArgs e)
@@ -51,35 +64,7 @@ namespace Pipería_ProyectoChat_
             btnDesconectar.Enabled = false;
             btnEnviar.Enabled = false;
 
-            pmicrofono.Kill();
-        }
-
-
-
-
-        private void BtnConectar_Click(object sender, EventArgs e)
-        {
-            btnDesconectar.Enabled = true;
-            btnEnviar.Enabled = true;
-            btnConectar.Enabled = false;
-            
-            pauricular = new Process();
-            pmicrofono = new Process();
-            psiMicrofono = new ProcessStartInfo();
-            psiAuricular = new ProcessStartInfo();
-
-            //npss.WaitForConnection();
-
-            psiAuricular.FileName = "..\\..\\..\\Auricular\\bin\\debug\\Auricular.exe";
-            psiMicrofono.FileName = "..\\..\\..\\Microfono\\bin\\debug\\Microfono.exe";
-            
-            pauricular.StartInfo = psiAuricular;
-            pmicrofono.StartInfo = psiMicrofono;
-
-            //pauricular.Start();
-            pmicrofono.Start();
-
-            
+            //pmicrofono.Kill();
         }
     }
 }

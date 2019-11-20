@@ -13,27 +13,32 @@ namespace Microfono
     {
         static void Main(string[] args)
         {
-            NamedPipeClientStream npcs;
+            
             NamedPipeServerStream npssm;
+            NamedPipeClientStream npcs;
             StreamReader sr;
             StreamWriter sw;
-            //Recoger mensaje del servidor
-            npcs = new NamedPipeClientStream(".", "server", PipeDirection.InOut);
-            sr = new StreamReader(npcs);
             string mensaje;
-            npcs.Connect();
-            do
-            {
-                mensaje = sr.ReadLine();
-                Console.WriteLine(mensaje);
-                Console.ReadLine();
+            //Recoger mensaje del servidor
+            npcs= new NamedPipeClientStream(".", "form", PipeDirection.In);
+            sr = new StreamReader(npcs);
 
+            npcs.Connect();
+
+            mensaje = sr.ReadLine();
+
+            Console.WriteLine("Conectado");            
+            Console.WriteLine(mensaje);
+            Console.ReadLine();
+
+            npcs.Close();
+                
                 //Enviar mensaje al auricular del cliente
                 npssm = new NamedPipeServerStream("serverm", PipeDirection.Out);
                 npssm.WaitForConnection();
                 sw = new StreamWriter(npssm);
                 sw.WriteLine(mensaje);
-            } while (true);
+                
         }
     }
 }

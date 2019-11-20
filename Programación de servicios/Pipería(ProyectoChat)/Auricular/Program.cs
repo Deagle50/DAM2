@@ -16,13 +16,13 @@ namespace Auricular
             NamedPipeServerStream npssa;
             StreamReader sr;
             StreamWriter sw;
-            //Recoger mensaje del servidor
-            npcs = new NamedPipeClientStream(".", "serverexterno", PipeDirection.In);
-            sr = new StreamReader(npcs);
             string mensaje;
+            //Recoger mensaje del servidor
+            npcs = new NamedPipeClientStream(".", "form2", PipeDirection.In);
+            sr = new StreamReader(npcs);
+            
             npcs.Connect();
-            do
-            {
+
                 mensaje = sr.ReadLine();
                 Console.WriteLine(mensaje);
                 Console.ReadLine();
@@ -32,7 +32,7 @@ namespace Auricular
                 npssa.WaitForConnection();
                 sw = new StreamWriter(npssa);
                 sw.WriteLine(mensaje);
-            } while (true);
+            
         }
     }
 }
