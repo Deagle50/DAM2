@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="execPromesa();"> Ejecutar </button>
+    <div id="resultados">
+
+    </div>
+
+    <script type="text/javascript">
+    var movil;
+    var err = new Error("F");
+    var estaContenta = true;
+        function execPromesa(){
+            var promesaMovil = new Promise(
+                function(resolve, reject){
+                    if(estaContenta==true)
+                    {
+                        movil={marca:"Chinomi", precio:200};
+                        resolve(movil);
+                    }
+                    else
+                        reject(err);
+                }
+            );
+
+        //Consumir promesa
+        var pedirMovil = function(){
+            promesaMovil
+            .then(function(fullfiled){
+                console.log(fullfiled);
+            })
+            .catch(function(reject){
+                console.log(reject)
+            });
+        }
+        
+        pedirMovil();
+
+        }
+    </script>
+</body>
+</html>

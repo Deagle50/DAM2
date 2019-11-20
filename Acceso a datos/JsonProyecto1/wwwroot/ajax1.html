@@ -7,29 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="getDatos();">Get JSON</button>
-    <div id="data" runat="server">
-        
     
+    <div id="data" runat="server">
+        <input type="number" id="valor">
+        <button onclick="getDatos();">Calcular</button>
+        <label id="resultado"></label>
     </div>
 
- <button onclick="getDatos();">Get JSON</button>
+ 
 
 
 <script>
     function getDatos(){        
         var xmlhttp = new XMLHttpRequest();        
         var datos, datos2;
-        datos2="3";
-        alert(datos2);
+        var valor;
+        var aud;
+        
         xmlhttp.onreadystatechange = function(){
             
             if (this.readyState == 4 && this.status == 200)   
             {
                 datos = this.responseText;
                 datos2 = JSON.parse(datos);
-                alert(datos2);
-                document.getElementById('data').innerHTML = datos2.rates;
+                console.log(datos2);
+                aud= datos2.rates.AUD;
+                //alert(aud);
+                valor=parseFloat(document.getElementById('valor').value);
+                valor=valor.toFixed(2);
+                //alert(valor);
+                document.getElementById('resultado').innerHTML = valor+" euros son " +valor*aud+" AUD.";
+                console.clear();
             }
         };
 

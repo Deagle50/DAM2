@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="palabras">
+        <item>Monitor</item>
+        <item>Apetecan</item>
+        <item>Subnormal</item>
+        <item>Espectacular</item>
+        <item>Stratocaster</item>
+        <item>Telecaster</item>
+    </string-array>
+</resources>
