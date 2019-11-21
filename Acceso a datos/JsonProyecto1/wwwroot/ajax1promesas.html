@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="data" runat="server">
+        <input type="number" id="valor">
+        <button onclick="getDatos();">Calcular</button>
+        
+        <label id="resultado"></label>
+    </div>
+    
+
+ 
+
+
+<script>
+    var usuario;
+    function getDatos(){        
+        fetch('https://centroseim-4b7f.restdb.io/rest/datos-propios  ', {
+            method: "GET",
+            withCredentials: true,
+            headers: {
+                /*"X-Auth-Token": "cfd466c6e6fdbdec04534c7216ff239af5b86",*/
+                "x-apikey": "5dd6776b4658275ac9dc1d14",
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => response.json())   
+        .then(function(json){
+            usuario=json[1].nombre;
+            document.getElementById('resultado').innerHTML=usuario;
+        })
+        
+        .catch(error=>console.log('Error', error));
+        
+   
+    }    
+
+    function deleteDatos(){
+    const jsonData=employees[i];
+    fetch("https://centroseim-4b7f.restdb.io/rest/datos-propios"+jsonData["nombre"],{
+      method:"DELETE",
+      headers: headers
+    }).then(response => response.json())
+    .catch(error => console.log('Error',error))
+    .then(function(response){
+      console.log('Success:', response);
+    });
+  }
+
+</script>  
+</body>
+</html>
+
+

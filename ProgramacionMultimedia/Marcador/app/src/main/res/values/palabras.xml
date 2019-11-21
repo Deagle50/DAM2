@@ -8,4 +8,12 @@
         <item>Stratocaster</item>
         <item>Telecaster</item>
     </string-array>
+    <string-array name="archivos">
+        <item>cabeza.png</item>
+        <item>brazon.png</item>
+        <item>brazon.png</item>
+        <item>cuerpo.png</item>
+        <item>patita.png</item>
+        <item>patita.png</item>
+    </string-array>
 </resources>

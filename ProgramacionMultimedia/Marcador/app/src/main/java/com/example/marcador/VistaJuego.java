@@ -9,6 +9,8 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Random;
@@ -21,6 +23,8 @@ public class VistaJuego extends View{
     public VistaJuego(Context context) {
         super(context);
         asm=getContext().getAssets();
+        m=new Marcador(asm);
+        m.startMarcador((AppCompatActivity)context);
     }
 
     @Override
