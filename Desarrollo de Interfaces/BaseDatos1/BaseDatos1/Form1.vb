@@ -17,7 +17,11 @@
         Dim dr As SqlDataReader
 
         'Texto de consulta
-        consulta.CommandText = "SELECT account_number, type, current_balance FROM users JOIN accounts on users.username = accounts.holder WHERE pass=@pw AND users.username=@us"
+        consulta.CommandText = "SELECT account_number, type, current_balance 
+                                FROM users 
+                                LEFT JOIN accounts on users.username = accounts.holder 
+                                WHERE pass=@pw AND users.username=@us"
+
         p1 = New SqlParameter()
         p1.ParameterName = "@pw"
         p1.Value = txtPassword.Text

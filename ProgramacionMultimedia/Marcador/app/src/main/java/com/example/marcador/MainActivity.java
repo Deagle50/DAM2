@@ -25,8 +25,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         vista = new VistaJuego(this);
         lv.addView(vista);
         palabras=getResources().getStringArray(R.array.palabras);
+
+        vista.nuevaPalabra(palabras);
+
         btnMostrar=findViewById(R.id.btnMostrar);
         btnMostrar.setOnClickListener(this);
+
         txtLetra=findViewById(R.id.txtLetra);
 
     }
@@ -41,7 +45,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId()==R.id.mnuNuevo)
         {
-
+            vista.nuevaPalabra(palabras);
+            //mandar función dibujar estado
         }
         else
             finish();
@@ -53,7 +58,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View v) {
         if(v==btnMostrar)
         {
-
+            vista.introducirLetra(txtLetra.getText().charAt(0));
         }
     }
 }

@@ -36,10 +36,14 @@ public class Marcador {
     }
 
     public void setSolucion(String solucion) {
+        String aux="";
         //Establecer solución e inicializar el estado
         this.solucion = solucion;
-        this.estado=getEstado();
 
+        for (int i = 0; i < solucion.length(); i++) {
+            aux+="_";
+        }
+        this.estado = aux;
     }
 
     public String getSolucion() {
@@ -47,15 +51,21 @@ public class Marcador {
     }
 
     public boolean comprobar(char c){
-        //Actulaliza el estado, buscando las ocurrencias del carácter c en la solución
+        boolean respuesta=false;
+        //Actualiza el estado, buscando las ocurrencias del carácter c en la solución
+
+
+        //devuelve true o false dependiendo de si hemos encontrado ocurrencias
         for (int i = 0; i < solucion.length(); i++)
         {
             if(solucion.charAt(i)==c)
-                return true;
+            {
+                respuesta=true;
+                StringBuilder sb = new StringBuilder(this.estado);
+                sb.insert(i,c);
+            }
         }
-
-        //devuelve true o false dependiendo de si hemos encontrado ocurrencias
-        return false;
+        return respuesta;
     }
 
     public void contarFallo()
@@ -86,7 +96,7 @@ public class Marcador {
         }
 
     private Rect getCoordenadasOrigen() {
-
+        Rect r = new Rect();
         //Hacer función
         return null;
     }

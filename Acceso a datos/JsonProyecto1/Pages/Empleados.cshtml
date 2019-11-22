@@ -1,0 +1,29 @@
+@page
+@model EmpleadosModel
+@{
+    ViewData["Title"] = "Página empleados";
+}
+
+<head>
+
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>@ViewData["Title"]           
+        </h1>
+    </div>
+    <div>@Model.IdEmpleado</div>
+    <div>@Model.Nombre</div>
+    <div>@Model.Apellido</div>
+    <div>@Model.Salario</div>
+
+    @foreach(ITempDataDictionary in @Model.empleados)
+    {
+        <tr><td>@item.Nombre</td></tr>
+    }
+    <script>
+
+    </script>
+</body>
