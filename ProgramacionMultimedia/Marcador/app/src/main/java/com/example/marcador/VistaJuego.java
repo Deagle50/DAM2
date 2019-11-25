@@ -32,7 +32,7 @@ public class VistaJuego extends View{
     {
         super.onDraw(canvas);
         dibujarPatibulo(canvas);
-
+        m.draw(canvas);
     }
 
     private void dibujarPatibulo(Canvas canvas)

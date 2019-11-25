@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         if(v==btnMostrar)
         {
             vista.introducirLetra(txtLetra.getText().charAt(0));
+
         }
     }
 }

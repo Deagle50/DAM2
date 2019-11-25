@@ -18,7 +18,16 @@ public class Marcador {
     private String solucion;
     private ArrayList<Character> letras;
     private String []archivos;
-    private int fallos;
+    private int fallos;    //Cabeza,brazoder,brazoiz,cuerpo,pieder,pieiz
+    private Rect []coordsX={
+            new Rect(600,175,700,275),
+            new Rect(550,280,600,380),
+            new Rect(600,280,750,380),
+            new Rect(600,280,700,380),
+            new Rect(600,390,650,490),
+            new Rect(655,390,705,490)
+            };
+    static int j;
     public AssetManager asm;
 
     //Constructor
@@ -76,20 +85,20 @@ public class Marcador {
 
     public void draw(Canvas canvas){
         //dibujar estado, dibujar marcador
-        draw(canvas);
+        //canvas.drawText(getEstado(), 10, 10, null);
         dibujarMarcador(canvas);
-
     }
 
     private void dibujarMarcador(Canvas canvas)
     {
+
         try {
-        for (int i = 0; i < fallos; i++) {
+        for (int i = 0; i < fallos&&j<coordsX.length; i++, j++) {
 
             InputStream is = asm.open(archivos[i]);
             Bitmap bmp = BitmapFactory.decodeStream(is);
             //Establecer coordenadas de los rectángulos
-            canvas.drawBitmap(bmp, getCoordenadasOrigen() , getCoordenadasDestino(),null);
+            canvas.drawBitmap(bmp, coordsX[j] , new Rect(420,0,1080,1080),null);
             }} catch (IOException e) {
                 e.printStackTrace();
             }
