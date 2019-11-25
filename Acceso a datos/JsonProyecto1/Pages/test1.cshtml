@@ -1,0 +1,60 @@
+@page
+@model Test1Model
+@{
+    ViewData["Title"] = "Página Test 1";
+}
+
+<head>
+    <style type="text/css">
+        input{
+            border-radius:5px;
+        }
+
+        div{
+            margin:2px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>@ViewData["Title"]           
+        </h1>        
+    </div>
+    <div class="main">
+        
+        <!-- <div id=divPost>
+            <form method="post">
+                Nombre: 
+                    <input type="text" asp-for="nombre"><br/>
+                Apellido:
+                    <input type="text" asp-for="apellido"><br/>
+                <input type="submit" id="btnPost" title="Submit"><br/>
+            </form>
+        </div> -->
+
+        <div>
+        <table>
+         @foreach (var persona in Model.empleados)
+         {
+             <tr>
+                 <td>
+                     @persona.nombre
+                 </td>
+                 <td>
+                     @persona.apellido
+                 </td>
+             </tr>
+         }
+         </table>
+        </div>
+
+    </div>
+    
+
+    <script>
+
+    </script>
+</body>

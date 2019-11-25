@@ -1,0 +1,12 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.Principal.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.pdb

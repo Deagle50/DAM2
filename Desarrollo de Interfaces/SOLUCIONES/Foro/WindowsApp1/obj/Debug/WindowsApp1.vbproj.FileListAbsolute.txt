@@ -1,0 +1,16 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.FrmAlta.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.FrmBaja.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.FrmModificar.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.FrmNuevoMensaje.resources

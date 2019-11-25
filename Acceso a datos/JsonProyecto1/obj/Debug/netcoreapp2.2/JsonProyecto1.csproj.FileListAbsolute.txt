@@ -29,3 +29,4 @@ D:\Urko Urbieta\Visual Studio\Acceso a datos\JsonProyecto1\obj\Debug\netcoreapp2
 D:\Urko Urbieta\Visual Studio\Acceso a datos\JsonProyecto1\obj\Debug\netcoreapp2.2\JsonProyecto1.pdb
 D:\Urko Urbieta\Visual Studio\Acceso a datos\JsonProyecto1\obj\Debug\netcoreapp2.2\JsonProyecto1.csproj.CopyComplete
 D:\Urko Urbieta\Visual Studio\Acceso a datos\JsonProyecto1\obj\Debug\netcoreapp2.2\Razor\Pages\Empleados.g.cshtml.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\JsonProyecto1\obj\Debug\netcoreapp2.2\Razor\Pages\test1.g.cshtml.cs
