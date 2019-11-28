@@ -32,11 +32,11 @@
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.lblUltimo = new System.Windows.Forms.Label();
-            this.lbMensajesRecibidos = new System.Windows.Forms.ListBox();
             this.lblMensajesRecibidos = new System.Windows.Forms.Label();
             this.btnDesconectar = new System.Windows.Forms.Button();
             this.btnConectar = new System.Windows.Forms.Button();
             this.txtUltimo = new System.Windows.Forms.TextBox();
+            this.lbxMensajesRecibidos = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lblMensaje
@@ -74,14 +74,6 @@
             this.lblUltimo.TabIndex = 3;
             this.lblUltimo.Text = "Último mensaje recibido";
             // 
-            // lbMensajesRecibidos
-            // 
-            this.lbMensajesRecibidos.FormattingEnabled = true;
-            this.lbMensajesRecibidos.Location = new System.Drawing.Point(15, 202);
-            this.lbMensajesRecibidos.Name = "lbMensajesRecibidos";
-            this.lbMensajesRecibidos.Size = new System.Drawing.Size(120, 95);
-            this.lbMensajesRecibidos.TabIndex = 4;
-            // 
             // lblMensajesRecibidos
             // 
             this.lblMensajesRecibidos.AutoSize = true;
@@ -118,16 +110,24 @@
             this.txtUltimo.Size = new System.Drawing.Size(100, 20);
             this.txtUltimo.TabIndex = 8;
             // 
+            // lbxMensajesRecibidos
+            // 
+            this.lbxMensajesRecibidos.FormattingEnabled = true;
+            this.lbxMensajesRecibidos.Location = new System.Drawing.Point(15, 202);
+            this.lbxMensajesRecibidos.Name = "lbxMensajesRecibidos";
+            this.lbxMensajesRecibidos.Size = new System.Drawing.Size(120, 95);
+            this.lbxMensajesRecibidos.TabIndex = 9;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbxMensajesRecibidos);
             this.Controls.Add(this.txtUltimo);
             this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.lblMensajesRecibidos);
-            this.Controls.Add(this.lbMensajesRecibidos);
             this.Controls.Add(this.lblUltimo);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensaje);
@@ -145,11 +145,11 @@
         private System.Windows.Forms.TextBox txtMensaje;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Label lblUltimo;
-        private System.Windows.Forms.ListBox lbMensajesRecibidos;
         private System.Windows.Forms.Label lblMensajesRecibidos;
         private System.Windows.Forms.Button btnDesconectar;
         private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.TextBox txtUltimo;
+        private System.Windows.Forms.ListBox lbxMensajesRecibidos;
     }
 }
 

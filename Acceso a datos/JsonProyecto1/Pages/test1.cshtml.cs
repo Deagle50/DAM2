@@ -8,24 +8,39 @@ using JsonProyecto1.Models;
 
 namespace JsonProyecto1.Pages
 {
-    public class Test1Model : PageModel
+    public class companyModel : PageModel
     {
 
-        public string Mensaje{get;set;}
-        // public string nombre{get;set;}
-        // public string apellido{get;set;}
-        public List<empleado> empleados {get;set;} 
+        public List<company> compania {get;set;} 
         public void OnGet()
         {
-            Mensaje = "getting";
-            empleados = new List<empleado>{
-                new empleado(){
-                    nombre="Jon",
-                    apellido="Smith"
+            compania = new List<company>{
+                new company(){
+                    name="compañia1",
+                    address="direccion1",
+                    description="descripcion1",
+                    type="tipo1",
+                    employees=14,
+                    contacts="contacto1",
+                    oportunities="oportunidad1"
                 },
-                new empleado(){
-                    nombre="Maria",
-                    apellido="Fernández"
+                new company(){
+                    name="compañia2",
+                    address="direccion2",
+                    description="descripcion2",
+                    type="tipo2",
+                    employees=435,
+                    contacts="contacto2",
+                    oportunities="oportunidad2"
+                },
+                new company(){
+                    name="compania3",
+                    address="dirección3",
+                    description="descripcion3",
+                    type="tipo3",
+                    employees=32479,
+                    contacts="contacto3",
+                    oportunities="oportunidad3",
                 }
             };
         }
@@ -36,6 +51,15 @@ namespace JsonProyecto1.Pages
         //     apellido = Request.Form["apellido"];*/
         //     Mensaje = "posting" + " " + nombre + " " + apellido;
         // }
+        // new company(){
+        //             name="",
+        //             address="",
+        //             description="",
+        //             type="",
+        //             employees=,
+        //             contacts="",
+        //             oportunities="",
+        //         }
     }
 
 }

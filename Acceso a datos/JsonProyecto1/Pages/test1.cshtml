@@ -1,17 +1,31 @@
 @page
-@model Test1Model
+@model companyModel
 @{
     ViewData["Title"] = "Página Test 1";
 }
 
 <head>
-    <style type="text/css">
-        input{
-            border-radius:5px;
-        }
 
+    <style type="text/css">
+
+        h1{
+            margin-top:3%;
+            margin-bottom:3%;
+        }
+        
         div{
             margin:2px;
+        }
+
+        th{
+            padding:6px 15px 6px 15px;
+            border: 3px solid lightgray;
+        }
+
+        td{
+            padding:3px 5px 3px 5px;
+            border: 3px solid lightgray;
+
         }
     </style>
 
@@ -20,9 +34,11 @@
 <body>
 
     <div class="head">
-        <h1>@ViewData["Title"]           
+        <h1>
+            @ViewData["Title"]           
         </h1>        
     </div>
+        <br/>
     <div class="main">
         
         <!-- <div id=divPost>
@@ -36,17 +52,67 @@
         </div> -->
 
         <div>
+
+        <select id="ddltipo" runat="server">
+            <option value="tipo1">Tipo1</option>
+            <option value="tipo2">Tipo2</option>
+            <option value="tipo3">Tipo3</option>
+        </select>
         <table>
-         @foreach (var persona in Model.empleados)
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Dirección
+                </th>
+                <th>
+                    Descripción
+                </th>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Empleados
+                </th>
+                <th>
+                    Contactos
+                </th>
+                <th>
+                    Oportunidades
+                </th>
+            </tr>
+         @foreach (var compania in Model.compania)
          {
+             
+             if(compania.type.Equals(ddltipo.Value))
+             {
              <tr>
                  <td>
-                     @persona.nombre
+                     @compania.name
                  </td>
                  <td>
-                     @persona.apellido
+                     <a href=@compania.address>
+                         @compania.address
+                     </a>
+                 </td>
+                 <td>
+                     @compania.description
+                 </td>
+                 <td>
+                     @compania.type
+                 </td>
+                 <td>
+                     @compania.employees
+                 </td>
+                 <td>
+                     @compania.contacts
+                 </td>
+                 <td>
+                     @compania.oportunities
                  </td>
              </tr>
+             }
          }
          </table>
         </div>

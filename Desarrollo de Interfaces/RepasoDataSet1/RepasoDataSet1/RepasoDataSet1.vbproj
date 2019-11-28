@@ -75,7 +75,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MantenimientoPedido.Designer.vb">
+      <DependentUpon>MantenimientoPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="modulo.vb" />
+    <Compile Include="Pedido.Designer.vb">
+      <DependentUpon>Pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +112,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MantenimientoPedido.resx">
+      <DependentUpon>MantenimientoPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido.resx">
+      <DependentUpon>Pedido.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.vb</DependentUpon>
     </EmbeddedResource>

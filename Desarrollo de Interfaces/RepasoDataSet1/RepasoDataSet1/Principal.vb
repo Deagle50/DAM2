@@ -1,21 +1,31 @@
 ﻿Public Class Principal
+
+    Dim r As DataRow
+    Dim tabla As DataTable = datast.Tables("pedidos")
     Private Sub NuevoPedidoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NuevoPedidoToolStripMenuItem.Click
-        Dim resp As New MsgBoxResult
-        Dim num As Integer
-        resp = MsgBox("¿Quieres añadir un nuevo pedido?", vbYesNo)
-        If resp = vbTrue Then
-            con.Open()
-            num = calcularUltimoID()
-            con.Close()
-        End If
-        MsgBox(num)
+        Pedido.Show()
+
     End Sub
 
-    Private Function calcularUltimoID() As Integer
+    Private Sub Principal_Load(sender As Object, e As EventArgs) Handles Me.Load
+        inicializarDataSet()
+    End Sub
+
+    Private Function calcularUltimoIDProducto() As Integer
         Dim consulta As New SqlCommand("SELECT MAX(id_producto) FROM productos")
 
-        consulta.Connection = con
 
-        Return consulta.ExecuteScalar
+        Dim id As Object
+        consulta.Connection = con
+        id = consulta.ExecuteScalar
+        If IsDBNull(id) Then
+            Return -1
+        Else
+            Return CInt(id + 1)
+        End If
     End Function
+
+    Private Sub MantenimientoProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MantenimientoProductosToolStripMenuItem.Click
+        MantenimientoPedido.Show()
+    End Sub
 End Class

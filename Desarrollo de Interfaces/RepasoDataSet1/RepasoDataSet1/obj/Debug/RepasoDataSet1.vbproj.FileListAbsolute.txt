@@ -10,3 +10,4 @@ D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoData
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.exe
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.xml
 D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.Pedido.resources

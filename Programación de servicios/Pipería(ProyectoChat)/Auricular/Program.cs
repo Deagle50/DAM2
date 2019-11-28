@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO.Pipes;
 using System.IO;
+using System.Diagnostics;
 
 namespace Auricular
 {
@@ -17,22 +18,42 @@ namespace Auricular
             StreamReader sr;
             StreamWriter sw;
             string mensaje;
-            //Recoger mensaje del servidor
-            npcs = new NamedPipeClientStream(".", "form2", PipeDirection.In);
-            sr = new StreamReader(npcs);
-            
-            npcs.Connect();
+
+            //npssa = new NamedPipeServerStream("servera", PipeDirection.In);
+            var ps = new PipeSecurity();
+            ps.AddAccessRule(new PipeAccessRule("urkourbieta", PipeAccessRights.ReadWrite, System.Security.AccessControl.AccessControlType.Allow));
+            ps.AddAccessRule(new PipeAccessRule("julenmartin", PipeAccessRights.ReadWrite, System.Security.AccessControl.AccessControlType.Allow));
+            npssa = new NamedPipeServerStream("servera", PipeDirection.In, 1, PipeTransmissionMode.Byte, PipeOptions.None, 512, 512, ps);
+            npssa.WaitForConnection();
+
+            Console.WriteLine("Conectado");
+            Console.ReadLine();
+            sr = new StreamReader(npssa);
+            /*
+            do
+            {
+                //Recoger mensaje del CLIENTE DE KULENTXO
+               
 
                 mensaje = sr.ReadLine();
-                Console.WriteLine(mensaje);
-                Console.ReadLine();
+                
 
-                //Enviar mensaje al auricular del cliente
-                npssa = new NamedPipeServerStream("servera", PipeDirection.Out);
-                npssa.WaitForConnection();
-                sw = new StreamWriter(npssa);
+                npssa.Close();
+                int WM_MENSAJE = LibreriaFunciones.Funciones.RegisterWindowMessage("Auricular");
+                Process p = Process.GetProcessesByName("Pipería_ProyectoChat_")[0];
+                IntPtr h = p.MainWindowHandle;
+
+                //Enviar mensaje a Formulario principal
+                npcs = new NamedPipeClientStream(".", "form2", PipeDirection.In);
+
+                npcs.Connect();
+                sw = new StreamWriter(npcs);
+                sw.AutoFlush = true;
+                LibreriaFunciones.Funciones.PostMessage(h, WM_MENSAJE, IntPtr.Zero, IntPtr.Zero);
                 sw.WriteLine(mensaje);
-            
+                npcs.Close();
+
+            } while (true);*/
         }
     }
 }

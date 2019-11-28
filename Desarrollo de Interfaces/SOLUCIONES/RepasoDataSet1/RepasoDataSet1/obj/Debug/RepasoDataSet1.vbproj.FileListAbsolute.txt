@@ -1,0 +1,14 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\bin\Debug\RepasoDataSet1.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.frmPedido.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\RepasoDataSet1\RepasoDataSet1\obj\Debug\RepasoDataSet1.frmMantenimiento.resources

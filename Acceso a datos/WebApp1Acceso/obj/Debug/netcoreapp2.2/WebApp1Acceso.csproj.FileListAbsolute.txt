@@ -1,0 +1,14 @@
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\bin\Debug\netcoreapp2.2\WebApp1Acceso.deps.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\bin\Debug\netcoreapp2.2\WebApp1Acceso.runtimeconfig.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\bin\Debug\netcoreapp2.2\WebApp1Acceso.runtimeconfig.dev.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\bin\Debug\netcoreapp2.2\WebApp1Acceso.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\bin\Debug\netcoreapp2.2\WebApp1Acceso.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.RazorAssemblyInfo.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.RazorAssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.AssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.RazorTargetAssemblyInfo.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WebApp1Acceso\obj\Debug\netcoreapp2.2\WebApp1Acceso.pdb

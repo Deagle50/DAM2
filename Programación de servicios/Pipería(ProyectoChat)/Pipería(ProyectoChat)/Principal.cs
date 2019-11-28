@@ -15,14 +15,16 @@ namespace Pipería_ProyectoChat_
 {
     public partial class frmPrincipal : Form
     {
-        NamedPipeServerStream npss;        
-        
+        NamedPipeServerStream npss;
+
+        StreamReader sr;
         StreamWriter sw;
+        int WM_MENSAJE;
 
         public frmPrincipal()
         {
             InitializeComponent();
-
+            WM_MENSAJE = LibreriaFunciones.Funciones.RegisterWindowMessage("Auricular");
             
             //sr = new StreamReader(npss);
             //sw = new StreamWriter(npss);
@@ -34,7 +36,7 @@ namespace Pipería_ProyectoChat_
         private void BtnEnviar_Click(object sender, EventArgs e)
         {
             npss = new NamedPipeServerStream("form", PipeDirection.Out);
-            Process.Start("..\\..\\..\\Microfono\\bin\\debug\\Microfono.exe");
+            
             npss.WaitForConnection();
             sw = new StreamWriter(npss);
             sw.AutoFlush = true;
@@ -45,13 +47,16 @@ namespace Pipería_ProyectoChat_
 
         private void BtnConectar_Click(object sender, EventArgs e)
         {   
-            npss = new NamedPipeServerStream("form2", PipeDirection.Out);
+            //Recibir mensaje de auricular
+            npss = new NamedPipeServerStream("form2", PipeDirection.In);
+            sr = new StreamReader(npss);
 
             btnDesconectar.Enabled = true;
             btnEnviar.Enabled = true;
             btnConectar.Enabled = false;
 
             Process.Start("..\\..\\..\\Auricular\\bin\\debug\\Auricular.exe");
+            Process.Start("..\\..\\..\\Microfono\\bin\\debug\\Microfono.exe");
 
             npss.WaitForConnection();
         }
@@ -65,6 +70,17 @@ namespace Pipería_ProyectoChat_
             btnEnviar.Enabled = false;
 
             //pmicrofono.Kill();
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == WM_MENSAJE)
+            {
+                String pal = sr.ReadLine();
+                lbxMensajesRecibidos.Items.Add(pal);
+            }
+            else
+                base.WndProc(ref m);
         }
     }
 }
