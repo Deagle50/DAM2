@@ -24,3 +24,16 @@ D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1C
 D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.pdb
 D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.xml
 D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\bin\Debug\ejer1Commands.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\bin\Debug\ejer1Commands.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\bin\Debug\ejer1Commands.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\bin\Debug\ejer1Commands.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.frmCuenta.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\SOLUCIONES\1.BaseDatos1\ejer1Commands\obj\Debug\ejer1Commands.pdb

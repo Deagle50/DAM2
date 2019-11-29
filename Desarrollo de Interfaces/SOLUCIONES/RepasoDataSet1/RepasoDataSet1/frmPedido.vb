@@ -9,6 +9,7 @@ Public Class frmPedido
         Dim fila As DataRow = ds.Tables("Pedidos").NewRow
         fila("Idpedido") = idPedido
         fila("fecha") = DateTime.Now
+
         txtIdPedido.Text = fila("IdPedido")
         txtFecha.Text = fila("Fecha")
         ds.Tables("Pedidos").Rows.Add(fila)
@@ -17,6 +18,7 @@ Public Class frmPedido
 
     Private Sub cmbProducto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbProducto.SelectedIndexChanged
         Dim r As DataRow
+        'Find busca por key, si fuera select se haría como un where
         r = ds.Tables("Productos").Rows.Find(CInt(cmbProducto.Text))
         txtPrecio.Text = r("Pvp")
     End Sub
@@ -36,14 +38,13 @@ Public Class frmPedido
         End If
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles txtTotalPVP.TextChanged
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim r As DataRow
+        'Nueva línea para añadir luego
         r = ds.Tables("LineasDetalle").NewRow
 
+        'Añadir los datos a la línea
         r.BeginEdit()
         r("IdDetalle") = CalCularIdDetalle()
         r("IdPedido") = CInt(txtIdPedido.Text)
@@ -51,8 +52,10 @@ Public Class frmPedido
         r("unidades") = CInt(txtUnidades.Text)
         r("TotalLinea") = CDbl(txtTotalLinea.Text)
         r.EndEdit()
+        'Añadir a la línea
         AgregarLista(r)
 
+        'Actualizar LineasDetalle
         ds.Tables("LineasDetalle").Rows.Add(r)
         daLineas.Update(ds, "LineasDetalle")
     End Sub

@@ -30,6 +30,7 @@
     End Sub
 
     Private Sub InicializarDA(da As SqlDataAdapter)
+        'Inicializar data adapter
         Dim cb As New SqlCommandBuilder(da)
         da.InsertCommand = cb.GetInsertCommand
         da.DeleteCommand = cb.GetDeleteCommand
@@ -37,6 +38,7 @@
     End Sub
 
     Private Sub CrearPk(nomtabla As String, nomcol As String)
+        'Crea las pk de cada tabla
         Dim pk(0) As DataColumn
         pk(0) = ds.Tables(nomtabla).Columns(nomcol)
         ds.Tables(nomtabla).PrimaryKey = pk

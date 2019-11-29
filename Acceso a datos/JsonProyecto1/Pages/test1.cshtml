@@ -53,11 +53,11 @@
 
         <div>
 
-        <select id="ddltipo" runat="server">
+        <!-- <select id="ddltipo" runat="server">
             <option value="tipo1">Tipo1</option>
             <option value="tipo2">Tipo2</option>
             <option value="tipo3">Tipo3</option>
-        </select>
+        </select> -->
         <table>
             <tr>
                 <th>
@@ -82,38 +82,7 @@
                     Oportunidades
                 </th>
             </tr>
-         @foreach (var compania in Model.compania)
-         {
-             
-             if(compania.type.Equals(ddltipo.Value))
-             {
-             <tr>
-                 <td>
-                     @compania.name
-                 </td>
-                 <td>
-                     <a href=@compania.address>
-                         @compania.address
-                     </a>
-                 </td>
-                 <td>
-                     @compania.description
-                 </td>
-                 <td>
-                     @compania.type
-                 </td>
-                 <td>
-                     @compania.employees
-                 </td>
-                 <td>
-                     @compania.contacts
-                 </td>
-                 <td>
-                     @compania.oportunities
-                 </td>
-             </tr>
-             }
-         }
+         
          </table>
         </div>
 
