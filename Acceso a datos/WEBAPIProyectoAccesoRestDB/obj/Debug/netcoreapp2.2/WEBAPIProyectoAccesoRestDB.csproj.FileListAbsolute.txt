@@ -1,0 +1,14 @@
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\bin\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.deps.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\bin\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.runtimeconfig.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\bin\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.runtimeconfig.dev.json
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\bin\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\bin\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.RazorAssemblyInfo.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.RazorAssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.AssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.RazorTargetAssemblyInfo.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\WEBAPIProyectoAccesoRestDB\obj\Debug\netcoreapp2.2\WEBAPIProyectoAccesoRestDB.pdb

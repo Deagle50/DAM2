@@ -14,44 +14,106 @@
         <div class="formulario">
             <form>
                 <label>Nombre</label>
-                <input type="text">
+                <input id="txtNumero" type="number">
                 <input type="button" onclick="buscar();" value="Buscar">
-                <br/>
+                <br />
 
                 <label>Marca</label>
-                <label id="lblMarca"></label><br/>
-                
+                <label id="lblMarca"></label><br />
+
                 <label>Forma</label>
-                <label id="lblForma"></label><br/>
+                <label id="lblForma"></label><br />
 
                 <label>Pastillas</label>
-                <label id="lblPastillas"></label><br/>                
+                <label id="lblPastillas"></label><br />
+
+                <label>Color</label>
+                <label id="lblColor"></label><br />
+
+                <label>Precio</label>
+                <label id="lblPrecio"></label><br />
+
+                <input type="button" onclick="anterior();" value="Anterior" />
+                <input type="button" onclick="siguiente();" value="Siguiente" />
             </form>
         </div>
     </div>
 
     <script type="text/javascript">
-
+        var datos, datos2;
+        var num;
         function buscar(){
             //alert("pepito");
         var xmlhttp = new XMLHttpRequest();        
-        var datos, datos2;
-        
+       
         
         xmlhttp.onreadystatechange = function(){
             
             if (this.readyState == 4 && this.status == 200)   
             {
-                
+                num = document.getElementById("txtNumero").value-1;
+                //alert(num);
                 datos = this.responseText;
                 datos2 = JSON.parse(datos);
-                console.log(datos2);                
+                if (num >= datos2.length) {
+                    limpiarCampos();
+                    alert("inserta un número válido");                    
+                }
+                else {
+                    mostrarDatos();
+                }
             }
         }
-        xmlhttp.open("GET", "datos/datos.json", true);
+        xmlhttp.open("GET", "https://localhost:44391/api/guitars", true);
         xmlhttp.send();
         
         
+    }
+
+    function siguiente() {
+        num++;
+        if (num >= datos2.length) {
+            limpiarCampos();
+            alert("Fuera de rango");
+            num--;
         }
+        else {
+            mostrarDatos();
+            cambiarTxtNumero();
+        }
+    }
+
+    function anterior() {
+        num--;
+        if (num < 0) {
+            limpiarCampos();
+            alert("Fuera de rango");
+            num++;
+        }
+        else {
+            mostrarDatos();
+            cambiarTxtNumero();
+        }
+    }
+
+    function mostrarDatos() {
+        document.getElementById("lblMarca").innerText = datos2[num].marca;
+        document.getElementById("lblForma").innerText = datos2[num].forma;
+        document.getElementById("lblPastillas").innerText = datos2[num].pastillas;
+        document.getElementById("lblColor").innerText = datos2[num].color;
+        document.getElementById("lblPrecio").innerText = datos2[num].precio+" €";
+    }
+
+    function limpiarCampos() {
+        document.getElementById("lblMarca").innerText = "";
+        document.getElementById("lblForma").innerText = "";
+        document.getElementById("lblPastillas").innerText = "";
+        document.getElementById("lblColor").innerText = "";
+        document.getElementById("lblPrecio").innerText = "";
+            }
+
+    function cambiarTxtNumero() {
+        document.getElementById("txtNumero").value = num+1;
+    }
     </script>
 </body>
