@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\bin\Debug\Usuario.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\bin\Debug\Usuario.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\bin\Debug\Usuario.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\obj\Debug\Usuario.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\obj\Debug\Usuario.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\obj\Debug\Usuario.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\Usuario\obj\Debug\Usuario.pdb

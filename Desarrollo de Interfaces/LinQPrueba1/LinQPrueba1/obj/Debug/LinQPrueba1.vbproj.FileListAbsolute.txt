@@ -1,0 +1,17 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\LinQPrueba1.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\LinQPrueba1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\LinQPrueba1.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\LinQPrueba1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\EntityFramework.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\EntityFramework.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.vbproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\LinQPrueba1\LinQPrueba1\obj\Debug\LinQPrueba1.pdb

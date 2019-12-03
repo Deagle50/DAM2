@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\bin\Debug\SpaDeLujo.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\bin\Debug\SpaDeLujo.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\bin\Debug\SpaDeLujo.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SpaDeLujo\SpaDeLujo\obj\Debug\SpaDeLujo.pdb
