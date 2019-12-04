@@ -18,9 +18,12 @@ namespace WindowsFormsApplication1
         public static extern int RegisterWindowMessage(string mensaje);
         [DllImport("user32")]
         public static extern int PostMessage(IntPtr dest, int IdMensaje, IntPtr wparam, IntPtr lparam);
+
         Semaphore s;
+
         int idmensajeAP;
         int idmensajeEX;
+
         public Form1()
         {
           InitializeComponent();

@@ -1,0 +1,12 @@
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\ConsoleAppEF1.exe.config
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\ConsoleAppEF1.exe
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\ConsoleAppEF1.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\EntityFramework.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\EntityFramework.xml
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\obj\Debug\ConsoleAppEF1.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\obj\Debug\ConsoleAppEF1.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\obj\Debug\ConsoleAppEF1.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\obj\Debug\ConsoleAppEF1.exe
+D:\Urko Urbieta\Visual Studio\Acceso a datos\ConsoleAppEF1\ConsoleAppEF1\obj\Debug\ConsoleAppEF1.pdb

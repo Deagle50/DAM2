@@ -13,12 +13,16 @@ namespace Coche
     public partial class Form1 : Form
     {
         Semaphore s;
+
         [DllImport("user32")]
         public static extern int RegisterWindowMessage(string mensaje);
+
          [DllImport("user32")]
         public static extern int PostMessage(IntPtr dest, int IdMensaje, IntPtr wparam,IntPtr lparam);
+
         int idmensajeAP;
         int idmensajeEX;
+
         public Form1()
         {
             InitializeComponent();

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Toalla");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Toalla");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Toalla");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Toalla");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Toalla");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Toalla");
             this.crono = new System.Windows.Forms.Timer(this.components);
             this.cbxDucha = new System.Windows.Forms.CheckBox();
             this.lblUsuarios = new System.Windows.Forms.Label();
@@ -40,6 +40,10 @@
             this.btnNuevoUsuario = new System.Windows.Forms.Button();
             this.tbLog = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // crono
+            // 
+            this.crono.Tick += new System.EventHandler(this.Crono_Tick);
             // 
             // cbxDucha
             // 
@@ -71,9 +75,9 @@
             // 
             this.lvUsuarios.HideSelection = false;
             this.lvUsuarios.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem4,
+            listViewItem5,
+            listViewItem6});
             this.lvUsuarios.Location = new System.Drawing.Point(47, 81);
             this.lvUsuarios.Name = "lvUsuarios";
             this.lvUsuarios.Size = new System.Drawing.Size(237, 97);
@@ -112,6 +116,7 @@
             this.Controls.Add(this.cbxDucha);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

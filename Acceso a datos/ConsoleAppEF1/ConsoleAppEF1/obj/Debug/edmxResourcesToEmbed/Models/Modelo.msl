@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModelStoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities">
+    <EntitySetMapping Name="Personas">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Personas">
+        <MappingFragment StoreEntitySet="Personas">
+          <ScalarProperty Name="IDPersona" ColumnName="IDPersona" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

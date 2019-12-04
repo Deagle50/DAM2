@@ -19,21 +19,23 @@ namespace SpaDeLujo
         int idmensajeEntra, idmensajeCogeToalla, idmensajeDejaToalla, idmensajeDuchaIn, idmensajeDuchaOut;
         
         int usuarios = 0;
-        int contLV = 2;
+        public int contLV = 3;
 
         Semaphore sem;
 
         List<String> log = new List<String>();
         [DllImport("user32")]
-        public static extern int RegisterWindowMessage(string mensaje);
+        public static extern int RegisterWindowMessage(string mensaje);        
+
         [DllImport("user32")]
-        public static extern int PostMessage(IntPtr dest, int IdMensaje, IntPtr wparam, IntPtr lparam);        
-        
+        public static extern int PostMessage(IntPtr dest, int IdMensaje, IntPtr wparam, IntPtr lparam);
+
+
 
         public Form1()
         {
             InitializeComponent();
-            sem = new Semaphore(3, 3, "semaforo_aparcar");
+            sem = new Semaphore(1, 3, "semaforo_ducha");
             txtUsuarios.Text = usuarios.ToString();
             crono.Enabled = true;
 
@@ -53,8 +55,10 @@ namespace SpaDeLujo
         protected override void WndProc(ref Message m)
         {
             tbLog.Lines = log.ToArray();
+
             if (m.Msg == idmensajeEntra)
             {
+                
                 log.Add("Entra usuario");
                 //textBox1.Lines = log.ToArray();
                 usuarios++;
@@ -62,34 +66,56 @@ namespace SpaDeLujo
             }
             else if (m.Msg == idmensajeCogeToalla)
             {
+                
                 log.Add("Coge toalla");
-                if (contLV > 0)
+
+                contLV--;
+
+                if (contLV >= 0)
                 {
-                    lvUsuarios.Items.RemoveAt(contLV);
-                    contLV--;
+                    lvUsuarios.Items.RemoveAt(contLV);                    
                 }
 
             }
             else if (m.Msg == idmensajeDejaToalla)
             {
+                
                 log.Add("Deja toalla");
-                if (contLV < 3)
+                
+                if (contLV < 2)
                 {
-                    lvUsuarios.Items.Add("Toalla");
                     contLV++;
+                    lvUsuarios.Items.Add("Toalla");
+                    
                 }
             }
             else if (m.Msg == idmensajeDuchaIn)
             {
                 log.Add("Entra ducha");
-
+                cbxDucha.Checked = true;
             }
             else if (m.Msg == idmensajeDuchaOut)
             {
                 log.Add("Sale ducha");
-
+                cbxDucha.Checked = false;
+                usuarios--;
+                txtUsuarios.Text = usuarios.ToString();
             }
             else base.WndProc(ref m);
+        }
+
+        private void Crono_Tick(object sender, EventArgs e)
+        {
+            crono.Enabled = false;
+            sem.WaitOne();
+            sem.Release();
+            crono.Enabled = true;
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            sem.Close();
+            sem.Dispose();
         }
     }
 }

@@ -75,3 +75,12 @@ D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Acti
 D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Actividades\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.csproj.CoreCompileInputs.cache
 D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Actividades\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.exe
 D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Actividades\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\bin\Debug\Aparcamiento.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\bin\Debug\Aparcamiento.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\SOLUCIONES\Aparcamiento\Aparcamiento\obj\x86\Debug\Aparcamiento.pdb

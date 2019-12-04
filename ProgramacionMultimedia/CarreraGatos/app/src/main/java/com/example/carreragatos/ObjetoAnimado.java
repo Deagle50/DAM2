@@ -13,19 +13,23 @@ public class ObjetoAnimado {
     public static final int nFotogramas = 8;
     public static final int columnas = 2;
     public static final int filas = 4;
-    public static final int anchoCol = 250;
-    public static final int altoFil = 65;
-    public static final int frameTime  = 80;
+    public static final int anchoCol = 500;
+    public static final int altoFil = 260;
+    private int frameTime;
 
-    int frameActual = 0;
+    int frameActual;
     String fileName;
-    private int posX, posY;
+    private int posX;
+
+    private int posY;
     Bitmap spriteSheet;
 
-    public ObjetoAnimado(int posX, int posY, String file) {
+    public ObjetoAnimado(int posX, int posY, String file, int v) {
         this.posX = posX;
         this.posY = posY;
         this.fileName = file;
+        frameActual=0;
+        frameTime=v;
     }
 
     public void inicializar(AssetManager asm)
@@ -54,8 +58,19 @@ public class ObjetoAnimado {
         int x, y;
         y=altoFil+frameActual/columnas;
         x=anchoCol*frameActual%columnas;
-        Rect origen = new Rect();
-        Rect destino = new Rect(posX, posY, posX+20, posY+65);
+        Rect origen = new Rect(x, y, x+anchoCol, y+altoFil);
+        Rect destino = new Rect(posX, posY, posX+anchoCol, posY+altoFil);
         c.drawBitmap(spriteSheet, origen, destino, null);
+    }
+
+    public int getFrameTime(){
+        return frameTime;
+    }
+
+    public boolean fin(){
+        if(posX>=1718)
+        {return true;}
+
+        return false;
     }
 }
