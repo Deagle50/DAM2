@@ -22,11 +22,12 @@ namespace Usuario
         {            
             int idmensajeEntra, idmensajeCogeToalla, idmensajeDejaToalla, idmensajeDuchaIn, idmensajeDuchaOut;
             bool repetir = true;
+
             Random r = new Random();
+            Semaphore sem, semducha;
 
-            Semaphore sem;
-
-            sem = Semaphore.OpenExisting("semaforo_ducha");
+            sem = Semaphore.OpenExisting("semaforo_toalla");
+            semducha = Semaphore.OpenExisting("semaforo_ducha");
 
             idmensajeEntra = RegisterWindowMessage("WM_ENTRA");
             idmensajeCogeToalla = RegisterWindowMessage("WM_COGE");
@@ -35,35 +36,29 @@ namespace Usuario
             idmensajeDuchaOut = RegisterWindowMessage("WM_DUCHA_OUT");
 
             PostMessage((IntPtr)0Xffff, idmensajeEntra, IntPtr.Zero, IntPtr.Zero);
-
-            sem.WaitOne();
-
-
+            
             PostMessage((IntPtr)0Xffff, idmensajeCogeToalla, IntPtr.Zero, IntPtr.Zero);
-
-            //
+            sem.WaitOne();
+            //Validar que solo uno pueda entrar a la ducha
             PostMessage((IntPtr)0Xffff, idmensajeDuchaIn, IntPtr.Zero, IntPtr.Zero);
-
+            semducha.WaitOne();
             do
             {
                 Console.Write("lorolorololo");
-                if (r.Next(1, 1000002) > 999995)
+                if (r.Next(1, 1000002) > 999998)
                 {
                     repetir = false;
                 }
             } while (repetir);
+
             sem.Release();
             //Deja toalla
             PostMessage((IntPtr)0Xffff, idmensajeDejaToalla, IntPtr.Zero, IntPtr.Zero);
-            
+            semducha.Release();
             //Sale de ducha
             PostMessage((IntPtr)0Xffff, idmensajeDuchaOut, IntPtr.Zero, IntPtr.Zero);
                                    
             Console.ReadLine();
-
-
         }
-
-
     }
 }

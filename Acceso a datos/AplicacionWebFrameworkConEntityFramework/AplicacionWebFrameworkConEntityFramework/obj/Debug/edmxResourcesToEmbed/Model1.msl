@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModelStoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities">
+    <EntitySetMapping Name="Guitarras">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Guitarras">
+        <MappingFragment StoreEntitySet="Guitarras">
+          <ScalarProperty Name="id_guitarra" ColumnName="id_guitarra" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="forma" ColumnName="forma" />
+          <ScalarProperty Name="pastillas" ColumnName="pastillas" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

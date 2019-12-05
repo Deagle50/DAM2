@@ -21,7 +21,7 @@ namespace SpaDeLujo
         int usuarios = 0;
         public int contLV = 3;
 
-        Semaphore sem;
+        Semaphore sem, semducha;
 
         List<String> log = new List<String>();
         [DllImport("user32")]
@@ -35,7 +35,8 @@ namespace SpaDeLujo
         public Form1()
         {
             InitializeComponent();
-            sem = new Semaphore(1, 3, "semaforo_ducha");
+            sem = new Semaphore(3, 3, "semaforo_toalla");
+            semducha = new Semaphore(1, 1, "semaforo_ducha");
             txtUsuarios.Text = usuarios.ToString();
             crono.Enabled = true;
 
@@ -65,29 +66,14 @@ namespace SpaDeLujo
                 txtUsuarios.Text = usuarios.ToString();
             }
             else if (m.Msg == idmensajeCogeToalla)
-            {
-                
+            {                
                 log.Add("Coge toalla");
-
-                contLV--;
-
-                if (contLV >= 0)
-                {
-                    lvUsuarios.Items.RemoveAt(contLV);                    
-                }
-
+                lvUsuarios.Items.RemoveAt(0);
             }
             else if (m.Msg == idmensajeDejaToalla)
-            {
-                
-                log.Add("Deja toalla");
-                
-                if (contLV < 2)
-                {
-                    contLV++;
-                    lvUsuarios.Items.Add("Toalla");
-                    
-                }
+            {                
+                log.Add("Deja toalla");             
+                lvUsuarios.Items.Add("Toalla");
             }
             else if (m.Msg == idmensajeDuchaIn)
             {
