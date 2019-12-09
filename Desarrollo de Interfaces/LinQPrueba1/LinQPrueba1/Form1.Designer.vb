@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgvEmpleados = New System.Windows.Forms.DataGridView()
+        Me.cbxData = New System.Windows.Forms.ComboBox()
         CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -32,16 +33,25 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvEmpleados.Location = New System.Drawing.Point(12, 12)
+        Me.dgvEmpleados.Location = New System.Drawing.Point(12, 37)
         Me.dgvEmpleados.Name = "dgvEmpleados"
-        Me.dgvEmpleados.Size = New System.Drawing.Size(1140, 632)
+        Me.dgvEmpleados.Size = New System.Drawing.Size(1140, 607)
         Me.dgvEmpleados.TabIndex = 0
+        '
+        'cbxData
+        '
+        Me.cbxData.FormattingEnabled = True
+        Me.cbxData.Location = New System.Drawing.Point(12, 10)
+        Me.cbxData.Name = "cbxData"
+        Me.cbxData.Size = New System.Drawing.Size(121, 21)
+        Me.cbxData.TabIndex = 1
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1164, 656)
+        Me.Controls.Add(Me.cbxData)
         Me.Controls.Add(Me.dgvEmpleados)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -51,4 +61,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents dgvEmpleados As DataGridView
+    Friend WithEvents cbxData As ComboBox
 End Class

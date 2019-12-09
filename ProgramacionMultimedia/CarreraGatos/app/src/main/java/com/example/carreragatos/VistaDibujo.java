@@ -26,10 +26,15 @@ public class VistaDibujo extends SurfaceView implements Runnable{
     public Fondo pista;
     Canvas canvas;
     ObjetoAnimado gato;
+    Boton start;
 
     public VistaDibujo(Context context) {
         super(context);
         holder = getHolder();
+        //Inicializa botón
+        start = new Boton("bandera.png");
+        start.inicializar(context.getAssets());
+        //Inicializa fondod
         pista = new Fondo("pista.jpg");
         pista.inicializar(context.getAssets());
         int d = (int)(ObjetoAnimado.altoFil*0.75f)+25;
@@ -48,6 +53,7 @@ public class VistaDibujo extends SurfaceView implements Runnable{
         /*rojo=255;
         verde=255;
         azul=0;*/
+        String mensaje="";
         long actual = System.currentTimeMillis();
         ArrayList<String> ganadores = new ArrayList<String>();
         while(running)
@@ -91,10 +97,12 @@ public class VistaDibujo extends SurfaceView implements Runnable{
             if (ganadores.size()!=0){
                 running=false;
             }
+            mensaje=getNombres(ganadores);
+
         }
 
 
-        String mensaje=getNombres(ganadores);
+
 
         while(!holder.getSurface().isValid()){
 
@@ -103,7 +111,10 @@ public class VistaDibujo extends SurfaceView implements Runnable{
         Paint p = new Paint();
         p.setTextSize(100);
         p.setColor(Color.BLUE);
+        //Mostrar mensaje
         c.drawText(mensaje, 500, 500, p);
+        //Mostrar botón bandera
+        start.draw(canvas, !running);
         holder.unlockCanvasAndPost(c);
     }
     private String getNombres(ArrayList<String> dorsales)
@@ -122,6 +133,7 @@ public class VistaDibujo extends SurfaceView implements Runnable{
         pista.draw(canvas);
         for(ObjetoAnimado gat:coleccion)
         {gat.draw(canvas);}
+
         //canvas.drawRGB(colores[0],colores[1],colores[2]);//FIESTAAAAA COCAAAAAA}
     }
 

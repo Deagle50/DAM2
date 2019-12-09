@@ -1,0 +1,17 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\ConsultasLinq.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\ConsultasLinq.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\ConsultasLinq.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\ConsultasLinq.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\EntityFramework.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\EntityFramework.SqlServer.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\EntityFramework.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\bin\Debug\EntityFramework.SqlServer.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.vbproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasLinq\ConsultasLinq\obj\Debug\ConsultasLinq.pdb
