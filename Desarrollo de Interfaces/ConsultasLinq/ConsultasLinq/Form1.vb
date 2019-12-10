@@ -42,4 +42,34 @@ Public Class Form1
                Select ID, Nombre, Ordenes, Total).ToList
         dgvDatos.DataSource = obj
     End Sub
+
+    Private Sub BtnPulsar5_Click(sender As Object, e As EventArgs) Handles btnPulsar5.Click
+        Dim obj As Object
+        obj = (From cust In modelo.Customers
+               Group Join ord In modelo.Orders
+                       On cust.CustomerID Equals ord.CustomerID
+                       Into CustomerOrders = Group, TotalFacturado = Sum(ord.Order_Details.Sum(Function(x) x.Quantity * x.UnitPrice + (1 - x.Discount)))
+               Select cust.CustomerID, TotalFacturado, CustomerOrders.Count
+        ).ToList
+
+        dgvDatos.DataSource = obj
+    End Sub
+
+    Private Sub BtnPulsar_Click(sender As Object, e As EventArgs) Handles btnPulsar6.Click, btnPulsar.Click
+        Dim obj As Double
+        obj = Aggregate od In modelo.Order_Details
+                  Into Sum(od.Quantity * od.UnitPrice * (1 - od.Discount)
+
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        res = (From orders In modelo.Orders
+               Aggregate od In orders.Order_Details
+            Into Sum(od.Quantity * od.UnitPrice * (1 - od.Discount))
+               Where orders.CustomerID = txtEstado.Text
+         [Select]       Select Total).Sum()
+
+        MsgBox(res)
+    End Sub
 End Class

@@ -22,6 +22,7 @@ namespace SpaDeLujo
         public int contLV = 3;
 
         Semaphore sem, semducha;
+        Mutex mutexUsuario;
 
         List<String> log = new List<String>();
         [DllImport("user32")]
@@ -37,6 +38,8 @@ namespace SpaDeLujo
             InitializeComponent();
             sem = new Semaphore(3, 3, "semaforo_toalla");
             semducha = new Semaphore(1, 1, "semaforo_ducha");
+            mutexUsuario = new Mutex(false, "mutexUsuario");
+
             txtUsuarios.Text = usuarios.ToString();
             crono.Enabled = true;
 
@@ -49,8 +52,7 @@ namespace SpaDeLujo
 
         private void BtnNuevoUsuario_Click(object sender, EventArgs e)
         {
-            Process.Start("..\\..\\..\\Usuario\\bin\\debug\\Usuario.exe");
-            
+            Process.Start("..\\..\\..\\Usuario\\bin\\debug\\Usuario.exe");            
         }
 
         protected override void WndProc(ref Message m)

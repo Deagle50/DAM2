@@ -33,11 +33,20 @@ Partial Class Form1
         Me.btnPulsar3 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btnPulsar4 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnPulsar5 = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnPulsar6 = New System.Windows.Forms.Button()
+        Me.btnPulsar7 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbxSFW.SuspendLayout()
         Me.gbxJoin.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.btnPulsar7.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtEstado
@@ -144,11 +153,71 @@ Partial Class Form1
         Me.btnPulsar4.Text = "Pulsar"
         Me.btnPulsar4.UseVisualStyleBackColor = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.btnPulsar5)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 256)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 54)
+        Me.GroupBox3.TabIndex = 9
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Propiedades de navegación"
+        '
+        'btnPulsar5
+        '
+        Me.btnPulsar5.Location = New System.Drawing.Point(112, 19)
+        Me.btnPulsar5.Name = "btnPulsar5"
+        Me.btnPulsar5.Size = New System.Drawing.Size(75, 23)
+        Me.btnPulsar5.TabIndex = 3
+        Me.btnPulsar5.Text = "Pulsar"
+        Me.btnPulsar5.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.btnPulsar6)
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 316)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(200, 54)
+        Me.GroupBox4.TabIndex = 10
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Propiedades de navegación"
+        '
+        'btnPulsar6
+        '
+        Me.btnPulsar6.Location = New System.Drawing.Point(112, 19)
+        Me.btnPulsar6.Name = "btnPulsar6"
+        Me.btnPulsar6.Size = New System.Drawing.Size(75, 23)
+        Me.btnPulsar6.TabIndex = 3
+        Me.btnPulsar6.Text = "Pulsar"
+        Me.btnPulsar6.UseVisualStyleBackColor = True
+        '
+        'btnPulsar7
+        '
+        Me.btnPulsar7.Controls.Add(Me.Button1)
+        Me.btnPulsar7.Location = New System.Drawing.Point(12, 376)
+        Me.btnPulsar7.Name = "btnPulsar7"
+        Me.btnPulsar7.Size = New System.Drawing.Size(200, 54)
+        Me.btnPulsar7.TabIndex = 11
+        Me.btnPulsar7.TabStop = False
+        Me.btnPulsar7.Text = "Propiedades de navegación"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(112, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Pulsar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnPulsar7)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.gbxJoin)
@@ -162,6 +231,9 @@ Partial Class Form1
         Me.gbxJoin.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.btnPulsar7.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -177,4 +249,10 @@ Partial Class Form1
     Friend WithEvents cbxDatos As ComboBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents btnPulsar4 As Button
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents btnPulsar5 As Button
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents btnPulsar6 As Button
+    Friend WithEvents btnPulsar7 As GroupBox
+    Friend WithEvents Button1 As Button
 End Class
