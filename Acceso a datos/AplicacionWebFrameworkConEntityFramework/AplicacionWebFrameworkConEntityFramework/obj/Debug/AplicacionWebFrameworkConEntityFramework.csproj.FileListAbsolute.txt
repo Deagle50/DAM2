@@ -83,3 +83,6 @@ D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFram
 D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFramework\AplicacionWebFrameworkConEntityFramework\obj\Debug\AplicacionWebFrameworkConEntityFramework.csproj.CopyComplete
 D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFramework\AplicacionWebFrameworkConEntityFramework\obj\Debug\AplicacionWebFrameworkConEntityFramework.dll
 D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFramework\AplicacionWebFrameworkConEntityFramework\obj\Debug\AplicacionWebFrameworkConEntityFramework.pdb
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFramework\AplicacionWebFrameworkConEntityFramework\bin\System.Web.Cors.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFramework\AplicacionWebFrameworkConEntityFramework\bin\System.Web.Http.Cors.dll
+D:\Urko Urbieta\Visual Studio\Acceso a datos\AplicacionWebFrameworkConEntityFramework\AplicacionWebFrameworkConEntityFramework\bin\System.Web.Http.Cors.xml

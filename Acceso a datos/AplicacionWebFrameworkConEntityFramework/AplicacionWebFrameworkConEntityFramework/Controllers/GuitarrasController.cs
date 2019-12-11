@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using AplicacionWebFrameworkConEntityFramework;
 
@@ -16,12 +17,14 @@ namespace AplicacionWebFrameworkConEntityFramework.Controllers
     {
         private DAM_urkourbieta_DEVEntities db = new DAM_urkourbieta_DEVEntities();
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // GET: api/Guitarras
         public IQueryable<Guitarras> GetGuitarras()
         {
             return db.Guitarras;
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // GET: api/Guitarras/5
         [ResponseType(typeof(Guitarras))]
         public IHttpActionResult GetGuitarras(int id)
@@ -35,6 +38,7 @@ namespace AplicacionWebFrameworkConEntityFramework.Controllers
             return Ok(guitarras);
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // PUT: api/Guitarras/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutGuitarras(int id, Guitarras guitarras)
@@ -70,6 +74,7 @@ namespace AplicacionWebFrameworkConEntityFramework.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         // POST: api/Guitarras
         [ResponseType(typeof(Guitarras))]
         public IHttpActionResult PostGuitarras(Guitarras guitarras)
@@ -101,6 +106,7 @@ namespace AplicacionWebFrameworkConEntityFramework.Controllers
         }
 
         // DELETE: api/Guitarras/5
+        [EnableCors(origins:"*", headers:"*", methods:"*")]
         [ResponseType(typeof(Guitarras))]
         public IHttpActionResult DeleteGuitarras(int id)
         {

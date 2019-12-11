@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="formulario">
-            <form>
+            <form method="post">
                 <label>ID</label>
                 <input id="txtNumero" type="number">
                 <input type="button" onclick="buscar();" value="Buscar">
@@ -32,6 +32,7 @@
                 <input type="button" onclick="siguiente();" value="Siguiente" />
                 <input type="button" onclick="borrar();" value="Borrar" />
                 <input type="button" onclick="anadir();" value="Añadir" />
+                <input type="button" onclick="modificar();" value="Modificar" />
                 
             </form>
         <br />
@@ -70,30 +71,79 @@
         }
 
         function borrar() {
-            limpiarCampos();
+            
+            var xmlhttp = new XMLHttpRequest();
+            var id; 
+
+            xmlhttp.onreadystatechange = function () {
+                limpiarCampos();
+                id = document.getElementById("txtNumero").value;
+            }
+            xmlhttp.open("DELETE", "https://localhost:44330/api/guitarras", true);
+            xmlhttp.setRequestHeader("content-type", "application/json");
+            xmlhttp.setRequestHeader("cache-control", "no-cache");
+            xmlhttp.send(id);
         }
 
         function anadir() {
-            alert("1");
+            var datosAnadir;
+            var nuevaGuitarra = {};
+            //alert("1");
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
 
                 if (this.readyState == 4 && this.status == 200) {
-                    var nuevaGuitarra;
-                    var datosAnadir;
-                    nuevaGuitarra.id_guitarra = siguienteID;
-                    nuevaGuitarra.nombre = document.getElementById("txtNombre").value;
-                    nuevaGuitarra.marca = document.getElementById("txtMarca").value;
-                    nuevaGuitarra.forma = document.getElementById("txtForma").value;
-                    nuevaGuitarra.pastillas = document.getElementById("txtPastillas").value;
-                    nuevaGuitarra.color= document.getElementById("txtColor").value;
-                    nuevaGuitarra.precio = document.getElementById("txtPrecio").value;
-                    datosAnadir = JSON.stringify(nuevaGuitarra);
+                    
+                    
+                    
                 }
+                nuevaGuitarra.id_guitarra = siguienteID;
+                nuevaGuitarra.nombre = document.getElementById("txtNombre").value;
+                nuevaGuitarra.marca = document.getElementById("txtMarca").value;
+                nuevaGuitarra.forma = document.getElementById("txtForma").value;
+                nuevaGuitarra.pastillas = document.getElementById("txtPastillas").value;
+                nuevaGuitarra.color = document.getElementById("txtColor").value;
+                nuevaGuitarra.precio = document.getElementById("txtPrecio").value;
+                console.log(nuevaGuitarra);
+                datosAnadir = JSON.stringify(nuevaGuitarra);
             }
             xmlhttp.open("POST", "https://localhost:44330/api/guitarras", true);
+            xmlhttp.setRequestHeader("content-type", "application/json");
+            xmlhttp.setRequestHeader("cache-control", "no-cache");
             xmlhttp.send(datosAnadir);
             alert("2");
+            siguienteID++;
+        }
+
+        function modificar() {
+            var datosAnadir;
+            var nuevaGuitarra = {};
+            var id;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+
+                if (this.readyState == 4 && this.status == 200) {
+
+
+
+                }
+                id = document.getElementById("txtNumero").value;
+                nuevaGuitarra.id_guitarra = document.getElementById("txtNumero").value;
+                nuevaGuitarra.nombre = document.getElementById("txtNombre").value;
+                nuevaGuitarra.marca = document.getElementById("txtMarca").value;
+                nuevaGuitarra.forma = document.getElementById("txtForma").value;
+                nuevaGuitarra.pastillas = document.getElementById("txtPastillas").value;
+                nuevaGuitarra.color = document.getElementById("txtColor").value;
+                nuevaGuitarra.precio = document.getElementById("txtPrecio").value;
+                console.log(nuevaGuitarra);
+                datosAnadir = JSON.stringify(nuevaGuitarra);
+            }
+            xmlhttp.open("PUT", "https://localhost:44330/api/guitarras", true);
+            xmlhttp.setRequestHeader("content-type", "application/json");
+            xmlhttp.setRequestHeader("cache-control", "no-cache");
+            xmlhttp.send(id, datosAnadir);
+            alert("2");
+            
         }
 
         function siguiente() {

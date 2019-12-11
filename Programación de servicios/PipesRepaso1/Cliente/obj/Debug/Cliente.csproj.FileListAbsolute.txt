@@ -1,0 +1,7 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\obj\Debug\Cliente.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\bin\Debug\Cliente.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\bin\Debug\Cliente.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\bin\Debug\Cliente.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\obj\Debug\Cliente.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\Cliente\obj\Debug\Cliente.pdb

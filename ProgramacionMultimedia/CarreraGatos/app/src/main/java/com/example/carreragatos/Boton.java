@@ -31,6 +31,6 @@ public class Boton {
     public void draw(Canvas c, boolean status)
     {
         if (status)
-        c.drawBitmap(bmpBoton, null, new Rect(x,y,300, 270), null);
+        c.drawBitmap(bmpBoton, null, new Rect(x,y,x+300, y+270), null);
     }
 }

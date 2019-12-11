@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\bin\Debug\PipesRepaso1.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\bin\Debug\PipesRepaso1.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\bin\Debug\PipesRepaso1.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\PipesRepaso1\PipesRepaso1\obj\Debug\PipesRepaso1.pdb

@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<manifest identifier="MANIFEST01" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1p3.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+	<metadata>
+		<schema>IMS CONTENT</schema>
+		<schemaversion>1.1</schemaversion>
+		<imsmd:lom>
+			<imsmd:general>
+				<imsmd:title>
+					<imsmd:langstring xml:lang="en">C#</imsmd:langstring>
+				</imsmd:title>
+			</imsmd:general>
+		</imsmd:lom>
+		<userinterface xmlns="MSLRN.xsd">
+			<customsyllabusicons>
+				<parentnodeexpand href="red.gif" />
+				<parentnodecollapse href="red.gif" />
+				<leafnode href="teoria.gif" />
+			</customsyllabusicons>
+		</userinterface>
+	</metadata>
+	<organizations default="MANIFEST01_ORG1">
+		<organization identifier="MANIFEST01_ORG1">
+			<item identifier="MANIFEST01_ITEM1" isvisible="1" parameters="">
+				<title>Introducción a Microsoft .NET</title>
+				<item identifier="MANIFEST01_ITEM11" identifierref="MANIFEST01_RESOURCE11" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM12" identifierref="MANIFEST01_RESOURCE12" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM2" isvisible="1" parameters="">
+				<title>Introducción a C#</title>
+				<item identifier="MANIFEST01_ITEM21" identifierref="MANIFEST01_RESOURCE21" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM22" identifierref="MANIFEST01_RESOURCE22" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM23" identifierref="MANIFEST01_RESOURCE23" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM24" identifierref="MANIFEST01_RESOURCE24" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros demostración</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM25" identifierref="MANIFEST01_RESOURCE25" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM3" isvisible="1" parameters="">
+				<title>Uso de variables de tipo valor</title>
+				<item identifier="MANIFEST01_ITEM31" identifierref="MANIFEST01_RESOURCE31" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM32" identifierref="MANIFEST01_RESOURCE32" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM33" identifierref="MANIFEST01_RESOURCE33" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM34" identifierref="MANIFEST01_RESOURCE34" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM4" isvisible="1" parameters="">
+				<title>Instrucciones y excepciones</title>
+				<item identifier="MANIFEST01_ITEM41" identifierref="MANIFEST01_RESOURCE41" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM42" identifierref="MANIFEST01_RESOURCE42" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM43" identifierref="MANIFEST01_RESOURCE43" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM44" identifierref="MANIFEST01_RESOURCE44" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica B</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM45" identifierref="MANIFEST01_RESOURCE45" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM5" isvisible="1" parameters="">
+				<title>Métodos y parámetros</title>
+				<item identifier="MANIFEST01_ITEM51" identifierref="MANIFEST01_RESOURCE51" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM52" identifierref="MANIFEST01_RESOURCE52" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM53" identifierref="MANIFEST01_RESOURCE53" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM54" identifierref="MANIFEST01_RESOURCE54" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM6" isvisible="1" parameters="">
+				<title>Tablas</title>
+				<item identifier="MANIFEST01_ITEM61" identifierref="MANIFEST01_RESOURCE61" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM62" identifierref="MANIFEST01_RESOURCE62" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM63" identifierref="MANIFEST01_RESOURCE63" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM64" identifierref="MANIFEST01_RESOURCE64" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM7" isvisible="1" parameters="">
+				<title>Fundamentos de la programación Orientada a Objetos</title>
+				<item identifier="MANIFEST01_ITEM71" identifierref="MANIFEST01_RESOURCE71" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM72" identifierref="MANIFEST01_RESOURCE72" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM73" identifierref="MANIFEST01_RESOURCE73" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM74" identifierref="MANIFEST01_RESOURCE74" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM8" isvisible="1" parameters="">
+				<title>Uso de variables de tipo referencia</title>
+				<item identifier="MANIFEST01_ITEM81" identifierref="MANIFEST01_RESOURCE81" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM82" identifierref="MANIFEST01_RESOURCE82" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM83" identifierref="MANIFEST01_RESOURCE83" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM84" identifierref="MANIFEST01_RESOURCE84" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica B</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM85" identifierref="MANIFEST01_RESOURCE85" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM9" isvisible="1" parameters="">
+				<title>Creación y destrucción de objetos</title>
+				<item identifier="MANIFEST01_ITEM91" identifierref="MANIFEST01_RESOURCE91" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM92" identifierref="MANIFEST01_RESOURCE92" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM93" identifierref="MANIFEST01_RESOURCE93" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM94" identifierref="MANIFEST01_RESOURCE94" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+			<item identifier="MANIFEST01_ITEM10" isvisible="1" parameters="">
+				<title>Herencia</title>
+				<item identifier="MANIFEST01_ITEM101" identifierref="MANIFEST01_RESOURCE101" isvisible="1"
+					parameters="">
+					<title>Material teórico</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM102" identifierref="MANIFEST01_RESOURCE102" isvisible="1"
+					parameters="" tipo="ppt">
+					<title>Transparencias</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM103" identifierref="MANIFEST01_RESOURCE103" isvisible="1"
+					parameters="" tipo="pract">
+					<title>Práctica A</title>
+				</item>
+				<item identifier="MANIFEST01_ITEM104" identifierref="MANIFEST01_RESOURCE104" isvisible="1"
+					parameters="" tipo="zip">
+					<title>Ficheros práctica</title>
+				</item>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="MANIFEST01_RESOURCE11" type="webcontent" href="1.- Introduccion a Microsoft .NET.pdf">
+			<file href="1.- Introduccion a Microsoft .NET.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE12" type="webcontent" href="1.- Introduccion a Microsoft .NET.ppt">
+			<file href="1.- Introduccion a Microsoft .NET.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE21" type="webcontent" href="2.- Introduccion a C#.pdf">
+			<file href="2.- Introduccion a C#.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE22" type="webcontent" href="2.- Introduccion a C#.ppt">
+			<file href="2.- Introduccion a C#.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE23" type="webcontent" href="2.- Practica A.pdf">
+			<file href="2.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE24" type="webcontent" href="demo02.zip">
+			<file href="demo02.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE25" type="webcontent" href="lab02.zip">
+			<file href="lab02.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE31" type="webcontent" href="3.- Uso de variables de tipo valor.pdf">
+			<file href="3.- Uso de variables de tipo valor.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE32" type="webcontent" href="3.- Uso de variables de tipo valor.ppt">
+			<file href="3.- Uso de variables de tipo valor.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE33" type="webcontent" href="3.- Practica A.pdf">
+			<file href="3.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE34" type="webcontent" href="lab03.zip">
+			<file href="lab03.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE41" type="webcontent" href="4.- Instrucciones y excepciones.pdf">
+			<file href="4.- Instrucciones y excepciones.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE42" type="webcontent" href="4.- Instrucciones y excepciones.ppt">
+			<file href="4.- Instrucciones y excepciones.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE43" type="webcontent" href="4.- Practica A.pdf">
+			<file href="4.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE44" type="webcontent" href="4.- Practica B.pdf">
+			<file href="4.- Practica B.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE45" type="webcontent" href="lab04.zip">
+			<file href="lab04.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE51" type="webcontent" href="5.- Metodos y parametros.pdf">
+			<file href="5.- Metodos y parametros.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE52" type="webcontent" href="5.- Metodos y parametros.ppt">
+			<file href="5.- Metodos y parametros.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE53" type="webcontent" href="5.- Practica A.pdf">
+			<file href="5.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE54" type="webcontent" href="lab05.zip">
+			<file href="lab05.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE61" type="webcontent" href="6.- Tablas.pdf">
+			<file href="6.- Tablas.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE62" type="webcontent" href="6.- Tablas.ppt">
+			<file href="6.- Tablas.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE63" type="webcontent" href="6.- Practica A.pdf">
+			<file href="6.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE64" type="webcontent" href="lab06.zip">
+			<file href="lab06.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE71" type="webcontent" href="7.- Fundamentos de OO.pdf">
+			<file href="7.- Fundamentos de OO.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE72" type="webcontent" href="7.- Fundamentos de OO.ppt">
+			<file href="7.- Fundamentos de OO.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE73" type="webcontent" href="7.- Practica A.pdf">
+			<file href="7.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE74" type="webcontent" href="lab07.zip">
+			<file href="lab07.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE81" type="webcontent" href="8.- Uso de variables de tipo referencia.pdf">
+			<file href="8.- Uso de variables de tipo referencia.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE82" type="webcontent" href="8.- Uso de variables de tipo referencia.ppt">
+			<file href="8.- Uso de variables de tipo referencia.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE83" type="webcontent" href="8.- Practica A.pdf">
+			<file href="8.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE84" type="webcontent" href="8.- Practica B.pdf">
+			<file href="8.- Practica B.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE85" type="webcontent" href="lab08.zip">
+			<file href="lab08.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE91" type="webcontent" href="9.- Creacion y destruccion de objetos.pdf">
+			<file href="9.- Creacion y destruccion de objetos.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE92" type="webcontent" href="9.- Creacion y destruccion de objetos.ppt">
+			<file href="9.- Creacion y destruccion de objetos.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE93" type="webcontent" href="9.- Practica A.pdf">
+			<file href="9.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE94" type="webcontent" href="lab09.zip">
+			<file href="lab09.zip" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE101" type="webcontent" href="10.- Herencia.pdf">
+			<file href="10.- Herencia.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE102" type="webcontent" href="10.- Herencia.ppt">
+			<file href="10.- Herencia.ppt" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE103" type="webcontent" href="10.- Practica A.pdf">
+			<file href="10.- Practica A.pdf" />
+		</resource>
+		<resource identifier="MANIFEST01_RESOURCE104" type="webcontent" href="lab10.zip">
+			<file href="lab10.zip" />
+		</resource>
+	</resources>
+</manifest>

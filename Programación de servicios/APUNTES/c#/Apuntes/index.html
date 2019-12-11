@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<LINK REL="stylesheet" TYPE="text/css" HREF="lrnviewer/contentviewer/coolmint.css" />
+		<title>C#</title>
+	</head>
+	<script language="javascript" src="lrnviewer/contentviewer/cvobjs.js"></script>
+	<STYLE>
+.LMSUserData {behavior:url(#default#userData);}
+</STYLE>
+	<!-- Default client side user data -->
+	<INPUT TYPE="HIDDEN" CLASS="LMSUserData" ID="g_oDefaultUserData">
+	<script language="javascript" src="lrnviewer/contentviewer/personalization/LMSAPI.js"></script>
+	<script language="javascript">
+	document.onreadystatechange = evt_ReadyStateChange;
+
+	window.API = null;
+	var urlLearnLRN = "imsmanifest.xml";
+
+
+	function evt_ReadyStateChange()
+	{
+		if (document.readyState != 'complete')
+			return;
+
+		try
+		{
+			var strIdentifier = window.location.href.split(":").join("&").split("/").join("&");
+
+			window.API = new LMSAPI(	strIdentifier,
+										false);
+
+			if(null != window.API)
+			{
+				window.API.LRNInitialize("", urlLearnLRN, "./lrnviewer/contentviewer/cpitem.xsl");
+				window.API.LRNListenForEvents(mf_EventHandler);
+			}
+		}
+		catch(e)
+		{
+		}
+	}
+
+	window.onbeforeunload = onunload;
+
+	function onunload()
+	{
+		if(null != window.API)
+		{
+			window.API.LRNUnListenForEvents(mf_EventHandler);
+		}
+	}
+
+	function mf_EventHandler(obj)
+	{
+		switch(obj.type)
+		{
+		 case 3:
+		 {
+			var strCustomView = "";
+			strCustomView = window.API.LRNGetCustomView();
+			if("" != strCustomView)
+				frameLearnTask.location.href =  strCustomView;
+			else
+				frameLearnTask.location.href = "lrnviewer/contentviewer/default/mltui.htm";
+			break;
+		 }
+		}
+	}
+
+	</script>
+	<SCRIPT FOR="window" EVENT="onunload">
+	if(null != window.API)
+	{
+		window.API.LRNTerminate();
+	}
+	</SCRIPT>
+	<frameset rows="50px,*" marginwidth="0" marginheight="0" noResize="true" scrolling="no" framespacing="0" frameborder="0">
+		<frame name="" src="lrnviewer/contentviewer/title.htm" id="banner" marginwidth="0" marginheight="0" noResize="true" scrolling="no" />
+		<frame class="ShellFrame" style="border:none" id="task" name="frameLearnTask" src="" scrolling="no" marginwidth="0" marginheight="0" />
+	</frameset>
+	</OBJECT>
+</html>
