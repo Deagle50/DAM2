@@ -1,0 +1,13 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\bin\Debug\ExamenDocumentos.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\bin\Debug\ExamenDocumentos.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\bin\Debug\ExamenDocumentos.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\bin\Debug\ExamenDocumentos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.Form2.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ExamenDocumentos\ExamenDocumentos\obj\Debug\ExamenDocumentos.pdb

@@ -3,6 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="formulario">
+        <br />
             <form method="post">
                 <label>ID</label>
                 <input id="txtNumero" type="number">
