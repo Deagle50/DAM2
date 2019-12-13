@@ -1,0 +1,11 @@
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\bin\Debug\netcoreapp2.2\ODOOConsole.deps.json
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\bin\Debug\netcoreapp2.2\ODOOConsole.runtimeconfig.json
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\bin\Debug\netcoreapp2.2\ODOOConsole.runtimeconfig.dev.json
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\bin\Debug\netcoreapp2.2\ODOOConsole.dll
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\bin\Debug\netcoreapp2.2\ODOOConsole.pdb
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\obj\Debug\netcoreapp2.2\ODOOConsole.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\obj\Debug\netcoreapp2.2\ODOOConsole.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\obj\Debug\netcoreapp2.2\ODOOConsole.AssemblyInfoInputs.cache
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\obj\Debug\netcoreapp2.2\ODOOConsole.AssemblyInfo.cs
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\obj\Debug\netcoreapp2.2\ODOOConsole.dll
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\ODOOConsole\obj\Debug\netcoreapp2.2\ODOOConsole.pdb

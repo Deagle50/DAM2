@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Consultas"
+        android:id="@+id/mnuConsultas"></item>
+    <item
+        android:title="Metodos"
+        android:id="@+id/mnuMetodos"></item>
+</menu>

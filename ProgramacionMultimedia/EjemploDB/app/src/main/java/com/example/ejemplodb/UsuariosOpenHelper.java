@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class UsuariosOpenHelper extends SQLiteOpenHelper {
-    String crearUsuarios= "CREATE TABLE Usuarios (codigo INTEGER PRIMARY KEY, nombre TEXT)";
+    String crearUsuarios= "CREATE TABLE Usuarios (id_usuario INTEGER PRIMARY KEY, nombre TEXT)";
     String borrarUsuarios = "DROP TABLE Usuarios";
 
     public UsuariosOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
