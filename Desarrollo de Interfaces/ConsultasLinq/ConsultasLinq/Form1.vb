@@ -68,9 +68,9 @@ Public Class Form1
                Aggregate od In orders.Order_Details
             Into Total = Sum(od.Quantity * od.UnitPrice * (1 - od.Discount))
                Where orders.CustomerID = txtEstado.Text
-               Select x = Total).Sum()
+               Select x = Total).ToList
 
-        MsgBox(res)
+        mostrar(res)
     End Sub
 
     Private Sub BtnPulsar8_Click(sender As Object, e As EventArgs) Handles btnPulsar8.Click

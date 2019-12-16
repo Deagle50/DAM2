@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         else if(item == findViewById(R.id.mnuMetodos)){
-
+            Intent i = new Intent(this, Metodos.class);
+            startActivity(i);
         }
         return true;
     }

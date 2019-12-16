@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CLIENTES">
+    <Key>
+      <PropertyRef Name="DNI" />
+    </Key>
+    <Property Name="DNI" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="20" />
+    <Property Name="Domicilio" Type="nvarchar" MaxLength="30" />
+    <Property Name="Poblacion" Type="nvarchar" MaxLength="20" />
+    <Property Name="Codigo postal" Type="int" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="12" />
+    <Property Name="Forma de pago" Type="nvarchar" MaxLength="1" />
+    <Property Name="SEXO" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'DAM_urkourbieta_DEV.VehiculosLINQ.DETALLES-NOTAS' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="DETALLES-NOTAS">
+    <Key>
+      <PropertyRef Name="Codigo de nota" />
+      <PropertyRef Name="Linea" />
+    </Key>
+    <Property Name="Codigo de nota" Type="int" Nullable="false" />
+    <Property Name="Linea" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="1" />
+    <Property Name="Ampliacion" Type="nvarchar" MaxLength="20" />
+    <Property Name="Importe" Type="money" />
+  </EntityType>
+  <EntityType Name="NOTAS-REPARACIONES">
+    <Key>
+      <PropertyRef Name="Codigo de nota" />
+    </Key>
+    <Property Name="Codigo de nota" Type="int" Nullable="false" />
+    <Property Name="DNI" Type="nvarchar" MaxLength="9" />
+    <Property Name="Fecha de reparacion" Type="datetime" />
+    <Property Name="Descuento" Type="int" />
+    <Property Name="Observaciones" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="VEHICULOS">
+    <Key>
+      <PropertyRef Name="matricula" />
+    </Key>
+    <Property Name="matricula" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Marca" Type="nvarchar" MaxLength="15" />
+    <Property Name="Modelo" Type="nvarchar" MaxLength="15" />
+    <Property Name="Color" Type="nvarchar" MaxLength="10" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="anio" Type="int" />
+    <Property Name="DNI" Type="nvarchar" MaxLength="9" />
+    <Property Name="FECHA" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_DETALLES-NOTAS_NOTAS-REPARACIONES">
+    <End Role="NOTAS-REPARACIONES" Type="Self.NOTAS-REPARACIONES" Multiplicity="1" />
+    <End Role="DETALLES-NOTAS" Type="Self.DETALLES-NOTAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NOTAS-REPARACIONES">
+        <PropertyRef Name="Codigo de nota" />
+      </Principal>
+      <Dependent Role="DETALLES-NOTAS">
+        <PropertyRef Name="Codigo de nota" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NOTAS-REPARACIONES_CLIENTES">
+    <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="0..1" />
+    <End Role="NOTAS-REPARACIONES" Type="Self.NOTAS-REPARACIONES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTES">
+        <PropertyRef Name="DNI" />
+      </Principal>
+      <Dependent Role="NOTAS-REPARACIONES">
+        <PropertyRef Name="DNI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VEHICULOS_CLIENTES">
+    <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="0..1" />
+    <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTES">
+        <PropertyRef Name="DNI" />
+      </Principal>
+      <Dependent Role="VEHICULOS">
+        <PropertyRef Name="DNI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVModelStoreContainer">
+    <EntitySet Name="CLIENTES" EntityType="Self.CLIENTES" Schema="VehiculosLINQ" store:Type="Tables" />
+    <EntitySet Name="NOTAS-REPARACIONES" EntityType="Self.NOTAS-REPARACIONES" Schema="VehiculosLINQ" store:Type="Tables" />
+    <EntitySet Name="VEHICULOS" EntityType="Self.VEHICULOS" Schema="VehiculosLINQ" store:Type="Tables" />
+    <EntitySet Name="DETALLES-NOTAS" EntityType="Self.DETALLES-NOTAS" store:Type="Tables" store:Schema="VehiculosLINQ">
+      <DefiningQuery>SELECT 
+    [DETALLES-NOTAS].[Codigo de nota] AS [Codigo de nota], 
+    [DETALLES-NOTAS].[Linea] AS [Linea], 
+    [DETALLES-NOTAS].[Tipo] AS [Tipo], 
+    [DETALLES-NOTAS].[Ampliacion] AS [Ampliacion], 
+    [DETALLES-NOTAS].[Importe] AS [Importe]
+    FROM [VehiculosLINQ].[DETALLES-NOTAS] AS [DETALLES-NOTAS]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_DETALLES-NOTAS_NOTAS-REPARACIONES" Association="Self.FK_DETALLES-NOTAS_NOTAS-REPARACIONES">
+      <End Role="NOTAS-REPARACIONES" EntitySet="NOTAS-REPARACIONES" />
+      <End Role="DETALLES-NOTAS" EntitySet="DETALLES-NOTAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NOTAS-REPARACIONES_CLIENTES" Association="Self.FK_NOTAS-REPARACIONES_CLIENTES">
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+      <End Role="NOTAS-REPARACIONES" EntitySet="NOTAS-REPARACIONES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VEHICULOS_CLIENTES" Association="Self.FK_VEHICULOS_CLIENTES">
+      <End Role="CLIENTES" EntitySet="CLIENTES" />
+      <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
