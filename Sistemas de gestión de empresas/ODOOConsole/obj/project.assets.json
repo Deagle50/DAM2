@@ -4885,6 +4885,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
+      "Microsoft.EntityFrameworkCore.Relational >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3",
       "Microsoft.NETCore.App >= 2.2.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.0",
@@ -4898,11 +4899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Urko Urbieta\\Visual Studio\\Sistemas de gestión de empresas\\ODOOConsole\\ODOOConsole.csproj",
+      "projectUniqueName": "D:\\Urko Urbieta\\Visual Studio\\Sistemas de gestión de empresas\\ODOOConsole\\ODOOConsole.csproj",
       "projectName": "ODOOConsole",
-      "projectPath": "d:\\Urko Urbieta\\Visual Studio\\Sistemas de gestión de empresas\\ODOOConsole\\ODOOConsole.csproj",
+      "projectPath": "D:\\Urko Urbieta\\Visual Studio\\Sistemas de gestión de empresas\\ODOOConsole\\ODOOConsole.csproj",
       "packagesPath": "C:\\Users\\urkourbieta\\.nuget\\packages\\",
-      "outputPath": "d:\\Urko Urbieta\\Visual Studio\\Sistemas de gestión de empresas\\ODOOConsole\\obj\\",
+      "outputPath": "D:\\Urko Urbieta\\Visual Studio\\Sistemas de gestión de empresas\\ODOOConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4933,6 +4934,10 @@
       "netcoreapp2.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[3.1.0, )"
           },

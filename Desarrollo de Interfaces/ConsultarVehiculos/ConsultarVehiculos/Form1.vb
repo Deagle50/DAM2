@@ -7,7 +7,7 @@ Public Class Form1
                From coche In modelo.VEHICULOS
                Join cli In modelo.CLIENTES
                    On coche.DNI Equals cli.DNI
-               Where coche.Color = "Blanco" And coche.Marca = "BMW"
+               Where coche.Color = "Blanco" And coche.Marca = "Opel"
                Select coche.Marca, coche.Modelo, cli.Nombre, cli.Domicilio, cli.Poblacion, cli.Codigo_postal
               ).ToList
         mostrar(res)
@@ -21,8 +21,8 @@ Public Class Form1
             From coche In modelo.VEHICULOS
             Join cli In modelo.CLIENTES
                     On coche.DNI Equals cli.DNI
-            Where (coche.Color = "Blanco" Or coche.Color = "Negro") And coche.Marca = "Opel"
-            Select cli.Nombre, cli.Domicilio, cli.Poblacion, cli.Codigo_postal
+            Where coche.Color = "Blanco" Or coche.Color = "Negro" Or coche.Marca = "Opel"
+            Select cli.Nombre, cli.Domicilio, cli.Poblacion, cli.Codigo_postal Distinct
             ).ToList
         mostrar(res)
     End Sub
@@ -60,7 +60,7 @@ Public Class Form1
             From notas In modelo.NOTAS_REPARACIONES
             Join detalles_notas In modelo.DETALLES_NOTAS
                     On notas.Codigo_de_nota Equals detalles_notas.Codigo_de_nota
-            Where Month(notas.Fecha_de_reparacion) = 3
+            Where Month(notas.Fecha_de_reparacion) = 5
             Select notas.Codigo_de_nota, notas.DNI, notas.Fecha_de_reparacion, notas.Descuento,
                     notas.Observaciones, detalles_notas.Importe, detalles_notas.Linea, detalles_notas.Tipo,
                     detalles_notas.Ampliacion
@@ -68,8 +68,10 @@ Public Class Form1
         mostrar(res)
     End Sub
     Private Sub Btn6_Click(sender As Object, e As EventArgs) Handles btn6.Click
+        '
         '6.	Visualizar por pantalla todos los datos de las notas de reparaciones 
         'que se han emitido durante el primer trimestre de año 2003 (Consulta de selección).
+        '
         res = (
             From notas In modelo.NOTAS_REPARACIONES
             Join detalles_notas In modelo.DETALLES_NOTAS
@@ -106,15 +108,14 @@ Public Class Form1
     Private Sub Btn8_Click(sender As Object, e As EventArgs) Handles btn8.Click
         '8.	Preparar una consulta para que nos de el total a pagar por cada una 
         'de las notas de reparaciones que tenemos registradas (Agrupación de registros).
-        res = (
-            From notas In modelo.NOTAS_REPARACIONES
-            Join detalles_notas In modelo.DETALLES_NOTAS
-                    On notas.Codigo_de_nota Equals detalles_notas.Codigo_de_nota
-            Select notas.
-                
-            ).ToList
-        mostrar(res)
+        'res = (
+        '    From notas In modelo.NOTAS_REPARACIONES
+        '    Join detalles_notas In modelo.DETALLES_NOTAS
+        '            On notas.Codigo_de_nota Equals detalles_notas.Codigo_de_nota
+        '    Select notas.
 
+        '    ).ToList
+        'mostrar(res)
     End Sub
 
     Private Sub mostrar(res As Object)

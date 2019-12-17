@@ -50,14 +50,14 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDatos.Location = New System.Drawing.Point(335, 12)
+        Me.dgvDatos.Location = New System.Drawing.Point(545, 12)
         Me.dgvDatos.Name = "dgvDatos"
-        Me.dgvDatos.Size = New System.Drawing.Size(1150, 674)
+        Me.dgvDatos.Size = New System.Drawing.Size(940, 674)
         Me.dgvDatos.TabIndex = 0
         '
         'btn1
         '
-        Me.btn1.Location = New System.Drawing.Point(15, 71)
+        Me.btn1.Location = New System.Drawing.Point(12, 52)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(75, 23)
         Me.btn1.TabIndex = 2
@@ -66,7 +66,7 @@ Partial Class Form1
         '
         'btn2
         '
-        Me.btn2.Location = New System.Drawing.Point(15, 159)
+        Me.btn2.Location = New System.Drawing.Point(12, 121)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(75, 23)
         Me.btn2.TabIndex = 4
@@ -75,7 +75,7 @@ Partial Class Form1
         '
         'btn3
         '
-        Me.btn3.Location = New System.Drawing.Point(15, 231)
+        Me.btn3.Location = New System.Drawing.Point(12, 179)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(75, 23)
         Me.btn3.TabIndex = 6
@@ -84,7 +84,7 @@ Partial Class Form1
         '
         'btn4
         '
-        Me.btn4.Location = New System.Drawing.Point(15, 325)
+        Me.btn4.Location = New System.Drawing.Point(12, 252)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(75, 23)
         Me.btn4.TabIndex = 7
@@ -93,7 +93,7 @@ Partial Class Form1
         '
         'btn5
         '
-        Me.btn5.Location = New System.Drawing.Point(15, 406)
+        Me.btn5.Location = New System.Drawing.Point(12, 321)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(75, 23)
         Me.btn5.TabIndex = 10
@@ -102,66 +102,66 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(15, 12)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(317, 53)
+        Me.TextBox1.Size = New System.Drawing.Size(524, 34)
         Me.TextBox1.TabIndex = 11
         Me.TextBox1.Text = "1." & Global.Microsoft.VisualBasic.ChrW(9) & "Visualizar todos los datos de los clientes que " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "posean un vehículo de la marc" &
     "a Opel blanco (Consulta de selección)."
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(15, 100)
+        Me.TextBox2.Location = New System.Drawing.Point(12, 81)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(317, 53)
+        Me.TextBox2.Size = New System.Drawing.Size(524, 34)
         Me.TextBox2.TabIndex = 12
         Me.TextBox2.Text = "2." & Global.Microsoft.VisualBasic.ChrW(9) & "Visualizar todos los datos de los clientes que posean un vehículo de la marca " &
     "Opel o sea de color blanco o negro (Consulta de selección)."
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(15, 188)
+        Me.TextBox3.Location = New System.Drawing.Point(12, 150)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(317, 37)
+        Me.TextBox3.Size = New System.Drawing.Size(524, 23)
         Me.TextBox3.TabIndex = 13
         Me.TextBox3.Text = "3." & Global.Microsoft.VisualBasic.ChrW(9) & "Visualizar todos los datos de los clientes que residan en DONOSTIA (Consulta d" &
     "e selección)."
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(15, 260)
+        Me.TextBox4.Location = New System.Drawing.Point(12, 208)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(317, 59)
+        Me.TextBox4.Size = New System.Drawing.Size(524, 38)
         Me.TextBox4.TabIndex = 14
         Me.TextBox4.Text = resources.GetString("TextBox4.Text")
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(15, 354)
+        Me.TextBox5.Location = New System.Drawing.Point(12, 281)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(317, 46)
+        Me.TextBox5.Size = New System.Drawing.Size(524, 34)
         Me.TextBox5.TabIndex = 15
         Me.TextBox5.Text = "5." & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar por pantalla todos los datos de las notas de reparaciones que se han e" &
     "mitido durante el mes de Mayo (Consulta de selección)."
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(15, 435)
+        Me.TextBox6.Location = New System.Drawing.Point(12, 350)
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(314, 48)
+        Me.TextBox6.Size = New System.Drawing.Size(524, 35)
         Me.TextBox6.TabIndex = 16
         Me.TextBox6.Text = "6." & Global.Microsoft.VisualBasic.ChrW(9) & "Visualizar por pantalla todos los datos de las notas de reparaciones que se ha" &
     "n emitido durante el primer trimestre de año 2003 (Consulta de selección)."
         '
         'btn6
         '
-        Me.btn6.Location = New System.Drawing.Point(15, 489)
+        Me.btn6.Location = New System.Drawing.Point(12, 391)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(75, 23)
         Me.btn6.TabIndex = 17
@@ -170,16 +170,16 @@ Partial Class Form1
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(15, 518)
+        Me.TextBox7.Location = New System.Drawing.Point(12, 420)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(314, 61)
+        Me.TextBox7.Size = New System.Drawing.Size(524, 33)
         Me.TextBox7.TabIndex = 18
         Me.TextBox7.Text = resources.GetString("TextBox7.Text")
         '
         'btn7
         '
-        Me.btn7.Location = New System.Drawing.Point(15, 585)
+        Me.btn7.Location = New System.Drawing.Point(12, 459)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(75, 23)
         Me.btn7.TabIndex = 19
@@ -188,17 +188,17 @@ Partial Class Form1
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(15, 610)
+        Me.TextBox8.Location = New System.Drawing.Point(12, 488)
         Me.TextBox8.Multiline = True
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(314, 47)
+        Me.TextBox8.Size = New System.Drawing.Size(524, 34)
         Me.TextBox8.TabIndex = 20
         Me.TextBox8.Text = "8." & Global.Microsoft.VisualBasic.ChrW(9) & "Preparar una consulta para que nos de el total a pagar por cada una de las not" &
     "as de reparaciones que tenemos registradas (Agrupación de registros)."
         '
         'btn8
         '
-        Me.btn8.Location = New System.Drawing.Point(15, 663)
+        Me.btn8.Location = New System.Drawing.Point(12, 528)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(75, 23)
         Me.btn8.TabIndex = 21

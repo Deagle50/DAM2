@@ -20,43 +20,63 @@ namespace Servidor
         {
             NamedPipeServerStream npssForm;            
             NamedPipeServerStream npssCliente;
-            StreamWriter swC, swF;
+            StreamWriter swC, swF, swA; //Cliente, Formulario, Archivo(file)
             StreamReader srC;
+
             string nombre, linea;
             int idMensajeInfo;
             IntPtr hwnd;
+            int caracteres=0, cont =0;
+            float longMedia;
 
             idMensajeInfo = RegisterWindowMessage("WM_INFO");
 
             npssForm = new NamedPipeServerStream("serverForm", PipeDirection.Out);
             npssCliente = new NamedPipeServerStream("serverCliente", PipeDirection.InOut);
             
-
+            //Conectar con formulario
             npssForm.WaitForConnection();
-            npssCliente.WaitForConnection();
-            //Pedir nombre
-            swC = new StreamWriter(npssCliente);
-            swC.WriteLine("File?");
+            swF = new StreamWriter(npssForm);
+            swF.AutoFlush=true;
 
+            //Conectar con cliente
+            npssCliente.WaitForConnection();
+            swC = new StreamWriter(npssCliente);
+            swC.AutoFlush = true;
             srC = new StreamReader(npssCliente);
+
+            swC.WriteLine("File?");
             nombre = srC.ReadLine().ToString();
 
             //Crear fichero con x nombre
-            swF = File.CreateText(nombre);
+            swA = new StreamWriter(nombre+".txt");
 
             //Pedir línea
             swC.WriteLine("Next");
             linea = srC.ReadLine();
-            swF.WriteLine(linea);
-            while (linea != "EOF")
+            
+            //Pedir línea mientras no se reciba EOF
+            while (linea.CompareTo("EOF") != 0)
             {
+                cont++;
+                caracteres += linea.Length;
+                swA.WriteLine(linea);
                 swC.WriteLine("Next");
                 linea = srC.ReadLine();
-                swF.WriteLine(linea);
+                
             }
+            
+            longMedia = caracteres / cont;
+            swA.Close();
+            npssCliente.Close();
 
             hwnd = Process.GetProcessesByName("PipesRepaso1")[0].MainWindowHandle;
             PostMessage(hwnd, idMensajeInfo, IntPtr.Zero, IntPtr.Zero);
+
+            swF.WriteLine(nombre);
+            swF.WriteLine(caracteres.ToString());
+            swF.WriteLine(longMedia.ToString());
+            Console.ReadLine();
         }
     }
 }
