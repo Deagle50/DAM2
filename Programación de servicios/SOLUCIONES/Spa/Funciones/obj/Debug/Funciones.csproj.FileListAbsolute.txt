@@ -1,0 +1,5 @@
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Funciones\bin\Debug\Funciones.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Funciones\bin\Debug\Funciones.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Funciones\obj\Debug\Funciones.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Funciones\obj\Debug\Funciones.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Funciones\obj\Debug\Funciones.pdb

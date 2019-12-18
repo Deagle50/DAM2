@@ -1,0 +1,7 @@
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\bin\Debug\Cliente.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\bin\Debug\Cliente.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\bin\Debug\Cliente.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\obj\Debug\Cliente.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\obj\Debug\Cliente.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\RepasoPipes1\Cliente\obj\Debug\Cliente.csprojAssemblyReference.cache

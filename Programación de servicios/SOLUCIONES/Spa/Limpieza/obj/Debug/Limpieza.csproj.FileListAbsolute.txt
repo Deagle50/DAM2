@@ -1,0 +1,7 @@
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\bin\Debug\Limpieza.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\bin\Debug\Limpieza.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\bin\Debug\Limpieza.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\obj\Debug\Limpieza.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\obj\Debug\Limpieza.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\obj\Debug\Limpieza.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Spa\Limpieza\obj\Debug\Limpieza.csprojAssemblyReference.cache

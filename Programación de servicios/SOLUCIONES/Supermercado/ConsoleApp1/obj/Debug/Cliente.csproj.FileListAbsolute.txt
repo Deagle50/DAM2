@@ -1,0 +1,19 @@
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\bin\Debug\Funciones.dll
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\bin\Debug\Funciones.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\obj\Debug\Cliente.csproj.CopyComplete
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\ConsoleApp1\obj\Debug\Cliente.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\bin\Debug\Funciones.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\obj\Debug\Cliente.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\obj\Debug\Cliente.csproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

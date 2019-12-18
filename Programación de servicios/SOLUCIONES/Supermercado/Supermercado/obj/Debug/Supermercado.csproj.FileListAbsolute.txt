@@ -1,0 +1,25 @@
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\bin\Debug\Supermercado.exe.config
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\bin\Debug\Supermercado.exe
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\bin\Debug\Supermercado.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\bin\Debug\Funciones.dll
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\bin\Debug\Funciones.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.Form1.resources
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.Properties.Resources.resources
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.csproj.GenerateResource.cache
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.csproj.CoreCompileInputs.cache
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.csproj.CopyComplete
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.exe
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Supermercado\Supermercado\obj\Debug\Supermercado.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\bin\Debug\Supermercado.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\bin\Debug\Supermercado.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\bin\Debug\Supermercado.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\bin\Debug\Funciones.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.Form1.resources
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.Properties.Resources.resources
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.csproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.csproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 2 Programación Multiproceso\Soluciones\Supermercado\Supermercado\obj\Debug\Supermercado.pdb
