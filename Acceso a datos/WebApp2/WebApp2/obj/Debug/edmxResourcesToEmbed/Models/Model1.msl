@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModel1StoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities1">
+    <EntitySetMapping Name="Departamentos">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel1.Departamentos">
+        <MappingFragment StoreEntitySet="Departamentos">
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel1.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="EmpleadoID" ColumnName="EmpleadoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genero">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel1.Genero">
+        <MappingFragment StoreEntitySet="Genero">
+          <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="getEmpleados" FunctionName="DAM_urkourbieta_DEVModel1.Store.getEmpleados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DAM_urkourbieta_DEVModel1.getEmpleados_Result">
+          <ScalarProperty Name="EmpleadoID" ColumnName="EmpleadoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

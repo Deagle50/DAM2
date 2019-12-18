@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a2a2303ddecc4770b692777254ba3e31" Name="Diagram1">
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel1.Departamentos" Width="1.5" PointX="0.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel1.Empleados" Width="1.5" PointX="5.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel1.Genero" Width="1.5" PointX="0.875" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="DAM_urkourbieta_DEVModel1.FK_Empleados_Departamentos" ManuallyRouted="false" />
+        <AssociationConnector Association="DAM_urkourbieta_DEVModel1.FK_Empleados_Genero" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -5,4 +5,10 @@
     <item
         android:title="Metodos"
         android:id="@+id/mnuMetodos"></item>
+    <item
+        android:title="Mensajes"
+        android:id="@+id/mnuMensajes"></item>
+    <item
+        android:title="Todos los mensajes"
+        android:id="@+id/mnuTodosMensajes"></item>
 </menu>

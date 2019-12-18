@@ -32,13 +32,23 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item == findViewById(R.id.mnuConsultas))
+        if(item.getItemId() == R.id.mnuConsultas)
         {
             Intent i = new Intent(this, Consultas.class);
             startActivity(i);
         }
-        else if(item == findViewById(R.id.mnuMetodos)){
+        else if(item.getItemId() == R.id.mnuMetodos){
             Intent i = new Intent(this, Metodos.class);
+            startActivity(i);
+        }
+        else if(item.getItemId() == R.id.mnuMensajes)
+        {
+            Intent i = new Intent(this, Mensajes.class);
+            startActivity(i);
+        }
+        else if(item.getItemId() == R.id.mnuTodosMensajes)
+        {
+            Intent i = new Intent(this, ListaMensajes.class);
             startActivity(i);
         }
         return true;

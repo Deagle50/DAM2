@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DAM_urkourbieta_DEVModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Departamentos">
+          <Key>
+            <PropertyRef Name="DeptID" />
+          </Key>
+          <Property Name="DeptID" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="EmpleadoID" />
+          </Key>
+          <Property Name="EmpleadoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Apellido" Type="varchar" MaxLength="50" />
+          <Property Name="GeneroID" Type="char" MaxLength="1" />
+          <Property Name="DeptID" Type="char" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Genero">
+          <Key>
+            <PropertyRef Name="GeneroID" />
+          </Key>
+          <Property Name="GeneroID" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="Descripcion" Type="char" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_Empleados_Departamentos">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="0..1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="DeptID" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="DeptID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Empleados_Genero">
+          <End Role="Genero" Type="Self.Genero" Multiplicity="0..1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genero">
+              <PropertyRef Name="GeneroID" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="GeneroID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="getEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS" />
+        <EntityContainer Name="DAM_urkourbieta_DEVModel1StoreContainer">
+          <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="JOINS" store:Type="Tables" />
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="JOINS" store:Type="Tables" />
+          <EntitySet Name="Genero" EntityType="Self.Genero" Schema="JOINS" store:Type="Tables" />
+          <AssociationSet Name="FK_Empleados_Departamentos" Association="Self.FK_Empleados_Departamentos">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Empleados_Genero" Association="Self.FK_Empleados_Genero">
+            <End Role="Genero" EntitySet="Genero" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DAM_urkourbieta_DEVModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Departamentos">
+          <Key>
+            <PropertyRef Name="DeptID" />
+          </Key>
+          <Property Name="DeptID" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Empleados" Relationship="Self.FK_Empleados_Departamentos" FromRole="Departamentos" ToRole="Empleados" />
+        </EntityType>
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="EmpleadoID" />
+          </Key>
+          <Property Name="EmpleadoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GeneroID" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="DeptID" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Departamentos" Relationship="Self.FK_Empleados_Departamentos" FromRole="Empleados" ToRole="Departamentos" />
+          <NavigationProperty Name="Genero" Relationship="Self.FK_Empleados_Genero" FromRole="Empleados" ToRole="Genero" />
+        </EntityType>
+        <EntityType Name="Genero">
+          <Key>
+            <PropertyRef Name="GeneroID" />
+          </Key>
+          <Property Name="GeneroID" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Empleados" Relationship="Self.FK_Empleados_Genero" FromRole="Genero" ToRole="Empleados" />
+        </EntityType>
+        <Association Name="FK_Empleados_Departamentos">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="0..1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="DeptID" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="DeptID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Empleados_Genero">
+          <End Role="Genero" Type="Self.Genero" Multiplicity="0..1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genero">
+              <PropertyRef Name="GeneroID" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="GeneroID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DAM_urkourbieta_DEVEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Departamentos" EntityType="Self.Departamentos" />
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+          <EntitySet Name="Genero" EntityType="Self.Genero" />
+          <AssociationSet Name="FK_Empleados_Departamentos" Association="Self.FK_Empleados_Departamentos">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Empleados_Genero" Association="Self.FK_Empleados_Genero">
+            <End Role="Genero" EntitySet="Genero" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <FunctionImport Name="getEmpleados" ReturnType="Collection(DAM_urkourbieta_DEVModel1.getEmpleados_Result)" />
+        </EntityContainer>
+        <ComplexType Name="getEmpleados_Result">
+          <Property Type="Int32" Name="EmpleadoID" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Apellido" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="GeneroID" Nullable="true" MaxLength="1" />
+          <Property Type="String" Name="DeptID" Nullable="true" MaxLength="3" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModel1StoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities1">
+          <EntitySetMapping Name="Departamentos">
+            <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel1.Departamentos">
+              <MappingFragment StoreEntitySet="Departamentos">
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empleados">
+            <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel1.Empleados">
+              <MappingFragment StoreEntitySet="Empleados">
+                <ScalarProperty Name="EmpleadoID" ColumnName="EmpleadoID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Genero">
+            <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel1.Genero">
+              <MappingFragment StoreEntitySet="Genero">
+                <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="getEmpleados" FunctionName="DAM_urkourbieta_DEVModel1.Store.getEmpleados">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DAM_urkourbieta_DEVModel1.getEmpleados_Result">
+                <ScalarProperty Name="EmpleadoID" ColumnName="EmpleadoID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

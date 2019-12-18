@@ -67,6 +67,9 @@ namespace PipesRepaso2
             else if (m.Msg== idMsgIgual)
             {
                 MessageBox.Show("Se ha intentado {0} veces"+ menor + mayor);
+                mayor = menor = 0;
+                txtVMayor.Text = mayor.ToString();
+                txtVMenor.Text = menor.ToString();
             }
             base.WndProc(ref m);
         }

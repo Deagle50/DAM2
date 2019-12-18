@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Departamentos">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Name="DeptID" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="EmpleadoID" />
+    </Key>
+    <Property Name="EmpleadoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" />
+    <Property Name="GeneroID" Type="char" MaxLength="1" />
+    <Property Name="DeptID" Type="char" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Genero">
+    <Key>
+      <PropertyRef Name="GeneroID" />
+    </Key>
+    <Property Name="GeneroID" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="Descripcion" Type="char" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_Empleados_Departamentos">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleados_Genero">
+    <End Role="Genero" Type="Self.Genero" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genero">
+        <PropertyRef Name="GeneroID" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="GeneroID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVModelStoreContainer">
+    <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="JOINS" store:Type="Tables" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="JOINS" store:Type="Tables" />
+    <EntitySet Name="Genero" EntityType="Self.Genero" Schema="JOINS" store:Type="Tables" />
+    <AssociationSet Name="FK_Empleados_Departamentos" Association="Self.FK_Empleados_Departamentos">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleados_Genero" Association="Self.FK_Empleados_Genero">
+      <End Role="Genero" EntitySet="Genero" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
