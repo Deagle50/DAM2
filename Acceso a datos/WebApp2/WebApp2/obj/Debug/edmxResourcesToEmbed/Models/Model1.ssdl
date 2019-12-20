@@ -48,7 +48,48 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="deleteDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteGenero" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getDepartamentos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS" />
   <Function Name="getEmpleados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS" />
+  <Function Name="getGeneros" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS" />
+  <Function Name="insertDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="insertEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="ap" Type="varchar" Mode="In" />
+    <Parameter Name="gen" Type="char" Mode="In" />
+    <Parameter Name="dept" Type="char" Mode="In" />
+  </Function>
+  <Function Name="insertGenero" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="updateDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="updateEmpleado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+    <Parameter Name="nombre" Type="varchar" Mode="In" />
+    <Parameter Name="apellido" Type="varchar" Mode="In" />
+    <Parameter Name="genero" Type="char" Mode="In" />
+    <Parameter Name="dep" Type="char" Mode="In" />
+  </Function>
+  <Function Name="updateGenero" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="JOINS">
+    <Parameter Name="employeeID" Type="int" Mode="In" />
+    <Parameter Name="desc" Type="char" Mode="In" />
+  </Function>
   <EntityContainer Name="DAM_urkourbieta_DEVModel1StoreContainer">
     <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="JOINS" store:Type="Tables" />
     <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="JOINS" store:Type="Tables" />

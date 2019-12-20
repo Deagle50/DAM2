@@ -7,20 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp2
+namespace WebApp2.Models
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Empleados
+    public partial class getGeneros_Result
     {
-        public int EmpleadoID { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
         public string GeneroID { get; set; }
-        public string DeptID { get; set; }
-    
-        public virtual Departamentos Departamentos { get; set; }
-        public virtual Genero Genero { get; set; }
+        public string Descripcion { get; set; }
     }
 }

@@ -39,5 +39,30 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="deleteDepartamento" FunctionName="DAM_urkourbieta_DEVModel1.Store.deleteDepartamento" />
+    <FunctionImportMapping FunctionImportName="deleteEmpleado" FunctionName="DAM_urkourbieta_DEVModel1.Store.deleteEmpleado" />
+    <FunctionImportMapping FunctionImportName="deleteGenero" FunctionName="DAM_urkourbieta_DEVModel1.Store.deleteGenero" />
+    <FunctionImportMapping FunctionImportName="getDepartamentos" FunctionName="DAM_urkourbieta_DEVModel1.Store.getDepartamentos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DAM_urkourbieta_DEVModel1.getDepartamentos_Result">
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getGeneros" FunctionName="DAM_urkourbieta_DEVModel1.Store.getGeneros">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DAM_urkourbieta_DEVModel1.getGeneros_Result">
+          <ScalarProperty Name="GeneroID" ColumnName="GeneroID" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="insertDepartamento" FunctionName="DAM_urkourbieta_DEVModel1.Store.insertDepartamento" />
+    <FunctionImportMapping FunctionImportName="insertEmpleado" FunctionName="DAM_urkourbieta_DEVModel1.Store.insertEmpleado" />
+    <FunctionImportMapping FunctionImportName="insertGenero" FunctionName="DAM_urkourbieta_DEVModel1.Store.insertGenero" />
+    <FunctionImportMapping FunctionImportName="updateDepartamento" FunctionName="DAM_urkourbieta_DEVModel1.Store.updateDepartamento" />
+    <FunctionImportMapping FunctionImportName="updateEmpleado" FunctionName="DAM_urkourbieta_DEVModel1.Store.updateEmpleado" />
+    <FunctionImportMapping FunctionImportName="updateGenero" FunctionName="DAM_urkourbieta_DEVModel1.Store.updateGenero" />
   </EntityContainerMapping>
 </Mapping>

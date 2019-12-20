@@ -1,0 +1,7 @@
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\bin\Debug\TemporizadorEncender.exe.config
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\bin\Debug\TemporizadorEncender.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\bin\Debug\TemporizadorEncender.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\obj\Debug\TemporizadorEncender.csprojAssemblyReference.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\obj\Debug\TemporizadorEncender.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\obj\Debug\TemporizadorEncender.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\TemporizadorEncender\obj\Debug\TemporizadorEncender.pdb

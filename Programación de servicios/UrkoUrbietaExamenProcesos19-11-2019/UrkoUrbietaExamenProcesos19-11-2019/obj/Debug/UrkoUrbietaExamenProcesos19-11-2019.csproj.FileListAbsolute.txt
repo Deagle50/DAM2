@@ -1,0 +1,10 @@
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\bin\Debug\UrkoUrbietaExamenProcesos19-11-2019.exe.config
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\bin\Debug\UrkoUrbietaExamenProcesos19-11-2019.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\bin\Debug\UrkoUrbietaExamenProcesos19-11-2019.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19-11-2019.csprojAssemblyReference.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19_11_2019.Form1.resources
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19_11_2019.Properties.Resources.resources
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19-11-2019.csproj.GenerateResource.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19-11-2019.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19-11-2019.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\UrkoUrbietaExamenProcesos19-11-2019\obj\Debug\UrkoUrbietaExamenProcesos19-11-2019.pdb

@@ -1,0 +1,7 @@
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\bin\Debug\ProgramadorEncender.exe.config
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\bin\Debug\ProgramadorEncender.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\bin\Debug\ProgramadorEncender.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\obj\Debug\ProgramadorEncender.csprojAssemblyReference.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\obj\Debug\ProgramadorEncender.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\obj\Debug\ProgramadorEncender.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenProcesos19-11-2019\ProgramadorEncender\obj\Debug\ProgramadorEncender.pdb

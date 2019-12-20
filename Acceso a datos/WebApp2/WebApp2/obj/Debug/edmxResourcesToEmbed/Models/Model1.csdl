@@ -65,6 +65,47 @@
       <End Role="Empleados" EntitySet="Empleados" />
     </AssociationSet>
     <FunctionImport Name="getEmpleados" ReturnType="Collection(DAM_urkourbieta_DEVModel1.getEmpleados_Result)" />
+    <FunctionImport Name="deleteDepartamento">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="deleteEmpleado">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="deleteGenero">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="getDepartamentos" ReturnType="Collection(DAM_urkourbieta_DEVModel1.getDepartamentos_Result)" />
+    <FunctionImport Name="getGeneros" ReturnType="Collection(DAM_urkourbieta_DEVModel1.getGeneros_Result)" />
+    <FunctionImport Name="insertDepartamento">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="insertEmpleado">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="ap" Mode="In" Type="String" />
+      <Parameter Name="gen" Mode="In" Type="String" />
+      <Parameter Name="dept" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="insertGenero">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="updateDepartamento">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="updateEmpleado">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido" Mode="In" Type="String" />
+      <Parameter Name="genero" Mode="In" Type="String" />
+      <Parameter Name="dep" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="updateGenero">
+      <Parameter Name="employeeID" Mode="In" Type="Int32" />
+      <Parameter Name="desc" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="getEmpleados_Result">
     <Property Type="Int32" Name="EmpleadoID" Nullable="false" />
@@ -72,5 +113,13 @@
     <Property Type="String" Name="Apellido" Nullable="true" MaxLength="50" />
     <Property Type="String" Name="GeneroID" Nullable="true" MaxLength="1" />
     <Property Type="String" Name="DeptID" Nullable="true" MaxLength="3" />
+  </ComplexType>
+  <ComplexType Name="getDepartamentos_Result">
+    <Property Type="String" Name="DeptID" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="getGeneros_Result">
+    <Property Type="String" Name="GeneroID" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="10" />
   </ComplexType>
 </Schema>
