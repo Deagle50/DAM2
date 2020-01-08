@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:id="@+id/mnuBottom">
+
+
+    <item
+        android:id="@+id/btnMain"
+        android:title="Main"/>
+
+    <item
+        android:id="@+id/btnWiki"
+        android:title="Wiki"
+
+        />
+
+    <item
+        android:id="@+id/btnSettings"
+
+        android:title="Settings" />
+
+</menu>
