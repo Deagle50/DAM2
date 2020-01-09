@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoODOONetCore", "RetoODOONetCore\RetoODOONetCore.csproj", "{7D89BC22-FA69-4441-B692-D360DFB4B542}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetoODOONetCore", "RetoODOONetCore\RetoODOONetCore.csproj", "{F8F1A52E-0C18-4596-8BEE-267C426455F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D89BC22-FA69-4441-B692-D360DFB4B542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D89BC22-FA69-4441-B692-D360DFB4B542}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D89BC22-FA69-4441-B692-D360DFB4B542}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D89BC22-FA69-4441-B692-D360DFB4B542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F1A52E-0C18-4596-8BEE-267C426455F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F1A52E-0C18-4596-8BEE-267C426455F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F1A52E-0C18-4596-8BEE-267C426455F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F1A52E-0C18-4596-8BEE-267C426455F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F8432843-BE34-46AC-914E-8F7F066D6D0F}
+		SolutionGuid = {F36ADBD6-4321-434C-9A21-1EFF5EFE68EB}
 	EndGlobalSection
 EndGlobal

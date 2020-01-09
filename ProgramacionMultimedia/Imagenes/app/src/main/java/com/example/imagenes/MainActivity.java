@@ -17,6 +17,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView imagen;
     Canvas c;
     Bitmap copia;
-    float x, y;
+    float rx, ry, x, y;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnGuardar.setOnClickListener(this);
         btnBuscar.setOnClickListener(this);
-        imagen.setOnClickListener(this);
+        imagen.setOnTouchListener(this);
 
 
     }
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v == btnBuscar)
         {
             //BUSCAR
-            this.requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 123);
+            this.requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE}, 123);
 
             Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             i.setType(MediaStore.Images.Media.CONTENT_TYPE);
@@ -57,6 +59,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if(v== btnGuardar)
         {
             //GUARDAR
+            MediaStore.Images.Media.insertImage(getContentResolver(), copia, "copia",
+                    "copia editada");
+            /*Toast t = new Toast(this);
+            t.setDuration(Toast.LENGTH_SHORT);
+            t.setText("Guardada con éxito");
+            t.show();*/
+
         }
     }
 
@@ -70,7 +79,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Uri uri = data.getData();
                     Bitmap foto = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
                     imagen.setImageBitmap(foto);
-                    copia = ((BitmapDrawable)(imagen.getDrawable())).getBitmap().copy(Bitmap.Config.ARGB_8888, true);
+                    copia = ((BitmapDrawable)(imagen.getDrawable())).getBitmap().copy(
+                            Bitmap.Config.ARGB_8888, true);
+                    rx = foto.getWidth()/(float)imagen.getWidth();
+                    ry = foto.getHeight()/(float)imagen.getHeight();
                     c = new Canvas(copia);
                 }
                 catch(java.io.IOException ex)
@@ -84,21 +96,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onTouch(View v, MotionEvent event){
-        if(event.getAction()==MotionEvent.ACTION_BUTTON_PRESS)
+        if(event.getAction()==MotionEvent.ACTION_DOWN)
         {
-            x=event.getX();
-            y=event.getY();
+            x=rx*event.getX();
+            y=ry*event.getY();
         }
         else if(event.getAction()==MotionEvent.ACTION_MOVE)
         {
-            Paint p = new Paint();
+            Paint p=new Paint();
             p.setColor(Color.BLACK);
-            c.drawLine(x,y,event.getX(),event.getY(),p);
-            x=event.getX();
-            y=event.getY();
+            c.drawLine(x,y,rx*event.getX(),ry*event.getY(),p);
+            x=rx*event.getX();
+            y=ry*event.getY();
             imagen.setImageBitmap(copia);
         }
-        return false;
+        return true;
     }
 
 }

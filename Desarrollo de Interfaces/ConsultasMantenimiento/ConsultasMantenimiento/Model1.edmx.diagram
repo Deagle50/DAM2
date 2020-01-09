@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f0335f2d0df64c7b9f934f9cbc9d1326" Name="Diagram1">
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel.Equipos" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel.Instalaciones" Width="1.5" PointX="4.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel.Software" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DAM_urkourbieta_DEVModel.Usuarios" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="DAM_urkourbieta_DEVModel.FK_Instalaciones_Equipos" ManuallyRouted="false" />
+        <AssociationConnector Association="DAM_urkourbieta_DEVModel.FK_Usuarios_Equipos" ManuallyRouted="false" />
+        <AssociationConnector Association="DAM_urkourbieta_DEVModel.FK_Instalaciones_Software" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
