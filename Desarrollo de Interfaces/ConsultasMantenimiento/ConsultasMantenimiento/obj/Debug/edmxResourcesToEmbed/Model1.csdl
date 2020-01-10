@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Equipos">
+    <Key>
+      <PropertyRef Name="cod_equipo" />
+    </Key>
+    <Property Name="cod_equipo" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Procesador" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Velocidad" Type="Int16" />
+    <Property Name="CD_ROM" Type="Byte" />
+    <Property Name="Memoria" Type="Int16" Nullable="false" />
+    <Property Name="tarjeta_red" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="disco_duro" Type="Single" Nullable="false" />
+    <Property Name="Uso" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Instalaciones" Relationship="Self.FK_Instalaciones_Equipos" FromRole="Equipos" ToRole="Instalaciones" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Usuarios_Equipos" FromRole="Equipos" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Instalaciones">
+    <Key>
+      <PropertyRef Name="cod_instalacion" />
+    </Key>
+    <Property Name="cod_instalacion" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cod_equipo" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cod_software" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fecha_instalacion" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Equipos" Relationship="Self.FK_Instalaciones_Equipos" FromRole="Instalaciones" ToRole="Equipos" />
+    <NavigationProperty Name="Software" Relationship="Self.FK_Instalaciones_Software" FromRole="Instalaciones" ToRole="Software" />
+  </EntityType>
+  <EntityType Name="Software">
+    <Key>
+      <PropertyRef Name="cod_software" />
+    </Key>
+    <Property Name="cod_software" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="memoria_requerida" Type="Int16" />
+    <Property Name="procesador_requerido" Type="Int16" />
+    <Property Name="disco_requerido" Type="Int16" />
+    <Property Name="Version" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Distribuidor" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Categoria" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Instalaciones" Relationship="Self.FK_Instalaciones_Software" FromRole="Software" ToRole="Instalaciones" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Cod_Usuario" />
+    </Key>
+    <Property Name="Cod_Usuario" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="cod_equipo" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Equipos" Relationship="Self.FK_Usuarios_Equipos" FromRole="Usuarios" ToRole="Equipos" />
+  </EntityType>
+  <Association Name="FK_Instalaciones_Equipos">
+    <End Role="Equipos" Type="Self.Equipos" Multiplicity="1" />
+    <End Role="Instalaciones" Type="Self.Instalaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipos">
+        <PropertyRef Name="cod_equipo" />
+      </Principal>
+      <Dependent Role="Instalaciones">
+        <PropertyRef Name="cod_equipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Equipos">
+    <End Role="Equipos" Type="Self.Equipos" Multiplicity="1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipos">
+        <PropertyRef Name="cod_equipo" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="cod_equipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Instalaciones_Software">
+    <End Role="Software" Type="Self.Software" Multiplicity="1" />
+    <End Role="Instalaciones" Type="Self.Instalaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Software">
+        <PropertyRef Name="cod_software" />
+      </Principal>
+      <Dependent Role="Instalaciones">
+        <PropertyRef Name="cod_software" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Equipos" EntityType="Self.Equipos" />
+    <EntitySet Name="Instalaciones" EntityType="Self.Instalaciones" />
+    <EntitySet Name="Software" EntityType="Self.Software" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK_Instalaciones_Equipos" Association="Self.FK_Instalaciones_Equipos">
+      <End Role="Equipos" EntitySet="Equipos" />
+      <End Role="Instalaciones" EntitySet="Instalaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Equipos" Association="Self.FK_Usuarios_Equipos">
+      <End Role="Equipos" EntitySet="Equipos" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Instalaciones_Software" Association="Self.FK_Instalaciones_Software">
+      <End Role="Software" EntitySet="Software" />
+      <End Role="Instalaciones" EntitySet="Instalaciones" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

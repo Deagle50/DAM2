@@ -4,11 +4,30 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-@foreach (var vehicle in Model.vehicles)
-{
-    <h1>@vehicle.Color</h1>
-}
+@* TO DO: CONSULTAS DE SELECCIÓN,
+    UPDATE Y DELETE*@
+
+    <body>
+        @*@foreach (var vehicle in Model.vehicles)
+        {
+            <h1>@vehicle.Name</h1>
+        }*@
+
+        <label>Modelo de coche</label>
+        <input type="text" id="txtModelo" /><br />
+
+        <label>ID de modelo</label>
+        <input type="number" id="txtIDModelo" /><br />
+
+        <label>Matrícula</label>
+        <input type="text" id="txtMatricula" /><br />
+
+        <label>Fecha de adquisición</label>
+        <input type="date" id="txtFecha"/><br/>
+
+        <button id="btnEnviar">Enviar</button>
+        <button id="btnActualizar">Actualizar</button>
+        <button id="btnBorrar">Borrar</button>
+
+        @* Odometer unit kms *@
+    </body>

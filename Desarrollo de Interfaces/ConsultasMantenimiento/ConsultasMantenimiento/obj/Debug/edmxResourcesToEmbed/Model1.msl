@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModelStoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities">
+    <EntitySetMapping Name="Equipos">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Equipos">
+        <MappingFragment StoreEntitySet="Equipos">
+          <ScalarProperty Name="cod_equipo" ColumnName="cod_equipo" />
+          <ScalarProperty Name="Procesador" ColumnName="Procesador" />
+          <ScalarProperty Name="Velocidad" ColumnName="Velocidad" />
+          <ScalarProperty Name="CD_ROM" ColumnName="CD ROM" />
+          <ScalarProperty Name="Memoria" ColumnName="Memoria" />
+          <ScalarProperty Name="tarjeta_red" ColumnName="tarjeta_red" />
+          <ScalarProperty Name="disco_duro" ColumnName="disco_duro" />
+          <ScalarProperty Name="Uso" ColumnName="Uso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instalaciones">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Instalaciones">
+        <MappingFragment StoreEntitySet="Instalaciones">
+          <ScalarProperty Name="cod_instalacion" ColumnName="cod_instalacion" />
+          <ScalarProperty Name="cod_equipo" ColumnName="cod_equipo" />
+          <ScalarProperty Name="cod_software" ColumnName="cod_software" />
+          <ScalarProperty Name="fecha_instalacion" ColumnName="fecha_instalacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Software">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Software">
+        <MappingFragment StoreEntitySet="Software">
+          <ScalarProperty Name="cod_software" ColumnName="cod_software" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="memoria_requerida" ColumnName="memoria_requerida" />
+          <ScalarProperty Name="procesador_requerido" ColumnName="procesador_requerido" />
+          <ScalarProperty Name="disco_requerido" ColumnName="disco_requerido" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="Distribuidor" ColumnName="Distribuidor" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Cod_Usuario" ColumnName="Cod Usuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="cod_equipo" ColumnName="cod_equipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

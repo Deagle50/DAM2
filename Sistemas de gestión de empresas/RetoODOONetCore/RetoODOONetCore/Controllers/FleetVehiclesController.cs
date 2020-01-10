@@ -6,15 +6,23 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RetoODOONetCore.Models;
-
+/// <summary>
+/// 
+/// </summary>
 namespace RetoODOONetCore.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     public class FleetVehiclesController : ControllerBase
     {
         private readonly OdooDBContext _context;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
         public FleetVehiclesController(OdooDBContext context)
         {
             _context = context;

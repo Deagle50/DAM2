@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Equipos">
+    <Key>
+      <PropertyRef Name="cod_equipo" />
+    </Key>
+    <Property Name="cod_equipo" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="Procesador" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Velocidad" Type="smallint" />
+    <Property Name="CD ROM" Type="tinyint" />
+    <Property Name="Memoria" Type="smallint" Nullable="false" />
+    <Property Name="tarjeta_red" Type="nvarchar" MaxLength="15" />
+    <Property Name="disco_duro" Type="real" Nullable="false" />
+    <Property Name="Uso" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Instalaciones">
+    <Key>
+      <PropertyRef Name="cod_instalacion" />
+    </Key>
+    <Property Name="cod_instalacion" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="cod_equipo" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="cod_software" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="fecha_instalacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Software">
+    <Key>
+      <PropertyRef Name="cod_software" />
+    </Key>
+    <Property Name="cod_software" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="memoria_requerida" Type="smallint" />
+    <Property Name="procesador_requerido" Type="smallint" />
+    <Property Name="disco_requerido" Type="smallint" />
+    <Property Name="Version" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="Distribuidor" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="Categoria" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Cod Usuario" />
+    </Key>
+    <Property Name="Cod Usuario" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Teléfono" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="25" />
+    <Property Name="cod_equipo" Type="nvarchar" MaxLength="4" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Instalaciones_Equipos">
+    <End Role="Equipos" Type="Self.Equipos" Multiplicity="1" />
+    <End Role="Instalaciones" Type="Self.Instalaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipos">
+        <PropertyRef Name="cod_equipo" />
+      </Principal>
+      <Dependent Role="Instalaciones">
+        <PropertyRef Name="cod_equipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Instalaciones_Software">
+    <End Role="Software" Type="Self.Software" Multiplicity="1" />
+    <End Role="Instalaciones" Type="Self.Instalaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Software">
+        <PropertyRef Name="cod_software" />
+      </Principal>
+      <Dependent Role="Instalaciones">
+        <PropertyRef Name="cod_software" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Equipos">
+    <End Role="Equipos" Type="Self.Equipos" Multiplicity="1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipos">
+        <PropertyRef Name="cod_equipo" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="cod_equipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVModelStoreContainer">
+    <EntitySet Name="Equipos" EntityType="Self.Equipos" Schema="Mantenimiento" store:Type="Tables" />
+    <EntitySet Name="Instalaciones" EntityType="Self.Instalaciones" Schema="Mantenimiento" store:Type="Tables" />
+    <EntitySet Name="Software" EntityType="Self.Software" Schema="Mantenimiento" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="Mantenimiento" store:Type="Tables" />
+    <AssociationSet Name="FK_Instalaciones_Equipos" Association="Self.FK_Instalaciones_Equipos">
+      <End Role="Equipos" EntitySet="Equipos" />
+      <End Role="Instalaciones" EntitySet="Instalaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Instalaciones_Software" Association="Self.FK_Instalaciones_Software">
+      <End Role="Software" EntitySet="Software" />
+      <End Role="Instalaciones" EntitySet="Instalaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Equipos" Association="Self.FK_Usuarios_Equipos">
+      <End Role="Equipos" EntitySet="Equipos" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,17 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\ConsultasMantenimiento.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\ConsultasMantenimiento.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\ConsultasMantenimiento.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\ConsultasMantenimiento.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\EntityFramework.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\EntityFramework.SqlServer.dll
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\EntityFramework.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\bin\Debug\EntityFramework.SqlServer.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.Form1.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.vbproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\ConsultasMantenimiento\ConsultasMantenimiento\obj\Debug\ConsultasMantenimiento.pdb

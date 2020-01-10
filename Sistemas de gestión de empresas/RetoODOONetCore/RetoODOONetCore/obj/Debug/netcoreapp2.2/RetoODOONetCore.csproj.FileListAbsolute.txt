@@ -28,3 +28,5 @@ D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\RetoODOONetCore\R
 D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\RetoODOONetCore\RetoODOONetCore\obj\Debug\netcoreapp2.2\RetoODOONetCore.dll
 D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\RetoODOONetCore\RetoODOONetCore\obj\Debug\netcoreapp2.2\RetoODOONetCore.pdb
 D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\RetoODOONetCore\RetoODOONetCore\obj\Debug\netcoreapp2.2\RetoODOONetCore.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\RetoODOONetCore\RetoODOONetCore\bin\Debug\netcoreapp2.2\RetoODOONetCore.xml
+D:\Urko Urbieta\Visual Studio\Sistemas de gestión de empresas\RetoODOONetCore\RetoODOONetCore\obj\Debug\netcoreapp2.2\RetoODOONetCore.xml
