@@ -90,11 +90,19 @@ Public Class Form1
 
     Private Sub BtnConsulta7_Click(sender As Object, e As EventArgs) Handles btnConsulta7.Click
         'o	Visualizar la velocidad del equipo más rápido.
+        'res = (
+        '    From pc In modelo.Equipos
+        '    Order By pc.Velocidad Descending
+        '    Select pc.Velocidad
+        ').Take(1).ToList
+
         res = (
-            From pc In modelo.Equipos
-            Order By pc.Velocidad Descending
-            Select pc.Velocidad
-        ).Take(1).ToList
+            From eq In modelo.Equipos
+            Aggregate eqaux In modelo.Equipos
+            Into maximo = Max(eqaux.Velocidad)
+            Where eq.Velocidad = maximo
+            Select New With {eq.Velocidad}
+            ).ToArray
 
         mostrar(res)
     End Sub
