@@ -43,29 +43,36 @@ Partial Class Form1
         Me.btnConsulta9 = New System.Windows.Forms.Button()
         Me.GBxEquipos = New System.Windows.Forms.GroupBox()
         Me.GBxUsuarios = New System.Windows.Forms.GroupBox()
+        Me.btnConsulta13 = New System.Windows.Forms.Button()
+        Me.lblConsulta13 = New System.Windows.Forms.Label()
         Me.btnConsulta12 = New System.Windows.Forms.Button()
         Me.lblConsulta12 = New System.Windows.Forms.Label()
         Me.btnConsulta11 = New System.Windows.Forms.Button()
         Me.lblConsulta11 = New System.Windows.Forms.Label()
         Me.btnConsulta10 = New System.Windows.Forms.Button()
         Me.lblConsulta10 = New System.Windows.Forms.Label()
-        Me.lblConsulta13 = New System.Windows.Forms.Label()
-        Me.btnConsulta13 = New System.Windows.Forms.Button()
         Me.GBxInstalaciones = New System.Windows.Forms.GroupBox()
-        Me.lblConsulta14 = New System.Windows.Forms.Label()
-        Me.btnConsulta14 = New System.Windows.Forms.Button()
-        Me.lblConsulta15 = New System.Windows.Forms.Label()
-        Me.btnConsulta15 = New System.Windows.Forms.Button()
-        Me.lblConsulta16 = New System.Windows.Forms.Label()
-        Me.btnConsulta16 = New System.Windows.Forms.Button()
-        Me.lblConsulta17 = New System.Windows.Forms.Label()
-        Me.btnConsulta17 = New System.Windows.Forms.Button()
-        Me.lblConsulta18 = New System.Windows.Forms.Label()
         Me.btnConsulta18 = New System.Windows.Forms.Button()
+        Me.lblConsulta18 = New System.Windows.Forms.Label()
+        Me.btnConsulta17 = New System.Windows.Forms.Button()
+        Me.lblConsulta17 = New System.Windows.Forms.Label()
+        Me.btnConsulta16 = New System.Windows.Forms.Button()
+        Me.lblConsulta16 = New System.Windows.Forms.Label()
+        Me.btnConsulta15 = New System.Windows.Forms.Button()
+        Me.lblConsulta15 = New System.Windows.Forms.Label()
+        Me.btnConsulta14 = New System.Windows.Forms.Button()
+        Me.lblConsulta14 = New System.Windows.Forms.Label()
+        Me.gbxEYU = New System.Windows.Forms.GroupBox()
+        Me.btnConsulta43 = New System.Windows.Forms.Button()
+        Me.btnConsulta42 = New System.Windows.Forms.Button()
+        Me.lblConsulta42 = New System.Windows.Forms.Label()
+        Me.btnConsulta41 = New System.Windows.Forms.Button()
+        Me.lblConsulta41 = New System.Windows.Forms.Label()
         CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GBxEquipos.SuspendLayout()
         Me.GBxUsuarios.SuspendLayout()
         Me.GBxInstalaciones.SuspendLayout()
+        Me.gbxEYU.SuspendLayout()
         Me.SuspendLayout()
         '
         'dgvDatos
@@ -74,9 +81,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDatos.Location = New System.Drawing.Point(695, 12)
+        Me.dgvDatos.Location = New System.Drawing.Point(1103, 12)
         Me.dgvDatos.Name = "dgvDatos"
-        Me.dgvDatos.Size = New System.Drawing.Size(746, 673)
+        Me.dgvDatos.Size = New System.Drawing.Size(338, 673)
         Me.dgvDatos.TabIndex = 0
         '
         'lblConsulta1
@@ -91,7 +98,7 @@ Partial Class Form1
         '
         'btnConsulta1
         '
-        Me.btnConsulta1.Location = New System.Drawing.Point(593, 11)
+        Me.btnConsulta1.Location = New System.Drawing.Point(561, 11)
         Me.btnConsulta1.Name = "btnConsulta1"
         Me.btnConsulta1.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta1.TabIndex = 2
@@ -109,7 +116,7 @@ Partial Class Form1
         '
         'btnConsulta2
         '
-        Me.btnConsulta2.Location = New System.Drawing.Point(593, 40)
+        Me.btnConsulta2.Location = New System.Drawing.Point(561, 40)
         Me.btnConsulta2.Name = "btnConsulta2"
         Me.btnConsulta2.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta2.TabIndex = 4
@@ -128,7 +135,7 @@ Partial Class Form1
         '
         'btnConsulta3
         '
-        Me.btnConsulta3.Location = New System.Drawing.Point(593, 69)
+        Me.btnConsulta3.Location = New System.Drawing.Point(561, 69)
         Me.btnConsulta3.Name = "btnConsulta3"
         Me.btnConsulta3.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta3.TabIndex = 6
@@ -146,7 +153,7 @@ Partial Class Form1
         '
         'btnConsulta4
         '
-        Me.btnConsulta4.Location = New System.Drawing.Point(593, 98)
+        Me.btnConsulta4.Location = New System.Drawing.Point(561, 98)
         Me.btnConsulta4.Name = "btnConsulta4"
         Me.btnConsulta4.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta4.TabIndex = 8
@@ -155,7 +162,7 @@ Partial Class Form1
         '
         'btnConsulta5
         '
-        Me.btnConsulta5.Location = New System.Drawing.Point(593, 127)
+        Me.btnConsulta5.Location = New System.Drawing.Point(561, 127)
         Me.btnConsulta5.Name = "btnConsulta5"
         Me.btnConsulta5.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta5.TabIndex = 10
@@ -183,7 +190,7 @@ Partial Class Form1
         '
         'btnConsulta6
         '
-        Me.btnConsulta6.Location = New System.Drawing.Point(593, 156)
+        Me.btnConsulta6.Location = New System.Drawing.Point(561, 156)
         Me.btnConsulta6.Name = "btnConsulta6"
         Me.btnConsulta6.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta6.TabIndex = 12
@@ -201,7 +208,7 @@ Partial Class Form1
         '
         'btnConsulta7
         '
-        Me.btnConsulta7.Location = New System.Drawing.Point(593, 185)
+        Me.btnConsulta7.Location = New System.Drawing.Point(561, 185)
         Me.btnConsulta7.Name = "btnConsulta7"
         Me.btnConsulta7.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta7.TabIndex = 14
@@ -219,7 +226,7 @@ Partial Class Form1
         '
         'btnConsulta8
         '
-        Me.btnConsulta8.Location = New System.Drawing.Point(593, 214)
+        Me.btnConsulta8.Location = New System.Drawing.Point(561, 214)
         Me.btnConsulta8.Name = "btnConsulta8"
         Me.btnConsulta8.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta8.TabIndex = 16
@@ -238,7 +245,7 @@ Partial Class Form1
         '
         'btnConsulta9
         '
-        Me.btnConsulta9.Location = New System.Drawing.Point(593, 16)
+        Me.btnConsulta9.Location = New System.Drawing.Point(561, 16)
         Me.btnConsulta9.Name = "btnConsulta9"
         Me.btnConsulta9.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta9.TabIndex = 18
@@ -265,7 +272,7 @@ Partial Class Form1
         Me.GBxEquipos.Controls.Add(Me.btnConsulta5)
         Me.GBxEquipos.Location = New System.Drawing.Point(12, 12)
         Me.GBxEquipos.Name = "GBxEquipos"
-        Me.GBxEquipos.Size = New System.Drawing.Size(674, 245)
+        Me.GBxEquipos.Size = New System.Drawing.Size(643, 245)
         Me.GBxEquipos.TabIndex = 19
         Me.GBxEquipos.TabStop = False
         Me.GBxEquipos.Text = "Equipos"
@@ -284,14 +291,33 @@ Partial Class Form1
         Me.GBxUsuarios.Controls.Add(Me.lblConsulta9)
         Me.GBxUsuarios.Location = New System.Drawing.Point(12, 263)
         Me.GBxUsuarios.Name = "GBxUsuarios"
-        Me.GBxUsuarios.Size = New System.Drawing.Size(674, 165)
+        Me.GBxUsuarios.Size = New System.Drawing.Size(643, 165)
         Me.GBxUsuarios.TabIndex = 20
         Me.GBxUsuarios.TabStop = False
         Me.GBxUsuarios.Text = "Usuarios"
         '
+        'btnConsulta13
+        '
+        Me.btnConsulta13.Location = New System.Drawing.Point(561, 132)
+        Me.btnConsulta13.Name = "btnConsulta13"
+        Me.btnConsulta13.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta13.TabIndex = 26
+        Me.btnConsulta13.Text = "Consulta 13"
+        Me.btnConsulta13.UseVisualStyleBackColor = True
+        '
+        'lblConsulta13
+        '
+        Me.lblConsulta13.AutoSize = True
+        Me.lblConsulta13.Location = New System.Drawing.Point(6, 137)
+        Me.lblConsulta13.Name = "lblConsulta13"
+        Me.lblConsulta13.Size = New System.Drawing.Size(384, 13)
+        Me.lblConsulta13.TabIndex = 25
+        Me.lblConsulta13.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir un código de usuario y mostrar su nombre, apellidos, dirección y teléfono" &
+    "."
+        '
         'btnConsulta12
         '
-        Me.btnConsulta12.Location = New System.Drawing.Point(593, 103)
+        Me.btnConsulta12.Location = New System.Drawing.Point(561, 103)
         Me.btnConsulta12.Name = "btnConsulta12"
         Me.btnConsulta12.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta12.TabIndex = 24
@@ -310,7 +336,7 @@ Partial Class Form1
         '
         'btnConsulta11
         '
-        Me.btnConsulta11.Location = New System.Drawing.Point(593, 74)
+        Me.btnConsulta11.Location = New System.Drawing.Point(561, 74)
         Me.btnConsulta11.Name = "btnConsulta11"
         Me.btnConsulta11.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta11.TabIndex = 22
@@ -329,7 +355,7 @@ Partial Class Form1
         '
         'btnConsulta10
         '
-        Me.btnConsulta10.Location = New System.Drawing.Point(593, 44)
+        Me.btnConsulta10.Location = New System.Drawing.Point(561, 44)
         Me.btnConsulta10.Name = "btnConsulta10"
         Me.btnConsulta10.Size = New System.Drawing.Size(75, 23)
         Me.btnConsulta10.TabIndex = 20
@@ -345,25 +371,6 @@ Partial Class Form1
         Me.lblConsulta10.TabIndex = 19
         Me.lblConsulta10.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir un código de usuario y mostrar todos sus datos."
         '
-        'lblConsulta13
-        '
-        Me.lblConsulta13.AutoSize = True
-        Me.lblConsulta13.Location = New System.Drawing.Point(6, 137)
-        Me.lblConsulta13.Name = "lblConsulta13"
-        Me.lblConsulta13.Size = New System.Drawing.Size(384, 13)
-        Me.lblConsulta13.TabIndex = 25
-        Me.lblConsulta13.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir un código de usuario y mostrar su nombre, apellidos, dirección y teléfono" &
-    "."
-        '
-        'btnConsulta13
-        '
-        Me.btnConsulta13.Location = New System.Drawing.Point(593, 132)
-        Me.btnConsulta13.Name = "btnConsulta13"
-        Me.btnConsulta13.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsulta13.TabIndex = 26
-        Me.btnConsulta13.Text = "Consulta 13"
-        Me.btnConsulta13.UseVisualStyleBackColor = True
-        '
         'GBxInstalaciones
         '
         Me.GBxInstalaciones.Controls.Add(Me.btnConsulta18)
@@ -378,84 +385,19 @@ Partial Class Form1
         Me.GBxInstalaciones.Controls.Add(Me.lblConsulta14)
         Me.GBxInstalaciones.Location = New System.Drawing.Point(12, 434)
         Me.GBxInstalaciones.Name = "GBxInstalaciones"
-        Me.GBxInstalaciones.Size = New System.Drawing.Size(674, 171)
+        Me.GBxInstalaciones.Size = New System.Drawing.Size(643, 171)
         Me.GBxInstalaciones.TabIndex = 21
         Me.GBxInstalaciones.TabStop = False
         Me.GBxInstalaciones.Text = "Instalaciones"
         '
-        'lblConsulta14
+        'btnConsulta18
         '
-        Me.lblConsulta14.AutoSize = True
-        Me.lblConsulta14.Location = New System.Drawing.Point(6, 21)
-        Me.lblConsulta14.Name = "lblConsulta14"
-        Me.lblConsulta14.Size = New System.Drawing.Size(494, 13)
-        Me.lblConsulta14.TabIndex = 0
-        Me.lblConsulta14.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir dos fechas y mostrar todos los datos de las instalaciones realizadas entr" &
-    "e ellas (ambas inclusive)."
-        '
-        'btnConsulta14
-        '
-        Me.btnConsulta14.Location = New System.Drawing.Point(593, 16)
-        Me.btnConsulta14.Name = "btnConsulta14"
-        Me.btnConsulta14.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsulta14.TabIndex = 1
-        Me.btnConsulta14.Text = "Consulta 14"
-        Me.btnConsulta14.UseVisualStyleBackColor = True
-        '
-        'lblConsulta15
-        '
-        Me.lblConsulta15.AutoSize = True
-        Me.lblConsulta15.Location = New System.Drawing.Point(6, 50)
-        Me.lblConsulta15.Name = "lblConsulta15"
-        Me.lblConsulta15.Size = New System.Drawing.Size(386, 13)
-        Me.lblConsulta15.TabIndex = 2
-        Me.lblConsulta15.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir un código de equipo y mostrar todos los datos de todas sus instalaciones." &
-    ""
-        '
-        'btnConsulta15
-        '
-        Me.btnConsulta15.Location = New System.Drawing.Point(593, 45)
-        Me.btnConsulta15.Name = "btnConsulta15"
-        Me.btnConsulta15.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsulta15.TabIndex = 3
-        Me.btnConsulta15.Text = "Consulta 15"
-        Me.btnConsulta15.UseVisualStyleBackColor = True
-        '
-        'lblConsulta16
-        '
-        Me.lblConsulta16.AutoSize = True
-        Me.lblConsulta16.Location = New System.Drawing.Point(6, 79)
-        Me.lblConsulta16.Name = "lblConsulta16"
-        Me.lblConsulta16.Size = New System.Drawing.Size(314, 13)
-        Me.lblConsulta16.TabIndex = 4
-        Me.lblConsulta16.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Mostar las instalaciones hechas en el equipo EQ-0001 en 2007."
-        '
-        'btnConsulta16
-        '
-        Me.btnConsulta16.Location = New System.Drawing.Point(593, 74)
-        Me.btnConsulta16.Name = "btnConsulta16"
-        Me.btnConsulta16.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsulta16.TabIndex = 5
-        Me.btnConsulta16.Text = "Consulta 16"
-        Me.btnConsulta16.UseVisualStyleBackColor = True
-        '
-        'lblConsulta17
-        '
-        Me.lblConsulta17.AutoSize = True
-        Me.lblConsulta17.Location = New System.Drawing.Point(6, 108)
-        Me.lblConsulta17.Name = "lblConsulta17"
-        Me.lblConsulta17.Size = New System.Drawing.Size(319, 13)
-        Me.lblConsulta17.TabIndex = 22
-        Me.lblConsulta17.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar las instalaciones hechas en 2006 del software SW-0004."
-        '
-        'btnConsulta17
-        '
-        Me.btnConsulta17.Location = New System.Drawing.Point(593, 103)
-        Me.btnConsulta17.Name = "btnConsulta17"
-        Me.btnConsulta17.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsulta17.TabIndex = 23
-        Me.btnConsulta17.Text = "Consulta 17"
-        Me.btnConsulta17.UseVisualStyleBackColor = True
+        Me.btnConsulta18.Location = New System.Drawing.Point(561, 131)
+        Me.btnConsulta18.Name = "btnConsulta18"
+        Me.btnConsulta18.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta18.TabIndex = 25
+        Me.btnConsulta18.Text = "Consulta 18"
+        Me.btnConsulta18.UseVisualStyleBackColor = True
         '
         'lblConsulta18
         '
@@ -467,20 +409,147 @@ Partial Class Form1
         Me.lblConsulta18.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar los códigos de software junto con el total de instalaciones hechas de d" &
     "icho software."
         '
-        'btnConsulta18
+        'btnConsulta17
         '
-        Me.btnConsulta18.Location = New System.Drawing.Point(593, 131)
-        Me.btnConsulta18.Name = "btnConsulta18"
-        Me.btnConsulta18.Size = New System.Drawing.Size(75, 23)
-        Me.btnConsulta18.TabIndex = 25
-        Me.btnConsulta18.Text = "Consulta 18"
-        Me.btnConsulta18.UseVisualStyleBackColor = True
+        Me.btnConsulta17.Location = New System.Drawing.Point(561, 103)
+        Me.btnConsulta17.Name = "btnConsulta17"
+        Me.btnConsulta17.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta17.TabIndex = 23
+        Me.btnConsulta17.Text = "Consulta 17"
+        Me.btnConsulta17.UseVisualStyleBackColor = True
+        '
+        'lblConsulta17
+        '
+        Me.lblConsulta17.AutoSize = True
+        Me.lblConsulta17.Location = New System.Drawing.Point(6, 108)
+        Me.lblConsulta17.Name = "lblConsulta17"
+        Me.lblConsulta17.Size = New System.Drawing.Size(319, 13)
+        Me.lblConsulta17.TabIndex = 22
+        Me.lblConsulta17.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar las instalaciones hechas en 2006 del software SW-0004."
+        '
+        'btnConsulta16
+        '
+        Me.btnConsulta16.Location = New System.Drawing.Point(561, 74)
+        Me.btnConsulta16.Name = "btnConsulta16"
+        Me.btnConsulta16.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta16.TabIndex = 5
+        Me.btnConsulta16.Text = "Consulta 16"
+        Me.btnConsulta16.UseVisualStyleBackColor = True
+        '
+        'lblConsulta16
+        '
+        Me.lblConsulta16.AutoSize = True
+        Me.lblConsulta16.Location = New System.Drawing.Point(6, 79)
+        Me.lblConsulta16.Name = "lblConsulta16"
+        Me.lblConsulta16.Size = New System.Drawing.Size(314, 13)
+        Me.lblConsulta16.TabIndex = 4
+        Me.lblConsulta16.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Mostar las instalaciones hechas en el equipo EQ-0001 en 2007."
+        '
+        'btnConsulta15
+        '
+        Me.btnConsulta15.Location = New System.Drawing.Point(561, 45)
+        Me.btnConsulta15.Name = "btnConsulta15"
+        Me.btnConsulta15.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta15.TabIndex = 3
+        Me.btnConsulta15.Text = "Consulta 15"
+        Me.btnConsulta15.UseVisualStyleBackColor = True
+        '
+        'lblConsulta15
+        '
+        Me.lblConsulta15.AutoSize = True
+        Me.lblConsulta15.Location = New System.Drawing.Point(6, 50)
+        Me.lblConsulta15.Name = "lblConsulta15"
+        Me.lblConsulta15.Size = New System.Drawing.Size(386, 13)
+        Me.lblConsulta15.TabIndex = 2
+        Me.lblConsulta15.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir un código de equipo y mostrar todos los datos de todas sus instalaciones." &
+    ""
+        '
+        'btnConsulta14
+        '
+        Me.btnConsulta14.Location = New System.Drawing.Point(561, 16)
+        Me.btnConsulta14.Name = "btnConsulta14"
+        Me.btnConsulta14.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta14.TabIndex = 1
+        Me.btnConsulta14.Text = "Consulta 14"
+        Me.btnConsulta14.UseVisualStyleBackColor = True
+        '
+        'lblConsulta14
+        '
+        Me.lblConsulta14.AutoSize = True
+        Me.lblConsulta14.Location = New System.Drawing.Point(6, 21)
+        Me.lblConsulta14.Name = "lblConsulta14"
+        Me.lblConsulta14.Size = New System.Drawing.Size(494, 13)
+        Me.lblConsulta14.TabIndex = 0
+        Me.lblConsulta14.Text = "o" & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir dos fechas y mostrar todos los datos de las instalaciones realizadas entr" &
+    "e ellas (ambas inclusive)."
+        '
+        'gbxEYU
+        '
+        Me.gbxEYU.Controls.Add(Me.btnConsulta43)
+        Me.gbxEYU.Controls.Add(Me.btnConsulta42)
+        Me.gbxEYU.Controls.Add(Me.lblConsulta42)
+        Me.gbxEYU.Controls.Add(Me.btnConsulta41)
+        Me.gbxEYU.Controls.Add(Me.lblConsulta41)
+        Me.gbxEYU.Location = New System.Drawing.Point(661, 12)
+        Me.gbxEYU.Name = "gbxEYU"
+        Me.gbxEYU.Size = New System.Drawing.Size(436, 245)
+        Me.gbxEYU.TabIndex = 22
+        Me.gbxEYU.TabStop = False
+        Me.gbxEYU.Text = "Equipos y usuarios"
+        '
+        'btnConsulta43
+        '
+        Me.btnConsulta43.Location = New System.Drawing.Point(355, 69)
+        Me.btnConsulta43.Name = "btnConsulta43"
+        Me.btnConsulta43.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta43.TabIndex = 4
+        Me.btnConsulta43.Text = "Consulta 4.3"
+        Me.btnConsulta43.UseVisualStyleBackColor = True
+        '
+        'btnConsulta42
+        '
+        Me.btnConsulta42.Location = New System.Drawing.Point(355, 40)
+        Me.btnConsulta42.Name = "btnConsulta42"
+        Me.btnConsulta42.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta42.TabIndex = 3
+        Me.btnConsulta42.Text = "Consulta 4.2"
+        Me.btnConsulta42.UseVisualStyleBackColor = True
+        '
+        'lblConsulta42
+        '
+        Me.lblConsulta42.AutoSize = True
+        Me.lblConsulta42.Location = New System.Drawing.Point(6, 45)
+        Me.lblConsulta42.Name = "lblConsulta42"
+        Me.lblConsulta42.Size = New System.Drawing.Size(550, 13)
+        Me.lblConsulta42.TabIndex = 2
+        Me.lblConsulta42.Text = "4.2." & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar Código, procesador y velocidad de todos los equipos junto con el tot" &
+    "al de usuarios asociados al equipo."
+        '
+        'btnConsulta41
+        '
+        Me.btnConsulta41.Location = New System.Drawing.Point(355, 11)
+        Me.btnConsulta41.Name = "btnConsulta41"
+        Me.btnConsulta41.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsulta41.TabIndex = 1
+        Me.btnConsulta41.Text = "Consulta 4.1"
+        Me.btnConsulta41.UseVisualStyleBackColor = True
+        '
+        'lblConsulta41
+        '
+        Me.lblConsulta41.AutoSize = True
+        Me.lblConsulta41.Location = New System.Drawing.Point(6, 16)
+        Me.lblConsulta41.Name = "lblConsulta41"
+        Me.lblConsulta41.Size = New System.Drawing.Size(528, 13)
+        Me.lblConsulta41.TabIndex = 0
+        Me.lblConsulta41.Text = "4.1." & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar los Nombres de los usuarios junto con el código procesador y velocid" &
+    "ad de sus equipos asociados."
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1453, 697)
+        Me.Controls.Add(Me.gbxEYU)
         Me.Controls.Add(Me.GBxInstalaciones)
         Me.Controls.Add(Me.GBxUsuarios)
         Me.Controls.Add(Me.GBxEquipos)
@@ -494,6 +563,8 @@ Partial Class Form1
         Me.GBxUsuarios.PerformLayout()
         Me.GBxInstalaciones.ResumeLayout(False)
         Me.GBxInstalaciones.PerformLayout()
+        Me.gbxEYU.ResumeLayout(False)
+        Me.gbxEYU.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -538,4 +609,10 @@ Partial Class Form1
     Friend WithEvents lblConsulta17 As Label
     Friend WithEvents btnConsulta18 As Button
     Friend WithEvents lblConsulta18 As Label
+    Friend WithEvents gbxEYU As GroupBox
+    Friend WithEvents btnConsulta41 As Button
+    Friend WithEvents lblConsulta41 As Label
+    Friend WithEvents btnConsulta42 As Button
+    Friend WithEvents lblConsulta42 As Label
+    Friend WithEvents btnConsulta43 As Button
 End Class

@@ -1,0 +1,41 @@
+﻿@page
+@using RetoOdooNC2.Models;
+
+@model IndexModel
+@{
+    int i = 0;
+    ViewData["Title"] = "Home page";
+}
+<body>
+    <button href="/Update" value="Update"></button>
+    @foreach (var v in Model.coches)
+    {
+
+        string id = "cb" + i;
+        <h3>@v.Name</h3><br />
+
+        <p>
+            <b>Active</b>
+            @if (v.Active == true)
+            {
+                <input type="checkbox" id="@id" checked="checked" />
+            }
+            else
+            {
+                <input type="checkbox" id="@id" +i />
+            }
+            <br />
+        </p>
+        <b>License plate</b>
+        <p>@v.LicensePlate</p>
+        <b>Adquisition Date</b>
+        <p>@v.AcquisitionDate</p>
+        <b>Color</b>
+        <p>@v.Color</p>
+        <b>Doors</b>
+        <p>@v.Doors</p>
+        i++;
+
+    }
+
+</body>

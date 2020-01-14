@@ -249,4 +249,37 @@ Public Class Form1
         '    Select instalaciones.cod_software, inst.cod_software.Count
         '         ).ToList
     End Sub
+
+    Private Sub BtnConsulta41_Click(sender As Object, e As EventArgs) Handles btnConsulta41.Click
+        '4.1.	Mostrar los Nombres de los usuarios junto con el código procesador y velocidad de sus equipos asociados.
+        res = (
+            From us In modelo.Usuarios
+            Join eq In modelo.Equipos
+                    On eq.cod_equipo Equals us.cod_equipo
+            Select us.Nombre, eq.Procesador, eq.Velocidad
+            ).ToList
+        mostrar(res)
+    End Sub
+
+    Private Sub BtnConsulta42_Click(sender As Object, e As EventArgs) Handles btnConsulta42.Click
+        '4.2.	Mostrar Código, procesador y velocidad de todos los equipos junto con el total de usuarios asociados al equipo.
+        res = (
+            From us In modelo.Usuarios
+            Join eq In modelo.Equipos
+                    On eq.cod_equipo Equals us.cod_equipo
+            Group By eq.cod_equipo Into eq2 = Group
+            Select eq2.cod_equipo, eq2.Procesador, eq2.Velocidad, us.Cod_Usuario.Count
+            ).ToList
+        mostrar(res)
+    End Sub
+
+    Private Sub BtnConsulta43_Click(sender As Object, e As EventArgs) Handles btnConsulta43.Click
+        '
+        res = (
+            From us In modelo.Usuarios
+            Join eq In modelo.Equipos
+                    On eq.cod_equipo Equals us.cod_equipo
+            ).ToList
+        mostrar(res)
+    End Sub
 End Class

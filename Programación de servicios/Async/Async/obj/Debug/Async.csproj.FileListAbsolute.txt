@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\bin\Debug\Async.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\bin\Debug\Async.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\bin\Debug\Async.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Async\Async\obj\Debug\Async.pdb
