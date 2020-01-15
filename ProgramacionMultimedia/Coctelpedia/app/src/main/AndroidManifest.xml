@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.Deagle50.coctelpedia">
+    package="com.deagle50.coctelpedia">
 
     <application
         android:allowBackup="true"

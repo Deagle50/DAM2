@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.ui.notifications;
+package com.deagle50.coctelpedia.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.Deagle50.coctelpedia.R;
+import com.deagle50.coctelpedia.R;
 
 public class NotificationsFragment extends Fragment {
 

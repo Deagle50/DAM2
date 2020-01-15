@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia;
+package com.deagle50.coctelpedia;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.Deagle50.coctelpedia", appContext.getPackageName());
+        assertEquals("com.deagle50.coctelpedia", appContext.getPackageName());
     }
 }

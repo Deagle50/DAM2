@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia;
+package com.deagle50.coctelpedia;
 
 import org.junit.Test;
 

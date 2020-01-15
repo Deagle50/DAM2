@@ -1,0 +1,10 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\bin\Debug\EjercicioHilos(tragaperras).exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\bin\Debug\EjercicioHilos(tragaperras).exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\bin\Debug\EjercicioHilos(tragaperras).pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos(tragaperras).csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos_tragaperras_.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos_tragaperras_.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos(tragaperras).csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos(tragaperras).csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos(tragaperras).exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\EjercicioHilos(tragaperras)\EjercicioHilos(tragaperras)\obj\Debug\EjercicioHilos(tragaperras).pdb

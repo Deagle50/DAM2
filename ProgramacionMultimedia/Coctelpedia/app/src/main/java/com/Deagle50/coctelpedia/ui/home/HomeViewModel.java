@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.ui.home;
+package com.deagle50.coctelpedia.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

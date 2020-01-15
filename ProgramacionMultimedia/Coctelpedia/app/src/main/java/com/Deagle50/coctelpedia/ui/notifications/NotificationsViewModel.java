@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.ui.notifications;
+package com.deagle50.coctelpedia.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

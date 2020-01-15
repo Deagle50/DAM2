@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.ui.dashboard;
+package com.deagle50.coctelpedia.ui.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
