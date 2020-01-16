@@ -1,8 +1,20 @@
 <resources>
     <string name="app_name">Coctelpedia</string>
+    <!-- Activities -->
+    <string name="title_activity_jgquien_mas_probable">JGQuienMasProbable</string>
+
+    <!-- Títulos -->
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-
+    <string name="title_settings">Settings</string>
+    <string name="title_games">Juegos</string>
     <string name="title_launcher_image">Imagen launcher</string>
+
+
+    <!--Quién es más probable que...-->
+    <string name="title_qemp">¿Quién es más \n probable que...?</string>
+
+
+
+
 </resources>

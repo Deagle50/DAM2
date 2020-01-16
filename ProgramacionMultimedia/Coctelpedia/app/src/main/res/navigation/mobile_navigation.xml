@@ -18,8 +18,14 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.deagle50.coctelpedia.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_games"
+        android:name="com.deagle50.coctelpedia.ui.games.GamesFragment"
+        android:label="@string/title_games"
+        tools:layout="@layout/fragment_games" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.deagle50.coctelpedia.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.deagle50.coctelpedia.ui.home;
+package com.deagle50.coctelpedia.ui.settings;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,13 +14,14 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.deagle50.coctelpedia.R;
 
-public class HomeFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+        View root = inflater.inflate(R.layout.fragment_settings, container, false);
 
         return root;
     }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:text="@string/title_games"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnQEMP"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/buttons"
+        android:text="@string/title_qemp"
+        android:textColor="@color/fontWhite"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnJuego2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buttons"
+        android:text="Juego 2"
+        android:textColor="@color/fontWhite"
+        app:layout_constraintEnd_toEndOf="@+id/btnQEMP"
+        app:layout_constraintStart_toStartOf="@+id/btnQEMP"
+        app:layout_constraintTop_toBottomOf="@+id/btnQEMP" />
+
+    <Button
+        android:id="@+id/btnJuego3"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buttons"
+        android:text="Juego 3"
+        android:textColor="@color/fontWhite"
+        app:layout_constraintEnd_toEndOf="@+id/btnJuego2"
+        app:layout_constraintStart_toStartOf="@+id/btnJuego2"
+        app:layout_constraintTop_toBottomOf="@+id/btnJuego2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
