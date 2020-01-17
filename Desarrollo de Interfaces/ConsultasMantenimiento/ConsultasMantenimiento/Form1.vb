@@ -252,34 +252,59 @@ Public Class Form1
 
     Private Sub BtnConsulta41_Click(sender As Object, e As EventArgs) Handles btnConsulta41.Click
         '4.1.	Mostrar los Nombres de los usuarios junto con el código procesador y velocidad de sus equipos asociados.
+        'Con join'
+
+        'res = (
+        'From us In modelo.Usuarios
+        'Join eq In modelo.Equipos
+        'On eq.cod_equipo Equals us.cod_equipo
+        'Select us.Nombre, eq.Procesador, eq.Velocidad
+        '    ).ToList
+        '
+        'Sin join
         res = (
-            From us In modelo.Usuarios
-            Join eq In modelo.Equipos
-                    On eq.cod_equipo Equals us.cod_equipo
-            Select us.Nombre, eq.Procesador, eq.Velocidad
+            From user In modelo.Usuarios
+            Select user.Nombre, user.Equipos.cod_equipo, user.Equipos.Velocidad, user.Equipos.Procesador
             ).ToList
+
         mostrar(res)
     End Sub
 
     Private Sub BtnConsulta42_Click(sender As Object, e As EventArgs) Handles btnConsulta42.Click
         '4.2.	Mostrar Código, procesador y velocidad de todos los equipos junto con el total de usuarios asociados al equipo.
+        'Con Join'
+
         res = (
             From us In modelo.Usuarios
             Join eq In modelo.Equipos
                     On eq.cod_equipo Equals us.cod_equipo
-            Group By eq.cod_equipo Into eq2 = Group
-            Select eq2.cod_equipo, eq2.Procesador, eq2.Velocidad, us.Cod_Usuario.Count
+            Group By Codigo = eq.cod_equipo, Procesador = eq.Procesador, Velocidad = eq.Velocidad
+                    Into Grupo = Group
+            Select Codigo, Procesador, Velocidad, Grupo.Count()
             ).ToList
+
+        'Sin join'
+
+        'res = (
+        '    From eq In modelo.Equipos
+        '    Select eq.cod_equipo, eq.Procesador, eq.Velocidad, eq.Usuarios.Count()
+        '    ).ToArray
         mostrar(res)
     End Sub
 
     Private Sub BtnConsulta43_Click(sender As Object, e As EventArgs) Handles btnConsulta43.Click
-        '
+        '4.3.	Pedir un código de un equipo y mostrar todos sus datos junto con los nombres 
+        'y apellidos de sus usuarios asociados.
+
+        Dim num As Integer = Integer.Parse(InputBox("Introduce número"))
+
         res = (
             From us In modelo.Usuarios
             Join eq In modelo.Equipos
                     On eq.cod_equipo Equals us.cod_equipo
-            ).ToList
+            Where eq.cod_equipo = num
+            Select us.Nombre, us.Apellido, eq.cod_equipo, eq.Procesador, eq.Velocidad
+            ).ToList()
         mostrar(res)
     End Sub
 End Class

@@ -68,6 +68,7 @@ Partial Class Form1
         Me.lblConsulta42 = New System.Windows.Forms.Label()
         Me.btnConsulta41 = New System.Windows.Forms.Button()
         Me.lblConsulta41 = New System.Windows.Forms.Label()
+        Me.lblConsulta43 = New System.Windows.Forms.Label()
         CType(Me.dgvDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GBxEquipos.SuspendLayout()
         Me.GBxUsuarios.SuspendLayout()
@@ -485,6 +486,7 @@ Partial Class Form1
         '
         'gbxEYU
         '
+        Me.gbxEYU.Controls.Add(Me.lblConsulta43)
         Me.gbxEYU.Controls.Add(Me.btnConsulta43)
         Me.gbxEYU.Controls.Add(Me.btnConsulta42)
         Me.gbxEYU.Controls.Add(Me.lblConsulta42)
@@ -543,6 +545,16 @@ Partial Class Form1
         Me.lblConsulta41.TabIndex = 0
         Me.lblConsulta41.Text = "4.1." & Global.Microsoft.VisualBasic.ChrW(9) & "Mostrar los Nombres de los usuarios junto con el código procesador y velocid" &
     "ad de sus equipos asociados."
+        '
+        'lblConsulta43
+        '
+        Me.lblConsulta43.AutoSize = True
+        Me.lblConsulta43.Location = New System.Drawing.Point(6, 74)
+        Me.lblConsulta43.Name = "lblConsulta43"
+        Me.lblConsulta43.Size = New System.Drawing.Size(574, 13)
+        Me.lblConsulta43.TabIndex = 5
+        Me.lblConsulta43.Text = "4.3." & Global.Microsoft.VisualBasic.ChrW(9) & "Pedir un código de un equipo y mostrar todos sus datos junto con los nombres" &
+    " y apellidos de sus usuarios asociados."
         '
         'Form1
         '
@@ -615,4 +627,5 @@ Partial Class Form1
     Friend WithEvents btnConsulta42 As Button
     Friend WithEvents lblConsulta42 As Label
     Friend WithEvents btnConsulta43 As Button
+    Friend WithEvents lblConsulta43 As Label
 End Class

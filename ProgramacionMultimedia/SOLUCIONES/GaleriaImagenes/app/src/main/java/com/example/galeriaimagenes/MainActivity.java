@@ -24,11 +24,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 
+import static java.lang.Integer.parseInt;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
-    Button btnSave,btnSearch;
+    Button btnSave,btnSearch, btnEdit;
     EditText txtID,txtNombre;
     ImageView imgImagen;
     //DB
@@ -46,12 +49,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSave=findViewById(R.id.btnSave);
         btnSearch=findViewById(R.id.btnSearch);
+        btnEdit = findViewById(R.id.btnEdit);
         imgImagen=findViewById(R.id.imageView);
         txtID=findViewById(R.id.txtID);
         txtNombre=findViewById(R.id.txtNombre);
 
         btnSave.setOnClickListener(this);
         btnSearch.setOnClickListener(this);
+        btnEdit.setOnClickListener(this);
         imgImagen.setOnTouchListener(this);
 
         idbh=new ImagenesDBHelper(this,"DBGaleria",null,1);
@@ -59,16 +64,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        /*if(v==imgImagen)
-        {
-            Intent i=new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            i.setType(MediaStore.Images.Media.CONTENT_TYPE);
-            startActivityForResult(i,1);
-        }
-        else*/ if(btnSearch==v)
+        if(btnSearch==v)
         {
             SQLiteDatabase db=idbh.getReadableDatabase();
-            Cursor c=db.rawQuery("SELECT Titulo, imagen FROM Imagenes Where Id=?",new String[]{txtNombre.getText().toString()});
+            Cursor c=db.rawQuery("SELECT Nombre, firma FROM Imagenes Where Id=?",
+                    new String[]{(txtID.getText().toString())});
             if(c.moveToFirst())
             {
                 txtID.setText(c.getString(0));
@@ -81,12 +81,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             else
             {
                 nueva = true;
+                Toast.makeText(this, "Nueva persona", Toast.LENGTH_SHORT).show();
             }
         }
         else if(btnSave==v)
         {
             guardarImgBD();
             MediaStore.Images.Media.insertImage(getContentResolver(),copia,nombre, firma);
+
+        }
+        else if(btnEdit==v)
+        {
 
         }
 
@@ -99,9 +104,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         byte []array=baos.toByteArray();
         String strfoto=Base64.encodeToString(array,Base64.DEFAULT);
         ContentValues cv=new ContentValues();
-        cv.put("Id",Integer.parseInt(txtNombre.getText().toString()));
-        cv.put("Imagen",strfoto);
-        cv.put("Titulo",txtID.getText().toString());
+        cv.put("Id", parseInt(txtID.getText().toString()));
+        cv.put("Nombre",txtNombre.getText().toString());
+        cv.put("Firma",strfoto);
+
         SQLiteDatabase db=idbh.getWritableDatabase();
         db.insert("Imagenes",null,cv);
     }
