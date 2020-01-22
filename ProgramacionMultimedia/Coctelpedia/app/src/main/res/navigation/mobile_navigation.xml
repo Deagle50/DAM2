@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.deagle50.coctelpedia.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_coctelpedia"
+        android:name="com.deagle50.coctelpedia.ui.coctelpedia.CoctelpediaFragment"
+        android:label="@string/title_coctelpedia"
+        tools:layout="@layout/fragment_coctelpedia" />
 
     <fragment
         android:id="@+id/navigation_games"
