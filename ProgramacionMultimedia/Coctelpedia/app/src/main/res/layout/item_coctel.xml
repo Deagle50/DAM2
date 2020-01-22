@@ -17,7 +17,7 @@
         tools:srcCompat="@drawable/coctel" />
 
     <TextView
-        android:id="@+id/txtCoctel"
+        android:id="@+id/TextViewCoctel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -44,9 +44,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/txtCoctel"
+        app:layout_constraintBottom_toBottomOf="@+id/TextViewCoctel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtCoctel" />
+        app:layout_constraintTop_toTopOf="@+id/TextViewCoctel" />
 
     <TextView
         android:id="@+id/textViewPrecio"
@@ -56,7 +56,7 @@
         android:text="Precio (casa, bar):"
         app:layout_constraintBottom_toTopOf="@+id/textViewDescripcion"
         app:layout_constraintStart_toEndOf="@+id/imageViewCoctel"
-        app:layout_constraintTop_toBottomOf="@+id/txtCoctel" />
+        app:layout_constraintTop_toBottomOf="@+id/TextViewCoctel" />
 
     <TextView
         android:id="@+id/textViewElaboracion"
