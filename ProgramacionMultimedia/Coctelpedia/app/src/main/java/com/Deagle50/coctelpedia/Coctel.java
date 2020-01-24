@@ -1,11 +1,46 @@
 package com.deagle50.coctelpedia;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Coctel {
     private int id;
     private String nombre;
     private String urlFoto;
     private Float graduacion, precioC, precioB;
     private String elaboracion, descripcion;
+    private boolean vegetariano;
+
+    public boolean isVegetariano() {
+        return vegetariano;
+    }
+
+    public void setVegetariano(boolean vegetariano) {
+        this.vegetariano = vegetariano;
+    }
+
+    public boolean isVegano() {
+        return vegano;
+    }
+
+    public void setVegano(boolean vegano) {
+        this.vegano = vegano;
+    }
+
+    private boolean vegano;
+
+    public Coctel(int id, String nombre, String urlFoto, Float graduacion, Float precioC, Float precioB, String elaboracion, String descripcion, boolean vegetariano, boolean vegano) {
+        this.id = id;
+        this.nombre = nombre;
+        this.urlFoto = urlFoto;
+        this.graduacion = graduacion;
+        this.precioC = precioC;
+        this.precioB = precioB;
+        this.elaboracion = elaboracion;
+        this.descripcion = descripcion;
+        this.vegetariano = vegetariano;
+        this.vegano = vegano;
+    }
 
     public Coctel(int id, String nombre, String urlFoto, Float graduacion, Float precioC, Float precioB, String elaboracion, String descripcion) {
         this.id = id;
@@ -17,6 +52,8 @@ public class Coctel {
         this.elaboracion = elaboracion;
         this.descripcion = descripcion;
     }
+
+    /**/
 
     public int getId() {
         return id;

@@ -1,6 +1,7 @@
 package com.deagle50.coctelpedia;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -25,4 +26,15 @@ public class JugadoresOpenHelper extends SQLiteOpenHelper {
         db.execSQL(borrarTabla);
         db.execSQL(crearTabla);
     }
+
+    public Cursor obtenerJugadores() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            Cursor c = db.query("jugador", null, null, null, null, null, null);
+            return c;
+        }catch (Exception ex) {
+            return null;
+        }
+    }
+
 }

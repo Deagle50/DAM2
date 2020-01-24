@@ -21,8 +21,8 @@
         style="@android:style/Widget.DeviceDefault.Light.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Bienvenido a Coctelpedia"
+        android:layout_marginTop="32dp"
+        android:text="@string/title_welcome"
         android:textAllCaps="true"
         android:textIsSelectable="false"
         android:textSize="24sp"
@@ -30,5 +30,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivPrincipal" />
+
+    <TextView
+        android:id="@+id/textViewParrafo"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
