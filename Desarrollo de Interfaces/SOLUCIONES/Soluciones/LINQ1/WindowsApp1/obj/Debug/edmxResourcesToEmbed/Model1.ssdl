@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Anunciantes">
+    <Key>
+      <PropertyRef Name="IdAnunciante" />
+    </Key>
+    <Property Name="IdAnunciante" Type="int" Nullable="false" />
+    <Property Name="NIF" Type="nchar" MaxLength="10" />
+    <Property Name="NombreEmpresa" Type="varchar" MaxLength="50" />
+    <Property Name="Contacto" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="Telefono" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Anuncios">
+    <Key>
+      <PropertyRef Name="IdAnuncio" />
+    </Key>
+    <Property Name="IdAnuncio" Type="int" Nullable="false" />
+    <Property Name="IdAnunciante" Type="int" />
+    <Property Name="IdCategoria" Type="int" />
+    <Property Name="TipoAnuncio" Type="varchar" MaxLength="50" />
+    <Property Name="FechaContrato" Type="date" />
+    <Property Name="Precio" Type="float" />
+  </EntityType>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="int" Nullable="false" />
+    <Property Name="Titulo" Type="varchar" MaxLength="50" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Anuncios__IdAnun__7B264821">
+    <End Role="Anunciantes" Type="Self.Anunciantes" Multiplicity="0..1" />
+    <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Anunciantes">
+        <PropertyRef Name="IdAnunciante" />
+      </Principal>
+      <Dependent Role="Anuncios">
+        <PropertyRef Name="IdAnunciante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anuncios__IdCate__7C1A6C5A">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="0..1" />
+    <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Anuncios">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DaniDBModelStoreContainer">
+    <EntitySet Name="Anunciantes" EntityType="Self.Anunciantes" Schema="LINQ1" store:Type="Tables" />
+    <EntitySet Name="Anuncios" EntityType="Self.Anuncios" Schema="LINQ1" store:Type="Tables" />
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="LINQ1" store:Type="Tables" />
+    <AssociationSet Name="FK__Anuncios__IdAnun__7B264821" Association="Self.FK__Anuncios__IdAnun__7B264821">
+      <End Role="Anunciantes" EntitySet="Anunciantes" />
+      <End Role="Anuncios" EntitySet="Anuncios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anuncios__IdCate__7C1A6C5A" Association="Self.FK__Anuncios__IdCate__7C1A6C5A">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Anuncios" EntitySet="Anuncios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

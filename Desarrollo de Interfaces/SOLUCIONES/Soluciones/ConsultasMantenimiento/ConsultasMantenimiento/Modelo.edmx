@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Equipos">
+          <Key>
+            <PropertyRef Name="CodEquipo" />
+          </Key>
+          <Property Name="CodEquipo" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Procesador" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Velocidad" Type="smallint" />
+          <Property Name="CDROM" Type="tinyint" />
+          <Property Name="Memoria" Type="smallint" Nullable="false" />
+          <Property Name="TarjetaRed" Type="nvarchar" MaxLength="15" />
+          <Property Name="DiscoDuro" Type="real" Nullable="false" />
+          <Property Name="Uso" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Instalaciones">
+          <Key>
+            <PropertyRef Name="CodInstalacion" />
+          </Key>
+          <Property Name="CodInstalacion" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="CodEquipo" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="CodSoftware" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="FechaInstalacion" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Software">
+          <Key>
+            <PropertyRef Name="CodSoftware" />
+          </Key>
+          <Property Name="CodSoftware" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="MemoriaRequerida" Type="smallint" />
+          <Property Name="ProcesadorRequerido" Type="smallint" />
+          <Property Name="DiscoRequerido" Type="smallint" />
+          <Property Name="Version" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Distribuidor" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Precio" Type="money" />
+          <Property Name="Categoria" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="CodUsuario" />
+          </Key>
+          <Property Name="CodUsuario" Type="nvarchar" MaxLength="4" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Apellido" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="9" Nullable="false" />
+          <Property Name="Direccion" Type="nvarchar" MaxLength="25" />
+          <Property Name="CodEquipo" Type="nvarchar" MaxLength="4" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Instalaciones_Instalaciones">
+          <End Role="Equipos" Type="Self.Equipos" Multiplicity="1" />
+          <End Role="Instalaciones" Type="Self.Instalaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipos">
+              <PropertyRef Name="CodEquipo" />
+            </Principal>
+            <Dependent Role="Instalaciones">
+              <PropertyRef Name="CodEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Instalaciones_Software">
+          <End Role="Software" Type="Self.Software" Multiplicity="1" />
+          <End Role="Instalaciones" Type="Self.Instalaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Software">
+              <PropertyRef Name="CodSoftware" />
+            </Principal>
+            <Dependent Role="Instalaciones">
+              <PropertyRef Name="CodSoftware" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Equipos">
+          <End Role="Equipos" Type="Self.Equipos" Multiplicity="1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipos">
+              <PropertyRef Name="CodEquipo" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="CodEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBModelStoreContainer">
+          <EntitySet Name="Equipos" EntityType="Self.Equipos" Schema="Mantenimiento" store:Type="Tables" />
+          <EntitySet Name="Instalaciones" EntityType="Self.Instalaciones" Schema="Mantenimiento" store:Type="Tables" />
+          <EntitySet Name="Software" EntityType="Self.Software" Schema="Mantenimiento" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="Mantenimiento" store:Type="Tables" />
+          <AssociationSet Name="FK_Instalaciones_Instalaciones" Association="Self.FK_Instalaciones_Instalaciones">
+            <End Role="Equipos" EntitySet="Equipos" />
+            <End Role="Instalaciones" EntitySet="Instalaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Instalaciones_Software" Association="Self.FK_Instalaciones_Software">
+            <End Role="Software" EntitySet="Software" />
+            <End Role="Instalaciones" EntitySet="Instalaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Equipos" Association="Self.FK_Usuarios_Equipos">
+            <End Role="Equipos" EntitySet="Equipos" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Equipos" EntityType="DaniDBModel.Equipos" />
+          <EntitySet Name="Instalaciones" EntityType="DaniDBModel.Instalaciones" />
+          <EntitySet Name="Software" EntityType="DaniDBModel.Software" />
+          <EntitySet Name="Usuarios" EntityType="DaniDBModel.Usuarios" />
+          <AssociationSet Name="FK_Instalaciones_Instalaciones" Association="DaniDBModel.FK_Instalaciones_Instalaciones">
+            <End Role="Equipos" EntitySet="Equipos" />
+            <End Role="Instalaciones" EntitySet="Instalaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Usuarios_Equipos" Association="DaniDBModel.FK_Usuarios_Equipos">
+            <End Role="Equipos" EntitySet="Equipos" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Instalaciones_Software" Association="DaniDBModel.FK_Instalaciones_Software">
+            <End Role="Software" EntitySet="Software" />
+            <End Role="Instalaciones" EntitySet="Instalaciones" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Equipos">
+          <Key>
+            <PropertyRef Name="CodEquipo" />
+          </Key>
+          <Property Name="CodEquipo" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="Procesador" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Velocidad" Type="Int16" />
+          <Property Name="CDROM" Type="Byte" />
+          <Property Name="Memoria" Type="Int16" Nullable="false" />
+          <Property Name="TarjetaRed" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="DiscoDuro" Type="Single" Nullable="false" />
+          <Property Name="Uso" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Instalaciones" Relationship="DaniDBModel.FK_Instalaciones_Instalaciones" FromRole="Equipos" ToRole="Instalaciones" />
+          <NavigationProperty Name="Usuarios" Relationship="DaniDBModel.FK_Usuarios_Equipos" FromRole="Equipos" ToRole="Usuarios" />
+        </EntityType>
+        <EntityType Name="Instalaciones">
+          <Key>
+            <PropertyRef Name="CodInstalacion" />
+          </Key>
+          <Property Name="CodInstalacion" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="CodEquipo" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="CodSoftware" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="FechaInstalacion" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Equipos" Relationship="DaniDBModel.FK_Instalaciones_Instalaciones" FromRole="Instalaciones" ToRole="Equipos" />
+          <NavigationProperty Name="Software" Relationship="DaniDBModel.FK_Instalaciones_Software" FromRole="Instalaciones" ToRole="Software" />
+        </EntityType>
+        <EntityType Name="Software">
+          <Key>
+            <PropertyRef Name="CodSoftware" />
+          </Key>
+          <Property Name="CodSoftware" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="MemoriaRequerida" Type="Int16" />
+          <Property Name="ProcesadorRequerido" Type="Int16" />
+          <Property Name="DiscoRequerido" Type="Int16" />
+          <Property Name="Version" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="Distribuidor" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Categoria" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Instalaciones" Relationship="DaniDBModel.FK_Instalaciones_Software" FromRole="Software" ToRole="Instalaciones" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="CodUsuario" />
+          </Key>
+          <Property Name="CodUsuario" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Apellido" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="true" />
+          <Property Name="Direccion" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="CodEquipo" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Equipos" Relationship="DaniDBModel.FK_Usuarios_Equipos" FromRole="Usuarios" ToRole="Equipos" />
+        </EntityType>
+        <Association Name="FK_Instalaciones_Instalaciones">
+          <End Type="DaniDBModel.Equipos" Role="Equipos" Multiplicity="1" />
+          <End Type="DaniDBModel.Instalaciones" Role="Instalaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipos">
+              <PropertyRef Name="CodEquipo" />
+            </Principal>
+            <Dependent Role="Instalaciones">
+              <PropertyRef Name="CodEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Usuarios_Equipos">
+          <End Type="DaniDBModel.Equipos" Role="Equipos" Multiplicity="1" />
+          <End Type="DaniDBModel.Usuarios" Role="Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipos">
+              <PropertyRef Name="CodEquipo" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="CodEquipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Instalaciones_Software">
+          <End Type="DaniDBModel.Software" Role="Software" Multiplicity="1" />
+          <End Type="DaniDBModel.Instalaciones" Role="Instalaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Software">
+              <PropertyRef Name="CodSoftware" />
+            </Principal>
+            <Dependent Role="Instalaciones">
+              <PropertyRef Name="CodSoftware" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+          <EntitySetMapping Name="Equipos">
+            <EntityTypeMapping TypeName="DaniDBModel.Equipos">
+              <MappingFragment StoreEntitySet="Equipos">
+                <ScalarProperty Name="Uso" ColumnName="Uso" />
+                <ScalarProperty Name="DiscoDuro" ColumnName="DiscoDuro" />
+                <ScalarProperty Name="TarjetaRed" ColumnName="TarjetaRed" />
+                <ScalarProperty Name="Memoria" ColumnName="Memoria" />
+                <ScalarProperty Name="CDROM" ColumnName="CDROM" />
+                <ScalarProperty Name="Velocidad" ColumnName="Velocidad" />
+                <ScalarProperty Name="Procesador" ColumnName="Procesador" />
+                <ScalarProperty Name="CodEquipo" ColumnName="CodEquipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Instalaciones">
+            <EntityTypeMapping TypeName="DaniDBModel.Instalaciones">
+              <MappingFragment StoreEntitySet="Instalaciones">
+                <ScalarProperty Name="FechaInstalacion" ColumnName="FechaInstalacion" />
+                <ScalarProperty Name="CodSoftware" ColumnName="CodSoftware" />
+                <ScalarProperty Name="CodEquipo" ColumnName="CodEquipo" />
+                <ScalarProperty Name="CodInstalacion" ColumnName="CodInstalacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Software">
+            <EntityTypeMapping TypeName="DaniDBModel.Software">
+              <MappingFragment StoreEntitySet="Software">
+                <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+                <ScalarProperty Name="Distribuidor" ColumnName="Distribuidor" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="DiscoRequerido" ColumnName="DiscoRequerido" />
+                <ScalarProperty Name="ProcesadorRequerido" ColumnName="ProcesadorRequerido" />
+                <ScalarProperty Name="MemoriaRequerida" ColumnName="MemoriaRequerida" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="CodSoftware" ColumnName="CodSoftware" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="DaniDBModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="CodEquipo" ColumnName="CodEquipo" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="CodUsuario" ColumnName="CodUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CLIENTES">
+          <Key>
+            <PropertyRef Name="DNI" />
+          </Key>
+          <Property Name="DNI" Type="nvarchar" MaxLength="9" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="20" />
+          <Property Name="Domicilio" Type="nvarchar" MaxLength="30" />
+          <Property Name="Poblacion" Type="nvarchar" MaxLength="20" />
+          <Property Name="CodigoPostal" Type="int" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="12" />
+          <Property Name="FormadePago" Type="nvarchar" MaxLength="1" />
+          <Property Name="SEXO" Type="nvarchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="DETALLES-NOTAS">
+          <Key>
+            <PropertyRef Name="CodigodeNota" />
+            <PropertyRef Name="Linea" />
+          </Key>
+          <Property Name="CodigodeNota" Type="int" Nullable="false" />
+          <Property Name="Linea" Type="int" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="1" />
+          <Property Name="Ampliacion" Type="nvarchar" MaxLength="20" />
+          <Property Name="Importe" Type="money" />
+        </EntityType>
+        <EntityType Name="NOTAS-REPARACIONES">
+          <Key>
+            <PropertyRef Name="CodigodeNota" />
+          </Key>
+          <Property Name="CodigodeNota" Type="int" Nullable="false" />
+          <Property Name="DNI" Type="nvarchar" MaxLength="9" />
+          <Property Name="FechadeReparacion" Type="datetime" />
+          <Property Name="Descuento" Type="int" />
+          <Property Name="Observaciones" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="VEHICULOS">
+          <Key>
+            <PropertyRef Name="Matricula" />
+          </Key>
+          <Property Name="Matricula" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Marca" Type="nvarchar" MaxLength="15" />
+          <Property Name="Modelo" Type="nvarchar" MaxLength="15" />
+          <Property Name="Color" Type="nvarchar" MaxLength="10" />
+          <Property Name="Precio" Type="money" />
+          <Property Name="Año" Type="int" />
+          <Property Name="DNI" Type="nvarchar" MaxLength="9" />
+          <Property Name="FECHA" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_DETALLES-NOTAS_NOTAS-REPARACIONES">
+          <End Role="NOTAS-REPARACIONES" Type="Self.NOTAS-REPARACIONES" Multiplicity="1" />
+          <End Role="DETALLES-NOTAS" Type="Self.DETALLES-NOTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NOTAS-REPARACIONES">
+              <PropertyRef Name="CodigodeNota" />
+            </Principal>
+            <Dependent Role="DETALLES-NOTAS">
+              <PropertyRef Name="CodigodeNota" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NOTAS-REPARACIONES_NOTAS-REPARACIONES">
+          <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="0..1" />
+          <End Role="NOTAS-REPARACIONES" Type="Self.NOTAS-REPARACIONES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTES">
+              <PropertyRef Name="DNI" />
+            </Principal>
+            <Dependent Role="NOTAS-REPARACIONES">
+              <PropertyRef Name="DNI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULOS_CLIENTES">
+          <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="0..1" />
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTES">
+              <PropertyRef Name="DNI" />
+            </Principal>
+            <Dependent Role="VEHICULOS">
+              <PropertyRef Name="DNI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBModelStoreContainer">
+          <EntitySet Name="CLIENTES" EntityType="Self.CLIENTES" Schema="VehiculosLINQ" store:Type="Tables" />
+          <EntitySet Name="DETALLES-NOTAS" EntityType="Self.DETALLES-NOTAS" Schema="VehiculosLINQ" store:Type="Tables" />
+          <EntitySet Name="NOTAS-REPARACIONES" EntityType="Self.NOTAS-REPARACIONES" Schema="VehiculosLINQ" store:Type="Tables" />
+          <EntitySet Name="VEHICULOS" EntityType="Self.VEHICULOS" Schema="VehiculosLINQ" store:Type="Tables" />
+          <AssociationSet Name="FK_DETALLES-NOTAS_NOTAS-REPARACIONES" Association="Self.FK_DETALLES-NOTAS_NOTAS-REPARACIONES">
+            <End Role="NOTAS-REPARACIONES" EntitySet="NOTAS-REPARACIONES" />
+            <End Role="DETALLES-NOTAS" EntitySet="DETALLES-NOTAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NOTAS-REPARACIONES_NOTAS-REPARACIONES" Association="Self.FK_NOTAS-REPARACIONES_NOTAS-REPARACIONES">
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+            <End Role="NOTAS-REPARACIONES" EntitySet="NOTAS-REPARACIONES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULOS_CLIENTES" Association="Self.FK_VEHICULOS_CLIENTES">
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CLIENTES">
+          <Key>
+            <PropertyRef Name="DNI" />
+          </Key>
+          <Property Name="DNI" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Domicilio" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Poblacion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CodigoPostal" Type="Int32" />
+          <Property Name="Telefono" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+          <Property Name="FormadePago" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="SEXO" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="NOTAS_REPARACIONES" Relationship="Self.FK_NOTAS_REPARACIONES_NOTAS_REPARACIONES" FromRole="CLIENTES" ToRole="NOTAS_REPARACIONES" />
+          <NavigationProperty Name="VEHICULOS" Relationship="Self.FK_VEHICULOS_CLIENTES" FromRole="CLIENTES" ToRole="VEHICULOS" />
+        </EntityType>
+        <EntityType Name="DETALLES_NOTAS">
+          <Key>
+            <PropertyRef Name="CodigodeNota" />
+            <PropertyRef Name="Linea" />
+          </Key>
+          <Property Name="CodigodeNota" Type="Int32" Nullable="false" />
+          <Property Name="Linea" Type="Int32" Nullable="false" />
+          <Property Name="Tipo" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+          <Property Name="Ampliacion" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Importe" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="NOTAS_REPARACIONES" Relationship="Self.FK_DETALLES_NOTAS_NOTAS_REPARACIONES" FromRole="DETALLES_NOTAS" ToRole="NOTAS_REPARACIONES" />
+        </EntityType>
+        <EntityType Name="NOTAS_REPARACIONES">
+          <Key>
+            <PropertyRef Name="CodigodeNota" />
+          </Key>
+          <Property Name="CodigodeNota" Type="Int32" Nullable="false" />
+          <Property Name="DNI" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+          <Property Name="FechadeReparacion" Type="DateTime" Precision="3" />
+          <Property Name="Descuento" Type="Int32" />
+          <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CLIENTES" Relationship="Self.FK_NOTAS_REPARACIONES_NOTAS_REPARACIONES" FromRole="NOTAS_REPARACIONES" ToRole="CLIENTES" />
+          <NavigationProperty Name="DETALLES_NOTAS" Relationship="Self.FK_DETALLES_NOTAS_NOTAS_REPARACIONES" FromRole="NOTAS_REPARACIONES" ToRole="DETALLES_NOTAS" />
+        </EntityType>
+        <EntityType Name="VEHICULOS">
+          <Key>
+            <PropertyRef Name="Matricula" />
+          </Key>
+          <Property Name="Matricula" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Marca" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Modelo" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Color" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Año" Type="Int32" />
+          <Property Name="DNI" Type="String" MaxLength="9" FixedLength="false" Unicode="true" />
+          <Property Name="FECHA" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="CLIENTES" Relationship="Self.FK_VEHICULOS_CLIENTES" FromRole="VEHICULOS" ToRole="CLIENTES" />
+        </EntityType>
+        <Association Name="FK_NOTAS_REPARACIONES_NOTAS_REPARACIONES">
+          <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="0..1" />
+          <End Role="NOTAS_REPARACIONES" Type="Self.NOTAS_REPARACIONES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTES">
+              <PropertyRef Name="DNI" />
+            </Principal>
+            <Dependent Role="NOTAS_REPARACIONES">
+              <PropertyRef Name="DNI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEHICULOS_CLIENTES">
+          <End Role="CLIENTES" Type="Self.CLIENTES" Multiplicity="0..1" />
+          <End Role="VEHICULOS" Type="Self.VEHICULOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTES">
+              <PropertyRef Name="DNI" />
+            </Principal>
+            <Dependent Role="VEHICULOS">
+              <PropertyRef Name="DNI" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DETALLES_NOTAS_NOTAS_REPARACIONES">
+          <End Role="NOTAS_REPARACIONES" Type="Self.NOTAS_REPARACIONES" Multiplicity="1" />
+          <End Role="DETALLES_NOTAS" Type="Self.DETALLES_NOTAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NOTAS_REPARACIONES">
+              <PropertyRef Name="CodigodeNota" />
+            </Principal>
+            <Dependent Role="DETALLES_NOTAS">
+              <PropertyRef Name="CodigodeNota" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CLIENTES" EntityType="Self.CLIENTES" />
+          <EntitySet Name="DETALLES_NOTAS" EntityType="Self.DETALLES_NOTAS" />
+          <EntitySet Name="NOTAS_REPARACIONES" EntityType="Self.NOTAS_REPARACIONES" />
+          <EntitySet Name="VEHICULOS" EntityType="Self.VEHICULOS" />
+          <AssociationSet Name="FK_NOTAS_REPARACIONES_NOTAS_REPARACIONES" Association="Self.FK_NOTAS_REPARACIONES_NOTAS_REPARACIONES">
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+            <End Role="NOTAS_REPARACIONES" EntitySet="NOTAS_REPARACIONES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEHICULOS_CLIENTES" Association="Self.FK_VEHICULOS_CLIENTES">
+            <End Role="CLIENTES" EntitySet="CLIENTES" />
+            <End Role="VEHICULOS" EntitySet="VEHICULOS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DETALLES_NOTAS_NOTAS_REPARACIONES" Association="Self.FK_DETALLES_NOTAS_NOTAS_REPARACIONES">
+            <End Role="NOTAS_REPARACIONES" EntitySet="NOTAS_REPARACIONES" />
+            <End Role="DETALLES_NOTAS" EntitySet="DETALLES_NOTAS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+          <EntitySetMapping Name="CLIENTES">
+            <EntityTypeMapping TypeName="DaniDBModel.CLIENTES">
+              <MappingFragment StoreEntitySet="CLIENTES">
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+                <ScalarProperty Name="Poblacion" ColumnName="Poblacion" />
+                <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="FormadePago" ColumnName="FormadePago" />
+                <ScalarProperty Name="SEXO" ColumnName="SEXO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DETALLES_NOTAS">
+            <EntityTypeMapping TypeName="DaniDBModel.DETALLES_NOTAS">
+              <MappingFragment StoreEntitySet="DETALLES-NOTAS">
+                <ScalarProperty Name="CodigodeNota" ColumnName="CodigodeNota" />
+                <ScalarProperty Name="Linea" ColumnName="Linea" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Ampliacion" ColumnName="Ampliacion" />
+                <ScalarProperty Name="Importe" ColumnName="Importe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NOTAS_REPARACIONES">
+            <EntityTypeMapping TypeName="DaniDBModel.NOTAS_REPARACIONES">
+              <MappingFragment StoreEntitySet="NOTAS-REPARACIONES">
+                <ScalarProperty Name="CodigodeNota" ColumnName="CodigodeNota" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="FechadeReparacion" ColumnName="FechadeReparacion" />
+                <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VEHICULOS">
+            <EntityTypeMapping TypeName="DaniDBModel.VEHICULOS">
+              <MappingFragment StoreEntitySet="VEHICULOS">
+                <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

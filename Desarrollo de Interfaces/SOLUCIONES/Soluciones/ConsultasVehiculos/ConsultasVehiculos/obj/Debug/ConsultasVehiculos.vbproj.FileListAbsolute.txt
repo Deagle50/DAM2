@@ -1,0 +1,17 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\ConsultasVehiculos.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\ConsultasVehiculos.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\ConsultasVehiculos.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\ConsultasVehiculos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\EntityFramework.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\EntityFramework.SqlServer.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\EntityFramework.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\bin\Debug\EntityFramework.SqlServer.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.vbproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\ConsultasVehiculos\ConsultasVehiculos\obj\Debug\ConsultasVehiculos.pdb

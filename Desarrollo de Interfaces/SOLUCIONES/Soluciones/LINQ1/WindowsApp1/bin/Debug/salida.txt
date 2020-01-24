@@ -1,0 +1,4 @@
+IdAnuncio  IdCategoria  IdAnunciante   Tipoanuncio  FechaContrato  Precio
+        2            1             1        Faldón  21/01/2019 0:00:00     450
+        3            2             2       Tarjeta  24/01/2019 0:00:00     350
+Total borrados: 2

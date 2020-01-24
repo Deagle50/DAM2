@@ -1,0 +1,13 @@
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\bin\Debug\PlantillaVehiculos.exe.config
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\bin\Debug\PlantillaVehiculos.exe
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\bin\Debug\PlantillaVehiculos.pdb
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\bin\Debug\PlantillaVehiculos.xml
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.vbprojAssemblyReference.cache
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.Form1.resources
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.Form2.resources
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.Resources.resources
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.vbproj.GenerateResource.cache
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.vbproj.CoreCompileInputs.cache
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.exe
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.xml
+C:\Users\dani\source\repos\PlantillaVehiculos\PlantillaVehiculos\obj\Debug\PlantillaVehiculos.pdb

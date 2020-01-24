@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+    <EntitySetMapping Name="Equipos">
+      <EntityTypeMapping TypeName="DaniDBModel.Equipos">
+        <MappingFragment StoreEntitySet="Equipos">
+          <ScalarProperty Name="Uso" ColumnName="Uso" />
+          <ScalarProperty Name="DiscoDuro" ColumnName="DiscoDuro" />
+          <ScalarProperty Name="TarjetaRed" ColumnName="TarjetaRed" />
+          <ScalarProperty Name="Memoria" ColumnName="Memoria" />
+          <ScalarProperty Name="CDROM" ColumnName="CDROM" />
+          <ScalarProperty Name="Velocidad" ColumnName="Velocidad" />
+          <ScalarProperty Name="Procesador" ColumnName="Procesador" />
+          <ScalarProperty Name="CodEquipo" ColumnName="CodEquipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instalaciones">
+      <EntityTypeMapping TypeName="DaniDBModel.Instalaciones">
+        <MappingFragment StoreEntitySet="Instalaciones">
+          <ScalarProperty Name="FechaInstalacion" ColumnName="FechaInstalacion" />
+          <ScalarProperty Name="CodSoftware" ColumnName="CodSoftware" />
+          <ScalarProperty Name="CodEquipo" ColumnName="CodEquipo" />
+          <ScalarProperty Name="CodInstalacion" ColumnName="CodInstalacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Software">
+      <EntityTypeMapping TypeName="DaniDBModel.Software">
+        <MappingFragment StoreEntitySet="Software">
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Distribuidor" ColumnName="Distribuidor" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="DiscoRequerido" ColumnName="DiscoRequerido" />
+          <ScalarProperty Name="ProcesadorRequerido" ColumnName="ProcesadorRequerido" />
+          <ScalarProperty Name="MemoriaRequerida" ColumnName="MemoriaRequerida" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodSoftware" ColumnName="CodSoftware" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="DaniDBModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="CodEquipo" ColumnName="CodEquipo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CodUsuario" ColumnName="CodUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

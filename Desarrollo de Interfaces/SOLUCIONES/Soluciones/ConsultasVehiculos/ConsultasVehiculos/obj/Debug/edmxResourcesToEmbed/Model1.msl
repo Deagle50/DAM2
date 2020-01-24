@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+    <EntitySetMapping Name="CLIENTES">
+      <EntityTypeMapping TypeName="DaniDBModel.CLIENTES">
+        <MappingFragment StoreEntitySet="CLIENTES">
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Poblacion" ColumnName="Poblacion" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="FormadePago" ColumnName="FormadePago" />
+          <ScalarProperty Name="SEXO" ColumnName="SEXO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLES_NOTAS">
+      <EntityTypeMapping TypeName="DaniDBModel.DETALLES_NOTAS">
+        <MappingFragment StoreEntitySet="DETALLES-NOTAS">
+          <ScalarProperty Name="CodigodeNota" ColumnName="CodigodeNota" />
+          <ScalarProperty Name="Linea" ColumnName="Linea" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Ampliacion" ColumnName="Ampliacion" />
+          <ScalarProperty Name="Importe" ColumnName="Importe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOTAS_REPARACIONES">
+      <EntityTypeMapping TypeName="DaniDBModel.NOTAS_REPARACIONES">
+        <MappingFragment StoreEntitySet="NOTAS-REPARACIONES">
+          <ScalarProperty Name="CodigodeNota" ColumnName="CodigodeNota" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="FechadeReparacion" ColumnName="FechadeReparacion" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEHICULOS">
+      <EntityTypeMapping TypeName="DaniDBModel.VEHICULOS">
+        <MappingFragment StoreEntitySet="VEHICULOS">
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Año" ColumnName="Año" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

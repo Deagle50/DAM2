@@ -1,0 +1,17 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\ConsultasLINQ.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\ConsultasLINQ.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\ConsultasLINQ.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\ConsultasLINQ.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\EntityFramework.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\EntityFramework.SqlServer.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\EntityFramework.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\bin\Debug\EntityFramework.SqlServer.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.vbproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ConsultasLINQ\ConsultasLINQ\obj\Debug\ConsultasLINQ.pdb

@@ -1,0 +1,12 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\bin\Debug\ProveedoresDisponibles.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\bin\Debug\ProveedoresDisponibles.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\bin\Debug\ProveedoresDisponibles.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\bin\Debug\ProveedoresDisponibles.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\ProveedoresDisponibles\ProveedoresDisponibles\obj\Debug\ProveedoresDisponibles.pdb

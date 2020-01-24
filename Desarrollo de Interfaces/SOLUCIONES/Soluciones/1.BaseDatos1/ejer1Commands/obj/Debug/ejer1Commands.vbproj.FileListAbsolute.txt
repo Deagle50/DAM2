@@ -1,0 +1,26 @@
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.exe.config
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.exe
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.pdb
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.xml
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbprojAssemblyReference.cache
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.Form1.resources
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.Resources.resources
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbproj.GenerateResource.cache
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbproj.CoreCompileInputs.cache
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.exe
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.xml
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.pdb
+C:\Users\enaitzechaburua\source\repos\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.frmCuenta.resources
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.Form1.resources
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.frmCuenta.resources
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.Resources.resources
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbproj.GenerateResource.cache
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbproj.CoreCompileInputs.cache
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.exe
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.xml
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.pdb
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.exe.config
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.exe
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.pdb
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\bin\Debug\ejer1Commands.xml
+D:\DAM-2\TRABAJOS\EnaitzEchaburua\Desarrollo de Interfacees\ejer1Commands\ejer1Commands\obj\Debug\ejer1Commands.vbprojAssemblyReference.cache

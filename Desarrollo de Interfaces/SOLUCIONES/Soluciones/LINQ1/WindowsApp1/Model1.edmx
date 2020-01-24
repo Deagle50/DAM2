@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Anunciantes">
+          <Key>
+            <PropertyRef Name="IdAnunciante" />
+          </Key>
+          <Property Name="IdAnunciante" Type="int" Nullable="false" />
+          <Property Name="NIF" Type="nchar" MaxLength="10" />
+          <Property Name="NombreEmpresa" Type="varchar" MaxLength="50" />
+          <Property Name="Contacto" Type="varchar" MaxLength="50" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Anuncios">
+          <Key>
+            <PropertyRef Name="IdAnuncio" />
+          </Key>
+          <Property Name="IdAnuncio" Type="int" Nullable="false" />
+          <Property Name="IdAnunciante" Type="int" />
+          <Property Name="IdCategoria" Type="int" />
+          <Property Name="TipoAnuncio" Type="varchar" MaxLength="50" />
+          <Property Name="FechaContrato" Type="date" />
+          <Property Name="Precio" Type="float" />
+        </EntityType>
+        <EntityType Name="Categorias">
+          <Key>
+            <PropertyRef Name="IdCategoria" />
+          </Key>
+          <Property Name="IdCategoria" Type="int" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__Anuncios__IdAnun__7B264821">
+          <End Role="Anunciantes" Type="Self.Anunciantes" Multiplicity="0..1" />
+          <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Anunciantes">
+              <PropertyRef Name="IdAnunciante" />
+            </Principal>
+            <Dependent Role="Anuncios">
+              <PropertyRef Name="IdAnunciante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Anuncios__IdCate__7C1A6C5A">
+          <End Role="Categorias" Type="Self.Categorias" Multiplicity="0..1" />
+          <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="IdCategoria" />
+            </Principal>
+            <Dependent Role="Anuncios">
+              <PropertyRef Name="IdCategoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBModelStoreContainer">
+          <EntitySet Name="Anunciantes" EntityType="Self.Anunciantes" Schema="LINQ1" store:Type="Tables" />
+          <EntitySet Name="Anuncios" EntityType="Self.Anuncios" Schema="LINQ1" store:Type="Tables" />
+          <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="LINQ1" store:Type="Tables" />
+          <AssociationSet Name="FK__Anuncios__IdAnun__7B264821" Association="Self.FK__Anuncios__IdAnun__7B264821">
+            <End Role="Anunciantes" EntitySet="Anunciantes" />
+            <End Role="Anuncios" EntitySet="Anuncios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Anuncios__IdCate__7C1A6C5A" Association="Self.FK__Anuncios__IdCate__7C1A6C5A">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="Anuncios" EntitySet="Anuncios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Anunciantes">
+          <Key>
+            <PropertyRef Name="IdAnunciante" />
+          </Key>
+          <Property Name="IdAnunciante" Type="Int32" Nullable="false" />
+          <Property Name="NIF" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="NombreEmpresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Contacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Anuncios" Relationship="Self.FK__Anuncios__IdAnun__7B264821" FromRole="Anunciantes" ToRole="Anuncios" />
+        </EntityType>
+        <EntityType Name="Anuncios">
+          <Key>
+            <PropertyRef Name="IdAnuncio" />
+          </Key>
+          <Property Name="IdAnuncio" Type="Int32" Nullable="false" />
+          <Property Name="IdAnunciante" Type="Int32" />
+          <Property Name="IdCategoria" Type="Int32" />
+          <Property Name="TipoAnuncio" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FechaContrato" Type="DateTime" Precision="0" />
+          <Property Name="Precio" Type="Double" />
+          <NavigationProperty Name="Anunciantes" Relationship="Self.FK__Anuncios__IdAnun__7B264821" FromRole="Anuncios" ToRole="Anunciantes" />
+          <NavigationProperty Name="Categorias" Relationship="Self.FK__Anuncios__IdCate__7C1A6C5A" FromRole="Anuncios" ToRole="Categorias" />
+        </EntityType>
+        <EntityType Name="Categorias">
+          <Key>
+            <PropertyRef Name="IdCategoria" />
+          </Key>
+          <Property Name="IdCategoria" Type="Int32" Nullable="false" />
+          <Property Name="Titulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Anuncios" Relationship="Self.FK__Anuncios__IdCate__7C1A6C5A" FromRole="Categorias" ToRole="Anuncios" />
+        </EntityType>
+        <Association Name="FK__Anuncios__IdAnun__7B264821">
+          <End Role="Anunciantes" Type="Self.Anunciantes" Multiplicity="0..1" />
+          <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Anunciantes">
+              <PropertyRef Name="IdAnunciante" />
+            </Principal>
+            <Dependent Role="Anuncios">
+              <PropertyRef Name="IdAnunciante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Anuncios__IdCate__7C1A6C5A">
+          <End Role="Categorias" Type="Self.Categorias" Multiplicity="0..1" />
+          <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="IdCategoria" />
+            </Principal>
+            <Dependent Role="Anuncios">
+              <PropertyRef Name="IdCategoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Anunciantes" EntityType="Self.Anunciantes" />
+          <EntitySet Name="Anuncios" EntityType="Self.Anuncios" />
+          <EntitySet Name="Categorias" EntityType="Self.Categorias" />
+          <AssociationSet Name="FK__Anuncios__IdAnun__7B264821" Association="Self.FK__Anuncios__IdAnun__7B264821">
+            <End Role="Anunciantes" EntitySet="Anunciantes" />
+            <End Role="Anuncios" EntitySet="Anuncios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Anuncios__IdCate__7C1A6C5A" Association="Self.FK__Anuncios__IdCate__7C1A6C5A">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="Anuncios" EntitySet="Anuncios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+          <EntitySetMapping Name="Anunciantes">
+            <EntityTypeMapping TypeName="DaniDBModel.Anunciantes">
+              <MappingFragment StoreEntitySet="Anunciantes">
+                <ScalarProperty Name="IdAnunciante" ColumnName="IdAnunciante" />
+                <ScalarProperty Name="NIF" ColumnName="NIF" />
+                <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+                <ScalarProperty Name="Contacto" ColumnName="Contacto" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Anuncios">
+            <EntityTypeMapping TypeName="DaniDBModel.Anuncios">
+              <MappingFragment StoreEntitySet="Anuncios">
+                <ScalarProperty Name="IdAnuncio" ColumnName="IdAnuncio" />
+                <ScalarProperty Name="IdAnunciante" ColumnName="IdAnunciante" />
+                <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+                <ScalarProperty Name="TipoAnuncio" ColumnName="TipoAnuncio" />
+                <ScalarProperty Name="FechaContrato" ColumnName="FechaContrato" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categorias">
+            <EntityTypeMapping TypeName="DaniDBModel.Categorias">
+              <MappingFragment StoreEntitySet="Categorias">
+                <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

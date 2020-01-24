@@ -1,0 +1,14 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\bin\Debug\EjemploDataSet.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\bin\Debug\EjemploDataSet.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\bin\Debug\EjemploDataSet.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\bin\Debug\EjemploDataSet.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.Form1.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.frmMantenimiento.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Actividades\EjemploDataSet\EjemploDataSet\obj\Debug\EjemploDataSet.FrmMensaje.resources

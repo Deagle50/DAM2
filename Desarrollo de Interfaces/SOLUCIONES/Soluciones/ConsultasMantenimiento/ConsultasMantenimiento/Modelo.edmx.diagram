@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa1ee10f82e246bfa2cea93446f7396c" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="DaniDBModel.Equipos" Width="1.5" PointX="1.375" PointY="2.375" />
+        <EntityTypeShape EntityType="DaniDBModel.Instalaciones" Width="1.5" PointX="4.625" PointY="4.5" />
+        <EntityTypeShape EntityType="DaniDBModel.Software" Width="1.5" PointX="8.375" PointY="3.125" />
+        <EntityTypeShape EntityType="DaniDBModel.Usuarios" Width="1.5" PointX="1.75" PointY="6.5" />
+        <AssociationConnector Association="DaniDBModel.FK_Instalaciones_Instalaciones" />
+        <AssociationConnector Association="DaniDBModel.FK_Usuarios_Equipos" />
+        <AssociationConnector Association="DaniDBModel.FK_Instalaciones_Software" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
