@@ -24,5 +24,5 @@
     <string name="text_bugs">Si encuentras cualquier problema en la aplicación, errores de traducción o quieres que la aplicación sea traducida a tu idioma, dínoslo debajo.</string>
     <string name="title_bugs">Bugs</string>
     <string name="title_translation_issue">Error de traducción</string>
-    <string name="title_new_language">Solicitar nueva traducción</string>
+    <string name="title_new_translation">Solicitar nueva traducción</string>
 </resources>

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:text="0.1"
+        android:text="@string/version"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -23,8 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
 
+        android:layout_marginEnd="17dp"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardViewTheme"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@color/fontGray"
@@ -83,18 +85,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textViewIdiomaActual"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:text="castellano"
-                android:textAlignment="textEnd"
-                android:textColor="@android:color/holo_green_light"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -104,9 +94,11 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
         android:minHeight="50dp"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardViewContacto"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardViewLanguage"
         app:strokeColor="@color/fontGray"
@@ -163,9 +155,11 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
         android:minHeight="50dp"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardViewBugs"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardViewTheme"
         app:strokeColor="@color/fontGray"
@@ -233,9 +227,11 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
         android:minHeight="50dp"
         app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textViewVersion"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardViewContacto"
         app:strokeColor="@color/fontGray"
@@ -264,10 +260,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="32dp"
                 android:text="@string/text_bugs"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewReportBugs" />
@@ -276,14 +270,15 @@
                 android:id="@+id/textViewNewTranslation"
                 android:layout_width="85dp"
                 android:layout_height="wrap_content"
-                android:text="@string/title_new_language"
+                android:onClick="enviarFeedback"
+                android:text="@string/title_new_translation"
+                android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewBugs"
                 app:layout_constraintEnd_toStartOf="@+id/textViewBugs"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textViewBugs"
-                android:onClick="enviarPedirTraduccion()"/>
+                app:layout_constraintTop_toTopOf="@+id/textViewBugs" />
 
             <TextView
                 android:id="@+id/textViewBugs"
@@ -291,27 +286,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="20dp"
+                android:onClick="enviarFeedback"
                 android:text="@string/title_bugs"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textViewTranslationIssue"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/textViewNewTranslation"
-                app:layout_constraintTop_toBottomOf="@+id/textViewBugsText"
-                android:onClick="enviarErrorBugs()"/>
+                app:layout_constraintTop_toBottomOf="@+id/textViewBugsText" />
 
             <TextView
                 android:id="@+id/textViewTranslationIssue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="enviarFeedback"
                 android:text="@string/title_translation_issue"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewBugs"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/textViewBugs"
-                app:layout_constraintTop_toTopOf="@+id/textViewBugs"
-                android:onClick="enviarProblemaTraduccion()"/>
+                app:layout_constraintTop_toTopOf="@+id/textViewBugs" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

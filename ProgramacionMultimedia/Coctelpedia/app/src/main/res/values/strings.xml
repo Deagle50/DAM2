@@ -33,7 +33,8 @@
     <string name="text_bugs">If you find any bugs or translation problems, as well as if you want the application to be translated to your language, tell us bellow.</string>
     <string name="title_bugs">Bugs</string>
     <string name="title_translation_issue">Translation issue</string>
-    <string name="title_new_language">Ask for new translation</string>
+    <string name="title_new_translation">Ask for new translation</string>
+    <string name="version" translatable="false">0.1</string>
 
 
 </resources>

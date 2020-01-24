@@ -1377,7 +1377,6 @@ id textViewElaboracion
 id textViewElaboracion2
 id textViewGraduacion
 id textViewIdioma
-id textViewIdiomaActual
 id textViewNewTranslation
 id textViewParrafo
 id textViewPrecio
@@ -1576,7 +1575,7 @@ string title_games
 string title_home
 string title_language
 string title_launcher_image
-string title_new_language
+string title_new_translation
 string title_qemp
 string title_report_bugs
 string title_settings
@@ -1588,6 +1587,7 @@ string title_vegetarian
 string title_welcome
 string usual_price_home
 string usual_price_pub
+string version
 string welcome_message
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

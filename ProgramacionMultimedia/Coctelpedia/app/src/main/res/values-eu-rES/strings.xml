@@ -21,8 +21,8 @@
     <string name="title_description">Deskripzioa</string>
     <string name="title_elaboration">Elaborazioa</string>
     <string name="title_report_bugs">"Arazoak "</string>
-    <string name="text_bugs">Arazorik aurkitzen baduzu, itzulketa arazoak badaude edo aplikazioa zure hizkuntzara itzultzea nahi baduzu, behean esaiguzu.</string>
+    <string name="text_bugs">Arazorik aurkitzen baduzu, itzulpen akatsik badago edo aplikazioa zure hizkuntzara itzultzea nahi baduzu, behean esaiguzu.</string>
     <string name="title_bugs">Arazoa</string>
     <string name="title_translation_issue">Itzulketa arazoa</string>
-    <string name="title_new_language">Itzulketa berria eskatu</string>
+    <string name="title_new_translation">Itzulketa berria eskatu</string>
 </resources>
