@@ -92,7 +92,7 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Deagle50\.grad
 		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.deagle50.coctelpedia.JGQuienMasProbable
+activity#com.Deagle50.coctelpedia.activities.JGQuienMasProbable
 ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:12:9-16:63
 	android:label
 		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:15:13-72
@@ -101,13 +101,13 @@ ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia
 	android:theme
 		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:16:13-51
 	android:name
-		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:13:13-47
-activity#com.deagle50.coctelpedia.MainActivity
+		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:13:13-82
+activity#com.Deagle50.coctelpedia.activities.MainActivity
 ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:label
 		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:18:13-76
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\Deagle50\Desktop\Dam\DAM2\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN

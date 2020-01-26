@@ -39,6 +39,7 @@ Public Class Form1
 
     Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If ListView1.SelectedItems.Count <> 0 Then
+            'Pasar las cosas al formulario 3
             With ListView1.SelectedItems(0)
                 Form3.txtIdAnuncio.Text = .Text
                 Form3.txtCategoria.Text = .SubItems(1).Text
@@ -53,11 +54,13 @@ Public Class Form1
     End Sub
 
     Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
+        'Nuevo anuncio del anunciante x en form2
         Form2.txtIdAnunciante.Text = actual.IdAnunciante
         Form2.ShowDialog()
     End Sub
 
     Private Sub BtnInforme_Click(sender As Object, e As EventArgs) Handles btnInforme.Click
+        'Mostrar informe
         Dim salida As New StreamWriter("salida.txt")
         salida.WriteLine("{0,9}  {1,11}  {2,12}  {3,12}  {4,13}  {5,6}", "IdAnuncio", "IdCategoria", "IdAnunciante", "Tipoanuncio", "FechaContrato", "Precio")
         Dim anterior As List(Of Anuncios)
@@ -65,6 +68,7 @@ Public Class Form1
                     Where anuncio.FechaContrato.Value.Year = Now.Year - 1
                     Select anuncio).ToList
         Dim t As Integer
+        'Ir borrando según salen
         For Each a As Anuncios In anterior
             salida.WriteLine("{0,9}  {1,11}  {2,12}  {3,12}  {4,13}  {5,6}", a.IdAnuncio, a.IdCategoria, a.IdAnunciante, a.TipoAnuncio, a.FechaContrato, a.Precio)
             modelo.Anuncios.Remove(a)

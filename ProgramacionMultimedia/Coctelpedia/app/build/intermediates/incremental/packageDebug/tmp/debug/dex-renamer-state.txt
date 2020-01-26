@@ -1,4 +1,4 @@
-#Fri Jan 24 16:50:05 CET 2020
+#Sun Jan 26 20:20:54 CET 2020
 base.0=C\:\\Users\\Deagle50\\Desktop\\Dam\\DAM2\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
