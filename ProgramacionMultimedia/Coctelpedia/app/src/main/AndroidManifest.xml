@@ -13,10 +13,12 @@
             android:name="com.Deagle50.coctelpedia.activities.JGQuienMasProbable"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_jgquien_mas_probable"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.Deagle50.coctelpedia.activities.MainActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
         >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
