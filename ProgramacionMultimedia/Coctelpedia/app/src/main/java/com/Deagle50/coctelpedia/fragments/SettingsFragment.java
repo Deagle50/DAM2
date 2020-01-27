@@ -145,7 +145,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
     private void cambiarIdioma(String lg) {
         LanguageHelper.setLocale(getContext(), lg);
-        getActivity().recreate();
+        //instancia.recreate();
     }
 
 }

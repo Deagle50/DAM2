@@ -38,7 +38,6 @@ public class themeHelper extends AppCompatActivity {
         savedThemeDark = shp.getBoolean(context.getResources().getString(R.string.preferences_isdark), false);
     }
 
-
     public themeHelper(Context context, Activity activity)
     {
         this.activity = activity;
@@ -78,8 +77,6 @@ public class themeHelper extends AppCompatActivity {
                     t.show();
                 }
             }
-
-        //saveTheme();
     }
 
     private Configuration getConfiguration(){
@@ -88,7 +85,6 @@ public class themeHelper extends AppCompatActivity {
         }
         return configuration;
     }
-
 
     private int getUI(){
         return getConfiguration().uiMode;
@@ -120,20 +116,16 @@ public class themeHelper extends AppCompatActivity {
     public void loadDark(){
         //AÑADIR, CAMBIAR FOTO IMAGEN PRINCIPAL
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-
         instancia.recreate();
     }
 
     public void loadLight(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
         instancia.recreate();
     }
 
     public void loadLikedTheme() {
-        //Cargar modo oscuro o no
-
-
+        //Cargar modo oscuro o no al iniciar activity
         if(savedThemeDark)
         {
             if(isDark()){
@@ -152,7 +144,6 @@ public class themeHelper extends AppCompatActivity {
         }
 
     }
-
 
 }
 

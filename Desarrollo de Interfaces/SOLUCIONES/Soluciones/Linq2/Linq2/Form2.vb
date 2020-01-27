@@ -25,6 +25,6 @@ Public Class Form2
         sw.WriteLine("Viajero: {0}", nombre)
         sw.WriteLine("Destino: {0}", Form1.ListView1.SelectedItems(0).SubItems(1).Text)
         sw.Close()
-        Me.Dispose()
+        Dispose()
     End Sub
 End Class

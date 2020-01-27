@@ -13,6 +13,7 @@ import java.util.Locale;
 public class LanguageHelper {
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
+
     public static Context onAttach(Context context) {
         String lang = getPersistedData(context, Locale.getDefault().getLanguage());
         return setLocale(context, lang);
@@ -30,11 +31,11 @@ public class LanguageHelper {
     public static Context setLocale(Context context, String language) {
         persist(context, language);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        if(!getLanguage(context).equals(language))
             return updateResources(context, language);
-        }
+        return updateResources(context, getLanguage(context));
 
-        return updateResourcesLegacy(context, language);
+
     }
 
     private static String getPersistedData(Context context, String defaultLanguage) {

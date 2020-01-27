@@ -10,6 +10,7 @@ Module Module1
         salidaViajes = New StreamWriter("viajes.txt")
         salidaBorrados = New StreamWriter("Borrados.log")
         For Each v In res
+            'Imprime los viajes que tienen plazas suficientes
             If (v.total > v.plazasMin) Then
                 salidaViajes.WriteLine("Fecha Ida= {0}  Fecha Vuelta={1}", v.FechaSalida, v.FechaRegreso)
                 salidaViajes.WriteLine("Destino: {0}  Piloto: {1}", v.Destino, v.Piloto)
@@ -19,6 +20,7 @@ Module Module1
                 Next
                 salidaViajes.WriteLine("Total: {0}", v.total)
             Else
+                'Borra los viajes que no tienen suficientes viajeros
                 salidaBorrados.WriteLine("Se borró el viaje {0}", v.Codviaje)
                 Dim codigo As Integer = v.codviaje
                 Dim borrado As Linq2.Viajes = modelo.Viajes.Where(Function(x) x.CodViaje = codigo).First

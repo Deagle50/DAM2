@@ -21,7 +21,7 @@
 
     Private Sub ListView1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles ListView1.MouseDoubleClick
         If ListView1.SelectedItems.Count <> 0 Then
-            Dim codreserva As Integer = CInt(ListView1.SelectedItems(0).Text)
+            Dim codreserva As Integer = ListView1.SelectedItems(0).Text
             Dim rv As Linq2.Reservas = (From r In modelo.Reservas
                                         Where r.CodReserva = codreserva
                                         Select r).FirstOrDefault

@@ -18,3 +18,22 @@ D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\Linq2\L
 D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form2.resources
 D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form3.resources
 D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 4 Acceso a Datos\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form4.resources
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\Linq2.exe.config
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\Linq2.exe
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\Linq2.pdb
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\Linq2.xml
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\EntityFramework.dll
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\EntityFramework.xml
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.vbprojAssemblyReference.cache
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form1.resources
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form2.resources
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form3.resources
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Form4.resources
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.Resources.resources
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.vbproj.GenerateResource.cache
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.vbproj.CopyComplete
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.exe
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.xml
+C:\Users\Deagle50\Desktop\Dam\DAM2\Desarrollo de Interfaces\SOLUCIONES\Soluciones\Linq2\Linq2\obj\Debug\Linq2.pdb
