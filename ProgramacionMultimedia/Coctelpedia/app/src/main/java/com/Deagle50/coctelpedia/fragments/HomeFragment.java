@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.fragments;
+package com.deagle50.coctelpedia.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,8 +11,6 @@ import androidx.fragment.app.Fragment;
 import com.deagle50.coctelpedia.R;
 
 public class HomeFragment extends Fragment {
-
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

@@ -25,4 +25,7 @@
     <string name="title_bugs">Bugs</string>
     <string name="title_translation_issue">Error de traducción</string>
     <string name="title_new_translation">Solicitar nueva traducción</string>
+    <string name="text_theme_changed_dark">Cambiado a tema oscuro</string>
+    <string name="text_theme_changed_light">Cambiado a tema claro</string>
+    <string name="text_theme_already_changed">Ese es el tema actual</string>
 </resources>

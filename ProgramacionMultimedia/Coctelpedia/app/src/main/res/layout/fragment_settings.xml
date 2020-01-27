@@ -141,6 +141,7 @@
                 android:layout_marginBottom="12dp"
                 android:backgroundTint="@color/fontWhite"
                 android:text="@string/theme_light"
+                android:textColor="@color/fontBlack"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/buttonDarkTheme"
                 app:layout_constraintHorizontal_bias="0.5"

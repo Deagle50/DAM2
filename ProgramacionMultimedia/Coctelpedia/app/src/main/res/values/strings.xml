@@ -35,6 +35,9 @@
     <string name="title_translation_issue">Translation issue</string>
     <string name="title_new_translation">Ask for new translation</string>
     <string name="version" translatable="false">0.1</string>
+    <string name="text_theme_changed_dark">Theme changed to dark</string>
+    <string name="text_theme_changed_light">Theme changed to light</string>
+    <string name="text_theme_already_changed">That\'s the actual theme</string>
 
 
 </resources>

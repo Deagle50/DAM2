@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.Deagle50.coctelpedia.fragments.HomeFragment"
+        android:name="com.deagle50.coctelpedia.fragments.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_coctelpedia"
-        android:name="com.Deagle50.coctelpedia.fragments.CoctelpediaFragment"
+        android:name="com.deagle50.coctelpedia.fragments.CoctelpediaFragment"
         android:label="@string/title_coctelpedia"
         tools:layout="@layout/fragment_coctelpedia" />
 
     <fragment
         android:id="@+id/navigation_games"
-        android:name="com.Deagle50.coctelpedia.fragments.GamesFragment"
+        android:name="com.deagle50.coctelpedia.fragments.GamesFragment"
         android:label="@string/title_games"
         tools:layout="@layout/fragment_games" />
 
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.Deagle50.coctelpedia.fragments.SettingsFragment"
+        android:name="com.deagle50.coctelpedia.fragments.SettingsFragment"
         android:label="@string/title_settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

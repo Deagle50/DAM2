@@ -11,7 +11,7 @@
         android:layout_height="392dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/title_launcher_image"
-        android:src="@drawable/coctel"
+        android:src="@drawable/ic_coctel_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

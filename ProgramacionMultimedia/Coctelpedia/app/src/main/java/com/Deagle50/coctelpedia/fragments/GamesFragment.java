@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.fragments;
+package com.deagle50.coctelpedia.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.Deagle50.coctelpedia.activities.JGQuienMasProbable;
+import com.deagle50.coctelpedia.activities.JGQuienMasProbable;
 import com.deagle50.coctelpedia.R;
 
 public class GamesFragment extends Fragment implements View.OnClickListener{

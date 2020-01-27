@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.fragments;
+package com.deagle50.coctelpedia.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

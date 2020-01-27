@@ -678,6 +678,7 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color fontBlack
 color fontGray
 color fontWhite
 color foreground_material_dark
@@ -1077,6 +1078,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_coctel_black
+drawable ic_coctel_white
 drawable ic_dashboard_black_24dp
 drawable ic_flag_espana_64
 drawable ic_flag_euskadi_64
@@ -1563,6 +1566,9 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string text_bugs
+string text_theme_already_changed
+string text_theme_changed_dark
+string text_theme_changed_light
 string theme_dark
 string theme_light
 string title_activity_jgquien_mas_probable

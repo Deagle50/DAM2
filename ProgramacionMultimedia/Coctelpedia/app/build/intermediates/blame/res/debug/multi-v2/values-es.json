@@ -1,16 +1,14 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Deagle50\\Desktop\\Dam\\DAM2\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
+            "outputFile": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Deagle50\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\values-es\\values-es.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,207,320,428,513,614,742,828,910,1002,1095,1192,1286,1387,1481,1577,1673,1765,1857,1938,2045,2156,2255,2363,2471,2578,2737,2836",
-                        "endColumns": "101,112,107,84,100,127,85,81,91,92,96,93,100,93,95,95,91,91,80,106,110,98,107,107,106,158,98,81",
-                        "endOffsets": "202,315,423,508,609,737,823,905,997,1090,1187,1281,1382,1476,1572,1668,1760,1852,1933,2040,2151,2250,2358,2466,2573,2732,2831,2913"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,32",
@@ -21,47 +19,11 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Deagle50\\Desktop\\Dam\\DAM2\\ProgramacionMultimedia\\Coctelpedia\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\e9dab9c67c1ee3668e0bbf86c6d8cbd8\\core-1.1.0\\res\\values-es\\values-es.xml",
                     "from": {
-                        "startLines": "8,23,11,10,24,12,20,21,2,4,7,6,26,5,22,3,9,25,15,19,18,13,16,17,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "394,1492,547,500,1675,594,1313,1372,57,157,343,277,1793,204,1431,105,454,1720,1036,1265,1207,646,1099,1153,714",
-                        "endColumns": "58,181,45,45,43,50,57,57,46,45,49,64,76,71,59,50,44,71,61,46,56,66,52,52,320",
-                        "endOffsets": "448,1669,588,541,1714,640,1366,1425,99,198,388,337,1865,271,1486,151,494,1787,1093,1307,1259,708,1147,1201,1030"
-                    },
-                    "to": {
-                        "startLines": "29,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2836,3317,3499,3545,3591,3635,3686,3744,3802,3849,3895,3945,4010,4087,4159,4219,4270,4315,4387,4449,4496,4553,4620,4673,4726",
-                        "endColumns": "58,181,45,45,43,50,57,57,46,45,49,64,76,71,59,50,44,71,61,46,56,66,52,52,320",
-                        "endOffsets": "2890,3494,3540,3586,3630,3681,3739,3797,3844,3890,3940,4005,4082,4154,4214,4265,4310,4382,4444,4491,4548,4615,4668,4721,5042"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Deagle50\\.gradle\\caches\\transforms-2\\files-2.1\\2163d516afb8df854dd16ff122e11e57\\jetified-navigation-ui-2.0.0\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,174",
-                        "endColumns": "118,119",
-                        "endOffsets": "169,289"
-                    },
-                    "to": {
-                        "startLines": "30,31",
-                        "startColumns": "4,4",
-                        "startOffsets": "2895,3014",
-                        "endColumns": "118,119",
-                        "endOffsets": "3009,3129"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Deagle50\\.gradle\\caches\\transforms-2\\files-2.1\\e9dab9c67c1ee3668e0bbf86c6d8cbd8\\core-1.1.0\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
                     },
                     "to": {
                         "startLines": "33",
@@ -69,6 +31,38 @@
                         "startOffsets": "3216",
                         "endColumns": "100",
                         "endOffsets": "3312"
+                    }
+                },
+                {
+                    "source": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,29,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,2023,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,76,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,2095,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "29,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2836,3317,3499,3576,3651,3726,3772,3818,3862,3913,3971,4029,4076,4122,4172,4237,4314,4386,4446,4497,4542,4614,4676,4723,4780,4847,4900,4953",
+                        "endColumns": "58,181,76,74,74,45,45,43,50,57,57,46,45,49,64,76,71,59,50,44,71,61,46,56,66,52,52,320",
+                        "endOffsets": "2890,3494,3571,3646,3721,3767,3813,3857,3908,3966,4024,4071,4117,4167,4232,4309,4381,4441,4492,4537,4609,4671,4718,4775,4842,4895,4948,5269"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\3e256de69671a5f25a9972ff00902fc8\\jetified-navigation-ui-2.0.0\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "30,31",
+                        "startColumns": "4,4",
+                        "startOffsets": "2895,3014",
+                        "endColumns": "118,119",
+                        "endOffsets": "3009,3129"
                     }
                 }
             ]

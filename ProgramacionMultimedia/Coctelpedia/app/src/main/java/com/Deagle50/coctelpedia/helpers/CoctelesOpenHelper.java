@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.helpers;
+package com.deagle50.coctelpedia.helpers;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -1,14 +1,20 @@
-package com.Deagle50.coctelpedia.activities;
+package com.deagle50.coctelpedia.activities;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.deagle50.coctelpedia.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -23,21 +29,30 @@ import androidx.navigation.ui.NavigationUI;
     * Delete de nombres
 *
 * Extras
+    * Modo oscuro en themeHelper
     * Guardar modo oscuro e idioma en shared preferences
-    * Modo oscuro
     * Implementar bien idiomas, onclick
-    * Añadir más juegos
+    * Añadir juegos
     * Gesto para cambiar entre fragments pantalla principal
 *
 *
+* DONE:
+*
+    * Modo oscuro
+*
+* flags:
+* coctel: Kiranshastry
 * */
 
 public class MainActivity extends AppCompatActivity {
-
+    Configuration configuration;
+    public static MainActivity instancia;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        instancia = this;//ÑAPA
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -49,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -88,7 +105,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* public void recreateMain(){
-        recreate();
-    }*/
+    public int getUI(){
+        return getConfiguration().uiMode;
+    }
+
+    private Configuration getConfiguration(){
+
+        if (configuration == null) {
+            configuration = getResources().getConfiguration();
+        }
+        return configuration;
+    }
+
+
 }

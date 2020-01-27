@@ -25,4 +25,7 @@
     <string name="title_bugs">Arazoa</string>
     <string name="title_translation_issue">Itzulketa arazoa</string>
     <string name="title_new_translation">Itzulketa berria eskatu</string>
+    <string name="text_theme_changed_dark">Tema ilunara aldatu da</string>
+    <string name="text_theme_changed_light">Tema argira aldatu da</string>
+    <string name="text_theme_already_changed">Hori da dagoen tema</string>
 </resources>

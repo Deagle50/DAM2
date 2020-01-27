@@ -1,4 +1,5 @@
-package com.Deagle50.coctelpedia.activities;
+package com.deagle50.coctelpedia.activities;
+import com.deagle50.coctelpedia.R;
 
 import android.annotation.SuppressLint;
 
@@ -10,7 +11,7 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.deagle50.coctelpedia.R;
+
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

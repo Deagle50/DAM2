@@ -1,19 +1,25 @@
-package com.Deagle50.coctelpedia.fragments;
+package com.deagle50.coctelpedia.fragments;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 
-import com.Deagle50.coctelpedia.helpers.LanguageHelper;
+import com.deagle50.coctelpedia.activities.MainActivity;
+import com.deagle50.coctelpedia.helpers.LanguageHelper;
 import com.deagle50.coctelpedia.R;
+import com.deagle50.coctelpedia.helpers.themeHelper;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
     Button buttonES, buttonEU, buttonEN;
@@ -21,16 +27,12 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     Button buttonDark, buttonLight;
     TextView tvBug, tvNTrans, tvTransIssue, tvCorreo;
     View root;
+    Configuration configuration;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         root = inflater.inflate(R.layout.fragment_settings, container, false);
-
-
-
-
-
 
         buttonGmail1 = root.findViewById(R.id.buttonGmail1);
         buttonGmail2 = root.findViewById(R.id.buttonGmail2);
@@ -93,12 +95,10 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 break;
             }
             //CONTACTO
-            case R.id.buttonGmail1:{
+            case R.id.buttonGmail1:{}
 
-            }
-            case R.id.buttonGmail2:{
+            case R.id.buttonGmail2:{}
 
-            }
             case R.id.textViewCorreo:{
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 String[] emails_in_to={"urkourbieta@gmail.com"};
@@ -110,13 +110,14 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
             }
+            //CAMBIAR TEMA
             case R.id.buttonDarkTheme:{
-                Toast.makeText(getContext(), "Work in progres...", Toast.LENGTH_SHORT).show();
-                break;
+                themeHelper th = new themeHelper();
+                th.cambiarTema("oscuro");
             }
             case R.id.buttonLightTheme:{
-                Toast.makeText(getContext(), "Work in progress...", Toast.LENGTH_SHORT).show();
-                break;
+                themeHelper th = new themeHelper();
+                th.cambiarTema("claro");
             }
 
         }
@@ -137,4 +138,5 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         LanguageHelper.setLocale(getContext(), lg);
         getActivity().recreate();
     }
+
 }
