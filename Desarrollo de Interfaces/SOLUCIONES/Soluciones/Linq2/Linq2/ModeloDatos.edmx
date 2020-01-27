@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Pilotos">
+          <Key>
+            <PropertyRef Name="CodPiloto" />
+          </Key>
+          <Property Name="CodPiloto" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="HorasVuelo" Type="int" />
+          <Property Name="DNI" Type="nchar" MaxLength="10" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Reservas">
+          <Key>
+            <PropertyRef Name="CodReserva" />
+          </Key>
+          <Property Name="CodReserva" Type="int" Nullable="false" />
+          <Property Name="CodViaje" Type="int" />
+          <Property Name="CodViajero" Type="int" />
+          <Property Name="Precio" Type="float" />
+        </EntityType>
+        <EntityType Name="Viajeros">
+          <Key>
+            <PropertyRef Name="CodViajero" />
+          </Key>
+          <Property Name="CodViajero" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="DNI" Type="nchar" MaxLength="10" />
+          <Property Name="Telefono" Type="nchar" MaxLength="10" />
+          <Property Name="Ciudad" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Viajes">
+          <Key>
+            <PropertyRef Name="CodViaje" />
+          </Key>
+          <Property Name="CodViaje" Type="int" Nullable="false" />
+          <Property Name="Destino" Type="varchar" MaxLength="50" />
+          <Property Name="PlazasMax" Type="int" />
+          <Property Name="PlazasMin" Type="int" />
+          <Property Name="FechaSalida" Type="date" />
+          <Property Name="FechaRegreso" Type="date" />
+          <Property Name="CodPiloto" Type="int" />
+        </EntityType>
+        <Association Name="FK_Reservas_Viajeros">
+          <End Role="Viajeros" Type="Self.Viajeros" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Viajeros">
+              <PropertyRef Name="CodViajero" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="CodViajero" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reservas_Viajes">
+          <End Role="Viajes" Type="Self.Viajes" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Viajes">
+              <PropertyRef Name="CodViaje" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="CodViaje" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Viajes_Pilotos">
+          <End Role="Pilotos" Type="Self.Pilotos" Multiplicity="0..1" />
+          <End Role="Viajes" Type="Self.Viajes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pilotos">
+              <PropertyRef Name="CodPiloto" />
+            </Principal>
+            <Dependent Role="Viajes">
+              <PropertyRef Name="CodPiloto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBModelStoreContainer">
+          <EntitySet Name="Pilotos" EntityType="Self.Pilotos" Schema="LINQ2" store:Type="Tables" />
+          <EntitySet Name="Reservas" EntityType="Self.Reservas" Schema="LINQ2" store:Type="Tables" />
+          <EntitySet Name="Viajeros" EntityType="Self.Viajeros" Schema="LINQ2" store:Type="Tables" />
+          <EntitySet Name="Viajes" EntityType="Self.Viajes" Schema="LINQ2" store:Type="Tables" />
+          <AssociationSet Name="FK_Reservas_Viajeros" Association="Self.FK_Reservas_Viajeros">
+            <End Role="Viajeros" EntitySet="Viajeros" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reservas_Viajes" Association="Self.FK_Reservas_Viajes">
+            <End Role="Viajes" EntitySet="Viajes" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Viajes_Pilotos" Association="Self.FK_Viajes_Pilotos">
+            <End Role="Pilotos" EntitySet="Pilotos" />
+            <End Role="Viajes" EntitySet="Viajes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Pilotos">
+          <Key>
+            <PropertyRef Name="CodPiloto" />
+          </Key>
+          <Property Name="CodPiloto" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HorasVuelo" Type="Int32" />
+          <Property Name="DNI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Viajes" Relationship="Self.FK_Viajes_Pilotos" FromRole="Pilotos" ToRole="Viajes" />
+        </EntityType>
+        <EntityType Name="Reservas">
+          <Key>
+            <PropertyRef Name="CodReserva" />
+          </Key>
+          <Property Name="CodReserva" Type="Int32" Nullable="false" />
+          <Property Name="CodViaje" Type="Int32" />
+          <Property Name="CodViajero" Type="Int32" />
+          <Property Name="Precio" Type="Double" />
+          <NavigationProperty Name="Viajeros" Relationship="Self.FK_Reservas_Viajeros" FromRole="Reservas" ToRole="Viajeros" />
+          <NavigationProperty Name="Viajes" Relationship="Self.FK_Reservas_Viajes" FromRole="Reservas" ToRole="Viajes" />
+        </EntityType>
+        <EntityType Name="Viajeros">
+          <Key>
+            <PropertyRef Name="CodViajero" />
+          </Key>
+          <Property Name="CodViajero" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DNI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Ciudad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Reservas" Relationship="Self.FK_Reservas_Viajeros" FromRole="Viajeros" ToRole="Reservas" />
+        </EntityType>
+        <EntityType Name="Viajes">
+          <Key>
+            <PropertyRef Name="CodViaje" />
+          </Key>
+          <Property Name="CodViaje" Type="Int32" Nullable="false" />
+          <Property Name="Destino" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PlazasMax" Type="Int32" />
+          <Property Name="PlazasMin" Type="Int32" />
+          <Property Name="FechaSalida" Type="DateTime" Precision="0" />
+          <Property Name="FechaRegreso" Type="DateTime" Precision="0" />
+          <Property Name="CodPiloto" Type="Int32" />
+          <NavigationProperty Name="Pilotos" Relationship="Self.FK_Viajes_Pilotos" FromRole="Viajes" ToRole="Pilotos" />
+          <NavigationProperty Name="Reservas" Relationship="Self.FK_Reservas_Viajes" FromRole="Viajes" ToRole="Reservas" />
+        </EntityType>
+        <Association Name="FK_Viajes_Pilotos">
+          <End Role="Pilotos" Type="Self.Pilotos" Multiplicity="0..1" />
+          <End Role="Viajes" Type="Self.Viajes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pilotos">
+              <PropertyRef Name="CodPiloto" />
+            </Principal>
+            <Dependent Role="Viajes">
+              <PropertyRef Name="CodPiloto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reservas_Viajeros">
+          <End Role="Viajeros" Type="Self.Viajeros" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Viajeros">
+              <PropertyRef Name="CodViajero" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="CodViajero" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Reservas_Viajes">
+          <End Role="Viajes" Type="Self.Viajes" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Viajes">
+              <PropertyRef Name="CodViaje" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="CodViaje" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Pilotos" EntityType="Self.Pilotos" />
+          <EntitySet Name="Reservas" EntityType="Self.Reservas" />
+          <EntitySet Name="Viajeros" EntityType="Self.Viajeros" />
+          <EntitySet Name="Viajes" EntityType="Self.Viajes" />
+          <AssociationSet Name="FK_Viajes_Pilotos" Association="Self.FK_Viajes_Pilotos">
+            <End Role="Pilotos" EntitySet="Pilotos" />
+            <End Role="Viajes" EntitySet="Viajes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reservas_Viajeros" Association="Self.FK_Reservas_Viajeros">
+            <End Role="Viajeros" EntitySet="Viajeros" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Reservas_Viajes" Association="Self.FK_Reservas_Viajes">
+            <End Role="Viajes" EntitySet="Viajes" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+          <EntitySetMapping Name="Pilotos">
+            <EntityTypeMapping TypeName="DaniDBModel.Pilotos">
+              <MappingFragment StoreEntitySet="Pilotos">
+                <ScalarProperty Name="CodPiloto" ColumnName="CodPiloto" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="HorasVuelo" ColumnName="HorasVuelo" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reservas">
+            <EntityTypeMapping TypeName="DaniDBModel.Reservas">
+              <MappingFragment StoreEntitySet="Reservas">
+                <ScalarProperty Name="CodReserva" ColumnName="CodReserva" />
+                <ScalarProperty Name="CodViaje" ColumnName="CodViaje" />
+                <ScalarProperty Name="CodViajero" ColumnName="CodViajero" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Viajeros">
+            <EntityTypeMapping TypeName="DaniDBModel.Viajeros">
+              <MappingFragment StoreEntitySet="Viajeros">
+                <ScalarProperty Name="CodViajero" ColumnName="CodViajero" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Viajes">
+            <EntityTypeMapping TypeName="DaniDBModel.Viajes">
+              <MappingFragment StoreEntitySet="Viajes">
+                <ScalarProperty Name="CodViaje" ColumnName="CodViaje" />
+                <ScalarProperty Name="Destino" ColumnName="Destino" />
+                <ScalarProperty Name="PlazasMax" ColumnName="PlazasMax" />
+                <ScalarProperty Name="PlazasMin" ColumnName="PlazasMin" />
+                <ScalarProperty Name="FechaSalida" ColumnName="FechaSalida" />
+                <ScalarProperty Name="FechaRegreso" ColumnName="FechaRegreso" />
+                <ScalarProperty Name="CodPiloto" ColumnName="CodPiloto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Pilotos">
+    <Key>
+      <PropertyRef Name="CodPiloto" />
+    </Key>
+    <Property Name="CodPiloto" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="HorasVuelo" Type="int" />
+    <Property Name="DNI" Type="nchar" MaxLength="10" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="Telefono" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Reservas">
+    <Key>
+      <PropertyRef Name="CodReserva" />
+    </Key>
+    <Property Name="CodReserva" Type="int" Nullable="false" />
+    <Property Name="CodViaje" Type="int" />
+    <Property Name="CodViajero" Type="int" />
+    <Property Name="Precio" Type="float" />
+  </EntityType>
+  <EntityType Name="Viajeros">
+    <Key>
+      <PropertyRef Name="CodViajero" />
+    </Key>
+    <Property Name="CodViajero" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="DNI" Type="nchar" MaxLength="10" />
+    <Property Name="Telefono" Type="nchar" MaxLength="10" />
+    <Property Name="Ciudad" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Viajes">
+    <Key>
+      <PropertyRef Name="CodViaje" />
+    </Key>
+    <Property Name="CodViaje" Type="int" Nullable="false" />
+    <Property Name="Destino" Type="varchar" MaxLength="50" />
+    <Property Name="PlazasMax" Type="int" />
+    <Property Name="PlazasMin" Type="int" />
+    <Property Name="FechaSalida" Type="date" />
+    <Property Name="FechaRegreso" Type="date" />
+    <Property Name="CodPiloto" Type="int" />
+  </EntityType>
+  <Association Name="FK_Reservas_Viajeros">
+    <End Role="Viajeros" Type="Self.Viajeros" Multiplicity="0..1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Viajeros">
+        <PropertyRef Name="CodViajero" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="CodViajero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservas_Viajes">
+    <End Role="Viajes" Type="Self.Viajes" Multiplicity="0..1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Viajes">
+        <PropertyRef Name="CodViaje" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="CodViaje" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Viajes_Pilotos">
+    <End Role="Pilotos" Type="Self.Pilotos" Multiplicity="0..1" />
+    <End Role="Viajes" Type="Self.Viajes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pilotos">
+        <PropertyRef Name="CodPiloto" />
+      </Principal>
+      <Dependent Role="Viajes">
+        <PropertyRef Name="CodPiloto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DaniDBModelStoreContainer">
+    <EntitySet Name="Pilotos" EntityType="Self.Pilotos" Schema="LINQ2" store:Type="Tables" />
+    <EntitySet Name="Reservas" EntityType="Self.Reservas" Schema="LINQ2" store:Type="Tables" />
+    <EntitySet Name="Viajeros" EntityType="Self.Viajeros" Schema="LINQ2" store:Type="Tables" />
+    <EntitySet Name="Viajes" EntityType="Self.Viajes" Schema="LINQ2" store:Type="Tables" />
+    <AssociationSet Name="FK_Reservas_Viajeros" Association="Self.FK_Reservas_Viajeros">
+      <End Role="Viajeros" EntitySet="Viajeros" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservas_Viajes" Association="Self.FK_Reservas_Viajes">
+      <End Role="Viajes" EntitySet="Viajes" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Viajes_Pilotos" Association="Self.FK_Viajes_Pilotos">
+      <End Role="Pilotos" EntitySet="Pilotos" />
+      <End Role="Viajes" EntitySet="Viajes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
