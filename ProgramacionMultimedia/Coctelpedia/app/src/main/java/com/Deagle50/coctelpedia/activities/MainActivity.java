@@ -1,7 +1,9 @@
 package com.deagle50.coctelpedia.activities;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.deagle50.coctelpedia.R;
+import com.deagle50.coctelpedia.helpers.themeHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,11 +32,12 @@ import androidx.navigation.ui.NavigationUI;
     * Delete de nombres
 *
 * Extras
-    * Modo oscuro en themeHelper
+    * Cargar imagen nueva en modo oscuro
     * Guardar modo oscuro e idioma en shared preferences
     * Implementar bien idiomas, onclick
     * Añadir juegos
     * Gesto para cambiar entre fragments pantalla principal
+    * Cancelar toasts
 *
 *
 * DONE:
@@ -45,8 +49,8 @@ import androidx.navigation.ui.NavigationUI;
 * */
 
 public class MainActivity extends AppCompatActivity {
-    Configuration configuration;
     public static MainActivity instancia;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+
+        themeHelper th = new themeHelper(MainActivity.this, this);
+        th.loadLikedTheme();
+
     }
 
 
@@ -104,18 +113,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
-
-    public int getUI(){
-        return getConfiguration().uiMode;
-    }
-
-    private Configuration getConfiguration(){
-
-        if (configuration == null) {
-            configuration = getResources().getConfiguration();
-        }
-        return configuration;
-    }
-
-
 }

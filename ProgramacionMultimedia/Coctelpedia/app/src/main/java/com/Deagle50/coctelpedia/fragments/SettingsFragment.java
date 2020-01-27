@@ -3,6 +3,8 @@ package com.deagle50.coctelpedia.fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,12 +16,15 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import com.deagle50.coctelpedia.activities.MainActivity;
 import com.deagle50.coctelpedia.helpers.LanguageHelper;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.themeHelper;
+
+import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
     Button buttonES, buttonEU, buttonEN;
@@ -111,13 +116,17 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 break;
             }
             //CAMBIAR TEMA
-            case R.id.buttonDarkTheme:{
-                themeHelper th = new themeHelper();
-                th.cambiarTema("oscuro");
-            }
             case R.id.buttonLightTheme:{
-                themeHelper th = new themeHelper();
+                themeHelper th = new themeHelper(getContext());
                 th.cambiarTema("claro");
+                th.saveTheme();
+                break;
+            }
+            case R.id.buttonDarkTheme:{
+                themeHelper th = new themeHelper(getContext());
+                th.cambiarTema("oscuro");
+                th.saveTheme();
+                break;
             }
 
         }

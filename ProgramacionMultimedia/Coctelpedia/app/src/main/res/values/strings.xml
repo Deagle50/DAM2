@@ -11,7 +11,7 @@
     <string name="title_launcher_image">Launcher image</string>
 
 
-    <!--Quién es más probable que...-->
+
     <string name="title_qemp">Who would...?</string>
     <string name="title_language">Language</string>
     <string name="current_language">Current language:</string>
@@ -38,6 +38,8 @@
     <string name="text_theme_changed_dark">Theme changed to dark</string>
     <string name="text_theme_changed_light">Theme changed to light</string>
     <string name="text_theme_already_changed">That\'s the actual theme</string>
+    <string name="preferences_theme_file" translatable="false">preferences</string>
+    <string name="preferences_isdark" translatable="false">preferences</string>
 
 
 </resources>
