@@ -33,6 +33,7 @@
     <string msgid="730395136688082741" name="search_menu_title">"Buscar"</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="text_bugs">Si encuentras cualquier problema en la aplicación, errores de traducción o quieres que la aplicación sea traducida a tu idioma, dínoslo debajo.</string>
+    <string name="text_language_already_changed">Idioma actual: castellano</string>
     <string name="text_theme_already_changed">Ese es el tema actual</string>
     <string name="text_theme_changed_dark">Cambiado a tema oscuro</string>
     <string name="text_theme_changed_light">Cambiado a tema claro</string>

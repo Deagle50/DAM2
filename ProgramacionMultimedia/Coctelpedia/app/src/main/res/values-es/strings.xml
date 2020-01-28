@@ -28,4 +28,5 @@
     <string name="text_theme_changed_dark">Cambiado a tema oscuro</string>
     <string name="text_theme_changed_light">Cambiado a tema claro</string>
     <string name="text_theme_already_changed">Ese es el tema actual</string>
+    <string name="text_language_already_changed">Idioma actual: castellano</string>
 </resources>

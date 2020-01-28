@@ -1564,10 +1564,13 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string preferences_isdark
+string preferences_language
+string preferences_language_file
 string preferences_theme_file
 string search_menu_title
 string status_bar_notification_info_overflow
 string text_bugs
+string text_language_already_changed
 string text_theme_already_changed
 string text_theme_changed_dark
 string text_theme_changed_light

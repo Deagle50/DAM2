@@ -1,5 +1,13 @@
 ﻿Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Para hacer las reservas se  presentará un formulario como el siguiente para que al pulsar 
+        'Mostrar visualice la oferta disponible en las fechas seleccionadas. Sólo se mostrarán los datos de los viajes 
+        'programados en las fechas elegidas que aún dispongan de plazas
+        'Donde todos los campos se toman directamente de la tabla de viajes salvo el número de plazas disponibles 
+        'que se calcula restando a plazasMax 
+        'el número de viajeros apuntados a ese viaje hasta el momento.
+        '
+        '
         Dim res As Object
         res = (From v In modelo.Viajes
                Let ocupadas = v.Reservas.Count
@@ -21,6 +29,8 @@
     End Sub
 
     Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
+        'Al hacer doble clic en la lista mostrará el siguiente 
+        'formulario(De Reservas) donde 
         If ListView1.SelectedItems.Count <> 0 Then
             Form2.txtReserva.Text = modelo.Reservas.Select(Function(x) x.CodReserva).Max + 1
             Form2.txtViaje.Text = ListView1.SelectedItems(0).Text

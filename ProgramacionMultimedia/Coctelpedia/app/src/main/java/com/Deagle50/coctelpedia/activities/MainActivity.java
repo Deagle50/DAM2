@@ -1,23 +1,23 @@
 package com.deagle50.coctelpedia.activities;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.graphics.drawable.Drawable;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.deagle50.coctelpedia.R;
+import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.helpers.themeHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -68,13 +68,24 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
+        /*SharedPreferences shp = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), this.MODE_PRIVATE);
+        SharedPreferences.Editor shpe = shp.edit();
+        shpe.clear();
+        shpe.commit();*/
 
         themeHelper th = new themeHelper(MainActivity.this, this);
-        th.loadLikedTheme();
+        th.loadSavedTheme();
 
+        //Change action bar color
+        //int titleId = getResources().getIdentifier("action_bar_title", "id", "android");
+        /*TextView abTitle = findViewById(getResources().getIdentifier("action_bar_title", "id", "android"));
+        abTitle.setTextColor(getResources().getColor(R.color.fontGray, null));*/
+
+
+
+        languageHelper lh = new languageHelper(MainActivity.this);
+        lh.loadSavedLanguage(this);
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -624,11 +624,14 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
-    <string name="preferences_isdark" translatable="false">preferences</string>
-    <string name="preferences_theme_file" translatable="false">preferences</string>
+    <string name="preferences_isdark" translatable="false">theme</string>
+    <string name="preferences_language" translatable="false">language</string>
+    <string name="preferences_language_file" translatable="false">languageFile</string>
+    <string name="preferences_theme_file" translatable="false">themeFile</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="text_bugs">If you find any bugs or translation problems, as well as if you want the application to be translated to your language, tell us bellow.</string>
+    <string name="text_language_already_changed">Current language: English</string>
     <string name="text_theme_already_changed">That\'s the actual theme</string>
     <string name="text_theme_changed_dark">Theme changed to dark</string>
     <string name="text_theme_changed_light">Theme changed to light</string>

@@ -28,4 +28,5 @@
     <string name="text_theme_changed_dark">Tema ilunara aldatu da</string>
     <string name="text_theme_changed_light">Tema argira aldatu da</string>
     <string name="text_theme_already_changed">Hori da dagoen tema</string>
+    <string name="text_language_already_changed">Orain dagoen hizkuntza: euskara</string>
 </resources>

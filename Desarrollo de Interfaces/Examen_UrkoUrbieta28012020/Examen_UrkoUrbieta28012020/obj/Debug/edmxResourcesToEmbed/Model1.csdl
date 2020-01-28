@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cines">
+    <Key>
+      <PropertyRef Name="cod_cine" />
+    </Key>
+    <Property Name="cod_cine" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="capacidad" Type="Int32" />
+    <NavigationProperty Name="Emisiones" Relationship="Self.FK_Emisiones_Cines" FromRole="Cines" ToRole="Emisiones" />
+  </EntityType>
+  <EntityType Name="Emisiones">
+    <Key>
+      <PropertyRef Name="cod_emision" />
+    </Key>
+    <Property Name="cod_emision" Type="Int32" Nullable="false" />
+    <Property Name="cod_cine" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="cod_pelicula" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="hora" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Cines" Relationship="Self.FK_Emisiones_Cines" FromRole="Emisiones" ToRole="Cines" />
+    <NavigationProperty Name="Peliculas" Relationship="Self.FK_Emisiones_Peliculas" FromRole="Emisiones" ToRole="Peliculas" />
+  </EntityType>
+  <EntityType Name="Peliculas">
+    <Key>
+      <PropertyRef Name="cod_pelicula" />
+    </Key>
+    <Property Name="cod_pelicula" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="titulo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="duracion" Type="Int32" />
+    <NavigationProperty Name="Emisiones" Relationship="Self.FK_Emisiones_Peliculas" FromRole="Peliculas" ToRole="Emisiones" />
+  </EntityType>
+  <Association Name="FK_Emisiones_Cines">
+    <End Role="Cines" Type="Self.Cines" Multiplicity="0..1" />
+    <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cines">
+        <PropertyRef Name="cod_cine" />
+      </Principal>
+      <Dependent Role="Emisiones">
+        <PropertyRef Name="cod_cine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emisiones_Peliculas">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="cod_pelicula" />
+      </Principal>
+      <Dependent Role="Emisiones">
+        <PropertyRef Name="cod_pelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cines" EntityType="Self.Cines" />
+    <EntitySet Name="Emisiones" EntityType="Self.Emisiones" />
+    <EntitySet Name="Peliculas" EntityType="Self.Peliculas" />
+    <AssociationSet Name="FK_Emisiones_Cines" Association="Self.FK_Emisiones_Cines">
+      <End Role="Cines" EntitySet="Cines" />
+      <End Role="Emisiones" EntitySet="Emisiones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emisiones_Peliculas" Association="Self.FK_Emisiones_Peliculas">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Emisiones" EntitySet="Emisiones" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

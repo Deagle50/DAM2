@@ -7,13 +7,18 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.content.ContextCompat;
@@ -46,8 +51,8 @@ public class themeHelper extends AppCompatActivity {
         savedThemeDark = shp.getBoolean(context.getResources().getString(R.string.preferences_isdark), false);
     }
 
-    public void cambiarTema(String temaACambiar){
-        Toast t = Toast.makeText(context, "", Toast.LENGTH_SHORT);
+    public void changeTheme(String temaACambiar){
+
         //Cambiar tema
             if(temaACambiar.equals("oscuro"))//Si el tema a cambiar es el oscuro
             {
@@ -55,12 +60,8 @@ public class themeHelper extends AppCompatActivity {
                 if(!isDark())
                 {
                     loadDark();
-                    t.setText(context.getResources().getString(R.string.text_theme_changed_dark));
-                    t.show();
                 }else {
-                //Si ya está en oscuro, toast
-                    t.setText(context.getResources().getString(R.string.text_theme_already_changed));
-                    t.show();
+                //Si ya está en oscuro
                 }
             } else//Si el tema a cambiar es al claro
             if(temaACambiar.equals("claro"))
@@ -68,13 +69,9 @@ public class themeHelper extends AppCompatActivity {
                 if(isDark())//Comprobar si el tema actual es oscuro
                 {
                     loadLight();
-                    t.setText(context.getResources().getString(R.string.text_theme_changed_light));
-                    t.show();
-
-                }//Si ya está en claro, toast
+                }//Si ya está en claro
                 else{
-                    t.setText(context.getResources().getString(R.string.text_theme_already_changed));
-                    t.show();
+
                 }
             }
     }
@@ -116,15 +113,32 @@ public class themeHelper extends AppCompatActivity {
     public void loadDark(){
         //AÑADIR, CAMBIAR FOTO IMAGEN PRINCIPAL
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+
+        //Cambiar color texto actionbar
+
+
         instancia.recreate();
+
+        /*ActionBar ab = instancia.getSupportActionBar();
+        Spannable text = new SpannableString(ab.getTitle());
+        text.setSpan(new ForegroundColorSpan(instancia.getResources().getColor(R.color.fontWhite, null)), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        ab.setTitle(text);*/
     }
 
     public void loadLight(){
+        //AÑADIR CAMBIAR FOTO IMAGEN PRINCIPAL, CAMBIAR COLOR TEXTO ACTIONBAR
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+        //Cambiar color texto actionbar
         instancia.recreate();
+
+        /*ActionBar ab = instancia.getSupportActionBar();
+        Spannable text = new SpannableString(ab.getTitle());
+        text.setSpan(new ForegroundColorSpan(Color.RED), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        ab.setTitle(text);*/
     }
 
-    public void loadLikedTheme() {
+    public void loadSavedTheme() {
         //Cargar modo oscuro o no al iniciar activity
         if(savedThemeDark)
         {

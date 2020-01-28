@@ -8,13 +8,24 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
+import com.deagle50.coctelpedia.R;
+
 import java.util.Locale;
 
-public class LanguageHelper {
+import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
+
+public class languageHelper {
+    private Context context;
+    private String savedLanguage;
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
+    public languageHelper(Context context) {
+        this.context = context;
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
+        savedLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), "es");
+    }
 
-    public static Context onAttach(Context context) {
+    /*public static Context onAttach(Context context) {
         String lang = getPersistedData(context, Locale.getDefault().getLanguage());
         return setLocale(context, lang);
     }
@@ -22,28 +33,28 @@ public class LanguageHelper {
     public static Context onAttach(Context context, String defaultLanguage) {
         String lang = getPersistedData(context, defaultLanguage);
         return setLocale(context, lang);
-    }
+    }*/
 
-    public static String getLanguage(Context context) {
+    public String getLanguage(Context context) {
         return getPersistedData(context, Locale.getDefault().getLanguage());
     }
 
-    public static Context setLocale(Context context, String language) {
+    public Context setLocale(Context context, String language) {
         persist(context, language);
 
-        if(!getLanguage(context).equals(language))
+        if(!getLanguage(context).equals(language)) {
+
             return updateResources(context, language);
+        }
         return updateResources(context, getLanguage(context));
-
-
     }
 
-    private static String getPersistedData(Context context, String defaultLanguage) {
+    private String getPersistedData(Context context, String defaultLanguage) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return preferences.getString(SELECTED_LANGUAGE, defaultLanguage);
     }
 
-    private static void persist(Context context, String language) {
+    private void persist(Context context, String language) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = preferences.edit();
 
@@ -52,7 +63,7 @@ public class LanguageHelper {
     }
 
     @TargetApi(Build.VERSION_CODES.N)
-    private static Context updateResources(Context context, String language) {
+    private Context updateResources(Context context, String language) {
         Locale locale = new Locale(language);
         Locale.setDefault(locale);
 
@@ -62,18 +73,22 @@ public class LanguageHelper {
         return context.createConfigurationContext(configuration);
     }
 
-    @SuppressWarnings("deprecation")
-    private static Context updateResourcesLegacy(Context context, String language) {
-        Locale locale = new Locale(language);
-        Locale.setDefault(locale);
+    public void saveLanguage(Context context, String leng){
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = shp.edit();
 
-        Resources resources = context.getResources();
+        editor.putString(context.getResources().getString(R.string.preferences_language), leng);
 
-        Configuration configuration = resources.getConfiguration();
-        configuration.locale = locale;
-
-        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-
-        return context;
+        editor.commit();
     }
+
+    public void loadSavedLanguage(Context context) {
+        //Cargar lenguaje al iniciar activity
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), context.MODE_PRIVATE);
+        String currLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), "es");
+        setLocale(context, currLanguage);
+        /*if(!getLanguage(context).equals(currLanguage))
+            instancia.recreate();*/
+    }
+
 }

@@ -1,26 +1,19 @@
 package com.deagle50.coctelpedia.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
-import com.deagle50.coctelpedia.activities.MainActivity;
-import com.deagle50.coctelpedia.helpers.LanguageHelper;
+import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.themeHelper;
 
@@ -117,15 +110,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
             }
             //CAMBIAR TEMA
             case R.id.buttonLightTheme:{
-                themeHelper th = new themeHelper(getContext());
-                th.cambiarTema("claro");
-                th.saveTheme();
+                cambiarTema("claro");
                 break;
             }
             case R.id.buttonDarkTheme:{
-                themeHelper th = new themeHelper(getContext());
-                th.cambiarTema("oscuro");
-                th.saveTheme();
+                cambiarTema("oscuro");
                 break;
             }
 
@@ -144,8 +133,48 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     }
 
     private void cambiarIdioma(String lg) {
-        LanguageHelper.setLocale(getContext(), lg);
-        //instancia.recreate();
+        languageHelper lh = new languageHelper(getContext());
+        if(!lh.getLanguage(getContext()).equals(lg))
+        {
+            lh.setLocale(instancia, lg);
+            lh.saveLanguage(instancia, lg);
+
+
+
+            /* ÑAPA SUPREMA
+             *
+             * No sé por qué, el idioma solo se cambia si cambias también el tema
+             * Así que cambio dos veces el tema (así se queda en el mismo)
+             * para que se quede en el tema escogido con el idioma cambiado
+             *
+             */
+
+            themeHelper th = new themeHelper(getContext());
+            if(th.isDark()) {
+                th.changeTheme("claro");
+                th.changeTheme("oscuro");
+                th.saveTheme();
+            }
+            else
+            {
+                th.changeTheme("oscuro");
+                th.changeTheme("claro");
+                th.saveTheme();
+            }
+        }
+        else
+        {
+            Toast.makeText(instancia,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
+        }
+        //Fin ñapa suprema
+
+    }
+
+    private void cambiarTema(String theme)
+    {
+        themeHelper th = new themeHelper(getContext());
+        th.changeTheme(theme);
+        th.saveTheme();
     }
 
 }

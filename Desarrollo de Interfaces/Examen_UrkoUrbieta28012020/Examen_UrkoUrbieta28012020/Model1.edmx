@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DAM_urkourbieta_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cines">
+          <Key>
+            <PropertyRef Name="cod_cine" />
+          </Key>
+          <Property Name="cod_cine" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="25" />
+          <Property Name="capacidad" Type="int" />
+        </EntityType>
+        <EntityType Name="Emisiones">
+          <Key>
+            <PropertyRef Name="cod_emision" />
+          </Key>
+          <Property Name="cod_emision" Type="int" Nullable="false" />
+          <Property Name="cod_cine" Type="varchar" MaxLength="5" />
+          <Property Name="cod_pelicula" Type="varchar" MaxLength="5" />
+          <Property Name="hora" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Peliculas">
+          <Key>
+            <PropertyRef Name="cod_pelicula" />
+          </Key>
+          <Property Name="cod_pelicula" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="titulo" Type="varchar" MaxLength="25" />
+          <Property Name="duracion" Type="int" />
+        </EntityType>
+        <Association Name="FK_Emisiones_Cines">
+          <End Role="Cines" Type="Self.Cines" Multiplicity="0..1" />
+          <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cines">
+              <PropertyRef Name="cod_cine" />
+            </Principal>
+            <Dependent Role="Emisiones">
+              <PropertyRef Name="cod_cine" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emisiones_Peliculas">
+          <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+          <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Peliculas">
+              <PropertyRef Name="cod_pelicula" />
+            </Principal>
+            <Dependent Role="Emisiones">
+              <PropertyRef Name="cod_pelicula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DAM_urkourbieta_DEVModelStoreContainer">
+          <EntitySet Name="Cines" EntityType="Self.Cines" Schema="EXAMENLQ" store:Type="Tables" />
+          <EntitySet Name="Emisiones" EntityType="Self.Emisiones" Schema="EXAMENLQ" store:Type="Tables" />
+          <EntitySet Name="Peliculas" EntityType="Self.Peliculas" Schema="EXAMENLQ" store:Type="Tables" />
+          <AssociationSet Name="FK_Emisiones_Cines" Association="Self.FK_Emisiones_Cines">
+            <End Role="Cines" EntitySet="Cines" />
+            <End Role="Emisiones" EntitySet="Emisiones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emisiones_Peliculas" Association="Self.FK_Emisiones_Peliculas">
+            <End Role="Peliculas" EntitySet="Peliculas" />
+            <End Role="Emisiones" EntitySet="Emisiones" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DAM_urkourbieta_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cines">
+          <Key>
+            <PropertyRef Name="cod_cine" />
+          </Key>
+          <Property Name="cod_cine" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="capacidad" Type="Int32" />
+          <NavigationProperty Name="Emisiones" Relationship="Self.FK_Emisiones_Cines" FromRole="Cines" ToRole="Emisiones" />
+        </EntityType>
+        <EntityType Name="Emisiones">
+          <Key>
+            <PropertyRef Name="cod_emision" />
+          </Key>
+          <Property Name="cod_emision" Type="Int32" Nullable="false" />
+          <Property Name="cod_cine" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="cod_pelicula" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="hora" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Cines" Relationship="Self.FK_Emisiones_Cines" FromRole="Emisiones" ToRole="Cines" />
+          <NavigationProperty Name="Peliculas" Relationship="Self.FK_Emisiones_Peliculas" FromRole="Emisiones" ToRole="Peliculas" />
+        </EntityType>
+        <EntityType Name="Peliculas">
+          <Key>
+            <PropertyRef Name="cod_pelicula" />
+          </Key>
+          <Property Name="cod_pelicula" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="titulo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="duracion" Type="Int32" />
+          <NavigationProperty Name="Emisiones" Relationship="Self.FK_Emisiones_Peliculas" FromRole="Peliculas" ToRole="Emisiones" />
+        </EntityType>
+        <Association Name="FK_Emisiones_Cines">
+          <End Role="Cines" Type="Self.Cines" Multiplicity="0..1" />
+          <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cines">
+              <PropertyRef Name="cod_cine" />
+            </Principal>
+            <Dependent Role="Emisiones">
+              <PropertyRef Name="cod_cine" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emisiones_Peliculas">
+          <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+          <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Peliculas">
+              <PropertyRef Name="cod_pelicula" />
+            </Principal>
+            <Dependent Role="Emisiones">
+              <PropertyRef Name="cod_pelicula" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DAM_urkourbieta_DEVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cines" EntityType="Self.Cines" />
+          <EntitySet Name="Emisiones" EntityType="Self.Emisiones" />
+          <EntitySet Name="Peliculas" EntityType="Self.Peliculas" />
+          <AssociationSet Name="FK_Emisiones_Cines" Association="Self.FK_Emisiones_Cines">
+            <End Role="Cines" EntitySet="Cines" />
+            <End Role="Emisiones" EntitySet="Emisiones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emisiones_Peliculas" Association="Self.FK_Emisiones_Peliculas">
+            <End Role="Peliculas" EntitySet="Peliculas" />
+            <End Role="Emisiones" EntitySet="Emisiones" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModelStoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities">
+          <EntitySetMapping Name="Cines">
+            <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Cines">
+              <MappingFragment StoreEntitySet="Cines">
+                <ScalarProperty Name="cod_cine" ColumnName="cod_cine" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="capacidad" ColumnName="capacidad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emisiones">
+            <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Emisiones">
+              <MappingFragment StoreEntitySet="Emisiones">
+                <ScalarProperty Name="cod_emision" ColumnName="cod_emision" />
+                <ScalarProperty Name="cod_cine" ColumnName="cod_cine" />
+                <ScalarProperty Name="cod_pelicula" ColumnName="cod_pelicula" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Peliculas">
+            <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Peliculas">
+              <MappingFragment StoreEntitySet="Peliculas">
+                <ScalarProperty Name="cod_pelicula" ColumnName="cod_pelicula" />
+                <ScalarProperty Name="titulo" ColumnName="titulo" />
+                <ScalarProperty Name="duracion" ColumnName="duracion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

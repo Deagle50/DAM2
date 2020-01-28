@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cines">
+    <Key>
+      <PropertyRef Name="cod_cine" />
+    </Key>
+    <Property Name="cod_cine" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="25" />
+    <Property Name="capacidad" Type="int" />
+  </EntityType>
+  <EntityType Name="Emisiones">
+    <Key>
+      <PropertyRef Name="cod_emision" />
+    </Key>
+    <Property Name="cod_emision" Type="int" Nullable="false" />
+    <Property Name="cod_cine" Type="varchar" MaxLength="5" />
+    <Property Name="cod_pelicula" Type="varchar" MaxLength="5" />
+    <Property Name="hora" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Peliculas">
+    <Key>
+      <PropertyRef Name="cod_pelicula" />
+    </Key>
+    <Property Name="cod_pelicula" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="25" />
+    <Property Name="duracion" Type="int" />
+  </EntityType>
+  <Association Name="FK_Emisiones_Cines">
+    <End Role="Cines" Type="Self.Cines" Multiplicity="0..1" />
+    <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cines">
+        <PropertyRef Name="cod_cine" />
+      </Principal>
+      <Dependent Role="Emisiones">
+        <PropertyRef Name="cod_cine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emisiones_Peliculas">
+    <End Role="Peliculas" Type="Self.Peliculas" Multiplicity="0..1" />
+    <End Role="Emisiones" Type="Self.Emisiones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Peliculas">
+        <PropertyRef Name="cod_pelicula" />
+      </Principal>
+      <Dependent Role="Emisiones">
+        <PropertyRef Name="cod_pelicula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVModelStoreContainer">
+    <EntitySet Name="Cines" EntityType="Self.Cines" Schema="EXAMENLQ" store:Type="Tables" />
+    <EntitySet Name="Emisiones" EntityType="Self.Emisiones" Schema="EXAMENLQ" store:Type="Tables" />
+    <EntitySet Name="Peliculas" EntityType="Self.Peliculas" Schema="EXAMENLQ" store:Type="Tables" />
+    <AssociationSet Name="FK_Emisiones_Cines" Association="Self.FK_Emisiones_Cines">
+      <End Role="Cines" EntitySet="Cines" />
+      <End Role="Emisiones" EntitySet="Emisiones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emisiones_Peliculas" Association="Self.FK_Emisiones_Peliculas">
+      <End Role="Peliculas" EntitySet="Peliculas" />
+      <End Role="Emisiones" EntitySet="Emisiones" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

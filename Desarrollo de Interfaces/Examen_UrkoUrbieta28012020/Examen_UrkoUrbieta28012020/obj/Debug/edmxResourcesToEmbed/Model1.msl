@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DAM_urkourbieta_DEVModelStoreContainer" CdmEntityContainer="DAM_urkourbieta_DEVEntities">
+    <EntitySetMapping Name="Cines">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Cines">
+        <MappingFragment StoreEntitySet="Cines">
+          <ScalarProperty Name="cod_cine" ColumnName="cod_cine" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="capacidad" ColumnName="capacidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emisiones">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Emisiones">
+        <MappingFragment StoreEntitySet="Emisiones">
+          <ScalarProperty Name="cod_emision" ColumnName="cod_emision" />
+          <ScalarProperty Name="cod_cine" ColumnName="cod_cine" />
+          <ScalarProperty Name="cod_pelicula" ColumnName="cod_pelicula" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Peliculas">
+      <EntityTypeMapping TypeName="DAM_urkourbieta_DEVModel.Peliculas">
+        <MappingFragment StoreEntitySet="Peliculas">
+          <ScalarProperty Name="cod_pelicula" ColumnName="cod_pelicula" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="duracion" ColumnName="duracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
