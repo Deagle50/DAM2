@@ -33,7 +33,7 @@
     <string msgid="730395136688082741" name="search_menu_title">"Buscar"</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="text_bugs">Si encuentras cualquier problema en la aplicación, errores de traducción o quieres que la aplicación sea traducida a tu idioma, dínoslo debajo.</string>
-    <string name="text_credits">Imágenes: cogidas de Flaticon, creadas por los usuarios Freepik y Kiranshastry</string>
+    <string name="text_credits">Imágenes: cogidas de Flaticon, creadas por los usuarios Freepik, srip y Kiranshastry</string>
     <string name="text_language_already_changed">Idioma actual: castellano</string>
     <string name="text_theme_already_changed">Ese es el tema actual</string>
     <string name="text_theme_changed_dark">Cambiado a tema oscuro</string>
@@ -50,26 +50,29 @@
     <string name="title_description">Descripción</string>
     <string name="title_elaboration">Elaboración</string>
     <string name="title_empty_name">El nombre del jugador no puede estar vacío</string>
+    <string name="title_filters">Filtros</string>
     <string name="title_finish">Terminar</string>
-    <string name="title_finish_players">Terminar metiendo jugadores</string>
     <string name="title_game_challenge">Retos</string>
     <string name="title_games">Juegos</string>
     <string name="title_home">Inicio</string>
     <string name="title_language">Idioma</string>
     <string name="title_launcher_image">Imagen Launcher</string>
+    <string name="title_must_add_player">Inserta jugadores primero</string>
     <string name="title_must_select_player">Selecciona un jugador arriba</string>
     <string name="title_new_translation">Solicitar nueva traducción</string>
+    <string name="title_orderby">Ordenar por</string>
     <string name="title_players">Jugadores</string>
     <string name="title_put_name">Nombre del jugador</string>
-    <string name="title_qemp">¿Quién es más   probable que...?</string>
     <string name="title_report_bugs">Reportar bugs</string>
     <string name="title_settings">Ajustes</string>
     <string name="title_theme">Tema</string>
     <string name="title_translation_issue">Error de traducción</string>
+    <string name="title_type">Tipo de bebida</string>
     <string name="title_usual_price">Precio habitual</string>
     <string name="title_vegan">Vegano</string>
     <string name="title_vegetarian">Vegetariano</string>
     <string name="title_welcome">Bienvenido a Coctelpedia</string>
+    <string name="title_who_would">¿Quién es más   probable que...?</string>
     <string name="usual_price_home">en casa</string>
     <string name="usual_price_pub">en bares</string>
     <string name="welcome_message">En esta aplicación encontrarás un listado muy amplio con (casi) todas las bebidas alcohólicas del mercado, marcando si son veganas o vegetarianas, y también con algunos juegos para hacer con tus amigos cuando estéis bebiendo. Disponible en idiomas castellano, inglés y euskera</string>

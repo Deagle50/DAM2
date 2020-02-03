@@ -178,7 +178,6 @@
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <color name="black_overlay">#00000000</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -191,7 +190,7 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <color name="colorAccent">#BC80E8</color>
+    <color name="colorAccent">#FFBC80E8</color>
     <color name="colorPrimary">#1976D2</color>
     <color name="colorPrimaryDark">#1976d2</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
@@ -218,7 +217,7 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
-    <color name="ic_launcher_background">#C0C1C2</color>
+    <color name="ic_launcher_background">#D5D5D5</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -262,6 +261,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
+    <color name="transparent">#00000000</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -631,7 +631,7 @@
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="text_bugs">If you find any bugs or translation problems, as well as if you want the application to be translated to your language, tell us bellow.</string>
-    <string name="text_credits">Pictures: taken from flaticon, made by users Freepik and Kiranshastry</string>
+    <string name="text_credits">Pictures: taken from flaticon, made by users Freepik, srip and Kiranshastry</string>
     <string name="text_language_already_changed">Current language: English</string>
     <string name="text_theme_already_changed">That\'s the actual theme</string>
     <string name="text_theme_changed_dark">Theme changed to dark</string>
@@ -650,26 +650,29 @@
     <string name="title_description">Description</string>
     <string name="title_elaboration">Making</string>
     <string name="title_empty_name">Name field can\'t be empty</string>
+    <string name="title_filters">Filters</string>
     <string name="title_finish">Finish</string>
-    <string name="title_finish_players">Finish adding players</string>
     <string name="title_game_challenge">Challenges</string>
     <string name="title_games">Games</string>
     <string name="title_home">Home</string>
     <string name="title_language">Language</string>
     <string name="title_launcher_image">Launcher image</string>
+    <string name="title_must_add_player">Please, add players first</string>
     <string name="title_must_select_player">Select player above</string>
     <string name="title_new_translation">Ask for new translation</string>
+    <string name="title_orderby">Order by</string>
     <string name="title_players">Players</string>
     <string name="title_put_name">Player name</string>
-    <string name="title_qemp">Who would...?</string>
     <string name="title_report_bugs">Report bugs</string>
     <string name="title_settings">Settings</string>
     <string name="title_theme">Theme</string>
     <string name="title_translation_issue">Translation issue</string>
+    <string name="title_type">Drink type</string>
     <string name="title_usual_price">Usual price</string>
     <string name="title_vegan">Vegan</string>
     <string name="title_vegetarian">Vegetarian</string>
     <string name="title_welcome">Welcome to Coctelpedia</string>
+    <string name="title_who_would">Who would...?</string>
     <string name="usual_price_home">at home</string>
     <string name="usual_price_pub">at pubs</string>
     <string name="version" translatable="false">0.1</string>

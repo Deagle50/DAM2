@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.deagle50.coctelpedia.activities.Players;
 import com.deagle50.coctelpedia.activities.GameWhoWhould;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
@@ -75,7 +73,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 }
             case R.id.buttonGameChallenge:
             {
-                //Intent i = new Intent(getActivity(), Players.class);
+                //Intent i = new Intent(getActivity(), PlayersActivity.class);
                 //startActivity(i);
                 break;
             }
@@ -85,7 +83,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 break;
             }
             case R.id.buttonPlayers:
-                Intent i = new Intent(getActivity(), Players.class);
+                Intent i = new Intent(getActivity(), com.deagle50.coctelpedia.activities.PlayersActivity.class);
                 startActivity(i);
                 break;
             default:
@@ -95,7 +93,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     }
 
     public void loadPlayers() {
-        cursorPlayers = jugadoresOpenHelper.obtenerJugadores();//Cursor cursorPlayers
+        cursorPlayers = jugadoresOpenHelper.getPlayers();//Cursor cursorPlayers
 
         if(cursorPlayers != null) {
             ArrayList<String> players = new ArrayList<>();

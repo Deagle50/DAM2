@@ -3,7 +3,7 @@
     <string name="title_games">Juegos</string>
     <string name="title_settings">Ajustes</string>
     <string name="title_home">Inicio</string>
-    <string name="title_qemp">¿Quién es más   probable que...?</string>
+    <string name="title_who_would">¿Quién es más   probable que...?</string>
     <string name="title_launcher_image">Imagen Launcher</string>
     <string name="title_language">Idioma</string>
     <string name="current_language">Idioma actual</string>
@@ -31,9 +31,8 @@
     <string name="text_language_already_changed">Idioma actual: castellano</string>
     <string name="title_credits">Créditos</string>
     <string name="title_close">Cerrar</string>
-    <string name="text_credits">Imágenes: cogidas de Flaticon, creadas por los usuarios Freepik y Kiranshastry</string>
+    <string name="text_credits">Imágenes: cogidas de Flaticon, creadas por los usuarios Freepik, srip y Kiranshastry</string>
     <string name="title_add_player">Añadir jugador</string>
-    <string name="title_finish_players">Terminar metiendo jugadores</string>
     <string name="title_game_challenge">Retos</string>
     <string name="title_players">Jugadores</string>
     <string name="title_finish">Terminar</string>
@@ -42,4 +41,8 @@
     <string name="title_must_select_player">Selecciona un jugador arriba</string>
     <string name="title_put_name">Nombre del jugador</string>
     <string name="title_empty_name">El nombre del jugador no puede estar vacío</string>
+    <string name="title_must_add_player">Inserta jugadores primero</string>
+    <string name="title_type">Tipo de bebida</string>
+    <string name="title_orderby">Ordenar por</string>
+    <string name="title_filters">Filtros</string>
 </resources>

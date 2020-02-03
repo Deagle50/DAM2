@@ -33,7 +33,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="TextView"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageViewCoctel"
@@ -45,7 +44,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
-                android:text="TextView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion2" />
 
@@ -54,7 +52,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:text="TextView"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewCoctel"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +75,6 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="4dp"
                 android:paddingBottom="6dp"
-                android:text="TextView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewElaboracion2" />
 
@@ -165,6 +161,26 @@
                 app:layout_constraintBottom_toBottomOf="@+id/textViewCasa"
                 app:layout_constraintEnd_toStartOf="@+id/textViewBar"
                 app:layout_constraintTop_toTopOf="@+id/textViewCasa" />
+
+            <TextView
+                android:id="@+id/textViewType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/title_type"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewType"
+                app:layout_constraintEnd_toStartOf="@+id/textViewType"
+                app:layout_constraintTop_toTopOf="@+id/textViewType" />
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPrecio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewPrecio" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

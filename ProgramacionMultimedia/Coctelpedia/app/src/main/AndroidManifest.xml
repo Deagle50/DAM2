@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Players"
+        <activity android:name=".activities.PlayersActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activities.GameWhoWhould"

@@ -19,7 +19,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.deagle50.coctelpedia.activities.Players"
+            android:name="com.deagle50.coctelpedia.activities.PlayersActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.deagle50.coctelpedia.activities.GameWhoWhould"

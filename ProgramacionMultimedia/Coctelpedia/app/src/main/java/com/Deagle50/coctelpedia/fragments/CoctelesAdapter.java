@@ -1,4 +1,4 @@
-package com.deagle50.coctelpedia.fragments;
+package com.Deagle50.coctelpedia.fragments;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,12 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.R;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class CoctelesAdapter extends RecyclerView.Adapter<CoctelesAdapter.CoctelViewHolder>{
-    List<Coctel> coctels;
+    private ArrayList<Coctel> coctels;
 
-    public CoctelesAdapter(List<Coctel> coctels){
+    public CoctelesAdapter(ArrayList<Coctel> coctels){
         this.coctels = coctels;
     }
 
@@ -36,33 +36,37 @@ public class CoctelesAdapter extends RecyclerView.Adapter<CoctelesAdapter.Coctel
 
     @Override
     public void onBindViewHolder(CoctelViewHolder coctelViewHolder, int i) {
-        ViewGroup.LayoutParams params = coctelViewHolder.tvDescripcion.getLayoutParams();
+        coctelViewHolder.tvCoctel.setText(coctels.get(i).getName());
+        coctelViewHolder.tvDescription.setText(coctels.get(i).getDescription());
+        coctelViewHolder.tvElaboration.setText(coctels.get(i).getElaboration());
+        coctelViewHolder.tvHome.setText(coctels.get(i).getPriceH().toString()+"€");
+        coctelViewHolder.tvBar.setText(coctels.get(i).getPriceB().toString()+"€");
+        coctelViewHolder.tvGraduation.setText(coctels.get(i).getGraduation().toString()+" º");
 
-
-        coctelViewHolder.tvCoctel.setText(coctels.get(i).getNombre());
-        coctelViewHolder.tvDescripcion.setText(coctels.get(i).getDescripcion());
-        coctelViewHolder.tvElaboracion.setText(coctels.get(i).getElaboracion());
-        coctelViewHolder.tvCasa.setText(coctels.get(i).getPrecioC().toString()+"€");
-        coctelViewHolder.tvBar.setText(coctels.get(i).getPrecioB().toString()+"€");
-        coctelViewHolder.tvGraduacion.setText(coctels.get(i).getGraduacion().toString()+" º");
-        if(coctels.get(i).isVegano())
+        if(coctels.get(i).isVegan())
         {
-            coctelViewHolder.cbVegano.setChecked(true);
-            coctelViewHolder.cbVegetariano.setChecked(true);
+            coctelViewHolder.cbVegan.setChecked(true);
+            coctelViewHolder.cbVegetarian.setChecked(true);
         }
-            else if(coctels.get(i).isVegetariano())
+            else if(coctels.get(i).isVegetarian())
         {
-            coctelViewHolder.cbVegetariano.setChecked(true);
+            coctelViewHolder.cbVegetarian.setChecked(true);
 
         }
 
 
-        if(coctels.get(i).getUrlFoto().equals(""))
+        if(coctels.get(i).getUrlPhoto()==1)
         {
             coctelViewHolder.imageViewCoctel.setImageResource(R.drawable.coctel);
         }
+        else{
+            coctelViewHolder.imageViewCoctel.setImageResource(coctels.get(i).getUrlPhoto());
         }
-        //coctelViewHolder.imageViewCoctel.setImageResource(coctels.get(i).getUrlFoto())
+
+        coctelViewHolder.tvType.setText(coctels.get(i).getType());
+        }
+
+
 
     @Override
     public int getItemCount() {
@@ -71,22 +75,23 @@ public class CoctelesAdapter extends RecyclerView.Adapter<CoctelesAdapter.Coctel
 
     public static class CoctelViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
-        TextView tvCoctel, tvDescripcion, tvGraduacion, tvCasa, tvBar, tvElaboracion;
+        TextView tvCoctel, tvDescription, tvGraduation, tvHome, tvBar, tvElaboration, tvType;
         ImageView imageViewCoctel;
-        CheckBox cbVegano, cbVegetariano;
+        CheckBox cbVegetarian, cbVegan;
 
         CoctelViewHolder(View itemView) {
             super(itemView);
             cv = itemView.findViewById(R.id.CardViewCoctel);
             imageViewCoctel = itemView.findViewById(R.id.imageViewCoctel);
             tvCoctel = itemView.findViewById(R.id.textViewCoctel);
-            tvElaboracion = itemView.findViewById(R.id.textViewElaboracion);
-            tvGraduacion = itemView.findViewById(R.id.textViewGraduacion);
-            tvCasa= itemView.findViewById(R.id.textViewCasa);
+            tvElaboration = itemView.findViewById(R.id.textViewElaboracion);
+            tvGraduation = itemView.findViewById(R.id.textViewGraduacion);
+            tvHome = itemView.findViewById(R.id.textViewCasa);
             tvBar= itemView.findViewById(R.id.textViewBar);
-            tvDescripcion= itemView.findViewById(R.id.textViewDescripcion);
-            cbVegetariano=itemView.findViewById(R.id.checkBoxVegetariano);
-            cbVegano=itemView.findViewById(R.id.checkBoxVegano);
+            tvDescription = itemView.findViewById(R.id.textViewDescripcion);
+            cbVegetarian =itemView.findViewById(R.id.checkBoxVegetariano);
+            cbVegan =itemView.findViewById(R.id.checkBoxVegano);
+            tvType = itemView.findViewById(R.id.textViewType);
         }
 
 

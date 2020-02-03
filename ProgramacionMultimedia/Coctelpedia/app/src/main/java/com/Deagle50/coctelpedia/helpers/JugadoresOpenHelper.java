@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class JugadoresOpenHelper extends SQLiteOpenHelper {
-    String crearTabla = "CREATE TABLE jugadores(id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT)";
-    String borrarTabla = "DROP TABLE IF EXISTS jugadores";
+    String createTable = "CREATE TABLE players(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)";
+    String deleteTable = "DROP TABLE IF EXISTS players";
     //Constructor
     public JugadoresOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -19,30 +19,30 @@ public class JugadoresOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(crearTabla);
+        db.execSQL(createTable);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        //db.execSQL(borrarTabla);
-        //db.execSQL(crearTabla);
+        db.execSQL(deleteTable);
+        db.execSQL(createTable);
     }
 
-    public Cursor obtenerJugadores() {
+    public Cursor getPlayers() {
         SQLiteDatabase db = this.getReadableDatabase();
         try {
-            Cursor c = db.query("jugadores", null, null, null, null, null, null);
+            Cursor c = db.query("players", null, null, null, null, null, null);
             return c;
         }catch (Exception ex) {
             return null;
         }
     }
 
-    public boolean borrarJugador(int id) {
+    public boolean deletePlayer(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String[] argumentos = {String.valueOf(id)};
+        String[] args = {String.valueOf(id)};
         try {
-            db.delete("jugadores", "id = ?", argumentos);
+            db.delete("players", "id = ?", args);
             return true;
         }catch(Exception ex) {
             return false;
@@ -50,10 +50,10 @@ public class JugadoresOpenHelper extends SQLiteOpenHelper {
     }
 
 
-    public void insertarJugador(String jugador){
+    public void insertPlayer(String player){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put("nombre", jugador);
-        db.insert("jugadores", null, cv);
+        cv.put("name", player);
+        db.insert("players", null, cv);
     }
 }

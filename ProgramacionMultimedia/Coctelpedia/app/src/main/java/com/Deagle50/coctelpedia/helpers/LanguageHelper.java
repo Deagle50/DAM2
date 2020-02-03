@@ -87,8 +87,8 @@ public class languageHelper {
         SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), context.MODE_PRIVATE);
         String currLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), "es");
         setLocale(context, currLanguage);
-        /*if(!getLanguage(context).equals(currLanguage))
-            instancia.recreate();*/
+
+
     }
 
 }

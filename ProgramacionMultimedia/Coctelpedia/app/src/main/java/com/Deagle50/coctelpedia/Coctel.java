@@ -1,59 +1,30 @@
 package com.deagle50.coctelpedia;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Coctel {
     private int id;
-    private String nombre;
-    private String urlFoto;
-    private Float graduacion, precioC, precioB;
-    private String elaboracion, descripcion;
-    private boolean vegetariano;
+    private String name;
+    private int urlPhoto;
+    private Float graduation, priceH, priceB;
+    private String elaboration, description;
+    private boolean vegetarian;
+    private boolean vegan;
 
-    public boolean isVegetariano() {
-        return vegetariano;
+
+    private String type;
+
+    public Coctel(String name, int urlPhoto, Float graduation, Float priceH, Float priceB, String elaboration, String description, boolean vegetarian, boolean vegan, String type) {
+        this.name = name;
+        this.urlPhoto = urlPhoto;
+        this.graduation = graduation;
+        this.priceH = priceH;
+        this.priceB = priceB;
+        this.elaboration = elaboration;
+        this.description = description;
+        this.vegetarian = vegetarian;
+        this.vegan = vegan;
+        this.type = type;
     }
 
-    public void setVegetariano(boolean vegetariano) {
-        this.vegetariano = vegetariano;
-    }
-
-    public boolean isVegano() {
-        return vegano;
-    }
-
-    public void setVegano(boolean vegano) {
-        this.vegano = vegano;
-    }
-
-    private boolean vegano;
-
-    public Coctel(int id, String nombre, String urlFoto, Float graduacion, Float precioC, Float precioB, String elaboracion, String descripcion, boolean vegetariano, boolean vegano) {
-        this.id = id;
-        this.nombre = nombre;
-        this.urlFoto = urlFoto;
-        this.graduacion = graduacion;
-        this.precioC = precioC;
-        this.precioB = precioB;
-        this.elaboracion = elaboracion;
-        this.descripcion = descripcion;
-        this.vegetariano = vegetariano;
-        this.vegano = vegano;
-    }
-
-    public Coctel(int id, String nombre, String urlFoto, Float graduacion, Float precioC, Float precioB, String elaboracion, String descripcion) {
-        this.id = id;
-        this.nombre = nombre;
-        this.urlFoto = urlFoto;
-        this.graduacion = graduacion;
-        this.precioC = precioC;
-        this.precioB = precioB;
-        this.elaboracion = elaboracion;
-        this.descripcion = descripcion;
-    }
-
-    /**/
 
     public int getId() {
         return id;
@@ -63,59 +34,44 @@ public class Coctel {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public int getUrlPhoto() {
+        return urlPhoto;
     }
 
-    public String getUrlFoto() {
-        return urlFoto;
+    public Float getGraduation() {
+        return graduation;
     }
 
-    public void setUrlFoto(String urlFoto) {
-        this.urlFoto = urlFoto;
+    public Float getPriceH() {
+        return priceH;
     }
 
-    public Float getGraduacion() {
-        return graduacion;
+    public Float getPriceB() {
+        return priceB;
     }
 
-    public void setGraduacion(Float graduacion) {
-        this.graduacion = graduacion;
+    public String getElaboration() {
+        return elaboration;
     }
 
-    public Float getPrecioC() {
-        return precioC;
+    public String getDescription() {
+        return description;
     }
 
-    public void setPrecioC(Float precioC) {
-        this.precioC = precioC;
+    public boolean isVegetarian() {
+        return vegetarian;
     }
 
-    public Float getPrecioB() {
-        return precioB;
+    public boolean isVegan() {
+        return vegan;
     }
 
-    public void setPrecioB(Float precioB) {
-        this.precioB = precioB;
+    public String getType() {
+        return type;
     }
 
-    public String getElaboracion() {
-        return elaboracion;
-    }
-
-    public void setElaboracion(String elaboracion) {
-        this.elaboracion = elaboracion;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 }

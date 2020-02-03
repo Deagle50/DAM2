@@ -256,7 +256,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Copy_of_Gama_Alta_Curso_Android" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -277,71 +277,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/Players.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/CoctelpediaFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="136" column="10" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="10" />
+            <state relative-caret-position="505">
+              <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
               <folding>
-                <element signature="e#957#965#0" expanded="true" />
-                <element signature="e#2425#2447#0" expanded="true" />
-                <element signature="e#2574#2608#0" expanded="true" />
-                <element signature="e#2700#3152#0" expanded="true" />
-                <element signature="e#3151#3152#0" expanded="true" />
-                <element signature="e#3220#3270#1" />
-                <element signature="e#3474#3652#0" expanded="true" />
-                <element signature="e#3651#3652#0" expanded="true" />
-                <element signature="e#3501#3537#0" expanded="true" />
-                <element signature="e#4699#4732#0" expanded="true" />
-                <element signature="e#4903#4947#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#initializeData#0;class#CoctelpediaFragment#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/SettingsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="android-dummy://D:/Urko Urbieta/Visual Studio/ProgramacionMultimedia/Coctelpedia/app/Translations Editor">
-          <provider selected="true" editor-type-id="string-resource-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_games.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/GamesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="2197">
+              <caret line="189" column="13" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/SettingsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3360">
-              <caret line="200" column="12" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="97" />
-              <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#cambiarTema#0;class#SettingsFragment#0" />
               </folding>
             </state>
@@ -349,14 +302,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_coctelpedia.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="233">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
-                <element signature="method#borrarPreferencias#0;class#MainActivity#0" />
-                <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" />
+                <element signature="e#2111#2137#0" expanded="true" />
+                <element signature="e#3005#3026#0" expanded="true" />
+                <element signature="e#4676#4699#0" expanded="true" />
+                <element signature="e#5249#5272#0" expanded="true" />
+                <element signature="e#5792#5812#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="457">
+              <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+              <folding>
                 <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/CoctelsOpenHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="28" column="135" selection-start-line="28" selection-start-column="135" selection-end-line="28" selection-end-column="135" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -389,6 +369,12 @@
       <find>recre</find>
       <find>txt</find>
       <find>LONG</find>
+      <find>jugadores</find>
+      <find>cocteles</find>
+      <find>true</find>
+      <find>urlph</find>
+      <find>type</find>
+      <find>onre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -397,29 +383,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_item_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/OnCoctelInteractionListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/CoctelRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/CoctelesAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/Coctel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_coctelpedia.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/share_menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_share_black_24dp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/LanguageHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/JugadoresOpenHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/CoctelesOpenHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/ui/coctelpedia/CoctelpediaFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_coctel.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/ui/settings/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/ui/settings/SettingsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/CoctelesOpenHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/CoctelesAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/CoctelesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/CoctelpediaFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/JGQuienMasProbable.java" />
@@ -428,15 +397,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_coctel_white.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/LanguageHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/themeHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/LanguageHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/languageHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/themeHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/JGRetos.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/JugadoresOpenHelper.java" />
@@ -448,14 +414,33 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/Players.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/GamesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/GamesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/languageHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game_whowould.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_players.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/JugadoresOpenHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/CoctelesOpenHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/PlayersActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/Coctel.java" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/Deagle50/coctelpedia/helpers/CoctelsOpenHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/CoctelesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_coctel.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-eu-rES/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_coctelpedia.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/CoctelpediaFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/CoctelsOpenHelper.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -466,17 +451,13 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="Coctelpedia" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Coctelpedia" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="Coctelpedia" type="1abcf292:AndroidViewProjectNode" />
@@ -513,6 +494,12 @@
             <path>
               <item name="Coctelpedia" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="coctelpedia" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coctelpedia" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -538,25 +525,25 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-03T12:15:59.292Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Copy_of_Gama_Alta_Curso_Android" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-03T18:32:39.598Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values-eu-rES" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTest/java/com/Deagle50/coctelpedia" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BibliotecaSonidos" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\res\drawable" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\res\drawable-v24" />
+      <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\java\com\deagle50\coctelpedia\ui\games" />
+      <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\assets" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.deagle50.coctelpedia" />
@@ -568,10 +555,9 @@
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\res\drawable" />
       <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\res\drawable-v24" />
-      <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\java\com\deagle50\coctelpedia\ui\games" />
-      <recent name="D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -671,11 +657,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15618336" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15580286" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -683,30 +669,28 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49946696" weight="0.26222223" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.3288889" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.48330683" weight="0.25893825" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49801272" weight="0.32827735" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="5" sideWeight="0.50053304" side_tool="true" visible="true" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.35771066" side_tool="true" visible="true" weight="0.16143012" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.16333333" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.64228934" visible="true" weight="0.16143012" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.3288889" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.4972178" weight="0.33044422" />
       <window_info anchor="bottom" id="Inspection Results" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32995737" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.32889125" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.32869634" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="StringPreview" order="6" />
       <window_info anchor="right" id="Assistant" order="7" weight="0.3298887" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/ui/dashboard/DashboardViewModel.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/ItemFragment.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/MyItemRecyclerViewAdapter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_list.xml" />
@@ -742,72 +726,13 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-es/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="64" lean-forward="true" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-eu-rES/strings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_gmail.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/Coctel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="44" column="145" selection-start-line="44" selection-start-column="145" selection-end-line="44" selection-end-column="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="method#Coctel#1;class#Coctel#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_coctelpedia.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.1.0/9865019bbd2d95e41dede3d8ebf964aa93f97766/appcompat-1.1.0-sources.jar!/androidx/appcompat/app/AppCompatDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/CoctelpediaFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_coctel.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/CoctelesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -823,14 +748,14 @@
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml">
+      <provider editor-type-id="nav-designer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
         </state>
       </provider>
-      <provider editor-type-id="nav-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/HomeFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
@@ -865,7 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="android-dummy://C:/Users/Deagle50/Desktop/Dam/DAM2/ProgramacionMultimedia/Coctelpedia/app/Translations Editor" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -882,26 +806,7 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/languageHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#761#829#0" expanded="true" />
-            <element signature="e#890#953#0" expanded="true" />
-            <element signature="e#3387#3450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/themeHelper.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/themeHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
@@ -913,7 +818,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/GameWhoWhould.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/GameWhoWhould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1590">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
@@ -923,124 +828,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/CoctelesOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="315" column="4" selection-start-line="315" selection-start-column="4" selection-end-line="315" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/widget/ArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="448" selection-start-line="448" selection-end-line="448" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/helpers/JugadoresOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="method#borrarPreferencias#0;class#MainActivity#0" />
-            <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" />
-            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_jugador.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="android-dummy://D:/Urko Urbieta/Visual Studio/ProgramacionMultimedia/Coctelpedia/app/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/widget/ArrayAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_jugador.xml" />
+    <entry file="android-dummy://D:/Urko Urbieta/Visual Studio/ProgramacionMultimedia/Coctelpedia/app/Translations Editor" />
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_games.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_players.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/activities/Players.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/languageHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="136" column="10" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="10" />
+        <state relative-caret-position="463">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
           <folding>
-            <element signature="e#957#965#0" expanded="true" />
-            <element signature="e#2425#2447#0" expanded="true" />
-            <element signature="e#2574#2608#0" expanded="true" />
-            <element signature="e#2700#3152#0" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3220#3270#1" />
-            <element signature="e#3474#3652#0" expanded="true" />
-            <element signature="e#3651#3652#0" expanded="true" />
-            <element signature="e#3501#3537#0" expanded="true" />
-            <element signature="e#4699#4732#0" expanded="true" />
-            <element signature="e#4903#4947#0" expanded="true" />
+            <element signature="e#892#955#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/SettingsFragment.java">
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/database/Cursor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="200" column="12" selection-start-line="200" selection-start-column="12" selection-end-line="200" selection-end-column="97" />
+        <state relative-caret-position="388">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game_whowould.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_players.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/JugadoresOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/GamesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="64" column="86" selection-start-line="64" selection-start-column="86" selection-end-line="64" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/PlayersActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2001#2041#1" />
+            <element signature="method#error#0;class#PlayersActivity#0" />
+            <element signature="method#requestPlayer#0;class#PlayersActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/Coctel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/CoctelesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding>
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="method#onAttachedToRecyclerView#0;class#CoctelesAdapter#0" />
+            <element signature="e#1792#1920#1" />
+            <element signature="e#1981#2054#1" />
+            <element signature="e#2406#2407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="android-dummy://C:/Users/Deagle50/Desktop/Dam/DAM2/ProgramacionMultimedia/Coctelpedia/app/Translations Editor">
+      <provider selected="true" editor-type-id="string-resource-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-eu-rES/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-es/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_coctelpedia.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#2111#2137#0" expanded="true" />
+            <element signature="e#3005#3026#0" expanded="true" />
+            <element signature="e#4676#4699#0" expanded="true" />
+            <element signature="e#5249#5272#0" expanded="true" />
+            <element signature="e#5792#5812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" selection-start-line="18" selection-end-line="38" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_coctel.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+          <folding>
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2197">
+          <caret line="189" column="13" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="13" />
+          <folding>
             <element signature="method#cambiarTema#0;class#SettingsFragment#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/deagle50/coctelpedia/fragments/GamesFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/fragments/CoctelpediaFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="505">
+          <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initializeData#0;class#CoctelpediaFragment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/Deagle50/coctelpedia/helpers/CoctelsOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="135" selection-start-line="28" selection-start-column="135" selection-end-line="28" selection-end-column="135" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

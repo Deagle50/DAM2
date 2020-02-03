@@ -71,13 +71,14 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
-        //Cargar tema
-        themeHelper th = new themeHelper(MainActivity.this, this);
-        th.loadSavedTheme();
-
         //Cargar idioma
         lh = new languageHelper(MainActivity.this);
         lh.loadSavedLanguage(this);
+
+
+        //Cargar tema
+        themeHelper th = new themeHelper(MainActivity.this, this);
+        th.loadSavedTheme();
 
 
         //Change action bar color
@@ -87,16 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void borrarPreferencias() {
-        SharedPreferences shpl = this.getSharedPreferences(this.getResources().getString(R.string.preferences_language_file), this.MODE_PRIVATE);
-        SharedPreferences shpt = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), this.MODE_PRIVATE);
-        SharedPreferences.Editor shple = shpl.edit();
-        SharedPreferences.Editor shpte = shpt.edit();
-        shpte.clear();
-        shple.clear();
-        shpte.commit();
-        shple.commit();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -140,5 +131,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         lh.loadSavedLanguage(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        lh.loadSavedLanguage(this);
+    }
+
+    private void borrarPreferencias() {
+        SharedPreferences shpl = this.getSharedPreferences(this.getResources().getString(R.string.preferences_language_file), this.MODE_PRIVATE);
+        SharedPreferences shpt = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), this.MODE_PRIVATE);
+        SharedPreferences.Editor shple = shpl.edit();
+        SharedPreferences.Editor shpte = shpt.edit();
+        shpte.clear();
+        shple.clear();
+        shpte.commit();
+        shple.commit();
     }
 }

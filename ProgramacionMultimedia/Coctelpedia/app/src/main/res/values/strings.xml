@@ -10,7 +10,7 @@
     <string name="title_settings">Settings</string>
     <string name="title_games">Games</string>
     <string name="title_launcher_image">Launcher image</string>
-    <string name="title_qemp">Who would...?</string>
+    <string name="title_who_would">Who would...?</string>
     <string name="title_language">Language</string>
     <string name="title_theme">Theme</string>
     <string name="title_contact">Contact</string>
@@ -48,10 +48,9 @@
     <string name="preferences_language" translatable="false">language</string>
     <string name="text_language_already_changed">Current language: English</string>
     <string name="title_credits">Credits</string>
-    <string name="text_credits">Pictures: taken from flaticon, made by users Freepik and Kiranshastry</string>
+    <string name="text_credits">Pictures: taken from flaticon, made by users Freepik, srip and Kiranshastry</string>
     <string name="title_close">Close</string>
     <string name="title_add_player">Add player</string>
-    <string name="title_finish_players">Finish adding players</string>
     <string name="title_game_challenge">Challenges</string>
     <string name="title_players">Players</string>
     <string name="title_finish">Finish</string>
@@ -60,6 +59,10 @@
     <string name="title_must_select_player">Select player above</string>
     <string name="title_put_name">Player name</string>
     <string name="title_empty_name">Name field can\'t be empty</string>
+    <string name="title_must_add_player">Please, add players first</string>
+    <string name="title_type">Drink type</string>
+    <string name="title_orderby">Order by</string>
+    <string name="title_filters">Filters</string>
 
 
 </resources>
