@@ -52,14 +52,20 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        loadPlayers();
+    }
+
+    @Override
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.buttonGameWhoWould:
                 {
                     if(cursorPlayers.getCount()==0)
                     {
-                        Toast.makeText(instancia, "error", Toast.LENGTH_SHORT);
-                        Toast.makeText(instancia,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
+                        Toast.makeText(instancia, "error", Toast.LENGTH_SHORT).show();
+
                     }
                     else{
                         Intent i = new Intent(getActivity(), GameWhoWhould.class);
