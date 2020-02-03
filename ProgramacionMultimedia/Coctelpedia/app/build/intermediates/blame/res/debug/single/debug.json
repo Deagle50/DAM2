@@ -512,12 +512,12 @@
         "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
-        "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_radio_off_mtrl.xml.flat",
-        "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\btn_radio_off_mtrl.xml"
-    },
-    {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_jugador.xml.flat",
         "source": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\src\\main\\res\\layout\\item_jugador.xml"
+    },
+    {
+        "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_radio_off_mtrl.xml.flat",
+        "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\btn_radio_off_mtrl.xml"
     },
     {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
@@ -1044,6 +1044,10 @@
         "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
+        "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_players.xml.flat",
+        "source": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\src\\main\\res\\layout\\activity_players.xml"
+    },
+    {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -1098,10 +1102,6 @@
     {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\e9dab9c67c1ee3668e0bbf86c6d8cbd8\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
-        "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_game_challenge.xml.flat",
-        "source": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\src\\main\\res\\layout\\activity_game_challenge.xml"
     },
     {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
@@ -1556,12 +1556,12 @@
         "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_game_whowould.xml.flat",
         "source": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\src\\main\\res\\layout\\activity_game_whowould.xml"
+    },
+    {
+        "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\urkourbieta\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "D:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gmail.xml.flat",

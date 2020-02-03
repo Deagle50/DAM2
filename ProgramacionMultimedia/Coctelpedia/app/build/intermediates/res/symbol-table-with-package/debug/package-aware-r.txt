@@ -1198,6 +1198,7 @@ id buttonGmail1
 id buttonGmail2
 id buttonLightTheme
 id buttonPanel
+id buttonPlayers
 id cancel_action
 id center
 id center_horizontal
@@ -1476,9 +1477,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_game_challenge
 layout activity_game_whowould
 layout activity_main
+layout activity_players
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1593,8 +1594,11 @@ string title_close
 string title_coctelpedia
 string title_contact
 string title_credits
+string title_delete
+string title_deleted
 string title_description
 string title_elaboration
+string title_empty_name
 string title_finish
 string title_finish_players
 string title_game_challenge
@@ -1602,8 +1606,10 @@ string title_games
 string title_home
 string title_language
 string title_launcher_image
+string title_must_select_player
 string title_new_translation
 string title_players
+string title_put_name
 string title_qemp
 string title_report_bugs
 string title_settings

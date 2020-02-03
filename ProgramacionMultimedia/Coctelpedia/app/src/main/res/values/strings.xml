@@ -55,6 +55,11 @@
     <string name="title_game_challenge">Challenges</string>
     <string name="title_players">Players</string>
     <string name="title_finish">Finish</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_deleted">deleted</string>
+    <string name="title_must_select_player">Select player above</string>
+    <string name="title_put_name">Player name</string>
+    <string name="title_empty_name">Name field can\'t be empty</string>
 
 
 </resources>

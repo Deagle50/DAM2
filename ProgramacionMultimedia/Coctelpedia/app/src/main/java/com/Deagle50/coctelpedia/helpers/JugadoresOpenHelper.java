@@ -42,7 +42,7 @@ public class JugadoresOpenHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         String[] argumentos = {String.valueOf(id)};
         try {
-            db.delete("jugadores", "_id = ?", argumentos);
+            db.delete("jugadores", "id = ?", argumentos);
             return true;
         }catch(Exception ex) {
             return false;

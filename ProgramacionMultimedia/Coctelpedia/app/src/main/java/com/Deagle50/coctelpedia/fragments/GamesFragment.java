@@ -1,18 +1,26 @@
 package com.deagle50.coctelpedia.fragments;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.deagle50.coctelpedia.activities.GameChallenge;
+import com.deagle50.coctelpedia.activities.Players;
 import com.deagle50.coctelpedia.activities.GameWhoWhould;
 import com.deagle50.coctelpedia.R;
+import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
+
+import java.util.ArrayList;
+
+import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
 
 public class GamesFragment extends Fragment implements View.OnClickListener{
     //Quién es más probable que...
@@ -22,8 +30,10 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
 
     Button btnGWhoWould;
     Button btnGChallenge;
+    Button btnPlayers;
     public View root;
-
+    JugadoresOpenHelper jugadoresOpenHelper;
+    Cursor cursorPlayers;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,7 +43,11 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
         btnGWhoWould.setOnClickListener(this);
         btnGChallenge = root.findViewById(R.id.buttonGameChallenge);
         btnGChallenge.setOnClickListener(this);
+        btnPlayers = root.findViewById(R.id.buttonPlayers);
+        btnPlayers.setOnClickListener(this);
 
+        jugadoresOpenHelper = new JugadoresOpenHelper(getContext(), "cursorPlayers", null, 1);
+        loadPlayers();
         return root;
     }
 
@@ -42,14 +56,21 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
         switch(v.getId()) {
             case R.id.buttonGameWhoWould:
                 {
-                    Intent i = new Intent(getActivity(), GameWhoWhould.class);
-                    startActivity(i);
+                    if(cursorPlayers.getCount()==0)
+                    {
+                        Toast.makeText(instancia, "error", Toast.LENGTH_SHORT);
+                        Toast.makeText(instancia,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
+                    }
+                    else{
+                        Intent i = new Intent(getActivity(), GameWhoWhould.class);
+                        startActivity(i);
+                    }
                     break;
                 }
             case R.id.buttonGameChallenge:
             {
-                Intent i = new Intent(getActivity(), GameChallenge.class);
-                startActivity(i);
+                //Intent i = new Intent(getActivity(), Players.class);
+                //startActivity(i);
                 break;
             }
             case R.id.btnJuego3:
@@ -57,9 +78,24 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 //Add listener
                 break;
             }
+            case R.id.buttonPlayers:
+                Intent i = new Intent(getActivity(), Players.class);
+                startActivity(i);
+                break;
             default:
                 break;
         }
 
+    }
+
+    public void loadPlayers() {
+        cursorPlayers = jugadoresOpenHelper.obtenerJugadores();//Cursor cursorPlayers
+
+        if(cursorPlayers != null) {
+            ArrayList<String> players = new ArrayList<>();
+            while (cursorPlayers.moveToNext()) {
+                players.add(cursorPlayers.getString(1));
+            }
+        }
     }
 }

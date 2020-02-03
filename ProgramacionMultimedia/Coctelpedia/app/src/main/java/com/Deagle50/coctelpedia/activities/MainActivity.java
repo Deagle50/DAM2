@@ -29,9 +29,7 @@ import androidx.navigation.ui.NavigationUI;
 * TO DO:
 *
 *Para aprobar:
-    * Insert nombres
-    * Delete de nombres
-*
+   *Tabla de cocteles
 * Extras
     * Cargar imagen nueva en modo oscuro
     * Añadir juegos
@@ -43,6 +41,8 @@ import androidx.navigation.ui.NavigationUI;
     * Guardar modo oscuro e idioma en shared preferences
     * Implementar bien idiomas, onclick
     * Poner créditos
+    * Insert nombres
+    * Delete de nombres
 *
 * Credits:
 * flags: Freepik
@@ -51,6 +51,7 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
     public static MainActivity instancia;
+    languageHelper lh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,13 +70,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        //Cargar idioma
-        languageHelper lh = new languageHelper(MainActivity.this);
-        lh.loadSavedLanguage(this);
 
         //Cargar tema
         themeHelper th = new themeHelper(MainActivity.this, this);
         th.loadSavedTheme();
+
+        //Cargar idioma
+        lh = new languageHelper(MainActivity.this);
+        lh.loadSavedLanguage(this);
+
 
         //Change action bar color
         //int titleId = getResources().getIdentifier("action_bar_title", "id", "android");
@@ -131,5 +134,11 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        lh.loadSavedLanguage(this);
     }
 }
