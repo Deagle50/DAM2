@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Uso de funciones</title>
+	<link href="../_css/site.css" rel="stylesheet">
+	<script>
+		function printFechaActual() {
+			var hoy = new Date();
+			document.write(hoy.toDateString());
+		}
+	</script>
+</head>
+
+<body>
+	<div class="envoltorio">
+	<header>
+	    JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+	  </header>
+	<div class="content">
+		<div class="main">
+	<h1>Uso de funciones</h1>
+			<p>Hoy es <strong>
+				<script>printFechaActual();</script>
+			</strong></p>
+	</div>
+	</div>
+		<footer>
+			<p>JavaScript &amp; jQuery <a href="http://google.com/">Google</a></p>
+		</footer>
+</div>
+</body>
+</html>

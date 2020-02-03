@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Utilizacion de una funcion Callback</title>
+	<link href="_css/site.css" rel="stylesheet">
+	<style>
+		#figure {
+		  position: relative;
+		  width: 400px;
+		  margin: 0;
+		}
+		#caption {
+			position: absolute;
+			width: 	340px;
+			background-color: black;
+			bottom: 10px;
+			left: 24px;
+			padding: 5px;
+			border: 1px solid white;
+			color: white;
+		}
+	</style>
+	<script src="_js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#foto').width(0).height(0).css('opacity',0);
+			$('#caption').hide();
+			$('#foto').animate(
+			   {
+				  width: '400px',
+				  height: '300px',
+				  opacity: 1
+			   },
+			   1000, 
+			   function() {
+				  $('#caption').fadeIn(1000);
+			   }
+			); // find de animate
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+	    JAVASCRIPT y jQUERY
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Utilizacion de una funcion Callback con animate()</h1>
+			<div id="figure"><img src="_images/green_h.jpg" 
+			     width="400" height="300" alt="Bodegon" id="foto" />
+				 <p id="caption">Bodegon!</p>
+			</div>
+		</div>
+	</div>
+		<footer>
+		    <p>JavaScript y jQuery</p>
+		</footer>
+	</div>
+</body>
+</html>

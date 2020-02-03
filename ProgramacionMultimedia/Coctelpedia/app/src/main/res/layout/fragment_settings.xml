@@ -60,7 +60,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/buttonEN"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/buttonES"
-                app:layout_constraintTop_toBottomOf="@id/textViewIdioma" />
+                app:layout_constraintTop_toBottomOf="@id/textViewLanguage" />
 
             <Button
                 android:id="@+id/buttonEN"
@@ -74,7 +74,7 @@
                 app:layout_constraintTop_toTopOf="@+id/buttonEU" />
 
             <TextView
-                android:id="@+id/textViewIdioma"
+                android:id="@+id/textViewLanguage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -109,7 +109,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textViewTema"
+                android:id="@+id/textViewTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -146,7 +146,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/buttonDarkTheme"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewTema" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewTheme" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -171,7 +171,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textViewContacto"
+                android:id="@+id/textViewContact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -213,9 +213,9 @@
                 android:textColor="@color/colorPrimary"
                 android:textIsSelectable="true"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/textViewContacto"
-                app:layout_constraintStart_toStartOf="@+id/textViewContacto"
-                app:layout_constraintTop_toBottomOf="@+id/textViewContacto" />
+                app:layout_constraintEnd_toEndOf="@+id/textViewContact"
+                app:layout_constraintStart_toStartOf="@+id/textViewContact"
+                app:layout_constraintTop_toBottomOf="@+id/textViewContact" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -312,5 +312,15 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textViewCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/title_credits"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

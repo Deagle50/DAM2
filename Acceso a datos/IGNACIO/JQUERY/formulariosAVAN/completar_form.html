@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Realización de reservas</title>
+<link href="_css/jquery-ui.min.css" rel="stylesheet">
+<link href="_css/site.css" rel="stylesheet">
+<link href="form.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script src="_js/jquery-ui.min.js"></script>
+<script src="aeropuertos.js"></script>
+<script>
+$(document).ready(function() {
+   $('#salida').datepicker({
+      minDate : 0,
+      maxDate : '1y',
+      changeMonth : true ,
+   	  changeYear : true
+   });
+   $('#aeropuerto').autocomplete({ source : aeropuertos});
+   $('#comida').selectmenu({width : 200});
+   $('#maletas').buttonset();
+   $('#tiposAsiento').buttonset();
+   $('#siguiente').button({
+   	icons : {
+   		secondary : 'ui-icon-circle-arrow-e'
+   	}
+   });
+}); // end ready
+</script>
+</head>
+<body>
+<div class="envoltorio">
+	<header>
+		JAVASCRIPT 
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Aerolineas: Gestión de reservas</h1>
+			<form>
+			  <div>
+			    <label for="salida" class="label">Elija una fecha de salida</label>
+			    <input type="text" id="salida" name="salida">
+			  </div>
+			  <div>
+			    <label for="aeropuerto" class="label">Busque un aeropuerto</label>
+			    <input type="text" id="aeropuerto" name="aeropuerto">
+			  </div>
+			  <div>
+			  	<label for="comida" class="label">Opciones de comida</label>
+			  	<select name="comida" id="comida">
+			  		<option>No comida</option>
+			  		<option>Vegano</option>
+			  		<option>Sin gluten</option>
+			  		<option>Vegetariano</option>
+			  		<option>Carne SI</option>
+			  	</select>
+			  </div>
+			  <div id="maletas">
+			    <p class="label">Numero de maletas para el checking</p>
+			    <input type="radio" id="ninguna" name="maletas" 
+			        checked="checked">
+      		<label for="ninguna">0</label>
+ 
+      		<input type="radio" id="una" name="maletas">
+      		<label for="una">1</label>
+ 
+      		<input type="radio" id="dos" name="maletas">
+      		<label for="dos">2</label>
+			  </div>
+        <div id="tiposAsiento">
+          <p class="label">Tipo de asiento que desea</p>
+          <input type="checkbox" id="solo" name="solo">
+          <label for="solo">Solo</label>
+ 
+          <input type="checkbox" id="ventana" name="ventana">
+          <label for="ventana">ventana</label>
+ 
+          <input type="checkbox" id="exit" name="exit">
+          <label for="exit">Fila de salida</label>
+
+          <input type="checkbox" id="cualquiera" name="cualquiera">
+          <label for="cualquiera">cualquiera</label>
+        </div>
+			  <div>
+				  <button id="siguiente">Continue con el proceso de reserva</button>
+			  </div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<p>JQUERY</p>
+	</footer>
+</div>
+</body>
+</html>

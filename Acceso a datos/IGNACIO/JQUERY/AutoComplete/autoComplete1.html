@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Autocomplete1</title>
+<script type="text/javascript" src="_js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="_js/jquery-ui.min.js"></script>
+<script>
+   $(document).ready(function(){
+         var arrayValoresAutocompletar = [
+            "Álava",
+            "Albacete",
+            "Alicante",
+            "Almería",
+            "Asturias",
+            "Avila",
+            "Badajoz",
+            "Barcelona",
+            "Burgos",
+            "Cáceres",
+            "Cádiz",
+            "Cantabria",
+            "Castellón",
+            "Ceuta",
+            "Ciudad Real",
+            "Córdoba",
+            "Cuenca",
+            "Gerona",
+            "Granada",
+            "Guadalajara",
+            "Guipúzcoa",
+            "Huelva",
+            "Huesca",
+            "Islas Baleares",
+            "Jaén",
+            "La Coruña",
+            "La Rioja",
+            "Las Palmas",
+            "León",
+            "Lérida",
+            "Lugo",
+            "Madrid",
+            "Málaga",
+            "Melilla",
+            "Murcia",
+            "Navarra",
+            "Orense",
+            "Palencia",
+            "Pontevedra",
+            "Salamanca",
+            "Segovia",
+            "Sevilla",
+            "Soria",
+            "Tarragona",
+            "Tenerife",
+            "Teruel",
+            "Toledo",
+            "Valencia",
+            "Valladolid",
+            "Vizcaya",
+            "Zamora",
+            "Zaragoza"
+         ];
+         $("#autoc1").autocomplete({
+            source: arrayValoresAutocompletar
+         })
+      })</script>
+</head>
+
+<body>
+   <h1>Probando el plugin autocomplete de jQuery UI</h1>
+   
+   <form>
+      Escribe una provincia de España: <input type="text" size="20" id="autoc1" />
+   </form>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Un control deslizante (Slide) en una tabla (Dashboard)</title>
+	<link href="_css/site.css" rel="stylesheet">
+	<style>
+		#tablero {
+			width: 110px;
+			background-color: rgb(255,40,40);
+			padding: 20px 20px 0 20px;
+			position: absolute;
+			left: -92px;
+			z-index: 100;
+		}
+		#tablero img {
+			margin-bottom: 20px;
+			border: 1px solid rgb(0,0,0);
+		}
+	</style>
+	<script src="_js/jquery.min.js"></script>
+	<script src="_js/jquery-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		  $('#tablero').hover(
+		     function() {
+				$(this).stop().animate(
+				{
+					left: '0',
+					backgroundColor: 'rgb(25,55,95)'
+				},
+				500,
+				'easeInSine'
+				); // fin de animate
+			 }, 
+			 function() {
+				 $(this).stop().animate(
+				{
+					left: '-92px',
+					backgroundColor: 'rgb(255,40,40)'
+				},
+				1500,
+				'easeOutBounce'
+				); // fin de animate
+			 }
+		  ); // fin de hover
+		}); // fin de ready
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	  <header>
+	    JAVASCRIPT y jQUERY
+	  </header>
+		<div id="tablero">
+			<img src="_images/chita.jpg" width="70" height="70" alt="Chita">
+			<img src="_images/tximeleta.jpg" width="70" height="70" alt="Mariposa">
+			<img src="_images/popflyDuck.png" width="70" height="70" alt="Patito">
+		</div>
+		<div class="content">
+			<div class="main">
+				<h1>Deslizamiento en una tabla</h1>
+				<p>Pasa el raton sobre la banda en el lado 
+				   izquierdo de la pagina</p>
+			</div>
+		</div>
+		<footer>
+		    <p>JavaScript y jQuery</p>
+		</footer>
+	</div>
+</body>
+</html>

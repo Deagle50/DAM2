@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Preguntas frecuentes</title>
+	<link href="../_css/site.css" rel="stylesheet">
+	<style type="text/css">
+	h2 {
+		background: url(../_images/open.png) no-repeat 0 11px;
+		padding: 10px 0 0 25px;
+		cursor: pointer;
+	}
+	h2.close {
+		background-image: url(../_images/close.png);
+	}
+	.faq {
+		border-radius: 10px;
+		background-color:  rgba(0,0,0,.05);
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.respuesta {
+		margin-left: 25px;	
+	}
+	</style>
+	<script src="../_js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		 $('.respuesta').hide();
+		 $('.main h2').click(function() {
+		 	var $respuesta = $(this).next('.respuesta');
+			if ($respuesta.is(':hidden')) {
+				$respuesta.slideDown();
+				$(this).addClass('close');
+			} else {
+				$respuesta.fadeOut();
+				$(this).removeClass('close');
+			}
+		 }
+			); // end click
+		}); // end ready
+	</script>
+</head>
+<body>
+<div class="envoltorio">
+	<header>
+		JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Preguntas frecuentes</h1>
+			<div class="faq">
+				<h2>He leido que JavaScript es muy antiguo. Es verdad?</h2>
+                <div class="respuesta">
+                    <p>
+                        Lo es, pero no ha perdido vigencia a lo largo del tiempo. De hecho se usa en muchos escenarios
+                        empresariales y en distintos &aacute;mbitos tecnol&oacute;gicos
+                    </p>
+                </div>
+			</div>
+			<div class="faq">
+			      <h2>Puede JavaScript resolver todos los problemas?</h2>
+                <div class="respuesta">
+                    <p>
+                        Es imposible que una tecnología resuelva todos los problemas. Es un lenguaje de programaci&oacute;n
+                        muy versatil permitiendo aplicar m&uacute;ltiples funcionalidades.
+                </div>
+			</div>
+			<div class="faq">
+			    <h2>Qu&eacute; es lo que <em>no puede hacer</em>?</h2>
+                <div class="respuesta">
+                    <p>No es capaz de ejecutarse en un entorno back-end (de servidor).</p>
+                </div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript &amp; jQuery: La consulta<a href="http://google.com/">Google</a></p>
+	</footer>
+</div>
+</body>
+</html>

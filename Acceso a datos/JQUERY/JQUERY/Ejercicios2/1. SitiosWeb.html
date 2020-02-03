@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Uso de funciones</title>
+	<link href="../_css/site.css" rel="stylesheet">
+	<script src="../_js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var sitios='';
+			// Recuperamos los sitios que comienzan por http://
+			$('.main a[href^="http://"]').each(function() {
+			  var textoSitio = $(this).text();
+			  var linkSitio = $(this).attr('href');
+			  sitios += '<li><strong>' + textoSitio + ":</strong> " + linkSitio + '</li>\n';
+			}); // end each
+		
+			if (sitios) {
+			  bibHTML = '<div id="bib"><p>Sitios Web referenciados en esta pagina:</p></div>';
+			  $(bibHTML).append(sitios).appendTo($('.main'));
+			}	
+		
+		}); // end ready
+	</script>
+</head>
+
+<body>
+<div class="envoltorio">
+	<header>
+		    JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+	</header>
+<div class="content">
+	<div class="main">
+	<h1>Creaci&oacute;n dinamica de una biblioteca</h1>
+	  <p>A lo largo de la historia se han desarrollado diversos buscadores.<br />
+	   <a href="http://www.yahoo.com/">Yahoo!</a> <br /> 
+	   <a href="http://www.google.com/">Google</a>. <br /> 
+	   <a href="https://www.bing.com/">Bing</a>.</p><br /> 
+	</div>
+	<footer>
+		<p>JavaScript &amp; jQuery: La consulta<a href="http://google.com/">Google</a></p>
+	</footer></div>
+</div>
+</body>
+</html>

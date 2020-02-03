@@ -1,0 +1,29 @@
+﻿<html>
+    <head>
+        <title>SELECT dinámico - JavaScript</title>
+		<script language="JavaScript">
+			//Codigo a Ejecutar al Cargar la Pagina
+			function meCargo() {
+			    cargar()
+			}
+			
+			// funcion para Cargar Provincias al campo <select>
+			function cargar() {
+			    var provincias = ["Murcia", "León", "Cuenca", "Albacete", "Pontevedra", "Ourense", "Zamora"]; 
+			    var select = document.getElementById("provincias"); //Seleccionamos el select
+			    
+			    for(var x=0; x < provincias.length; x++){ 
+			        var option = document.createElement("option"); //Creamos la opcion
+			        option.innerHTML = provincias[x]; //Metemos el texto en la opción
+			        select.appendChild(option); //Metemos la opción en el select
+		    	}
+		    }		
+		 </script>
+    </head>
+
+    <body onLoad="meCargo()">
+		 <select id="provincias">
+		  	<option>Seleccione una Provincia...</option>
+		 </select>
+	</body>
+</html>

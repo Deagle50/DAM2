@@ -47,6 +47,14 @@
     <string name="preferences_language_file" translatable="false">languageFile</string>
     <string name="preferences_language" translatable="false">language</string>
     <string name="text_language_already_changed">Current language: English</string>
+    <string name="title_credits">Credits</string>
+    <string name="text_credits">Pictures: taken from flaticon, made by users Freepik and Kiranshastry</string>
+    <string name="title_close">Close</string>
+    <string name="title_add_player">Add player</string>
+    <string name="title_finish_players">Finish adding players</string>
+    <string name="title_game_challenge">Challenges</string>
+    <string name="title_players">Players</string>
+    <string name="title_finish">Finish</string>
 
 
 </resources>

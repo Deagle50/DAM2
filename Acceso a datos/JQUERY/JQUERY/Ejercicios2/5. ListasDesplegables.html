@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Introduccion a los eventos</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script src="../_js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('form').submit(function(evt){
+		evt.preventDefault();
+	}); // end submit
+	$('#button').click(function() {
+		var $campo = $('#txtCampo')
+		var valorCampo = $campo.val();
+		if (valorCampo ) { 
+			$('#listaTareas').append('<li>' + valorCampo + '</li>' );
+			$campo .val('');
+			$campo .focus();
+		}
+	})// end click
+	$('#listaTareas').on('click','li',function() {
+		console.log($(this));
+		$(this).css({
+			'text-decoration' : 'line-through',
+			'font-weight' : 'bold',
+			'color' : 'lightgrey'
+		}); // end css
+	}); // end on
+});
+</script>
+</head>
+<body id="events">
+<div class="envoltorio">
+	<header>
+		    JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+	</header>
+	<div class="content">
+		<div class="main">
+			<form action="#" method="get">
+		<p><input name="txtCampo" type="text" id="txtCampo"> 
+		<input name="button" type="button" id="button" value="Añadir tarea"></p>
+		</form>
+		<h1>Lista de tareas</h1>
+		<ul id="listaTareas">
+
+		</ul>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript &amp; jQuery: La consulta<a href="http://google.com/">Google</a></p>
+	</footer>
+</div>
+</body>
+</html>

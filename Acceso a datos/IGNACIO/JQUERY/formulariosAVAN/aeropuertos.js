@@ -1,0 +1,17 @@
+var aeropuertos = [
+  { value : "TXL", label: "Berlín Tegel Airport" },
+  { value : "DUS", label: "Dusseldorf Airport" },
+  { value : "FRA", label: "Frankfurt Airport" },
+  { value : "MUC", label: "Múnich Airport" },
+  { value : "VIE", label: "Viena Airport" },
+  { value : "BRU", label: "Bruselas Airport" },
+  { value : "CPH", label: "Copenhague Airport" },
+  { value : "ALC", label: "Alicante Airport" },
+  { value : "LGW", label: "Londres Gatwick Airport" },
+  { value : "CDG", label: "París Charles de Gaulle Airport" },
+  { value : "TFN", label: "Tenerife Norte Airport" },
+  { value : "FLR", label: "Florencia Airport" },
+  { value : "LHR", label: "Londres Heathrow Airport" },
+  { value : "FNC", label: "Madeira Airport" },
+  { value : "GLA", label: "Glasgow Airport" },
+];

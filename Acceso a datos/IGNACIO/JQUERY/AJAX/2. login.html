@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link href="_css/site.css" rel="stylesheet">
+	<style>
+		form {
+			padding: 10px 10px 10px 10px;
+		}
+		label {
+			display: inline-block;
+			width: 100px;
+			text-align:right;
+			margin: 0 15px 0 0;
+			color: white;
+		}
+		input {
+			font-size: 14px;	
+		}
+		#button {
+			margin-left: 115px;	
+		}
+	</style>
+	<script src="_js/jquery.min.js"></script>
+	<script>	   
+		$(document).ready(function() {
+		    // Seleccionamos el formulario e incluimos un evento para enviarlo
+			 $('#login').submit(function() {
+			 /* Recopilamos la informacion del formulario y le damos el formato
+			    de una cadena de búsqueda que se enviará al servidor.
+			    El método serialize() se encarga de localizar todos los campos y 
+			    sus valores para después enviar la información al servidor web.
+			 */
+		    var formData = $(this).serialize();
+		    /*
+		       $.get es un método que configura y envía XMLHttpRequest.
+		       Tiene tres parámetros: la página a la que enviar los datos, la 
+		       cadena de búsqueda que contiene los datos que se enviarán al
+		       servidor y processData hace referencia al callback que procesará
+		       la respuesta al servidor.
+		    */
+		    $.get('login.php',formData,processData).error('ouch');
+		    /*
+		       La función processData() tiene un parámetro denominado data,
+		       que contendrá la respuesta del servidor.
+		       la página login.php devolverá el strin g correcto si los datos 
+		       son correctos y fallo si no lo son.
+		    */
+		    function processData(data) {
+		        if (data==='correcto') {
+		           $('.main').html('<p>Su conexión es correcta</p>');
+		        } else {
+		           if ($('#fallo').length === 0) {
+		             $('#formulario').prepend('<p id="fallo">Datos incorrectos. Inténtelo de nuevo</p>');
+		          }
+		        }
+		      } // fin de processData
+		    return false;
+		  }); // fin de submit				
+		}); // fin de ready
+	</script>
+</head>
+<body>
+<div class="envoltorio">
+  <header>
+    JAVASCRIPT <span class="amp">&amp;</span> jQUERY: EL MANUAL
+</header>
+  <div class="content">
+    <div class="main">
+      <h1>Login</h1>
+      <div id="formulario">
+        <form method="get" action="login.php" id="login">
+          <p>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario">
+          </p>
+          <p>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+          </p>
+          <p>
+            <input type="submit" name="button" id="button" value="Submit" >
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    	<p>JavaScript</p>
+	</footer></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Agregar y quitar celdas</title>
+    <script> 
+      function crear() { 
+            var tabla = document.getElementById("miTabla");
+            var fila = tabla.insertRow(0);
+            var celda1 = fila.insertCell(0);
+            var celda2 = fila.insertCell(1);
+            var celda3 = fila.insertCell(2);
+            
+            // CREO UN ELEMENTO DEL TIPO INPUT CON document.createElement("NOMBRE DEL TAG HTML QUE VAMOS A CREAR");
+            var campo1 = document.createElement("input");
+            campo1.type = "text";
+            campo1.value = "Respuesta";
+            campo1.setAttribute("onclick", "vaciarEntrada(this);");
+            campo1.style.height = "20px";
+            campo1.style.width = "100px";
+ 
+            // Creo un segundo elemento Input  
+            var campo2 = document.createElement("input");
+            campo2.type = "text";
+            campo2.value = "0";
+            campo2.setAttribute("onclick", "vaciarEntrada(this);");
+            campo2.style.height = "20px";
+            campo2.style.width = "30px"; 
+ 			          
+            // Creo un tercer elemento Input
+            var campo3 = document.createElement("img");
+            campo3.setAttribute("src", "delete.ico");
+	    campo3.style.height = "20px";
+            campo3.style.width = "20px"; 
+            campo3.onclick = function () 
+            { 
+                // Recuperamos el elemento tr en el que nos encontramos
+                var fila = this.parentNode.parentNode;
+                var tbody = tabla.getElementsByTagName("tbody")[0];
+ 
+                tbody.removeChild(fila);
+             } 
+ 
+            // CON EL METODO appendChild(); LOS AGREGO A LA CELDA QUE QUIERO
+            celda1.appendChild(campo1);
+            celda2.appendChild(campo2);
+            celda3.appendChild(campo3);
+        }
+ 
+        function vaciarEntrada(entrada) { 
+            entrada.value = ""; 
+        }
+    </script>
+</head>
+ 
+<body>
+    <button onclick="crear()" type="button">
+        <img src="anadir.ico" />
+    </button>
+    <br />
+    <table id="miTabla" border="0">
+        <tr>
+            <input name="respuesta" type="text" id="respuesta" style="height: 20px; width: 100px;" 
+                onFocus="vaciarEntrada(this)" value="Respuesta" />
+            <input name="puntos" type="text" id="puntos" style="height: 20px;
+               width: 40px;" onFocus="vaciarEntrada(this)" value="puntos" />
+        </tr>
+    </table>  
+</body>
+ 
+</html>

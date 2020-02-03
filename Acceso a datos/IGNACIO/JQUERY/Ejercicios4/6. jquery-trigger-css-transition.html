@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery y las transiciones CSS</title>
+<link href="_css/site.css" rel="stylesheet">
+<style>
+ img {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+img.faded {
+  opacity: 0;
+}
+
+</style>
+<script src="_js/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('img').click(function(evt) {
+			$(this).toggleClass('faded');
+			evt.stopPropagation(); // Evita que este click vaya al elemento HTML
+		}); //final de click
+		$('html').click(function(){
+			$('.faded').removeClass('faded');
+		}); // final de click
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    JAVASCRIPT y jQUERY
+  </header>
+
+<div class="content">
+<div class="main">
+<h1>Transicion CSS y jQuery</h1>
+<p>Click sobre cualquier imagen para hacer desaparecer la foto. 
+   Click sobre el el hueco vacío para que aparezca de nuevo.</p>
+<p><img src="_images/chita.jpg" width="70" height="70" alt="marron">
+<img src="_images/popflyDuck.png" width="70" height="70" alt="rosa">
+<img src="_images/tximeleta.jpg" width="70" height="70" alt="colores">
+<img src="_images/green_h.jpg" width="70" height="70" alt="verde">
+</p>
+<p>Click sobre cualquier lugar de la página para conseguir
+   que las imagenes vuelvan a aparecer.</p>
+</div>
+</div>
+<footer>
+    <p>JavaScript y jQuery</p>
+  </footer>
+</div>
+</body>
+</html>

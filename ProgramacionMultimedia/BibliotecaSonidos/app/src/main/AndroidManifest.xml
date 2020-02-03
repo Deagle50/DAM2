@@ -17,5 +17,5 @@
             </intent-filter>
         </activity>
     </application>
-
+<uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE "></uses-permission-sdk-23>
 </manifest>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Titulares de noticias</title>
+	<link href="_css/site.css" rel="stylesheet">
+	<style>
+		#linksNoticias li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+		#linksNoticias li a {
+			padding: 5px 10px; 
+			background-color: white;
+			color: black !important;
+			text-decoration: none;	
+		}
+		#linksNoticias li a:hover {
+			background-color: rgb(110,138,195);
+			color: white !important;	
+		}
+		#titulares #noticia {
+			margin-top: 10px;
+			padding: 20px;
+			border: 1px solid white;	
+		}
+	</style>
+	<script src="../_js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		  $('#linksNoticias a').click(function() {
+		     var url=$(this).attr('href');
+		     $('#titulares').load(url + ' #noticia');
+		     return false;
+		  }); //fin de click
+					
+		}); // fin de ready
+	</script>
+</head>
+<body>
+<div class="envoltorio">
+	<header>
+    	JAVASCRIPT <span class="amp">&amp;</span> jQUERY: EL MANUAL
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Titulares de noticias</h1>
+			<ul id="linksNoticias">
+			<li><a href="hoy.html">Noticias de hoy</a></li>
+    <li><a href="ayer.html">Noticias de ayer</a></li>
+    <li><a href="ultimaSemana.html">Noticias de la &uacute;ltima semana</a></li>
+			</ul>
+			<div id="titulares"></div>
+		</div>
+	</div>
+	<footer>
+    	<p>JavaScript</p>
+	</footer></div>
+</body>
+</html>

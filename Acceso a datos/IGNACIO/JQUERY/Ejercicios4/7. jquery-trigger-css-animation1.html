@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery y Animaciones CSS</title>
+<link href="_css/site.css" rel="stylesheet">
+<style>
+@-webkit-keyframes barraProgresoCrece{
+	0% {
+		width: 0;
+		background-color: red;
+	}
+	50%  {
+		background-color: blue;
+	}
+	100% {
+		width: 90%;
+		background-color: green;
+	}
+} 
+@keyframes barraProgresoCrece{
+	0% {
+		width: 0%;
+		background-color: red;
+	}
+	50% {
+		background-color: blue;
+	}
+	100% {
+		width:90%;
+		background-color: green;
+	}
+}
+
+.progressBar {
+	width: 0%;
+	margin-left: 12%;
+	margin-top: 40px;
+	height: 50px;
+	-webkit-animation-name: barraProgresoCrece;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+	animation-name: barraProgresoCrece;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.buttonContainer {
+	float: left;
+	width: 10%;
+}
+.button {
+	border-radius: 6px;
+	background: lightgrey;
+	text-align: center;
+	font-size: .8em;
+	padding: 4px 0 1px 0;
+	margin-top: 10px;
+}
+.button:hover {
+	color: white;
+	background-color: red;
+	cursor: pointer;
+}
+.active {
+	background-color: green;
+	color: white;
+}
+
+</style>
+<script src="_js/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#play').click(function(evt) {
+			$('#pause').removeClass('active');
+			$(this).addClass('active');
+			$('.progressBar').css('animation-play-state','running');
+		}); // fin de click
+		$('#pause').click(function(evt) {
+			$('#play').removeClass('active');
+			$(this).addClass('active');
+			$('.progressBar').css('animation-play-state','paused');
+		}); // fin de click
+	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    JAVASCRIPT y jQUERY
+  </header>
+
+<div class="content">
+<div class="main">
+<h1>CSS Animacion lanzada por jQuery</h1>
+<div class="buttonContainer">
+	<div class="button" id="play"><h2>Play</h2></div>
+	<div class="button" id="pause"><h2>Pause</h2></div>
+</div>
+<div class="progressBar"></div>
+</div>
+</div>
+<footer>
+    <p>JavaScript y jQuery</p>
+  </footer>
+</div>
+</body>
+</html>

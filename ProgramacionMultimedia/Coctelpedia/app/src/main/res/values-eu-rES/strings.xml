@@ -29,4 +29,12 @@
     <string name="text_theme_changed_light">Tema argira aldatu da</string>
     <string name="text_theme_already_changed">Hori da dagoen tema</string>
     <string name="text_language_already_changed">Orain dagoen hizkuntza: euskara</string>
+    <string name="title_credits">Kredituak</string>
+    <string name="text_credits">Argazkiak: hartuta flaticon-etik, Freepik eta Kiranshastry erabiltzaileak eginda</string>
+    <string name="title_close">Itxi</string>
+    <string name="title_add_player">Jokalaria sartu</string>
+    <string name="title_finish_players">Bukatu jokalariak sartzen</string>
+    <string name="title_game_challenge">Erronkak</string>
+    <string name="title_players">Jokalariak</string>
+    <string name="title_finish">Bukatu</string>
 </resources>

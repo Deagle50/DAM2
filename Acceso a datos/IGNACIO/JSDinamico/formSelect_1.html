@@ -1,0 +1,32 @@
+﻿<html>
+    <head>
+        <title>TAG SELECT</title>
+		<script language="JavaScript">
+			function insertar()
+			{
+				var valor = document.getElementById("txt1").value;
+				var texto = document.getElementById("txt2").value;
+
+				if( valor != "" && texto != "" )
+				{
+					var objOption = new Option(texto, valor);
+					document.getElementById("cbo1").add( objOption );
+				}
+			}
+		</script>
+    </head>
+
+    <body>
+        <form id="form1" name="form1" method="post" action="#" >
+
+            <select id="cbo1" name="cbo1" size="4">
+				<option value="A">Opción 1</option>
+				<option value="B">Opción 2</option>
+            </select><p/>
+
+			Valor: <input type="text" id="txt1" name="txt1" value="" size="5" />
+            Texto: <input type="text" id="txt2" name="txt2" value="" />
+            <input type="button" id="boton1" name="boton1" onclick="insertar();" value="Insertar elemento" />
+        </form>
+    </body>
+</html>

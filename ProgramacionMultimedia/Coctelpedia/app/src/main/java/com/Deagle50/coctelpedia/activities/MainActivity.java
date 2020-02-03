@@ -1,6 +1,7 @@
 package com.deagle50.coctelpedia.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
@@ -33,18 +34,18 @@ import androidx.navigation.ui.NavigationUI;
 *
 * Extras
     * Cargar imagen nueva en modo oscuro
-    * Guardar modo oscuro e idioma en shared preferences
-    * Implementar bien idiomas, onclick
     * Añadir juegos
     * Gesto para cambiar entre fragments pantalla principal
-    * Cancelar toasts
 *
 *
 * DONE:
-*
     * Modo oscuro
+    * Guardar modo oscuro e idioma en shared preferences
+    * Implementar bien idiomas, onclick
+    * Poner créditos
 *
-* flags:
+* Credits:
+* flags: Freepik
 * coctel: Kiranshastry
 * */
 
@@ -68,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        /*SharedPreferences shp = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), this.MODE_PRIVATE);
-        SharedPreferences.Editor shpe = shp.edit();
-        shpe.clear();
-        shpe.commit();*/
+        //Cargar idioma
+        languageHelper lh = new languageHelper(MainActivity.this);
+        lh.loadSavedLanguage(this);
 
+        //Cargar tema
         themeHelper th = new themeHelper(MainActivity.this, this);
         th.loadSavedTheme();
 
@@ -81,10 +82,17 @@ public class MainActivity extends AppCompatActivity {
         /*TextView abTitle = findViewById(getResources().getIdentifier("action_bar_title", "id", "android"));
         abTitle.setTextColor(getResources().getColor(R.color.fontGray, null));*/
 
+    }
 
-
-        languageHelper lh = new languageHelper(MainActivity.this);
-        lh.loadSavedLanguage(this);
+    private void borrarPreferencias() {
+        SharedPreferences shpl = this.getSharedPreferences(this.getResources().getString(R.string.preferences_language_file), this.MODE_PRIVATE);
+        SharedPreferences shpt = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), this.MODE_PRIVATE);
+        SharedPreferences.Editor shple = shpl.edit();
+        SharedPreferences.Editor shpte = shpt.edit();
+        shpte.clear();
+        shple.clear();
+        shpte.commit();
+        shple.commit();
     }
 
     @Override

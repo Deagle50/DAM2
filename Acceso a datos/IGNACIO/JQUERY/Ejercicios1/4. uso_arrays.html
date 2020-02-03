@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creaci�n y uso de Arrays</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script>
+var autores = [ 'Lope de Vega',
+                'Miguel de Cervantes',
+                'Miguel de Unamuno',
+                'Federico Garc&iacute;a Lorca'
+              ];
+
+</script>
+</head>
+
+<body>
+<div class="envoltorio">
+  <header>
+    JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+  </header>
+  <div class="content">
+    <div class="main">
+      <h1>Creaci&oacute;n y uso de Arrays</h1>
+      <script>
+    		document.write('<p>El primer autor se llama <strong>');
+    		document.write(autores [0] + '</strong></p>');
+    		document.write('<p>El primer autor se llama <strong>');
+    		document.write(autores [autores .length-1] + '</strong></p>');
+    		autores.unshift('Francisco de Quevedo');
+    		document.write('<p>Casi me  olvido <strong>');
+    		document.write(autores [0]);
+    		document.write('</strong></p>');
+		  </script>
+    </div>
+  </div>
+  <footer>
+<p>JavaScript &amp; jQuery<a href="http://google.com/">
+    Google</a></p>
+</footer>
+</div>
+</body>
+</html>

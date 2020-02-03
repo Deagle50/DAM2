@@ -10,7 +10,8 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.deagle50.coctelpedia.activities.JGQuienMasProbable;
+import com.deagle50.coctelpedia.activities.GameChallenge;
+import com.deagle50.coctelpedia.activities.GameWhoWhould;
 import com.deagle50.coctelpedia.R;
 
 public class GamesFragment extends Fragment implements View.OnClickListener{
@@ -19,7 +20,8 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     //Verdad o reto
     //
 
-    Button btnJuego1;
+    Button btnGWhoWould;
+    Button btnGChallenge;
     public View root;
 
 
@@ -27,8 +29,10 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                              ViewGroup container, Bundle savedInstanceState) {
 
         root = inflater.inflate(R.layout.fragment_games, container, false);
-        btnJuego1 = root.findViewById(R.id.btnQEMP);
-        btnJuego1.setOnClickListener(this);
+        btnGWhoWould = root.findViewById(R.id.buttonGameWhoWould);
+        btnGWhoWould.setOnClickListener(this);
+        btnGChallenge = root.findViewById(R.id.buttonGameChallenge);
+        btnGChallenge.setOnClickListener(this);
 
         return root;
     }
@@ -36,18 +40,21 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.btnQEMP:
+            case R.id.buttonGameWhoWould:
                 {
-                    Intent i = new Intent(getActivity(), JGQuienMasProbable.class);
+                    Intent i = new Intent(getActivity(), GameWhoWhould.class);
                     startActivity(i);
                     break;
                 }
-            case R.id.btnJuego2:
+            case R.id.buttonGameChallenge:
             {
+                Intent i = new Intent(getActivity(), GameChallenge.class);
+                startActivity(i);
                 break;
             }
             case R.id.btnJuego3:
             {
+                //Add listener
                 break;
             }
             default:

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calendario</title>
+<link href="_css/jquery-ui.min.css" rel="stylesheet">
+<link href="_css/site.css" rel="stylesheet">
+<link href="form.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script src="_js/jquery-ui.min.js"></script>
+<script src="aeropuertos.js"></script>
+<script>
+$(document).ready(function() {
+   $('#txtCumple').datepicker({
+   	 changeMonth : true ,
+   	 changeYear : true,
+   	 yearRange : '-120:+0',
+   	 maxDate : 0,
+   	 dateFormat : 'd-mm-yy'
+   	});
+}); // end ready
+</script>
+</head>
+<body>
+<div class="envoltorio">
+	<header>
+		JAVASCRIPT 
+	</header>
+	<div class="content">
+		<div class="main">
+			<h1>Calendario</h1>
+			<form>
+			  <div>
+			    <label for="txtCumple" class="label">¿Fecha de nacimiento?</label>
+			    <input type="text" id="txtCumple" name="txtCumple">
+			  </div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<p>JavaScript</p>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<html>
+    <head>
+        <title>SELECT dinámico - JavaScript</title>
+		<script language="JavaScript">
+			function cambiar()
+			{
+				var seleccionado = document.getElementById("cboContinentes").selectedIndex;
+
+				if( seleccionado == 0 )
+					document.getElementById("txtDato").value = "";
+				else
+					document.getElementById("txtDato").value = document.getElementById("cboContinentes").options[seleccionado].value;
+			}
+		</script>
+    </head>
+
+    <body>
+        <form id="miFormulario" name="miFormulario" method="post" action="#" >
+            Continentes:
+            <select id="cboContinentes" name="cboContinentes" onchange="cambiar();">
+              <option value="NINGUNO">( NINGUNO )</option>
+              <option value="AFRICA">África</option>
+              <option value="AMERICA">América</option>
+              <option value="ASIA">Asia</option>
+              <option value="EUROPA">Europa</option>
+              <option value="OCEANIA" selected>Oceanía</option>
+            </select>
+			Seleccionado: <input type="text" value="" id="txtDato" name="text1" />
+        </form>
+    </body>
+</html>

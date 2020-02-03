@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cuestionario</title>
+	<link href="../_css/site.css" rel="stylesheet">
+	<script>
+		var marcador=0;
+		var preguntas = [
+			 ['Cuantas lunas tiene la tierra?', 1],
+			 ['Cuantas lunas tiene Saturno?',31],
+			 ['Cuantas lunas tiene Venus?', 0]
+		  ];
+		  
+		function preguntaRespuesta(preguntas) {
+		 var respuesta = prompt(preguntas[0],'');
+		    if (respuesta == preguntas[1]) {
+		        alert('Correcto!');
+		        marcador++;
+		    } else {
+		        alert('Lo sentimos. La respuesta correcta es ' + preguntas[1]);
+		    }
+		}
+		
+		for (var i=0; i<preguntas.length; i++) {
+		   preguntaRespuesta(preguntas[i]);
+		}
+	
+	</script>
+</head>
+
+<body>
+<div class="envoltorio">
+<header>
+     JAVASCRIPT <span class="amp">&amp;</span> jQUERY: El manual
+  </header>
+<div class="content">
+	<div class="main">
+<h1>Cuestionario</h1>
+		<script>
+		var mensaje = 'Vd tiene ' + marcador;
+		mensaje += ' de ' + preguntas.length;
+		mensaje += ' respuestas correctas.';
+		document.write('<p>' + mensaje + '</p>');
+		</script> </div>
+</div>
+    <footer>
+        <p>JavaScript &amp; jQuery: El Manual <a href="http://google.com/">Google</a></p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Utilizaci�n de mandatos condicionales</title>
+<link href="../_css/site.css" rel="stylesheet">
+<script>
+do {
+	var numeroPreferido = prompt('Cual es tu numero preferido?','');
+	numeroPreferido = parseInt(numeroPreferido , 10);
+} while (isNaN(numeroPreferido ));
+</script>
+</head>
+
+<body>
+<div class="envoltorio">
+  <header>
+    JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+  </header>
+  <div class="content">
+    <div class="main">
+      <h1>Utilizaci&oacute;n de mandatos condicionales</h1>
+      <script>
+		if (numeroPreferido == 6 ) {
+			document.write("<p>Hola, 6 es tambien mi numero preferido!</p>");
+		} else if (numeroPreferido == 11 || numeroPreferido == 13) {
+ 			document.write("<p>" + numeroPreferido + "? No me gusta tu numero!</p>");
+		} else {
+ 			document.write("<p>El numero " + numeroPreferido + " es tu predilecto!</p>");
+		}		
+	  </script> 
+	</div>
+  </div>
+  <footer>
+<p>JavaScript &amp; jQuery<a href="http://google.com/"></p>
+</footer>
+</div>
+</body>
+</html>

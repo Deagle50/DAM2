@@ -1,0 +1,52 @@
+﻿<!--
+	Creación dinamica de controles 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>adicion de filas dinámica a una tabla</title>
+  <script>
+  	function crearDin(codigo, nombre){         
+	   var tabla = document.getElementById("tabla");
+	   var cuerpo = tabla.getElementsByTagName("tbody");
+	   var fila = document.createElement("tr");
+	   var celda1 = document.createElement("td");
+	   var celda2 = document.createElement("td");
+	   var textoCelda1 = document.createTextNode(codigo);
+	   celda1.appendChild(textoCelda1);
+	   var textoCelda2 = document.createTextNode(nombre);
+	   celda2.appendChild(textoCelda2);
+	
+	   fila.appendChild(celda1);
+	   fila.appendChild(celda2);
+	   cuerpo[0].appendChild(fila);
+	} 
+	
+	function borrarcajas(caja1, caja2){
+	   caja1.value="";
+	   caja2.value="";
+	}
+  </script> 
+</head>
+
+<body>
+  <h1>Creación dinamica de filas en una tabla</h1>
+  
+  <table id="tabla" style="width: 50%">
+	  <thead>
+         <tr>
+	         <th>Módulo</th>
+	         <th>Descripcion</th>
+         </tr>
+      </thead>
+      <tbody></tbody>        
+  </table>
+  <br /><br />
+  Código de módulo<input type="text" id="txtCodModulo" />
+  <br />Nombre del módulo<input type="text" id="txtNomModulo" />
+  <br /><br /><input type="button" value="Añadir"
+    onclick="crearDin(txtCodModulo.value, txtNomModulo.value);
+             borrarcajas(txtCodModulo,txtNomModulo);" /> 
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">	
+</head>
+ 
+<body> 
+	<select id="miSelect">
+	</select> 
+	
+	<script> 
+		var miSelect=document.getElementById("miSelect");
+		 
+		// Creamos un objeto option
+		var miOption1=document.createElement("option");
+		 
+		// Añadimos las propiedades value y label
+		miOption1.setAttribute("value","1");
+		miOption1.setAttribute("label","casa");
+		 
+		// Añadimos el elemento option al elemento select
+		miSelect.appendChild(miOption1);		 
+		 
+		var miOption2=document.createElement("option");
+		miOption2.setAttribute("value","2");
+		miOption2.setAttribute("label","avion");
+		 
+		// Dejamos seleccionado este valor por defecto
+		miOption2.setAttribute("selected","true");
+		 
+		miSelect.appendChild(miOption2);
+		 
+		 
+		var miOption3=document.createElement("option");
+		 
+		miOption3.setAttribute("value","3");
+		miOption3.setAttribute("label","moto");
+		 
+		// Dejamos este valor desactivado
+		miOption3.setAttribute("disabled","true");
+		 
+		miSelect.appendChild(miOption3);
+	</script>
+</body>
+</html>
+ 

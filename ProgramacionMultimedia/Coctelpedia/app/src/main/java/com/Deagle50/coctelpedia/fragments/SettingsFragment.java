@@ -1,7 +1,9 @@
 package com.deagle50.coctelpedia.fragments;
 
+
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +13,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
+import com.deagle50.coctelpedia.activities.MainActivity;
 import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.themeHelper;
@@ -20,12 +24,12 @@ import com.deagle50.coctelpedia.helpers.themeHelper;
 import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
-    Button buttonES, buttonEU, buttonEN;
-    Button buttonGmail1, buttonGmail2;
-    Button buttonDark, buttonLight;
-    TextView tvBug, tvNTrans, tvTransIssue, tvCorreo;
-    View root;
-    Configuration configuration;
+    private Button buttonES, buttonEU, buttonEN;
+    private Button buttonGmail1, buttonGmail2;
+    private Button buttonDark, buttonLight;
+    private TextView tvBug, tvNTrans, tvTransIssue, tvEmail;
+    private TextView tvCredits;
+    private View root;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -34,10 +38,10 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
         buttonGmail1 = root.findViewById(R.id.buttonGmail1);
         buttonGmail2 = root.findViewById(R.id.buttonGmail2);
-        tvCorreo = root.findViewById(R.id.textViewCorreo);
+        tvEmail = root.findViewById(R.id.textViewCorreo);
         buttonGmail1.setOnClickListener(this);
         buttonGmail2.setOnClickListener(this);
-        tvCorreo.setOnClickListener(this);
+        tvEmail.setOnClickListener(this);
 
         buttonES = root.findViewById(R.id.buttonES);
         buttonEU = root.findViewById(R.id.buttonEU);
@@ -57,6 +61,9 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         buttonLight = root.findViewById(R.id.buttonLightTheme);
         buttonDark.setOnClickListener(this);
         buttonLight.setOnClickListener(this);
+
+        tvCredits = root.findViewById(R.id.textViewCredits);
+        tvCredits.setOnClickListener(this);
 
         return root;
     }
@@ -117,8 +124,34 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 cambiarTema("oscuro");
                 break;
             }
+            case R.id.textViewCredits:{
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                        getContext());
+
+                // set title
+                alertDialogBuilder.setTitle(R.string.title_credits);
+
+                // set dialog message
+                alertDialogBuilder
+                        .setMessage(R.string.text_credits)
+                        .setCancelable(false)
+                        .setNeutralButton(R.string.title_close,new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                // if this button is clicked
+
+                            }
+                        });
+                // create alert dialog
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                // show it
+                alertDialog.show();
+            }
+
+
+            break;
 
         }
+        //Enviar email
         if(v== tvBug||v==tvNTrans||v==tvTransIssue)
         {
             Intent intent = new Intent(Intent.ACTION_SEND);
@@ -138,8 +171,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         {
             lh.setLocale(instancia, lg);
             lh.saveLanguage(instancia, lg);
-
-
 
             /* ÑAPA SUPREMA
              *
@@ -161,12 +192,15 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 th.changeTheme("claro");
                 th.saveTheme();
             }
+
+            //Fin ñapa suprema
+
         }
         else
         {
             Toast.makeText(instancia,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
         }
-        //Fin ñapa suprema
+
 
     }
 

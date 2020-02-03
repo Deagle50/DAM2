@@ -1,0 +1,154 @@
+﻿/* reseteo de los estilos */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, img, small, strong, sub, sup, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, 
+table, caption, tbody, tfoot, thead, tr, th, td,  
+footer, header, hgroup, menu, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+footer, header, menu{
+	display: block;
+}
+body {
+	line-height: 1.2;
+	background-color: rgb(254,250,246);
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+
+
+
+h1 {
+	font-family: 'League Gothic', Arial, sans-serif;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'ColaborateMediumRegular', Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	vertical-align: middle;
+	width: 100%;
+	background-color: rgb(27,45,94);
+	padding: 10px 0 5px 0;
+	text-align: center;
+	color: rgb(255,255,255);
+	text-shadow: 2px 2px 1px rgba(255,255,255,.5);
+	font: normal 28px 'League Gothic', Arial, sans-serif;
+	letter-spacing: 2px;
+}
+
+.envoltorio {
+	margin-top: 100px;
+}
+
+.main {
+	padding-bottom: 1em;
+	border-bottom: solid 1px rgba(255,255,255,.5);
+}
+
+.main h1 {
+	font-size: 32px;
+	color: rgb(100,100,100);
+	text-shadow: 1px 1px 1px rgb(255,255,255);
+	border-bottom: solid 1px rgb(100,100,100);
+	margin-bottom: 0.5em;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(27,45,94);
+}
+
+footer p {
+	text-align: center;
+	font-size: 14px;
+	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	padding: .5em .25em .5em 1em;
+	color:rgb(255,255,255);
+	margin: 0;
+}
+
+footer a {
+	color: rgb(200,200,200);
+}
+
+p , li, form{
+	font-size: 18px;
+	color: rgb(100,100,100);
+	font-family: 'ColaborateLightRegular', Arial, sans-serif;
+	line-height: 125%;
+	margin-bottom: 10px;
+}
+
+input {
+	font-size: 20px;
+}
+.found {
+	color: rgba(255,0,0,1);
+}
+
+form#pedido div, form#registro div{
+	padding-bottom: 10px;	
+}
+
+form#pedido .label, form#registro .label {
+	display: block;
+	clear: left;
+	float: left;
+	width: 175px;
+	text-align: right;
+	padding: 7px 15px 0 0;
+	text-transform: uppercase;	
+	font-weight: bold;
+}
+
+form#pedido .label {
+	width: 200px;	
+}
+
+form#pedido select, form#registro select {
+	display: inline-block;
+	margin-top: 8px;	
+}
+
+form#pedido input[type=radio], form#registro input[type=radio], form#pedido input[type=checkbox] {
+   display: inline-block;
+   margin-top: 10px;	
+}
+
+.clearLeft {
+	clear: left;
+}
+
+#pedido .indent label.error {
+  margin-left: 0;
+}

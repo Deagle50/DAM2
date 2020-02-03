@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btnQEMP"
+                android:id="@+id/buttonGameWhoWould"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
@@ -52,16 +52,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
             <Button
-                android:id="@+id/btnJuego2"
+                android:id="@+id/buttonGameChallenge"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:background="@drawable/buttons"
-                android:text="Juego 2"
+                android:text="@string/title_game_challenge"
                 android:textColor="@color/fontWhite"
-                app:layout_constraintEnd_toEndOf="@+id/btnQEMP"
-                app:layout_constraintStart_toStartOf="@+id/btnQEMP"
-                app:layout_constraintTop_toBottomOf="@+id/btnQEMP" />
+                app:layout_constraintEnd_toEndOf="@+id/buttonGameWhoWould"
+                app:layout_constraintStart_toStartOf="@+id/buttonGameWhoWould"
+                app:layout_constraintTop_toBottomOf="@+id/buttonGameWhoWould" />
 
             <Button
                 android:id="@+id/btnJuego3"
@@ -71,9 +71,9 @@
                 android:background="@drawable/buttons"
                 android:text="Juego 3"
                 android:textColor="@color/fontWhite"
-                app:layout_constraintEnd_toEndOf="@+id/btnJuego2"
-                app:layout_constraintStart_toStartOf="@+id/btnJuego2"
-                app:layout_constraintTop_toBottomOf="@+id/btnJuego2" />
+                app:layout_constraintEnd_toEndOf="@+id/buttonGameChallenge"
+                app:layout_constraintStart_toStartOf="@+id/buttonGameChallenge"
+                app:layout_constraintTop_toBottomOf="@+id/buttonGameChallenge" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

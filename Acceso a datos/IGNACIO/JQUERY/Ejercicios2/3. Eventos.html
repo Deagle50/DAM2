@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+    <link href="../_css/site.css" rel="stylesheet">
+	<script src="../_js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('html').dblclick(function() {
+				alert('doble click');
+			}); // fin de doubleclick
+			$('a').mouseover(function() {
+				var mensaje = "<p>El raton esta pasando sobre el link</p>";
+				$('.main').append(mensaje); 
+			}); // fin de mouseover
+			$('#button').click(function() {
+				$(this).val("Has hecho click!");
+			}); // fin de click
+			$('#textfield').focus(function() {
+				$(this).css('background-color','green');
+			}); // fin de focus
+		}); // fin de ready
+	</script>
+</head>
+<body id="events">
+<div class="envoltorio">
+	<header>
+	    JAVASCRIPT <span class="amp">&amp;</span> jQUERY
+	</header>
+	<div class="content">
+		<div class="main">
+	<h1>Eventos</h1>
+	<p><a href="#">Un Link</a></p>
+	<form action="#" method="get">
+	<fieldset><legend>Formulario</legend><p><input name="button" type="button" id="button" value="Boton"></p>
+	<p><input name="textfield" id="textfield" type="text"></p></fieldset>
+	</form>
+	</div>
+</div>
+<footer>
+	<p>JavaScript &amp; jQuery</p>
+</footer>
+</div>
+</body>
+</html>

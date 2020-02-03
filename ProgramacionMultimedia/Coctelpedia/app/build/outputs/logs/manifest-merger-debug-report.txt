@@ -92,28 +92,32 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\urkourbieta\.g
 		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.deagle50.coctelpedia.activities.JGQuienMasProbable
-ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:12:9-18:25
+activity#com.deagle50.coctelpedia.activities.GameChallenge
+ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:12:9-71
+	android:name
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:12:19-59
+activity#com.deagle50.coctelpedia.activities.GameWhoWhould
+ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:13:9-18:54
 	android:screenOrientation
 		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:17:13-49
 	android:label
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:15:13-72
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:16:13-72
 	android:configChanges
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:14:13-81
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:15:13-81
 	android:theme
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:16:13-51
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:18:13-51
 	android:name
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:13:13-82
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:14:13-53
 activity#com.deagle50.coctelpedia.activities.MainActivity
 ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:19:9-29:20
 	android:screenOrientation
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:23:13-49
 	android:label
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:22:13-45
 	android:configChanges
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:23:13-43
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:21:13-43
 	android:name
-		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:20:13-76
+		ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:20:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\Urko Urbieta\Visual Studio\ProgramacionMultimedia\Coctelpedia\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN

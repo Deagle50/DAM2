@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo II - Easing</title>
+	<link href="_css/site.css" rel="stylesheet">
+	<style>
+	#animate {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		padding: 20px;
+	}
+	#animate p {
+		color: black;	
+	}
+	</style>
+	<script src="_js/jquery.min.js"></script>
+	<script src="_js/jquery-ui.min.js"></script>
+	<script>
+	$(document).ready(function() {
+	 $('#animate').click(function() {
+	 	$this = $(this);
+	 	if ($this.data('click') === 'even') {
+	 		$this.data('click','odd')
+	 		$this.animate({
+			 width: '200px',
+			 height: '200px' 
+	     	},1000,
+		 	'easeInOutSine'); // fin de animate
+	 	} else {
+	 		$this.data('click','even');
+	 		$this.animate({
+				width: '400px',
+				height: '400px' 
+	     	},1000,
+		 	'easeInBounce'); // fin de animate
+	 	}
+	 }); // fin de click
+	}); // fin de ready
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+		    JAVASCRIPT y jQUERY
+		</header>
+		<div class="content">
+			<div class="main">
+				<h1>Ejemplo II- Easing</h1>
+				<div id="animate"><p>Click sobre mí!</p></div>
+			</div>
+		</div>
+		<footer>
+	    	<p>JavaScript y jQuery</p>
+	  	</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Utilizacion de Multiples Callbacks</title>
+		<link href="_css/site.css" rel="stylesheet">
+		<style>
+			#figure {
+			  position: relative;
+			  width: 400px;
+			  margin: 0;
+			  height: 300px;
+			  overflow: hidden;
+			}
+			
+			#foto {
+				position: absolute;	
+				left: -400px;
+			}
+			
+			#caption {
+				position: absolute;
+				width: 	340px;
+				background-color: black;
+				bottom: 10px;
+				left: 24px;
+				padding: 5px;
+				border: 1px solid white;
+				display: none;
+			  color: white;
+			}
+		</style>
+		<script src="_js/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+			$('#foto').animate(
+			   {
+			      left: '+=400px',
+			   },
+			   1000, 
+			   function() { // primera llamada a la funcion callback
+			      $('#caption').fadeIn(1000, 
+			       function() { // segunda llamada a la funcion callback 
+			          $('#foto, #caption').fadeOut(1000);
+			       } // fin del segundo callback
+			    ); // fin de fadeIn
+			   } // fin de la primera llamada a la funcion callback
+			); // fin de animate
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+			    JAVASCRIPT y jQUERY
+			</header>
+			<div class="content">
+				<div class="main">
+					<h1>Utilizacion de Multiple Callbacks con animate()</h1>
+					<div id="figure"><img src="_images/tximeleta.jpg" width="400" 
+					     height="300" alt="tximeleta" id="foto">
+					     <p id="caption">tximeleta!</p></div>
+				</div>
+			</div>
+			<footer>
+			    <p>JavaScript y jQuery</p>
+			</footer>
+		</div>
+	</body>
+</html>
