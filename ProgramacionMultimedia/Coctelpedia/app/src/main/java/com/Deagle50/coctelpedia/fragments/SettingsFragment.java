@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -19,31 +18,31 @@ import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.themeHelper;
 
+import java.util.Objects;
+
 import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
-    private Button buttonES, buttonEU, buttonEN;
-    private Button buttonGmail1, buttonGmail2;
-    private Button buttonDark, buttonLight;
-    private TextView tvBug, tvNTrans, tvTransIssue, tvEmail;
-    private TextView tvCredits;
-    private View root;
+
+    private TextView tvBug;
+    private TextView tvNTrans;
+    private TextView tvTransIssue;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        root = inflater.inflate(R.layout.fragment_settings, container, false);
+        View root = inflater.inflate(R.layout.fragment_settings, container, false);
 
-        buttonGmail1 = root.findViewById(R.id.buttonGmail1);
-        buttonGmail2 = root.findViewById(R.id.buttonGmail2);
-        tvEmail = root.findViewById(R.id.textViewCorreo);
+        Button buttonGmail1 = root.findViewById(R.id.buttonGmail1);
+        Button buttonGmail2 = root.findViewById(R.id.buttonGmail2);
+        TextView tvEmail = root.findViewById(R.id.textViewCorreo);
         buttonGmail1.setOnClickListener(this);
         buttonGmail2.setOnClickListener(this);
         tvEmail.setOnClickListener(this);
 
-        buttonES = root.findViewById(R.id.buttonES);
-        buttonEU = root.findViewById(R.id.buttonEU);
-        buttonEN = root.findViewById(R.id.buttonEN);
+        Button buttonES = root.findViewById(R.id.buttonES);
+        Button buttonEU = root.findViewById(R.id.buttonEU);
+        Button buttonEN = root.findViewById(R.id.buttonEN);
         buttonES.setOnClickListener(this);
         buttonEU.setOnClickListener(this);
         buttonEN.setOnClickListener(this);
@@ -55,12 +54,12 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         tvTransIssue.setOnClickListener(this);
         tvNTrans.setOnClickListener(this);
 
-        buttonDark = root.findViewById(R.id.buttonDarkTheme);
-        buttonLight = root.findViewById(R.id.buttonLightTheme);
+        Button buttonDark = root.findViewById(R.id.buttonDarkTheme);
+        Button buttonLight = root.findViewById(R.id.buttonLightTheme);
         buttonDark.setOnClickListener(this);
         buttonLight.setOnClickListener(this);
 
-        tvCredits = root.findViewById(R.id.textViewCredits);
+        TextView tvCredits = root.findViewById(R.id.textViewCredits);
         tvCredits.setOnClickListener(this);
 
         return root;
@@ -68,33 +67,33 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        String asunto="";
+        String subject="";
         switch(v.getId()){
-            //IDIOMAS
+            //LANGUAGES
             case R.id.buttonES:{
-                cambiarIdioma("es");
+                changeLanguage("es");
                 break;
             }
             case R.id.buttonEN:{
-                cambiarIdioma("en");
+                changeLanguage("en");
                 break;
             }
             case R.id.buttonEU:{
-                cambiarIdioma("eu");
+                changeLanguage("eu");
                 break;
             }
             //FEEDBACK
             case R.id.textViewBugs:
             {
-                asunto = getString(R.string.title_bugs);
+                subject = getString(R.string.title_bugs);
                 break;
             }
             case R.id.textViewNewTranslation:{
-                asunto = getString(R.string.title_new_translation);
+                subject = getString(R.string.title_new_translation);
                 break;
             }
             case R.id.textViewTranslationIssue:{
-                asunto = getString(R.string.title_translation_issue);
+                subject = getString(R.string.title_translation_issue);
                 break;
             }
             //CONTACTO
@@ -115,16 +114,16 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
             }
             //CAMBIAR TEMA
             case R.id.buttonLightTheme:{
-                cambiarTema("claro");
+                changeTheme("claro");
                 break;
             }
             case R.id.buttonDarkTheme:{
-                cambiarTema("oscuro");
+                changeTheme("oscuro");
                 break;
             }
             case R.id.textViewCredits:{
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                        getContext());
+                        Objects.requireNonNull(getContext()));
 
                 // set title
                 alertDialogBuilder.setTitle(R.string.title_credits);
@@ -149,13 +148,13 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
             break;
 
         }
-        //Enviar email
+        //Send email
         if(v== tvBug||v==tvNTrans||v==tvTransIssue)
         {
             Intent intent = new Intent(Intent.ACTION_SEND);
             String[] emails_in_to={"urkourbieta@gmail.com"};
             intent.putExtra(Intent.EXTRA_EMAIL, emails_in_to );
-            intent.putExtra(Intent.EXTRA_SUBJECT,asunto);
+            intent.putExtra(Intent.EXTRA_SUBJECT,subject);
             intent.putExtra(Intent.EXTRA_TEXT, "");
             intent.setType("text/html");
             intent.setPackage("com.google.android.gm");
@@ -163,8 +162,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    private void cambiarIdioma(String lg) {
-        languageHelper lh = new languageHelper(getContext());
+    private void changeLanguage(String lg) {
+        languageHelper lh = new languageHelper(Objects.requireNonNull(getContext()));
         if(!lh.getLanguage(getContext()).equals(lg))
         {
             lh.setLocale(instance, lg);
@@ -194,17 +193,13 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
             //Fin ñapa suprema
 
         }
-        else
-        {
-            Toast.makeText(instance,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
-        }
 
 
     }
 
-    private void cambiarTema(String theme)
+    private void changeTheme(String theme)
     {
-        themeHelper th = new themeHelper(getContext());
+        themeHelper th = new themeHelper(Objects.requireNonNull(getContext()));
         th.changeTheme(theme);
         th.saveTheme();
     }

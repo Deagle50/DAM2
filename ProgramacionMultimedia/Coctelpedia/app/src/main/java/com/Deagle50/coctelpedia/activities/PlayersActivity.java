@@ -3,29 +3,30 @@ package com.deagle50.coctelpedia.activities;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
+import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class PlayersActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener{
     private String player ="";
-    private ArrayList<String> players = new ArrayList<String>();
+    private ArrayList<String> players = new ArrayList<>();
     private FloatingActionButton btnAdd,btnDelete;
     private ListView list;
     private AlertDialog.Builder builder;
@@ -33,6 +34,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
     private int selectedPlayerID =-1;
     private JugadoresOpenHelper jugadoresOpenHelper;
     private EditText input;
+    private TextView txtCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,8 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
         btnAdd.setOnClickListener(this);
         btnDelete = findViewById(R.id.buttonDelete);
         btnDelete.setOnClickListener(this);
+
+        txtCount = findViewById(R.id.textViewCount);
 
         list = findViewById(R.id.listViewJugadores);
         list.setOnItemClickListener(this);
@@ -61,6 +65,10 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
         {
             requestPlayer();
         }
+
+        //Load language
+        languageHelper languageHelper = new com.deagle50.coctelpedia.helpers.languageHelper(this);
+        languageHelper.loadSavedLanguage(this);
     }
 
     @Override
@@ -137,9 +145,6 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
         {
             ((ViewGroup) input.getParent()).removeView(input);
         }
-        //Try to show soft keyboard on builder show
-        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.showSoftInput(input, InputMethodManager.SHOW_IMPLICIT);
         builder.show();
     }
 
@@ -151,10 +156,9 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
             while (cursorPlayers.moveToNext()) {
                 players.add(cursorPlayers.getString(1));
             }
-            list.setAdapter(new ArrayAdapter<String>(this, R.layout.item_jugador, R.id.textViewNombre, players));
+            list.setAdapter(new ArrayAdapter<>(this, R.layout.item_jugador, R.id.textViewNombre, players));
         }
-        else{
-        }
+        txtCount.setText(String.format(Locale.getDefault(), "%d", players.size()));
     }
 
     public void deletePlayer() {

@@ -783,15 +783,15 @@ public final class R {
         public static final int text2 = 0x7f090101;
         public static final int textSpacerNoButtons = 0x7f090102;
         public static final int textSpacerNoTitle = 0x7f090103;
-        public static final int time = 0x7f090127;
-        public static final int title = 0x7f090128;
-        public static final int titleDividerNoCustom = 0x7f090129;
-        public static final int title_template = 0x7f09012a;
-        public static final int topPanel = 0x7f09012c;
-        public static final int unchecked = 0x7f090135;
-        public static final int uniform = 0x7f090136;
-        public static final int up = 0x7f090138;
-        public static final int wrap_content = 0x7f09013e;
+        public static final int time = 0x7f090128;
+        public static final int title = 0x7f090129;
+        public static final int titleDividerNoCustom = 0x7f09012a;
+        public static final int title_template = 0x7f09012b;
+        public static final int topPanel = 0x7f09012d;
+        public static final int unchecked = 0x7f090136;
+        public static final int uniform = 0x7f090137;
+        public static final int up = 0x7f090139;
+        public static final int wrap_content = 0x7f09013f;
     }
     public static final class integer {
         private integer() {}

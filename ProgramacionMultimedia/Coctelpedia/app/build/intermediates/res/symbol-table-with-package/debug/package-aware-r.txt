@@ -1386,6 +1386,7 @@ id textViewCasa2
 id textViewCoctel
 id textViewContact
 id textViewCorreo
+id textViewCount
 id textViewCredits
 id textViewDescripcion
 id textViewDescripcion2
@@ -1599,6 +1600,7 @@ string text_theme_changed_dark
 string text_theme_changed_light
 string theme_dark
 string theme_light
+string title_0
 string title_activity_jgquien_mas_probable
 string title_add_player
 string title_all_drinks

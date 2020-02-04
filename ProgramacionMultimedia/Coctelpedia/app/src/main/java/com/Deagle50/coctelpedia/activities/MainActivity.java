@@ -1,5 +1,6 @@
 package com.deagle50.coctelpedia.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -67,14 +68,16 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
-        //Load language
-        languageHelper = new languageHelper(MainActivity.this);
-        languageHelper.loadSavedLanguage(this);
+
 
 
         //Load theme
         themeHelper = new themeHelper(MainActivity.this, this);
         themeHelper.loadSavedTheme();
+
+        //Load language
+        languageHelper = new languageHelper(MainActivity.this);
+        languageHelper.loadSavedLanguage(this);
 
 
         //Change action bar color
@@ -92,17 +95,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_Share:
-            {
-                Intent i = new Intent(
-                        android.content.Intent.ACTION_SEND);
-                i.setType("text/plain");
-                i.putExtra(
-                        android.content.Intent.EXTRA_TEXT, "Descarga la aplicacion desde google.es");//Take from string
-                startActivity(Intent.createChooser(i, "Title of your share dialog"));
-                break;
-            }
+        if (item.getItemId() == R.id.menu_Share) {
+            Intent i = new Intent(
+                    Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(
+                    Intent.EXTRA_TEXT, "Descarga la aplicacion desde google.es");//Take from string
+            startActivity(Intent.createChooser(i, "Title of your share dialog"));
         }
         return super.onOptionsItemSelected(item);
 
@@ -123,13 +122,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void borrarPreferencias() {
-        SharedPreferences shpl = this.getSharedPreferences(this.getResources().getString(R.string.preferences_language_file), this.MODE_PRIVATE);
-        SharedPreferences shpt = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), this.MODE_PRIVATE);
+        SharedPreferences shpl = this.getSharedPreferences(this.getResources().getString(R.string.preferences_language_file), MODE_PRIVATE);
+        SharedPreferences shpt = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), MODE_PRIVATE);
         SharedPreferences.Editor shple = shpl.edit();
         SharedPreferences.Editor shpte = shpt.edit();
         shpte.clear();
         shple.clear();
-        shpte.commit();
-        shple.commit();
+        shpte.apply();
+        shple.apply();
     }
 }

@@ -26,23 +26,18 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     //Verdad o reto
     //
 
-    Button btnGWhoWould;
-    Button btnGChallenge;
-    Button btnPlayers;
-    public View root;
-    JugadoresOpenHelper jugadoresOpenHelper;
-    Cursor cursorPlayers;
+    private Cursor cursorPlayers;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        root = inflater.inflate(R.layout.fragment_games, container, false);
+        View root = inflater.inflate(R.layout.fragment_games, container, false);
 
-        btnGWhoWould = root.findViewById(R.id.buttonGameWhoWould);
+        Button btnGWhoWould = root.findViewById(R.id.buttonGameWhoWould);
         btnGWhoWould.setOnClickListener(this);
-        btnGChallenge = root.findViewById(R.id.buttonGameChallenge);
+        Button btnGChallenge = root.findViewById(R.id.buttonGameChallenge);
         btnGChallenge.setOnClickListener(this);
-        btnPlayers = root.findViewById(R.id.buttonPlayers);
+        Button btnPlayers = root.findViewById(R.id.buttonPlayers);
         btnPlayers.setOnClickListener(this);
 
 
@@ -93,8 +88,8 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
 
     }
 
-    public void loadPlayers() {
-        jugadoresOpenHelper = new JugadoresOpenHelper(getContext(), "cursorPlayers", null, 1);
+    private void loadPlayers() {
+        JugadoresOpenHelper jugadoresOpenHelper = new JugadoresOpenHelper(getContext(), "cursorPlayers", null, 1);
         cursorPlayers = jugadoresOpenHelper.getPlayers();//Cursor cursorPlayers
 
         if(cursorPlayers != null) {

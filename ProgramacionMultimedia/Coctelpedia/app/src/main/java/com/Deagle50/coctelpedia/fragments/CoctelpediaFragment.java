@@ -1,8 +1,6 @@
 package com.deagle50.coctelpedia.fragments;
 
 import android.database.Cursor;
-import android.database.MatrixCursor;
-import android.database.MergeCursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
@@ -30,6 +27,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     private LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
     private CoctelsOpenHelper coctelsOpenHelper;
 
+    private int selectedItem;
     private String selection = "", orderBy="";
     private ArrayList<Coctel> coctels;
     private ArrayList<String> whereArguments;
@@ -38,6 +36,8 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     private View view;
 
     private Spinner spinnerType;
+
+    private String text;
 
     public CoctelpediaFragment(){
 
@@ -110,7 +110,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     }
 
     private void initializeAdapter(){
-        CoctelesAdapter adapter = new CoctelesAdapter(coctels);
+        com.deagle50.coctelpedia.fragments.CoctelsAdapter adapter = new com.deagle50.coctelpedia.fragments.CoctelsAdapter(coctels);
         recyclerView.setAdapter(adapter);
     }
 
@@ -179,27 +179,22 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     }
 
     private void initializeSpinnerType() {
-        SimpleCursorAdapter adapter;
-        String[] from = new String[]{"type"};
-        int[] to = new int[]{android.R.id.text1};
-
+        spinnerType = view.findViewById(R.id.spinnerDrinkType);
+        //Get the different types of drinks
         Cursor cursorTypes = coctelsOpenHelper.getTypes();
 
-        //Add "All" option to the spinner
-        MatrixCursor matrixCursor = new MatrixCursor(new String[] { "_id", "type"});
-        matrixCursor.addRow(new Object[] { "0", getString(R.string.title_all_drinks) });
+        //Add "All" field to the spinner, for that "all" field is added first to the ArrayList,
+        // and later each item of the cursor
+        ArrayList<String> spinnerArray = new ArrayList<>();
 
-        MergeCursor mergeCursor = new MergeCursor(new Cursor[] { matrixCursor, cursorTypes });
-
-        spinnerType = view.findViewById(R.id.spinnerDrinkType);
-        // Create an ArrayAdapter using the string array and a default spinner layout
-
-        adapter = new SimpleCursorAdapter(getContext(), android.R.layout.simple_spinner_item, mergeCursor, from, to,0);
+        spinnerArray.add(getString(R.string.title_all_drinks));
+        for(cursorTypes.moveToFirst(); !cursorTypes.isAfterLast(); cursorTypes.moveToNext()) {
+            spinnerArray.add(cursorTypes.getString(1));
+        }
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                getContext(), android.R.layout.simple_spinner_item, spinnerArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerType.setAdapter(adapter);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
+
         spinnerType.setAdapter(adapter);
 
 
@@ -207,6 +202,9 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
             {
+                text = spinnerType.getSelectedItem().toString();
+
+                selectedItem = position;
                 addSelection();
                 initializeData();
                 initializeAdapter();
@@ -218,12 +216,11 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
     }
 
-
-
     private void addSelection(){
         whereArguments = new ArrayList<>();
         String add="";
         String add2="";
+        String compare = getString(R.string.title_all_drinks);
 
         if(!cbVegetarian.isChecked() && cbVegan.isChecked() || cbVegetarian.isChecked() && cbVegan.isChecked())
         {
@@ -239,29 +236,26 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
         selection = add;
 
-        String selectedItem = spinnerType.getSelectedItem().toString();
-        if(selectedItem.equals(getString(R.string.title_all_drinks)))
+
+        if(text.equals(getString(R.string.title_all_drinks)))
         {
 
         }
-        else{
+            else
+        {
             if(selection.equals(""))
             {
                 add2="type=?";
-                whereArguments.add(selectedItem);
+                whereArguments.add(text);
                 selection=add2;
             }
             else
             {
                 add2="AND type=?";
-                whereArguments.add(selectedItem);
+                whereArguments.add(text);
                 selection+=add2;
             }
 
         }
-
-
     }
-
-
 }
