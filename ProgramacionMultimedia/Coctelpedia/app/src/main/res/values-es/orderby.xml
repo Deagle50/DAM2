@@ -1,0 +1,15 @@
+<resources>
+<string-array name="orderby">
+  <item >Por defecto</item>
+  <item >Nombre, a > z</item> 
+  <item >Nombre, z > a</item> 
+  <item >Precio en casa, de barato a caro</item> 
+  <item >Precio en casa, de caro a barato</item> 
+  <item >Precio en bar, de barato a caro</item> 
+  <item >Precio en bar, de caro a barato</item> 
+  <item >Tipo, a > z</item> 
+  <item >Tipo, z > a</item>
+  <item>Graduación, de baja a alta</item>
+  <item>Graduación, de alta a baja</item>
+</string-array>
+</resources>

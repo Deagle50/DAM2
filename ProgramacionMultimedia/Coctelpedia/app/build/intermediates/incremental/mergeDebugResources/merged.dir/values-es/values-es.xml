@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="orderby">
+  <item>Por defecto</item>
+  <item>Nombre, a > z</item> 
+  <item>Nombre, z > a</item> 
+  <item>Precio en casa, de barato a caro</item> 
+  <item>Precio en casa, de caro a barato</item> 
+  <item>Precio en bar, de barato a caro</item> 
+  <item>Precio en bar, de caro a barato</item> 
+  <item>Tipo, a > z</item> 
+  <item>Tipo, z > a</item>
+  <item>Graduación, de baja a alta</item>
+  <item>Graduación, de alta a baja</item>
+</string-array>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Ir a inicio"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Desplazarse hacia arriba"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Más opciones"</string>
@@ -41,6 +54,7 @@
     <string name="theme_dark">Oscuro</string>
     <string name="theme_light">Claro</string>
     <string name="title_add_player">Añadir jugador</string>
+    <string name="title_all_drinks">Todas</string>
     <string name="title_bugs">Bugs</string>
     <string name="title_close">Cerrar</string>
     <string name="title_contact">Contacto</string>

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class CoctelsOpenHelper extends SQLiteOpenHelper {
     private Context context;
-    private String crearTabla = "CREATE TABLE coctels(id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+    private String crearTabla = "CREATE TABLE coctels(_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                                                 "name TEXT," +
                                                 "url_photo TEXT," +
                                                 "graduation FLOAT," +
@@ -25,9 +25,9 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
                                                 "vegan BOOLEAN," +
                                                 "type TEXT);";
     private String insertCoctels = "INSERT INTO coctels(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-                                    "VALUES ('Coctel nuevo', " + R.drawable.coctel+", 37, 5, 3, 'done like this', 'this description', 1, 0, 'asdf'),"+
-                                            "('Coctel nuevo', "+R.drawable.buttons+", 37, 5, 3, 'done like this', 'this description', 0, 0, 'beer')," +
-                                            "('Coctel nuevo', 1, 37, 5, 3, 'done like this', 'this description', 1, 1, 'beer')";
+                                    "VALUES ('Coctel nuevo a', " + R.drawable.coctel + ", 37, 4, 6, 'done like this', 'this description', 1, 0, 'asdf'),"+
+                                            "('Coctel nuevo b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'beer')," +
+                                            "('Coctel nuevo ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'beer')";
 
     public CoctelsOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -55,6 +55,16 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
         args = whereArguments.toArray(args);
         try {
             return db.query("coctels", null, selection, args, null, null, orderBy);
+        }catch (Exception ex) {
+            return null;
+        }
+    }
+
+    public Cursor getTypes(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String[] type = new String[]{"_id", "type"};
+        try {
+            return db.query("coctels", type, null, null, "type", null, null);
         }catch (Exception ex) {
             return null;
         }

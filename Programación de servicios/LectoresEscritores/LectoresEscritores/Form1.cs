@@ -15,9 +15,27 @@ namespace LectoresEscritores
     {
         
         Pizarra pizarra = new Pizarra(10);
+        private int tam=10;
+        Escritor escritor;
+
         public Form1()
         {
-            InitializeComponent();
+            escritor = new Escritor(pizarra);
+            escritor.Start();
+            LlenarLista();
+        }
+
+        private void LlenarLista()
+        {
+            for (int i = 0; i < tam; i++)
+            {
+
+            }
+        }
+
+        private void BtnEscribir_Click(object sender, EventArgs e)
+        {
+            escritor.hayDato(int.Parse(txtContenido.Text), int.Parse(txtPosicion.Text));
         }
     }
 }

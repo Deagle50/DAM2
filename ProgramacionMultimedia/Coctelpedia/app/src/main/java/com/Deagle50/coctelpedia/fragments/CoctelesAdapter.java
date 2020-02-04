@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.fragments;
+package com.deagle50.coctelpedia.fragments;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,7 +62,6 @@ public class CoctelesAdapter extends RecyclerView.Adapter<CoctelesAdapter.Coctel
         else{
             coctelViewHolder.imageViewCoctel.setImageResource(coctels.get(i).getUrlPhoto());
         }
-
         coctelViewHolder.tvType.setText(coctels.get(i).getType());
         }
 

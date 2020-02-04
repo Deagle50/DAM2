@@ -2,32 +2,15 @@ package com.deagle50.coctelpedia.helpers;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.core.content.ContextCompat;
-import androidx.core.graphics.drawable.DrawableCompat;
 
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.activities.MainActivity;
 
-import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
+import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 
 public class themeHelper extends AppCompatActivity {
 
@@ -117,11 +100,11 @@ public class themeHelper extends AppCompatActivity {
         //Cambiar color texto actionbar
 
 
-        instancia.recreate();
+        instance.recreate();
 
-        /*ActionBar ab = instancia.getSupportActionBar();
+        /*ActionBar ab = instance.getSupportActionBar();
         Spannable text = new SpannableString(ab.getTitle());
-        text.setSpan(new ForegroundColorSpan(instancia.getResources().getColor(R.color.fontWhite, null)), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+        text.setSpan(new ForegroundColorSpan(instance.getResources().getColor(R.color.fontWhite, null)), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         ab.setTitle(text);*/
     }
 
@@ -130,9 +113,9 @@ public class themeHelper extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         //Cambiar color texto actionbar
-        instancia.recreate();
+        instance.recreate();
 
-        /*ActionBar ab = instancia.getSupportActionBar();
+        /*ActionBar ab = instance.getSupportActionBar();
         Spannable text = new SpannableString(ab.getTitle());
         text.setSpan(new ForegroundColorSpan(Color.RED), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         ab.setTitle(text);*/

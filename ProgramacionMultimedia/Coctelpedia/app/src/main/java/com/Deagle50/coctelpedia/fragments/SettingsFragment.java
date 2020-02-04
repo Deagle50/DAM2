@@ -1,7 +1,6 @@
 package com.deagle50.coctelpedia.fragments;
 
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,12 +15,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import com.deagle50.coctelpedia.activities.MainActivity;
 import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.themeHelper;
 
-import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
+import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
     private Button buttonES, buttonEU, buttonEN;
@@ -169,8 +167,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         languageHelper lh = new languageHelper(getContext());
         if(!lh.getLanguage(getContext()).equals(lg))
         {
-            lh.setLocale(instancia, lg);
-            lh.saveLanguage(instancia, lg);
+            lh.setLocale(instance, lg);
+            lh.saveLanguage(instance, lg);
 
             /* ÑAPA SUPREMA
              *
@@ -198,7 +196,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         }
         else
         {
-            Toast.makeText(instancia,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
+            Toast.makeText(instance,R.string.text_language_already_changed, Toast.LENGTH_SHORT);
         }
 
 

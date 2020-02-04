@@ -1,0 +1,13 @@
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\bin\Debug\FormularioServidor.exe.config
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\bin\Debug\FormularioServidor.exe
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\bin\Debug\FormularioServidor.pdb
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\bin\Debug\ClasesSocket.dll
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\bin\Debug\ClasesSocket.pdb
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.csprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.Form1.resources
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.Properties.Resources.resources
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.csproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.csproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.csproj.CopyComplete
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.exe
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\FormularioServidor\obj\Debug\FormularioServidor.pdb

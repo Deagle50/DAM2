@@ -63,6 +63,7 @@
     <string name="title_type">Drink type</string>
     <string name="title_orderby">Order by</string>
     <string name="title_filters">Filters</string>
+    <string name="title_all_drinks">All</string>
 
 
 </resources>

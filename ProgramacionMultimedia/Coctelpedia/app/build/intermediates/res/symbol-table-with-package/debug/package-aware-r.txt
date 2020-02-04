@@ -41,6 +41,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array orderby
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1600,6 +1601,7 @@ string theme_dark
 string theme_light
 string title_activity_jgquien_mas_probable
 string title_add_player
+string title_all_drinks
 string title_bugs
 string title_close
 string title_coctelpedia

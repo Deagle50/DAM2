@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="orderby">
+  <item>Defektuz</item>
+  <item>Izena, a > z</item>
+  <item>Izena, z > a</item>
+  <item>Prezioa etxean, baxuenetik altuenera</item>
+  <item>Prezioa etxean, altuenetik baxuenera</item>
+  <item>Prezioa tabernetan, baxuenetik altuenera</item>
+  <item>Prezioa tabernetan, altuenetik baxuenera</item>
+  <item>Mota, a > z</item>
+  <item>Mota, z > a</item>
+  <item>Graduazioa, baxuenetik altuenera</item>
+  <item>Graduazioa, altuenetik baxuenera</item>
+</string-array>
     <string name="current_language">Aukeratutako hizkuntza</string>
     <string name="text_bugs">Arazorik aurkitzen baduzu, itzulpen akatsik badago edo aplikazioa zure hizkuntzara itzultzea nahi baduzu, behean esaiguzu.</string>
     <string name="text_credits">Argazkiak: hartuta flaticon-etik, Freepik, srip eta Kiranshastry erabiltzaileak eginda</string>
@@ -10,6 +23,7 @@
     <string name="theme_dark">Iluna</string>
     <string name="theme_light">Argia</string>
     <string name="title_add_player">Jokalaria sartu</string>
+    <string name="title_all_drinks">Guztiak</string>
     <string name="title_bugs">Arazoa</string>
     <string name="title_close">Itxi</string>
     <string name="title_contact">Harremanetan jartzeko</string>

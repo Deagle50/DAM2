@@ -2,22 +2,15 @@ package com.deagle50.coctelpedia.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.helpers.themeHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -29,11 +22,12 @@ import androidx.navigation.ui.NavigationUI;
 * TO DO:
 *
 *Para aprobar:
-   *Tabla de cocteles
+
 * Extras
     * Cargar imagen nueva en modo oscuro
     * Añadir juegos
     * Gesto para cambiar entre fragments pantalla principal
+    * Juego coctel aleatorio
 *
 *
 * DONE:
@@ -43,6 +37,7 @@ import androidx.navigation.ui.NavigationUI;
     * Poner créditos
     * Insert nombres
     * Delete de nombres
+    * Tabla de cocteles
 *
 * Credits:
 * flags: Freepik
@@ -50,15 +45,16 @@ import androidx.navigation.ui.NavigationUI;
 * */
 
 public class MainActivity extends AppCompatActivity {
-    public static MainActivity instancia;
-    languageHelper lh;
+    public static MainActivity instance;
+    private languageHelper languageHelper;
+    private themeHelper themeHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        instancia = this;//ÑAPA
+        instance = this; //ÑAPA
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -71,14 +67,14 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
-        //Cargar idioma
-        lh = new languageHelper(MainActivity.this);
-        lh.loadSavedLanguage(this);
+        //Load language
+        languageHelper = new languageHelper(MainActivity.this);
+        languageHelper.loadSavedLanguage(this);
 
 
-        //Cargar tema
-        themeHelper th = new themeHelper(MainActivity.this, this);
-        th.loadSavedTheme();
+        //Load theme
+        themeHelper = new themeHelper(MainActivity.this, this);
+        themeHelper.loadSavedTheme();
 
 
         //Change action bar color
@@ -88,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.share_menu, menu);
@@ -96,33 +91,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
-
             case R.id.menu_Share:
-
+            {
                 Intent i = new Intent(
-
                         android.content.Intent.ACTION_SEND);
-
                 i.setType("text/plain");
-
                 i.putExtra(
-
-                        android.content.Intent.EXTRA_TEXT, "Descarga la aplicacion desde google.es");
-
-                startActivity(Intent.createChooser(
-
-                        i,
-
-                        "Title of your share dialog"));
-
+                        android.content.Intent.EXTRA_TEXT, "Descarga la aplicacion desde google.es");//Take from string
+                startActivity(Intent.createChooser(i, "Title of your share dialog"));
                 break;
-
+            }
         }
-
         return super.onOptionsItemSelected(item);
 
     }
@@ -130,13 +111,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        lh.loadSavedLanguage(this);
+        languageHelper.loadSavedLanguage(this);
+        themeHelper.loadSavedTheme();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        lh.loadSavedLanguage(this);
+        languageHelper.loadSavedLanguage(this);
+        themeHelper.loadSavedTheme();
     }
 
     private void borrarPreferencias() {

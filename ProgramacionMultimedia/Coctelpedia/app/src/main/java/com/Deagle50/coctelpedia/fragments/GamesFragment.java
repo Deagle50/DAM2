@@ -18,7 +18,7 @@ import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
 
 import java.util.ArrayList;
 
-import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
+import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 
 public class GamesFragment extends Fragment implements View.OnClickListener{
     //Quién es más probable que...
@@ -37,6 +37,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                              ViewGroup container, Bundle savedInstanceState) {
 
         root = inflater.inflate(R.layout.fragment_games, container, false);
+
         btnGWhoWould = root.findViewById(R.id.buttonGameWhoWould);
         btnGWhoWould.setOnClickListener(this);
         btnGChallenge = root.findViewById(R.id.buttonGameChallenge);
@@ -44,7 +45,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
         btnPlayers = root.findViewById(R.id.buttonPlayers);
         btnPlayers.setOnClickListener(this);
 
-        jugadoresOpenHelper = new JugadoresOpenHelper(getContext(), "cursorPlayers", null, 1);
+
         loadPlayers();
         return root;
     }
@@ -62,7 +63,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 {
                     if(cursorPlayers.getCount()==0)
                     {
-                        Toast.makeText(instancia, "error", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(instance, "error", Toast.LENGTH_SHORT).show();
 
                     }
                     else{
@@ -93,6 +94,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     }
 
     public void loadPlayers() {
+        jugadoresOpenHelper = new JugadoresOpenHelper(getContext(), "cursorPlayers", null, 1);
         cursorPlayers = jugadoresOpenHelper.getPlayers();//Cursor cursorPlayers
 
         if(cursorPlayers != null) {

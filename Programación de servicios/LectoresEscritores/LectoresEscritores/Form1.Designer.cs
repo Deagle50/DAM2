@@ -33,11 +33,11 @@
             this.lblContenido = new System.Windows.Forms.Label();
             this.txtContenido = new System.Windows.Forms.TextBox();
             this.lvDatos = new System.Windows.Forms.ListView();
+            this.chPosicion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chContenido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnEscribir = new System.Windows.Forms.Button();
             this.btnParar = new System.Windows.Forms.Button();
             this.btnLeer = new System.Windows.Forms.Button();
-            this.chPosicion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chContenido = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lblPosicion
@@ -84,6 +84,14 @@
             this.lvDatos.TabIndex = 4;
             this.lvDatos.UseCompatibleStateImageBehavior = false;
             // 
+            // chPosicion
+            // 
+            this.chPosicion.Text = "Posición";
+            // 
+            // chContenido
+            // 
+            this.chContenido.Text = "chContenido";
+            // 
             // btnEscribir
             // 
             this.btnEscribir.Location = new System.Drawing.Point(15, 102);
@@ -92,6 +100,7 @@
             this.btnEscribir.TabIndex = 5;
             this.btnEscribir.Text = "Escribir dato";
             this.btnEscribir.UseVisualStyleBackColor = true;
+            this.btnEscribir.Click += new System.EventHandler(this.BtnEscribir_Click);
             // 
             // btnParar
             // 
@@ -110,14 +119,6 @@
             this.btnLeer.TabIndex = 7;
             this.btnLeer.Text = "Leer";
             this.btnLeer.UseVisualStyleBackColor = true;
-            // 
-            // chPosicion
-            // 
-            this.chPosicion.Text = "Posición";
-            // 
-            // chContenido
-            // 
-            this.chContenido.Text = "chContenido";
             // 
             // Form1
             // 

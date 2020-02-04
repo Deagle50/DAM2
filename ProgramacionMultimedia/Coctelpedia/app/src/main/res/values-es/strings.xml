@@ -45,4 +45,5 @@
     <string name="title_type">Tipo de bebida</string>
     <string name="title_orderby">Ordenar por</string>
     <string name="title_filters">Filtros</string>
+    <string name="title_all_drinks">Todas</string>
 </resources>

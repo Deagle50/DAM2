@@ -4,15 +4,12 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
 import com.deagle50.coctelpedia.R;
 
 import java.util.Locale;
-
-import static com.deagle50.coctelpedia.activities.MainActivity.instancia;
 
 public class languageHelper {
     private Context context;
