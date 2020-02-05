@@ -12,21 +12,21 @@ import com.deagle50.coctelpedia.R;
 
 import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 
-public class themeHelper extends AppCompatActivity {
+public class ThemeHelper extends AppCompatActivity {
 
     private Configuration configuration;
     private Context context;
     private Activity activity;
     private boolean savedThemeDark;
 
-    public themeHelper(Context context)
+    public ThemeHelper(Context context)
     {
         this.context = context;
         SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_theme_file), Context.MODE_PRIVATE);
         savedThemeDark = shp.getBoolean(context.getResources().getString(R.string.preferences_isdark), false);
     }
 
-    public themeHelper(Context context, Activity activity)
+    public ThemeHelper(Context context, Activity activity)
     {
         this.activity = activity;
         this.context = context;

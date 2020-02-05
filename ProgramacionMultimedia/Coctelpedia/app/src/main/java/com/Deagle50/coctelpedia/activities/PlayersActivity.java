@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
-import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -67,7 +66,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
         }
 
         //Load language
-        languageHelper languageHelper = new com.deagle50.coctelpedia.helpers.languageHelper(this);
+        com.deagle50.coctelpedia.helpers.LanguageHelper languageHelper = new com.deagle50.coctelpedia.helpers.LanguageHelper(this);
         languageHelper.loadSavedLanguage(this);
     }
 

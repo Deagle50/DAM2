@@ -2,7 +2,6 @@ package com.deagle50.coctelpedia.fragments;
 
 import android.database.Cursor;
 import android.os.Bundle;
-import android.preference.TwoStatePreference;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,13 +14,12 @@ import androidx.fragment.app.Fragment;
 
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.helpers.themeHelper;
 import com.deagle50.coctelpedia.helpers.CoctelsOpenHelper;
 
 import java.util.Objects;
 
 public class RandomDrinkFragment extends Fragment {
-    private themeHelper themeHelper;
+    private com.deagle50.coctelpedia.helpers.ThemeHelper themeHelper;
     private ConstraintLayout constraintLayout;
     private View root;
 
@@ -43,7 +41,7 @@ public class RandomDrinkFragment extends Fragment {
     private void changeBackgroundColor() {
         constraintLayout = root.findViewById(R.id.cvBackgroundLayout);
 
-        themeHelper = new themeHelper(Objects.requireNonNull(getContext()));
+        themeHelper = new com.deagle50.coctelpedia.helpers.ThemeHelper(Objects.requireNonNull(getContext()));
         if(themeHelper.isDark()){
             constraintLayout.setBackgroundColor(getResources().getColor(R.color.backgroundGray, null));
         }

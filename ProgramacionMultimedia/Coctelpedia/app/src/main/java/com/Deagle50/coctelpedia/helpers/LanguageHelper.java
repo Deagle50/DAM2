@@ -11,12 +11,12 @@ import com.deagle50.coctelpedia.R;
 
 import java.util.Locale;
 
-public class languageHelper {
+public class LanguageHelper {
     private Context context;
     private String savedLanguage;
     private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
 
-    public languageHelper(Context context) {
+    public LanguageHelper(Context context) {
         this.context = context;
         SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
         savedLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), "es");

@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.helpers.themeHelper;
 
 import java.util.ArrayList;
 
@@ -75,7 +74,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         }
 
         //Set background color dark gray if it's on dark theme
-        themeHelper themeHelper = new themeHelper(context);
+        com.deagle50.coctelpedia.helpers.ThemeHelper themeHelper = new com.deagle50.coctelpedia.helpers.ThemeHelper(context);
         if(themeHelper.isDark())
             coctelViewHolder.cv.setBackgroundColor(instance.getResources().getColor(R.color.backgroundGray, null));
     }

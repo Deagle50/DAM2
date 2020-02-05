@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.helpers.themeHelper;
-import com.deagle50.coctelpedia.fragments.RandomDrinkFragment;
 
 import java.util.Objects;
 
@@ -37,7 +35,7 @@ public class GifFragment extends Fragment {
     private void changeBackgroundColor() {
         ConstraintLayout constraintLayout = root.findViewById(R.id.cvGifBackground);
 
-        themeHelper themeHelper = new themeHelper(Objects.requireNonNull(getContext()));
+        com.deagle50.coctelpedia.helpers.ThemeHelper themeHelper = new com.deagle50.coctelpedia.helpers.ThemeHelper(Objects.requireNonNull(getContext()));
         if(themeHelper.isDark()){
             constraintLayout.setBackgroundColor(getResources().getColor(R.color.backgroundGray, null));
         }

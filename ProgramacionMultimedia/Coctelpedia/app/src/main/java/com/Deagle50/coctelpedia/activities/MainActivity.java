@@ -1,6 +1,5 @@
 package com.deagle50.coctelpedia.activities;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,8 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.helpers.languageHelper;
-import com.deagle50.coctelpedia.helpers.themeHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,8 +44,8 @@ import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
     public static MainActivity instance;
-    private languageHelper languageHelper;
-    private themeHelper themeHelper;
+    private com.deagle50.coctelpedia.helpers.LanguageHelper languageHelper;
+    private com.deagle50.coctelpedia.helpers.ThemeHelper themeHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Load theme
-        themeHelper = new themeHelper(MainActivity.this, this);
+        themeHelper = new com.deagle50.coctelpedia.helpers.ThemeHelper(MainActivity.this, this);
         themeHelper.loadSavedTheme();
 
         //Load language
-        languageHelper = new languageHelper(MainActivity.this);
+        languageHelper = new com.deagle50.coctelpedia.helpers.LanguageHelper(MainActivity.this);
         languageHelper.loadSavedLanguage(this);
 
 

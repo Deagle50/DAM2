@@ -14,9 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.helpers.themeHelper;
 
 import java.util.Objects;
 
@@ -163,7 +161,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     }
 
     private void changeLanguage(String lg) {
-        languageHelper lh = new languageHelper(Objects.requireNonNull(getContext()));
+        com.deagle50.coctelpedia.helpers.LanguageHelper lh = new com.deagle50.coctelpedia.helpers.LanguageHelper(Objects.requireNonNull(getContext()));
         if(!lh.getLanguage(getContext()).equals(lg))
         {
             lh.setLocale(instance, lg);
@@ -177,7 +175,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
              *
              */
 
-            themeHelper th = new themeHelper(getContext());
+            com.deagle50.coctelpedia.helpers.ThemeHelper th = new com.deagle50.coctelpedia.helpers.ThemeHelper(getContext());
             if(th.isDark()) {
                 th.changeTheme("claro");
                 th.changeTheme("oscuro");
@@ -199,7 +197,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
     private void changeTheme(String theme)
     {
-        themeHelper th = new themeHelper(Objects.requireNonNull(getContext()));
+        com.deagle50.coctelpedia.helpers.ThemeHelper th = new com.deagle50.coctelpedia.helpers.ThemeHelper(Objects.requireNonNull(getContext()));
         th.changeTheme(theme);
         th.saveTheme();
     }
