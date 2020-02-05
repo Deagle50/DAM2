@@ -19,7 +19,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageViewCoctel"
+                android:id="@+id/imageViewCoctel2"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="16dp"
@@ -37,12 +37,12 @@
                 android:text="@string/example_coctel_name"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/imageViewCoctel"
-                app:layout_constraintTop_toTopOf="@+id/imageViewCoctel" />
+                app:layout_constraintStart_toEndOf="@+id/imageViewCoctel2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewCoctel2" />
 
             <TextView
                 android:id="@+id/textViewDescripcion"
-                android:layout_width="359dp"
+                android:layout_width="379dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
@@ -71,12 +71,12 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/title_usual_price"
                 android:textSize="14sp"
-                app:layout_constraintStart_toEndOf="@+id/imageViewCoctel"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCoctel2"
                 app:layout_constraintTop_toBottomOf="@+id/textViewCoctel" />
 
             <TextView
                 android:id="@+id/textViewElaboracion"
-                android:layout_width="359dp"
+                android:layout_width="379dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
@@ -113,23 +113,21 @@
                 android:id="@+id/textViewElaboracion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="@string/title_making"
                 android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewElaboracion"
                 app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
 
             <TextView
                 android:id="@+id/textViewDescripcion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="@string/title_description"
                 android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageViewCoctel" />
+                app:layout_constraintStart_toStartOf="@+id/textViewDescripcion"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewCoctel2" />
 
             <CheckBox
                 android:id="@+id/checkBoxVegetariano"
@@ -160,7 +158,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="@string/usual_price_home"
-                app:layout_constraintStart_toEndOf="@+id/imageViewCoctel"
+                app:layout_constraintStart_toEndOf="@+id/imageViewCoctel2"
                 app:layout_constraintTop_toBottomOf="@+id/textViewPrecio" />
 
             <TextView
@@ -188,7 +186,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="TextView"
+                android:text="@string/example_type"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewPrecio"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textViewPrecio" />

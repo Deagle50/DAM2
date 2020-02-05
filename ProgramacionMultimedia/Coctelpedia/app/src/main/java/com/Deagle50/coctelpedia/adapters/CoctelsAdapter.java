@@ -1,8 +1,6 @@
-package com.deagle50.coctelpedia.fragments;
+package com.Deagle50.coctelpedia.adapters;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,14 +15,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.R;
-import com.deagle50.coctelpedia.helpers.languageHelper;
 import com.deagle50.coctelpedia.helpers.themeHelper;
 
 import java.util.ArrayList;
 
 import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 
-public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedia.fragments.CoctelsAdapter.CoctelViewHolder>{
+public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelViewHolder>{
     private ArrayList<Coctel> coctels;
     Context context;
 
@@ -55,6 +52,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedi
         coctelViewHolder.tvHome.setText(coctels.get(i).getPriceH().toString()+"€");
         coctelViewHolder.tvBar.setText(coctels.get(i).getPriceB().toString()+"€");
         coctelViewHolder.tvGraduation.setText(coctels.get(i).getGraduation().toString()+" º");
+        coctelViewHolder.tvType.setText(coctels.get(i).getType());
 
         if(coctels.get(i).isVegan())
         {
@@ -75,8 +73,8 @@ public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedi
         else{
             coctelViewHolder.imageViewCoctel.setImageResource(coctels.get(i).getUrlPhoto());
         }
-        coctelViewHolder.tvType.setText(coctels.get(i).getType());
 
+        //Set background color dark gray if it's on dark theme
         themeHelper themeHelper = new themeHelper(context);
         if(themeHelper.isDark())
             coctelViewHolder.cv.setBackgroundColor(instance.getResources().getColor(R.color.backgroundGray, null));
@@ -99,7 +97,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedi
         CoctelViewHolder(View itemView) {
             super(itemView);
             cv = itemView.findViewById(R.id.CardViewCoctel);
-            imageViewCoctel = itemView.findViewById(R.id.imageViewCoctel);
+            imageViewCoctel = itemView.findViewById(R.id.imageViewCoctel2);
             tvCoctel = itemView.findViewById(R.id.textViewCoctel);
             tvElaboration = itemView.findViewById(R.id.textViewElaboracion);
             tvGraduation = itemView.findViewById(R.id.textViewGraduacion);

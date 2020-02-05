@@ -2,25 +2,24 @@ package com.deagle50.coctelpedia.fragments;
 
 import android.database.Cursor;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.Deagle50.coctelpedia.adapters.CoctelsAdapter;
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.helpers.CoctelsOpenHelper;
+import com.deagle50.coctelpedia.fragments.GifFragment;
 
 import com.deagle50.coctelpedia.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -120,7 +119,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     }
 
     private void initializeAdapter(){
-        com.deagle50.coctelpedia.fragments.CoctelsAdapter adapter = new com.deagle50.coctelpedia.fragments.CoctelsAdapter(coctels);
+        CoctelsAdapter adapter = new CoctelsAdapter(coctels);
         recyclerView.setAdapter(adapter);
     }
 

@@ -75,6 +75,7 @@
     <string name="example_graduation" translatable="false">15.5º</string>
     <string name="example_description" translatable="false">This is an example for the description of the coctel, its flavour and other things</string>
     <string name="example_making" translatable="false">Here comes the explanation of how is done the coctel</string>
+    <string name="example_type" translatable="false">Example type</string>
 
 
 </resources>

@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.deagle50.coctelpedia.activities.GameWhoWhould;
 import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
+import com.deagle50.coctelpedia.fragments.GifFragment;
 
 import java.util.ArrayList;
 

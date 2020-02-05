@@ -1274,7 +1274,7 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageViewCoctel
+id imageViewCoctel2
 id info
 id invisible
 id italic
@@ -1393,8 +1393,6 @@ id textSpacerNoTitle
 id textStart
 id textView3
 id textView4
-id textView5
-id textView6
 id textViewBar
 id textViewBar2
 id textViewBugs
@@ -1409,16 +1407,17 @@ id textViewCredits
 id textViewDescripcion
 id textViewDescripcion2
 id textViewDescripcion3
-id textViewDescripcion4
+id textViewDescription4
 id textViewDrinkType
 id textViewElaboracion
 id textViewElaboracion2
 id textViewElaboracion3
-id textViewElaboracion4
 id textViewFilters
 id textViewGraduacion
 id textViewGraduation
+id textViewHome4
 id textViewLanguage
+id textViewMaking2
 id textViewName
 id textViewNewTranslation
 id textViewNombre
@@ -1426,6 +1425,7 @@ id textViewOrderBy
 id textViewParrafo
 id textViewPlayers
 id textViewPrecio
+id textViewPub4
 id textViewReportBugs
 id textViewTheme
 id textViewTranslationIssue
@@ -1606,6 +1606,7 @@ string example_description
 string example_graduation
 string example_making
 string example_price
+string example_type
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior

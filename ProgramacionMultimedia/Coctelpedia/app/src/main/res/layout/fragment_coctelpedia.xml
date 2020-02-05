@@ -160,6 +160,7 @@
         android:layout_marginBottom="108dp"
         android:backgroundTint="@color/fontGray"
         android:clickable="true"
+        app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/containerCoctelpedia"
         app:layout_constraintEnd_toEndOf="@+id/containerCoctelpedia"
         app:srcCompat="@drawable/ic_coctel_black" />

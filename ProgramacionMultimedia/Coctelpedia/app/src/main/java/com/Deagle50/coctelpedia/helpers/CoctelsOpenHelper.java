@@ -39,7 +39,6 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
         try {
             db.execSQL(crearTabla);
             db.execSQL(insertCoctels);
-            Toast.makeText(this.context, "Tabla creada con éxito.", Toast.LENGTH_SHORT).show();
         } catch (Exception ignored) {
         }
     }
@@ -56,6 +55,18 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
         try {
             return db.query("coctels", null, selection, args, null, null, orderBy);
         }catch (Exception ex) {
+            return null;
+        }
+    }
+
+    public Cursor getRandomCoctel()
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+        try{
+            return db.rawQuery("SELECT  * FROM coctels ORDER BY RANDOM() LIMIT 1", null);
+        }
+        catch (Exception ex)
+        {
             return null;
         }
     }
