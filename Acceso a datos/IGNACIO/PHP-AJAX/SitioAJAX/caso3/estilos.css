@@ -1,0 +1,17 @@
+﻿.voto {
+  padding:0px;
+}
+.voto a {
+  float:left;
+  width:15px;
+  text-decoration:none;
+  text-align:center;
+  color:#f00;
+  background-color:#f7f8e8;
+  border-right:1px solid white;
+  font-size:13px;
+}
+
+.voto li {
+  display:inline;
+}

@@ -1,0 +1,32 @@
+﻿<!--
+  Paginación con AJAX.
+  
+  Un lugar donde puede ayudarnos el uso de AJAX es en la paginación
+  de datos mientras otro recurso en la página se está ejecutando. 
+  
+  Hagamos una página que muestre un video de YouTube, e inmediatamente
+  en la parte inferior mostraremos los comentarios del video paginados.
+  
+  Si no utilizamos AJAX, estamos obligados a recargar completamente 
+  la página, lo que haría imposible ver el video y recorrer los 
+  comentarios en forma completa (considerando que solo parte de 
+  los comentarios se encuentran en la página).
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+</head>
+<body>
+  	<video width="320" height="240" controls>
+	  <source src="../imagenes/PeppaPig.mp4" type="video/mp4">
+	  Su navegador no soporta la etiqueta video.
+	</video>  <br>
+	
+  	<div id="detalles">
+  	</div>
+</body>
+</html>

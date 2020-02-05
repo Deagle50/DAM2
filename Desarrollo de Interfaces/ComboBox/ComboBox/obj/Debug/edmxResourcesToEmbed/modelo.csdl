@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="idusuario" />
+    </Key>
+    <Property Name="idusuario" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="palabrapaso" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dni" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Edad" Type="Int32" />
+    <NavigationProperty Name="Mensajes" Relationship="DaniDBModel.FK_Mensajes_Usuarios" FromRole="Usuarios" ToRole="Mensajes" />
+  </EntityType>
+  <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <EntitySet Name="Mensajes" EntityType="DaniDBModel.Mensajes" />
+    <AssociationSet Name="FK_Mensajes_Usuarios" Association="DaniDBModel.FK_Mensajes_Usuarios">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Mensajes" EntitySet="Mensajes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Mensajes">
+    <Key>
+      <PropertyRef Name="idmensaje" />
+    </Key>
+    <Property Name="idmensaje" Type="Int32" Nullable="false" />
+    <Property Name="Idusuario" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Fecha" Type="DateTime" Precision="3" />
+    <Property Name="Mensaje" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" />
+    <NavigationProperty Name="Usuarios" Relationship="DaniDBModel.FK_Mensajes_Usuarios" FromRole="Mensajes" ToRole="Usuarios" />
+  </EntityType>
+  <Association Name="FK_Mensajes_Usuarios">
+    <End Type="DaniDBModel.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+    <End Type="DaniDBModel.Mensajes" Role="Mensajes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="Mensajes">
+        <PropertyRef Name="Idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

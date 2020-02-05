@@ -1,0 +1,35 @@
+﻿<!--
+  Mostrar un gif animado mientras se envían y reciben los datos del servidor.
+  
+  Hasta ahora, mientras se actualiza la página mostramos un texto: 'Procesando...'.
+  Es muy habitual utilizar un gif animado que represente esta situación.
+
+  Haremos una serie de páginas que nos permitan enviar los datos cargados en 
+  un formulario al servidor en forma asincrónica, y mostraremos un gif animado 
+  mientras dura el envío de datos. El formulario solicitará que ingrese 
+  el nombre y sus comentarios.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+</head>
+<body>
+  <form action="pagina1.php" method="post" id="formulario">
+    Nombre:<input type="text" name="txtNombre" id="txtNombre" size="20"><br>
+    Comentarios:<br>
+    <textarea name="txtComentarios" id="txtComentarios" rows="10" cols="50"></textarea><br>
+    <input type="submit" value="Enviar" id="enviar">
+    <span id="resultados"></span><br>
+    <a href="comentarios.txt">Ver resultados</a>
+  </form>
+</body>
+</html>
+
+<!--
+  Hemos utilizado un elemento span en donde insertaremos el gif animado.
+  Utilizamos un span para que aparezca la imagen al lado del botón submit.
+-->

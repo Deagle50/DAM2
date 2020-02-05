@@ -1,0 +1,7 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|11 Dec 2019 15:36:08 -0000
+vti_extenderversion:SR|12.0.0.0
+vti_cacheddtm:TX|05 May 2019 18:06:54 -0000
+vti_filesize:IR|14
+vti_backlinkinfo:VX|caso3/pagina1.html
+vti_modifiedby:SR|SEGUNDO\\Administrador

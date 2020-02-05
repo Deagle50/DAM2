@@ -286,7 +286,9 @@ attr fontStyle
 attr fontVariationSettings
 attr fontWeight
 attr foregroundInsidePadding
+attr freezesAnimation
 attr gapBetweenBars
+attr gifSource
 attr goIcon
 attr graph
 attr headerLayout
@@ -317,6 +319,7 @@ attr indeterminateProgressStyle
 attr initialActivityCount
 attr insetForeground
 attr isLightTheme
+attr isOpaque
 attr itemBackground
 attr itemHorizontalPadding
 attr itemHorizontalTranslationEnabled
@@ -415,6 +418,7 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr loopCount
 attr materialButtonStyle
 attr materialCardViewStyle
 attr maxActionInlineWidth
@@ -640,6 +644,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color backgroundGray
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1079,6 +1084,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dice
 drawable ic_add
 drawable ic_add_white_24dp
 drawable ic_coctel_black
@@ -1188,7 +1194,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btnJuego3
 id buttonAdd
 id buttonDarkTheme
 id buttonDelete
@@ -1196,6 +1201,7 @@ id buttonEN
 id buttonES
 id buttonEU
 id buttonGameChallenge
+id buttonGameRandomDrink
 id buttonGameWhoWould
 id buttonGmail1
 id buttonGmail2
@@ -1208,8 +1214,10 @@ id center_horizontal
 id center_vertical
 id chains
 id checkBoxVegan2
+id checkBoxVegan3
 id checkBoxVegano
 id checkBoxVegetarian2
+id checkBoxVegetarian3
 id checkBoxVegetariano
 id checkbox
 id checked
@@ -1218,11 +1226,16 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id container
+id containerCoctelpedia
+id containerGif
 id content
 id contentPanel
 id coordinator
 id custom
 id customPanel
+id cvBackgroundLayout
+id cvCoctelItem
+id cvGifBackground
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1247,6 +1260,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id floatingActionButtonGameRandomDrink
 id forever
 id fullscreen_content
 id fullscreen_content_controls
@@ -1377,6 +1391,10 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView3
+id textView4
+id textView5
+id textView6
 id textViewBar
 id textViewBar2
 id textViewBugs
@@ -1390,12 +1408,18 @@ id textViewCount
 id textViewCredits
 id textViewDescripcion
 id textViewDescripcion2
+id textViewDescripcion3
+id textViewDescripcion4
 id textViewDrinkType
 id textViewElaboracion
 id textViewElaboracion2
+id textViewElaboracion3
+id textViewElaboracion4
 id textViewFilters
 id textViewGraduacion
+id textViewGraduation
 id textViewLanguage
+id textViewName
 id textViewNewTranslation
 id textViewNombre
 id textViewOrderBy
@@ -1510,7 +1534,9 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_coctelpedia
 layout fragment_games
+layout fragment_gif
 layout fragment_home
+layout fragment_random_drink
 layout fragment_settings
 layout item_coctel
 layout item_jugador
@@ -1575,6 +1601,11 @@ string character_counter_content_description
 string character_counter_pattern
 string current_language
 string email
+string example_coctel_name
+string example_description
+string example_graduation
+string example_making
+string example_price
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1612,7 +1643,6 @@ string title_credits
 string title_delete
 string title_deleted
 string title_description
-string title_elaboration
 string title_empty_name
 string title_filters
 string title_finish
@@ -1621,12 +1651,16 @@ string title_games
 string title_home
 string title_language
 string title_launcher_image
+string title_making
 string title_must_add_player
 string title_must_select_player
 string title_new_translation
 string title_orderby
 string title_players
+string title_price_at_home
+string title_price_at_pubs
 string title_put_name
+string title_random_drink
 string title_report_bugs
 string title_settings
 string title_theme
@@ -2192,6 +2226,8 @@ styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchSt
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable FragmentNavigator android_name
+styleable GifTextureView gifSource isOpaque
+styleable GifView freezesAnimation loopCount
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable LinearConstraintLayout android_orientation

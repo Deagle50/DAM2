@@ -1,0 +1,35 @@
+﻿<!--
+	Cargar un control de tipo select
+	
+	Confeccionaremos una pagina que contenga dos controles de tipo select. 
+	En el primero almacenaremos una lista de carreras de estudio:
+	    ("Analista de Sistemas","Telecomunicaciones" y "WebMaster")
+
+    Cuando se seleccione una carrera enviaremos una petición al servidor 
+    para que devuelva todas las materias que tiene esa carrera 
+    y procederemos a la carga del segundo select.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+</head>
+<body>
+  <h1>Prueba de cargar un control de tipo select recuperando datos 
+      del servidor mediante AJAX</h1>
+  Seleccione la carrera:
+  <select id="cboCarreras" name="cboCarreras">
+    <option value="0">Seleccionar....</option>
+    <option value="1">Analista de sistemas</option>
+    <option value="2">Telecomunicaciones</option>
+    <option value="3">WebMaster</option>
+  </select>
+  <span id="espera"></span><br>
+  Materias de la carrera:
+  <select id="cboMaterias" name="cboMaterias">
+  </select><br>
+</body>
+</html>

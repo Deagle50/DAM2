@@ -1,0 +1,36 @@
+﻿<!--
+  Propiedades status y statusText.
+  Estas dos propiedades todavía no las habíamos utilizado. Veremos que las mismas nos permiten 
+  hacer un código más correcto.
+		status: esta propiedad almacena el código del estado de la petición HTTP. 
+		        Entre otros valores que puede retornar el servidor: 200 es el valor 
+		        para una conexión exitosa, 404 página inexistente. 
+		        Esta propiedad de solo lectura esta disponible cuando readyState 
+		        toma los valores 3 o 4. 
+		statusText: almacena el texto de la petición HTTP enviado por el servidor.
+
+  Lo más correcto, cuando readyState contiene el valor 4, es verificar si la propiedad status 
+  almacena el valor 200 (es decir el servidor procesó correctamente la petición).
+  
+  Para probar estas propiedades confeccionaremos el problema del concepto anterior 
+  (devolver desde el servidor el cuadrado de un número que ingresamos por teclado), 
+  introduciremos un error (el método open llamará a una página php inexistente), 
+  y veremos cual es el mensaje en pantalla. Luego, agregaremos la verificación 
+  de la propiedad status.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+</head>
+<body>
+<form action="pagina1.php" method="post" id="formulario">
+  Ingrese un numero:<input type="text" name="txtNumero" id="txtNumero" size="10"><br>
+  <input type="submit" value="Calcular el cuadrado" id="enviar">
+  <div id="resultados"></div>
+</form>
+</body>
+</html>

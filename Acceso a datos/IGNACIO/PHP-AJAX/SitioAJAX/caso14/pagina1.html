@@ -1,0 +1,30 @@
+﻿<!--
+  Autocompletar un control de tipo text
+  
+  Implementaremos con AJAX el concepto de autocompletar (también
+  conocido como lista de sugerencias). A medida que escribimos 
+  caracteres dentro de un control de tipo text mostraremos 
+  un conjunto de palabras que comienzan con los caracteres 
+  ingresados hasta el momento.
+  
+  En la realidad los datos se extraen de una base de datos 
+  pero para simplificar el problema no lo haremos en este caso.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+  <link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+  <form action="#">
+	  Ingrese una palabra que comience con a:<br>
+	  <input type="text" id="txtPalabra" autocomplete="off"><br>
+	  <div id="resultados"></div>
+	  <input type="submit" value="buscar">
+  </form>
+</body>
+</html>

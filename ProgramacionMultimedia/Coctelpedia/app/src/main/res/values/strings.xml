@@ -18,7 +18,7 @@
     <string name="title_vegetarian">Vegetarian</string>
     <string name="title_vegan">Vegan</string>
     <string name="title_description">Description</string>
-    <string name="title_elaboration">Making</string>
+    <string name="title_making">Making</string>
     <string name="title_report_bugs">Report bugs</string>
     <string name="title_bugs">Bugs</string>
     <string name="title_translation_issue">Translation issue</string>
@@ -65,6 +65,16 @@
     <string name="title_filters">Filters</string>
     <string name="title_all_drinks">All</string>
     <string name="title_0" translatable="false">0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_random_drink">Random drink</string>
+    <string name="title_price_at_pubs">Price at pubs</string>
+    <string name="title_price_at_home">Price at home</string>
+    <string name="example_price" translatable="false">10.0€</string>
+    <string name="example_coctel_name" translatable="false">Coctel name</string>
+    <string name="example_graduation" translatable="false">15.5º</string>
+    <string name="example_description" translatable="false">This is an example for the description of the coctel, its flavour and other things</string>
+    <string name="example_making" translatable="false">Here comes the explanation of how is done the coctel</string>
 
 
 </resources>

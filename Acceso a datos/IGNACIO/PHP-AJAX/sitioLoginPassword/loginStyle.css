@@ -1,0 +1,76 @@
+﻿body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#819FF7;
+}
+#contenGeneral
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:995px;
+}
+#contenGeneral h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color:#0B2161;
+}
+#contenGeneral h1 a
+{
+ color:#0B2161;
+ font-size:18px;
+}
+#contenGeneral h2 input[type=submit]
+{
+ background:none;
+ border:none;
+ text-decoration:underline;
+ font-size:17px;
+}
+#formLogin
+{
+ background-color:white;
+ width:350px;
+ padding:20px;
+ box-sizing:border-box;
+ margin-left:320px;
+ box-shadow:0px 0px 10px 0px #2E64FE;
+}
+#formLogin h1
+{
+ text-align:center;
+ margin:0px;
+ color:#0B2161;
+ font-size:27px;
+ margin-bottom:20px;
+}
+#formLogin input[type=text], input[type=password]
+{
+ width:250px;
+ height:40px;
+ padding-left:5px;
+ margin:5px;
+ border-radius:2px;
+ border:1px solid #2E64FE;
+}
+#formLogin input[type=submit]
+{
+ background-color:#2E64FE;
+ color:white;
+ border:none;
+ border-bottom:3px solid #0040FF;
+ width:250px;
+ height:45px;
+ border-radius:2px;
+ margin-left:-4px;
+ margin-top:5px;
+}
+#formLogin #cargarLogoDescarga
+{
+ display:none;
+}

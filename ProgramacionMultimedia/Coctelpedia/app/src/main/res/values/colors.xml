@@ -9,5 +9,6 @@
     <color name="fontGray">#D5D5D5</color>
 
     <color name="transparent">#00000000</color>
+    <color name="backgroundGray">#2E2E2E</color>
 
 </resources>

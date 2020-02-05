@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/container">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
     android:layout_height="639dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardViewFilters"
@@ -49,7 +54,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
                 app:layout_constraintHorizontal_bias="0.492"
                 app:layout_constraintStart_toStartOf="@+id/txtTitulo"
-                app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+                app:layout_constraintTop_toBottomOf="@+id/buttonGameRandomDrink" />
 
             <Button
                 android:id="@+id/buttonGameChallenge"
@@ -64,16 +69,16 @@
                 app:layout_constraintTop_toBottomOf="@+id/buttonGameWhoWould" />
 
             <Button
-                android:id="@+id/btnJuego3"
+                android:id="@+id/buttonGameRandomDrink"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:background="@drawable/buttons"
-                android:text="Juego 3"
+                android:text="@string/title_random_drink"
                 android:textColor="@color/fontWhite"
-                app:layout_constraintEnd_toEndOf="@+id/buttonGameChallenge"
-                app:layout_constraintStart_toStartOf="@+id/buttonGameChallenge"
-                app:layout_constraintTop_toBottomOf="@+id/buttonGameChallenge" />
+                app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+                app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -90,4 +95,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout></FrameLayout>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--
+  Confeccionaremos un problema similar al anterior, es decir que nos permita calificar una foto 
+  con un valor de 1 al 10. La diferencia es que la calificación será por medio de una lista de 
+  hipervínculos del 1 al 10. Además haremos que la barra de selección de la calificación cambie 
+  de color cuando ingresamos con el mouse.
+  Veremos que la mayor dificultad se encuentra en la codificación de esta última característica 
+  más que en la comunicación asincrónica.
+-->
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+  <link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+  <h1>Vote esta foto</h1>
+  <p>
+  <img src="../imagenes/geometria.jpg" alt="cuadro sobre geometria generativa">
+  </p>
+  <ul class="voto" id="votofoto1">
+    <li><a href="pagina1.php?voto=1">1</a></li>
+    <li><a href="pagina1.php?voto=2">2</a></li>
+    <li><a href="pagina1.php?voto=3">3</a></li>
+    <li><a href="pagina1.php?voto=4">4</a></li>
+    <li><a href="pagina1.php?voto=5">5</a></li>
+    <li><a href="pagina1.php?voto=6">6</a></li>
+    <li><a href="pagina1.php?voto=7">7</a></li>
+    <li><a href="pagina1.php?voto=8">8</a></li>
+    <li><a href="pagina1.php?voto=9">9</a></li>
+    <li><a href="pagina1.php?voto=10">10</a></li>
+  </ul>
+  <br>
+  <div id="resultados"></div>
+  <a href="votos.txt">Ver resultados</a>
+</body>
+</html>

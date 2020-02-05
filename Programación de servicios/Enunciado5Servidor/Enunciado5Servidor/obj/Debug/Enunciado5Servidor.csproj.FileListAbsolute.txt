@@ -1,0 +1,16 @@
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\Enunciado5Servidor.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\Enunciado5Servidor.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\Enunciado5Servidor.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\LibreriaFichero.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\LibreriaFicherosStandard.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\LibreriaFichero.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\LibreriaFichero.xml
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\bin\Debug\LibreriaFicherosStandard.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\Enunciado5Servidor\Enunciado5Servidor\obj\Debug\Enunciado5Servidor.pdb

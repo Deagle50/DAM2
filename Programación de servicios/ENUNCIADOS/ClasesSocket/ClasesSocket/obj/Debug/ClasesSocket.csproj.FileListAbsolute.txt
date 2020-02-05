@@ -4,3 +4,9 @@ E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\Clas
 E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.dll
 E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.pdb
 E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\ClasesSocket\bin\Debug\ClasesSocket.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\ClasesSocket\bin\Debug\ClasesSocket.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.pdb

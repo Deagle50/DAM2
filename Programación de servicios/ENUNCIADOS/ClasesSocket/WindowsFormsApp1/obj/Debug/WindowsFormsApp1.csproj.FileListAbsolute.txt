@@ -11,3 +11,16 @@ E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\Clas
 E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\bin\Debug\ClasesSocket.dll
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\bin\Debug\ClasesSocket.pdb
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Urko Urbieta\Visual Studio\Programación de servicios\ENUNCIADOS\ClasesSocket\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

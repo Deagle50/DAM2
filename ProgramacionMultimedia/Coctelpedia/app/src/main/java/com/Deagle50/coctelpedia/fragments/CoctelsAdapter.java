@@ -1,5 +1,8 @@
 package com.deagle50.coctelpedia.fragments;
 
+import android.content.Context;
+import android.graphics.Color;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,35 +10,45 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.R;
+import com.deagle50.coctelpedia.helpers.languageHelper;
+import com.deagle50.coctelpedia.helpers.themeHelper;
 
 import java.util.ArrayList;
 
+import static com.deagle50.coctelpedia.activities.MainActivity.instance;
+
 public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedia.fragments.CoctelsAdapter.CoctelViewHolder>{
     private ArrayList<Coctel> coctels;
+    Context context;
 
-    private CoctelsAdapter(ArrayList<Coctel> coctels){
+    public CoctelsAdapter(ArrayList<Coctel> coctels){
         this.coctels = coctels;
     }
 
     @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
 
+    @NonNull
     @Override
     public CoctelViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_coctel, viewGroup, false);
-        CoctelViewHolder cvh = new CoctelViewHolder(v);
-        return cvh;
+        context = viewGroup.getContext();
+        return new CoctelViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(CoctelViewHolder coctelViewHolder, int i) {
+
+
         coctelViewHolder.tvCoctel.setText(coctels.get(i).getName());
         coctelViewHolder.tvDescription.setText(coctels.get(i).getDescription());
         coctelViewHolder.tvElaboration.setText(coctels.get(i).getElaboration());
@@ -63,7 +76,11 @@ public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedi
             coctelViewHolder.imageViewCoctel.setImageResource(coctels.get(i).getUrlPhoto());
         }
         coctelViewHolder.tvType.setText(coctels.get(i).getType());
-        }
+
+        themeHelper themeHelper = new themeHelper(context);
+        if(themeHelper.isDark())
+            coctelViewHolder.cv.setBackgroundColor(instance.getResources().getColor(R.color.backgroundGray, null));
+    }
 
 
 
@@ -77,6 +94,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedi
         TextView tvCoctel, tvDescription, tvGraduation, tvHome, tvBar, tvElaboration, tvType;
         ImageView imageViewCoctel;
         CheckBox cbVegetarian, cbVegan;
+        ConstraintLayout layout;
 
         CoctelViewHolder(View itemView) {
             super(itemView);
@@ -91,6 +109,8 @@ public class CoctelsAdapter extends RecyclerView.Adapter<com.deagle50.coctelpedi
             cbVegetarian =itemView.findViewById(R.id.checkBoxVegetariano);
             cbVegan =itemView.findViewById(R.id.checkBoxVegano);
             tvType = itemView.findViewById(R.id.textViewType);
+
+
         }
 
 

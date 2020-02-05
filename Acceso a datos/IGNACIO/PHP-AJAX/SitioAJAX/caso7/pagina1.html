@@ -1,0 +1,23 @@
+﻿<!--
+  Para ver el paso de estados del objeto XMLHttpRequest, implementaremos una aplicación 
+  que calcule el cuadrado de un número que ingresamos por teclado (el cálculo se 
+  efectuará en el servidor).
+  
+  Y además mostraremos mediante un alert el estado actual en cada momento, de la 
+  propiedad readyState.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js" ></script>
+</head>
+<body>
+  <form action="pagina1.php" method="post" id="formulario">
+    Introduce un numero:<input type="text" name="num" id="num" size="10"><br>
+    <input type="submit" value="Calcular el cuadrado" id="enviar">
+  </form>
+  <div id="resultados"></div>
+</body>
+</html>

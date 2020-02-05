@@ -1,0 +1,69 @@
+﻿<!--
+  El objeto XMLHttpRequest es un elemento fundamental para la comunicación asincrónica con el servidor. 
+  Este objeto nos permite enviar y recibir información en formato XML y en general en cualquier formato
+  (como vimos en el ejercicio anterior devolviendo una parte de archivo HTML).
+
+  La creación de un objeto de esta clase se hace con la siguiente sintaxis (debemos definir una variable
+  llamada conexion1):
+ 	conexion1=new XMLHttpRequest(); 
+ 	
+  Las propiedades principales del objeto XMLHttpRequest son:
+	onreadystatechange: almacena el nombre de la función que se ejecutará cuando el objeto XMLHttpRequest
+	                    cambie de estado.
+	readyState: almacena el estado del requerimiento hecho al servidor, pudiendo ser: 
+		0 No inicializado (el método open no ha sido llamado)
+		1 Cargando (se llamó al método open)
+		2 Cargado (se llamó al método send y ya tenemos la cabecera de la petición HTTP y el status)
+		3 Interactivo (la propiedad responseText tiene datos parciales)
+		4 Completado (la propiedad responseText tiene todos los datos pedidos al servidor)
+	responseText: almacena el string devuelto por el servidor, una vez realizada la petición.
+	responseXML: similar a la anterior (responseText) con la diferencia que el string devuelto por
+	             el servidor se encuentra en formato XML.
+
+  Los métodos principales del objeto XMLHttpRequest son:
+	open: abre una solicitud HTTP al servidor.
+	send: envía la solicitud al servidor.
+-->
+
+<!--
+  Confeccionar una página que muestre una imagen y permita calificarla con un valor entre 1 y 10.
+  Debemos permitir ingresar el nombre del visitante. 
+  Debemos disponer de un control de tipo select para seleccionar el valor. 
+  Al presionar un botón, enviaremos el valor seleccionado utilizando el objeto XMLHttpRequest al servidor,
+  en donde almacenaremos en un archivo de texto el nombre del visitante y la puntuación. 
+  Devolveremos todos los votos hasta el momento. 
+  Actualizaremos la página HTML con todos los nombres y votos realizados hasta el momento
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+</head>
+
+<body>
+  <h1>Vota esta foto</h1>
+  <p><img src="../imagenes/geometria.jpg" alt="cuadro sobre geometria generativa"></p>
+  Nombre:<input type="text" id="txtNombre" size="20">
+  <br>
+  Voto:
+  <select id="cboVoto">
+    <option value="0" selected>seleccione</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  <br>
+  <input type="button" id="boton1" value="votar">
+  <div id="resultados"></div>
+</body>
+</html>

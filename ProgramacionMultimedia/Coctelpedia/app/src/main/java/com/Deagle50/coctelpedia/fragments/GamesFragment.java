@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.deagle50.coctelpedia.activities.GameWhoWhould;
 import com.deagle50.coctelpedia.R;
@@ -39,6 +40,8 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
         btnGChallenge.setOnClickListener(this);
         Button btnPlayers = root.findViewById(R.id.buttonPlayers);
         btnPlayers.setOnClickListener(this);
+        Button btnRandomDrink = root.findViewById(R.id.buttonGameRandomDrink);
+        btnRandomDrink.setOnClickListener(this);
 
 
         loadPlayers();
@@ -58,7 +61,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 {
                     if(cursorPlayers.getCount()==0)
                     {
-                        Toast.makeText(instance, "error", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(instance, R.string.title_must_add_player, Toast.LENGTH_SHORT).show();
 
                     }
                     else{
@@ -73,9 +76,19 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 //startActivity(i);
                 break;
             }
-            case R.id.btnJuego3:
+            case R.id.buttonGameRandomDrink:
             {
-                //Add listener
+
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                // Replace whatever is in the fragment_container view with this fragment,
+                // and add the transaction to the back stack so the user can navigate back
+                transaction.replace(R.id.container, new GifFragment());
+                transaction.addToBackStack(null);
+
+                // Commit the transaction
+                transaction.commit();
+
                 break;
             }
             case R.id.buttonPlayers:

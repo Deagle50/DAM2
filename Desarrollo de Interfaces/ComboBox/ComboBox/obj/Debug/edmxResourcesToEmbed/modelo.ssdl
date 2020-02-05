@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Mensajes">
+    <Key>
+      <PropertyRef Name="idmensaje" />
+    </Key>
+    <Property Name="idmensaje" Type="int" Nullable="false" />
+    <Property Name="Idusuario" Type="nvarchar" MaxLength="10" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Mensaje" Type="nvarchar" MaxLength="50" />
+    <Property Name="id" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="idusuario" />
+    </Key>
+    <Property Name="idusuario" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="palabrapaso" Type="nvarchar" MaxLength="10" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="50" />
+    <Property Name="dni" Type="nvarchar" MaxLength="10" />
+    <Property Name="email" Type="nvarchar" MaxLength="20" />
+    <Property Name="Edad" Type="int" />
+  </EntityType>
+  <Association Name="FK_Mensajes_Usuarios">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Mensajes" Type="Self.Mensajes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="idusuario" />
+      </Principal>
+      <Dependent Role="Mensajes">
+        <PropertyRef Name="Idusuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DaniDBModelStoreContainer">
+    <EntitySet Name="Mensajes" EntityType="Self.Mensajes" Schema="Foro" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="Foro" store:Type="Tables" />
+    <AssociationSet Name="FK_Mensajes_Usuarios" Association="Self.FK_Mensajes_Usuarios">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Mensajes" EntitySet="Mensajes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>DROPDOWN con AJAXr</title><meta charset="utf-8"/>
+
+ <style type="text/css">
+ *{font-family:sans-serif;} a:link {text-decoration:none;} select{font-size:18px;}
+ div div {color: blue; background-color:#F1FEC6; font-size: 20px; float:left; border: solid; margin: 20px; padding:15px;}
+ </style> 
+	<script>
+		function mostrarSugerencia(paisElegido) {
+			/*var paisElegido='';
+			if (str=='ESP') {paisElegido='España';}
+			else if (str=='MEX') {paisElegido='México';}
+			else if (str=='ALB') {paisElegido='Albania';}
+			else if (str=='DEU') {paisElegido='Alemania';}
+			else if (str=='JPN') {paisElegido='Japón';}
+			else if (str=='BRA') {paisElegido='Brasil';}
+			else if (str=='AFG') {paisElegido='Af';}
+			else if (str=='ALB') {paisElegido='Albania';}
+			else if (str=='ALB') {paisElegido='Albania';}
+			else if (str=='ALB') {paisElegido='Albania';}
+			else if (str=='colombia') {paisElegido='Colombia';}
+			else {paisElegido='none';}*/
+			
+			var xmlhttp;
+			var contenidoRecibido = new Array();
+			var nodoMostrarCiudades = document.getElementById('listaCiudades');
+			var contenidosAMostrar = '';
+			
+			if (paisElegido.length==0) { document.getElementById("txtInformacion").innerHTML=""; nodoMostrarCiudades.innerHTML = ''; return; }
+			
+			xmlhttp=new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+			    contenidoRecibido = xmlhttp.responseText.split(",");
+			    document.getElementById("txtInformacion").innerHTML=contenidoRecibido[0];
+			    for (var i=1; i<contenidoRecibido.length;i++) {
+			    	contenidosAMostrar = contenidosAMostrar+'<div id="ciudades'+i+'"> <a href="http://msn.com">' + contenidoRecibido[i]+ '</a></div>';
+			    }
+			    nodoMostrarCiudades.innerHTML = contenidosAMostrar;
+			  }
+			}
+			var cadenaParametros = 'pais='+encodeURIComponent(paisElegido);
+			xmlhttp.open('POST', 'ciudades.php'); // Método post y url invocada
+			// Establecemos las cabeceras de petición
+			xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+			xmlhttp.send(cadenaParametros); // Envio de parámetros usando POST
+		}
+	</script>
+</head>
+
+<body style="margin:20px;">
+	<h2>Elige un país:</h2>
+	<form action="">
+		 <select onchange="mostrarSugerencia(this.value)">
+		  <option value="vacio">Elige un país</option>
+		  <option value="ALB">Albania</option>
+		  <option value="AFG">Afganistán</option>
+		  <option value="DEU">Alemania</option>
+		  <option value="BEL">Bélgica</option>
+		  <option value="BRA">Brasil</option>
+		  <option value="ESP">España</option>
+		  <option value="ITA">Italia</option>
+		  <option value="JPN">Japón</option>
+		  <option value="MEX">México</option>
+		  <option value="PRT">Portugal</option>
+		</select>
+	</form>
+	<br/>
+	<p>Informacion sobre operacion en segundo plano con POST y Ajax: 
+	   <span style="color:brown;" id="txtInformacion"></span></p>
+	<div id="listaCiudades"> </div>
+</body>
+</html>

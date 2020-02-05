@@ -19,7 +19,7 @@
     <string name="title_vegetarian">Vegetariano</string>
     <string name="title_vegan">Vegano</string>
     <string name="title_description">Descripción</string>
-    <string name="title_elaboration">Elaboración</string>
+    <string name="title_making">Elaboración</string>
     <string name="title_report_bugs">Reportar bugs</string>
     <string name="text_bugs">Si encuentras cualquier problema en la aplicación, errores de traducción o quieres que la aplicación sea traducida a tu idioma, dínoslo debajo.</string>
     <string name="title_bugs">Bugs</string>
@@ -46,4 +46,7 @@
     <string name="title_orderby">Ordenar por</string>
     <string name="title_filters">Filtros</string>
     <string name="title_all_drinks">Todas</string>
+    <string name="title_random_drink">Bebida aleatoria</string>
+    <string name="title_price_at_pubs">Precio en bares</string>
+    <string name="title_price_at_home">Precio en casa</string>
 </resources>

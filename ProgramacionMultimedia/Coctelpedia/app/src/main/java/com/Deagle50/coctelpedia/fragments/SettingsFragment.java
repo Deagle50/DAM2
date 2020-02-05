@@ -96,7 +96,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 subject = getString(R.string.title_translation_issue);
                 break;
             }
-            //CONTACTO
+            //CONTACT
             case R.id.buttonGmail1:{}
 
             case R.id.buttonGmail2:{}

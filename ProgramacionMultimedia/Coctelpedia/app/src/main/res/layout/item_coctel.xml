@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/cvCoctelItem">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/CardViewCoctel"
@@ -21,8 +22,8 @@
                 android:id="@+id/imageViewCoctel"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:contentDescription="Foto del coctel"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -33,17 +34,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:textSize="24sp"
+                android:text="@string/example_coctel_name"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageViewCoctel"
                 app:layout_constraintTop_toTopOf="@+id/imageViewCoctel" />
 
             <TextView
                 android:id="@+id/textViewDescripcion"
-                android:layout_width="376dp"
+                android:layout_width="359dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:text="@string/example_description"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion2" />
 
@@ -51,8 +56,9 @@
                 android:id="@+id/textViewGraduacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:textSize="24sp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/example_graduation"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewCoctel"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textViewCoctel" />
@@ -70,11 +76,16 @@
 
             <TextView
                 android:id="@+id/textViewElaboracion"
-                android:layout_width="376dp"
+                android:layout_width="359dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="8dp"
                 android:paddingBottom="6dp"
+                android:text="@string/example_making"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewElaboracion2" />
 
@@ -82,7 +93,7 @@
                 android:id="@+id/textViewBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:text="100.0€"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewBar2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -102,9 +113,9 @@
                 android:id="@+id/textViewElaboracion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="@string/title_elaboration"
+                android:text="@string/title_making"
                 android:textStyle="italic"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
@@ -113,7 +124,7 @@
                 android:id="@+id/textViewDescripcion2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="@string/title_description"
                 android:textStyle="italic"
@@ -136,7 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:clickable="false"
                 android:text="@string/title_vegan"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -176,7 +187,7 @@
                 android:id="@+id/textViewType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewPrecio"
                 app:layout_constraintEnd_toEndOf="parent"

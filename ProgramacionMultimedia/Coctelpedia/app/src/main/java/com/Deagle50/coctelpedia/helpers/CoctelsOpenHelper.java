@@ -25,7 +25,7 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
                                                 "vegan BOOLEAN," +
                                                 "type TEXT);";
     private String insertCoctels = "INSERT INTO coctels(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-                                    "VALUES ('Coctel nuevo a', " + R.drawable.coctel + ", 37, 4, 6, 'done like this', 'this description', 1, 0, 'asdf'),"+
+                                    "VALUES ('Coctel nuevo a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf'),"+
                                             "('Coctel nuevo b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'beer')," +
                                             "('Coctel nuevo ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'beer')";
 

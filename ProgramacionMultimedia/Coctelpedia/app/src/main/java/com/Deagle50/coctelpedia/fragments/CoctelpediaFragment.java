@@ -2,16 +2,20 @@ package com.deagle50.coctelpedia.fragments;
 
 import android.database.Cursor;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,6 +23,7 @@ import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.helpers.CoctelsOpenHelper;
 
 import com.deagle50.coctelpedia.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 import java.util.ArrayList;
@@ -27,7 +32,6 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     private LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
     private CoctelsOpenHelper coctelsOpenHelper;
 
-    private int selectedItem;
     private String selection = "", orderBy="";
     private ArrayList<Coctel> coctels;
     private ArrayList<String> whereArguments;
@@ -38,6 +42,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     private Spinner spinnerType;
 
     private String text;
+
 
     public CoctelpediaFragment(){
 
@@ -51,14 +56,17 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         coctelsOpenHelper = new CoctelsOpenHelper(getContext(), "cursorCoctels", null, 1);
 
         recyclerView = view.findViewById(R.id.RecyclerViewCoctel);
+
         recyclerView.setLayoutManager(linearLayoutManager);
 
         whereArguments = new ArrayList<>();
 
         cbVegetarian = view.findViewById(R.id.checkBoxVegetarian2);
         cbVegan = view.findViewById(R.id.checkBoxVegan2);
-        cbVegetarian.setOnClickListener(this);
         cbVegan.setOnClickListener(this);
+        cbVegetarian.setOnClickListener(this);
+        FloatingActionButton btnRandomGame = view.findViewById(R.id.floatingActionButtonGameRandomDrink);
+        btnRandomGame.setOnClickListener(this);
 
         initializeData();
         initializeAdapter();
@@ -71,21 +79,23 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        selection = "";
-
-        switch (view.getId())
+        if(view.getId() == R.id.checkBoxVegan2|| view.getId() == R.id.checkBoxVegetarian2)
         {
-            case R.id.checkBoxVegetarian2:
-            {
-            }
-            case R.id.checkBoxVegan2:
-            {
-                addSelection();
-                break;
-            }
+            selection = "";
+            addSelection();
+            initializeData();
+            initializeAdapter();
         }
-        initializeData();
-        initializeAdapter();
+
+        if(view.getId()==R.id.floatingActionButtonGameRandomDrink)
+        {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.containerCoctelpedia, new GifFragment());
+            transaction.addToBackStack(null);
+            transaction.commit();
+        }
+
+
     }
 
     private void initializeData(){
@@ -204,7 +214,6 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
             {
                 text = spinnerType.getSelectedItem().toString();
 
-                selectedItem = position;
                 addSelection();
                 initializeData();
                 initializeAdapter();

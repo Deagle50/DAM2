@@ -1,0 +1,33 @@
+﻿<!--
+  La propiedad responseXML a diferencia de la propiedad responseText recupera los datos como XML 
+  y debemos recorrerlo mediante las funciones del DOM.
+  Es necesario que el programa que se ejecute en el servidor estructure los datos en formato XML.
+  Para probar el funcionamiento de esta propiedad del objeto XMLHttpRequest implementaremos una página 
+  que muestre en un control select los nombres de una serie de paises. Cuando se seleccione uno y se 
+  presione un botón recuperaremos de dicho país el nombre de la capital, su superficie, 
+  cantidad de habitantes y su idioma.
+  El servidor generará un archivo con formato XML y lo devolverá al cliente.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Problema</title>
+  <script src="funciones.js"></script>
+</head>
+<body>
+  <h1>Datos de paises.</h1>
+  Seleccione el pais
+  <select id="pais">
+  <option value="0" selected>seleccione</option>
+  <option value="Alemania">Alemania</option>
+  <option value="Argentina">Argentina</option>
+  <option value="España">España</option>
+  <option value="Francia">Francia</option>
+  <option value="Brasil">Brasil</option>
+  <option value="Chile">Chile</option>
+  </select><br>
+  <input type="button" id="boton1" value="Recuperar">
+  <div id="resultados"></div>
+</body>
+</html>

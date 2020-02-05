@@ -19,7 +19,7 @@
     <string name="title_vegetarian">Begetarianoa</string>
     <string name="title_vegan">Beganoa</string>
     <string name="title_description">Deskripzioa</string>
-    <string name="title_elaboration">Elaborazioa</string>
+    <string name="title_making">Elaborazioa</string>
     <string name="title_report_bugs">"Arazoak "</string>
     <string name="text_bugs">Arazorik aurkitzen baduzu, itzulpen akatsik badago edo aplikazioa zure hizkuntzara itzultzea nahi baduzu, behean esaiguzu.</string>
     <string name="title_bugs">Arazoa</string>
@@ -46,4 +46,7 @@
     <string name="title_orderby">Ordenatu</string>
     <string name="title_filters">Iragazkiak</string>
     <string name="title_all_drinks">Guztiak</string>
+    <string name="title_random_drink">Ausazko edaria</string>
+    <string name="title_price_at_pubs">Prezioa tabernetan</string>
+    <string name="title_price_at_home">Prezioa etxean</string>
 </resources>
