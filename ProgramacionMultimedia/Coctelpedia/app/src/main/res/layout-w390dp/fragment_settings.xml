@@ -211,7 +211,7 @@
                     android:id="@+id/textViewCorreo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="12dp"
                     android:layout_marginBottom="12dp"
                     android:text="@string/email"
                     android:textColor="@color/colorPrimary"
