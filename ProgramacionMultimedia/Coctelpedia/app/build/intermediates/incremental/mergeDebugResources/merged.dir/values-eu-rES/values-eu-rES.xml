@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="orderby">
+  <item>Defektuz</item>
+  <item>Izena, a > z</item>
+  <item>Izena, z > a</item>
+  <item>Prezioa etxean, baxuenetik altuenera</item>
+  <item>Prezioa etxean, altuenetik baxuenera</item>
+  <item>Prezioa tabernetan, baxuenetik altuenera</item>
+  <item>Prezioa tabernetan, altuenetik baxuenera</item>
+  <item>Mota, a > z</item>
+  <item>Mota, z > a</item>
+  <item>Graduazioa, baxuenetik altuenera</item>
+  <item>Graduazioa, altuenetik baxuenera</item>
+</string-array>
+    <string name="current_language">Aukeratutako hizkuntza</string>
+    <string name="text_bugs">Arazorik aurkitzen baduzu, itzulpen akatsik badago edo aplikazioa zure hizkuntzara itzultzea nahi baduzu, behean esaiguzu.</string>
+    <string name="text_credits">Argazkiak: hartuta flaticon-etik, Freepik, srip eta Kiranshastry erabiltzaileak eginda</string>
+    <string name="text_language_already_changed">Orain dagoen hizkuntza: euskara</string>
+    <string name="text_theme_already_changed">Hori da dagoen tema</string>
+    <string name="text_theme_changed_dark">Tema ilunara aldatu da</string>
+    <string name="text_theme_changed_light">Tema argira aldatu da</string>
+    <string name="theme_dark">Iluna</string>
+    <string name="theme_light">Argia</string>
+    <string name="title_add_player">Jokalaria sartu</string>
+    <string name="title_all_drinks">Guztiak</string>
+    <string name="title_bugs">Arazoa</string>
+    <string name="title_close">Itxi</string>
+    <string name="title_contact">Harremanetan jartzeko</string>
+    <string name="title_credits">Kredituak</string>
+    <string name="title_delete">Ezabatu</string>
+    <string name="title_deleted">ezabatuta</string>
+    <string name="title_description">Deskripzioa</string>
+    <string name="title_empty_name">Jokalariaren izena ezin da hutsik egon</string>
+    <string name="title_filters">Iragazkiak</string>
+    <string name="title_finish">Bukatu</string>
+    <string name="title_game_challenge">Erronkak</string>
+    <string name="title_games">Jokuak</string>
+    <string name="title_home">Etxea</string>
+    <string name="title_language">Hizkuntza</string>
+    <string name="title_launcher_image">Aplikazioaren argazkia</string>
+    <string name="title_making">Elaborazioa</string>
+    <string name="title_must_add_player">Sartu jokalariak lehenago</string>
+    <string name="title_must_select_player">Aukeratu jokalaria goian</string>
+    <string name="title_new_translation">Itzulketa berria eskatu</string>
+    <string name="title_no_ads">Ez dago iragarkirik oraintxe bertan</string>
+    <string name="title_orderby">Ordenatu</string>
+    <string name="title_players">Jokalariak</string>
+    <string name="title_price_at_home">Prezioa etxean</string>
+    <string name="title_price_at_pubs">Prezioa tabernetan</string>
+    <string name="title_put_name">Jokalariaren izena</string>
+    <string name="title_random_drink">Ausazko edaria</string>
+    <string name="title_report_bugs">"Arazoak "</string>
+    <string name="title_settings">Ezarpenak</string>
+    <string name="title_support">Sustatzailea lagundu nahi baduzu, ikusi iragarki bat hemen</string>
+    <string name="title_theme">Tema</string>
+    <string name="title_translation_issue">Itzulketa arazoa</string>
+    <string name="title_type">Edari mota</string>
+    <string name="title_usual_price">Ohiko prezioa</string>
+    <string name="title_vegan">Beganoa</string>
+    <string name="title_vegetarian">Begetarianoa</string>
+    <string name="title_welcome">Ongi etorri Coctelpediara</string>
+    <string name="title_who_would">Nork egingo luke...?</string>
+    <string name="usual_price_home">etxean</string>
+    <string name="usual_price_pub">tabernetan</string>
+    <string name="welcome_message">Aplikazio honetan aurkituko dituzu merkatuko ia alkoholdun edari guztiak, hauen informazioarekin, eta aldi berean, esanez begetarianoak ala beganoak diren ala ez. Joku batzuk sartu ditugu baita ere, lagunekin jolasteko edaterakoan. Euskeraz, ingelesez eta gaztelaniaz eskuragarri dago.</string>
+</resources>

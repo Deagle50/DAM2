@@ -91,8 +91,6 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         TextView tvCoctel, tvDescription, tvGraduation, tvHome, tvBar, tvElaboration, tvType;
         ImageView imageViewCoctel;
         CheckBox cbVegetarian, cbVegan;
-        ConstraintLayout layout;
-
         CoctelViewHolder(View itemView) {
             super(itemView);
             cv = itemView.findViewById(R.id.CardViewCoctel);

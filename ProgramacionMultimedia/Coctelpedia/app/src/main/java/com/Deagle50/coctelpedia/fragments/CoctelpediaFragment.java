@@ -105,6 +105,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
         if(cursorCoctels!=null)
         {
+            cursorCoctels.moveToFirst();
             int i = 0;
             coctels = new ArrayList<>();
             while(cursorCoctels.moveToNext())
@@ -177,6 +178,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
                         break;
 
                 }
+
                 initializeData();
                 initializeAdapter();
 
