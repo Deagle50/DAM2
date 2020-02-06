@@ -47,12 +47,12 @@ public class LanguageHelper {
     }
 
     private String getPersistedData(Context context, String defaultLanguage) {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        return preferences.getString(SELECTED_LANGUAGE, defaultLanguage);
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
+        return shp.getString(SELECTED_LANGUAGE, defaultLanguage);
     }
 
     private void persist(Context context, String language) {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences preferences = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
 
         editor.putString(SELECTED_LANGUAGE, language);
@@ -71,21 +71,18 @@ public class LanguageHelper {
     }
 
     public void saveLanguage(Context context, String leng){
-        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), context.MODE_PRIVATE);
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = shp.edit();
 
         editor.putString(context.getResources().getString(R.string.preferences_language), leng);
-
-        editor.commit();
+        editor.apply();
     }
 
     public void loadSavedLanguage(Context context) {
         //Cargar lenguaje al iniciar activity
-        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), context.MODE_PRIVATE);
-        String currLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), "es");
-        setLocale(context, currLanguage);
-
-
+        //SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
+        //String currLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), Locale.getDefault().getLanguage());
+        setLocale(context, getLanguage(context));
     }
 
 }

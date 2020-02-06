@@ -49,4 +49,6 @@
     <string name="title_random_drink">Ausazko edaria</string>
     <string name="title_price_at_pubs">Prezioa tabernetan</string>
     <string name="title_price_at_home">Prezioa etxean</string>
+    <string name="title_support">Sustatzailea lagundu nahi baduzu, ikusi iragarki bat hemen</string>
+    <string name="title_no_ads">Ez dago iragarkirik oraintxe bertan</string>
 </resources>

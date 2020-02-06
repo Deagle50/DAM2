@@ -4,17 +4,21 @@ package com.deagle50.coctelpedia.fragments;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.deagle50.coctelpedia.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.Objects;
 
@@ -25,6 +29,8 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     private TextView tvBug;
     private TextView tvNTrans;
     private TextView tvTransIssue;
+    private TextView tvSupport;
+    private InterstitialAd interstitialAd;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -48,9 +54,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         tvBug = root.findViewById(R.id.textViewBugs);
         tvNTrans = root.findViewById(R.id.textViewNewTranslation);
         tvTransIssue = root.findViewById(R.id.textViewTranslationIssue);
+        tvSupport = root.findViewById(R.id.textViewSupport);
         tvBug.setOnClickListener(this);
         tvTransIssue.setOnClickListener(this);
         tvNTrans.setOnClickListener(this);
+        tvSupport.setOnClickListener(this);
 
         Button buttonDark = root.findViewById(R.id.buttonDarkTheme);
         Button buttonLight = root.findViewById(R.id.buttonLightTheme);
@@ -59,6 +67,15 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
         TextView tvCredits = root.findViewById(R.id.textViewCredits);
         tvCredits.setOnClickListener(this);
+
+        interstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
+        interstitialAd.setAdUnitId("ca-app-pub-5556606541783481/6379618395");
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        /*
+        * My ad id:     ca-app-pub-5556606541783481/6379618395
+        * Google ad id: ca-app-pub-3940256099942544/1033173712
+        * */
 
         return root;
     }
@@ -101,7 +118,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
             case R.id.textViewCorreo:{
                 Intent intent = new Intent(Intent.ACTION_SEND);
-                String[] emails_in_to={"urkourbieta@gmail.com"};
+                String[] emails_in_to={getString(R.string.email)};
                 intent.putExtra(Intent.EXTRA_EMAIL, emails_in_to );
                 intent.putExtra(Intent.EXTRA_SUBJECT,"Asunto");
                 intent.putExtra(Intent.EXTRA_TEXT, "Texto");
@@ -140,17 +157,26 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
                 AlertDialog alertDialog = alertDialogBuilder.create();
                 // show it
                 alertDialog.show();
+                break;
             }
 
-
-            break;
-
+            case R.id.textViewSupport:
+            {
+                if (interstitialAd.isLoaded()) {
+                    interstitialAd.show();
+                } else {
+                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                    Toast.makeText(getContext(), getString(R.string.title_no_ads), Toast.LENGTH_SHORT).show();
+                }
+            }
         }
+
+
         //Send email
         if(v== tvBug||v==tvNTrans||v==tvTransIssue)
         {
             Intent intent = new Intent(Intent.ACTION_SEND);
-            String[] emails_in_to={"urkourbieta@gmail.com"};
+            String[] emails_in_to={getString(R.string.email)};
             intent.putExtra(Intent.EXTRA_EMAIL, emails_in_to );
             intent.putExtra(Intent.EXTRA_SUBJECT,subject);
             intent.putExtra(Intent.EXTRA_TEXT, "");

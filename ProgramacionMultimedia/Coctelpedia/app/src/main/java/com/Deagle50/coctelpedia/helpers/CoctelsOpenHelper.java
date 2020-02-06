@@ -4,7 +4,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -23,11 +22,22 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
                                                 "description TEXT," +
                                                 "vegetarian BOOLEAN," +
                                                 "vegan BOOLEAN," +
-                                                "type TEXT);";
-    private String insertCoctels = "INSERT INTO coctels(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-                                    "VALUES ('Coctel nuevo a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf'),"+
-                                            "('Coctel nuevo b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'beer')," +
-                                            "('Coctel nuevo ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'beer')";
+                                                "type TEXT," +
+                                                "language TEXT);";
+    private String insertCoctelsES = "INSERT INTO coctels(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type, language)" +
+                                    "VALUES ('Coctel nuevo a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf', 'es'),"+
+                                            "('Coctel nuevo b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'cerveza', 'es')," +
+                                            "('Coctel nuevo ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'cerveza', 'es')";
+
+    private String insertCoctelsEN = "INSERT INTO coctels(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type, language)" +
+            "VALUES ('New coctel a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf', 'en'),"+
+            "('New coctel b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'beer', 'en')," +
+            "('New coctel ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'beer', 'en')";
+
+    private String insertCoctelsEU = "INSERT INTO coctels(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type, language)" +
+            "VALUES ('Koktel berria a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf', 'eu'),"+
+            "('Koktel berria b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'garagardoa', 'eu')," +
+            "('Koktel berria ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'garagardoa', 'eu')";
 
     public CoctelsOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -38,7 +48,9 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         try {
             db.execSQL(crearTabla);
-            db.execSQL(insertCoctels);
+            db.execSQL(insertCoctelsES);
+            db.execSQL(insertCoctelsEN);
+            db.execSQL(insertCoctelsEU);
         } catch (Exception ignored) {
         }
     }
@@ -49,6 +61,19 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
     }
 
     public Cursor getCoctels(String selection, ArrayList<String> whereArguments, String orderBy) {
+        LanguageHelper languageHelper = new LanguageHelper(context);
+        String lg = languageHelper.getLanguage(context);
+
+        if(selection.equals(""))
+        {
+            selection+= "language =?";
+            whereArguments.add(lg);
+        }
+        else{
+            selection += "AND language =?";
+            whereArguments.add(lg);
+        }
+
         SQLiteDatabase db = this.getReadableDatabase();
         String[] args = new String[whereArguments.size()];
         args = whereArguments.toArray(args);
@@ -61,9 +86,11 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
 
     public Cursor getRandomCoctel()
     {
+        LanguageHelper languageHelper = new LanguageHelper(context);
+
         SQLiteDatabase db = this.getReadableDatabase();
         try{
-            return db.rawQuery("SELECT  * FROM coctels ORDER BY RANDOM() LIMIT 1", null);
+            return db.rawQuery("SELECT  * FROM coctels WHERE language=? ORDER BY RANDOM() LIMIT 1", new String[]{languageHelper.getLanguage(context)});
         }
         catch (Exception ex)
         {
@@ -74,8 +101,12 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
     public Cursor getTypes(){
         SQLiteDatabase db = this.getReadableDatabase();
         String[] type = new String[]{"_id", "type"};
+        LanguageHelper languageHelper = new LanguageHelper(context);
+        String selection = "language=?";
+        String[] whereArguments= new String[]{languageHelper.getLanguage(context)};
+
         try {
-            return db.query("coctels", type, null, null, "type", null, null);
+            return db.query("coctels", type, selection, whereArguments, "type", null, null);
         }catch (Exception ex) {
             return null;
         }

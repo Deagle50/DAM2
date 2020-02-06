@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.deagle50.coctelpedia.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -15,27 +16,33 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 /*
 *
 * TO DO:
 *
-*Para aprobar:
+* To pass:
 
-* Extras
-    * Cargar imagen nueva en modo oscuro
-    * Añadir juegos
-    * Gesto para cambiar entre fragments pantalla principal
-    * Juego coctel aleatorio
+* Extras:
+    * Divide Coctels info into different tables (type, language)
+    * Load image on theme change
+    * Add games
+    * Gesture to change between navbar fragments
+    *
 *
 *
 * DONE:
-    * Modo oscuro
-    * Guardar modo oscuro e idioma en shared preferences
-    * Implementar bien idiomas, onclick
-    * Poner créditos
-    * Insert nombres
-    * Delete de nombres
-    * Tabla de cocteles
+    * Dark theme
+    * Save language and theme on shared preferences
+    * Onclick to change language
+    * Put credits
+    * Insert names
+    * Delete names
+    * Coctels table
+    * Random coctel game
 *
 * Credits:
 * flags: Freepik
@@ -67,15 +74,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        //Load language
+        languageHelper = new com.deagle50.coctelpedia.helpers.LanguageHelper(MainActivity.this);
+        languageHelper.loadSavedLanguage(this);
 
         //Load theme
         themeHelper = new com.deagle50.coctelpedia.helpers.ThemeHelper(MainActivity.this, this);
         themeHelper.loadSavedTheme();
 
-        //Load language
-        languageHelper = new com.deagle50.coctelpedia.helpers.LanguageHelper(MainActivity.this);
-        languageHelper.loadSavedLanguage(this);
 
+        Toast.makeText(this, languageHelper.getLanguage(this),Toast.LENGTH_SHORT).show();
+
+        //Load ad launcher
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
 
         //Change action bar color
         //int titleId = getResources().getIdentifier("action_bar_title", "id", "android");

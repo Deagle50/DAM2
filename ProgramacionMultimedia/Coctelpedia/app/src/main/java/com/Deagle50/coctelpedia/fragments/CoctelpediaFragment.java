@@ -26,6 +26,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 import java.util.ArrayList;
+import java.util.Objects;
+
 public class CoctelpediaFragment extends Fragment implements View.OnClickListener {
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
@@ -201,7 +203,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
             spinnerArray.add(cursorTypes.getString(1));
         }
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                getContext(), android.R.layout.simple_spinner_item, spinnerArray);
+                Objects.requireNonNull(getContext()), android.R.layout.simple_spinner_item, spinnerArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         spinnerType.setAdapter(adapter);

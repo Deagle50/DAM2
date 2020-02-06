@@ -33,7 +33,7 @@
     <string name="usual_price_home">at home</string>
     <string name="usual_price_pub">at pubs</string>
 
-    <string name="email" translatable="false">urkourbieta@gmail.com</string>
+    <string name="email" translatable="false">deagle50uu@gmail.com</string>
 
 
     <string name="version" translatable="false">0.1</string>
@@ -76,6 +76,8 @@
     <string name="example_description" translatable="false">This is an example for the description of the coctel, its flavour and other things</string>
     <string name="example_making" translatable="false">Here comes the explanation of how is done the coctel</string>
     <string name="example_type" translatable="false">Example type</string>
+    <string name="title_support">If you want to support the developer, click here to see an ad</string>
+    <string name="title_no_ads">There are no ads right now</string>
 
 
 </resources>

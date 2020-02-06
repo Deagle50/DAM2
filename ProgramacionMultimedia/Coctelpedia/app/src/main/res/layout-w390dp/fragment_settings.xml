@@ -11,10 +11,22 @@
 
 
         <TextView
+            android:id="@+id/textViewSupport"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:text="@string/title_support"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardViewBugs"
+            app:layout_constraintStart_toStartOf="@+id/materialCardViewBugs"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewBugs" />
+
+        <TextView
             android:id="@+id/textViewVersion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/version"
             app:layout_constraintBottom_toBottomOf="@+id/textViewCredits"
             app:layout_constraintEnd_toEndOf="parent"
@@ -321,11 +333,8 @@
             android:id="@+id/textViewCredits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginStart="16dp"
             android:text="@string/title_credits"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/materialCardViewBugs" />
 
