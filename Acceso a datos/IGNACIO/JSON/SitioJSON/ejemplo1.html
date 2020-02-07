@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>JSON - Clientes</title>
+	<link rel="stylesheet" href="cssestilo.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script> 	
+	<script>	   
+		$(document).ready(function(){
+			var url="ejemplo1.php";
+			$("#tablajson tbody").html("");
+			$.getJSON(url,function(clientes){
+				$.each(clientes, function(i,cliente){
+					var nuevaFila = "<tr>"
+					+"<td>"+cliente.id+"</td>"
+					+"<td>"+cliente.nombre+"</td>"
+					+"<td>"+cliente.sexo+"</td>"
+					+"<td>"+cliente.email+"</td>"
+					+"<td>"+cliente.ciudad+"</td>"
+					+"<td>"+cliente.telefono+"</td>"
+					+"</tr>";
+					$(nuevaFila).appendTo("#tablajson tbody");
+				});
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<table class="grid" id="tablajson">
+		<thead>
+			<th>Id</th>
+			<th>Nombre</th>
+			<th>Género</th>
+			<th>Email</th>			
+			<th>Localidad</th>
+			<th>Teléfono</th>			
+		</thead>
+		<tbody></tbody>
+	</table>
+</body>
+
+</html>

@@ -14,11 +14,11 @@ namespace Enunciado5Servidor
     {
         String cadena="";
         int cont=0;
-        Servidor servidor = new Servidor(5555, "192.168.37.158");
+        Servidor servidor = new Servidor(25565, "192.168.37.158");
         public Form1()
         {
             InitializeComponent();
-            servidor.OnNuevaConexion += AlConectar;
+            //servidor.OnNuevaConexion += AlConectar;
             servidor.OnDatosRecibidos += AlRecibirDatos;
         }
 

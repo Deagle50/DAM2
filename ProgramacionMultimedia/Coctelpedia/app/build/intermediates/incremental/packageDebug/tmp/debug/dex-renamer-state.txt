@@ -1,4 +1,4 @@
-#Fri Feb 07 12:14:50 CET 2020
+#Fri Feb 07 13:19:27 CET 2020
 base.0=D\:\\Urko Urbieta\\Visual Studio\\ProgramacionMultimedia\\Coctelpedia\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

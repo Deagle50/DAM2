@@ -1,0 +1,22 @@
+﻿
+.grid {
+    background-color: #fff; 
+    margin: 5px 0 10px 0; 
+    border: solid 1px black; 
+    border-collapse:collapse; 
+}
+.grid td { 
+    padding: 2px; 
+    border: solid 1px black; 
+	 color: #717171; 
+    text-align:center;
+}
+.grid th { 
+    padding: 4px 2px;
+	 background: gray repeat-x;
+    border-left: solid 1px #525252; 
+    font-size: 1 em; 
+}
+
+tr:nth-child(odd)		{ background-color:#eee; }
+tr:nth-child(even)		{ background-color:#fff; }
