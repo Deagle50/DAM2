@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="game_challenge">
+  <item>Default</item>
+  <item>Name, a > z</item>
+  <item>Name, z > a</item>
+  <item>Price at home, low to high</item>
+  <item>Price at home, high to low</item>
+  <item>Price at bar, low to high</item>
+  <item>Price at bar, high to low</item>
+  <item>Type, a > z</item>
+  <item>Type, z > a</item>
+  <item>Graduation, low to high</item>
+  <item>Graduation, high to low</item>
+</string-array>
     <string-array name="orderby">
   <item>Defektuz</item>
   <item>Izena, a > z</item>
@@ -14,6 +27,7 @@
   <item>Graduazioa, altuenetik baxuenera</item>
 </string-array>
     <string name="current_language">Aukeratutako hizkuntza</string>
+    <string name="example_challenge">Hau adibidezko esaldi bat da, x, egin iezaiozu y z-ri</string>
     <string name="text_bugs">Arazorik aurkitzen baduzu, itzulpen akatsik badago edo aplikazioa zure hizkuntzara itzultzea nahi baduzu, behean esaiguzu.</string>
     <string name="text_credits">Argazkiak: hartuta flaticon-etik, Freepik, srip eta Kiranshastry erabiltzaileak eginda</string>
     <string name="text_language_already_changed">Orain dagoen hizkuntza: euskara</string>
@@ -40,12 +54,15 @@
     <string name="title_language">Hizkuntza</string>
     <string name="title_launcher_image">Aplikazioaren argazkia</string>
     <string name="title_making">Elaborazioa</string>
+    <string name="title_must_add_moreplayers">Sartu jokalari gehiago</string>
     <string name="title_must_add_player">Sartu jokalariak lehenago</string>
     <string name="title_must_select_player">Aukeratu jokalaria goian</string>
     <string name="title_new_translation">Itzulketa berria eskatu</string>
+    <string name="title_next_phrase">Hurrengo esaldia</string>
     <string name="title_no_ads">Ez dago iragarkirik oraintxe bertan</string>
     <string name="title_orderby">Ordenatu</string>
     <string name="title_players">Jokalariak</string>
+    <string name="title_previous_phrase">Aurreko esaldia</string>
     <string name="title_price_at_home">Prezioa etxean</string>
     <string name="title_price_at_pubs">Prezioa tabernetan</string>
     <string name="title_put_name">Jokalariaren izena</string>

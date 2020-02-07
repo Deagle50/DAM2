@@ -58,25 +58,6 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.buttonGameWhoWould:
-                {
-                    if(cursorPlayers.getCount()==0)
-                    {
-                        Toast.makeText(instance, R.string.title_must_add_player, Toast.LENGTH_SHORT).show();
-
-                    }
-                    else{
-                        Intent i = new Intent(getActivity(), GameWhoWhould.class);
-                        startActivity(i);
-                    }
-                    break;
-                }
-            case R.id.buttonGameChallenge:
-            {
-                //Intent i = new Intent(getActivity(), PlayersActivity.class);
-                //startActivity(i);
-                break;
-            }
             case R.id.buttonGameRandomDrink:
             {
 
@@ -92,6 +73,36 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
 
                 break;
             }
+            case R.id.buttonGameWhoWould:
+            {
+
+                break;
+            }
+            case R.id.buttonGameChallenge:
+            {
+                if(cursorPlayers.getCount()==0)
+                {
+                    Toast.makeText(instance, R.string.title_must_add_player, Toast.LENGTH_SHORT).show();
+
+                }else
+                if(cursorPlayers.getCount()==1)
+                {
+                    Toast.makeText(instance, R.string.title_must_add_moreplayers, Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                    transaction.replace(R.id.container, new GameChallenge());
+
+                    transaction.addToBackStack(null);
+
+                    // Commit the transaction
+                    transaction.commit();
+                }
+                //Intent i = new Intent(getActivity(), PlayersActivity.class);
+                //startActivity(i);
+                break;
+            }
+
             case R.id.buttonPlayers:
                 Intent i = new Intent(getActivity(), com.deagle50.coctelpedia.activities.PlayersActivity.class);
                 startActivity(i);

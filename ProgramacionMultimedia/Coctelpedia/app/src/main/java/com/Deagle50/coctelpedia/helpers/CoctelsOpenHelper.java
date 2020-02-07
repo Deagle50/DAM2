@@ -37,7 +37,7 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
                                                 "vegan BOOLEAN," +
                                                 "type TEXT);";
 
-    private String crearTablaEU = "CREATE TABLE coctelsEN(_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+    private String crearTablaEU = "CREATE TABLE coctelsEU(_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
             "name TEXT," +
             "url_photo TEXT," +
             "graduation FLOAT," +
@@ -49,22 +49,22 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
             "vegan BOOLEAN," +
             "type TEXT);";
     private String insertCoctelsES = "INSERT INTO coctelsES(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-                                    "VALUES ('Coctel nuevo a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf'),"+
-                                            "('Coctel nuevo b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'cerveza')," +
-                                            "('Coctel nuevo ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'cerveza')";
+                                    "VALUES ('Mojito', "+R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'En una copa de cóctel, poner hielo picado 4cl de ron blanco, 3cl de zumo de lima, unas hojas de menta, azúcar al gusto, remover y disfrutar', 'Uno de los cócteles más conocidos, tiene un toque a menta que no deja indiferente', 0, 0, 'Coctel'),"+
+                                            "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'En la copa, añadir 4cl de ron blanco, zumo de limón natural y azúcar al gusto. Frotar el borde de la copa con el limón le da un toque ácido espectacular', 'Cóctel también muy reconocido, que tiene un sabor con una mezcla ácida y dulce que gustará a los paladares más exquisitos', 0, 0, 'Coctel')," +
+                                            "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Mezclar 6cl de ron , 3 de Curaçao azul, 6 de zumo de piña, 3 de zumo de naranja y hielo', 'Típico cóctel de color azul eléctrico con un paraguas como adorno, de sabor dulce y reconocido por todos', 0, 0, 'Coctel')";
 
     private String insertCoctelsEN = "INSERT INTO coctelsEN(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-                                    "VALUES ('New coctel a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf'),"+
-                                            "('New coctel b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'beer')," +
-                                            "('New coctel ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'beer')";
+            "VALUES ('Mojito', "+R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'En una copa de cóctel, poner hielo picado 4cl de ron blanco, 3cl de zumo de lima, unas hojas de menta, azúcar al gusto, remover y disfrutar', 'Uno de los cócteles más conocidos, tiene un toque a menta que no deja indiferente', 0, 0, 'Cocktail'),"+
+            "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'En la copa, añadir 4cl de ron blanco, zumo de limón natural y azúcar al gusto. Frotar el borde de la copa con el limón le da un toque ácido espectacular', 'Cóctel también muy reconocido, que tiene un sabor con una mezcla ácida y dulce que gustará a los paladares más exquisitos', 0, 0, 'Cocktail')," +
+            "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Mezclar 6cl de ron , 3 de Curaçao azul, 6 de zumo de piña, 3 de zumo de naranja y hielo', 'Típico cóctel de color azul eléctrico con un paraguas como adorno, de sabor dulce y reconocido por todos', 0, 0, 'Cocktail')";
 
     private String insertCoctelsEU = "INSERT INTO coctelsEU(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-                                    "VALUES ('Koktel berria a', " + R.drawable.coctel + ", 37, 4, 6, 'This is an example for the description of the coctel, its flavour and other things', 'Here comes the explanation of how is done the coctel', 1, 0, 'asdf'),"+
-                                            "('Koktel berria b', " + R.drawable.buttons + ", 37, 5, 3, 'done like this', 'this description', 0, 0, 'garagardoa')," +
-                                            "('Koktel berria ab', 1, 37, 2, 4, 'done like this', 'this description', 1, 1, 'garagardoa')";
+            "VALUES ('Mojito', "+R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'En una copa de cóctel, poner hielo picado 4cl de ron blanco, 3cl de zumo de lima, unas hojas de menta, azúcar al gusto, remover y disfrutar', 'Uno de los cócteles más conocidos, tiene un toque a menta que no deja indiferente', 0, 0, 'Koktel'),"+
+            "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'En la copa, añadir 4cl de ron blanco, zumo de limón natural y azúcar al gusto. Frotar el borde de la copa con el limón le da un toque ácido espectacular', 'Cóctel también muy reconocido, que tiene un sabor con una mezcla ácida y dulce que gustará a los paladares más exquisitos', 0, 0, 'Koktel')," +
+            "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Mezclar 6cl de ron , 3 de Curaçao azul, 6 de zumo de piña, 3 de zumo de naranja y hielo', 'Típico cóctel de color azul eléctrico con un paraguas como adorno, de sabor dulce y reconocido por todos', 0, 0, 'Koktel')";
 
-    public CoctelsOpenHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public CoctelsOpenHelper(@Nullable Context context) {
+        super(context, "cursorCoctels", null, 1);
         this.context = context;
     }
 
@@ -90,9 +90,8 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
         LanguageHelper languageHelper = new LanguageHelper(context);
         String lg = languageHelper.getLanguage(context);
         String table = "";
-        SQLiteDatabase db = this.getReadableDatabase();
-        return db.rawQuery("SELECT * FROM coctelsEN", null);
-        /*
+
+
         switch (lg) {
             case "en":
                 table = "coctelsEN";
@@ -104,15 +103,28 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
                 table = "coctelsES";
                 break;
         }
-
         SQLiteDatabase db = this.getReadableDatabase();
+
+        /*
+        * Ñapa: If whereArguments is empty, it will make "args" null,
+        * so that way it will always return the query
+        * (previously was returning empty cursors)
+
+         */
         String[] args = new String[whereArguments.size()];
-        args = whereArguments.toArray(args);
+        if(whereArguments.size()==0)
+        {
+            args=null;
+        }
+        else{
+            args = whereArguments.toArray(args);
+        }
+
         try {
             return db.query(table, null, selection, args, null, null, orderBy);
         }catch (Exception ex) {
             return null;
-        }*/
+        }
     }
 
     public Cursor getRandomCoctel()
@@ -123,14 +135,12 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
 
         try{
             switch (lg) {
-                case "en":
-                    return db.rawQuery("SELECT  * FROM coctelsEN WHERE language=? ORDER BY RANDOM() LIMIT 1", null);
                 case "eu":
-                    return db.rawQuery("SELECT  * FROM coctelsEU WHERE language=? ORDER BY RANDOM() LIMIT 1", null);
+                    return db.rawQuery("SELECT  * FROM coctelsEU ORDER BY RANDOM() LIMIT 1", null);
                 case "es":
-                    return db.rawQuery("SELECT  * FROM coctelsES WHERE language=? ORDER BY RANDOM() LIMIT 1", null);
+                    return db.rawQuery("SELECT  * FROM coctelsES ORDER BY RANDOM() LIMIT 1", null);
                 default:
-                    return db.rawQuery("SELECT  * FROM coctelsEN WHERE language=? ORDER BY RANDOM() LIMIT 1", null);
+                    return db.rawQuery("SELECT  * FROM coctelsEN ORDER BY RANDOM() LIMIT 1", null);
             }
         }
         catch (Exception ex)

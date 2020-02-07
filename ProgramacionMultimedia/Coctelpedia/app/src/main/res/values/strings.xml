@@ -78,6 +78,10 @@
     <string name="example_type" translatable="false">Example type</string>
     <string name="title_support">If you want to support the developer, click here to see an ad</string>
     <string name="title_no_ads">There are no ads right now</string>
+    <string name="example_challenge">This is a phrase as an example, person x, do y to person z</string>
+    <string name="title_previous_phrase">Previous phrase</string>
+    <string name="title_next_phrase">Next phrase</string>
+    <string name="title_must_add_moreplayers">Please, add more players</string>
 
 
 </resources>

@@ -51,4 +51,8 @@
     <string name="title_price_at_home">Prezioa etxean</string>
     <string name="title_support">Sustatzailea lagundu nahi baduzu, ikusi iragarki bat hemen</string>
     <string name="title_no_ads">Ez dago iragarkirik oraintxe bertan</string>
+    <string name="example_challenge">Hau adibidezko esaldi bat da, x, egin iezaiozu y z-ri</string>
+    <string name="title_previous_phrase">Aurreko esaldia</string>
+    <string name="title_next_phrase">Hurrengo esaldia</string>
+    <string name="title_must_add_moreplayers">Sartu jokalari gehiago</string>
 </resources>

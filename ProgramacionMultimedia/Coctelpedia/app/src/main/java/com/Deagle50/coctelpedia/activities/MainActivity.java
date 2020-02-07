@@ -27,11 +27,13 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 * To pass:
 
 * Extras:
-    * Divide Coctels info into different tables (type, language)
+
     * Load image on theme change
     * Add games
     * Gesture to change between navbar fragments
-    *
+    * Add animation to text on games
+    * Add tips and tricks
+    * https://stackoverflow.com/questions/6700374/android-character-by-character-display-text-animation
 *
 *
 * DONE:
@@ -43,6 +45,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
     * Delete names
     * Coctels table
     * Random coctel game
+    * Divide Coctels info into different tables (type, language)
 *
 * Credits:
 * flags: Freepik

@@ -54,13 +54,14 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
         view = inflater.inflate(R.layout.fragment_coctelpedia, container, false);
 
-        coctelsOpenHelper = new CoctelsOpenHelper(getContext(), "cursorCoctels", null, 1);
+        coctelsOpenHelper = new CoctelsOpenHelper(getContext());
 
         recyclerView = view.findViewById(R.id.RecyclerViewCoctel);
 
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        whereArguments = new ArrayList<>();
+
+
 
         cbVegetarian = view.findViewById(R.id.checkBoxVegetarian2);
         cbVegan = view.findViewById(R.id.checkBoxVegan2);
@@ -68,6 +69,8 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         cbVegetarian.setOnClickListener(this);
         FloatingActionButton btnRandomGame = view.findViewById(R.id.floatingActionButtonGameRandomDrink);
         btnRandomGame.setOnClickListener(this);
+
+        whereArguments = new ArrayList<>();
 
         initializeData();
         initializeAdapter();
@@ -105,7 +108,6 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
         if(cursorCoctels!=null)
         {
-            cursorCoctels.moveToFirst();
             int i = 0;
             coctels = new ArrayList<>();
             while(cursorCoctels.moveToNext())

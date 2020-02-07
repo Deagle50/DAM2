@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/apk/res/android" xmlns:ns3="http://schemas.android.com/tools">
+    <string-array name="game_challenge">
+  <item>Default</item>
+  <item>Name, a > z</item>
+  <item>Name, z > a</item>
+  <item>Price at home, low to high</item>
+  <item>Price at home, high to low</item>
+  <item>Price at bar, low to high</item>
+  <item>Price at bar, high to low</item>
+  <item>Type, a > z</item>
+  <item>Type, z > a</item>
+  <item>Graduation, low to high</item>
+  <item>Graduation, high to low</item>
+</string-array>
     <string-array name="orderby">
   <item>Default</item>
   <item>Name, a > z</item>
@@ -635,6 +648,7 @@
     <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
     <string name="current_language">Current language:</string>
     <string name="email" translatable="false">deagle50uu@gmail.com</string>
+    <string name="example_challenge">This is a phrase as an example, person x, do y to person z</string>
     <string name="example_coctel_name" translatable="false">Coctel name</string>
     <string name="example_description" translatable="false">This is an example for the description of the coctel, its flavour and other things</string>
     <string name="example_graduation" translatable="false">15.5º</string>
@@ -694,12 +708,15 @@
     <string name="title_language">Language</string>
     <string name="title_launcher_image">Launcher image</string>
     <string name="title_making">Making</string>
+    <string name="title_must_add_moreplayers">Please, add more players</string>
     <string name="title_must_add_player">Please, add players first</string>
     <string name="title_must_select_player">Select player above</string>
     <string name="title_new_translation">Ask for new translation</string>
+    <string name="title_next_phrase">Next phrase</string>
     <string name="title_no_ads">There are no ads right now</string>
     <string name="title_orderby">Order by</string>
     <string name="title_players">Players</string>
+    <string name="title_previous_phrase">Previous phrase</string>
     <string name="title_price_at_home">Price at home</string>
     <string name="title_price_at_pubs">Price at pubs</string>
     <string name="title_put_name">Player name</string>

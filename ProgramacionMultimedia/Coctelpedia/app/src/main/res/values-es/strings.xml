@@ -51,4 +51,8 @@
     <string name="title_price_at_home">Precio en casa</string>
     <string name="title_support">Si quieres ayudar al desarrollador, mira un anuncio clickando aquí</string>
     <string name="title_no_ads">No hay anuncios disponibles en este momento</string>
+    <string name="example_challenge">Esta es una frase de ejemplo, x, hazle y a z</string>
+    <string name="title_previous_phrase">Frase anterior</string>
+    <string name="title_next_phrase">Siguiente frase</string>
+    <string name="title_must_add_moreplayers">Inserta más jugadores</string>
 </resources>

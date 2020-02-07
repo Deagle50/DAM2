@@ -41,6 +41,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array game_challenge
 array orderby
 attr action
 attr actionBarDivider
@@ -1097,6 +1098,9 @@ drawable dice
 drawable ic_add
 drawable ic_add_white_24dp
 drawable ic_coctel_black
+drawable ic_coctel_blue_hawaii
+drawable ic_coctel_daiquiri
+drawable ic_coctel_mojito
 drawable ic_coctel_white
 drawable ic_dashboard_black_24dp
 drawable ic_delete
@@ -1220,8 +1224,10 @@ id buttonGameWhoWould
 id buttonGmail1
 id buttonGmail2
 id buttonLightTheme
+id buttonNextChallenge
 id buttonPanel
 id buttonPlayers
+id buttonPreviousChallenge
 id cancel_action
 id center
 id center_horizontal
@@ -1249,6 +1255,7 @@ id custom
 id customPanel
 id cvBackgroundLayout
 id cvCoctelItem
+id cvGameChallenge
 id cvGifBackground
 id decor_content_parent
 id default_activity_button
@@ -1303,6 +1310,7 @@ id listMode
 id listViewJugadores
 id list_item
 id masked
+id materialCardViewBottomButtons
 id materialCardViewBugs
 id materialCardViewContacto
 id materialCardViewFilters
@@ -1427,6 +1435,7 @@ id textViewElaboracion
 id textViewElaboracion2
 id textViewElaboracion3
 id textViewFilters
+id textViewGameChallengeTitle
 id textViewGraduacion
 id textViewGraduation
 id textViewHome4
@@ -1437,6 +1446,7 @@ id textViewNewTranslation
 id textViewNombre
 id textViewOrderBy
 id textViewParrafo
+id textViewPhrase
 id textViewPlayers
 id textViewPrecio
 id textViewPub4
@@ -1551,6 +1561,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_coctelpedia
+layout fragment_game_challenge
 layout fragment_games
 layout fragment_gif
 layout fragment_home
@@ -1620,6 +1631,7 @@ string character_counter_pattern
 string common_google_play_services_unknown_issue
 string current_language
 string email
+string example_challenge
 string example_coctel_name
 string example_description
 string example_graduation
@@ -1679,12 +1691,15 @@ string title_home
 string title_language
 string title_launcher_image
 string title_making
+string title_must_add_moreplayers
 string title_must_add_player
 string title_must_select_player
 string title_new_translation
+string title_next_phrase
 string title_no_ads
 string title_orderby
 string title_players
+string title_previous_phrase
 string title_price_at_home
 string title_price_at_pubs
 string title_put_name

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="game_challenge">
+  <item>Default</item>
+  <item>Name, a > z</item>
+  <item>Name, z > a</item>
+  <item>Price at home, low to high</item>
+  <item>Price at home, high to low</item>
+  <item>Price at bar, low to high</item>
+  <item>Price at bar, high to low</item>
+  <item>Type, a > z</item>
+  <item>Type, z > a</item>
+  <item>Graduation, low to high</item>
+  <item>Graduation, high to low</item>
+</string-array>
     <string-array name="orderby">
   <item>Por defecto</item>
   <item>Nombre, a > z</item> 
@@ -42,6 +55,7 @@
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Ocultar"</string>
     <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"La aplicación <ns1:g id="APP_NAME">%1$s</ns1:g> tiene problemas con los Servicios de Google Play. Vuelve a intentarlo."</string>
     <string name="current_language">Idioma actual</string>
+    <string name="example_challenge">Esta es una frase de ejemplo, x, hazle y a z</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Desplazarse hacia arriba"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Abrir panel de navegación"</string>
     <string msgid="368094699078615544" name="s1">"Guardar imagen"</string>
@@ -79,12 +93,15 @@
     <string name="title_language">Idioma</string>
     <string name="title_launcher_image">Imagen Launcher</string>
     <string name="title_making">Elaboración</string>
+    <string name="title_must_add_moreplayers">Inserta más jugadores</string>
     <string name="title_must_add_player">Inserta jugadores primero</string>
     <string name="title_must_select_player">Selecciona un jugador arriba</string>
     <string name="title_new_translation">Solicitar nueva traducción</string>
+    <string name="title_next_phrase">Siguiente frase</string>
     <string name="title_no_ads">No hay anuncios disponibles en este momento</string>
     <string name="title_orderby">Ordenar por</string>
     <string name="title_players">Jugadores</string>
+    <string name="title_previous_phrase">Frase anterior</string>
     <string name="title_price_at_home">Precio en casa</string>
     <string name="title_price_at_pubs">Precio en bares</string>
     <string name="title_put_name">Nombre del jugador</string>

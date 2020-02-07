@@ -50,9 +50,10 @@ public class RandomDrinkFragment extends Fragment {
     private void loadRandomCoctel() {
 
 
-        CoctelsOpenHelper coctelsOpenHelper = new CoctelsOpenHelper(getContext(), null, null, 1);
+        CoctelsOpenHelper coctelsOpenHelper = new CoctelsOpenHelper(getContext());
         Cursor cursorCoctels = coctelsOpenHelper.getRandomCoctel();
         cursorCoctels.moveToFirst();
+
         Coctel coctel = new Coctel(cursorCoctels.getString(1), cursorCoctels.getInt(2),
                 cursorCoctels.getFloat(3), cursorCoctels.getFloat(4),
                 cursorCoctels.getFloat(5), cursorCoctels.getString(6),
