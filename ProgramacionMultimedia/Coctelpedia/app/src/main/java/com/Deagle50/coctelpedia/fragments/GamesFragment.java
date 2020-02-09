@@ -18,6 +18,8 @@ import com.deagle50.coctelpedia.R;
 import com.deagle50.coctelpedia.helpers.JugadoresOpenHelper;
 import com.deagle50.coctelpedia.fragments.GifFragment;
 
+import com.deagle50.coctelpedia.fragments.GameChallengeFragment;
+
 import java.util.ArrayList;
 
 import static com.deagle50.coctelpedia.activities.MainActivity.instance;
@@ -91,7 +93,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 }
                 else{
                     FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                    transaction.replace(R.id.container, new GameChallenge());
+                    transaction.replace(R.id.container, new GameChallengeFragment());
 
                     transaction.addToBackStack(null);
 

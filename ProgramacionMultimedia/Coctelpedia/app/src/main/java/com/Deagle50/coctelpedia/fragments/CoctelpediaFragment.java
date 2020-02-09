@@ -57,11 +57,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         coctelsOpenHelper = new CoctelsOpenHelper(getContext());
 
         recyclerView = view.findViewById(R.id.RecyclerViewCoctel);
-
         recyclerView.setLayoutManager(linearLayoutManager);
-
-
-
 
         cbVegetarian = view.findViewById(R.id.checkBoxVegetarian2);
         cbVegan = view.findViewById(R.id.checkBoxVegan2);
@@ -206,6 +202,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         for(cursorTypes.moveToFirst(); !cursorTypes.isAfterLast(); cursorTypes.moveToNext()) {
             spinnerArray.add(cursorTypes.getString(1));
         }
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 Objects.requireNonNull(getContext()), android.R.layout.simple_spinner_item, spinnerArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

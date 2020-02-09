@@ -48,9 +48,8 @@ public class GifFragment extends Fragment {
             public void run() {
                 //Do something after 1000ms
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.containerGif, new RandomDrinkFragment());
-
-                // Commit the transaction
+                transaction.replace(R.id.containerGif, new com.deagle50.coctelpedia.fragments.RandomDrinkFragment());
+                transaction.addToBackStack(null);
                 transaction.commit();
             }
         }, 2000);

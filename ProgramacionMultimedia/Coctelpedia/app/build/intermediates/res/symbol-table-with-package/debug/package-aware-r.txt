@@ -1249,6 +1249,7 @@ id collapseActionView
 id container
 id containerCoctelpedia
 id containerGif
+id container_randomdrink
 id content
 id contentPanel
 id coordinator

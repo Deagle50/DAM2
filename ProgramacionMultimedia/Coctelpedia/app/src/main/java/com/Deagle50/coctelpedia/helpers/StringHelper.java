@@ -12,25 +12,27 @@ public class StringHelper {
         this.strings = strings;
     }
 
-    private String getRandomString(){
-        rand = ((int) (Math.random() * (strings.size() + 1)));
+    public String getRandomString(){
+        if(rand!=-1)
+            previousInt = rand;
+        rand = ((int) (Math.random() * (strings.size())));
         if(previousInt!=-1)
         {
             while(rand==previousInt)
             {
-                rand = ((int) (Math.random() * (strings.size() + 1)));
+                rand = ((int) (Math.random() * (strings.size())));
             }
         }
-        previousInt = rand;
+
         return strings.get(rand);
     }
 
-    private String getPreviousString(){
+    public String getPreviousString(){
         nextInt = rand;
         return strings.get(previousInt);
     }
 
-    private String getNextString(){
+    public String getNextString(){
         return strings.get(nextInt);
     }
 }
