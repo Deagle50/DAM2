@@ -34,6 +34,7 @@ import static com.deagle50.coctelpedia.activities.MainActivity.instance;
 public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelViewHolder>{
     private GestureDetector detector;
     private ArrayList<Coctel> coctels;
+    private Coctel actualCoctel;
     Context context;
 
     public CoctelsAdapter(ArrayList<Coctel> coctels){
@@ -59,9 +60,11 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
-    public void onBindViewHolder(CoctelViewHolder coctelViewHolder, int i) {
+    public void onBindViewHolder(final CoctelViewHolder coctelViewHolder, int i) {
         i = coctelViewHolder.getAdapterPosition();
+
 
 
         coctelViewHolder.tvCoctel.setText(coctels.get(i).getName());
@@ -97,7 +100,14 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         if(themeHelper.isDark())
             coctelViewHolder.cv.setBackgroundColor(instance.getResources().getColor(R.color.backgroundGray, null));
 
+        coctelViewHolder.cv.setOnTouchListener(new View.OnTouchListener() {
 
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                actualCoctel = coctels.get(coctelViewHolder.getAdapterPosition());
+                return detector.onTouchEvent(event);
+            }
+        });
     }
 
 
@@ -114,7 +124,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         CheckBox cbVegetarian, cbVegan;
 
         @SuppressLint("ClickableViewAccessibility")
-        CoctelViewHolder(View itemView) {
+        CoctelViewHolder(final View itemView) {
             super(itemView);
             cv = itemView.findViewById(R.id.CardViewCoctel);
             imageViewCoctel = itemView.findViewById(R.id.imageViewCoctel2);
@@ -128,17 +138,6 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
             cbVegan =itemView.findViewById(R.id.checkBoxVegano);
             tvType = itemView.findViewById(R.id.textViewType);
 
-
-
-
-            cv.setOnTouchListener(new View.OnTouchListener() {
-
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    return detector.onTouchEvent(event);
-                }
-            });
-
         }
     }
 
@@ -151,7 +150,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         @Override
         public boolean onDoubleTap(MotionEvent e) {
             Log.e("onDoubleTap", e.getAction() + "");
-            Toast.makeText(context, "doubletap", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, actualCoctel.getName(), Toast.LENGTH_SHORT).show();
             return true;
         }
     }
