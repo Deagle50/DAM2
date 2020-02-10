@@ -1,0 +1,17 @@
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\bin\Debug\WPF16EnlaceControles.exe.config
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\bin\Debug\WPF16EnlaceControles.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\bin\Debug\WPF16EnlaceControles.pdb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\bin\Debug\WPF16EnlaceControles.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.vbprojAssemblyReference.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\MainWindow.g.vb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\Application.g.vb
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles_MarkupCompile.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles_MarkupCompile.lref
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\MainWindow.baml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.g.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.Resources.resources
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.vbproj.GenerateResource.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.vbproj.CoreCompileInputs.cache
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.exe
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.xml
+D:\Urko Urbieta\Visual Studio\Desarrollo de Interfaces\WPF16EnlaceControles\WPF16EnlaceControles\obj\Debug\WPF16EnlaceControles.pdb
