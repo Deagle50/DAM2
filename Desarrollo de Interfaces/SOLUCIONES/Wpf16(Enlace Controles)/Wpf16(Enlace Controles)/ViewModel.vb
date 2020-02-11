@@ -50,6 +50,17 @@ Public Class ViewModel
         End Get
 
     End Property
+
+    Public ReadOnly Property Ordenes As List(Of Wpf16_Enlace_Controles_.Orders)
+        Get
+            If Not Empleado Is Nothing Then
+                Return Empleado.Orders.ToList
+            Else
+                Return Nothing
+            End If
+        End Get
+    End Property
+
     Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
 
     Public Sub Buscar()
@@ -57,5 +68,6 @@ Public Class ViewModel
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("Nombre"))
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("Apellido"))
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("Photo"))
+        RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs("Ordenes"))
     End Sub
 End Class
