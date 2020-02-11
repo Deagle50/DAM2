@@ -1298,6 +1298,7 @@ id icon_group
 id ifRoom
 id image
 id imageViewCoctel2
+id imageViewCoctelLight
 id info
 id invisible
 id italic
@@ -1440,10 +1441,12 @@ id textViewFilters
 id textViewGameChallengeTitle
 id textViewGraduacion
 id textViewGraduation
+id textViewGraduationLight
 id textViewHome4
 id textViewLanguage
 id textViewMaking2
 id textViewName
+id textViewNameLight
 id textViewNewTranslation
 id textViewNombre
 id textViewOrderBy
@@ -1458,6 +1461,7 @@ id textViewTheme
 id textViewTranslationIssue
 id textViewType
 id textViewType2
+id textViewTypeLight
 id textViewVersion
 id text_input_password_toggle
 id textinput_counter
@@ -1570,6 +1574,7 @@ layout fragment_home
 layout fragment_random_drink
 layout fragment_settings
 layout item_coctel
+layout item_coctel_light
 layout item_jugador
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

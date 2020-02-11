@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name" translatable="false">Coctelpedia</string>
+    <!-- Activities -->
+    <string name="title_activity_jgquien_mas_probable" translatable="false">JGQuienMasProbable</string>
+
+    <string name="current_language">Current language:</string>
+    <!-- Títulos -->
+    <string name="title_home">Home</string>
+    <string name="title_coctelpedia" translatable="false">Coctelpedia</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_games">Games</string>
+    <string name="title_launcher_image">Launcher image</string>
+    <string name="title_who_would">Who would...?</string>
+    <string name="title_language">Language</string>
+    <string name="title_theme">Theme</string>
+    <string name="title_contact">Contact</string>
+    <string name="title_welcome">Welcome to Coctelpedia</string>
+    <string name="title_vegetarian">Vegetarian</string>
+    <string name="title_vegan">Vegan</string>
+    <string name="title_description">Description</string>
+    <string name="title_making">Making</string>
+    <string name="title_report_bugs">Report bugs</string>
+    <string name="title_bugs">Bugs</string>
+    <string name="title_translation_issue">Translation issue</string>
+    <string name="title_new_translation">Ask for new translation</string>
+    <string name="title_usual_price">Usual price</string>
+
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="welcome_message">In this app you will find a large list with most alcoholic drinks of the market, with information about them, as well as if they are vegetarian or vegan. Also there are some games to play with friends while drinking. Available in English, Basque and Spanish</string>
+
+    <string name="usual_price_home">at home</string>
+    <string name="usual_price_pub">at pubs</string>
+
+    <string name="email" translatable="false">deagle50uu@gmail.com</string>
+
+
+    <string name="version" translatable="false">0.1</string>
+    <string name="text_theme_changed_dark">Theme changed to dark</string>
+    <string name="text_theme_changed_light">Theme changed to light</string>
+    <string name="text_theme_already_changed">That\'s the actual theme</string>
+    <string name="text_bugs">If you find any bugs or translation problems, as well as if you want the application to be translated to your language, tell us bellow.</string>
+    <string name="preferences_theme_file" translatable="false">themeFile</string>
+    <string name="preferences_isdark" translatable="false">theme</string>
+
+    <string name="preferences_language_file" translatable="false">languageFile</string>
+    <string name="preferences_language" translatable="false">language</string>
+    <string name="text_language_already_changed">Current language: English</string>
+    <string name="title_credits">Credits</string>
+    <string name="text_credits">Pictures: taken from flaticon, made by users Freepik, srip and Kiranshastry</string>
+    <string name="title_close">Close</string>
+    <string name="title_add_player">Add player</string>
+    <string name="title_game_challenge">Challenges</string>
+    <string name="title_players">Players</string>
+    <string name="title_finish">Finish</string>
+    <string name="title_delete">Delete</string>
+    <string name="title_deleted">deleted</string>
+    <string name="title_must_select_player">Select player above</string>
+    <string name="title_put_name">Player name</string>
+    <string name="title_empty_name">Name field can\'t be empty</string>
+    <string name="title_must_add_player">Please, add players first</string>
+    <string name="title_type">Drink type</string>
+    <string name="title_orderby">Order by</string>
+    <string name="title_filters">Filters</string>
+    <string name="title_all_drinks">All</string>
+    <string name="title_0" translatable="false">0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_random_drink">Random drink</string>
+    <string name="title_price_at_pubs">Price at pubs</string>
+    <string name="title_price_at_home">Price at home</string>
+    <string name="example_price" translatable="false">10.0€</string>
+    <string name="example_coctel_name" translatable="false">Coctel name</string>
+    <string name="example_graduation" translatable="false">15.5º</string>
+    <string name="example_description" translatable="false">This is an example for the description of the coctel, its flavour and other things</string>
+    <string name="example_making" translatable="false">Here comes the explanation of how is done the coctel</string>
+    <string name="example_type" translatable="false">Example type</string>
+    <string name="title_support">If you want to support the developer, click here to see an ad</string>
+    <string name="title_no_ads">There are no ads right now</string>
+    <string name="example_challenge">This is a phrase as an example, person x, do y to person z</string>
+    <string name="title_previous_phrase">Previous phrase</string>
+    <string name="title_next_phrase">Next phrase</string>
+    <string name="title_must_add_moreplayers">Please, add more players</string>
+
+
+</resources>

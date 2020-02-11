@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="game_challenge">
+  <item >Default</item>
+  <item >Name, a > z</item>
+  <item >Name, z > a</item>
+  <item >Price at home, low to high</item>
+  <item >Price at home, high to low</item>
+  <item >Price at bar, low to high</item>
+  <item >Price at bar, high to low</item>
+  <item >Type, a > z</item>
+  <item >Type, z > a</item>
+  <item>Graduation, low to high</item>
+  <item>Graduation, high to low</item>
+</string-array>
+</resources>

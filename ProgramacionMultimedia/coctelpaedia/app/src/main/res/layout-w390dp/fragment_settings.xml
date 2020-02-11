@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textViewSupport"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:text="@string/title_support"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardViewBugs"
+            app:layout_constraintStart_toStartOf="@+id/materialCardViewBugs"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewBugs" />
+
+        <TextView
+            android:id="@+id/textViewVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/version"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCredits"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewCredits" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewFilters"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="17dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/fontGray"
+            app:strokeWidth="1dp">
+
+            <!-- Card contents. -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonES"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ic_flag_espana_64"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonEU"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonEU"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/buttonEU" />
+
+                <Button
+                    android:id="@+id/buttonEU"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/ic_flag_euskadi_64"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonEN"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/buttonES"
+                    app:layout_constraintTop_toBottomOf="@id/textViewLanguage" />
+
+                <Button
+                    android:id="@+id/buttonEN"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ic_flag_uk_64"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonEU"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/buttonEU"
+                    app:layout_constraintTop_toTopOf="@+id/buttonEU" />
+
+                <TextView
+                    android:id="@+id/textViewLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_language"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewTheme"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="17dp"
+            android:minHeight="50dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters"
+            app:strokeColor="@color/fontGray"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_theme"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonDarkTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/background_dark"
+                    android:text="@string/theme_dark"
+                    android:textColor="@color/fontWhite"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttonLightTheme"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/buttonLightTheme"
+                    app:layout_constraintTop_toTopOf="@+id/buttonLightTheme" />
+
+                <Button
+                    android:id="@+id/buttonLightTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="@color/fontWhite"
+                    android:text="@string/theme_light"
+                    android:textColor="@color/fontBlack"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonDarkTheme"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTheme" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewContacto"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="17dp"
+            android:minHeight="50dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewTheme"
+            app:strokeColor="@color/fontGray"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_contact"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonGmail1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/ic_gmail"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewCorreo"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewCorreo"
+                    app:layout_constraintTop_toTopOf="@+id/textViewCorreo" />
+
+                <Button
+                    android:id="@+id/buttonGmail2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/ic_gmail"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewCorreo"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCorreo"
+                    app:layout_constraintTop_toTopOf="@+id/textViewCorreo"
+                    app:layout_constraintVertical_bias="0.6" />
+
+                <TextView
+                    android:id="@+id/textViewCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/email"
+                    android:textColor="@color/colorPrimary"
+                    android:textIsSelectable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewContact"
+                    app:layout_constraintStart_toStartOf="@+id/textViewContact"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewContact" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewBugs"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="17dp"
+            android:minHeight="50dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewContacto"
+            app:strokeColor="@color/fontGray"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewReportBugs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/title_report_bugs"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewBugsText"
+                    android:layout_width="344dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/text_bugs"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewReportBugs" />
+
+                <TextView
+                    android:id="@+id/textViewNewTranslation"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="enviarFeedback"
+                    android:text="@string/title_new_translation"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewBugs"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewBugs"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textViewBugs" />
+
+                <TextView
+                    android:id="@+id/textViewBugs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="enviarFeedback"
+                    android:text="@string/title_bugs"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewTranslationIssue"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewNewTranslation"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewBugsText" />
+
+                <TextView
+                    android:id="@+id/textViewTranslationIssue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="enviarFeedback"
+                    android:text="@string/title_translation_issue"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewBugs"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textViewBugs"
+                    app:layout_constraintTop_toTopOf="@+id/textViewBugs" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textViewCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_credits"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewBugs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
