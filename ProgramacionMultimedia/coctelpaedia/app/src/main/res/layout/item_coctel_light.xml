@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/example_coctel_name"
-        android:textSize="24sp"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageViewCoctelLight"
         app:layout_constraintTop_toTopOf="@+id/imageViewCoctelLight"
         tools:ignore="DuplicateIds" />
@@ -34,17 +35,24 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/example_graduation"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@+id/imageViewCoctelLight"
         app:layout_constraintTop_toBottomOf="@+id/textViewNameLight" />
 
-    <TextView
-        android:id="@+id/textViewTypeLight"
+    <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/example_type"
-        app:layout_constraintStart_toEndOf="@+id/imageViewCoctelLight"
-        app:layout_constraintTop_toBottomOf="@+id/textViewGraduationLight" />
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="165dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

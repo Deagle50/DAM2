@@ -49,6 +49,17 @@ public class JugadoresOpenHelper extends SQLiteOpenHelper {
         }
     }
 
+    public boolean updatePlayer(int id, String name) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] args = {name, String.valueOf(id)};
+        try {
+            db.execSQL("UPDATE players SET name=? WHERE id = ?", args);
+            return true;
+        }catch(Exception ex) {
+            return false;
+        }
+    }
+
 
     public void insertPlayer(String player){
         SQLiteDatabase db = this.getWritableDatabase();

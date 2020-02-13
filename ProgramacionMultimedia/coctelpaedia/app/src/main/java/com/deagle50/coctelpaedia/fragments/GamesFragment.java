@@ -74,7 +74,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
             }
             case R.id.buttonGameWhoWould:
             {
-
+                Toast.makeText(getContext(), "Work in progress...", Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.buttonGameChallenge:

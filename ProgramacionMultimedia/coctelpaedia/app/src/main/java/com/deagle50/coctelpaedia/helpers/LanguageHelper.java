@@ -21,18 +21,11 @@ public class LanguageHelper {
         savedLanguage = shp.getString(context.getResources().getString(R.string.preferences_language), "es");
     }
 
-    /*public static Context onAttach(Context context) {
-        String lang = getPersistedData(context, Locale.getDefault().getLanguage());
-        return setLocale(context, lang);
-    }
-
-    public static Context onAttach(Context context, String defaultLanguage) {
-        String lang = getPersistedData(context, defaultLanguage);
-        return setLocale(context, lang);
-    }*/
-
     public String getLanguage(Context context) {
-        return getPersistedData(context, Locale.getDefault().getLanguage());
+
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
+        return shp.getString(SELECTED_LANGUAGE, "");
+        //return getPersistedData(context, Locale.getDefault().getLanguage());
     }
 
     public Context setLocale(Context context, String language) {
@@ -43,11 +36,6 @@ public class LanguageHelper {
             return updateResources(context, language);
         }
         return updateResources(context, getLanguage(context));
-    }
-
-    private String getPersistedData(Context context, String defaultLanguage) {
-        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_language_file), Context.MODE_PRIVATE);
-        return shp.getString(SELECTED_LANGUAGE, defaultLanguage);
     }
 
     private void persist(Context context, String language) {

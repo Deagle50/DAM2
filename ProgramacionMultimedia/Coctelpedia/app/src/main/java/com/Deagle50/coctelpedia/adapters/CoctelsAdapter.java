@@ -1,4 +1,4 @@
-package com.Deagle50.coctelpedia.adapters;
+package com.deagle50.coctelpedia.adapters;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

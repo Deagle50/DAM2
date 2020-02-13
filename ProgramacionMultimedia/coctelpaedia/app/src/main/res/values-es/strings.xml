@@ -55,4 +55,8 @@
     <string name="title_previous_phrase">Frase anterior</string>
     <string name="title_next_phrase">Siguiente frase</string>
     <string name="title_must_add_moreplayers">Inserta más jugadores</string>
+    <string name="title_updated">actualizado</string>
+    <string name="title_update_player">Actualizar</string>
+    <string name="title_share_dialog">¡Comparte Coctelpedia con tus amigos!</string>
+    <string name="text_share">Descarga Coctelpedia desde: google.es</string>
 </resources>

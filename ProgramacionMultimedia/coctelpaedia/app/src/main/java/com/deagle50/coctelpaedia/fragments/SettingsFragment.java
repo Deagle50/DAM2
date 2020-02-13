@@ -71,11 +71,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         tvCredits.setOnClickListener(this);
 
         interstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
-        interstitialAd.setAdUnitId("ca-app-pub-5556606541783481/6379618395");
+        interstitialAd.setAdUnitId("ca-app-pub-5556606541783481/4504898555");
         interstitialAd.loadAd(new AdRequest.Builder().build());
 
         /*
-        * My ad id:     ca-app-pub-5556606541783481/6379618395
+        * My ad id:     ca-app-pub-5556606541783481/4504898555
         * Google ad id: ca-app-pub-3940256099942544/1033173712
         * */
 

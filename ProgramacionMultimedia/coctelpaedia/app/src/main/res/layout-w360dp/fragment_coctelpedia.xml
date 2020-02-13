@@ -28,10 +28,8 @@
                 style="@style/Widget.MaterialComponents.CardView"
                 android:layout_width="328dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
 
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="17dp"
+                android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/materialCardViewTheme"
                 app:layout_constraintEnd_toEndOf="parent"

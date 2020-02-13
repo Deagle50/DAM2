@@ -26,7 +26,6 @@ public class GifFragment extends Fragment {
 
         root = inflater.inflate(R.layout.fragment_gif, container, false);
 
-
         changeFragment();
         changeBackgroundColor();
 
@@ -50,7 +49,6 @@ public class GifFragment extends Fragment {
                 //Do something after 1000ms
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.replace(R.id.containerGif, new RandomDrinkFragment());
-                transaction.addToBackStack(null);
                 transaction.commit();
             }
         }, 2000);

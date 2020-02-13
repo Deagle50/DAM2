@@ -85,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
         themeHelper = new com.deagle50.coctelpedia.helpers.ThemeHelper(MainActivity.this, this);
         themeHelper.loadSavedTheme();
 
-
-        Toast.makeText(this, languageHelper.getLanguage(this),Toast.LENGTH_SHORT).show();
-
         //Load ad launcher
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override

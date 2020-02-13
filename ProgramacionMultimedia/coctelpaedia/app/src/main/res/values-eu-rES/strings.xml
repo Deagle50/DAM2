@@ -55,4 +55,8 @@
     <string name="title_previous_phrase">Aurreko esaldia</string>
     <string name="title_next_phrase">Hurrengo esaldia</string>
     <string name="title_must_add_moreplayers">Sartu jokalari gehiago</string>
+    <string name="title_updated">eguneratua</string>
+    <string name="title_update_player">Eguneratu</string>
+    <string name="title_share_dialog">Partekatu Coctelpedia lagunekin!</string>
+    <string name="text_share">Deskargatu Coctelpedia google.es etik</string>
 </resources>

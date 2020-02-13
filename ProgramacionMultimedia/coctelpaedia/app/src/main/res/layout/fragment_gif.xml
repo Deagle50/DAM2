@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/containerGif">
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cvGifBackground"
     android:layout_width="match_parent"
-    android:layout_height="639dp"
-    android:background="@color/fontWhite">
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/containerGif"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/dice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvGifBackground"
+            android:layout_width="match_parent"
+            android:layout_height="639dp"
+            android:background="@color/fontWhite">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/dice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout></androidx.constraintlayout.widget.ConstraintLayout>

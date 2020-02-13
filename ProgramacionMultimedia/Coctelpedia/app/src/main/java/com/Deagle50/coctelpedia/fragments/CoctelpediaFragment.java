@@ -16,7 +16,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.Deagle50.coctelpedia.adapters.CoctelsAdapter;
+import com.deagle50.coctelpedia.adapters.CoctelsAdapter;
 import com.deagle50.coctelpedia.Coctel;
 import com.deagle50.coctelpedia.helpers.CoctelsOpenHelper;
 import com.deagle50.coctelpedia.fragments.GifFragment;

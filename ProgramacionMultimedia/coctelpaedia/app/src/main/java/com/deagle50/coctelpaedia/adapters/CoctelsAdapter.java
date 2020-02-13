@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -30,10 +29,9 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
     private GestureDetector detector;
     private ArrayList<Coctel> coctels;
     private Coctel actualCoctel;
-    Context context;
+    private Context context;
 
     public CoctelsAdapter(ArrayList<Coctel> coctels){
-
         this.coctels = coctels;
     }
 
@@ -48,19 +46,16 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_coctel, viewGroup, false);
         context = viewGroup.getContext();
 
-        detector = new GestureDetector(context, new GestureListener());//////
+        detector = new GestureDetector(context, new GestureListener());
 
         return new CoctelViewHolder(v);
-
-
     }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onBindViewHolder(final CoctelViewHolder coctelViewHolder, int i) {
+        //Load the data to the view on each item
         i = coctelViewHolder.getAdapterPosition();
-
-
 
         coctelViewHolder.tvCoctel.setText(coctels.get(i).getName());
         coctelViewHolder.tvDescription.setText(coctels.get(i).getDescription());
@@ -81,9 +76,9 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
 
         }
 
-
         if(coctels.get(i).getUrlPhoto()==1)
         {
+            //If urlPhoto is empty load default photo
             coctelViewHolder.imageViewCoctel.setImageResource(R.drawable.coctel);
         }
         else{
@@ -144,8 +139,10 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         }
         @Override
         public boolean onDoubleTap(MotionEvent e) {
+            //In the future, the items of the recyclerView will have less info,
+            //and onDoubleTap all the info will be shown
             Log.e("onDoubleTap", e.getAction() + "");
-            Toast.makeText(context, actualCoctel.getName(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, actualCoctel.getName(), Toast.LENGTH_SHORT).show();
             return true;
         }
     }

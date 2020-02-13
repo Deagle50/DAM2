@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -25,19 +24,17 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 *
 * TO DO:
 
-* To pass:
+    * To pass:
 
-* Extras:
+    * Extras:
+        * Close objects and databases
+        * On first load at install, show "Important information" on Coctelpaedia Fragment
+        * Load image on theme change
+        * Add games
+        * Gesture to change between navigationBar fragments
+        * Add animation to text on games * https://stackoverflow.com/questions/6700374/android-character-by-character-display-text-animation
+        * Add tips and tricks
 
-    * On first load at install, show "Important information" on Coctelpaedia Fragment
-    * Load image on theme change
-    * Add games
-    * Gesture to change between navbar fragments
-    * Add animation to text on games
-    * Add tips and tricks
-    * https://stackoverflow.com/questions/6700374/android-character-by-character-display-text-animation
-*
-*
 * DONE:
     * Dark theme
     * Save language and theme on shared preferences
@@ -48,6 +45,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
     * Coctels table
     * Random coctel game
     * Divide Coctels info into different tables (type, language)
+
+* KNOW BUGS:
+    * Scroll on CoctelpediaFragment bugged, idk how to solve it
+    * Language sharedPreferences not working well, on load doesn't load properly the saved language, it always goes the default
 *
 * Credits:
 * flags: Freepik
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        instance = this; //ÑAPA
+        instance = this;
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -76,9 +77,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-
-
-
         //Load language
         languageHelper = new LanguageHelper(MainActivity.this);
         languageHelper.loadSavedLanguage(this);
@@ -87,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
         themeHelper = new ThemeHelper(MainActivity.this, this);
         themeHelper.loadSavedTheme();
 
-
-        Toast.makeText(this, languageHelper.getLanguage(this),Toast.LENGTH_SHORT).show();
-
         //Load ad launcher
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -97,28 +92,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Change action bar color
-        //int titleId = getResources().getIdentifier("action_bar_title", "id", "android");
-        /*TextView abTitle = findViewById(getResources().getIdentifier("action_bar_title", "id", "android"));
-        abTitle.setTextColor(getResources().getColor(R.color.fontGray, null));*/
+        //ÑAPA to getResources and others from adapters and non-activity classes
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        //Inflate menu
         getMenuInflater().inflate(R.menu.share_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        //Menu for the share button
         if (item.getItemId() == R.id.menu_Share) {
             Intent i = new Intent(
                     Intent.ACTION_SEND);
             i.setType("text/plain");
             i.putExtra(
-                    Intent.EXTRA_TEXT, "Descarga la aplicacion desde google.es");//Take from string
-            startActivity(Intent.createChooser(i, "Title of your share dialog"));
+                    Intent.EXTRA_TEXT, getResources().getString(R.string.text_share));//Take from string
+            startActivity(Intent.createChooser(i, getResources().getString(R.string.title_share_dialog)));
         }
         return super.onOptionsItemSelected(item);
 
@@ -126,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
+        //Reload saved language onResume
         super.onResume();
         languageHelper.loadSavedLanguage(this);
         themeHelper.loadSavedTheme();
@@ -133,12 +128,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
+        //Reload saved language onStart
         super.onStart();
         languageHelper.loadSavedLanguage(this);
         themeHelper.loadSavedTheme();
     }
 
-    private void borrarPreferencias() {
+    private void deletePreferences() {
+        //Delete the preferences when wanted
         SharedPreferences shpl = this.getSharedPreferences(this.getResources().getString(R.string.preferences_language_file), MODE_PRIVATE);
         SharedPreferences shpt = this.getSharedPreferences(this.getResources().getString(R.string.preferences_theme_file), MODE_PRIVATE);
         SharedPreferences.Editor shple = shpl.edit();

@@ -1,6 +1,7 @@
 package com.deagle50.coctelpaedia;
 
 public class Coctel {
+    //Coctel class, with each
     private int id;
     private String name;
     private int urlPhoto;
@@ -8,8 +9,6 @@ public class Coctel {
     private String elaboration, description;
     private boolean vegetarian;
     private boolean vegan;
-
-
     private String type;
 
     public Coctel(String name, int urlPhoto, Float graduation, Float priceH, Float priceB, String elaboration, String description, boolean vegetarian, boolean vegan, String type) {

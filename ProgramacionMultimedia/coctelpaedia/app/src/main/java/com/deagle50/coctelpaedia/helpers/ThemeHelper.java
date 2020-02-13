@@ -101,11 +101,6 @@ public class ThemeHelper extends AppCompatActivity {
 
 
         instance.recreate();
-
-        /*ActionBar ab = instance.getSupportActionBar();
-        Spannable text = new SpannableString(ab.getTitle());
-        text.setSpan(new ForegroundColorSpan(instance.getResources().getColor(R.color.fontWhite, null)), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-        ab.setTitle(text);*/
     }
 
     public void loadLight(){
@@ -115,10 +110,6 @@ public class ThemeHelper extends AppCompatActivity {
         //Cambiar color texto actionbar
         instance.recreate();
 
-        /*ActionBar ab = instance.getSupportActionBar();
-        Spannable text = new SpannableString(ab.getTitle());
-        text.setSpan(new ForegroundColorSpan(Color.RED), 0, text.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-        ab.setTitle(text);*/
     }
 
     public void loadSavedTheme() {

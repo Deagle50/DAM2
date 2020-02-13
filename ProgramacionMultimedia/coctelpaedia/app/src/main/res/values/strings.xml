@@ -82,6 +82,10 @@
     <string name="title_previous_phrase">Previous phrase</string>
     <string name="title_next_phrase">Next phrase</string>
     <string name="title_must_add_moreplayers">Please, add more players</string>
+    <string name="title_updated">updated</string>
+    <string name="title_update_player">Update</string>
+    <string name="title_share_dialog">Share Coctelpedia with your friends!</string>
+    <string name="text_share">Download Coctelpedia from: google.es</string>
 
 
 </resources>
