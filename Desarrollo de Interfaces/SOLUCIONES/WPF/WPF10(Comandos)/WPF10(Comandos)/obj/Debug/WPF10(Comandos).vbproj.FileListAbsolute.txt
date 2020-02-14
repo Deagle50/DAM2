@@ -1,0 +1,34 @@
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).vbprojResolveAssemblyReference.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos)_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos)_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10_Comandos_.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\bin\Debug\WPF10(Comandos).xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos)_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos)_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10_Comandos_.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF10(Comandos)\WPF10(Comandos)\obj\Debug\WPF10(Comandos).pdb

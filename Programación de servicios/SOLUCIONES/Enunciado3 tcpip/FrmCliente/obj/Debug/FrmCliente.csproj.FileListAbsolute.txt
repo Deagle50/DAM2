@@ -1,0 +1,13 @@
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.Form1.resources
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.Properties.Resources.resources
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.csproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\bin\Debug\FrmCliente.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\bin\Debug\FrmCliente.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\bin\Debug\FrmCliente.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\bin\Debug\ClasesSocket.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\bin\Debug\ClasesSocket.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.csproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\FrmCliente\obj\Debug\FrmCliente.pdb

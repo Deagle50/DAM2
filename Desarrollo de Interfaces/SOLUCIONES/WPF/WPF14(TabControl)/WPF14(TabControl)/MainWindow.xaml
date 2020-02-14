@@ -1,0 +1,35 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF14_TabControl_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        Loaded="Window_Loaded"
+        >
+    <Grid>
+        <TabControl Margin="10,30,0,10" Name="tab">
+            <TabControl.ItemTemplate>
+               
+                <DataTemplate>
+                    <Grid Width="50">
+                        <Image Height="50" Source="{Binding Photo}"></Image>
+                    
+                    </Grid>
+                </DataTemplate>
+                
+            </TabControl.ItemTemplate>
+            <TabControl.ContentTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{Binding EmployeeID}"></TextBlock>
+                        <TextBlock Text="{Binding FirstName}"></TextBlock>
+                        <TextBlock Text="{Binding LastName}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </TabControl.ContentTemplate>
+        </TabControl>
+
+    </Grid>
+</Window>

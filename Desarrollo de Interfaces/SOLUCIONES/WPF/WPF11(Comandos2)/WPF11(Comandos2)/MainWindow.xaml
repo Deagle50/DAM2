@@ -1,0 +1,21 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF11_Comandos2_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="Play" Executed="CommandBinding_Executed" CanExecute="CommandBinding_CanExecute">
+            
+        </CommandBinding>
+    </Window.CommandBindings>
+    <Grid>
+        <TextBox x:Name="txtCantidad" HorizontalAlignment="Left" Height="23" Margin="30,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="txtDolares" HorizontalAlignment="Left" Margin="113,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Height="26"/>
+        <Label Content="Dólares" HorizontalAlignment="Left" Margin="30,76,0,0" VerticalAlignment="Top"/>
+        <Button Command="Play"  Content="Convertir" HorizontalAlignment="Left" Margin="30,127,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

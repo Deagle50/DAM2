@@ -1,0 +1,31 @@
+﻿<Window x:Class="Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Paneles"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid ShowGridLines="True" HorizontalAlignment="Center"             
+
+      VerticalAlignment="Center" Background="AliceBlue" 
+
+      Height="300" Width="300">
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="Auto"/>
+
+            <ColumnDefinition Width="*"/>
+
+            <ColumnDefinition Width="2*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Image Height="150" Grid.Column="0" Source="Windito.gif" Margin="0,75,10,75"/>
+
+        <Image Height="150"  Grid.Column="1" Source="Windito.gif"/>
+
+        <Image Height="150"  Grid.Column="2" Source="Windito.gif"/>
+    </Grid>
+</Window>

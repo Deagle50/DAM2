@@ -1,0 +1,17 @@
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\bin\Debug\Conversor.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\bin\Debug\Conversor.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\bin\Debug\Conversor.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\bin\Debug\Conversor.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\MainWindow.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor_MarkupCompile.lref
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\MainWindow.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Conversor\Conversor\obj\Debug\Conversor.pdb

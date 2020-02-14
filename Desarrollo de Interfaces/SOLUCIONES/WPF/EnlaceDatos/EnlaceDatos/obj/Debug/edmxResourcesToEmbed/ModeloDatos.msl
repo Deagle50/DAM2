@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DaniDBModelStoreContainer" CdmEntityContainer="DaniDBEntities">
+    <EntitySetMapping Name="Articulos">
+      <EntityTypeMapping TypeName="DaniDBModel.Articulos">
+        <MappingFragment StoreEntitySet="Articulos">
+          <ScalarProperty Name="ArticuloId" ColumnName="ArticuloId" />
+          <ScalarProperty Name="Denominacion" ColumnName="Denominacion" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Existencias" ColumnName="Existencias" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facturas">
+      <EntityTypeMapping TypeName="DaniDBModel.Facturas">
+        <MappingFragment StoreEntitySet="Facturas">
+          <ScalarProperty Name="FacturaId" ColumnName="FacturaId" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="pagado" ColumnName="pagado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lineas">
+      <EntityTypeMapping TypeName="DaniDBModel.Lineas">
+        <MappingFragment StoreEntitySet="Lineas">
+          <ScalarProperty Name="FacturaId" ColumnName="FacturaId" />
+          <ScalarProperty Name="ArticuloId" ColumnName="ArticuloId" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

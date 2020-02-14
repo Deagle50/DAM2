@@ -1,0 +1,38 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF15_menus_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Menu x:Name="MainMenu" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="792">
+            
+            <Menu.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Menus1}">
+
+                    <TextBlock Text="{Binding Titulo}"></TextBlock>
+                    
+                </HierarchicalDataTemplate>
+               </Menu.ItemTemplate>
+            </Menu>
+        <!--<Menu>
+            <MenuItem Header="uno">
+                <MenuItem Header="1.1">
+                    
+                </MenuItem>
+                <MenuItem Header="1.1">
+                    <MenuItem Header="1.1.1">
+
+                    </MenuItem>
+                    <MenuItem Header="1.1.2">
+
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+            
+        </Menu>-->
+
+    </Grid>
+</Window>

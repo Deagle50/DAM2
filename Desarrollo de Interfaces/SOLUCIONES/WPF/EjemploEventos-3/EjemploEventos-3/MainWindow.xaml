@@ -1,0 +1,13 @@
+﻿<Window x:Class="EjemploEventos_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid >
+        <Grid HorizontalAlignment="Left" Height="190" Margin="81,59,0,0" VerticalAlignment="Top" Width="380" Background="#FFE86161" >
+            <Grid HorizontalAlignment="Left" Height="124" Margin="60,34,0,0" VerticalAlignment="Top" Width="249" Background="Lime" PreviewMouseDown="Grid_MouseDown" MouseDown="Grid_MouseDown">
+                <Grid HorizontalAlignment="Left" Height="65" Margin="44,31,0,0" VerticalAlignment="Top" Width="156" Background="#FFF5F3F3" OpacityMask="White" PreviewMouseDown="Grid_PreviewMouseDown"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Command="" Name="miBoton" Click="miBoton_Click"  FontFamily="Consolas" 
+          Width="200" 
+          Foreground="White" FontSize="25" Margin="158,110,159,79">
+
+            <StackPanel Height="120" Width="101">
+                <Image Source="WinditoSimpatico.png" Height="89" Margin="10,0"/>
+                <TextBlock>WINDITO</TextBlock>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

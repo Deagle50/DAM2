@@ -1,0 +1,13 @@
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\bin\Debug\Enunciado1.exe.config
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\bin\Debug\Enunciado1.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\bin\Debug\Enunciado1.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\bin\Debug\ClasesSocket.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\bin\Debug\ClasesSocket.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.Form1.resources
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.Properties.Resources.resources
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.csproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.csproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.exe
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado1\Enunciado1\obj\Debug\Enunciado1.pdb

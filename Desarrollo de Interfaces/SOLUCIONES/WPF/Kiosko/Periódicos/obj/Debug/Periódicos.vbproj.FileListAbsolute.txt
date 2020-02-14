@@ -1,0 +1,74 @@
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.GenerateResource.Cache
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+F:\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+F:\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+F:\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+F:\Kiosko\Periódicos\obj\Debug\ResolveAssemblyReference.cache
+F:\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+F:\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.GenerateResource.Cache
+F:\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+F:\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+F:\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+G:\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+G:\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+G:\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+G:\Kiosko\Periódicos\obj\Debug\ResolveAssemblyReference.cache
+G:\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+G:\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+G:\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+G:\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+H:\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+H:\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+H:\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+H:\Kiosko\Periódicos\obj\Debug\ResolveAssemblyReference.cache
+H:\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+H:\Kiosko\Periódicos\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\Kiosko\Periódicos\obj\Debug\GenerateResource-ResGen.write.1.tlog
+H:\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+H:\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+H:\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\ResolveAssemblyReference.cache
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.GenerateResource.Cache
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.vbprojResolveAssemblyReference.cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.GenerateResource.Cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\bin\Debug\Periódicos.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\bin\Debug\Periódicos.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\bin\Debug\Periódicos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Periódicos\obj\Debug\Periódicos.pdb

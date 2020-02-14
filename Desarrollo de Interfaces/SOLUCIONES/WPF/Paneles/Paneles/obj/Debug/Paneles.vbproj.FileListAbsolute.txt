@@ -1,0 +1,50 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Page1.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Window1.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Page1.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Window1.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Window2.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Window2.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Window3.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Paneles\Paneles\obj\Debug\Window3.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\bin\Debug\Paneles.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\MainWindow.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Page1.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Window1.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Window2.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Window3.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles_MarkupCompile.lref
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\MainWindow.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Page1.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Window1.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Window2.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Window3.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Paneles\Paneles\obj\Debug\Paneles.pdb

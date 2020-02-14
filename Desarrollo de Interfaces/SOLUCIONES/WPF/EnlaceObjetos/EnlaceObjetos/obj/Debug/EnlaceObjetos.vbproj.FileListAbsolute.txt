@@ -1,0 +1,16 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\bin\Debug\EnlaceObjetos.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\bin\Debug\EnlaceObjetos.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\bin\Debug\EnlaceObjetos.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\bin\Debug\EnlaceObjetos.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EnlaceObjetos\EnlaceObjetos\obj\Debug\EnlaceObjetos.pdb

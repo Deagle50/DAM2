@@ -1,0 +1,16 @@
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\bin\Debug\WPF9(ListBox).exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\bin\Debug\WPF9(ListBox).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\bin\Debug\WPF9(ListBox).pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\bin\Debug\WPF9(ListBox).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox)_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox)_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox).g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9_ListBox_.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox).vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox).vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF9(ListBox)\WPF9(ListBox)\obj\Debug\WPF9(ListBox).pdb

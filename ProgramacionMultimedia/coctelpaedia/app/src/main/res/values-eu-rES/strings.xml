@@ -30,7 +30,7 @@
     <string name="text_theme_already_changed">Hori da dagoen tema</string>
     <string name="text_language_already_changed">Orain dagoen hizkuntza: euskara</string>
     <string name="title_credits">Kredituak</string>
-    <string name="text_credits">Argazkiak: hartuta flaticon-etik, Freepik, srip eta Kiranshastry erabiltzaileak eginda</string>
+    <string name="text_credits">Argazkiak: hartuta flaticon-etik, Freepik, srip eta Kiranshastry erabiltzaileak eginda.\nErronkak: Julri</string>
     <string name="title_close">Itxi</string>
     <string name="title_add_player">Jokalaria sartu</string>
     <string name="title_game_challenge">Erronkak</string>

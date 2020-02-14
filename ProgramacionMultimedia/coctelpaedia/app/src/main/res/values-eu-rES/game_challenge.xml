@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <string-array name="game_challenge">
-  <item >Default</item>
-  <item >Name, a > z</item>
-  <item >Name, z > a</item>
-  <item >Price at home, low to high</item>
-  <item >Price at home, high to low</item>
-  <item >Price at bar, low to high</item>
-  <item >Price at bar, high to low</item>
-  <item >Type, a > z</item>
-  <item >Type, z > a</item>
-  <item>Graduation, low to high</item>
-  <item>Graduation, high to low</item>
+  <item >pinua egin minutu batez</item>
+  <item >zure aurreko jokalariari oinan musu bat eman</item>
+  <item >bukatu zure edalontzia</item>
+  <item >esaiozu jokalari bati zure edalontzia bukatzeko</item>
+  <item >zure ezkerreko jokalariaren edalontzia bukatu</item>
+  <item >hitz egiozu zu ezagutzen ez duzun lehen pertsonari</item>
+  <item >edan alkoholdun txupito bat eta egin ezer gertatu balitz bezala</item>
+  <item >egin lau txupito, bi urezkoak, bi alkohol txurizkoak. Lagun batek ausaz bi aukeratu behar ditu, eta zuk beste biak edan behar dituzu</item>
+  <item >utziozu lagun bati zure mugikorra desbloqueatuta</item>
+  <item>ez ezazu erabili zure mugikorra 20 minututan</item>
+  <item>pertsona bat aukeratu: zure aurrekoa, ezkerrekoa edo eskubikoa, eta musu bat eman</item>
+  <item>gelditu altxatuta hurrengo hamar erronkatan</item>
+  <item>oilo bat imitatu hamar segundutan</item>
+  <item>aukeratu jokalari bat, eta hurrengo hiru erronkak egin behar ditu</item>
+  <item>zure aurreko jokalariarekin arropa prenda bat aldatu</item>
+  <item>besarkada bat emaiozu 3 minututan aurreko erronka egin duen jokalariari</item>
+  <item>aukeratu jokalari bat aurreko erronka egiteko</item>
+  <item>"bottle-flip-challenge" egin ezazu. Bi saiakeratan edo gutxiagotan lortzen baduzu, beste jokalariek edan behar dute. Bestela, saiakera zenbaketa edan behar duzu</item>
+  <item>txalotzen duzun aldi bakoitzean, jokalari guztiek txalotu behar dute. Azkenak edaten du</item>
+  <item>ireki "ausazko edaria" jokua, eta edan ezazu tokatzen zaizuna</item>
+  <item>nahi duzun jokalariak ausazko edaria edan behar du</item>
+  <item>abestu pixka bat. Asmatzen duen lehenak erabaki behar du nork edan behar duen. Inork asmatzen ez badu, zuk edan behar duzu</item>
+  <item>hasi abesten. Zure eskubiko jokalariak asmatzen ez badu, biok edaten duzue</item>
+  <item>zure aurreko jokalariarekin edaria aldatu</item>
+  <item>aukeratu jokalari bat eta zure gainean eseri behar da 5 minuturako</item>
+  <item>aukeratu jokalari bat bere gainean esertzeko 5 minuturako</item>
+  <item>hurrengo bi minututan jokalari bakoitzak esaten duen azken hitza errepikatu behar duzu</item>
+  <item>bi minuturako, egin aurreko erronkako jokalariak egiten dituen mugimendu berberak</item>
+  <item>egin hamar flexio</item>
+  <item>zure alboetako bi jokalariek hamar flexio egin behar dituzte. Beranduen bukatzen duenak 3 trago edan behar ditu</item>
+  <item>zure lau jokalari gertuenak eta zu, altxatu. Altuenak 5 trago banatzen ditu</item>
+  <item>jokalari guztiek zorionak zuri abestu behar dizute. Zorionak!</item>
+  <item>familiar bat deitu ezazu eta esaiozu maitatzen duzula</item>
+  <item>esan jokalarien artean zein den zure lagunik onena eta txarrena, zein den zein esan gabe</item>
+  <item>esan zerbait ona eta zerbait txarra aurreko erronkaren jokalariari buruz</item>
+  <item>bateria % 50 baino gehiago baduzu,  banatu 5 trago. Bestalde, edan itzazu</item>
+  <item>ezezagun bat gonbidatu jolastera</item>
+  <item>inkesta bat jarri instagramean eta galdetu zerbait "txarra" zuri buruz (ea pentsatzen duten itsusia zaren ala ez...)</item>
+  <item>zure ezkerreko jokalariaren ipurdia ukitu. Zure eskubikoak zura ukitu behar du</item>
 </string-array>
 </resources>

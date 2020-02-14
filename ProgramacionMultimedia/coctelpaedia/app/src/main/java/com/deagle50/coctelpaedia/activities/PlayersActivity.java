@@ -20,7 +20,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.deagle50.coctelpaedia.R;
-import com.deagle50.coctelpaedia.helpers.JugadoresOpenHelper;
+import com.deagle50.coctelpaedia.helpers.PlayersOpenHelper;
 import com.deagle50.coctelpaedia.helpers.LanguageHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -37,9 +37,29 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
     private AlertDialog.Builder updateBuilder;
     private Cursor cursorPlayers;
     private int selectedPlayerID =-1;
-    private JugadoresOpenHelper jugadoresOpenHelper;
+    private PlayersOpenHelper playersOpenHelper;
     private EditText input;
     private TextView txtCount;
+
+    @Override
+    protected void onResume() {
+        //Load language
+        LanguageHelper languageHelper;
+        languageHelper = new LanguageHelper(this);
+        languageHelper.loadSavedLanguage(this);
+
+        super.onResume();
+    }
+
+    @Override
+    protected void onStart() {
+        //Load language
+        LanguageHelper languageHelper;
+        languageHelper = new LanguageHelper(this);
+        languageHelper.loadSavedLanguage(this);
+
+        super.onStart();
+    }
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -59,7 +79,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
         listView = findViewById(R.id.listViewJugadores);
         listView.setOnItemClickListener(this);
 
-        jugadoresOpenHelper = new JugadoresOpenHelper(this, "cursorPlayers", null, 1);
+        playersOpenHelper = new PlayersOpenHelper(this);
 
 
         //Load the listView with the players from the database, if there are any
@@ -133,7 +153,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
                     player = input.getText().toString();
                     players.add(player);
 
-                    jugadoresOpenHelper.insertPlayer(player);
+                    playersOpenHelper.insertPlayer(player);
                 }
                 dialog.dismiss();
             }
@@ -176,7 +196,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
                     nameError();
                 }else{
                     String playerName = input.getText().toString();
-                    if(jugadoresOpenHelper.updatePlayer(selectedPlayerID, playerName)){
+                    if(playersOpenHelper.updatePlayer(selectedPlayerID, playerName)){
                         Toast.makeText(getApplicationContext(), cursorPlayers.getString(1)+" " + getResources().getString(R.string.title_updated), Toast.LENGTH_SHORT).show();
                     }
 
@@ -220,7 +240,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
 
     public void loadPlayers() {
         //Load all the players on the cursor
-        cursorPlayers = jugadoresOpenHelper.getPlayers();//Cursor cursorPlayers
+        cursorPlayers = playersOpenHelper.getPlayers();//Cursor cursorPlayers
 
         if(cursorPlayers != null) {
             //Pass the cursor to a ArrayList
@@ -238,7 +258,7 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
     public void deletePlayer() {
         //Delete the player if its selected any
         if(selectedPlayerID != -1) {
-            if(jugadoresOpenHelper.deletePlayer(selectedPlayerID)) {
+            if(playersOpenHelper.deletePlayer(selectedPlayerID)) {
                 Toast.makeText(this, cursorPlayers.getString(1) + " " + getString(R.string.title_deleted), Toast.LENGTH_SHORT).show();
                 loadPlayers();
                 selectedPlayerID = -1;
@@ -255,12 +275,17 @@ public class PlayersActivity extends AppCompatActivity implements View.OnClickLi
         //Update selected player
         if(selectedPlayerID != -1) {
             setUpdateBuilder();
+            if(input.getParent()!=null)
+            {
+                ((ViewGroup) input.getParent()).removeView(input);
+            }
+            updateBuilder.show();
         }
-        if(input.getParent()!=null)
+        else
         {
-            ((ViewGroup) input.getParent()).removeView(input);
+            Toast.makeText(this, getResources().getString(R.string.title_must_select_player), Toast.LENGTH_SHORT).show();
         }
-        updateBuilder.show();
+
     }
 
     public class GestureListener extends GestureDetector.SimpleOnGestureListener {

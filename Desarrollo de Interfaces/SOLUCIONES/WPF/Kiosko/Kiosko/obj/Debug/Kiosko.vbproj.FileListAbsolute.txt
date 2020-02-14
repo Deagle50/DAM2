@@ -1,0 +1,213 @@
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Window1.baml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Application.g.vb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.GenerateResource.Cache
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Heraclio.dll
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\bin\Debug\Heraclio.pdb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\dani\Documents\Visual Studio 2008\Projects\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+F:\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+F:\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+F:\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+F:\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+F:\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+F:\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+F:\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+F:\Kiosko\Kiosko\bin\Debug\Heraclio.pdb
+F:\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+F:\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+F:\Kiosko\Kiosko\obj\Debug\ResolveAssemblyReference.cache
+F:\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+F:\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+F:\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+F:\Kiosko\Kiosko\obj\Debug\Application.g.vb
+F:\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+F:\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+F:\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+F:\Kiosko\Kiosko\obj\Debug\Window1.baml
+F:\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+F:\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+F:\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.GenerateResource.Cache
+G:\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+G:\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+G:\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+G:\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+G:\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+G:\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+G:\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+G:\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+G:\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+G:\Kiosko\Kiosko\obj\Debug\ResolveAssemblyReference.cache
+G:\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+G:\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+G:\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+G:\Kiosko\Kiosko\obj\Debug\Application.g.vb
+G:\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+G:\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+G:\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+G:\Kiosko\Kiosko\obj\Debug\Window1.baml
+G:\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+G:\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+E:\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+E:\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+E:\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+G:\Kiosko\Kiosko\obj\Debug\ResGen.read.1.tlog
+G:\Kiosko\Kiosko\obj\Debug\ResGen.write.1.tlog
+H:\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+H:\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+H:\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+H:\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+H:\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+H:\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+H:\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+H:\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+H:\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+H:\Kiosko\Kiosko\obj\Debug\ResolveAssemblyReference.cache
+H:\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+H:\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+H:\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+H:\Kiosko\Kiosko\obj\Debug\Application.g.vb
+H:\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+H:\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+H:\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+H:\Kiosko\Kiosko\obj\Debug\Window1.baml
+H:\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+H:\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+H:\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\Kiosko\Kiosko\obj\Debug\ResGen.read.1.tlog
+H:\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.write.1.tlog
+H:\Kiosko\Kiosko\obj\Debug\ResGen.write.1.tlog
+G:\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\ResolveAssemblyReference.cache
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Application.g.vb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.baml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.read.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\ResGen.read.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.write.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\ResGen.write.1.tlog
+H:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+H:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+H:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\ResolveAssemblyReference.cache
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Application.g.vb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.baml
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.read.1.tlog
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\ResGen.read.1.tlog
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GenerateResource-ResGen.write.1.tlog
+J:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\ResGen.write.1.tlog
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.vbprojResolveAssemblyReference.cache
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Application.g.vb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.baml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.GenerateResource.Cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.vbprojResolveAssemblyReference.cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Application.g.vb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Window1.baml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.GenerateResource.Cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Ejemplos WPF\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\bin\Debug\Kiosko.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\bin\Debug\Kiosko.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\bin\Debug\Kiosko.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\bin\Debug\Periódicos.dll
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\bin\Debug\Periódicos.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\bin\Debug\Periódicos.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\UserControl1.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\UserControl1.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Window1.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\GeneratedInternalTypeHelper.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko_MarkupCompile.lref
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Window1.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.vbproj.CopyComplete
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Kiosko\Kiosko\obj\Debug\Kiosko.pdb

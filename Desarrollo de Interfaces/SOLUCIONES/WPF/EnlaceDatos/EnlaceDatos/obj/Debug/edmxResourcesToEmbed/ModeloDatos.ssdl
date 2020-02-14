@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Articulos">
+    <Key>
+      <PropertyRef Name="ArticuloId" />
+    </Key>
+    <Property Name="ArticuloId" Type="int" Nullable="false" />
+    <Property Name="Denominacion" Type="varchar" MaxLength="50" />
+    <Property Name="Precio" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="Existencias" Type="int" />
+    <Property Name="Imagen" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Facturas">
+    <Key>
+      <PropertyRef Name="FacturaId" />
+    </Key>
+    <Property Name="FacturaId" Type="int" Nullable="false" />
+    <Property Name="ClienteId" Type="int" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="pagado" Type="bit" />
+  </EntityType>
+  <EntityType Name="Lineas">
+    <Key>
+      <PropertyRef Name="FacturaId" />
+      <PropertyRef Name="ArticuloId" />
+    </Key>
+    <Property Name="FacturaId" Type="int" Nullable="false" />
+    <Property Name="ArticuloId" Type="int" Nullable="false" />
+    <Property Name="Unidades" Type="int" />
+  </EntityType>
+  <Association Name="FK_Lineas_Articulos">
+    <End Role="Articulos" Type="Self.Articulos" Multiplicity="1" />
+    <End Role="Lineas" Type="Self.Lineas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulos">
+        <PropertyRef Name="ArticuloId" />
+      </Principal>
+      <Dependent Role="Lineas">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Lineas_Facturas">
+    <End Role="Facturas" Type="Self.Facturas" Multiplicity="1" />
+    <End Role="Lineas" Type="Self.Lineas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Facturas">
+        <PropertyRef Name="FacturaId" />
+      </Principal>
+      <Dependent Role="Lineas">
+        <PropertyRef Name="FacturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DaniDBModelStoreContainer">
+    <EntitySet Name="Articulos" EntityType="Self.Articulos" Schema="tpv" store:Type="Tables" />
+    <EntitySet Name="Facturas" EntityType="Self.Facturas" Schema="tpv" store:Type="Tables" />
+    <EntitySet Name="Lineas" EntityType="Self.Lineas" Schema="tpv" store:Type="Tables" />
+    <AssociationSet Name="FK_Lineas_Articulos" Association="Self.FK_Lineas_Articulos">
+      <End Role="Articulos" EntitySet="Articulos" />
+      <End Role="Lineas" EntitySet="Lineas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Lineas_Facturas" Association="Self.FK_Lineas_Facturas">
+      <End Role="Facturas" EntitySet="Facturas" />
+      <End Role="Lineas" EntitySet="Lineas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

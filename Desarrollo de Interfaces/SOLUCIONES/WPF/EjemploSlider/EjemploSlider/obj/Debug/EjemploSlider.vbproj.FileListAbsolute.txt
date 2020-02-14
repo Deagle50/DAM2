@@ -1,0 +1,17 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\bin\Debug\EjemploSlider.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\bin\Debug\EjemploSlider.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\bin\Debug\EjemploSlider.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\bin\Debug\EjemploSlider.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploSlider\EjemploSlider\obj\Debug\EjemploSlider.pdb

@@ -1,0 +1,17 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\bin\Debug\WPFLista.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\bin\Debug\WPFLista.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\bin\Debug\WPFLista.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\bin\Debug\WPFLista.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPFLista\WPFLista\obj\Debug\WPFLista.pdb

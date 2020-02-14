@@ -1,0 +1,17 @@
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\bin\Debug\ClasesSocket.dll
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\bin\Debug\ClasesSocket.pdb
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.dll
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.pdb
+E:\DAM-2\DOCUMENTOS\PROGRAMACIÓN_SERVICIOS_PROCESOS\UD 4 TCPIP\Actividades\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\ClasesSocket\ClasesSocket\bin\Debug\ClasesSocket.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\ClasesSocket\ClasesSocket\bin\Debug\ClasesSocket.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\ClasesSocket\ClasesSocket\obj\Debug\ClasesSocket.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\ClasesSocket\obj\Debug\ClasesSocket.csproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\ClasesSocket\obj\Debug\ClasesSocket.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\ClasesSocket\obj\Debug\ClasesSocket.pdb
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\ClasesSocket\bin\Debug\ClasesSocket.dll
+D:\DAM-2\DOCUMENTOS\PROG_SERVICIOS_PROCESOS\UD 4 TCPIP\Soluciones\Enunciado3\ClasesSocket\bin\Debug\ClasesSocket.pdb

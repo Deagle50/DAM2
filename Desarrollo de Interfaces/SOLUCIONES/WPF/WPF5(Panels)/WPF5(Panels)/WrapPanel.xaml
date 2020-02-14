@@ -1,0 +1,19 @@
+﻿<Window x:Class="WrapPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF5_Panels_"
+        mc:Ignorable="d"
+        Title="WrapPanel" Height="300" Width="300">
+  
+        <WrapPanel Orientation="Horizontal" Background="AliceBlue">
+            <Image Source="WinditoVistoso.gif" Margin="10" Height="100"/>
+            <Image Source="WinditoAsustado.png" Margin="10" Height="100"/>
+            <Image Source="WinditoCallado.png" Margin="10" Height="100"/>
+            <Image Source="WinditoSimpatico.png" Margin="10" Height="100"/>
+            <Image Source="WinditoSimplon.png" Margin="10" Height="100"/>
+        </WrapPanel>
+
+ 
+</Window>

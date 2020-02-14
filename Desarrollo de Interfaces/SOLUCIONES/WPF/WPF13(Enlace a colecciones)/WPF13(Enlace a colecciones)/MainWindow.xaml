@@ -1,0 +1,52 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF13_Enlace_a_colecciones_"
+        xmlns:WpfApplication1="clr-namespace:WpfApplication1;assembly=WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="606.25">
+    <Window.Resources>
+        <WpfApplication1:Director x:Key="Spielberg" Nombre="Steven Spielberg" Nacionalidad="USA">
+            <WpfApplication1:Director.Peliculas>
+                <WpfApplication1:Pelicula Title="Jurassik Park" Genre="Aventuras" 
+                  award="True"  rate="4">
+                    <WpfApplication1:Pelicula.Actors>
+                        <system:String>Sam Neill</system:String>
+                        <system:String>Laura Linney</system:String>
+                        <system:String>Jeff Goldblum</system:String>
+                        <system:String>Richard Athemboroug</system:String>
+                    </WpfApplication1:Pelicula.Actors>
+                </WpfApplication1:Pelicula>
+
+                <WpfApplication1:Pelicula Title="La Lista de Schindler" Genre="Drama" 
+                  award="True" rate="4.5">
+                    <WpfApplication1:Pelicula.Actors>
+                        <system:String>Lian Nesson</system:String>
+                        <system:String>Ben Kingsley</system:String>
+                        <system:String>Ralph Fiennes</system:String>
+                    </WpfApplication1:Pelicula.Actors>
+                </WpfApplication1:Pelicula>
+
+            </WpfApplication1:Director.Peliculas>
+        </WpfApplication1:Director>
+    </Window.Resources>
+
+    <Grid DataContext="{ StaticResource Spielberg}" Margin="0,0,2,0">
+        <ListBox Name="lstPeli" HorizontalAlignment="Left" Height="163" Margin="10,126,0,0" VerticalAlignment="Top" Width="329" ItemsSource="{Binding Peliculas}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Title}"></TextBlock>
+                        <TextBlock Text="{Binding Genre}"></TextBlock>
+                        <TextBlock Text="{Binding rate}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox ItemsSource="{Binding ElementName=lstPeli,Path=SelectedItem.Actors}" HorizontalAlignment="Left" Height="161" Margin="369,128,0,0" VerticalAlignment="Top" Width="208"/>
+
+    </Grid>
+</Window>

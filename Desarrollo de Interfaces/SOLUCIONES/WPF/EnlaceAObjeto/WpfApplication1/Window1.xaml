@@ -1,0 +1,18 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ejemplo="clr-namespace:WpfApplication1"    
+    Title="Window1" Height="379.447" Width="611.858">
+    <Window.Resources>
+        <ejemplo:Pelicula x:Key="Peli1" Title="Star Wars" Genre="CienciaFiccion" award="True"></ejemplo:Pelicula>
+
+    </Window.Resources>
+    <Grid>
+        <Label Content="Titulo" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,41,0,0" TextWrapping="Wrap" Text="{Binding Path=Title,Source={StaticResource Peli1}}" VerticalAlignment="Top"/>
+        <Label Content="Titulo" HorizontalAlignment="Left" Margin="21,80,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,111,0,0" TextWrapping="Wrap" Text="{Binding Path=Genre, Source={StaticResource Peli1}}" VerticalAlignment="Top"/>
+        <CheckBox Content="Premio" IsChecked="{Binding Path=award, Source={StaticResource Peli1}}" HorizontalAlignment="Left" Margin="21,190,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

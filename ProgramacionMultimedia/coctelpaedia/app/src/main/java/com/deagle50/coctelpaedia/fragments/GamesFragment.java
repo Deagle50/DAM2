@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.deagle50.coctelpaedia.R;
 import com.deagle50.coctelpaedia.activities.PlayersActivity;
-import com.deagle50.coctelpaedia.helpers.JugadoresOpenHelper;
+import com.deagle50.coctelpaedia.helpers.PlayersOpenHelper;
 
 import java.util.ArrayList;
 
@@ -113,8 +113,8 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     }
 
     private void loadPlayers() {
-        JugadoresOpenHelper jugadoresOpenHelper = new JugadoresOpenHelper(getContext(), "cursorPlayers", null, 1);
-        cursorPlayers = jugadoresOpenHelper.getPlayers();//Cursor cursorPlayers
+        PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
+        cursorPlayers = playersOpenHelper.getPlayers();//Cursor cursorPlayers
 
         if(cursorPlayers != null) {
             ArrayList<String> players = new ArrayList<>();
@@ -122,5 +122,6 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
                 players.add(cursorPlayers.getString(1));
             }
         }
+        playersOpenHelper.close();
     }
 }

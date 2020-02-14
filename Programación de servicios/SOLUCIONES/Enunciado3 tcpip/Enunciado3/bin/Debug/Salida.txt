@@ -1,0 +1,10 @@
+CLIENTE   NUEVO NOMBRE   FECHA
+=======   ============   =====
+CLIENTE   NUEVO NOMBRE   FECHA
+=======   ============   =====
+      1            uno   12/02/2020 13:45:52
+      1            dos   12/02/2020 13:46:01
+CLIENTE   NUEVO NOMBRE   FECHA
+=======   ============   =====
+      1            uno   12/02/2020 13:48:57
+      1            dos   12/02/2020 13:49:02

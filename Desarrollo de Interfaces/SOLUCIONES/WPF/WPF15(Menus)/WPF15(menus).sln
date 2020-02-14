@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WPF15(menus)", "WPF15(menus)\WPF15(menus).vbproj", "{B652C1FF-C324-4F54-854E-241548865CD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B652C1FF-C324-4F54-854E-241548865CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B652C1FF-C324-4F54-854E-241548865CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B652C1FF-C324-4F54-854E-241548865CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B652C1FF-C324-4F54-854E-241548865CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9A44171-ECE8-43D4-9A87-9F2B16037EC8}
+	EndGlobalSection
+EndGlobal

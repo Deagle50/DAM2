@@ -1,0 +1,17 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\bin\Debug\ConversorMonedas.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\bin\Debug\ConversorMonedas.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\bin\Debug\ConversorMonedas.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\bin\Debug\ConversorMonedas.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\ConversorMonedas\ConversorMonedas\obj\Debug\ConversorMonedas.pdb

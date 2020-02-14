@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEnlace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Enlace>
+    <Source>http://www.diariovasco.com/rss/feeds/ultima.xml</Source>
+    <Nombre>Diariovasco</Nombre>
+  </Enlace>
+  <Enlace>
+    <Source>http://www.elpais.com/rss.html</Source>
+    <Nombre>El Pais</Nombre>
+  </Enlace>
+  <Enlace>
+    <Source>http://marca.feedsportal.com/rss/futbol_1adivision.xml</Source>
+    <Nombre>Marca</Nombre>
+  </Enlace>
+  <Enlace>
+    <Source>http://hola.com.feedsportal.com/c/33981/f/616385/index.rss</Source>
+    <Nombre>Hola</Nombre>
+  </Enlace>
+  <Enlace>
+    <Source>http://hola.com.feedsportal.com/c/33981/f/616385/index.rss</Source>
+    <Nombre>Hola</Nombre>
+  </Enlace>
+</ArrayOfEnlace>

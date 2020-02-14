@@ -1,0 +1,34 @@
+﻿<Window x:Class="CanvasPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF5_Panels_"
+        mc:Ignorable="d"
+        Title="CanvasPanel" Height="300" Width="300">
+    <Canvas>
+        <Image Source="frigorifico.jpg" Height="700"/>
+        <TextBox Canvas.Top="30" Canvas.Left="130" 
+             Background="LightYellow" FontWeight="Bold" 
+             Foreground="Blue" FontSize="20" 
+             FontFamily="Bradley Hand ITC" AcceptsReturn="True"/>
+        
+        <TextBox Canvas.Top="120" Canvas.Left="200" 
+             Background="LightYellow" FontWeight="Bold" 
+             Foreground="Blue" FontSize="20" 
+             FontFamily="Bradley Hand ITC" AcceptsReturn="True"/>
+  
+        <TextBox Canvas.Top="100" Canvas.Left="100" 
+             Background="LightYellow" FontWeight="Bold" 
+             Foreground="Blue" FontSize="20" 
+             FontFamily="Bradley Hand ITC" AcceptsReturn="True"/>
+
+        <TextBox Canvas.Top="150" Canvas.Left="250" 
+             Background="LightYellow" FontWeight="Bold" 
+             Foreground="Blue" FontSize="20" 
+             FontFamily="Bradley Hand ITC" AcceptsReturn="True"/>
+
+    </Canvas>
+
+
+</Window>

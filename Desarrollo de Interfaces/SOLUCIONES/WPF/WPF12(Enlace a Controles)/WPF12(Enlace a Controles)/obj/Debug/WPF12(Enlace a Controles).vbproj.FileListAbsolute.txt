@@ -1,0 +1,17 @@
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).vbprojResolveAssemblyReference.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles)_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\bin\Debug\WPF12(Enlace a Controles).exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\bin\Debug\WPF12(Enlace a Controles).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\bin\Debug\WPF12(Enlace a Controles).pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\bin\Debug\WPF12(Enlace a Controles).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles)_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12_Enlace_a_Controles_.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF12(Enlace a Controles)\WPF12(Enlace a Controles)\obj\Debug\WPF12(Enlace a Controles).pdb

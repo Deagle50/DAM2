@@ -1,0 +1,76 @@
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\bin\Debug\Deportes.exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\bin\Debug\Deportes.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\bin\Debug\Deportes.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\bin\Debug\Deportes.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.vbprojResolveAssemblyReference.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Deportes.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Votaciones.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Deportes\Deportes\obj\Debug\Votaciones.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\bin\Debug\Deportes.exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\bin\Debug\Deportes.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\bin\Debug\Deportes.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\bin\Debug\Deportes.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.vbprojResolveAssemblyReference.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Votaciones.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Votaciones.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\DeportesVM\Deportes\obj\Debug\Deportes.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Votaciones.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Votaciones.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\bin\Debug\Deportes.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\MainWindow.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Votaciones.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes_MarkupCompile.lref
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\MainWindow.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Votaciones.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\DeportesVM\Deportes\obj\Debug\Deportes.pdb

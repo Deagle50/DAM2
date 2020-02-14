@@ -1,0 +1,16 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\bin\Debug\EjemploWPF1.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\bin\Debug\EjemploWPF1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\bin\Debug\EjemploWPF1.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\bin\Debug\EjemploWPF1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploWPF1\EjemploWPF1\obj\Debug\EjemploWPF1.pdb

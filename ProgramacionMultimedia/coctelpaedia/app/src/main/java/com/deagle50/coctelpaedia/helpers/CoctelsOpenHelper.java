@@ -43,16 +43,17 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
                                                 "type TEXT);";
 
     private String crearTablaEU = "CREATE TABLE coctelsEU(_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            "name TEXT," +
-            "url_photo TEXT," +
-            "graduation FLOAT," +
-            "priceH FLOAT," +
-            "priceB FLOAT," +
-            "making TEXT," +
-            "description TEXT," +
-            "vegetarian BOOLEAN," +
-            "vegan BOOLEAN," +
-            "type TEXT);";
+                                                "name TEXT," +
+                                                "url_photo TEXT," +
+                                                "graduation FLOAT," +
+                                                "priceH FLOAT," +
+                                                "priceB FLOAT," +
+                                                "making TEXT," +
+                                                "description TEXT," +
+                                                "vegetarian BOOLEAN," +
+                                                "vegan BOOLEAN," +
+                                                "type TEXT);";
+
     private String insertCoctelsES = "INSERT INTO coctelsES(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
             "VALUES ('Mojito', "+R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'En una copa de cóctel, poner hielo picado 4cl de ron blanco, 3cl de zumo de lima, unas hojas de menta, azúcar al gusto, remover y disfrutar.', 'Uno de los cócteles más conocidos, tiene un toque a menta que no deja indiferente.', 1, 1, 'Coctel'),"+
             "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'En la copa, añadir 4cl de ron blanco, zumo de limón natural y azúcar al gusto. Frotar el borde de la copa con el limón le da un toque ácido espectacular.', 'Cóctel también muy reconocido, que tiene un sabor con una mezcla ácida y dulce que gustará a los paladares más exquisitos.', 1, 0, 'Coctel')," +
@@ -60,15 +61,15 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
             "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Mezclar 6cl de ron , 3 de Curaçao azul, 6 de zumo de piña, 3 de zumo de naranja y hielo.', 'Típico cóctel de color azul eléctrico con un paraguas como adorno, de sabor dulce y reconocido por todos.', 0, 0, 'Coctel')";
 
     private String insertCoctelsEN = "INSERT INTO coctelsEN(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
-            "VALUES ('Mojito', " + R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'En una copa de cóctel, poner hielo picado 4cl de ron blanco, 3cl de zumo de lima, unas hojas de menta, azúcar al gusto, remover y disfrutar.', 'Uno de los cócteles más conocidos, tiene un toque a menta que no deja indiferente.', 1, 1, 'Cocktail'),"+
-            "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'En la copa, añadir 4cl de ron blanco, zumo de limón natural y azúcar al gusto. Frotar el borde de la copa con el limón le da un toque ácido espectacular.', 'Cóctel también muy reconocido, que tiene un sabor con una mezcla ácida y dulce que gustará a los paladares más exquisitos.', 1, 0, 'Cocktail')," +
-            "('Ginkas',  "+R.drawable.ic_longdrink_ginkas+", 37.5, 2.5, 7, 'Añadir hielo, de 5 a 7 cl de Ginebra, y unos 20cl de kas o fanta (refresco) de limón, con una rodaja de limón en vaso de sidra/cubata/copa grande.', 'Cubata con toque ácido, de sabor agradable, muy popular entre los jóvenes.', 0, 0, 'Long drink')," +
-            "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Mezclar 6cl de ron , 3 de Curaçao azul, 6 de zumo de piña, 3 de zumo de naranja y hielo.', 'Típico cóctel de color azul eléctrico con un paraguas como adorno, de sabor dulce y reconocido por todos', 0, 0, 'Cocktail')";
+            "VALUES ('Mojito', " + R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'On a cocktail glass, put crushed ice, 4cl of white rum, 3cl of lime juice, some mint leafs, sugar, mix and endjoy.', 'One of the most well known cocktails, it has a mint leaf that doesn`t leave anybody unmoved.', 1, 1, 'Cocktail'),"+
+            "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'On a glass, add 4cl of white wum, lemon juice and sugar. Rubbing a lemon slice on the glass`s edge gives an espectacular acid taste.', 'Another well known cocktail, with a mixed taste between acid and sweet that anyone likes.', 1, 0, 'Cocktail')," +
+            "('Ginkas',  "+R.drawable.ic_longdrink_ginkas+", 37.5, 2.5, 7, 'Put ice, 5 to 7cl of white gyn, about 20cl of lemon soda with a lemon slice on a big glass.', 'Long drink with an acid taste, it`s popular between teenagers.', 0, 0, 'Long drink')," +
+            "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Mix 6cl of rum, 3cl of blue Curaçao, 6cl of pinneaple juice, 3cl of orange juice and ice.', 'Thypical well known blue coctel with a little umbrella on top of it. It`s flavour is sweet.', 0, 0, 'Cocktail')";
 
     private String insertCoctelsEU = "INSERT INTO coctelsEU(name, url_photo, graduation, priceH, priceB,making, description, vegetarian, vegan, type)" +
             "VALUES ('Mojito', "+R.drawable.ic_coctel_mojito+", 40, 2.5, 5, 'Koktel kopa batean, ipini izotz txikitua, ron txuria (4zl), limazko zukua (3zl), mentazko hosto txiki batzuk eta azukrea.', 'Kokteletan ezagunenetarikoa, menta zaporeduna, guztion atentzioa deitzen du.', 1, 1, 'Koktel'),"+
             "('Daiquiri',  "+R.drawable.ic_coctel_daiquiri+", 40, 2.2, 5, 'Kopa batean, ron txuria (4zl), limoi zukua eta azukrea jarri. Koparen ertza lomoiarekin igurztea edaria mikazten du.', 'Beste koktel oso ezaguna, honetan bi zapore dira nagusiak: mikatza eta gozoa.', 1, 0, 'Koktel')," +
-            "('Ginkas',  "+R.drawable.ic_longdrink_ginkas+", 37.5, 2.5, 7, 'Izotza, ginebra (5 eta 7 zl artean) eta kas botila txiki bat (20zl). Aldi berean, ipini limoi xafla bat edalontzian eta edan.', 'Kubata mikatza, oso ezaguna gazteen artean. ', 0, 0, 'Kubata')," +
+            "('Ginkas',  "+R.drawable.ic_longdrink_ginkas+", 37.5, 2.5, 7, 'Izotza, ginebra (5 eta 7 zl artean) eta kas botila txiki bat (20zl). Aldi berean, ipini limoi xafla bat edalontzian eta edan.', 'Kubata mikatza, oso ezaguna gazteen artean.', 0, 0, 'Kubata')," +
             "('Blue Hawaii',  "+R.drawable.ic_coctel_blue_hawaii+", 37, 3, 7, 'Ron beltza (6zl), Curaçao urdina (3zl), anana zukua (6cl), laranja zukua (3zl) eta izotza koktel kopa batean. Ongi nahastu, edan.', 'Erreferentziazko koktela: urdin distiratsua eta aterki txikiak apaintzen dute, askotan telebistan ikusia. Zapore gozoa du.', 0, 0, 'Koktel')";
 
     public CoctelsOpenHelper(@Nullable Context context) {
@@ -79,9 +80,9 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         try {
-            db.execSQL(dropES);
+            /*db.execSQL(dropES);
             db.execSQL(dropEN);
-            db.execSQL(dropEU);
+            db.execSQL(dropEU);*/
             db.execSQL(crearTablaEN);
             db.execSQL(crearTablaEU);
             db.execSQL(crearTablaES);
@@ -112,17 +113,15 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
         String lg = languageHelper.getLanguage(context);
         String table = "";
 
-
         switch (lg) {
-            case "en":
-                table = "coctelsEN";
-                break;
             case "eu":
                 table = "coctelsEU";
                 break;
             case "es":
                 table = "coctelsES";
                 break;
+            default:
+                table="coctelsEN";
         }
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -130,8 +129,8 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
         * Ñapa: If whereArguments is empty, it will make "args" null,
         * so that way it will always return the query
         * (previously was returning empty cursors)
+        */
 
-         */
         String[] args = new String[whereArguments.size()];
         if(whereArguments.size()==0)
         {
@@ -172,10 +171,8 @@ public class CoctelsOpenHelper extends SQLiteOpenHelper {
 
     public Cursor getTypes(){
         SQLiteDatabase db = this.getReadableDatabase();
-        String[] type = new String[]{"_id", "type"};
         LanguageHelper languageHelper = new LanguageHelper(context);
         String lg = languageHelper.getLanguage(context);
-        String table = "";
 
         switch (lg) {
             case "en":

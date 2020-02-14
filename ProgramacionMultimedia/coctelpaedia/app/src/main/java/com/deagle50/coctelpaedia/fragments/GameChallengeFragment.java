@@ -11,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
 import com.deagle50.coctelpaedia.R;
+import com.deagle50.coctelpaedia.helpers.PlayersOpenHelper;
 import com.deagle50.coctelpaedia.helpers.StringHelper;
 import com.deagle50.coctelpaedia.helpers.ThemeHelper;
 
@@ -31,7 +32,7 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
     private Boolean isFirstLoad = true;
     private Boolean isPrevious = false;
 
-    private StringHelper stringHelper;
+    private StringHelper phraseStringHelper;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -60,9 +61,10 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
         String[] gamePhrasesArray;
         gamePhrasesArray = getResources().getStringArray(R.array.game_challenge);
         List<String> stringList = new ArrayList<String>(Arrays.asList(gamePhrasesArray));
-        stringHelper = new StringHelper((ArrayList<String>) stringList);
+        phraseStringHelper = new StringHelper((ArrayList<String>) stringList);
+        PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
 
-        tvPhrase.setText(stringHelper.getRandomString());
+        tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));
     }
 
     private void changeBackgroundColor() {
@@ -76,23 +78,24 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
+        PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
         if(v==btnPrev)
         {
             isPrevious = true;
             btnPrev.setEnabled(false);
-            previous= stringHelper.getPreviousString();
-            next = stringHelper.getNextString();
+
+            next = tvPhrase.getText().toString();
 
             tvPhrase.setText(previous);
         }
         if(v==btnNext)
         {
+            previous = tvPhrase.getText().toString();
             if(isFirstLoad)
             {
                 btnPrev.setEnabled(true);
                 isFirstLoad=false;
-                tvPhrase.setText(stringHelper.getRandomString());
+                tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));
             }
             else{
                 if(isPrevious)
@@ -103,13 +106,13 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
 
                 }
                 else{
-                    tvPhrase.setText(stringHelper.getRandomString());
+                    tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));
                 }
             }
 
 
         }
-
+        playersOpenHelper.close();
 
     }
 }

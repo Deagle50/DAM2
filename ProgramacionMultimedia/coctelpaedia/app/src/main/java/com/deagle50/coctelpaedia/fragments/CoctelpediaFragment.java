@@ -43,7 +43,6 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
 
     public CoctelpediaFragment(){
-
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,

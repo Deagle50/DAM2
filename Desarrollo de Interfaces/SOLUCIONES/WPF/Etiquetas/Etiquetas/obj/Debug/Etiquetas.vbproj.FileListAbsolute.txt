@@ -1,0 +1,16 @@
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\bin\Debug\Etiquetas.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\bin\Debug\Etiquetas.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\bin\Debug\Etiquetas.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\bin\Debug\Etiquetas.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\Etiquetas\Etiquetas\obj\Debug\Etiquetas.pdb

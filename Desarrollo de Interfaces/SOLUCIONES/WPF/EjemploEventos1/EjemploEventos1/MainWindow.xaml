@@ -1,0 +1,25 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525">
+
+
+    <Grid Name="Grid1" Canvas.Top="10" Margin="0,10,2,-8" HorizontalAlignment="Right" Width="515"   >
+        <Button Grid.Column="0" Name="Button1" Background="#FFE03131" Margin="130,10,112,10">
+            <StackPanel Height="130" Width="166">
+
+                <TextBlock Grid.Row="0" FontSize="30">
+
+          Desarrolla con
+
+                </TextBlock>
+
+                <Image Source="/EjemploEventos1;component/MSDN.gif" Margin="-17,0,-1,21" Grid.Row="1" Name="Image1" Height="84" />
+            </StackPanel>
+        </Button>
+    </Grid>
+
+
+
+
+</Window>

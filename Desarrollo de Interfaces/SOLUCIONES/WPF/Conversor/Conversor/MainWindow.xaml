@@ -1,0 +1,18 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Conversor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="324" Width="483.5" Loaded="Window_Loaded">
+    <Grid Name="Layout">
+        <TextBox TextChanged="TxtFaren_TextChanged"  HorizontalAlignment="Left" Height="32" Margin="38,100,0,0" TextWrapping="Wrap" Text="{Binding Fahrenheit}" VerticalAlignment="Top" Name="txtFaren" Width="176"/>
+        <TextBox  TextChanged="TxtCenti_TextChanged" HorizontalAlignment="Left" Height="32" Margin="38,210,0,0" TextWrapping="Wrap" Text="{Binding Centigrados}" VerticalAlignment="Top" x:Name="txtCenti" Width="176"/>
+        <Label Content="Fahrenheit" HorizontalAlignment="Left" Margin="38,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Centigrados" HorizontalAlignment="Left" Margin="38,164,0,0" VerticalAlignment="Top"/>
+        <Button IsEnabled="{Binding FarentoCenti}" Content="Convertir" HorizontalAlignment="Left" Margin="322,100,0,0" VerticalAlignment="Top" Width="78" Height="32" Click="Button_Click"/>
+        <Button IsEnabled="{Binding CentitoFaren}" Content="Convertir" HorizontalAlignment="Left" Margin="322,210,0,0" VerticalAlignment="Top" Width="78" Height="32" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="Votaciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deportes"
+        mc:Ignorable="d"
+        Title="Votaciones" Height="300" Width="300">
+    <Expander>
+    <Grid>
+        <RadioButton  GroupName="Opciones" HorizontalAlignment="Left" Margin="38,96,0,0" VerticalAlignment="Top" Click="RadioButton_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Escalada.jpg" Height="45" Width="48"></Image>
+                <Label>Escalada</Label>
+            </StackPanel>
+        </RadioButton>
+        <RadioButton GroupName="Opciones" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Height="68" Width="151" Click="RadioButton_Click_1">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Eskupilota.jpg" Height="71" Width="71"></Image>
+                <Label>Eskupilota</Label>
+            </StackPanel>
+        </RadioButton>
+        <RadioButton Click="RadioButton_Click_2" GroupName="Opciones" HorizontalAlignment="Left" Margin="38,171,0,0" VerticalAlignment="Top" Height="54" Width="151">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Curling.jpg"></Image>
+                <Label>Curling</Label>
+            </StackPanel>
+        </RadioButton>
+        <Button   Click="Button_Click" Content="Pulsar" HorizontalAlignment="Left" Margin="200,239,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+    </Expander>
+</Window>

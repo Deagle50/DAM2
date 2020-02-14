@@ -1,0 +1,50 @@
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2)_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2)_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11_Comandos2_.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2)_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2)_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11_Comandos2_.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).exe.config
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\bin\Debug\WPF11(Comandos2).xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\MainWindow.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2)_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2)_MarkupCompile.lref
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\MainWindow.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11_Comandos2_.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\WPF11(Comandos2)\WPF11(Comandos2)\obj\Debug\WPF11(Comandos2).pdb

@@ -3,7 +3,7 @@
     package="com.deagle50.coctelpaedia">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,12 +14,6 @@
             android:value="ca-app-pub-5556606541783481~6371324620"/>
         <activity android:name=".activities.PlayersActivity"
             android:screenOrientation="portrait"></activity>
-        <activity
-            android:name=".activities.GameWhoWhould"
-            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
-            android:label="@string/title_activity_jgquien_mas_probable"
-            android:screenOrientation="portrait"
-            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="uiMode"

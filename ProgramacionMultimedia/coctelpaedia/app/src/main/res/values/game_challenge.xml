@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <string-array name="game_challenge">
-  <item >Default</item>
-  <item >Name, a > z</item>
-  <item >Name, z > a</item>
-  <item >Price at home, low to high</item>
-  <item >Price at home, high to low</item>
-  <item >Price at bar, low to high</item>
-  <item >Price at bar, high to low</item>
-  <item >Type, a > z</item>
-  <item >Type, z > a</item>
-  <item>Graduation, low to high</item>
-  <item>Graduation, high to low</item>
+  <item >kiss the foot of the person that is in front of you</item>
+  <item >do a handstand by a minute</item>
+  <item >finish your drink</item>
+  <item >tell a player to finish its drink</item>
+  <item >finish the drink of the player that is at your left</item>
+  <item >talk to anyone you don`t know</item>
+  <item >drink a shot of something with a strong flavour and make like nothing happened</item>
+  <item >make 4 shots: 2 of water, 2 of white alcohol. Tell a friend to randomly select 2 of them, and both of you have to drink the ones that you choose</item>
+  <item >leave your mobile phone unlocked, and give it to a friend for 5 minutes. Your friend can do anything he/she wants with it</item>
+  <item>choose a player between the one at your front, at your left or at your right, and give him/her a kiss</item>
+  <item>remain standing during the next 10 questions</item>
+  <item>don`t use your phone for the next 20 minutes</item>
+  <item>act as a chicken for ten seconds</item>
+  <item>choose a player. He/she will make the following 3 challenges (ignore the names given on that challenges)</item>
+  <item>change a garment with the player at your front</item>
+  <item>give a hug to the player of the previous challenge</item>
+  <item>select a player that will make the previous challenge</item>
+  <item>try the bottle-flip-challenge. If you achieve it in less than 3 tries, all players will drink 2 shots. Other way, drink as many shots as tries you make until you achieve the challenge</item>
+  <item>each time you clap, all players must follow you and do the same. The last one must take a shot if his/her drink</item>
+  <item>play "random drink" game, and drink that one</item>
+  <item>the player you want will play and drink a random drink</item>
+  <item>sing a song, the first to guess it chooses who will drink. If anyone guesses it, you drink</item>
+  <item>start to sing a song. If the one at your right doesn't know it, both drink</item>
+  <item>change your drink with the player at your front</item>
+  <item>choose a player to sit on you by 5 minutes</item>
+  <item>choose a player to sit on by 5 minutes</item>
+  <item>by 2 minutes, you have to repeat the last word of each sentence each player says</item>
+  <item>by 2 minutes, make the same movements as the player of the previous challenge</item>
+  <item>make 10 pushups</item>
+  <item>the two players at your both sides must make 10 pushups. The one that last more has to drink 3 shots</item>
+  <item>the four players that are nearer to you and you stand up. The tallest gives 5 shots to the others</item>
+  <item>all players sing you happy birthday. Happy Birthday!</item>
+  <item>call a family member and tell him/her that you love him/her</item>
+  <item>tell the names of the players you like the most and the less without saying who is each one</item>
+  <item>say something good and something bad about the player of the previous challenge</item>
+  <item>if you have more than 50 % battery, you give 5 shots. Otherway, you drink them</item>
+  <item>ask someone you don`t know to play with you</item>
+  <item>put a poll on instagram about something "bad" about you (i.e. if they think you are ugly...)</item>
+  <item>touch the ass of the player at your left. The player at your right has to touch yours</item>
+
 </string-array>
 </resources>

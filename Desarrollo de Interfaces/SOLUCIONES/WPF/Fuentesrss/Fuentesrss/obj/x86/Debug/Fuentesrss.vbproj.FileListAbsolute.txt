@@ -1,0 +1,88 @@
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\bin\Debug\Fuentesrss.exe
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\bin\Debug\Fuentesrss.pdb
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\bin\Debug\Fuentesrss.xml
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\MainWindow.baml
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\MainWindow.g.vb
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Application.g.vb
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Fuentesrss_MarkupCompile.cache
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Fuentesrss.g.resources
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Fuentesrss.Resources.resources
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Fuentesrss.exe
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Fuentesrss.xml
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\Fuentesrss\obj\x86\Debug\Fuentesrss.pdb
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.exe
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.xml
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.pdb
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Application.g.vb
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss_MarkupCompile.cache
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.exe
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.pdb
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.xml
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.baml
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.g.vb
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.g.resources
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.Resources.resources
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Diseño GUI\UD 10\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.exe
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.exe
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.pdb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.xml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.baml
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.g.vb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Application.g.vb
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss_MarkupCompile.cache
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.g.resources
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.Resources.resources
+G:\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.GenerateResource.Cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.exe
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.pdb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbprojResolveAssemblyReference.cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.baml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.g.vb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Application.g.vb
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss_MarkupCompile.cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.g.resources
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.Resources.resources
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.GenerateResource.Cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.CoreCompileInputs.cache
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.exe
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.xml
+F:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.pdb
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.exe
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.pdb
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.xml
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbprojAssemblyReference.cache
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.baml
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.g.vb
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Application.g.vb
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss_MarkupCompile.cache
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.g.resources
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.Resources.resources
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.GenerateResource.cache
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.CoreCompileInputs.cache
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.exe
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.xml
+G:\Material Docente\Apuntes\Expression Studio\Curso_WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\bin\Debug\Fuentesrss.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\MainWindow.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\Fuentesrss\Fuentesrss\obj\x86\Debug\Fuentesrss.pdb

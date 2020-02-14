@@ -1,16 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string-array name="game_challenge">
-  <item >Default</item>
-  <item >Name, a > z</item>
-  <item >Name, z > a</item>
-  <item >Price at home, low to high</item>
-  <item >Price at home, high to low</item>
-  <item >Price at bar, low to high</item>
-  <item >Price at bar, high to low</item>
-  <item >Type, a > z</item>
-  <item >Type, z > a</item>
-  <item>Graduation, low to high</item>
-  <item>Graduation, high to low</item>
+<string-array name="game_challenge">
+  <item >haz el pino durante un minuto</item>
+  <item >bésale el pie al jugador de enfrente</item>
+  <item >termina el vaso</item>
+  <item >dile a un jugador que se termine su vaso</item>
+  <item >termínate el vaso del jugador de tu izquierda</item>
+  <item >háblale a la primera persona desconocida que te mire</item>
+  <item >tómate un chupito de sabor fuerte y haz como si nada</item>
+  <item >prepara cuatro chupitos: dos de agua, y dos de alcohol blanco (ginebra por ejemplo). Elige a un jugador, y al azar, los dos bebéis dos chupitos de esos cuatro</item>
+  <item >déjale tu móvil desbloqueado durante cinco minutos a la persona de tu izquierda</item>
+  <item>no uses tu móvil durante veinte minutos</item>
+  <item>escoge una persona: la de tu izquierda, la de tu derecha, o la de enfrente, y líate con ella</item>
+  <item>quédate de pie durante las próximas diez preguntas</item>
+  <item>imita a una gallina por diez segundos</item>
+  <item>escoge a un jugador, que hará los próximos tres retos (aunque aparezca otro nombre de jugador)</item>
+  <item>cambia una prenda de ropa tuya (no valen complementos) con el jugador de enfrente</item>
+  <item>estate abrazado durante tres minutos al jugador de la frase anterior</item>
+  <item>elige a un jugador, para que haga el reto anterior</item>
+  <item>haz "bottle-flip-challenge". Si lo consigues en dos intentos o menos, todos los jugadores menos tú beben dos chupitos, si no, bebes la cantidad de intentos que hagas hasta conseguirlo</item>
+  <item>cada vez que aplaudas los demás tienen que seguirte. Quien no lo haga, bebe</item>
+  <item>juega al juego "bebida aleatoria". La que te toque, la tienes que beber</item>
+  <item>el jugador que quieras juega y bebe la bebida que salga en "bebida aleatoria"</item>
+  <item>tararea una canción, quien la adivine manda beber. Si nadie la adivina, bebes</item>
+  <item>empieza a cantar una canción, si el de tu derecha no la sigue, bebéis los dos</item>
+  <item>cambia tu bebida con el jugador de enfrente</item>
+  <item>elige una persona para que se siente encima tuyo durante cinco minutos</item>
+  <item>elige una persona, y te tienes que sentar encima suyo</item>
+  <item>durante dos minutos, tienes que repetir la última palabra que diga cada jugador en sus frases</item>
+  <item>imita todos los movimientos del jugador del anterior reto durante 2 minutos</item>
+  <item>haz diez flexiones</item>
+  <item>los dos jugadores a tu lado hacen diez flexiones. Quien tarde más bebe 3 tragos</item>
+  <item>los cuatro jugadores más cercanos a ti y tú os levantais. El más alto reparte 5 tragos entre vosotros</item>
+  <item>todos los jugadores te cantan el cumpleaños feliz. ¡Feliz cumpleaños!</item>
+  <item>llama a un familiar y dile que le quieres mucho</item>
+  <item>menciona a la persona que mejor y peor te caen, pero sin decir quién es quién</item>
+  <item>di una cualidad buena y otra mala sobre la persona del reto anterior</item>
+  <item>si tienes más de 50 % de batería, bebes 5 tragos. Si no, los repartes</item>
+  <item>invita a jugar a alguien desconocido</item>
+  <item>publica una encuestra en instagram con algo que te pueda dejar en evidencia (si creen que eres guapo o feo...)</item>
+  <item>tócale el culo al jugador que esté dos posiciones a tu izquierda, y que el jugador dos posiciones a tu derecha te lo toque a ti</item>
 </string-array>
 </resources>

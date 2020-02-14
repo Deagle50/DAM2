@@ -1,0 +1,33 @@
+﻿<Window x:Class="Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnlaceDatos"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Name="Grid1" >
+        <ComboBox ItemsSource="{Binding Articulos}" Name="Combo1" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="424" Height="49">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Denominacion}"></TextBlock>
+                        <Image Width="50" Height="50" Source="{Binding Imagen}"></Image>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+      
+        <Grid Name="Controles" Margin="0,64,-0.4,0" DataContext="{Binding ElementName=Combo1,Path=SelectedItem}">
+            <Label  Content="Id" HorizontalAlignment="Left" Margin="21,86,0,0" VerticalAlignment="Top"/>
+            <TextBox Text="{Binding ArticuloId}" x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="21,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label  Content="Denominación" HorizontalAlignment="Left" Margin="215,87,0,0" VerticalAlignment="Top"/>
+            <TextBox Text="{Binding Denominacion}" x:Name="txtDenominacion" HorizontalAlignment="Left" Height="23" Margin="215,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="297"/>
+            <Label  Content="Existencias" HorizontalAlignment="Left" Margin="21,166,0,0" VerticalAlignment="Top"/>
+            <TextBox Text="{Binding Existencias}" x:Name="txtExistencias" HorizontalAlignment="Left" Height="23" Margin="21,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Label  Content="Precio" HorizontalAlignment="Left" Margin="215,166,0,0" VerticalAlignment="Top"/>
+            <TextBox Text="{Binding Precio}" x:Name="txtPrecio" HorizontalAlignment="Left" Height="23" Margin="215,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Image Source="{Binding Imagen}" HorizontalAlignment="Left" Height="115" Margin="497,186,0,0" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+    </Grid>
+</Window>

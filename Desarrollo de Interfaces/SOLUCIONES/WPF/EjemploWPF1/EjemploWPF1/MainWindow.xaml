@@ -1,0 +1,25 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Button FontFamily="Consolas"
+            Name="Button"
+            FontSize="25" Background ="Blue" Foreground="White" Click="Button_Click" Margin="29,50,566.333,360.333">
+            Púlsame
+            
+         </Button>
+        <Button FontFamily="Consolas"
+            Name="Button2"
+            FontSize="25" Background ="Blue" Foreground="White" Click="Button_Click" Margin="272,96,352.333,152.333">
+            <StackPanel>
+            <Image Source="Windito Vistoso.gif" Height="124" Width="141">
+                
+            </Image>
+                <Label>
+                    Windito
+                </Label>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

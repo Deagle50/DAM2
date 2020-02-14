@@ -1,0 +1,101 @@
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\Application.g.vb
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+C:\Users\administrador.EGELA\AppData\Local\Temporary Projects\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\Application.g.vb
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\SEIM\Respaldo 2009\Apuntes\Expression Studio\Curso_WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO-INTERFACES\05-WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.GenerateResource.Cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbprojResolveAssemblyReference.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.pdb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\bin\Debug\EjemploEventos1.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbprojAssemblyReference.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.baml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\MainWindow.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\Application.g.vb
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1_MarkupCompile.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.g.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.Resources.resources
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.GenerateResource.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.vbproj.CoreCompileInputs.cache
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.exe
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.xml
+D:\DAM-2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Actividades\EjemploEventos1\EjemploEventos1\obj\x86\Debug\EjemploEventos1.pdb

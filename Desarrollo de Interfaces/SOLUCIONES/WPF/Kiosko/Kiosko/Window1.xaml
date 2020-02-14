@@ -1,0 +1,41 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="470" Width="615">
+    
+    <Grid Height="435" VerticalAlignment="top" HorizontalAlignment="Stretch">
+        <Menu Height="23" Name="Menu1" VerticalAlignment="Top">
+            <MenuItem Header="Gestionar Fuentes" IsCheckable="False">
+                <MenuItem Header="Nuevo Enlace" Click="MenuItem_Click">
+                    <StackPanel >
+                        <Label>Nombre</Label>
+                        <TextBox HorizontalAlignment="Left" Width="100" Name="TxtNombre">
+                            
+                        </TextBox>
+                        <Label>Dirección</Label>
+                        <TextBox HorizontalAlignment="Left"  Width="100" Name="txtUrl">
+                            
+                        </TextBox>
+                      </StackPanel>
+                </MenuItem>
+                <MenuItem Header="Limpiar Lista"  Click="MenuItem_Click_1" />
+                <MenuItem Header="Guardar" HeaderStringFormat="" Click="MenuItem_Click_2" />
+            </MenuItem>
+        </Menu>
+        <ComboBox Height="23" Margin="22,46,0,0" Name="ComboBox1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="335">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding Nombre}">
+                        
+                    </TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Grid Margin="22,118,12,12" Name="Grid1">
+            <TextBlock Height="53" Margin="23,16,18,0" Name="TextBlock1" VerticalAlignment="Top" FontWeight="Bold" FontSize="15" Text="{Binding title}" />
+            <TextBlock TextWrapping="Wrap" Margin="10,75,18,53" Name="TextBlock2" Text="{Binding description}"  />
+            <my:UserControl1 Margin="123,0,100,6" x:Name="UserControl11" xmlns:my="clr-namespace:Kiosko" Height="41" VerticalAlignment="Bottom" />
+        </Grid>
+        <Image  Source="{Binding url }" HorizontalAlignment="Right" Margin="0,34,12,0" Name="Image1" Stretch="Fill" VerticalAlignment="Top" Width="162" Height="70" />
+    </Grid>
+</Window>
