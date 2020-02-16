@@ -86,6 +86,7 @@
     <string name="title_update_player">Update</string>
     <string name="title_share_dialog">Share Coctelpedia with your friends!</string>
     <string name="text_share">Download Coctelpedia from: google.es</string>
+    <string name="example_who_would" translatable="false">do something in order to win something?</string>
 
 
 </resources>

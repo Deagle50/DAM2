@@ -9,7 +9,8 @@
     android:layout_width="match_parent"
     android:layout_height="639dp"
     android:id="@+id/cvBackgroundLayout"
-    android:background="@color/fontWhite">
+    android:background="@color/fontWhite"
+    android:clickable="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -35,7 +36,7 @@
 
         <TextView
             android:id="@+id/textViewDescription4"
-            android:layout_width="359dp"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="4dp"
@@ -56,7 +57,7 @@
 
         <TextView
             android:id="@+id/textViewMaking2"
-            android:layout_width="359dp"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
@@ -85,6 +86,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/example_coctel_name"
             android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -96,6 +98,7 @@
             android:layout_marginEnd="16dp"
             android:text="@string/example_graduation"
             android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textViewName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textViewName" />
@@ -107,6 +110,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:clickable="false"
+            android:focusable="false"
             android:text="@string/title_vegetarian"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewCoctel2" />
@@ -117,6 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:clickable="false"
+            android:focusable="false"
             android:text="@string/title_vegan"
             app:layout_constraintStart_toStartOf="@+id/checkBoxVegetarian3"
             app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarian3" />

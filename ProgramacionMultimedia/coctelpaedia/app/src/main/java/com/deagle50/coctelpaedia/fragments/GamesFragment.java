@@ -1,6 +1,5 @@
 package com.deagle50.coctelpaedia.fragments;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +13,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.deagle50.coctelpaedia.R;
-import com.deagle50.coctelpaedia.activities.PlayersActivity;
 import com.deagle50.coctelpaedia.helpers.PlayersOpenHelper;
 
 import java.util.ArrayList;
@@ -55,6 +53,12 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        loadPlayers();
+    }
+
+    @Override
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.buttonGameRandomDrink:
@@ -74,21 +78,20 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
             }
             case R.id.buttonGameWhoWould:
             {
-                Toast.makeText(getContext(), "Work in progress...", Toast.LENGTH_SHORT).show();
+                if(checkPlayers()) {
+                    assert getFragmentManager() != null;
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                    transaction.replace(R.id.container, new GameWhoWould());
+
+                    transaction.addToBackStack(null);
+                    transaction.commit();
+                }
                 break;
             }
             case R.id.buttonGameChallenge:
             {
-                if(cursorPlayers.getCount()==0)
-                {
-                    Toast.makeText(instance, R.string.title_must_add_player, Toast.LENGTH_SHORT).show();
-
-                }else
-                if(cursorPlayers.getCount()==1)
-                {
-                    Toast.makeText(instance, R.string.title_must_add_moreplayers, Toast.LENGTH_SHORT).show();
-                }
-                else{
+                if(checkPlayers()) {
+                    assert getFragmentManager() != null;
                     FragmentTransaction transaction = getFragmentManager().beginTransaction();
                     transaction.replace(R.id.container, new GameChallengeFragment());
 
@@ -103,13 +106,34 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
             }
 
             case R.id.buttonPlayers:
-                Intent i = new Intent(getActivity(), PlayersActivity.class);
-                startActivity(i);
+                assert getFragmentManager() != null;
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.container, new PlayersFragment());
+
+                transaction.addToBackStack(null);
+                transaction.commit();
                 break;
             default:
                 break;
         }
 
+    }
+
+    private boolean checkPlayers() {
+        loadPlayers();
+        if(cursorPlayers.getCount()==0)
+        {
+            Toast.makeText(instance, R.string.title_must_add_player, Toast.LENGTH_SHORT).show();
+            return false;
+        }else
+        if(cursorPlayers.getCount()==1)
+        {
+            Toast.makeText(instance, R.string.title_must_add_moreplayers, Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else {
+            return true;
+        }
     }
 
     private void loadPlayers() {

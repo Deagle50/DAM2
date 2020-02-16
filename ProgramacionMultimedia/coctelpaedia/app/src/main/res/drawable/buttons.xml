@@ -4,6 +4,6 @@
     <!-- you can use any color you want I used here gray color-->
     <solid android:color="@color/colorPrimary"/>
     <corners android:radius="5dp"/>
-    <padding android:left="5dp"
-        android:right="5dp"></padding>
+    <padding android:left="10dp"
+        android:right="10dp"></padding>
 </shape>
