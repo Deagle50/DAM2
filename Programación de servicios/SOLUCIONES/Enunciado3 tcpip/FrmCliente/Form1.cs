@@ -22,11 +22,13 @@ namespace FrmCliente
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            //b.	Al pulsar enviar envíe el nombre al servidor.
             cli.EnviarDatos(txtNombre.Text);
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            //a.	Al pulsar conectar instancie el cliente modificado en 1 y conecte con el servidor.
             cli = new Cliente(txtHost.Text);
             cli.Conectar();
             cli.OnDatosRecibidos += Cli_OnDatosRecibidos;
@@ -34,6 +36,13 @@ namespace FrmCliente
 
         private void Cli_OnDatosRecibidos(string datos)
         {
+            /*
+            c.	Programar el evento necesario para que al recibir un dato:
+            •	Lo divida mediante la función Split para extraer la ip y el nombre que han llegado.
+            •	Busque en la listview si ya hay un nombre para esa ip:
+            •	Si la ip ya está añadida, cambiará el nombre existente por el recibido.
+            •	Si no añadirá un ítem nuevo con la ip y el nombre recibidos.
+*/
             ActualizarLista f = MostrarDatosLista;
             listView1.BeginInvoke(f, new object[] { listView1, datos });
         }
