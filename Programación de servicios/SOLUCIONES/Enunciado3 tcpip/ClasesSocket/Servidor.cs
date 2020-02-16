@@ -15,6 +15,8 @@ namespace ClasesSocket
     public delegate void CambiarNombre(String nombre, DateTime Fecha);
     public class Servidor
     {   //VARIABLES PRIVADAS
+        //i.	Eliminar del constructor el parámetro socket  y hacer que el servidor siempre escuche
+        //por el puerto 8888. Crear una constante de clase llamada SOCKET para almacenar dicho valor.
         public const int SOCKET = 8888;
         System.Threading.Thread ProcesoServidor;
         Dictionary<int,Conversacion> Procesos;
@@ -66,6 +68,7 @@ namespace ClasesSocket
             OnNuevaConexion += (x,y) => { };
             OnDatosRecibidos += (x, y) => { };
             OnConexionTerminada += (x) => { };
+            //ii.Incluir el evento OnCambiarNombre que tendrá como parámetros el nuevo nombre, la fecha en la que se ha producido el cambio.
             OnCambiarNombre += (x, y) => { };
         }
 
@@ -167,6 +170,9 @@ namespace ClasesSocket
 
         public void SetNombre(int pos,String nombre)
         {
+            /*iii.	Incluir una función pública que reciba como parámetros un nombre y una posición 
+             * y cambie el nombre de la conversación asociada a esa posición. Dicha función lanzará 
+             * el evento del apartado b.ii.*/
             Procesos[pos].Nombre = nombre;
             OnCambiarNombre(nombre, DateTime.Now);
         }

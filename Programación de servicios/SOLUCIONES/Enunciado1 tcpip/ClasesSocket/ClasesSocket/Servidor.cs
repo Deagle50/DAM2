@@ -15,6 +15,7 @@ namespace ClasesSocket
     public delegate void ServidorOcupado();
     public class Servidor
     {   //VARIABLES PRIVADAS
+        //Modificar el servidor visto en clase para que no permita más conexiones si hay un cliente conectado.
         System.Threading.Thread ProcesoServidor;
         Dictionary<int,Conversacion> Procesos;
         TcpListener _servidor;

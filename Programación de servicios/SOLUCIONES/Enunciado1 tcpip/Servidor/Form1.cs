@@ -36,7 +36,14 @@ namespace Servidor
 
         private void AlRecibirDatos(string datos, int pos)
         {
-            switch(datos)
+            /*
+                   si lo recibido es la palabra “CONT?” enviará un contador donde se lleva la cuenta de todas las cadenas que se han recibido
+                	si lo recibido es la palabra “CADENA?” enviará la concatenación de todas las cadenas recibidas hasta el momento de los números recibidos.
+                	Si lo recibido es la palabra “RESET?” vaciará la concatenación y pondrá a 0 el contador de datos recibidos.
+                	Si lo recibido no es ninguno de los comandos anteriores enviará el mensaje “Cadena concatenada”. Además mostrará en la caja de texto 
+                cadena la concatenación de lo recibido hasta el momento y en Contador el contador de cadenas recibidas hasta el momento.
+            */
+            switch (datos)
             {
                case "CONT?":
                     servidor.EnviarDatos(cont.ToString());

@@ -11,7 +11,11 @@ namespace ClasesSocket
     public delegate void ConexionTerminadaCliente();
     public delegate void DatosRecibidosCliente(String datos);
    public class Cliente
-    {   const int SOCKET=8888;
+    /*
+     i.	Eliminar del constructor el parámetro socket y hacer que el cliente siempre conecte al 8888.
+     Crear una constante de clase llamada SOCKET para almacenar dicho valor.*/
+    {
+        const int SOCKET=8888;
         private TcpClient varcliente;
         private String _host;
         private int _socket;
