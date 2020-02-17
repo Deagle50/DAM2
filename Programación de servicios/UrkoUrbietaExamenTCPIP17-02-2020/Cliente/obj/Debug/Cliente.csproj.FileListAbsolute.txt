@@ -1,0 +1,13 @@
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.csprojAssemblyReference.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.frmCliente.resources
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.Properties.Resources.resources
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.csproj.GenerateResource.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\bin\Debug\Cliente.exe.config
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\bin\Debug\Cliente.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\bin\Debug\Cliente.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\bin\Debug\ClasesSocket.dll
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\bin\Debug\ClasesSocket.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.csproj.CopyComplete
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\Cliente\obj\Debug\Cliente.pdb

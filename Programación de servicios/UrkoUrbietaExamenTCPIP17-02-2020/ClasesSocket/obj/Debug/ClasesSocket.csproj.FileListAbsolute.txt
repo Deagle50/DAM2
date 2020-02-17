@@ -1,0 +1,6 @@
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\ClasesSocket\bin\Debug\ClasesSocket.dll
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\ClasesSocket\bin\Debug\ClasesSocket.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\ClasesSocket\obj\Debug\ClasesSocket.csprojAssemblyReference.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\ClasesSocket\obj\Debug\ClasesSocket.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\ClasesSocket\obj\Debug\ClasesSocket.dll
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\ClasesSocket\obj\Debug\ClasesSocket.pdb

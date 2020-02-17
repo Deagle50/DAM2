@@ -1,0 +1,13 @@
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\bin\Debug\UrkoUrbietaExamenTCPIP17-02-2020.exe.config
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\bin\Debug\UrkoUrbietaExamenTCPIP17-02-2020.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\bin\Debug\UrkoUrbietaExamenTCPIP17-02-2020.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\bin\Debug\ClasesSocket.dll
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\bin\Debug\ClasesSocket.pdb
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17-02-2020.csprojAssemblyReference.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17_02_2020.frmServidor.resources
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17_02_2020.Properties.Resources.resources
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17-02-2020.csproj.GenerateResource.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17-02-2020.csproj.CoreCompileInputs.cache
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17-02-2020.csproj.CopyComplete
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17-02-2020.exe
+C:\Users\urkourbieta\Desktop\UrkoUrbietaExamenTCPIP17-02-2020\UrkoUrbietaExamenTCPIP17-02-2020\obj\Debug\UrkoUrbietaExamenTCPIP17-02-2020.pdb
