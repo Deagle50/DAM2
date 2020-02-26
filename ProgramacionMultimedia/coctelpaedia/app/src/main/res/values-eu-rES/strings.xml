@@ -59,4 +59,8 @@
     <string name="title_update_player">Eguneratu</string>
     <string name="title_share_dialog">Partekatu Coctelpedia lagunekin!</string>
     <string name="text_share">Deskargatu Coctelpedia google.es etik</string>
+    <string name="title_description_close">Deskripzioa ^</string>
+    <string name="title_description_open">Deskripzioa v</string>
+    <string name="title_making_close">Elaborazioa ^</string>
+    <string name="title_making_open">Elaborazioa v</string>
 </resources>

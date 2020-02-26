@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/clCoctelInfo"
+    android:layout_width="360dp"
+    android:layout_height="800dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:tag="tagFragmentCoctelInfo">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewCoctelInfo"
         style="@style/Widget.MaterialComponents.CardView"
         android:layout_width="328dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,20 +23,22 @@
         app:strokeWidth="2dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cvCoctelInfoFront"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:clickable="true">
 
             <TextView
                 android:id="@+id/textViewNameInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:text="@string/example_coctel_name"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="@+id/cardView" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -40,13 +46,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                app:cardCornerRadius="5dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewNameInfo">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/imageViewCoctelInfo"
-                    android:layout_width="160dp"
-                    android:layout_height="160dp"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     app:srcCompat="@drawable/coctel" />
             </androidx.cardview.widget.CardView>
 
@@ -54,139 +61,147 @@
                 android:id="@+id/textViewGraduationInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/example_graduation"
                 android:textSize="22sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textViewNameInfo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textViewNameInfo" />
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameInfo" />
 
             <CheckBox
                 android:id="@+id/checkBoxVegetarianInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
                 android:clickable="false"
                 android:text="@string/title_vegetarian"
-                app:layout_constraintStart_toEndOf="@+id/cardView"
-                app:layout_constraintTop_toTopOf="@+id/cardView" />
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxVeganInfo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
             <CheckBox
                 android:id="@+id/checkBoxVeganInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:clickable="false"
                 android:text="@string/title_vegan"
-                app:layout_constraintStart_toStartOf="@+id/checkBoxVegetarianInfo"
-                app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarianInfo" />
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxVegetarianInfo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxVegetarianInfo"
+                app:layout_constraintTop_toTopOf="@+id/checkBoxVegetarianInfo" />
 
             <TextView
                 android:id="@+id/textViewTypeInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/example_type"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="@+id/cardView"
-                app:layout_constraintStart_toStartOf="@+id/checkBoxVeganInfo" />
-
-            <TextView
-                android:id="@+id/textViewPriceInfo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/title_usual_price"
-                android:textSize="18sp"
-                android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="@+id/cardView"
-                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+                app:layout_constraintStart_toEndOf="@+id/cardView" />
 
             <TextView
                 android:id="@+id/textViewPriceH1Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/usual_price_home"
-                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
-                app:layout_constraintTop_toBottomOf="@+id/textViewPriceInfo" />
+                android:layout_marginTop="4dp"
+                android:text="@string/title_price_at_home"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarianInfo" />
 
             <TextView
                 android:id="@+id/textViewPriceH2Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginEnd="4dp"
                 android:text="@string/example_price"
-                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
-                app:layout_constraintStart_toEndOf="@+id/textViewPriceH1Info"
+                app:layout_constraintEnd_toStartOf="@+id/textViewPriceB1Info"
                 app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Info" />
 
             <TextView
                 android:id="@+id/textViewPriceB2Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginEnd="12dp"
                 android:text="@string/example_price"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
-                app:layout_constraintStart_toEndOf="@+id/textViewPriceB1Info"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Info" />
 
             <TextView
                 android:id="@+id/textViewPriceB1Info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="164dp"
-                android:text="@string/usual_price_pub"
+                android:layout_marginStart="158dp"
+                android:text="@string/title_price_at_pubs"
                 app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Info" />
 
-            <TextView
-                android:id="@+id/textViewDescription1Info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="@string/title_description"
-                android:textSize="18sp"
-                android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
-                app:layout_constraintTop_toBottomOf="@+id/textViewPriceH1Info" />
-
-            <TextView
-                android:id="@+id/textViewDescription2Info"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDescriptionInfo"
                 android:layout_width="296dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/example_description"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textViewDescription1Info"
-                app:layout_constraintTop_toBottomOf="@+id/textViewDescription1Info" />
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceH1Info"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPriceB1Info">
 
-            <TextView
-                android:id="@+id/textViewMaking1Info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:editable="false"
-                android:text="@string/title_making"
-                android:textSize="18sp"
-                android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
-                app:layout_constraintTop_toBottomOf="@+id/textViewDescription2Info" />
+                <TextView
+                    android:id="@+id/textViewDescription1Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_description_open"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textViewMaking2Info"
+                <TextView
+                    android:id="@+id/textViewDescription2Info"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/example_description"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDescription1Info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="296dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="@string/example_making"
+                android:layout_marginBottom="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
-                app:layout_constraintTop_toBottomOf="@+id/textViewMaking1Info" />
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceH1Info"
+                app:layout_constraintTop_toBottomOf="@+id/clDescriptionInfo">
+
+                <TextView
+                    android:id="@+id/textViewMaking1Info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_making_open"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewMaking2Info"
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/example_making"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewMaking1Info" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

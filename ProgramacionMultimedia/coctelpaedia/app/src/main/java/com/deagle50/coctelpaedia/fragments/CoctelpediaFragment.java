@@ -1,7 +1,10 @@
 package com.deagle50.coctelpaedia.fragments;
 
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.os.Bundle;
+import android.renderscript.RenderScript;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.deagle50.coctelpaedia.Coctel;
 import com.deagle50.coctelpaedia.R;
 import com.deagle50.coctelpaedia.adapters.CoctelsAdapter;
+import com.deagle50.coctelpaedia.extras.BlurCreator;
 import com.deagle50.coctelpaedia.helpers.CoctelsOpenHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -94,6 +98,12 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
     }
 
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+
+
     private void initializeData(){
         Cursor cursorCoctels;
         cursorCoctels = coctelsOpenHelper.getCoctels(selection, whereArguments, orderBy);
@@ -117,7 +127,6 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
     private void initializeAdapter(){
         CoctelsAdapter adapter = new CoctelsAdapter(coctels);
-        //recyclerView.addItemDecoration(new SimpleDividerItemDecoration(Objects.requireNonNull(getContext())));
         recyclerView.setAdapter(adapter);
     }
 

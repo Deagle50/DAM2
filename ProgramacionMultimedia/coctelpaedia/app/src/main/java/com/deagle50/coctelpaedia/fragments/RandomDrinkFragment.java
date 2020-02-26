@@ -28,12 +28,9 @@ public class RandomDrinkFragment extends Fragment {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             // Inflate the layout for this fragment
-
             root = inflater.inflate(R.layout.fragment_random_drink, container, false);
 
-
             changeBackgroundColor();
-
             loadRandomCoctel();
 
             return root;
@@ -49,8 +46,6 @@ public class RandomDrinkFragment extends Fragment {
     }
 
     private void loadRandomCoctel() {
-
-
         CoctelsOpenHelper coctelsOpenHelper = new CoctelsOpenHelper(getContext());
         Cursor cursorCoctels = coctelsOpenHelper.getRandomCoctel();
         cursorCoctels.moveToFirst();
@@ -62,25 +57,25 @@ public class RandomDrinkFragment extends Fragment {
                 cursorCoctels.getInt(9)>0, cursorCoctels.getString(10));
 
         TextView txtName = root.findViewById(R.id.textViewName);
-        txtName.setText(coctel.getName());
         TextView txtGraduation = root.findViewById(R.id.textViewGraduation);
-        txtGraduation.setText(coctel.getGraduation().toString()+"º");
         TextView txtMaking = root.findViewById(R.id.textViewMaking2);
-        txtMaking.setText(coctel.getElaboration());
         TextView txtDescription = root.findViewById(R.id.textViewDescription4);
-        txtDescription.setText(coctel.getDescription());
         TextView txtBar = root.findViewById(R.id.textViewPub4);
-        txtBar.setText(coctel.getPriceB().toString()+" €");
         TextView txtHome = root.findViewById(R.id.textViewHome4);
-        txtHome.setText(coctel.getPriceH().toString()+" €");
 
         CheckBox cbVegan = root.findViewById(R.id.checkBoxVegan3);
         CheckBox cbVegetarian = root.findViewById(R.id.checkBoxVegetarian3);
         ImageView imageView = root.findViewById(R.id.imageViewCoctel2);
 
+        txtName.setText(coctel.getName());
+        txtGraduation.setText(coctel.getGraduation().toString()+"º");
+        txtMaking.setText(coctel.getElaboration());
+        txtDescription.setText(coctel.getDescription());
+        txtBar.setText(coctel.getPriceB().toString()+" €");
+        txtHome.setText(coctel.getPriceH().toString()+" €");
+
         if(coctel.isVegan())
         {
-
             cbVegan.setChecked(true);
             cbVegetarian.setChecked(true);
         }
@@ -88,13 +83,16 @@ public class RandomDrinkFragment extends Fragment {
         {
             cbVegetarian.setChecked(true);
         }
+
         if(coctel.getUrlPhoto()==1)
         {
             imageView.setImageResource(R.drawable.coctel);
         }
-        else{
+        else
+        {
             imageView.setImageResource(coctel.getUrlPhoto());
-    }
+        }
+    coctelsOpenHelper.close();
 }
 
 }

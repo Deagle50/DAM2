@@ -2,7 +2,11 @@ package com.deagle50.coctelpaedia.adapters;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.renderscript.RenderScript;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -11,16 +15,16 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.deagle50.coctelpaedia.Coctel;
 import com.deagle50.coctelpaedia.R;
+import com.deagle50.coctelpaedia.extras.BlurCreator;
 import com.deagle50.coctelpaedia.fragments.CoctelInfoFragment;
+import com.deagle50.coctelpaedia.fragments.CoctelpediaFragment;
 
 import java.util.ArrayList;
 
@@ -134,7 +138,6 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         public boolean onDoubleTap(MotionEvent e) {
             //In the future, the items of the recyclerView will have less info,
             //and onDoubleTap all the info will be shown
-            Toast.makeText(context, "dp" + actualCoctel.getName(), Toast.LENGTH_SHORT).show();
             loadInfoFragment();
             return true;
         }
@@ -144,18 +147,17 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         @Override
         public void onLongPress(MotionEvent e) {
             super.onLongPress(e);
-
-            Toast.makeText(context, "lp" + actualCoctel.getName(), Toast.LENGTH_SHORT).show();
+            loadInfoFragment();
         }
     }
 
     private void loadInfoFragment() {
         Activity activity = instance;
-        FragmentTransaction transaction = activity.getFragmentManager().beginTransaction();
-        transaction.replace(R.id.containerCoctelpedia, new CoctelInfoFragment(actualCoctel));
-
-        transaction.addToBackStack(null);
+        FragmentTransaction transaction = activity.getFragmentManager().beginTransaction().
+                replace(R.id.containerCoctelpedia, new CoctelInfoFragment(actualCoctel), "tagFragmentCoctelInfo").
+                addToBackStack("tagFragmentCoctelPedia");
         transaction.commit();
     }
+
 
 }

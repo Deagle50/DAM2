@@ -59,4 +59,8 @@
     <string name="title_update_player">Actualizar</string>
     <string name="title_share_dialog">¡Comparte Coctelpedia con tus amigos!</string>
     <string name="text_share">Descarga Coctelpedia desde: google.es</string>
+    <string name="title_description_close">Descripción ^</string>
+    <string name="title_description_open">Descripción v</string>
+    <string name="title_making_close">Elaboración ^</string>
+    <string name="title_making_open">Elaboración v</string>
 </resources>
