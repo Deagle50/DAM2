@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/fontGray"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewNameInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/example_coctel_name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameInfo">
+
+                <ImageView
+                    android:id="@+id/imageViewCoctelInfo"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:srcCompat="@drawable/coctel" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewGraduationInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/example_graduation"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewNameInfo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewNameInfo" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVegetarianInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:text="@string/title_vegetarian"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVeganInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_vegan"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxVegetarianInfo"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarianInfo" />
+
+            <TextView
+                android:id="@+id/textViewTypeInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/example_type"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxVeganInfo" />
+
+            <TextView
+                android:id="@+id/textViewPriceInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_usual_price"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/textViewPriceH1Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/usual_price_home"
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPriceInfo" />
+
+            <TextView
+                android:id="@+id/textViewPriceH2Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/example_price"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
+                app:layout_constraintStart_toEndOf="@+id/textViewPriceH1Info"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Info" />
+
+            <TextView
+                android:id="@+id/textViewPriceB2Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/example_price"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
+                app:layout_constraintStart_toEndOf="@+id/textViewPriceB1Info"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Info" />
+
+            <TextView
+                android:id="@+id/textViewPriceB1Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164dp"
+                android:text="@string/usual_price_pub"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Info" />
+
+            <TextView
+                android:id="@+id/textViewDescription1Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/title_description"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPriceH1Info" />
+
+            <TextView
+                android:id="@+id/textViewDescription2Info"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/example_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewDescription1Info"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescription1Info" />
+
+            <TextView
+                android:id="@+id/textViewMaking1Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:editable="false"
+                android:text="@string/title_making"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescription2Info" />
+
+            <TextView
+                android:id="@+id/textViewMaking2Info"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/example_making"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceInfo"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMaking1Info" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

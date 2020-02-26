@@ -37,9 +37,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:strokeColor="@color/fontGray"
-                    app:strokeWidth="1dp">
-
-                    <!-- Card contents. -->
+                    app:strokeWidth="3dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -125,20 +123,19 @@
                 </com.google.android.material.card.MaterialCardView>
 
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/RecyclerViewCoctel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="48dp"
-                android:scrollbars="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecyclerViewCoctel"
+                    android:layout_width="352dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="48dp"
+                    android:scrollbars="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters">
 
-            </androidx.recyclerview.widget.RecyclerView>
+                </androidx.recyclerview.widget.RecyclerView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

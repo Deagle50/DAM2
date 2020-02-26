@@ -1,0 +1,27 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajadoresWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="gridMain">
+        <Button x:Name="btnResumen" Content="Resumen" HorizontalAlignment="Left" Margin="22,65,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox ItemsSource="{Binding ListaEmpleados}" x:Name="listbox" HorizontalAlignment="Left" Height="240" Margin="22,104,0,0" VerticalAlignment="Top" Width="613">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Nombre: "></TextBlock>
+                        <TextBlock Text="{Binding Nombre}"></TextBlock>
+                        <TextBlock Text=" Apellidos: "></TextBlock>
+                        <TextBlock Text="{Binding Apellido}"></TextBlock>
+                        <TextBlock Text=" Estado: "></TextBlock>
+                        <TextBlock Text="{Binding Estado}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</Window>

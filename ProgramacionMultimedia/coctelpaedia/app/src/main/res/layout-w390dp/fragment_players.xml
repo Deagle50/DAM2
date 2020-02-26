@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cvPlayersBackground"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="800dp"
     android:background="@color/fontWhite">
 
     <com.google.android.material.card.MaterialCardView
@@ -61,9 +61,7 @@
 
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginBottom="160dp"
         app:cardCornerRadius="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView"
@@ -77,9 +75,9 @@
             <ListView
                 android:id="@+id/listViewJugadores"
                 android:layout_width="240dp"
-                android:layout_height="316dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
                 android:choiceMode="singleChoice"
                 android:listSelector="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -97,7 +95,7 @@
         android:layout_marginEnd="40dp"
         android:backgroundTint="@color/colorPrimary"
         android:clickable="true"
-        android:focusable="auto"
+        android:focusable="true"
         android:tint="@color/transparent"
         app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/buttonDelete"
@@ -113,13 +111,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorPrimary"
         android:clickable="true"
-        android:focusable="auto"
+        android:focusable="true"
         app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/materialCardView2"
         app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
         app:rippleColor="#00FFFFFF"
-        app:srcCompat="@drawable/ic_delete" />
+        app:srcCompat="@drawable/ic_delete"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

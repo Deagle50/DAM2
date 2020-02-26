@@ -1,0 +1,22 @@
+﻿<Window x:Class="NuevoAnuncio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAnuncios"
+        mc:Ignorable="d"
+        Title="NuevoAnuncio" Height="357" Width="456.5">
+    <Grid x:Name="Grid1">
+        <Label Content="Id Anunciante
+               " HorizontalAlignment="Left" Margin="27,100,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding IdAnunciante, Mode=TwoWay}" HorizontalAlignment="Left" Height="24" Margin="27,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Slogan" HorizontalAlignment="Left" Margin="27,172,0,0" VerticalAlignment="Top"/>
+        <TextBox  HorizontalAlignment="Left" Height="24" Margin="27,203,0,0" TextWrapping="Wrap" Text="{Binding Slogan }" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="27,264,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_1"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="27,40,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="27,71,0,0" TextWrapping="Wrap" Text="{Binding IdAnuncio}" VerticalAlignment="Top" Width="120"/>
+        <Image  x:Name="Img1" Source="{Binding Foto}" HorizontalAlignment="Left" Height="217" Margin="229,40,0,0" VerticalAlignment="Top" Width="166"/>
+        <Button Content="Get" HorizontalAlignment="Left" Margin="286,269,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click"/>
+
+    </Grid>
+</Window>

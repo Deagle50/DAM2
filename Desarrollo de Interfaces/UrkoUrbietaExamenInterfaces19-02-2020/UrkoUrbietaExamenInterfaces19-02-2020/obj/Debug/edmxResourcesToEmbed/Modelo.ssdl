@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="id_producto" />
+    </Key>
+    <Property Name="id_producto" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="25" />
+    <Property Name="precio" Type="float" />
+    <Property Name="unidades" Type="int" />
+    <Property Name="imagen" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="id_movimiento" />
+    </Key>
+    <Property Name="id_movimiento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_producto" Type="int" />
+    <Property Name="importe" Type="float" />
+  </EntityType>
+  <Association Name="FK_Ventas_Productos">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id_producto" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVModelStoreContainer">
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="WPFProductos" store:Type="Tables" />
+    <EntitySet Name="Ventas" EntityType="Self.Ventas" Schema="WPFProductos" store:Type="Tables" />
+    <AssociationSet Name="FK_Ventas_Productos" Association="Self.FK_Ventas_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

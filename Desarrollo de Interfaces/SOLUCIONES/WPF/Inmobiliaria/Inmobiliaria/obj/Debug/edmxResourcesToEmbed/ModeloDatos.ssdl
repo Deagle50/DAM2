@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_DaniModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Imagenes">
+    <Key>
+      <PropertyRef Name="IdFoto" />
+    </Key>
+    <Property Name="IdFoto" Type="int" Nullable="false" />
+    <Property Name="Foto" Type="varbinary(max)" />
+    <Property Name="Texto" Type="varchar" MaxLength="50" />
+    <Property Name="IdInmueble" Type="char" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="Inmuebles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="25" />
+    <Property Name="Superficie" Type="float" />
+    <Property Name="IdUsuario" Type="varchar" MaxLength="10" />
+    <Property Name="Tipo" Type="int" />
+  </EntityType>
+  <EntityType Name="Tipos">
+    <Key>
+      <PropertyRef Name="IdTipo" />
+    </Key>
+    <Property Name="IdTipo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="Usuario" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="10" />
+    <Property Name="Nombre" Type="varchar" MaxLength="25" />
+    <Property Name="Apellido" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <Association Name="FK_Imagenes_Inmuebles">
+    <End Role="Inmuebles" Type="Self.Inmuebles" Multiplicity="0..1" />
+    <End Role="Imagenes" Type="Self.Imagenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inmuebles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Imagenes">
+        <PropertyRef Name="IdInmueble" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inmuebles_Tipos">
+    <End Role="Tipos" Type="Self.Tipos" Multiplicity="0..1" />
+    <End Role="Inmuebles" Type="Self.Inmuebles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipos">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Inmuebles">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inmuebles_Usuarios">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Inmuebles" Type="Self.Inmuebles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Usuario" />
+      </Principal>
+      <Dependent Role="Inmuebles">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BD_DaniModelStoreContainer">
+    <EntitySet Name="Imagenes" EntityType="Self.Imagenes" Schema="WPFInmobiliaria" store:Type="Tables" />
+    <EntitySet Name="Inmuebles" EntityType="Self.Inmuebles" Schema="WPFInmobiliaria" store:Type="Tables" />
+    <EntitySet Name="Tipos" EntityType="Self.Tipos" Schema="WPFInmobiliaria" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="WPFInmobiliaria" store:Type="Tables" />
+    <AssociationSet Name="FK_Imagenes_Inmuebles" Association="Self.FK_Imagenes_Inmuebles">
+      <End Role="Inmuebles" EntitySet="Inmuebles" />
+      <End Role="Imagenes" EntitySet="Imagenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inmuebles_Tipos" Association="Self.FK_Inmuebles_Tipos">
+      <End Role="Tipos" EntitySet="Tipos" />
+      <End Role="Inmuebles" EntitySet="Inmuebles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inmuebles_Usuarios" Association="Self.FK_Inmuebles_Usuarios">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Inmuebles" EntitySet="Inmuebles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="ResumenView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UrkoUrbietaExamenInterfaces19_02_2020"
+        mc:Ignorable="d"
+        Title="ResumenView" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Produto" Margin="0,0,0,375" />
+            <TextBlock Text="{Binding resumen.desc}" Width="91" Margin="0,0,0,375" />
+            <TextBlock Text="Nº Ventas" Margin="0,0,0,375"/>
+            <TextBlock Text="{Binding resumen.cuenta}" Width="57" Margin="0,0,0,375"/>
+            <TextBlock Text="Total" Margin="0,0,0,375" Width="38"/>
+            <TextBlock Text="{Binding resumen.cuenta}" Width="59" Margin="0,0,0,375"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

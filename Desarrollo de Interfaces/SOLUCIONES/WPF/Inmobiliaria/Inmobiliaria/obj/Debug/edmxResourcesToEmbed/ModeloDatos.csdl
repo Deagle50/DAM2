@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_DaniModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BD_DaniEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Imagenes" EntityType="BD_DaniModel.Imagenes" />
+    <EntitySet Name="Inmuebles" EntityType="BD_DaniModel.Inmuebles" />
+    <EntitySet Name="Tipos" EntityType="BD_DaniModel.Tipos" />
+    <EntitySet Name="Usuarios" EntityType="BD_DaniModel.Usuarios" />
+    <AssociationSet Name="FK_Imagenes_Inmuebles" Association="BD_DaniModel.FK_Imagenes_Inmuebles">
+      <End Role="Inmuebles" EntitySet="Inmuebles" />
+      <End Role="Imagenes" EntitySet="Imagenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inmuebles_Tipos" Association="BD_DaniModel.FK_Inmuebles_Tipos">
+      <End Role="Tipos" EntitySet="Tipos" />
+      <End Role="Inmuebles" EntitySet="Inmuebles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inmuebles_Usuarios" Association="BD_DaniModel.FK_Inmuebles_Usuarios">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Inmuebles" EntitySet="Inmuebles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Imagenes">
+    <Key>
+      <PropertyRef Name="IdFoto" />
+    </Key>
+    <Property Name="IdFoto" Type="Int32" Nullable="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Texto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdInmueble" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Inmuebles" Relationship="BD_DaniModel.FK_Imagenes_Inmuebles" FromRole="Imagenes" ToRole="Inmuebles" />
+  </EntityType>
+  <EntityType Name="Inmuebles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Superficie" Type="Double" />
+    <Property Name="IdUsuario" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="Int32" />
+    <NavigationProperty Name="Imagenes" Relationship="BD_DaniModel.FK_Imagenes_Inmuebles" FromRole="Inmuebles" ToRole="Imagenes" />
+    <NavigationProperty Name="Tipos" Relationship="BD_DaniModel.FK_Inmuebles_Tipos" FromRole="Inmuebles" ToRole="Tipos" />
+    <NavigationProperty Name="Usuarios" Relationship="BD_DaniModel.FK_Inmuebles_Usuarios" FromRole="Inmuebles" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Tipos">
+    <Key>
+      <PropertyRef Name="IdTipo" />
+    </Key>
+    <Property Name="IdTipo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Inmuebles" Relationship="BD_DaniModel.FK_Inmuebles_Tipos" FromRole="Tipos" ToRole="Inmuebles" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Inmuebles" Relationship="BD_DaniModel.FK_Inmuebles_Usuarios" FromRole="Usuarios" ToRole="Inmuebles" />
+  </EntityType>
+  <Association Name="FK_Imagenes_Inmuebles">
+    <End Type="BD_DaniModel.Inmuebles" Role="Inmuebles" Multiplicity="0..1" />
+    <End Type="BD_DaniModel.Imagenes" Role="Imagenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inmuebles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Imagenes">
+        <PropertyRef Name="IdInmueble" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inmuebles_Tipos">
+    <End Type="BD_DaniModel.Tipos" Role="Tipos" Multiplicity="0..1" />
+    <End Type="BD_DaniModel.Inmuebles" Role="Inmuebles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipos">
+        <PropertyRef Name="IdTipo" />
+      </Principal>
+      <Dependent Role="Inmuebles">
+        <PropertyRef Name="Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inmuebles_Usuarios">
+    <End Type="BD_DaniModel.Usuarios" Role="Usuarios" Multiplicity="0..1" />
+    <End Type="BD_DaniModel.Inmuebles" Role="Inmuebles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Usuario" />
+      </Principal>
+      <Dependent Role="Inmuebles">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

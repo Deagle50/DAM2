@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DAM_urkourbieta_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="id_producto" />
+    </Key>
+    <Property Name="id_producto" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Double" />
+    <Property Name="unidades" Type="Int32" />
+    <Property Name="imagen" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Productos" FromRole="Productos" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="id_movimiento" />
+    </Key>
+    <Property Name="id_movimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_producto" Type="Int32" />
+    <Property Name="importe" Type="Double" />
+    <NavigationProperty Name="Productos" Relationship="Self.FK_Ventas_Productos" FromRole="Ventas" ToRole="Productos" />
+  </EntityType>
+  <Association Name="FK_Ventas_Productos">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="0..1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id_producto" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DAM_urkourbieta_DEVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Productos" EntityType="Self.Productos" />
+    <EntitySet Name="Ventas" EntityType="Self.Ventas" />
+    <AssociationSet Name="FK_Ventas_Productos" Association="Self.FK_Ventas_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

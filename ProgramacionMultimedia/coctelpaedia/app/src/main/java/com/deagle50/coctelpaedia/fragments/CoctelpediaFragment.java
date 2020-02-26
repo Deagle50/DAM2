@@ -117,6 +117,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
     private void initializeAdapter(){
         CoctelsAdapter adapter = new CoctelsAdapter(coctels);
+        //recyclerView.addItemDecoration(new SimpleDividerItemDecoration(Objects.requireNonNull(getContext())));
         recyclerView.setAdapter(adapter);
     }
 

@@ -64,6 +64,7 @@ public class GamesFragment extends Fragment implements View.OnClickListener{
             case R.id.buttonGameRandomDrink:
             {
 
+                assert getFragmentManager() != null;
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
 
                 // Replace whatever is in the fragment_container view with this fragment,

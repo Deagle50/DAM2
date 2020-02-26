@@ -1,0 +1,115 @@
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbprojResolveAssemblyReference.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Application.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_Content.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe.config
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.dll
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.dll
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.lref
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.g.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.Cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CoreCompileInputs.cache
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.exe
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.baml
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.g.vb
+D:\DAM2\DOCUMENTOS\DESARROLLO_INTERFACES\UD 5 WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.baml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe.config
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.pdb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.xml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.dll
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.xml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbprojAssemblyReference.cache
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.g.vb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.g.vb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.g.vb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.g.vb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Application.g.vb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_Content.g.vb
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.cache
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.lref
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.baml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.baml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.baml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.baml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.g.resources
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.cache
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CoreCompileInputs.cache
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CopyComplete
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.exe
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+C:\Users\administrador.SEGUNDO\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe.config
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.pdb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.dll
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.dll
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbprojAssemblyReference.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Application.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_Content.g.vb
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.lref
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.baml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.g.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CoreCompileInputs.cache
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CopyComplete
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.exe
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+E:\DAM-2\DOCUMENTOS\DESARROLLO_DE_INTERFACES\WPF\Soluciones\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbprojAssemblyReference.cache
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.g.vb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.g.vb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.g.vb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.g.vb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Application.g.vb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_Content.g.vb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.cache
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria_MarkupCompile.lref
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.exe
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.xml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.pdb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe.config
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.exe
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.pdb
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\Inmobiliaria.xml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.dll
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.xml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\FotoWindow.baml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\InmueblesUsuarioActual.baml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\MainWindow.baml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\VerFotosWindow.baml
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.g.resources
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.Resources.resources
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.GenerateResource.cache
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CoreCompileInputs.cache
+C:\Users\dani\Desktop\Inmobiliaria\Inmobiliaria\obj\Debug\Inmobiliaria.vbproj.CopyComplete

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Anunciantes">
+    <Key>
+      <PropertyRef Name="IdAnunciante" />
+    </Key>
+    <Property Name="IdAnunciante" Type="Int32" Nullable="false" />
+    <Property Name="IdCategoria" Type="Int32" />
+    <Property Name="Marca" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Anuncios" Relationship="Self.FK_Anuncios_Anuncios" FromRole="Anunciantes" ToRole="Anuncios" />
+    <NavigationProperty Name="Categorias" Relationship="Self.FK_Anuncios_Categorias" FromRole="Anunciantes" ToRole="Categorias" />
+  </EntityType>
+  <EntityType Name="Anuncios">
+    <Key>
+      <PropertyRef Name="IdAnuncio" />
+    </Key>
+    <Property Name="IdAnuncio" Type="Int32" Nullable="false" />
+    <Property Name="IdAnunciante" Type="Int32" />
+    <Property Name="Slogan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Anunciantes" Relationship="Self.FK_Anuncios_Anuncios" FromRole="Anuncios" ToRole="Anunciantes" />
+  </EntityType>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Anunciantes" Relationship="Self.FK_Anuncios_Categorias" FromRole="Categorias" ToRole="Anunciantes" />
+  </EntityType>
+  <Association Name="FK_Anuncios_Anuncios">
+    <End Role="Anunciantes" Type="Self.Anunciantes" Multiplicity="0..1" />
+    <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Anunciantes">
+        <PropertyRef Name="IdAnunciante" />
+      </Principal>
+      <Dependent Role="Anuncios">
+        <PropertyRef Name="IdAnunciante" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Anuncios_Categorias">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="0..1" />
+    <End Role="Anunciantes" Type="Self.Anunciantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Anunciantes">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Anunciantes" EntityType="Self.Anunciantes" />
+    <EntitySet Name="Anuncios" EntityType="Self.Anuncios" />
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" />
+    <AssociationSet Name="FK_Anuncios_Anuncios" Association="Self.FK_Anuncios_Anuncios">
+      <End Role="Anunciantes" EntitySet="Anunciantes" />
+      <End Role="Anuncios" EntitySet="Anuncios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Anuncios_Categorias" Association="Self.FK_Anuncios_Categorias">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Anunciantes" EntitySet="Anunciantes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

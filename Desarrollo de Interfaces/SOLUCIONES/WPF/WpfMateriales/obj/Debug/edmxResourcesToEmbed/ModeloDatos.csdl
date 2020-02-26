@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DaniDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Acciones">
+    <Key>
+      <PropertyRef Name="IdAccion" />
+    </Key>
+    <Property Name="IdAccion" Type="Byte" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Movimientos" Relationship="Self.FK_Movimientos_Materiales1" FromRole="Acciones" ToRole="Movimientos" />
+  </EntityType>
+  <EntityType Name="Estados">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Materiales" Relationship="Self.FK_Material_Estado" FromRole="Estados" ToRole="Materiales" />
+  </EntityType>
+  <EntityType Name="Materiales">
+    <Key>
+      <PropertyRef Name="IdMaterial" />
+    </Key>
+    <Property Name="IdMaterial" Type="Int32" Nullable="false" />
+    <Property Name="Marca" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Int32" />
+    <NavigationProperty Name="Estados" Relationship="Self.FK_Material_Estado" FromRole="Materiales" ToRole="Estados" />
+    <NavigationProperty Name="Movimientos" Relationship="Self.FK_Movimientos_Materiales" FromRole="Materiales" ToRole="Movimientos" />
+  </EntityType>
+  <EntityType Name="Movimientos">
+    <Key>
+      <PropertyRef Name="IdMovimiento" />
+    </Key>
+    <Property Name="IdMovimiento" Type="Int32" Nullable="false" />
+    <Property Name="IdMaterial" Type="Int32" />
+    <Property Name="Accion" Type="Byte" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Acciones" Relationship="Self.FK_Movimientos_Materiales1" FromRole="Movimientos" ToRole="Acciones" />
+    <NavigationProperty Name="Materiales" Relationship="Self.FK_Movimientos_Materiales" FromRole="Movimientos" ToRole="Materiales" />
+  </EntityType>
+  <Association Name="FK_Movimientos_Materiales1">
+    <End Role="Acciones" Type="Self.Acciones" Multiplicity="0..1" />
+    <End Role="Movimientos" Type="Self.Movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Acciones">
+        <PropertyRef Name="IdAccion" />
+      </Principal>
+      <Dependent Role="Movimientos">
+        <PropertyRef Name="Accion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Material_Estado">
+    <End Role="Estados" Type="Self.Estados" Multiplicity="0..1" />
+    <End Role="Materiales" Type="Self.Materiales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estados">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Materiales">
+        <PropertyRef Name="Estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimientos_Materiales">
+    <End Role="Materiales" Type="Self.Materiales" Multiplicity="0..1" />
+    <End Role="Movimientos" Type="Self.Movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materiales">
+        <PropertyRef Name="IdMaterial" />
+      </Principal>
+      <Dependent Role="Movimientos">
+        <PropertyRef Name="IdMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DaniDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Acciones" EntityType="Self.Acciones" />
+    <EntitySet Name="Estados" EntityType="Self.Estados" />
+    <EntitySet Name="Materiales" EntityType="Self.Materiales" />
+    <EntitySet Name="Movimientos" EntityType="Self.Movimientos" />
+    <AssociationSet Name="FK_Movimientos_Materiales1" Association="Self.FK_Movimientos_Materiales1">
+      <End Role="Acciones" EntitySet="Acciones" />
+      <End Role="Movimientos" EntitySet="Movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Material_Estado" Association="Self.FK_Material_Estado">
+      <End Role="Estados" EntitySet="Estados" />
+      <End Role="Materiales" EntitySet="Materiales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimientos_Materiales" Association="Self.FK_Movimientos_Materiales">
+      <End Role="Materiales" EntitySet="Materiales" />
+      <End Role="Movimientos" EntitySet="Movimientos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

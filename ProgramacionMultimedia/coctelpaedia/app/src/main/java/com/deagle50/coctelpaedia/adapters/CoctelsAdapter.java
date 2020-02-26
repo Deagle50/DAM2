@@ -1,8 +1,8 @@
 package com.deagle50.coctelpaedia.adapters;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -11,14 +11,16 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.deagle50.coctelpaedia.Coctel;
 import com.deagle50.coctelpaedia.R;
-import com.deagle50.coctelpaedia.helpers.ThemeHelper;
+import com.deagle50.coctelpaedia.fragments.CoctelInfoFragment;
 
 import java.util.ArrayList;
 
@@ -43,7 +45,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
     @NonNull
     @Override
     public CoctelViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_coctel, viewGroup, false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_coctel_light, viewGroup, false);
         context = viewGroup.getContext();
 
         detector = new GestureDetector(context, new GestureListener());
@@ -58,8 +60,6 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         i = coctelViewHolder.getAdapterPosition();
 
         coctelViewHolder.tvCoctel.setText(coctels.get(i).getName());
-        coctelViewHolder.tvDescription.setText(coctels.get(i).getDescription());
-        coctelViewHolder.tvElaboration.setText(coctels.get(i).getElaboration());
         coctelViewHolder.tvHome.setText(coctels.get(i).getPriceH().toString()+"€");
         coctelViewHolder.tvBar.setText(coctels.get(i).getPriceB().toString()+"€");
         coctelViewHolder.tvGraduation.setText(coctels.get(i).getGraduation().toString()+" º");
@@ -85,17 +85,12 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
             coctelViewHolder.imageViewCoctel.setImageResource(coctels.get(i).getUrlPhoto());
         }
 
-        //Set background color dark gray if it's on dark theme
-        ThemeHelper themeHelper = new ThemeHelper(context);
-        if(themeHelper.isDark())
-            coctelViewHolder.cv.setBackgroundColor(instance.getResources().getColor(R.color.backgroundGray, null));
-
         coctelViewHolder.cv.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                actualCoctel = coctels.get(coctelViewHolder.getAdapterPosition());
-                return detector.onTouchEvent(event);
+            actualCoctel = coctels.get(coctelViewHolder.getAdapterPosition());
+            return detector.onTouchEvent(event);
             }
         });
     }
@@ -109,24 +104,22 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
 
     class CoctelViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
-        TextView tvCoctel, tvDescription, tvGraduation, tvHome, tvBar, tvElaboration, tvType;
+        TextView tvCoctel, tvGraduation, tvHome, tvBar, tvType;
         ImageView imageViewCoctel;
         CheckBox cbVegetarian, cbVegan;
 
         @SuppressLint("ClickableViewAccessibility")
         CoctelViewHolder(final View itemView) {
             super(itemView);
-            cv = itemView.findViewById(R.id.CardViewCoctel);
-            imageViewCoctel = itemView.findViewById(R.id.imageViewCoctel2);
-            tvCoctel = itemView.findViewById(R.id.textViewCoctel);
-            tvElaboration = itemView.findViewById(R.id.textViewElaboracion);
-            tvGraduation = itemView.findViewById(R.id.textViewGraduacion);
-            tvHome = itemView.findViewById(R.id.textViewCasa);
-            tvBar= itemView.findViewById(R.id.textViewBar);
-            tvDescription = itemView.findViewById(R.id.textViewDescripcion);
-            cbVegetarian =itemView.findViewById(R.id.checkBoxVegetariano);
-            cbVegan =itemView.findViewById(R.id.checkBoxVegano);
-            tvType = itemView.findViewById(R.id.textViewType);
+            cv = itemView.findViewById(R.id.CardViewCoctelLight);
+            imageViewCoctel = itemView.findViewById(R.id.imageViewCoctelLight);
+            tvCoctel = itemView.findViewById(R.id.textViewNameLight);
+            tvGraduation = itemView.findViewById(R.id.textViewGraduationLight);
+            tvHome = itemView.findViewById(R.id.textViewPriceH2Light);
+            tvBar= itemView.findViewById(R.id.textViewPriceB2Light);
+            cbVegetarian =itemView.findViewById(R.id.checkBoxVegetarianLight);
+            cbVegan =itemView.findViewById(R.id.checkBoxVeganLight);
+            tvType = itemView.findViewById(R.id.textViewTypeLight);
 
         }
     }
@@ -141,10 +134,28 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         public boolean onDoubleTap(MotionEvent e) {
             //In the future, the items of the recyclerView will have less info,
             //and onDoubleTap all the info will be shown
-            Log.e("onDoubleTap", e.getAction() + "");
-            //Toast.makeText(context, actualCoctel.getName(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "dp" + actualCoctel.getName(), Toast.LENGTH_SHORT).show();
+            loadInfoFragment();
             return true;
         }
+
+
+
+        @Override
+        public void onLongPress(MotionEvent e) {
+            super.onLongPress(e);
+
+            Toast.makeText(context, "lp" + actualCoctel.getName(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void loadInfoFragment() {
+        Activity activity = instance;
+        FragmentTransaction transaction = activity.getFragmentManager().beginTransaction();
+        transaction.replace(R.id.containerCoctelpedia, new CoctelInfoFragment(actualCoctel));
+
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
 }

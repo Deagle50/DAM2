@@ -1,0 +1,20 @@
+﻿<Window x:Class="Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrabajadoresWPF"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid x:Name="gridWindow1">
+        <Button x:Name="btnEntrar" IsEnabled="{Binding fuera}" Content="Entrar" HorizontalAlignment="Left" Margin="83,278,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnSalir" IsEnabled="{Binding dentro}" Content="Salir" HorizontalAlignment="Left" Margin="213,278,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="83,81,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtNombre" Text="{Binding nombre}" HorizontalAlignment="Left" Margin="83,102,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="83,139,0,0" TextWrapping="Wrap" Text="Apellido:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtApellido" Text="{Binding apellido}" HorizontalAlignment="Left" Margin="83,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="83,218,0,0" TextWrapping="Wrap" Text="Estado:" VerticalAlignment="Top"/>
+        <TextBlock Name="txtEstado" Text="{Binding estado}" HorizontalAlignment="Left" Margin="83,197,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

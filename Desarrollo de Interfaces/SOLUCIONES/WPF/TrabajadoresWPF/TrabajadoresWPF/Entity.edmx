@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DAM_manexcabrera_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Acciones">
+          <Key>
+            <PropertyRef Name="IdAccion" />
+          </Key>
+          <Property Name="IdAccion" Type="tinyint" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="Estados">
+          <Key>
+            <PropertyRef Name="IdEstado" />
+          </Key>
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Movimientos">
+          <Key>
+            <PropertyRef Name="IdMovimiento" />
+          </Key>
+          <Property Name="IdMovimiento" Type="int" Nullable="false" />
+          <Property Name="IdTrabajador" Type="int" />
+          <Property Name="Accion" Type="tinyint" />
+          <Property Name="fecha" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Trabajadores">
+          <Key>
+            <PropertyRef Name="IdTrabajador" />
+          </Key>
+          <Property Name="IdTrabajador" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="15" />
+          <Property Name="Apellido" Type="varchar" MaxLength="15" />
+          <Property Name="Estado" Type="int" />
+        </EntityType>
+        <Association Name="FK_Movimientos_Trabajadores">
+          <End Role="Trabajadores" Type="Self.Trabajadores" Multiplicity="0..1" />
+          <End Role="Movimientos" Type="Self.Movimientos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trabajadores">
+              <PropertyRef Name="IdTrabajador" />
+            </Principal>
+            <Dependent Role="Movimientos">
+              <PropertyRef Name="IdTrabajador" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Movimientos_Trabajadores1">
+          <End Role="Acciones" Type="Self.Acciones" Multiplicity="0..1" />
+          <End Role="Movimientos" Type="Self.Movimientos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Acciones">
+              <PropertyRef Name="IdAccion" />
+            </Principal>
+            <Dependent Role="Movimientos">
+              <PropertyRef Name="Accion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Trabajadores_Estado">
+          <End Role="Estados" Type="Self.Estados" Multiplicity="0..1" />
+          <End Role="Trabajadores" Type="Self.Trabajadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estados">
+              <PropertyRef Name="IdEstado" />
+            </Principal>
+            <Dependent Role="Trabajadores">
+              <PropertyRef Name="Estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DAM_manexcabrera_DEVModelStoreContainer">
+          <EntitySet Name="Acciones" EntityType="Self.Acciones" Schema="MRW" store:Type="Tables" />
+          <EntitySet Name="Estados" EntityType="Self.Estados" Schema="MRW" store:Type="Tables" />
+          <EntitySet Name="Movimientos" EntityType="Self.Movimientos" Schema="MRW" store:Type="Tables" />
+          <EntitySet Name="Trabajadores" EntityType="Self.Trabajadores" Schema="MRW" store:Type="Tables" />
+          <AssociationSet Name="FK_Movimientos_Trabajadores" Association="Self.FK_Movimientos_Trabajadores">
+            <End Role="Trabajadores" EntitySet="Trabajadores" />
+            <End Role="Movimientos" EntitySet="Movimientos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Movimientos_Trabajadores1" Association="Self.FK_Movimientos_Trabajadores1">
+            <End Role="Acciones" EntitySet="Acciones" />
+            <End Role="Movimientos" EntitySet="Movimientos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Trabajadores_Estado" Association="Self.FK_Trabajadores_Estado">
+            <End Role="Estados" EntitySet="Estados" />
+            <End Role="Trabajadores" EntitySet="Trabajadores" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DAM_manexcabrera_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Acciones">
+          <Key>
+            <PropertyRef Name="IdAccion" />
+          </Key>
+          <Property Name="IdAccion" Type="Byte" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Movimientos" Relationship="Self.FK_Movimientos_Trabajadores1" FromRole="Acciones" ToRole="Movimientos" />
+        </EntityType>
+        <EntityType Name="Estados">
+          <Key>
+            <PropertyRef Name="IdEstado" />
+          </Key>
+          <Property Name="IdEstado" Type="Int32" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Trabajadores" Relationship="Self.FK_Trabajadores_Estado" FromRole="Estados" ToRole="Trabajadores" />
+        </EntityType>
+        <EntityType Name="Movimientos">
+          <Key>
+            <PropertyRef Name="IdMovimiento" />
+          </Key>
+          <Property Name="IdMovimiento" Type="Int32" Nullable="false" />
+          <Property Name="IdTrabajador" Type="Int32" />
+          <Property Name="Accion" Type="Byte" />
+          <Property Name="fecha" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Acciones" Relationship="Self.FK_Movimientos_Trabajadores1" FromRole="Movimientos" ToRole="Acciones" />
+          <NavigationProperty Name="Trabajadores" Relationship="Self.FK_Movimientos_Trabajadores" FromRole="Movimientos" ToRole="Trabajadores" />
+        </EntityType>
+        <EntityType Name="Trabajadores">
+          <Key>
+            <PropertyRef Name="IdTrabajador" />
+          </Key>
+          <Property Name="IdTrabajador" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="Int32" />
+          <NavigationProperty Name="Estados" Relationship="Self.FK_Trabajadores_Estado" FromRole="Trabajadores" ToRole="Estados" />
+          <NavigationProperty Name="Movimientos" Relationship="Self.FK_Movimientos_Trabajadores" FromRole="Trabajadores" ToRole="Movimientos" />
+        </EntityType>
+        <Association Name="FK_Movimientos_Trabajadores1">
+          <End Role="Acciones" Type="Self.Acciones" Multiplicity="0..1" />
+          <End Role="Movimientos" Type="Self.Movimientos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Acciones">
+              <PropertyRef Name="IdAccion" />
+            </Principal>
+            <Dependent Role="Movimientos">
+              <PropertyRef Name="Accion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Trabajadores_Estado">
+          <End Role="Estados" Type="Self.Estados" Multiplicity="0..1" />
+          <End Role="Trabajadores" Type="Self.Trabajadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estados">
+              <PropertyRef Name="IdEstado" />
+            </Principal>
+            <Dependent Role="Trabajadores">
+              <PropertyRef Name="Estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Movimientos_Trabajadores">
+          <End Role="Trabajadores" Type="Self.Trabajadores" Multiplicity="0..1" />
+          <End Role="Movimientos" Type="Self.Movimientos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trabajadores">
+              <PropertyRef Name="IdTrabajador" />
+            </Principal>
+            <Dependent Role="Movimientos">
+              <PropertyRef Name="IdTrabajador" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Acciones" EntityType="Self.Acciones" />
+          <EntitySet Name="Estados" EntityType="Self.Estados" />
+          <EntitySet Name="Movimientos" EntityType="Self.Movimientos" />
+          <EntitySet Name="Trabajadores" EntityType="Self.Trabajadores" />
+          <AssociationSet Name="FK_Movimientos_Trabajadores1" Association="Self.FK_Movimientos_Trabajadores1">
+            <End Role="Acciones" EntitySet="Acciones" />
+            <End Role="Movimientos" EntitySet="Movimientos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Trabajadores_Estado" Association="Self.FK_Trabajadores_Estado">
+            <End Role="Estados" EntitySet="Estados" />
+            <End Role="Trabajadores" EntitySet="Trabajadores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Movimientos_Trabajadores" Association="Self.FK_Movimientos_Trabajadores">
+            <End Role="Trabajadores" EntitySet="Trabajadores" />
+            <End Role="Movimientos" EntitySet="Movimientos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DAM_manexcabrera_DEVModelStoreContainer" CdmEntityContainer="DB">
+          <EntitySetMapping Name="Acciones">
+            <EntityTypeMapping TypeName="DAM_manexcabrera_DEVModel.Acciones">
+              <MappingFragment StoreEntitySet="Acciones">
+                <ScalarProperty Name="IdAccion" ColumnName="IdAccion" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estados">
+            <EntityTypeMapping TypeName="DAM_manexcabrera_DEVModel.Estados">
+              <MappingFragment StoreEntitySet="Estados">
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Movimientos">
+            <EntityTypeMapping TypeName="DAM_manexcabrera_DEVModel.Movimientos">
+              <MappingFragment StoreEntitySet="Movimientos">
+                <ScalarProperty Name="IdMovimiento" ColumnName="IdMovimiento" />
+                <ScalarProperty Name="IdTrabajador" ColumnName="IdTrabajador" />
+                <ScalarProperty Name="Accion" ColumnName="Accion" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Trabajadores">
+            <EntityTypeMapping TypeName="DAM_manexcabrera_DEVModel.Trabajadores">
+              <MappingFragment StoreEntitySet="Trabajadores">
+                <ScalarProperty Name="IdTrabajador" ColumnName="IdTrabajador" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

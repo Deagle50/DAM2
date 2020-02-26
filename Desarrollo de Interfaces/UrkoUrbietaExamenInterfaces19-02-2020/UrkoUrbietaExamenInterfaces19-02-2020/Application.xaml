@@ -1,0 +1,9 @@
+﻿<Application x:Class="Application"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:UrkoUrbietaExamenInterfaces19_02_2020"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+    </Application.Resources>
+</Application>

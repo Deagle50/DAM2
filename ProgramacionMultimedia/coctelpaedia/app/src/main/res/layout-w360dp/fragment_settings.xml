@@ -34,8 +34,6 @@
             app:strokeColor="@color/fontGray"
             app:strokeWidth="1dp">
 
-            <!-- Card contents. -->
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

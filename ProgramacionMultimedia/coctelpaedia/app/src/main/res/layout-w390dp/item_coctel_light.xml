@@ -1,0 +1,156 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CardViewCoctelLight"
+
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/fontGray"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewRoundedImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewCoctelLight"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/coctel" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textViewNameLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/example_coctel_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/CardViewRoundedImage"
+                app:layout_constraintTop_toTopOf="@+id/CardViewRoundedImage"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textViewGraduationLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/example_graduation"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textViewNameLight"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameLight" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVegetarianLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="false"
+                android:text="@string/title_vegetarian"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/checkBoxVeganLight"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardViewRoundedImage" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVeganLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/title_vegan"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBoxVegetarianLight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/checkBoxVegetarianLight" />
+
+            <TextView
+                android:id="@+id/textViewPriceH1Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/title_price_at_home"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textViewPriceB1Light"
+                app:layout_constraintStart_toStartOf="@+id/textViewGraduationLight" />
+
+            <TextView
+                android:id="@+id/textViewPriceB1Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_price_at_pubs"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/CardViewRoundedImage"
+                app:layout_constraintStart_toStartOf="@+id/textViewPriceH1Light" />
+
+            <TextView
+                android:id="@+id/textViewPriceH2Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_price"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Light"
+                app:layout_constraintEnd_toEndOf="@+id/textViewTypeLight"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceH1Light" />
+
+            <TextView
+                android:id="@+id/textViewPriceB2Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_price"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceB1Light"
+                app:layout_constraintEnd_toEndOf="@+id/textViewPriceH2Light"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceB1Light" />
+
+            <TextView
+                android:id="@+id/textViewTypeLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="@string/example_type"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewGraduationLight" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

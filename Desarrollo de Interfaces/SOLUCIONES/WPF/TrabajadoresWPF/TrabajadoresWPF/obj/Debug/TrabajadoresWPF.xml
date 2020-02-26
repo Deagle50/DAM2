@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TrabajadoresWPF
+</name>
+</assembly>
+<members>
+<member name="T:TrabajadoresWPF.My.MyWpfExtension">
+ <summary>
+ Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:TrabajadoresWPF.My.MyWpfExtension.Application">
+ <summary>
+ Devuelve el objeto de aplicación de la aplicación en ejecución
+ </summary>
+</member>
+<member name="P:TrabajadoresWPF.My.MyWpfExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:TrabajadoresWPF.My.MyWpfExtension.User">
+ <summary>
+ Devuelve información sobre el usuario actual.  Si desea ejecutar la aplicación con las credenciales 
+ del usuario de Windows actual, llame a My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:TrabajadoresWPF.My.MyWpfExtension.Log">
+ <summary>
+ Devuelve el registro de la aplicación. El archivo de configuración de la aplicación puede configurar los agentes de escucha.
+ </summary>
+</member>
+<member name="P:TrabajadoresWPF.My.MyWpfExtension.Windows">
+ <summary>
+ Devuelve la colección de Windows definida en el proyecto.
+ </summary>
+</member>
+<member name="T:TrabajadoresWPF.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TrabajadoresWPF.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TrabajadoresWPF.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:TrabajadoresWPF.Window1">
+<summary>
+Window1
+</summary>
+</member>
+<member name="M:TrabajadoresWPF.Window1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TrabajadoresWPF.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:TrabajadoresWPF.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:TrabajadoresWPF.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:TrabajadoresWPF.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:TrabajadoresWPF.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>
