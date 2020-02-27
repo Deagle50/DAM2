@@ -5,93 +5,92 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="720dp"
+        android:orientation="vertical">
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/materialCardViewFilters"
-                style="@style/Widget.MaterialComponents.CardView"
-                android:layout_width="352dp"
-                android:layout_height="wrap_content"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardViewFilters"
+            style="@style/Widget.MaterialComponents.CardView"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
 
-                android:layout_marginTop="24dp"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:strokeColor="@color/fontGray"
-                app:strokeWidth="1dp">
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/fontGray"
+            app:strokeWidth="1dp">
 
-                <!-- Card contents. -->
+            <!-- Card contents. -->
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="480dp"
-                    android:padding="45dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:padding="45dp">
 
-                    <TextView
-                        android:id="@+id/txtTitulo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/title_games"
-                        android:textSize="48sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_games"
+                    android:textSize="48sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <Button
-                        android:id="@+id/buttonGameWhoWould"
-                        android:layout_width="175dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="36dp"
-                        android:background="@drawable/buttons"
-                        android:text="@string/title_who_would"
-                        android:textColor="@color/fontWhite"
-                        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
-                        app:layout_constraintHorizontal_bias="0.492"
-                        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
-                        app:layout_constraintTop_toBottomOf="@+id/buttonGameRandomDrink" />
+                <Button
+                    android:id="@+id/buttonGameWhoWould"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/buttons"
+                    android:text="@string/title_who_would"
+                    android:textColor="@color/fontWhite"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonGameRandomDrink" />
 
-                    <Button
-                        android:id="@+id/buttonGameChallenge"
-                        android:layout_width="175dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="36dp"
-                        android:background="@drawable/buttons"
-                        android:text="@string/title_game_challenge"
-                        android:textColor="@color/fontWhite"
-                        app:layout_constraintEnd_toEndOf="@+id/buttonGameWhoWould"
-                        app:layout_constraintStart_toStartOf="@+id/buttonGameWhoWould"
-                        app:layout_constraintTop_toBottomOf="@+id/buttonGameWhoWould" />
+                <Button
+                    android:id="@+id/buttonGameChallenge"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/buttons"
+                    android:text="@string/title_game_challenge"
+                    android:textColor="@color/fontWhite"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonGameWhoWould"
+                    app:layout_constraintStart_toStartOf="@+id/buttonGameWhoWould"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonGameWhoWould" />
 
-                    <Button
-                        android:id="@+id/buttonGameRandomDrink"
-                        android:layout_width="175dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="36dp"
-                        android:background="@drawable/buttons"
-                        android:text="@string/title_random_drink"
-                        android:textColor="@color/fontWhite"
-                        app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
-                        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
-                        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+                <Button
+                    android:id="@+id/buttonGameRandomDrink"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/buttons"
+                    android:text="@string/title_random_drink"
+                    android:textColor="@color/fontWhite"
+                    app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
+                    app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </com.google.android.material.card.MaterialCardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-            <Button
-                android:id="@+id/buttonPlayers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="120dp"
-                android:backgroundTint="@color/colorPrimary"
-                android:text="@string/title_players"
-                android:textColor="@color/fontWhite"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/materialCardViewFilters"
-                app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/buttonPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/title_players"
+            android:textColor="@color/fontWhite"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardViewFilters"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>

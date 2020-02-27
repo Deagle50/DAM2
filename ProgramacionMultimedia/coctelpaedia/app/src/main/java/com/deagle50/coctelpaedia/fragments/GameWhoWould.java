@@ -18,17 +18,15 @@ import com.deagle50.coctelpaedia.helpers.PlayersOpenHelper;
 import com.deagle50.coctelpaedia.helpers.ThemeHelper;
 
 import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Objects;
 
 public class GameWhoWould extends Fragment {
     private PlayersOpenHelper playersOpenHelper;
-    private ArrayList<String> players = new ArrayList<>();
     private ListView listView;
     public GameWhoWould() {
     }
 
-    View root;
+    private View root;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -60,11 +58,11 @@ public class GameWhoWould extends Fragment {
 
         if(cursorPlayers != null) {
             //Pass the cursor to a ArrayList
-            players = new ArrayList<>();
+            ArrayList<String> players = new ArrayList<>();
             while (cursorPlayers.moveToNext()) {
                 players.add(cursorPlayers.getString(1));
             }
-            //Show the items on the listview
+            //Show the items on the listView
             listView.setAdapter(new ArrayAdapter<>(Objects.requireNonNull(getContext()), R.layout.item_jugador, R.id.textViewNombre, players));
         }
     }

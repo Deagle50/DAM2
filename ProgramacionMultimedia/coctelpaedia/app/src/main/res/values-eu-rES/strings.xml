@@ -63,4 +63,6 @@
     <string name="title_description_open">Deskripzioa v</string>
     <string name="title_making_close">Elaborazioa ^</string>
     <string name="title_making_open">Elaborazioa v</string>
+    <string name="title_search">Bilatu</string>
+    <string name="title_random_drink_in">Ausazko edaria</string>
 </resources>

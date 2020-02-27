@@ -4,9 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.renderscript.RenderScript;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -22,9 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.deagle50.coctelpaedia.Coctel;
 import com.deagle50.coctelpaedia.R;
-import com.deagle50.coctelpaedia.extras.BlurCreator;
 import com.deagle50.coctelpaedia.fragments.CoctelInfoFragment;
-import com.deagle50.coctelpaedia.fragments.CoctelpediaFragment;
 
 import java.util.ArrayList;
 
@@ -35,7 +30,6 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
     private GestureDetector detector;
     private ArrayList<Coctel> coctels;
     private Coctel actualCoctel;
-    private Context context;
 
     public CoctelsAdapter(ArrayList<Coctel> coctels){
         this.coctels = coctels;
@@ -50,7 +44,7 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
     @Override
     public CoctelViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_coctel_light, viewGroup, false);
-        context = viewGroup.getContext();
+        Context context = viewGroup.getContext();
 
         detector = new GestureDetector(context, new GestureListener());
 
@@ -64,9 +58,9 @@ public class CoctelsAdapter extends RecyclerView.Adapter<CoctelsAdapter.CoctelVi
         i = coctelViewHolder.getAdapterPosition();
 
         coctelViewHolder.tvCoctel.setText(coctels.get(i).getName());
-        coctelViewHolder.tvHome.setText(coctels.get(i).getPriceH().toString()+"€");
-        coctelViewHolder.tvBar.setText(coctels.get(i).getPriceB().toString()+"€");
-        coctelViewHolder.tvGraduation.setText(coctels.get(i).getGraduation().toString()+" º");
+        coctelViewHolder.tvHome.setText(String.format("%s€", coctels.get(i).getPriceH().toString()));
+        coctelViewHolder.tvBar.setText(String.format("%s€", coctels.get(i).getPriceB().toString()));
+        coctelViewHolder.tvGraduation.setText(String.format("%s º", coctels.get(i).getGraduation().toString()));
         coctelViewHolder.tvType.setText(coctels.get(i).getType());
 
         if(coctels.get(i).isVegan())

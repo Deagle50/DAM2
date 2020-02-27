@@ -33,7 +33,6 @@
 
                     android:layout_marginTop="24dp"
                     app:cardCornerRadius="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/materialCardViewTheme"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -61,9 +60,9 @@
                             android:id="@+id/checkBoxVegan2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
+                            android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="12dp"
                             android:text="@string/title_vegan"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -73,28 +72,30 @@
 
                         <Spinner
                             android:id="@+id/spinnerOrderBy"
-                            android:layout_width="210dp"
+                            android:layout_width="190dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="16dp"
+                            android:layout_marginEnd="8dp"
                             app:layout_constraintBottom_toBottomOf="@+id/textViewOrderBy"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="@+id/textViewOrderBy" />
 
                         <Spinner
                             android:id="@+id/spinnerDrinkType"
-                            android:layout_width="210dp"
+                            android:layout_width="190dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="16dp"
                             app:layout_constraintBottom_toBottomOf="@+id/textViewDrinkType"
-                            app:layout_constraintEnd_toEndOf="parent" />
+                            app:layout_constraintEnd_toEndOf="@+id/spinnerOrderBy"
+                            app:layout_constraintStart_toStartOf="@+id/spinnerOrderBy"
+                            app:layout_constraintTop_toTopOf="@+id/textViewDrinkType" />
 
                         <TextView
                             android:id="@+id/textViewFilters"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="24dp"
-                            android:layout_marginTop="24dp"
+                            android:layout_marginTop="16dp"
                             android:text="@string/title_filters"
+                            android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -103,46 +104,77 @@
                             android:id="@+id/textViewOrderBy"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="24dp"
+                            android:layout_marginTop="12dp"
                             android:text="@string/title_orderby"
-                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="@+id/textViewFilters"
                             app:layout_constraintTop_toBottomOf="@+id/textViewFilters" />
 
                         <TextView
                             android:id="@+id/textViewDrinkType"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="24dp"
-                            android:layout_marginTop="24dp"
+                            android:layout_marginTop="16dp"
                             android:text="@string/title_type"
-                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="@+id/textViewOrderBy"
                             app:layout_constraintTop_toBottomOf="@+id/textViewOrderBy" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </com.google.android.material.card.MaterialCardView>
 
+                <Button
+                    android:id="@+id/buttonRandomDrinkCoctelpedia"
+                    android:layout_width="170dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/buttons"
+                    android:text="@string/title_random_drink"
+                    android:textColor="@color/fontWhite"
+                    app:layout_constraintBottom_toBottomOf="@+id/materialCardViewSearchViewCoctelpedia"
+                    app:layout_constraintStart_toStartOf="@+id/materialCardViewFilters"
+                    app:layout_constraintTop_toTopOf="@+id/materialCardViewSearchViewCoctelpedia" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/materialCardViewSearchViewCoctelpedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintEnd_toEndOf="@id/materialCardViewFilters"
+                    app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters"
+                    app:strokeColor="@color/fontGray"
+                    app:strokeWidth="1dp">
+
+                    <SearchView
+                        android:id="@+id/searchViewCoctelpedia"
+                        android:layout_width="170dp"
+                        android:layout_height="35dp"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:focusable="true"
+                        android:queryHint="@string/title_search"
+                        app:layout_constraintEnd_toEndOf="@+id/materialCardViewFilters"
+                        app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters" />
+
+                </com.google.android.material.card.MaterialCardView>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/RecyclerViewCoctel"
                     android:layout_width="352dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="12dp"
                     android:layout_marginBottom="48dp"
                     android:scrollbars="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/materialCardViewFilters">
+                    app:layout_constraintTop_toBottomOf="@+id/materialCardViewSearchViewCoctelpedia">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -150,16 +182,4 @@
 
 </FrameLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButtonGameRandomDrink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="72dp"
-        android:backgroundTint="@color/fontGray"
-        android:clickable="true"
-        app:borderWidth="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/containerCoctelpedia"
-        app:layout_constraintEnd_toEndOf="@+id/containerCoctelpedia"
-        app:srcCompat="@drawable/ic_coctel_black" />
 </androidx.constraintlayout.widget.ConstraintLayout>

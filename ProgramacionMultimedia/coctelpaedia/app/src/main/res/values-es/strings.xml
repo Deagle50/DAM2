@@ -63,4 +63,6 @@
     <string name="title_description_open">Descripción v</string>
     <string name="title_making_close">Elaboración ^</string>
     <string name="title_making_open">Elaboración v</string>
+    <string name="title_search">Buscar</string>
+    <string name="title_random_drink_in">Bebida aleatoria en...</string>
 </resources>

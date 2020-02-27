@@ -1,172 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent">
 
 <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cvBackgroundLayout"
     android:layout_width="match_parent"
     android:layout_height="639dp"
-    android:id="@+id/cvBackgroundLayout"
     android:background="@color/fontWhite"
-    android:clickable="true">
+    android:clickable="true"
+    android:focusable="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewTopRandomDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/fontGray"
+        app:strokeWidth="1dp">
 
-        <TextView
-            android:id="@+id/textViewDescripcion3"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/title_description"
-            android:textStyle="italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textViewDescription4"
-            android:layout_width="359dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
-            android:text="@string/example_description"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion3" />
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/example_coctel_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewElaboracion3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/title_making"
-            android:textStyle="italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewDescription4" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewRoundedImageRandomDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewName">
 
-        <TextView
-            android:id="@+id/textViewMaking2"
-            android:layout_width="359dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="70dp"
-            android:paddingBottom="6dp"
-            android:text="@string/example_making"
+                <ImageView
+                    android:id="@+id/imageViewCoctel2"
+                    android:layout_width="320dp"
+                    android:layout_height="320dp"
+                    android:contentDescription="asd"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/coctel" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textViewGraduation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/example_graduation"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="72dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardViewTopRandomDrink"
+        app:layout_constraintStart_toStartOf="@+id/materialCardViewTopRandomDrink"
+        app:layout_constraintTop_toBottomOf="@id/materialCardViewTopRandomDrink"
+        app:strokeColor="@color/fontGray"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="352dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewElaboracion3" />
-
-        <ImageView
-            android:id="@+id/imageViewCoctel2"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewName"
-            app:srcCompat="@drawable/coctel" />
-
-        <TextView
-            android:id="@+id/textViewName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/example_coctel_name"
-            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textViewGraduation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/example_graduation"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textViewName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textViewName" />
+            <TextView
+                android:id="@+id/textViewDescription1RandomDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_description"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPriceB1RandomDrink" />
 
-        <CheckBox
-            android:id="@+id/checkBoxVegetarian3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:clickable="false"
-            android:focusable="false"
-            android:text="@string/title_vegetarian"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewCoctel2" />
+            <TextView
+                android:id="@+id/textViewDescription2RandomDrink"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/example_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescription1RandomDrink" />
 
-        <CheckBox
-            android:id="@+id/checkBoxVegan3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:clickable="false"
-            android:focusable="false"
-            android:text="@string/title_vegan"
-            app:layout_constraintStart_toStartOf="@+id/checkBoxVegetarian3"
-            app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarian3" />
+            <TextView
+                android:id="@+id/textViewMaking1RandomDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/title_making"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescription2RandomDrink" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/title_price_at_home"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVegetarian3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/checkBoxVegetarian3" />
+            <TextView
+                android:id="@+id/textViewMaking2RandomDrink"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:paddingBottom="6dp"
+                android:text="@string/example_making"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMaking1RandomDrink" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/title_price_at_pubs"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVegan3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/checkBoxVegan3" />
 
-        <TextView
-            android:id="@+id/textViewHome4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/example_price"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVegetarian3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/checkBoxVegetarian3" />
+            <CheckBox
+                android:id="@+id/checkBoxVegetarian3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/title_vegetarian"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1RandomDrink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceH1RandomDrink" />
 
-        <TextView
-            android:id="@+id/textViewPub4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/example_price"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/checkBoxVegan3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/checkBoxVegan3" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <CheckBox
+                android:id="@+id/checkBoxVegan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/title_vegan"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceB1RandomDrink"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxVegetarian3"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceB1RandomDrink" />
+
+            <TextView
+                android:id="@+id/textViewPriceH1RandomDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_price_at_home"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewPriceB1RandomDrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/title_price_at_pubs"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPriceH1RandomDrink" />
+
+            <TextView
+                android:id="@+id/textViewHome4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_price"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1RandomDrink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceH1RandomDrink" />
+
+            <TextView
+                android:id="@+id/textViewPub4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_price"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPriceB1RandomDrink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewPriceB1RandomDrink" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

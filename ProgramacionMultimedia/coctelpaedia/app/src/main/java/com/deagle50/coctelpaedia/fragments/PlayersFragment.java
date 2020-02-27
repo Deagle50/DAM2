@@ -46,7 +46,7 @@ public class PlayersFragment extends Fragment implements View.OnClickListener, A
     private EditText input;
     private TextView txtCount;
 
-    View root;
+    private View root;
     @SuppressLint("ClickableViewAccessibility")
     @Nullable
     @Override
@@ -126,7 +126,7 @@ public class PlayersFragment extends Fragment implements View.OnClickListener, A
 
     private void setInsertBuilder(){
         //Set the dialog for insert players
-        insertBuilder = new AlertDialog.Builder(getContext());
+        insertBuilder = new AlertDialog.Builder(Objects.requireNonNull(getContext()));
         // set title
         insertBuilder.setTitle(R.string.title_players);
 
@@ -171,7 +171,7 @@ public class PlayersFragment extends Fragment implements View.OnClickListener, A
 
     private void setUpdateBuilder(){
         //Set the dialog for update players
-        updateBuilder = new AlertDialog.Builder(getContext());
+        updateBuilder = new AlertDialog.Builder(Objects.requireNonNull(getContext()));
         // set title
         updateBuilder.setTitle(R.string.title_players);
 

@@ -17,7 +17,6 @@ import com.deagle50.coctelpaedia.helpers.ThemeHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
 
 public class GameChallengeFragment extends Fragment implements View.OnClickListener{
@@ -60,8 +59,8 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
         btnPrev.setEnabled(false);
         String[] gamePhrasesArray;
         gamePhrasesArray = getResources().getStringArray(R.array.game_challenge);
-        List<String> stringList = new ArrayList<String>(Arrays.asList(gamePhrasesArray));
-        phraseStringHelper = new StringHelper((ArrayList<String>) stringList);
+        ArrayList<String> stringList = new ArrayList<>(Arrays.asList(gamePhrasesArray));
+        phraseStringHelper = new StringHelper(stringList);
         PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
 
         tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));

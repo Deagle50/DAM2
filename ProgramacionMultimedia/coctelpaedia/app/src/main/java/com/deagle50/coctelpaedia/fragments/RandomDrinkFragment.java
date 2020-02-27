@@ -20,8 +20,6 @@ import com.deagle50.coctelpaedia.helpers.CoctelsOpenHelper;
 import java.util.Objects;
 
 public class RandomDrinkFragment extends Fragment {
-    private ThemeHelper themeHelper;
-    private ConstraintLayout constraintLayout;
     private View root;
 
         @Override
@@ -37,9 +35,9 @@ public class RandomDrinkFragment extends Fragment {
         }
 
     private void changeBackgroundColor() {
-        constraintLayout = root.findViewById(R.id.cvBackgroundLayout);
+        ConstraintLayout constraintLayout = root.findViewById(R.id.cvBackgroundLayout);
 
-        themeHelper = new ThemeHelper(Objects.requireNonNull(getContext()));
+        ThemeHelper themeHelper = new ThemeHelper(Objects.requireNonNull(getContext()));
         if(themeHelper.isDark()){
             constraintLayout.setBackgroundColor(getResources().getColor(R.color.backgroundGray, null));
         }
@@ -58,8 +56,8 @@ public class RandomDrinkFragment extends Fragment {
 
         TextView txtName = root.findViewById(R.id.textViewName);
         TextView txtGraduation = root.findViewById(R.id.textViewGraduation);
-        TextView txtMaking = root.findViewById(R.id.textViewMaking2);
-        TextView txtDescription = root.findViewById(R.id.textViewDescription4);
+        TextView txtMaking = root.findViewById(R.id.textViewMaking2RandomDrink);
+        TextView txtDescription = root.findViewById(R.id.textViewDescription2RandomDrink);
         TextView txtBar = root.findViewById(R.id.textViewPub4);
         TextView txtHome = root.findViewById(R.id.textViewHome4);
 
@@ -68,11 +66,11 @@ public class RandomDrinkFragment extends Fragment {
         ImageView imageView = root.findViewById(R.id.imageViewCoctel2);
 
         txtName.setText(coctel.getName());
-        txtGraduation.setText(coctel.getGraduation().toString()+"º");
+        txtGraduation.setText(String.format("%sº", coctel.getGraduation().toString()));
         txtMaking.setText(coctel.getElaboration());
         txtDescription.setText(coctel.getDescription());
-        txtBar.setText(coctel.getPriceB().toString()+" €");
-        txtHome.setText(coctel.getPriceH().toString()+" €");
+        txtBar.setText(String.format("%s €", coctel.getPriceB().toString()));
+        txtHome.setText(String.format("%s €", coctel.getPriceH().toString()));
 
         if(coctel.isVegan())
         {

@@ -37,4 +37,6 @@ dependencies {
 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    //Blur library
+    implementation 'com.eightbitlab:blurview:1.6.3'
 }

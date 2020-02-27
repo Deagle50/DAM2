@@ -91,6 +91,11 @@
     <string name="title_description_close">Description ^</string>
     <string name="title_making_open">Making v</string>
     <string name="title_making_close">Making ^</string>
+    <string name="title_search">Search</string>
+    <string name="title_random_drink_in">Random drink in...</string>
+    <string name="title_3" translatable="false">3</string>
+    <string name="title_2" translatable="false">2</string>
+    <string name="title_1" translatable="false">1</string>
 
 
 </resources>

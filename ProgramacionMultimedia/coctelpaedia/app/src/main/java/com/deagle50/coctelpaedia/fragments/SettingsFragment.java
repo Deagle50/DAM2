@@ -31,7 +31,6 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     private TextView tvBug;
     private TextView tvNTrans;
     private TextView tvTransIssue;
-    private TextView tvSupport;
     private InterstitialAd interstitialAd;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -56,7 +55,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         tvBug = root.findViewById(R.id.textViewBugs);
         tvNTrans = root.findViewById(R.id.textViewNewTranslation);
         tvTransIssue = root.findViewById(R.id.textViewTranslationIssue);
-        tvSupport = root.findViewById(R.id.textViewSupport);
+        TextView tvSupport = root.findViewById(R.id.textViewSupport);
         tvBug.setOnClickListener(this);
         tvTransIssue.setOnClickListener(this);
         tvNTrans.setOnClickListener(this);
@@ -71,7 +70,7 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
         tvCredits.setOnClickListener(this);
 
         interstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
-        interstitialAd.setAdUnitId("ca-app-pub-5556606541783481/4504898555");
+        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         interstitialAd.loadAd(new AdRequest.Builder().build());
 
         /*
@@ -131,11 +130,11 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
             }
             //CAMBIAR TEMA
             case R.id.buttonLightTheme:{
-                changeTheme("claro");
+                changeTheme("light");
                 break;
             }
             case R.id.buttonDarkTheme:{
-                changeTheme("oscuro");
+                changeTheme("dark");
                 break;
             }
             case R.id.textViewCredits:{
@@ -205,14 +204,14 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
 
             ThemeHelper th = new ThemeHelper(getContext());
             if(th.isDark()) {
-                th.changeTheme("claro");
-                th.changeTheme("oscuro");
+                th.changeTheme("light");
+                th.changeTheme("dark");
                 th.saveTheme();
             }
             else
             {
-                th.changeTheme("oscuro");
-                th.changeTheme("claro");
+                th.changeTheme("dark");
+                th.changeTheme("light");
                 th.saveTheme();
             }
 

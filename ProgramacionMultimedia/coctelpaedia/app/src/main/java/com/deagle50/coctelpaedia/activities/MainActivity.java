@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //ÑAPA to getResources and others from adapters and non-activity classes
         instance = this;
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
@@ -78,11 +79,11 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
         //Load language
-        languageHelper = new LanguageHelper(MainActivity.this);
+        languageHelper = new LanguageHelper(this);
         languageHelper.loadSavedLanguage(this);
 
         //Load theme
-        themeHelper = new ThemeHelper(MainActivity.this, this);
+        themeHelper = new ThemeHelper(this);
         themeHelper.loadSavedTheme();
 
         //Load ad launcher
@@ -91,9 +92,6 @@ public class MainActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-
-        //ÑAPA to getResources and others from adapters and non-activity classes
-
     }
 
     @Override

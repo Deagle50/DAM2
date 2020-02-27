@@ -1,60 +1,45 @@
 package com.deagle50.coctelpaedia.helpers;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.deagle50.coctelpaedia.R;
 
+import static android.content.Context.MODE_PRIVATE;
 import static com.deagle50.coctelpaedia.activities.MainActivity.instance;
 
-public class ThemeHelper extends AppCompatActivity {
+public class ThemeHelper{
 
     private Configuration configuration;
     private Context context;
-    private Activity activity;
     private boolean savedThemeDark;
 
     public ThemeHelper(Context context)
     {
         this.context = context;
-        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_theme_file), Context.MODE_PRIVATE);
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_theme_file), MODE_PRIVATE);
         savedThemeDark = shp.getBoolean(context.getResources().getString(R.string.preferences_isdark), false);
     }
 
-    public ThemeHelper(Context context, Activity activity)
-    {
-        this.activity = activity;
-        this.context = context;
-        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_theme_file), Context.MODE_PRIVATE);
-        savedThemeDark = shp.getBoolean(context.getResources().getString(R.string.preferences_isdark), false);
-    }
+    public void changeTheme(String themeToChange){
 
-    public void changeTheme(String temaACambiar){
-
-        //Cambiar tema
-            if(temaACambiar.equals("oscuro"))//Si el tema a cambiar es el oscuro
+        //Change theme
+            if(themeToChange.equals("dark"))//If theme to change is dark
             {
-                //Comprobar si el tema actual es oscuro
+                //If current theme isn't dark
                 if(!isDark())
                 {
                     loadDark();
-                }else {
-                //Si ya está en oscuro
                 }
-            } else//Si el tema a cambiar es al claro
-            if(temaACambiar.equals("claro"))
+            } else//If theme to change is light
+            if(themeToChange.equals("light"))
             {
-                if(isDark())//Comprobar si el tema actual es oscuro
+                if(isDark())//Check if current theme is light
                 {
                     loadLight();
-                }//Si ya está en claro
-                else{
-
                 }
             }
     }
@@ -71,18 +56,14 @@ public class ThemeHelper extends AppCompatActivity {
     }
 
     public boolean isDark(){
-        //Devuelve true si el modo actual es el oscuro
+        //Returns true if current theme is dark
         int ui = getUI();
         int currentNightMode = ui & Configuration.UI_MODE_NIGHT_MASK;
-        if(currentNightMode == Configuration.UI_MODE_NIGHT_YES)
-        {
-            return true;
-        }
-        return false;
+        return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
     }
 
     public void saveTheme(){
-        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_theme_file), context.MODE_PRIVATE);
+        SharedPreferences shp = context.getSharedPreferences(context.getResources().getString(R.string.preferences_theme_file), MODE_PRIVATE);
         SharedPreferences.Editor editor = shp.edit();
         if(isDark()) {
             editor.putBoolean(context.getResources().getString(R.string.preferences_isdark), true);
@@ -90,42 +71,31 @@ public class ThemeHelper extends AppCompatActivity {
         else {
             editor.putBoolean(context.getResources().getString(R.string.preferences_isdark), false);
         }
-        editor.commit();
+        editor.apply();
     }
 
-    public void loadDark(){
-        //AÑADIR, CAMBIAR FOTO IMAGEN PRINCIPAL
+    private void loadDark(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-
-        //Cambiar color texto actionbar
-
-
         instance.recreate();
     }
 
-    public void loadLight(){
-        //AÑADIR CAMBIAR FOTO IMAGEN PRINCIPAL, CAMBIAR COLOR TEXTO ACTIONBAR
+    private void loadLight(){
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
-        //Cambiar color texto actionbar
         instance.recreate();
 
     }
 
     public void loadSavedTheme() {
-        //Cargar modo oscuro o no al iniciar activity
-        if(savedThemeDark)
+        //Load the saved theme
+        if(savedThemeDark)//If the saved theme is dark
         {
-            if(isDark()){
-                //El tema ya es oscuro, no hace nada
-            }
-            else{
+            if(!isDark()){//If current theme is light, loads dark
                 loadDark();
             }
         }
-        else
+        else//If the saved theme is light
         {
-            if(isDark())
+            if(isDark())//If current theme is dark, loads light
             {
                 loadLight();
             }
@@ -134,5 +104,3 @@ public class ThemeHelper extends AppCompatActivity {
     }
 
 }
-
-

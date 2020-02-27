@@ -1,15 +1,13 @@
 package com.deagle50.coctelpaedia.fragments;
 
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.os.Bundle;
-import android.renderscript.RenderScript;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
@@ -22,28 +20,24 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.deagle50.coctelpaedia.Coctel;
 import com.deagle50.coctelpaedia.R;
 import com.deagle50.coctelpaedia.adapters.CoctelsAdapter;
-import com.deagle50.coctelpaedia.extras.BlurCreator;
 import com.deagle50.coctelpaedia.helpers.CoctelsOpenHelper;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class CoctelpediaFragment extends Fragment implements View.OnClickListener {
+    private View view;
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+    private Spinner spinnerType;
+    private CheckBox cbVegetarian, cbVegan;
+    private Button btnRandomDrink;
+
     private CoctelsOpenHelper coctelsOpenHelper;
 
-    private String selection = "", orderBy="";
-    private ArrayList<Coctel> coctels;
+    private String selection = "", orderBy="", spinnerText="";
     private ArrayList<String> whereArguments;
-
-    private CheckBox cbVegetarian, cbVegan;
-    private View view;
-
-    private Spinner spinnerType;
-
-    private String text;
+    private ArrayList<Coctel> coctels;
 
 
     public CoctelpediaFragment(){
@@ -61,10 +55,11 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
 
         cbVegetarian = view.findViewById(R.id.checkBoxVegetarian2);
         cbVegan = view.findViewById(R.id.checkBoxVegan2);
+        btnRandomDrink = view.findViewById(R.id.buttonRandomDrinkCoctelpedia);
         cbVegan.setOnClickListener(this);
         cbVegetarian.setOnClickListener(this);
-        FloatingActionButton btnRandomGame = view.findViewById(R.id.floatingActionButtonGameRandomDrink);
-        btnRandomGame.setOnClickListener(this);
+        btnRandomDrink.setOnClickListener(this);
+
 
         whereArguments = new ArrayList<>();
 
@@ -85,24 +80,22 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
             addSelection();
             initializeData();
             initializeAdapter();
-        }
-
-        if(view.getId()==R.id.floatingActionButtonGameRandomDrink)
+        }else if(view==btnRandomDrink)
         {
+            btnRandomDrink.setEnabled(false);
+            assert getFragmentManager() != null;
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+            // Replace whatever is in the fragment_container view with this fragment,
+            // and add the transaction to the back stack so the user can navigate back
             transaction.replace(R.id.containerCoctelpedia, new GifFragment());
             transaction.addToBackStack(null);
+            // Commit the transaction
             transaction.commit();
+            btnRandomDrink.setEnabled(true);
         }
 
-
     }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-    }
-
 
     private void initializeData(){
         Cursor cursorCoctels;
@@ -133,7 +126,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     private void initializeSpinnerOrderBy() {
         Spinner spinnerOrderBy = view.findViewById(R.id.spinnerOrderBy);
         // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(Objects.requireNonNull(getContext()),
                 R.array.orderby, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -220,7 +213,7 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
             {
-                text = spinnerType.getSelectedItem().toString();
+                spinnerText = spinnerType.getSelectedItem().toString();
 
                 addSelection();
                 initializeData();
@@ -236,8 +229,6 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
     private void addSelection(){
         whereArguments = new ArrayList<>();
         String add="";
-        String add2="";
-        String compare = getString(R.string.title_all_drinks);
 
         if(!cbVegetarian.isChecked() && cbVegan.isChecked() || cbVegetarian.isChecked() && cbVegan.isChecked())
         {
@@ -254,25 +245,20 @@ public class CoctelpediaFragment extends Fragment implements View.OnClickListene
         selection = add;
 
 
-        if(text.equals(getString(R.string.title_all_drinks)))
-        {
-
-        }
-            else
+        if(!spinnerText.equals(getString(R.string.title_all_drinks)))
         {
             if(selection.equals(""))
             {
-                add2="type=?";
-                whereArguments.add(text);
-                selection=add2;
+                add="type=?";
+                whereArguments.add(spinnerText);
+                selection=add;
             }
             else
             {
-                add2="AND type=?";
-                whereArguments.add(text);
-                selection+=add2;
+                add="AND type=?";
+                whereArguments.add(spinnerText);
+                selection+=add;
             }
-
         }
     }
 }

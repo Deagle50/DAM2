@@ -35,7 +35,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="@string/title_who_would"
                 android:textAlignment="center"
-                android:textSize="30sp"
+                android:textSize="23sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -21,7 +21,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardViewCoctelInfo"
                 style="@style/Widget.MaterialComponents.CardView"
-                android:layout_width="328dp"
+                android:layout_width="352dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
                 app:cardCornerRadius="10dp"
@@ -61,8 +61,8 @@
 
                         <ImageView
                             android:id="@+id/imageViewCoctelInfo"
-                            android:layout_width="140dp"
-                            android:layout_height="140dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
                             app:srcCompat="@drawable/coctel" />
                     </androidx.cardview.widget.CardView>
 
@@ -71,7 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="16dp"
                         android:text="@string/example_graduation"
                         android:textSize="22sp"
                         app:layout_constraintStart_toEndOf="@+id/cardView"
@@ -87,7 +87,7 @@
                         app:layout_constraintEnd_toStartOf="@+id/checkBoxVeganInfo"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+                        app:layout_constraintTop_toBottomOf="@+id/textViewPriceH1Info" />
 
                     <CheckBox
                         android:id="@+id/checkBoxVeganInfo"
@@ -116,10 +116,10 @@
                         android:id="@+id/textViewPriceH1Info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="8dp"
                         android:text="@string/title_price_at_home"
                         app:layout_constraintStart_toStartOf="@+id/cardView"
-                        app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarianInfo" />
+                        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
                     <TextView
                         android:id="@+id/textViewPriceH2Info"
@@ -144,7 +144,7 @@
                         android:id="@+id/textViewPriceB1Info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="158dp"
+                        android:layout_marginStart="178dp"
                         android:text="@string/title_price_at_pubs"
                         app:layout_constraintBottom_toBottomOf="@+id/textViewPriceH1Info"
                         app:layout_constraintStart_toStartOf="parent"
@@ -154,9 +154,9 @@
                         android:id="@+id/clDescriptionInfo"
                         android:layout_width="296dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="4dp"
                         app:layout_constraintStart_toStartOf="@+id/textViewPriceH1Info"
-                        app:layout_constraintTop_toBottomOf="@+id/textViewPriceB1Info">
+                        app:layout_constraintTop_toBottomOf="@+id/checkBoxVegetarianInfo">
 
                         <TextView
                             android:id="@+id/textViewDescription1Info"
@@ -170,7 +170,7 @@
 
                         <TextView
                             android:id="@+id/textViewDescription2Info"
-                            android:layout_width="296dp"
+                            android:layout_width="320dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:text="@string/example_description"
@@ -201,7 +201,7 @@
 
                         <TextView
                             android:id="@+id/textViewMaking2Info"
-                            android:layout_width="296dp"
+                            android:layout_width="320dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:text="@string/example_making"

@@ -1,14 +1,12 @@
 package com.deagle50.coctelpaedia.fragments;
 
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
+import android.app.Fragment;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.renderscript.RenderScript;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,27 +14,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.app.Fragment;
 
 import com.deagle50.coctelpaedia.Coctel;
 import com.deagle50.coctelpaedia.R;
-import com.deagle50.coctelpaedia.extras.BlurCreator;
 
+import eightbitlab.com.blurview.BlurView;
+import eightbitlab.com.blurview.RenderScriptBlur;
+
+@SuppressWarnings("ALL")
 public class CoctelInfoFragment extends Fragment implements View.OnClickListener {
     private Coctel coctel;
     private View view;
-
     private ConstraintLayout constraintLayoutBackground;
-    private ConstraintLayout constraintLayoutFront;
 
-    private TextView tvName, tvType, tvGraduation, tvDescription, tvMaking, tvBar, tvHome;
+    private TextView tvDescription;
+    private TextView tvMaking;
     private TextView tvDescriptionClick, tvMakingClick;
-    private CheckBox cbVegan, cbVegetarian;
-    private ImageView imageView;
-
-
 
     @SuppressLint("ValidFragment")
     public CoctelInfoFragment(Coctel coctel) {
@@ -54,13 +47,9 @@ public class CoctelInfoFragment extends Fragment implements View.OnClickListener
 
         loadCoctel();
 
-        return view;
-    }
+        loadBlur();
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        putBlur();
-        super.onViewCreated(view, savedInstanceState);
+        return view;
     }
 
     @Override
@@ -109,9 +98,12 @@ public class CoctelInfoFragment extends Fragment implements View.OnClickListener
         getActivity().getFragmentManager().beginTransaction().remove(this).commitAllowingStateLoss();
     }
 
-
-
+    @SuppressLint("ClickableViewAccessibility")
     private void loadCoctel() {
+        TextView tvName, tvType, tvGraduation, tvBar, tvHome;
+        ImageView imageView;
+        CheckBox cbVegetarian, cbVegan;
+
         tvName = view.findViewById(R.id.textViewNameInfo);
         tvType = view.findViewById(R.id.textViewTypeInfo);
         tvGraduation = view.findViewById(R.id.textViewGraduationInfo);
@@ -119,25 +111,20 @@ public class CoctelInfoFragment extends Fragment implements View.OnClickListener
         tvMaking = view.findViewById(R.id.textViewMaking2Info);
         tvBar = view.findViewById(R.id.textViewPriceB2Info);
         tvHome = view.findViewById(R.id.textViewPriceH2Info);
-
         cbVegan = view.findViewById(R.id.checkBoxVeganInfo);
         cbVegetarian = view.findViewById(R.id.checkBoxVegetarianInfo);
-
         imageView = view.findViewById(R.id.imageViewCoctelInfo);
 
         tvName.setText(coctel.getName());
         tvType.setText(coctel.getType());
-        tvGraduation.setText(coctel.getGraduation().toString()+" º");
+        tvGraduation.setText(String.format("%s º", coctel.getGraduation().toString()));
         tvDescription.setText(coctel.getDescription());
         tvMaking.setText(coctel.getElaboration());
-        tvBar.setText(coctel.getPriceB().toString() + " €");
-        tvHome.setText(coctel.getPriceH().toString() + " €");
+        tvBar.setText(String.format("%s €", coctel.getPriceB().toString()));
+        tvHome.setText(String.format("%s €", coctel.getPriceH().toString()));
 
         constraintLayoutBackground = view.findViewById(R.id.clCoctelInfo);
         constraintLayoutBackground.setOnClickListener(this);
-
-        constraintLayoutFront = view.findViewById(R.id.cvCoctelInfoFront);
-
         tvDescriptionClick = view.findViewById(R.id.textViewDescription1Info);
         tvDescriptionClick.setOnClickListener(this);
         tvMakingClick = view.findViewById(R.id.textViewMaking1Info);
@@ -164,18 +151,24 @@ public class CoctelInfoFragment extends Fragment implements View.OnClickListener
         }
     }
 
-    private void putBlur() {
-        /*RenderScript renderScript = RenderScript.create(getContext());
-        new BlurCreator(renderScript).blur(getBitmapFromView(constraintLayoutBackground), 15, 1);*/
+    private void loadBlur() {
+        BlurView blurView;
+        //Apply blur on background to set this fragment as important
+        blurView = view.findViewById(R.id.blurViewCoctelInfo);
+
+        //Change this value to set different blur emphasis
+        float radius = 3f;
+
+        View decorView = getActivity().getWindow().getDecorView();
+        ViewGroup rootView = decorView.findViewById(android.R.id.content);
+        Drawable windowBackground = decorView.getBackground();
+
+        blurView.setupWith(rootView)
+                .setFrameClearDrawable(windowBackground)
+                .setBlurAlgorithm(new RenderScriptBlur(getContext()))
+                .setBlurRadius(radius)
+                .setHasFixedTransformationMatrix(true);
     }
 
-    private static Bitmap getBitmapFromView(View view) {
-
-        Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_8888);
-        Canvas c = new Canvas(bitmap);
-        view.layout(view.getLeft(), view.getTop(), view.getRight(), view.getBottom());
-        view.draw(c);
-        return bitmap;
-    }
 
 }
