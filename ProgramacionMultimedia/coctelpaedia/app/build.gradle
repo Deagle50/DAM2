@@ -39,4 +39,5 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:18.3.0'
     //Blur library
     implementation 'com.eightbitlab:blurview:1.6.3'
+    implementation 'com.commonsware.cwac:merge:1.1.2'
 }

@@ -62,29 +62,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.google.android.material.card.MaterialCardView
-                style="@style/Widget.MaterialComponents.CardView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="24dp"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewTextWhoWould"
-                app:strokeColor="@color/fontGray"
-                app:strokeWidth="1dp">
-
-                <ListView
-                    android:id="@+id/listViewPlayersWhoWould"
-                    android:layout_width="222dp"
-                    android:layout_height="222dp"
-                    tools:layout_editor_absoluteX="1dp"
-                    tools:layout_editor_absoluteY="1dp" />
-            </com.google.android.material.card.MaterialCardView>
-
             <TextView
                 android:id="@+id/textViewTextWhoWould"
                 android:layout_width="200dp"
@@ -96,6 +73,54 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.MaterialComponents.CardView"
+                    android:id="@+id/materialCardViewPlayersWhoWould"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTextWhoWould"
+                    app:strokeColor="@color/fontGray"
+                    app:strokeWidth="1dp">
+
+                    <ListView
+                        android:id="@+id/listViewPlayersWhoWould"
+                        android:layout_width="222dp"
+                        android:layout_height="222dp"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="1dp" />
+                </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardViewCountWhoWould"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_width="36dp"
+                android:layout_height="222dp"
+                android:layout_marginStart="24dp"
+
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/materialCardViewPlayersWhoWould"
+
+                app:layout_constraintStart_toEndOf="@id/materialCardViewPlayersWhoWould"
+                app:layout_constraintTop_toTopOf="@id/materialCardViewPlayersWhoWould"
+                app:strokeColor="@color/fontGray"
+                app:strokeWidth="1dp">
+
+                <ListView
+                    android:id="@+id/listViewPlayersCountWhoWould"
+                    android:layout_width="match_parent"
+                    android:layout_height="222dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 

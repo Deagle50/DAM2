@@ -3,36 +3,55 @@ package com.deagle50.coctelpaedia.helpers;
 import java.util.ArrayList;
 
 public class StringHelper {
-    private ArrayList<String> strings;
+    private ArrayList<String> allStrings; //All the strings, you get strings from here
+    public ArrayList<String> newStrings; //Growing string arrayList, you put here the strings in order
     private int previousInt=-1;
-    private int nextInt;
-    private int rand;
+    private int rand=-1;
+    public int i = 0;
 
     public StringHelper(ArrayList<String> strings) {
-        this.strings = strings;
+        this.allStrings = strings;
+        newStrings = new ArrayList<>();
     }
 
-    public String getRandomString(){
+    private String getRandomString(){
         if(rand!=-1)
             previousInt = rand;
-        rand = ((int) (Math.random() * (strings.size())));
+        rand = ((int) (Math.random() * (allStrings.size())));
         if(previousInt!=-1)
         {
             while(rand==previousInt)
             {
-                rand = ((int) (Math.random() * (strings.size())));
+                rand = ((int) (Math.random() * (allStrings.size())));
             }
         }
-
-        return strings.get(rand);
+        return allStrings.get(rand);
     }
 
     public String getPreviousString(){
-        nextInt = rand;
-        return strings.get(previousInt);
+        if(i>0) {
+            if(i==1)
+            {
+                i=0;
+                return newStrings.get(i);
+            }
+            i--;
+            return newStrings.get(i-1);
+        }
+        return null;
     }
 
     public String getNextString(){
-        return strings.get(nextInt);
+        if(i<newStrings.size()-1)
+        {
+            i++;
+            return newStrings.get(i);
+        }
+        return getRandomString();
+    }
+
+    public void saveString(String s){
+        i++;
+        newStrings.add(s);
     }
 }

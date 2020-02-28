@@ -6,6 +6,9 @@ buildscript {
         jcenter()
 
         mavenCentral()
+        maven {
+            url "https://s3.amazonaws.com/repo.commonsware.com"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
@@ -21,6 +24,9 @@ allprojects {
         jcenter()
 
         mavenCentral()
+        maven {
+            url "https://s3.amazonaws.com/repo.commonsware.com"
+        }
     }
 }
 

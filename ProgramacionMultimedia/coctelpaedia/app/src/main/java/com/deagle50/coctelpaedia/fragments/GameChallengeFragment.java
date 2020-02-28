@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
@@ -20,16 +21,12 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class GameChallengeFragment extends Fragment implements View.OnClickListener{
+    private View root;
     private TextView tvPhrase;
     private Button btnNext;
     private Button btnPrev;
 
-    private String previous;
-    private String next;
-
-    private View root;
     private Boolean isFirstLoad = true;
-    private Boolean isPrevious = false;
 
     private StringHelper phraseStringHelper;
 
@@ -61,9 +58,8 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
         gamePhrasesArray = getResources().getStringArray(R.array.game_challenge);
         ArrayList<String> stringList = new ArrayList<>(Arrays.asList(gamePhrasesArray));
         phraseStringHelper = new StringHelper(stringList);
-        PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
 
-        tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));
+        saveAndSet();
     }
 
     private void changeBackgroundColor() {
@@ -77,41 +73,45 @@ public class GameChallengeFragment extends Fragment implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
-        if(v==btnPrev)
+
+        if(v==btnPrev)//Puts previous phrase on TextView
         {
-            isPrevious = true;
-            btnPrev.setEnabled(false);
-
-            next = tvPhrase.getText().toString();
-
-            tvPhrase.setText(previous);
+            getPrev();
         }
-        if(v==btnNext)
+        if(v==btnNext) {
+            getNext();
+        }
+    }
+
+    private void getPrev() {
+        String previous = phraseStringHelper.getPreviousString();
+        if(previous==null)
+            Toast.makeText(getContext(), "There is no previous phrase", Toast.LENGTH_SHORT).show();
+        else
+            tvPhrase.setText(previous);
+    }
+
+    private void getNext() {
+        if(isFirstLoad)
         {
-            previous = tvPhrase.getText().toString();
-            if(isFirstLoad)
-            {
-                btnPrev.setEnabled(true);
-                isFirstLoad=false;
-                tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));
-            }
-            else{
-                if(isPrevious)
-                {
-                    btnPrev.setEnabled(true);
-                    tvPhrase.setText(next);
-                    isPrevious=false;
+            btnPrev.setEnabled(true);
+            isFirstLoad=false;
+        }
+        saveAndSet();
+    }
 
-                }
-                else{
-                    tvPhrase.setText(String.format("%s, %s.", playersOpenHelper.getRandomPlayer(), phraseStringHelper.getRandomString()));
-                }
-            }
-
-
+    private void saveAndSet(){
+        PlayersOpenHelper playersOpenHelper = new PlayersOpenHelper(getContext());
+        if(phraseStringHelper.i<phraseStringHelper.newStrings.size()-1)
+        {
+            tvPhrase.setText(phraseStringHelper.getNextString());
+        }
+        else {
+            String stringToSave = playersOpenHelper.getRandomPlayer() + ", " + phraseStringHelper.getNextString() + ".";
+            phraseStringHelper.saveString(stringToSave);
+            tvPhrase.setText(stringToSave);
         }
         playersOpenHelper.close();
-
     }
+
 }

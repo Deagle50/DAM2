@@ -242,8 +242,8 @@ public class PlayersFragment extends Fragment implements View.OnClickListener, A
             while (cursorPlayers.moveToNext()) {
                 players.add(cursorPlayers.getString(1));
             }
-            //Show the items on the listview
-            listView.setAdapter(new ArrayAdapter<>(Objects.requireNonNull(getContext()), R.layout.item_jugador, R.id.textViewNombre, players));
+            //Show the items on the listView
+            listView.setAdapter(new ArrayAdapter<>(Objects.requireNonNull(getContext()), R.layout.item_player, R.id.textViewPlayerName, players));
         }
         //Put the players count
         txtCount.setText(String.format(Locale.getDefault(), "%d", players.size()));

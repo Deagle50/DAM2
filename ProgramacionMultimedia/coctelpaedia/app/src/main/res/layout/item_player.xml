@@ -8,7 +8,7 @@
     app:layout_constraintCircleRadius="5dp">
 
     <TextView
-        android:id="@+id/textViewNombre"
+        android:id="@+id/textViewPlayerName"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:gravity="center_horizontal|center_vertical"
